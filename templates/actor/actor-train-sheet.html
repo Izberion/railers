@@ -1,0 +1,99 @@
+<form class="{{cssClass}} {{actor.type}}" autocomplete="off">
+{{log system}}
+    {{!-- Sheet Header --}}
+    <header class="sheet-head">
+      <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+      <div class="header-fields">
+        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+        <select name="system.locomotive">
+          {{#select system.locomotive}}
+          <option value="ace">Ace</option>
+          <option value="bigBrother">Big Brother</option>
+          <option value="comet">Comet</option>
+          <option value="compact">Compact</option>
+          <option value="donkey">Donkey</option>
+          <option value="dynamo">Dynamo</option>
+          <option value="flex">Flex</option>
+          <option value="joes">Joe's</option>
+          <option value="littleMan">Little Man</option>
+          <option value="marathoner">Marathoner</option>
+          {{/select}}
+        </select>
+      </div>
+    </header>
+
+    {{!-- Sheet Sidebar --}}
+    <aside class="sheet-sidebar">
+
+      <div class="resource flex-group-center">
+        <label for="system.armor" class="resource-label">Armor</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.armor" value="{{system.armor}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      <div class="resource flex-group-center">
+        <label for="system.speed" class="resource-label">Max Speed</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.speed" value="{{system.speed}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      <div class="resource flex-group-center">
+        <label for="system.power.value" class="resource-label">Power</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.power.value" value="{{system.power.value}}" data-dtype="Number"/>
+          <span> / </span>
+          <input type="number" name="system.power.max" value="{{system.power.max}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      <div class="resource flex-group-center">
+        <label for="system.weight.value" class="resource-label">Weight</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.weight.value" value="{{system.weight.value}}" data-dtype="Number"/>
+          <span> / </span>
+          <input type="number" name="system.weightmax" value="{{system.weight.max}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      <div class="resource flex-group-center">
+        <label for="system.fuel.value" class="resource-label">Fuel</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.fuel.value" value="{{system.fuel.value}}" data-dtype="Number"/>
+          <span> / </span>
+          <input type="number" name="system.fuel.max" value="{{system.fuel.max}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+    </aside>
+
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+      {{!-- Default tab is specified in actor-sheet.mjs --}}
+      <a class="item" data-tab="cars">Cars</a>
+      <a class="item" data-tab="cargo">Cargo</a>
+      <a class="item" data-tab="notes">Notes</a>
+    </nav>
+
+    <section class="sheet-body">
+
+      {{!-- Train Car Tab --}}
+      <div class="tab cars" data-group="primary" data-tab="cars">
+        {{> "systems/railers/templates/actor/parts/actor-cars.html"}}
+      </div>
+      
+       {{!-- Attributes and Skills Tab --}}
+      <div class="tab cargo" data-group="primary" data-tab="cargo">
+        {{> "systems/railers/templates/actor/parts/actor-cargo.html"}}
+      </div>
+
+      {{!-- Gear Tab --}}
+      <div class="tab notes" data-group="primary" data-tab="notes">
+        {{> "systems/railers/templates/actor/parts/actor-notes.html"}}
+      </div>
+
+    </section>
+
+</form>

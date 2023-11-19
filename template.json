@@ -1,0 +1,379 @@
+{
+    "Actor": {
+        "types": [
+            "character",
+            "npc",
+            "demon",
+            "train"
+        ],
+        "templates": {
+            "base": {
+                "hitpoints": {
+                    "label": "RAILERS.Hitpoints",
+                    "value": 12,
+                    "min": 0,
+                    "max": 12
+                },
+                "wounds": {
+                    "label": "RAILERS.Wounds",
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "nerve": {
+                    "label": "RAILERS.Nerve",
+                    "value": 20,
+                    "min": 0,
+                    "max": 20
+                },
+                "corruption": {
+                    "label": "RAILERS.Corruption",
+                    "value": 0,
+                    "max": 60,
+                    "min": 0
+                },
+                "load": {
+                    "onHand": {
+                        "value": 0,
+                        "max": 0
+                    },
+                    "stowed": {
+                        "value": 0,
+                        "max": 0
+                    }
+                },
+                "faction": "",
+                "biography": "",
+                "notes": ""
+            }
+        },
+        "character": {
+            "templates": [
+                "base"
+            ],
+            "attributes": {
+                "combat": {
+                    "label": "RAILERS.AttributeCombat",
+                    "value": 0,
+                    "min": 0,
+                    "skills": {
+                        "bows": {
+                            "value": 0,
+                            "label": "RAILERS.SkillBows"
+                        },
+                        "heavyweapons": {
+                            "value": 0,
+                            "label": "RAILERS.SkillHeavyweapons"
+                        },
+                        "melee": {
+                            "value": 0,
+                            "label": "RAILERS.SkillMelee"
+                        },
+                        "smallarms": {
+                            "value": 0,
+                            "label": "RAILERS.SkillSmallArms"
+                        }
+                    }
+                },
+                "education": {
+                    "label": "RAILERS.AttributeEducation",
+                    "value": 0,
+                    "min": 0,
+                    "skills": {
+                        "instruction": {
+                            "value": 0,
+                            "label": "RAILERS.SkillInstruction"
+                        },
+                        "knowledge": {
+                            "value": 0,
+                            "label": "RAILERS.SkillKnowledge"
+                        },
+                        "medical": {
+                            "value": 0,
+                            "label": "RAILERS.SkillMedical"
+                        },
+                        "survival": {
+                            "value": 0,
+                            "label": "RAILERS.SkillSurvival"
+                        }
+                    }
+                },
+                "engineering": {
+                    "label": "RAILERS.AttributeEngineering",
+                    "value": 0,
+                    "min": 0,
+                    "skills": {
+                        "chemistry": {
+                            "value": 0,
+                            "label": "RAILERS.SkillChemistry"
+                        },
+                        "demolition": {
+                            "value": 0,
+                            "label": "RAILERS.SkillDemolition"
+                        },
+                        "gunsmithing": {
+                            "value": 0,
+                            "label": "RAILERS.SkillGunsmithing"
+                        },
+                        "locksmithing": {
+                            "value": 0,
+                            "label": "RAILERS.SkillLocksmithing"
+                        },
+                        "locomotive": {
+                            "value": 0,
+                            "label": "RAILERS.SkillLocomotive"
+                        },
+                        "mechanics": {
+                            "value": 0,
+                            "label": "RAILERS.SkillMechanics"
+                        }
+                        
+                    }
+                },
+                "fortitude": {
+                    "label": "RAILERS.AttributeFortitude",
+                    "value": 0,
+                    "min": 0,
+                    "skills": {
+                        "endurance": {
+                            "value": 0,
+                            "label": "RAILERS.SkillEndurance"
+                        },
+                        "resolve": {
+                            "value": 0,
+                            "label": "RAILERS.SkillResolve"
+                        }
+                    }
+                },
+                "intuition": {
+                    "label": "RAILERS.AttributeIntuition",
+                    "value": 0,
+                    "min": 0,
+                    "skills": {
+                        "insight": {
+                            "value": 0,
+                            "label": "RAILERS.SkillInsight"
+                        },
+                        "perception": {
+                            "value": 0,
+                            "label": "RAILERS.SkillPerception"
+                        }
+                    }
+                },
+                "prowess": {
+                    "label": "RAILERS.AttributeProwess",
+                    "value": 0,
+                    "min": 0,
+                    "skills": {
+                        "acrobatics": {
+                            "value": 0,
+                            "label": "RAILERS.SkillAcrobatics"
+                        },
+                        "athletics": {
+                            "value": 0,
+                            "label": "RAILERS.SkillAthletics"
+                        },
+                        "exertion": {
+                            "value": 0,
+                            "label": "RAILERS.SkillExertion"
+                        }
+                    }
+                },
+                "speech": {
+                    "label": "RAILERS.AttributeSpeech",
+                    "value": 0,
+                    "min": 0,
+                    "skills": {
+                        "coercion": {
+                            "value": 0,
+                            "label": "RAILERS.SkillCoercion"
+                        },
+                        "deception": {
+                            "value": 0,
+                            "label": "RAILERS.SkillDeception"
+                        },
+                        "leadership": {
+                            "value": 0,
+                            "label": "RAILERS.SkillLeadership"
+                        },
+                        "negotiation": {
+                            "value": 0,
+                            "label": "RAILERS.SkillNegotiation"
+                        },
+                        "persuasion": {
+                            "value": 0,
+                            "label": "RAILERS.SkillPersuasion"
+                        }
+                    }
+                },
+                "stealth": {
+                    "label": "RAILERS.AttributeStealth",
+                    "value": 0,
+                    "min": 0,
+                    "skills": {
+                        "concealment": {
+                            "value": 0,
+                            "label": "RAILERS.SkillConcealment"
+                        },
+                        "disguise": {
+                            "value": 0,
+                            "label": "RAILERS.SkillDisguise"
+                        },
+                        "sleighthand": {
+                            "value": 0,
+                            "label": "RAILERS.SkillSleighthand"
+                        },
+                        "sneaking": {
+                            "value": 0,
+                            "label": "RAILERS.SkillSneaking"
+                        }
+                        
+                    }
+                }
+            }
+        },
+        "npc": {
+            "templates": [
+                "base"
+            ],
+            "attributes": {
+                "primary": {
+                    "value": 1,
+                    "min": 1
+                },
+                "secondary": {
+                    "value": 0,
+                    "min": 0
+                }
+            }
+        },
+        "demon": {
+            "templates": [
+                "base"
+            ],
+            "attributes": {
+                "str": {
+                    "value": 0,
+                    "min": 0
+                },
+                "agi": {
+                    "value": 0,
+                    "min": 0
+                },
+                "int": {
+                    "value": 0,
+                    "min": 0
+                },
+                "end": {
+                    "value": 0,
+                    "min": 0
+                },
+                "fear": {
+                    "value": 0,
+                    "min": 0
+                },
+                "atk": {
+                    "value": 0,
+                    "min": 0
+                }
+            }
+        },
+        "train": {
+            "armor": 0,
+            "power": {
+                "value": 0,
+                "max": 0
+            },
+            "speed": 0,
+            "fuel": {
+                "value": 0,
+                "max": 0
+            },
+            "weight": {
+                "value": 0,
+                "max": 0
+            },
+            "sleepCapacity": {
+                "standard": 0,
+                "luxury": 0
+            },
+            "dineCapacity": {
+                "standard": 0,
+                "luxury": 0
+            }
+        }
+    },
+    "Item": {
+        "types": [
+            "item",
+            "effect",
+            "wound",
+            "weapon",
+            "clothing",
+            "trainCar"
+        ],
+        "templates": {
+            "base": {
+                "description": ""
+            }
+        },
+        "item": {
+            "templates": [
+                "base"
+            ],
+            "quantity": 1,
+            "load": 0,
+            "stowage": ""
+        },
+        "weapon": {
+            "templates": [
+                "base"
+            ],
+            "quantity": 1,
+            "load": 0,
+            "stowage": "",
+            "attack": "",
+            "damage": "",
+            "severity": "",
+            "reload": "",
+            "magazine": "",
+            "range": ""
+        },
+        "clothing": {
+            "quantity": 1,
+            "load": 0,
+            "stowage": "",
+            "protection": "",
+            "insulation": ""
+        },
+        "effect": {
+            "templates": [
+                "base"
+            ],
+            "type": ""
+        },
+        "wound": {
+            "templates": [
+                "base"
+            ],
+            "name": "",
+            "severity": 0,
+            "damage": 0
+        },
+        "trainCar": {
+            "templates": [
+                "base"
+            ],
+            "type": "",
+            "weight": 0,
+            "power": 0,
+            "dineCapacity": 0,
+            "sleepCapacity": 0
+        },
+        "feature": {
+            "templates": [
+                "base"
+            ]
+        }
+    }
+}

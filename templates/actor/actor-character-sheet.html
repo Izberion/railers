@@ -1,0 +1,112 @@
+<form class="{{cssClass}} {{actor.type}}" autocomplete="off">
+
+    {{!-- Sheet Header --}}
+    <header class="sheet-head">
+      <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+      <div class="header-fields">
+        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+      </div>
+    </header>
+
+    {{!-- Sheet Sidebar --}}
+    <aside class="sheet-sidebar">
+
+      {{!-- HP --}}
+      <div class="resource flex-group-center">
+        <label for="system.hitpoints.value" class="resource-label">Hitpoints</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.hitpoints.value" value="{{system.hitpoints.value}}" data-dtype="Number" readonly/>
+          <span> / </span>
+          <input type="number" name="system.hitpoints.max" value="{{system.hitpoints.max}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      {{!-- Nerve --}}
+      <div class="resource flex-group-center">
+        <label for="system.nerve.value" class="resource-label">Nerve</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.nerve.value" value="{{system.nerve.value}}" data-dtype="Number"/>
+          <span> / </span>
+          <input type="number" name="system.nerve.max" value="{{system.nerve.max}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      {{!-- Wounds --}}
+      <div class="resource flex-group-center">
+        <label for="system.wounds.value" class="resource-label">Wounds</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.wounds.value" value="{{system.wounds.value}}" data-dtype="Number" readonly/>
+          <span> / </span>
+          <input type="number" name="system.wounds.max" value="{{system.wounds.max}}" data-dtype="Number" readonly/>
+        </div>
+      </div>
+
+      {{!-- Corruption --}}
+      <div class="resource flex-group-center">
+        <label for="system.power.value" class="resource-label">Corruption</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.corruption.value" value="{{system.corruption.value}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      {{!-- Thermal Threshold --}}
+      <div class="resource flex-group-center">
+        <label class="resource-label">Thermal Threshold</label>
+        <input type="number" name="system.thermalThreshold" value="{{system.thermalThreshold}}" data-dtype="Number" readonly/>
+      </div>
+
+      {{!-- Initiative Pool --}}
+      <div class="resource flex-group-center">
+        <label class="resource-label">Initiative Pool</label>
+        <input type="number" name="system.initiativePool" value="{{system.initiativePool}}" data-dtype="Number" readonly/>
+      </div>
+
+      {{!-- Defense Pool --}}
+      <div class="resource flex-group-center">
+        <label class="resource-label rollable" data-roll="(@defensePool)d8x8cs>=5df1">Defense Pool</label>
+        <input type="number" name="system.defensePool" value="{{system.defensePool}}" data-dtype="Number" readonly/>
+      </div>
+        
+    </aside>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+      {{!-- Default tab is specified in actor-sheet.mjs --}}
+      <a class="item" data-tab="biography">Biography</a>
+      <a class="item" data-tab="skills">Skills</a>
+      <a class="item" data-tab="gear">Gear</a>
+      <a class="item" data-tab="wounds">Wounds</a>
+      <a class="item" data-tab="effects">Effects</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+   <section class="sheet-body">
+
+      {{!-- Biography Tab --}}
+      <div class="tab biography" data-group="primary" data-tab="biography">
+        {{> "systems/railers/templates/actor/parts/actor-bio.html"}}
+      </div>
+      
+       {{!-- Attributes and Skills Tab --}}
+      <div class="tab skills" data-group="primary" data-tab="skills">
+        {{> "systems/railers/templates/actor/parts/actor-skills.html"}}
+      </div>
+
+      {{!-- Gear Tab --}}
+      <div class="tab gear" data-group="primary" data-tab="gear">
+        {{> "systems/railers/templates/actor/parts/actor-gear.html"}}
+      </div>
+
+      {{!-- Wounds Tab --}}
+      <div class="tab wounds" data-group="primary" data-tab="wounds">
+        {{> "systems/railers/templates/actor/parts/actor-wounds.html"}}
+      </div>
+
+      {{!-- Effects Tab --}}
+      <div class="tab effects" data-group="primary" data-tab="effects">
+        {{> "systems/railers/templates/actor/parts/actor-effects.html"}}
+      </div>
+
+    </section>
+</form>
+

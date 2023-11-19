@@ -1,0 +1,29 @@
+<ol class="items-list wound-list">
+  <li class="item flexrow items-header">
+    <div class="item-name wound-name">Wound</div>
+    <div class="wound-damage">Damage</div>
+    <div class="wound-severity">Severity</div>
+    <div class="item-controls wound-controls">
+      <a class="wound-control wound-create" title="Add Wound" data-type="wound"><i class="fas fa-plus"></i> Add Wound</a>
+    </div>
+  </li>
+  {{#each actor.items as |item id|}}
+    {{#if (eq item.type "wound")}}
+      <li class="item wound flexrow" data-wound-id="{{item._id}}">
+        <div class="item-name wounds-name">
+          <div class="item-image">
+            <a class="rollable" data-roll-type="item"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
+          </div>
+          <h4>{{item.name}}</h4>
+        </div>
+        <div class="wound-damage">{{item.system.damage}}</div>
+        <div class="wound-severity">{{item.system.severity}}</div>
+        <div class="wound-controls">
+          <a class="wound-control wound-heal" title="Heal Wound"><i class="fas fa-minus"></i></a>
+          <a class="wound-control wound-edit" title="Edit Wound"><i class="fas fa-edit"></i></a>
+          <a class="wound-control wound-delete" title="Clear Wound"><i class="fas fa-trash"></i></a>
+        </div>
+      </li>
+    {{/if}}
+  {{/each}}
+</ol>

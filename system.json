@@ -1,0 +1,34 @@
+{
+  "id": "railers",
+  "title": "Railers",
+  "description": "The Railers tabletop roleplaying system for FoundryVTT",
+  "version": "1.0",
+  "compatibility": {
+    "minimum": 11,
+    "verified": "11.313",
+    "maximum": 11
+  },
+  "authors": [{
+    "name": "izberion"
+  }],
+  "esmodules": ["module/railers.mjs"],
+  "styles": ["css/railers.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 1,
+  "gridUnits": "hex",
+  "primaryTokenAttribute": "hitpoints",
+  "secondaryTokenAttribute": "wounds",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt",
+  "changelog": "CHANGELOG.md"
+}

@@ -1,0 +1,97 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+      <div class="grid grid-3col">
+        <div class="resource">
+          <label class="resource-label">Quantity</label>
+          <input type="number" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">Load</label>
+          <input type="number" name="system.load" value="{{system.load}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">Stowage</label>
+          <select name="system.stowage">
+            {{#select system.stowage}}
+            <option value="onHand">On Hand</option>
+            <option value="stowed">Stowed</option>
+            <option value="other">Other</option>
+            {{/select}}
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="attributes">Attributes</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Description Tab --}}
+    <div class="tab" data-group="primary" data-tab="description">
+      {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+
+    {{!-- Attributes Tab --}}
+    <div class="tab attributes" data-group="primary" data-tab="attributes">
+      <div class="resource">
+        <label class="resource-label">Roll Formula</label>
+        <input type="text" name="system.formula" value="{{system.formula}}" data-dtype="String"/>
+      </div>
+      <div class="resource">
+        <label class="resource-label">Damage</label>
+        <input type="number" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
+      </div>
+      <div class="resource">
+        <label class="resource-label">Severity</label>
+        <input type="number" name="system.severity" value="{{system.severity}}" data-dtype="Number"/>
+      </div>
+      <div class="resource">
+        <label class="resource-label">Attack</label>
+        <select name="system.attack">
+          {{#select item.system.attack}}
+          <option value="maneuver">Maneuver</option>
+          <option value="minor">Minor</option>
+          <option value="major">Major</option>
+          <option value="full">Full</option>
+          {{/select}}
+        </select>
+      </div>
+      <div class="resource">
+        <label class="resource-label">Range</label>
+        <select name="system.range">
+          {{#select item.system.range}}
+          <option value="melee">Melee</option>
+          <option value="short">Short</option>
+          <option value="medium">Medium</option>
+          <option value="long">Long</option>
+          <option value="extreme">Extreme</option>
+          {{/select}}
+        </select>
+      </div>
+      <div class="resource">
+        <label class="resource-label">Reload</label>
+        <select name="system.reload">
+          {{#select item.system.reload}}
+          <option value="maneuver">Maneuver</option>
+          <option value="minor">Minor</option>
+          <option value="major">Major</option>
+          <option value="full">Full</option>
+          {{/select}}
+        </select>
+      </div>
+      <div class="resource">
+        <label class="resource-label">Magazine</label>
+        <input type="number" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
+      </div>
+    </div>
+  </section>
+</form>
