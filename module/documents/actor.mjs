@@ -39,7 +39,7 @@ export class RailersActor extends Actor {
     this._prepareCharacterData(actorData);
     this._prepareNpcData(actorData);
 
-    if (this.type === "character" || this.type === "npc") {
+    if (this.type === "character" || this.type === "npc" || this.type === "demon") {
       let totalWounds = 0;
       let totalDamage = 0;
 
@@ -59,45 +59,49 @@ export class RailersActor extends Actor {
       this.system.wounds.value = totalWounds;
       this.system.hitpoints.value = maxHitpoints - totalDamage;
    
-
-    // Initialize total loads
-    let totalOnHandLoad = 0;
-    let totalStowedLoad = 0;
-
-    // Iterate over each item
-    for (let item of this.items) {
-      // Calculate the item's total load based on its quantity
-      let totalItemLoad = item.system.load * item.system.quantity;
-
-      // Add the item's total load to the correct total
-      if (item.system.stowage === 'onHand') {
-        totalOnHandLoad += totalItemLoad;
-      } else if (item.system.stowage === 'stowed') {
-        totalStowedLoad += totalItemLoad;
-      }
-    }
-    this.system.load.onHand.value = totalOnHandLoad;
-    this.system.load.stowed.value = totalStowedLoad;
-
-
-
-    // Initialize total insulation and protection
-    let totalInsulation = 0;
-    let totalProtection = 0;
-
-    // Loop through all items
-    for (let item of this.items) {
-
-      // Check if the item is on hand
-      if (item.type === 'clothing' && item.system.stowage === 'onHand') {
-        // Add the item's insulation and protection to the total
-        totalInsulation += item.system.insulation;
-        totalProtection += item.system.protection;
-      }
     }
 
-    // Calculate thermal threshold
-    this.system.thermalThreshold = -1 * totalInsulation;
+    if (this.type === "character" || this.type === "npc") {
+
+      // Initialize total loads
+      let totalOnHandLoad = 0;
+      let totalStowedLoad = 0;
+
+      // Iterate over each item
+      for (let item of this.items) {
+        // Calculate the item's total load based on its quantity
+        let totalItemLoad = item.system.load * item.system.quantity;
+
+        // Add the item's total load to the correct total
+        if (item.system.stowage === 'onHand') {
+          totalOnHandLoad += totalItemLoad;
+        } else if (item.system.stowage === 'stowed') {
+          totalStowedLoad += totalItemLoad;
+        }
+      }
+      this.system.load.onHand.value = totalOnHandLoad;
+      this.system.load.stowed.value = totalStowedLoad;
+
+
+      // Initialize total insulation and protection
+      let totalInsulation = 0;
+      let totalProtection = 0;
+
+      // Loop through all items
+      for (let item of this.items) {
+
+        // Check if the item is on hand
+        if (item.type === 'clothing' && item.system.stowage === 'onHand') {
+          // Add the item's insulation and protection to the total
+          totalInsulation += item.system.insulation;
+          totalProtection += item.system.protection;
+        }
+      }
+
+      // Calculate thermal threshold
+      this.system.thermalThreshold = -1 * totalInsulation;
+    }
+
 
     if (this.type === "character") {
       // Calculate defense pool
@@ -112,7 +116,32 @@ export class RailersActor extends Actor {
       // Calculate initiative pool
       this.system.initiativePool = this.system.attributes.intuition.value + this.system.attributes.prowess.skills.athletics.value;
     }
-  }
+
+    if (this.type === "npc") {
+      // Calculate secondary pool
+      this.system.secondary = Math.floor(this.system.primary / 2)
+
+      // Calculate defense pool
+      this.system.defensePool = totalProtection + this.system.secondary;
+
+      // Calculate wound threshold
+      this.system.wounds.max = 6 + this.system.primary + this.system.secondary;
+
+      // Calculate load limit
+      this.system.load.onHand.max = 3 + this.system.primary + this.system.secondary;
+
+      // Calculate initiative pool
+      this.system.initiativePool = this.system.primary;
+    }
+    
+    
+    if (this.type === "demon") {
+      // Calculate wound threshold
+      this.system.wounds.max = this.system.attributes.endurance * 3;
+
+      // Calculate initiative pool
+      this.system.initiativePool = this.system.attributes.agility;
+    }
 
     if (this.type === "train") {   
       if (this.system.locomotive === "donkey") {
@@ -129,7 +158,6 @@ export class RailersActor extends Actor {
         this.system.speed = Math.max(this.system.speed, 2);
       }
     }
-
   }
 
 

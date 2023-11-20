@@ -221,6 +221,7 @@ export class RailersActorSheet extends ActorSheet {
   async rollDialog(event) {
     const attpool = Number(event.currentTarget.dataset.attpool);
     const skillpool = Number(event.currentTarget.dataset.skillpool);
+    const npcpool = Number(event.currentTarget.dataset.npcpool);
     const thisActor = event.data.actor;
     const characterName = thisActor.name;
     const rollName = event.currentTarget.dataset.label;
@@ -242,6 +243,8 @@ export class RailersActorSheet extends ActorSheet {
             if (!isNaN(skillpool)) {
               poolTotal = skillpool;
               poolTotal += attpool;
+            } else if (!isNaN(npcpool)) {
+              poolTotal = npcpool;
             } else {
                 poolTotal = attpool;
             }
@@ -291,7 +294,7 @@ export class RailersActorSheet extends ActorSheet {
                 actor: thisActor,
                 alias: characterName,
               },
-              flavor: `Rolling a ${rollName} ${!isNaN(skillpool) ? 'check' : 'save'} at TN${tn}`,
+              flavor: !isNaN(npcpool) ? `Making a roll at TN ${tn}` : `Rolling a ${rollName} ${!isNaN(skillpool) ? 'check' : 'save'} at TN${tn}`,
             });
             return {};
           },

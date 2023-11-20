@@ -236,45 +236,32 @@
             "templates": [
                 "base"
             ],
-            "attributes": {
-                "primary": {
-                    "value": 1,
-                    "min": 1
-                },
-                "secondary": {
-                    "value": 0,
-                    "min": 0
-                }
-            }
-        },
+            "primary": 0,
+            "secondary": 0
+            },
         "demon": {
             "templates": [
                 "base"
             ],
             "attributes": {
-                "str": {
-                    "value": 0,
-                    "min": 0
+                "strength": {
+                    "value": 0
                 },
-                "agi": {
-                    "value": 0,
-                    "min": 0
+                "agility": {
+                    "value": 0
                 },
-                "int": {
-                    "value": 0,
-                    "min": 0
+                "intellect": {
+                    "value": 0
                 },
-                "end": {
-                    "value": 0,
-                    "min": 0
+                "endurance": {
+                    "value": 0
                 },
                 "fear": {
-                    "value": 0,
-                    "min": 0
+                    "value": 0
                 },
-                "atk": {
-                    "value": 0,
-                    "min": 0
+                "attack": {
+                    "damage": 0,
+                    "severity": 0
                 }
             }
         },

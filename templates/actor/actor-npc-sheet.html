@@ -1,4 +1,4 @@
-<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+<form class="{{cssClass}} {{actor.type}}" autocomplete="off">
 
   {{!-- Sheet Header --}}
   <header class="sheet-head">
@@ -7,41 +7,85 @@
       <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
       <div class="resources grid grid-3col">
         <div class="resource flex-group-center">
-          <label for="system.hitpoints.value" class="resource-label">Hitpoints</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.hitpoints.value" value="{{system.hitpoints.value}}" data-dtype="Number"/>
-            <span> / </span>
-            <input type="text" name="system.hitpoints.max" value="{{system.hitpoints.max}}" data-dtype="Number"/>
-          </div>
+          <label for="system.primary" class="resource-label roll" data-npcpool="{{system.primary}}">Primary</label>
+          <input type="number" name="system.primary" value="{{system.primary}}" data-dtype="Number"/>
         </div>
-
         <div class="resource flex-group-center">
-          <label for="system.power.value" class="resource-label">Power</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.power.value" value="{{system.power.value}}" data-dtype="Number"/>
-            <span> / </span>
-            <input type="text" name="system.power.max" value="{{system.power.max}}" data-dtype="Number"/>
-          </div>
+          <label for="system.secondary" class="resource-label roll" data-npcpool="{{system.secondary}}">Secondary</label>
+          <input type="number" name="system.secondary" value="{{system.secondary}}" data-dtype="Number" readonly/>
         </div>
-
         <div class="resource flex-group-center">
-          <label for="system.cr" class="resource-label">CR / XP</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.cr" value="{{system.cr}}" data-dtype="Number"/>
-            <span> / </span>
-            <input type="text" disabled="true" name="system.xp" value="{{system.xp}}" data-dtype="Number"/>
-          </div>
+          <label class="resource-label roll" data-npcpool="0">Tertiary</label>
         </div>
-
       </div>
     </div>
   </header>
+
+  {{!-- Sheet Sidebar --}}
+  <aside class="sheet-sidebar">
+
+    {{!-- HP --}}
+    <div class="resource flex-group-center">
+      <label for="system.hitpoints.value" class="resource-label">Hitpoints</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.hitpoints.value" value="{{system.hitpoints.value}}" data-dtype="Number" readonly/>
+        <span> / </span>
+        <input type="number" name="system.hitpoints.max" value="{{system.hitpoints.max}}" data-dtype="Number"/>
+      </div>
+    </div>
+
+    {{!-- Nerve --}}
+    <div class="resource flex-group-center">
+      <label for="system.nerve.value" class="resource-label">Nerve</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.nerve.value" value="{{system.nerve.value}}" data-dtype="Number"/>
+        <span> / </span>
+        <input type="number" name="system.nerve.max" value="{{system.nerve.max}}" data-dtype="Number"/>
+      </div>
+    </div>
+
+    {{!-- Wounds --}}
+    <div class="resource flex-group-center">
+      <label for="system.wounds.value" class="resource-label">Wounds</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.wounds.value" value="{{system.wounds.value}}" data-dtype="Number" readonly/>
+        <span> / </span>
+        <input type="number" name="system.wounds.max" value="{{system.wounds.max}}" data-dtype="Number" readonly/>
+      </div>
+    </div>
+
+    {{!-- Corruption --}}
+    <div class="resource flex-group-center">
+      <label for="system.power.value" class="resource-label">Corruption</label>
+      <input type="number" name="system.corruption.value" value="{{system.corruption.value}}" data-dtype="Number"/>
+    </div>
+
+    {{!-- Thermal Threshold --}}
+    <div class="resource flex-group-center">
+      <label class="resource-label">Thermal Threshold</label>
+      <input type="number" name="system.thermalThreshold" value="{{system.thermalThreshold}}" data-dtype="Number" readonly/>
+    </div>
+
+    {{!-- Initiative Pool --}}
+    <div class="resource flex-group-center">
+      <label class="resource-label">Initiative Pool</label>
+      <input type="number" name="system.initiativePool" value="{{system.initiativePool}}" data-dtype="Number" readonly/>
+    </div>
+
+    {{!-- Defense Pool --}}
+    <div class="resource flex-group-center">
+      <label class="resource-label rollable" data-roll="(@defensePool)d8x8cs>=5df1">Defense Pool</label>
+      <input type="number" name="system.defensePool" value="{{system.defensePool}}" data-dtype="Number" readonly/>
+    </div>
+      
+  </aside>
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
     <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="items">Items</a>
+    <a class="item" data-tab="gear">Gear</a>
+    <a class="item" data-tab="wounds">Wounds</a>
     <a class="item" data-tab="effects">Effects</a>
   </nav>
 

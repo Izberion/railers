@@ -14,6 +14,7 @@
     "systems/railers/templates/actor/parts/actor-bio.html",
     "systems/railers/templates/actor/parts/actor-cars.html",
     "systems/railers/templates/actor/parts/actor-cargo.html",
-    "systems/railers/templates/actor/parts/actor-notes.html"
+    "systems/railers/templates/actor/parts/actor-notes.html",
+    "systems/railers/templates/actor/parts/actor-abilities.html"
   ]);
 };

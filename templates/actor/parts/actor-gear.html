@@ -1,16 +1,22 @@
-<div class="resource flex-group-center">
-  <label class="resource-label">Load</label>
-  <div class="resource-content flexrow flex-center flex-between">
-    <label for="system.load.onHand.value">On Hand</label>
-    <input type="number" name="system.load.onHand.value" value="{{system.load.onHand.value}}" data-dtype="Number" readonly/>
-    <span> / </span>
-    <input type="number" name="system.load.onHand.max" value="{{system.load.onHand.max}}" data-dtype="Number" readonly/>
+<div class="grid grid-3col">
+  <div class="resource flex-group-center">
+    <label class="resource-label">Therms</label>
+    <input type="number" name="system.therms" value="{{system.therms}}" data-dtype="Number"/>
   </div>
-  <div class="resource-content flexrow flex-center flex-between">
-    <label for="system.load.stowed.value">Stowed</label>
-    <input type="number" name="system.load.stowed.value" value="{{system.load.stowed.value}}" data-dtype="Number" readonly/>
-    <span> / </span>
-    <input type="number" name="system.load.stowed.max" value="{{system.load.stowed.max}}" data-dtype="Number"/>
+  <div class="resource flex-group-center grid-span-2">
+    <label class="resource-label">Load</label>
+    <div class="resource-content flexrow flex-center flex-between">
+      <label for="system.load.onHand.value">On Hand</label>
+      <input type="number" name="system.load.onHand.value" value="{{system.load.onHand.value}}" data-dtype="Number" readonly/>
+      <span> / </span>
+      <input type="number" name="system.load.onHand.max" value="{{system.load.onHand.max}}" data-dtype="Number" readonly/>
+    </div>
+    <div class="resource-content flexrow flex-center flex-between">
+      <label for="system.load.stowed.value">Stowed</label>
+      <input type="number" name="system.load.stowed.value" value="{{system.load.stowed.value}}" data-dtype="Number" readonly/>
+      <span> / </span>
+      <input type="number" name="system.load.stowed.max" value="{{system.load.stowed.max}}" data-dtype="Number"/>
+    </div>
   </div>
 </div>
 
