@@ -361,6 +361,12 @@
             "templates": [
                 "base"
             ]
+        },
+        "abilties": {
+            "templates": [
+                "base"
+            ],
+            "action": ""
         }
     }
 }
