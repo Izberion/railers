@@ -1,5 +1,5 @@
 <form class="{{cssClass}} {{actor.type}}" autocomplete="off">
-
+{{log system}}
     {{!-- Sheet Header --}}
     <header class="sheet-head">
       <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
@@ -33,36 +33,36 @@
   
       {{!-- Attributes --}}
       <div class="resource flex-group-center">
-        <label for="system.attribute.strength" class="resource-label flex-group-center roll" data-npcpool="{{system.attribute.strength}}">Strength</label>
-        <input type="number" name="system.attribute.strength" value="{{system.attribute.strength}}" data-dtype="Number"/>
+        <label for="system.attributes.strength" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.strength}}">Strength</label>
+        <input type="number" name="system.attributes.strength" value="{{system.attributes.strength}}" data-dtype="Number"/>
       </div>
   
       <div class="resource flex-group-center">
-        <label for="system.attribute.strength" class="resource-label flex-group-center roll" data-npcpool="{{system.attribute.agility}}">Agility</label>
-        <input type="number" name="system.attribute.agility" value="{{system.attribute.agility}}" data-dtype="Number"/>
+        <label for="system.attributes.strength" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.agility}}">Agility</label>
+        <input type="number" name="system.attributes.agility" value="{{system.attributes.agility}}" data-dtype="Number"/>
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.attribute.intellect" class="resource-label flex-group-center roll" data-npcpool="{{system.attribute.intellect}}">Intellect</label>
-        <input type="number" name="system.attribute.intellect" value="{{system.attribute.intellect}}" data-dtype="Number"/>
+        <label for="system.attributes.intellect" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.intellect}}">Intellect</label>
+        <input type="number" name="system.attributes.intellect" value="{{system.attributes.intellect}}" data-dtype="Number"/>
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.attribute.endurance" class="resource-label flex-group-center roll" data-npcpool="{{system.attribute.endurance}}">Endurance</label>
-        <input type="number" name="system.attribute.endurance" value="{{system.attribute.endurance}}" data-dtype="Number"/>
+        <label for="system.attributes.endurance" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.endurance}}">Endurance</label>
+        <input type="number" name="system.attributes.endurance" value="{{system.attributes.endurance}}" data-dtype="Number"/>
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.attribute.fear" class="resource-label flex-group-center">Fear</label>
-        <input type="number" name="system.attribute.fear" value="{{system.attribute.fear}}" data-dtype="Number"/>
+        <label for="system.attributes.fear" class="resource-label flex-group-center">Fear</label>
+        <input type="number" name="system.attributes.fear" value="{{system.attributes.fear}}" data-dtype="Number"/>
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.attribute.attack" class="resource-label flex-group-center">Attack</label>
+        <label for="system.attributes.attack" class="resource-label flex-group-center">Attack</label>
         <div class="resource-content flexrow flex-center flex-between">
-            <input type="number" name="system.attribute.attack.damage" value="{{system.attribute.attack.damage}}" data-dtype="Number"/>
+            <input type="number" name="system.attributes.attack.damage" value="{{system.attributes.attack.damage}}" data-dtype="Number"/>
             <span> / W </span>
-            <input type="number" name="system.attribute.attack.severity" value="{{system.attribute.attack.severity}}" data-dtype="Number"/>
+            <input type="number" name="system.attributes.attack.severity" value="{{system.attributes.attack.severity}}" data-dtype="Number"/>
         </div>
       </div>
         
