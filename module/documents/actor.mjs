@@ -59,81 +59,82 @@ export class RailersActor extends Actor {
       this.system.wounds.value = totalWounds;
       this.system.hitpoints.value = maxHitpoints - totalDamage;
    
-    }
+      
 
-    if (this.type === "character" || this.type === "npc") {
+      if (this.type === "character" || this.type === "npc") {
 
-      // Initialize total loads
-      let totalOnHandLoad = 0;
-      let totalStowedLoad = 0;
+        // Initialize total loads
+        let totalOnHandLoad = 0;
+        let totalStowedLoad = 0;
 
-      // Iterate over each item
-      for (let item of this.items) {
-        // Calculate the item's total load based on its quantity
-        let totalItemLoad = item.system.load * item.system.quantity;
+        // Iterate over each item
+        for (let item of this.items) {
+          // Calculate the item's total load based on its quantity
+          let totalItemLoad = item.system.load * item.system.quantity;
 
-        // Add the item's total load to the correct total
-        if (item.system.stowage === 'onHand') {
-          totalOnHandLoad += totalItemLoad;
-        } else if (item.system.stowage === 'stowed') {
-          totalStowedLoad += totalItemLoad;
+          // Add the item's total load to the correct total
+          if (item.system.stowage === 'onHand') {
+            totalOnHandLoad += totalItemLoad;
+          } else if (item.system.stowage === 'stowed') {
+            totalStowedLoad += totalItemLoad;
+          }
+        }
+        this.system.load.onHand.value = totalOnHandLoad;
+        this.system.load.stowed.value = totalStowedLoad;
+
+
+        // Initialize total insulation and protection
+        let totalInsulation = 0;
+        let totalProtection = 0;
+
+        // Loop through all items
+        for (let item of this.items) {
+
+          // Check if the item is on hand
+          if (item.type === 'clothing' && item.system.stowage === 'onHand') {
+            // Add the item's insulation and protection to the total
+            totalInsulation += item.system.insulation;
+            totalProtection += item.system.protection;
+          }
+        }
+
+        // Calculate thermal threshold
+        this.system.thermalThreshold = -1 * totalInsulation;
+      
+
+
+        if (this.type === "character") {
+          // Calculate defense pool
+          this.system.defensePool = totalProtection + this.system.attributes.prowess.value;
+
+          // Calculate wound threshold
+          this.system.wounds.max = 6 + this.system.attributes.fortitude.value + this.system.attributes.fortitude.skills.endurance.value;
+
+          // Calculate load limit
+          this.system.load.onHand.max = 3 + this.system.attributes.prowess.value + this.system.attributes.prowess.skills.exertion.value;
+
+          // Calculate initiative pool
+          this.system.initiativePool = this.system.attributes.intuition.value + this.system.attributes.prowess.skills.athletics.value;
+        }
+
+        if (this.type === "npc") {
+          // Calculate secondary pool
+          this.system.secondary = Math.floor(this.system.primary / 2)
+
+          // Calculate defense pool
+          this.system.defensePool = totalProtection + this.system.secondary;
+
+          // Calculate wound threshold
+          this.system.wounds.max = 6 + this.system.primary + this.system.secondary;
+
+          // Calculate load limit
+          this.system.load.onHand.max = 3 + this.system.primary + this.system.secondary;
+
+          // Calculate initiative pool
+          this.system.initiativePool = this.system.primary;
         }
       }
-      this.system.load.onHand.value = totalOnHandLoad;
-      this.system.load.stowed.value = totalStowedLoad;
-
-
-      // Initialize total insulation and protection
-      let totalInsulation = 0;
-      let totalProtection = 0;
-
-      // Loop through all items
-      for (let item of this.items) {
-
-        // Check if the item is on hand
-        if (item.type === 'clothing' && item.system.stowage === 'onHand') {
-          // Add the item's insulation and protection to the total
-          totalInsulation += item.system.insulation;
-          totalProtection += item.system.protection;
-        }
-      }
-
-      // Calculate thermal threshold
-      this.system.thermalThreshold = -1 * totalInsulation;
     }
-
-
-    if (this.type === "character") {
-      // Calculate defense pool
-      this.system.defensePool = totalProtection + this.system.attributes.prowess.value;
-
-      // Calculate wound threshold
-      this.system.wounds.max = 6 + this.system.attributes.fortitude.value + this.system.attributes.fortitude.skills.endurance.value;
-
-      // Calculate load limit
-      this.system.load.onHand.max = 3 + this.system.attributes.prowess.value + this.system.attributes.prowess.skills.exertion.value;
-
-      // Calculate initiative pool
-      this.system.initiativePool = this.system.attributes.intuition.value + this.system.attributes.prowess.skills.athletics.value;
-    }
-
-    if (this.type === "npc") {
-      // Calculate secondary pool
-      this.system.secondary = Math.floor(this.system.primary / 2)
-
-      // Calculate defense pool
-      this.system.defensePool = totalProtection + this.system.secondary;
-
-      // Calculate wound threshold
-      this.system.wounds.max = 6 + this.system.primary + this.system.secondary;
-
-      // Calculate load limit
-      this.system.load.onHand.max = 3 + this.system.primary + this.system.secondary;
-
-      // Calculate initiative pool
-      this.system.initiativePool = this.system.primary;
-    }
-    
     
     if (this.type === "demon") {
       // Calculate wound threshold
@@ -157,6 +158,20 @@ export class RailersActor extends Actor {
         // Ensure the speed doesn't go below the minimum (2)
         this.system.speed = Math.max(this.system.speed, 2);
       }
+
+      // Initialize total loads
+      let totalPower = 0;
+      let totalWeight = 0;
+      let maxPower = this.system.power.max;
+      let maxWeight = this.system.weight.max;
+
+      // Iterate over each item
+      for (let item of this.items) {
+        totalPower += item.system.power;
+        totalWeight += item.system.weight;
+      }
+      this.system.power.value = maxPower - totalPower;
+      this.system.weight.value = maxWeight - totalWeight;
     }
   }
 
