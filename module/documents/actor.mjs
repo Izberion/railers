@@ -159,19 +159,35 @@ export class RailersActor extends Actor {
         this.system.speed = Math.max(this.system.speed, 2);
       }
 
-      // Initialize total loads
       let totalPower = 0;
       let totalWeight = 0;
       let maxPower = this.system.power.max;
       let maxWeight = this.system.weight.max;
 
+      let totalStandardSleep = 0;
+      let totalLuxurySleep = 0;
+      let totalStandardDine = 0;
+      let totalLuxuryDine = 0;
+
       // Iterate over each item
       for (let item of this.items) {
         totalPower += item.system.power;
         totalWeight += item.system.weight;
+
+        totalStandardSleep += item.system.capacity.standard.sleep;
+        totalLuxurySleep += item.system.capacity.luxury.sleep;
+        totalStandardDine += item.system.capacity.standard.dine;
+        totalLuxuryDine += item.system.capacity.luxury.dine;
+        item.system.capacity.total = item.system.capacity.standard.sleep + item.system.capacity.luxury.sleep + item.system.capacity.standard.dine + item.system.capacity.luxury.dine;
       }
       this.system.power.value = maxPower - totalPower;
       this.system.weight.value = maxWeight - totalWeight;
+
+      this.system.capacity.standard.sleep = totalStandardSleep;
+      this.system.capacity.luxury.sleep = totalLuxurySleep;
+      this.system.capacity.standard.dine = totalStandardDine;
+      this.system.capacity.luxury.dine = totalLuxuryDine;
+
     }
   }
 

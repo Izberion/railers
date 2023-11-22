@@ -1,3 +1,31 @@
+<div class="grid grid-4col">
+  <div class="resource flex-group-center">
+    <label class="resource-label">Standard Sleep Capacity</label>
+    <div class="resource-content flexrow flex-center flex-between">
+      <input type="number" name="system.capacity.standard.sleep" value="{{system.capacity.standard.sleep}}" data-dtype="Number" readonly/>
+    </div>
+  </div>
+  <div class="resource flex-group-center">
+    <label class="resource-label">Luxury Sleep Capacity</label>
+    <div class="resource-content flexrow flex-center flex-between">
+      <input type="number" name="system.capacity.luxury.sleep" value="{{system.capacity.luxury.sleep}}" data-dtype="Number" readonly/>
+    </div>
+  </div>
+  <div class="resource flex-group-center">
+    <label class="resource-label">Standard Dining Capacity</label>
+    <div class="resource-content flexrow flex-center flex-between">
+      <input type="number" name="system.capacity.standard.dine" value="{{system.capacity.standard.dine}}" data-dtype="Number" readonly/>
+    </div>
+  </div>
+  <div class="resource flex-group-center">
+    <label class="resource-label">Luxury Dining Capacity</label>
+    <div class="resource-content flexrow flex-center flex-between">
+      <input type="number" name="system.capacity.luxury.dine" value="{{system.capacity.luxury.dine}}" data-dtype="Number" readonly/>
+    </div>
+  </div>
+</div>
+
+
 {{!-- Item List --}}
 <ol class="items-list">
   <li class="item flexrow items-header">
@@ -9,11 +37,11 @@
     <!-- <div class="item-status">Damaged</div>
     <div class="item-status">Destroyed</div> -->
     <div class="item-controls">
-      <a class="item-control item-create" title="Create item" data-type="trainCar"><i class="fas fa-plus"></i> Add item</a>
+      <a class="item-control item-create" title="Create item" data-type="car"><i class="fas fa-plus"></i> Add item</a>
     </div>
   </li>
   {{#each items as |item id|}}
-    {{#if (eq item.type "trainCar")}}
+    {{#if (eq item.type "car")}}
     <li class="item flexrow" data-item-id="{{item._id}}">
       <div class="item-name">
         <div class="item-image">
@@ -22,7 +50,7 @@
         <h4>{{item.name}}</h4>
       </div>
       <div class="item-armor textcenter">{{item.system.armor}}</div>
-      <div class="item-capacity textcenter">{{item.system.capacity}}</div>
+      <div class="item-capacity textcenter">{{item.system.capacity.total}}</div>
       <div class="item-power textcenter">{{item.system.power}}</div>
       <div class="item-weight textcenter">{{item.system.weight}}</div>
       <!-- <div class="item-status textcenter">
