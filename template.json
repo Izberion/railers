@@ -4,7 +4,8 @@
             "character",
             "npc",
             "demon",
-            "train"
+            "train",
+            "mapflower"
         ],
         "templates": {
             "base": {
@@ -280,6 +281,9 @@
                     "dine": 0
                 }                
             }
+        },
+        "mapflower": {
+            
         }
     },
     "Item": {
@@ -290,6 +294,7 @@
             "weapon",
             "clothing",
             "car",
+            "cargo",
             "ability"
         ],
         "templates": {
@@ -350,20 +355,17 @@
             "type": "",
             "weight": 0,
             "power": 0,
-            "capacity": {
-                "total": 0,
-                "standard": {
-                    "sleep": 0,
-                    "dine": 0
-                },
-                "luxury": {
-                    "sleep": 0,
-                    "dine": 0
-                }
-            },
+            "capacity": 0,
             "armor": 0,
             "damaged": "",
             "destroyed": ""
+        },
+        "cargo": {
+            "templates": [
+                "base"
+            ],
+            "price": 0,
+            "weight": 0
         },
         "feature": {
             "templates": [

@@ -205,6 +205,38 @@ export class RailersActorSheet extends ActorSheet {
 
 
     html.find('select[name="system.locomotive"]').change(this._onLocomotiveChange.bind(this));
+   
+    
+
+    // Handle click events on the hexes
+    html.on('click', '.hex', (event) => {
+      const hexes = html.find('.hex');
+      let hexStates = [];
+      hexes.each((i, h) => {
+        h.classList.remove('active');
+        h.classList.add('inactive');
+        hexStates.push('inactive'); // Record the state of each hex
+      });
+      event.currentTarget.classList.remove('inactive');
+      event.currentTarget.classList.add('active');
+      hexStates[hexes.index(event.currentTarget)] = 'active'; // Record the state of the clicked hex
+
+      // Store the hex states in the actor's flags
+      this.actor.setFlag('railers', 'hexStates', hexStates);
+    });
+
+    // After the listeners are activated, retrieve the hex states from the actor's flags
+    let hexStates = this.actor.getFlag('railers', 'hexStates');
+
+    // If the hex states exist, apply them to the corresponding hex
+    if (hexStates) {
+      const hexes = html.find('.hex');
+      hexes.each((i, h) => {
+        h.classList.remove('active', 'inactive');
+        h.classList.add(hexStates[i]);
+      });
+    }
+    
     
   }
 

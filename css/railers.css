@@ -520,3 +520,101 @@
   align-self: center;
   font-size: 16px;
 }
+
+.railers .flower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.railers .hex {
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 96px;
+  margin: -8px -12px;
+  background-color: #ffffff;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.railers .hex.inactive::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.railers .hex.active::after {
+  content: none;
+}
+
+.railers .hex img {
+  object-fit: fill;
+  border: none;
+}
+
+.railers .d12hex-wrapper {
+  padding: 25px; /* Adjust this value as needed */
+}
+
+.railers .d12hex {
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 96px;
+  margin: -8px -12px;
+  background-color: #ffffff;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.railers .d12hex .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.railers .d12hex .face {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.railers .d12hex .face.top {
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.railers .d12hex .face.right-top {
+  top: 0;
+  right: -25px;
+}
+
+.railers .d12hex .face.right-bottom {
+  bottom: 0;
+  right: -25px;
+}
+
+.railers .d12hex .face.bottom {
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.railers .d12hex .face.left-bottom {
+  bottom: 0;
+  left: -25px;
+}
+
+.railers .d12hex .face.left-top {
+  top: 0;
+  left: -50px;
+}
