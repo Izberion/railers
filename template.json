@@ -5,7 +5,7 @@
             "npc",
             "demon",
             "train",
-            "mapflower"
+            "terrain"
         ],
         "templates": {
             "base": {
@@ -282,7 +282,7 @@
                 }                
             }
         },
-        "mapflower": {
+        "terrain": {
             
         }
     },

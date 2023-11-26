@@ -376,6 +376,13 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+.railers .demon .items-list .item-name {
+  flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+}
+
 .railers .items-list .item-name h3, .railers .items-list .item-name h4,
 .railers .clothing-list .clothing-name h3, .railers .clothing-list .clothing-name h4,
 .railers .weapons-list .weapon-name h3, .railers .weapons-list .weapon-name h4 {
@@ -553,13 +560,18 @@
   content: none;
 }
 
-.railers .hex img {
+.railers .hex img,
+.railers .d12hex img {
   object-fit: fill;
   border: none;
 }
 
 .railers .d12hex-wrapper {
-  padding: 25px; /* Adjust this value as needed */
+  position: relative;
+  padding: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .railers .d12hex {
@@ -567,7 +579,6 @@
   position: relative;
   width: 100px;
   height: 96px;
-  margin: -8px -12px;
   background-color: #ffffff;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }
@@ -580,41 +591,50 @@
   text-align: center;
 }
 
-.railers .d12hex .face {
+.railers .d12hex-wrapper .face {
   position: absolute;
   width: 50px;
   height: 50px;
   text-align: center;
 }
 
-.railers .d12hex .face.top {
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
+.railers .d12hex-wrapper .face.top {
+  transform: translate(0%, -75%);
 }
 
-.railers .d12hex .face.right-top {
-  top: 0;
-  right: -25px;
+.railers .d12hex-wrapper .face.right-top {
+  transform: translate(100%, -25%);
 }
 
-.railers .d12hex .face.right-bottom {
-  bottom: 0;
-  right: -25px;
+.railers .d12hex-wrapper .face.right-bottom {
+  transform: translate(100%, 85%);
 }
 
-.railers .d12hex .face.bottom {
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
+.railers .d12hex-wrapper .face.bottom {
+  transform: translate(0%, 145%);
 }
 
-.railers .d12hex .face.left-bottom {
-  bottom: 0;
-  left: -25px;
+.railers .d12hex-wrapper .face.left-bottom {
+  transform: translate(-100%, 85%);
 }
 
-.railers .d12hex .face.left-top {
-  top: 0;
-  left: -50px;
+.railers .d12hex-wrapper .face.left-top {
+  transform: translate(-100%, -25%);
+}
+
+.dice-results {
+  flex: 0 0 100%;
+  position: relative;
+  margin: 5px 0 0 0;
+  line-height: 24px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border-light-2);
+  border-radius: 3px;
+  box-shadow: 0 0 2px #FFF inset;
+  word-break: break-all;
+}
+
+.railers .ability-description {
+  flex: 2;
 }

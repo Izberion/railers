@@ -206,28 +206,138 @@ export class RailersActorSheet extends ActorSheet {
 
     html.find('select[name="system.locomotive"]').change(this._onLocomotiveChange.bind(this));
    
-    
 
-    // Handle click events on the hexes
-    html.on('click', '.hex', (event) => {
-      const hexes = html.find('.hex');
+
+    let hexes = {
+      "(0,0)": ["(1,0)", "(1,1)", "(0,1)", "(2,0)", "(4,2)", "(0,3)"],
+      "(0,1)": ["(1,1)", "(1,2)", "(0,2)", "(3,0)", "(3,3)", "(0,0)"],
+      "(0,2)": ["(1,2)", "(1,3)", "(0,0)", "(4,0)", "(2,4)", "(0,1)"],
+      "(1,0)": ["(2,0)", "(2,1)", "(1,1)", "(0,0)", "(4,1)", "(1,3)"],
+      "(1,1)": ["(2,1)", "(2,2)", "(1,2)", "(0,1)", "(0,0)", "(1,0)"],
+      "(1,2)": ["(2,2)", "(2,3)", "(1,3)", "(0,2)", "(0,1)", "(1,1)"],
+      "(1,3)": ["(2,3)", "(2,4)", "(1,0)", "(4,1)", "(0,2)", "(1,2)"],
+      "(2,0)": ["(0,0)", "(3,0)", "(2,1)", "(1,0)", "(4,0)", "(2,4)"],
+      "(2,1)": ["(3,0)", "(3,1)", "(2,2)", "(1,1)", "(1,0)", "(2,0)"],
+      "(2,2)": ["(3,1)", "(3,2)", "(2,3)", "(1,2)", "(1,1)", "(2,1)"],
+      "(2,3)": ["(3,2)", "(3,3)", "(2,4)", "(1,3)", "(1,2)", "(2,2)"],
+      "(2,4)": ["(3,3)", "(3,0)", "(0,2)", "(2,0)", "(1,3)", "(2,3)"],
+      "(3,0)": ["(0,1)", "(4,0)", "(3,1)", "(2,1)", "(2,0)", "(3,3)"],
+      "(3,1)": ["(4,0)", "(4,1)", "(3,2)", "(2,2)", "(2,1)", "(3,0)"],
+      "(3,2)": ["(4,1)", "(4,2)", "(3,3)", "(2,3)", "(2,2)", "(3,1)"],
+      "(3,3)": ["(4,2)", "(0,1)", "(3,0)", "(2,4)", "(2,3)", "(3,2)"],
+      "(4,0)": ["(0,2)", "(2,0)", "(4,1)", "(3,1)", "(3,0)", "(4,2)"],
+      "(4,1)": ["(1,3)", "(1,0)", "(4,2)", "(3,2)", "(3,1)", "(4,0)"],
+      "(4,2)": ["(2,4)", "(0,0)", "(4,0)", "(3,3)", "(3,2)", "(4,1)"]  
+    };
+
+
+
+    html.on('click', '.hex, .d12hex', async (event) => {
+      const hexesElements = html.find('.hex');
       let hexStates = [];
-      hexes.each((i, h) => {
-        h.classList.remove('active');
-        h.classList.add('inactive');
-        hexStates.push('inactive'); // Record the state of each hex
-      });
-      event.currentTarget.classList.remove('inactive');
-      event.currentTarget.classList.add('active');
-      hexStates[hexes.index(event.currentTarget)] = 'active'; // Record the state of the clicked hex
+      let coordinates, roll, index;
+    
+      // Mapping of image file names to terrain types
+      const terrainTypes = {
+        'snowhex.svg': 'Snow',
+        'hillhex.svg': 'Hill',
+        'icehex.svg': 'Ice',
+        'flathex.svg': 'Flat',
+        'mountainhex.svg': 'Mountain'
+      };
+    
+      if ($(event.currentTarget).hasClass('d12hex')) {
+        // Roll a d12
+        roll = await new Roll('1d12').roll();
 
+        // Get the default roll result HTML
+        const rollResultHTML = await roll.render();
+    
+        // Log the result to the console for debugging
+        console.log(`Rolled a ${roll.total}`);
+    
+        // Get the coordinates of the active hex
+        coordinates = hexesElements.filter('.active').data('coordinates');
+    
+        // Get the image src of the active hex
+        const imgSrc = html.find(`.hex[data-coordinates="${coordinates}"]`).find('img').attr('src');
+    
+        // Extract the file name from the src
+        const fileName = imgSrc.split('/').pop();
+    
+        // Get the terrain type based on the file name
+        const terrainType = terrainTypes[fileName];
+    
+        // If the roll is even, calculate the new active hex and its terrain
+        if (roll.total % 2 === 0) {
+          // Calculate the index of the new active hex based on the roll
+          index = Math.floor(roll.total / 2) - 1;
+    
+          // Get the adjacent hexes
+          let adjacentHexes = hexes[coordinates];
+    
+          // Make sure the index is within the bounds of the array
+          if (index < 0 || index >= adjacentHexes.length) return;
+    
+          // Get the coordinates of the new active hex
+          let newCoordinates = adjacentHexes[index];
+    
+          // Find the new active hex
+          let newActiveHex = html.find(`.hex[data-coordinates="${newCoordinates}"]`);
+    
+          // Get the image src of the new active hex
+          const newImgSrc = newActiveHex.find('img').attr('src');
+    
+          // Extract the file name from the src
+          const newFileName = newImgSrc.split('/').pop();
+    
+          // Get the terrain type based on the file name
+          const newTerrainType = terrainTypes[newFileName];
+    
+          // Output the roll and the new terrain type to the chat
+          roll.toMessage({
+            flavor: `Rolled on the Terrain Flower`,
+            content: `${rollResultHTML}<div class="dice-results">${newTerrainType} Terrain</div>`,
+            speaker: ChatMessage.getSpeaker({ actor: this.actor })
+          });
+    
+          // Make all hexes inactive
+          hexesElements.removeClass('active').addClass('inactive');
+          hexStates = hexesElements.map(() => 'inactive').toArray()
+    
+          // Make the new hex active
+          newActiveHex.removeClass('inactive').addClass('active');
+    
+          // Record the state of the new active hex
+          hexStates[hexesElements.index(newActiveHex)] = 'active'; 
+        } else {
+          // If the roll is odd, output the roll and the current terrain type to the chat
+          roll.toMessage({
+            flavor: `Rolled on the Terrain Flower`,
+            content: `${rollResultHTML}<div class="dice-results">${terrainType} Terrain</div>`,
+            speaker: ChatMessage.getSpeaker({ actor: this.actor })
+          })
+          return;
+        }
+      } else {
+        // Handle manual hex selection
+        hexesElements.each((i, h) => {
+          h.classList.remove('active');
+          h.classList.add('inactive');
+          hexStates.push('inactive'); // Record the state of each hex
+        });
+        event.currentTarget.classList.remove('inactive');
+        event.currentTarget.classList.add('active');
+        hexStates[hexesElements.index(event.currentTarget)] = 'active'; // Record the state of the clicked hex
+      }
+    
       // Store the hex states in the actor's flags
       this.actor.setFlag('railers', 'hexStates', hexStates);
     });
-
+    
     // After the listeners are activated, retrieve the hex states from the actor's flags
     let hexStates = this.actor.getFlag('railers', 'hexStates');
-
+    
     // If the hex states exist, apply them to the corresponding hex
     if (hexStates) {
       const hexes = html.find('.hex');
@@ -237,7 +347,23 @@ export class RailersActorSheet extends ActorSheet {
       });
     }
     
+
+
+
+    let hexImages = html.find('.draggable-hex');
+
+    // Add draggable attribute and event listener to each image
+    hexImages.each((i, img) => {
+      img.setAttribute('draggable', 'true');
+      img.addEventListener('dragstart', this._onDragStart.bind(this));
+    });
     
+    // Remove any existing drop event listeners on the canvas
+    canvas.app.view.removeEventListener('drop', this._onDrop);
+    
+    // Listen for drop events on the canvas
+    canvas.app.view.addEventListener('drop', this._onDrop);
+
   }
 
   
@@ -286,6 +412,7 @@ export class RailersActorSheet extends ActorSheet {
 
             const r = new Roll(rollFormula);
             await r.roll();
+            const rollResultHTML = await r.render();
             const rollTotal = r.total;
 
             let successType;
@@ -293,7 +420,7 @@ export class RailersActorSheet extends ActorSheet {
             if (rollFormula === "0") {
               successType = "Automatic Failure";
             }
-            if (!isNaN(skillpool)) {
+            else if (!isNaN(skillpool)) {
               if (rollTotal < 0) {
                 successType = "Complicated Failure";
               } else if (rollTotal === 0) {
@@ -321,6 +448,7 @@ export class RailersActorSheet extends ActorSheet {
                 alias: characterName,
               },
               flavor: !isNaN(npcpool) ? `Making a roll at TN ${tn}` : `Rolling a ${rollName} ${!isNaN(skillpool) ? 'check' : 'save'} at TN${tn}`,
+              content: `${rollResultHTML}<div class="dice-results">${successType}</div>`,
             });
             return {};
           },
@@ -518,5 +646,59 @@ export class RailersActorSheet extends ActorSheet {
   }
   
 
+  _onDragStart(event) {
+    // Store the source image URL and dimensions in the dataTransfer object
+    let img = event.target.src;
+    let width = 120;
+    let height = 105;
+
+    // Create a temporary Tile data object
+    let tileData = {
+      img: img,
+      width: width,
+      height: height,
+      x: 0,
+      y: 0,
+      z: 0,
+      rotation: 0,
+      hidden: false,
+      locked: false
+    };
+
+    // Set the data for the drag event
+    event.dataTransfer.setData('text/plain', JSON.stringify(tileData));
+  }
+
+  async _onDrop(event) {
+    event.preventDefault();
+  
+    // Parse the data from the event
+    let data = JSON.parse(event.dataTransfer.getData('text/plain'));
+  
+    // Acquire the cursor position transformed to Canvas coordinates
+    const [x, y] = [event.clientX, event.clientY];
+    const t = canvas.app.stage.worldTransform;
+    data.x = (x - t.tx) / canvas.app.stage.scale.x;
+    data.y = (y - t.ty) / canvas.app.stage.scale.y;
+  
+    // Create the Tile
+    await canvas.scene.createEmbeddedDocuments("Tile", [data]);
+  
+    console.log(data);
+  }
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
 
 }
