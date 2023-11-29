@@ -687,18 +687,4 @@ export class RailersActorSheet extends ActorSheet {
     console.log(data);
   }
 
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-
 }
