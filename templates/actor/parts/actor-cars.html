@@ -1,15 +1,15 @@
 {{!-- Item List --}}
 <ol class="items-list">
   <li class="item flexrow items-header">
-    <div class="item-name">Name</div>
-    <div class="item-armor">Armor</div>
-    <div class="item-capacity">Capacity</div>
-    <div class="item-power">Power</div>
-    <div class="item-weight">Weight</div>
+    <div class="item-name">{{localize "RAILERS.Name"}}</div>
+    <div class="item-armor">{{localize "RAILERS.Armor"}}</div>
+    <div class="item-capacity">{{localize "RAILERS.Capacity"}}</div>
+    <div class="item-power">{{localize "RAILERS.Power"}}</div>
+    <div class="item-weight">{{localize "RAILERS.Weight"}}</div>
     <!-- <div class="item-status">Damaged</div>
     <div class="item-status">Destroyed</div> -->
     <div class="item-controls">
-      <a class="item-control item-create" title="Create item" data-type="car"><i class="fas fa-plus"></i> Add cars</a>
+      <a class="item-control item-create" title="{{localize 'RAILERS.AddCar'}}" data-type="car"><i class="fas fa-plus"></i> {{localize "RAILERS.AddCar"}}</a>
     </div>
   </li>
   {{#each items as |item id|}}
@@ -32,8 +32,8 @@
         <input type="checkbox" name="item.system.destroyed" {{checked item.system.destroyed}}/>
       </div> -->
       <div class="item-controls">
-        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
-        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+        <a class="item-control item-edit" title="{{localize 'RAILERS.EditCar'}}"><i class="fas fa-edit"></i></a>
+        <a class="item-control item-delete" title="{{localize 'RAILERS.DeleteCar}}"><i class="fas fa-trash"></i></a>
       </div>
     </li>
     {{/if}}

@@ -1,11 +1,11 @@
   {{!-- Item List --}}
   <ol class="items-list">
     <li class="item flexrow items-header">
-      <div class="item-name">Name</div>
-      <div class="ability-action">Action</div>
-      <div class="ability-description">Description</div>
+      <div class="item-name">{{localize "RAILERS.Name"}}</div>
+      <div class="ability-action">{{localize "RAILERS.Action"}}</div>
+      <div class="ability-description">{{localize "RAILERS.Description"}}</div>
       <div class="ability-controls">
-        <a class="ability-control item-create" title="Create item" data-type="ability"><i class="fas fa-plus"></i> Add item</a>
+        <a class="ability-control item-create" title="{{localize 'RAILERS.AddAbility'}}" data-type="ability"><i class="fas fa-plus"></i> {{localize "RAILERS.AddAbility"}}</a>
       </div>
     </li>
     {{#each items as |item id|}}
@@ -20,8 +20,8 @@
         <div class="ability-action textcenter">{{item.system.action}}</div>
         <div class="ability-description">{{{item.system.description}}}</div>
         <div class="ability-controls">
-          <a class="ability-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
-          <a class="ability-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+          <a class="ability-control item-edit" title="{{localize 'RAILERS.AddWound'}}"><i class="fas fa-edit"></i></a>
+          <a class="ability-control item-delete" title="{{localize 'RAILERS.AddWound'}}"><i class="fas fa-trash"></i></a>
         </div>
       </li>
       {{/if}}

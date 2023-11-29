@@ -2,11 +2,11 @@
   {{#each effects as |section sid|}}
     <li class="items-header flexrow" data-effect-type="{{section.type}}">
       <h3 class="item-name effect-name flexrow">{{localize section.label}}</h3>
-      <div class="effect-description">Description</div>
-      <div class="effect-source">Duration</div>
+      <div class="effect-description">{{localize "RAILERS.Description"}}</div>
+      <div class="effect-source">{{localize "RAILERS.Duration"}}</div>
       <div class="item-controls effect-controls flexrow">
         <a class="effect-control" data-action="create" title="{{localize 'RAILERS.EffectCreate'}}">
-          <i class="fas fa-plus"></i> {{localize "RAILERS.Add"}}
+          <i class="fas fa-plus"></i> {{localize "RAILERS.Add"}} 
         </a>
       </div>
     </li>

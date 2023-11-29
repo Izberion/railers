@@ -13,7 +13,7 @@
 
     {{!-- HP --}}
     <div class="resource flex-group-center">
-      <label for="system.hitpoints.value" class="resource-label">Hitpoints</label>
+      <label for="system.hitpoints.value" class="resource-label">{{localize "RAILERS.Hitpoints"}}</label>
       <div class="resource-content flexrow flex-center flex-between">
         <input type="number" name="system.hitpoints.value" value="{{system.hitpoints.value}}" data-dtype="Number" readonly/>
         <span> / </span>
@@ -23,7 +23,7 @@
 
     {{!-- Nerve --}}
     <div class="resource flex-group-center">
-      <label for="system.nerve.value" class="resource-label">Nerve</label>
+      <label for="system.nerve.value" class="resource-label">{{localize "RAILERS.Nerve"}}</label>
       <div class="resource-content flexrow flex-center flex-between">
         <input type="number" name="system.nerve.value" value="{{system.nerve.value}}" data-dtype="Number"/>
         <span> / </span>
@@ -33,7 +33,7 @@
 
     {{!-- Wounds --}}
     <div class="resource flex-group-center">
-      <label for="system.wounds.value" class="resource-label">Wounds</label>
+      <label for="system.wounds.value" class="resource-label">{{localize "RAILERS.Wounds"}}</label>
       <div class="resource-content flexrow flex-center flex-between">
         <input type="number" name="system.wounds.value" value="{{system.wounds.value}}" data-dtype="Number" readonly/>
         <span> / </span>
@@ -43,7 +43,7 @@
 
     {{!-- Corruption --}}
     <div class="resource flex-group-center">
-      <label for="system.power.value" class="resource-label">Corruption</label>
+      <label for="system.power.value" class="resource-label">{{localize "RAILERS.Corruption"}}</label>
       <div class="resource-content flexrow flex-center flex-between">
         <input type="number" name="system.corruption.value" value="{{system.corruption.value}}" data-dtype="Number"/>
       </div>
@@ -51,25 +51,25 @@
 
     {{!-- Thermal Threshold --}}
     <div class="resource flex-group-center">
-      <label class="resource-label">Thermal Threshold</label>
+      <label class="resource-label">{{localize "RAILERS.ThermalThreshold"}}</label>
       <input type="number" name="system.thermalThreshold" value="{{system.thermalThreshold}}" data-dtype="Number" readonly/>
     </div>
 
     {{!-- Initiative Pool --}}
     <div class="resource flex-group-center">
-      <label class="resource-label">Initiative Pool</label>
+      <label class="resource-label">{{localize "RAILERS.InitiativePool"}}</label>
       <input type="number" name="system.initiativePool" value="{{system.initiativePool}}" data-dtype="Number" readonly/>
     </div>
 
     {{!-- Defense Pool --}}
     <div class="resource flex-group-center">
-      <label class="resource-label rollable" data-roll="(@defensePool)d8x8cs>=5df1">Defense Pool</label>
+      <label class="resource-label rollable" data-roll="(@defensePool)d8x8cs>=5df1">{{localize "RAILERS.DefensePool"}}</label>
       <input type="number" name="system.defensePool" value="{{system.defensePool}}" data-dtype="Number" readonly/>
     </div>
 
     {{!-- XP --}}
     <div class="resource flex-group-center">
-      <label class="resource-label">XP</label>
+      <label class="resource-label">{{localize "RAILERS.XP"}}</label>
       <input type="number" name="system.xp" value="{{system.xp}}" data-dtype="Number"/>
     </div>
 
@@ -78,11 +78,11 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
-    <a class="item" data-tab="biography">Biography</a>
-    <a class="item" data-tab="skills">Skills</a>
-    <a class="item" data-tab="gear">Gear</a>
-    <a class="item" data-tab="wounds">Wounds</a>
-    <a class="item" data-tab="effects">Effects</a>
+    <a class="item" data-tab="biography">{{localize "RAILERS.Biography"}}</a>
+    <a class="item" data-tab="skills">{{localize "RAILERS.Skills"}}</a>
+    <a class="item" data-tab="gear">{{localize "RAILERS.Gear"}}</a>
+    <a class="item" data-tab="wounds">{{localize "RAILERS.Wounds"}}</a>
+    <a class="item" data-tab="effects">{{localize "RAILERS.Effects"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}

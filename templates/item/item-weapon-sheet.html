@@ -5,20 +5,20 @@
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
       <div class="grid grid-3col">
         <div class="resource">
-          <label class="resource-label">Quantity</label>
+          <label class="resource-label">{{localize "RAILERS.Quantity"}}</label>
           <input type="number" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
         </div>
         <div class="resource">
-          <label class="resource-label">Load</label>
+          <label class="resource-label">{{localize "RAILERS.Load"}}</label>
           <input type="number" name="system.load" value="{{system.load}}" data-dtype="Number"/>
         </div>
         <div class="resource">
-          <label class="resource-label">Stowage</label>
+          <label class="resource-label">{{localize "RAILERS.Stowage"}}</label>
           <select name="system.stowage">
             {{#select system.stowage}}
-            <option value="onHand">On Hand</option>
-            <option value="stowed">Stowed</option>
-            <option value="other">Other</option>
+            <option value="onHand">{{localize "RAILERS.OnHand"}}</option>
+            <option value="stowed">{{localize "RAILERS.Stowed"}}</option>
+            <option value="other">{{localize "RAILERS.Other"}}</option>
             {{/select}}
           </select>
         </div>
@@ -28,8 +28,8 @@
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="attributes">Attributes</a>
+    <a class="item" data-tab="description">{{localize "RAILERS.Description"}}</a>
+    <a class="item" data-tab="attributes">{{localize "RAILERS.Attributes"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -43,53 +43,53 @@
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
       <div class="resource">
-        <label class="resource-label">Roll Formula</label>
+        <label class="resource-label">{{localize "RAILERS.RollFormula"}}</label>
         <input type="text" name="system.formula" value="{{system.formula}}" data-dtype="String"/>
       </div>
       <div class="resource">
-        <label class="resource-label">Damage</label>
+        <label class="resource-label">{{localize "RAILERS.Damage"}}</label>
         <input type="number" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
       </div>
       <div class="resource">
-        <label class="resource-label">Severity</label>
+        <label class="resource-label">{{localize "RAILERS.Severity"}}</label>
         <input type="number" name="system.severity" value="{{system.severity}}" data-dtype="Number"/>
       </div>
       <div class="resource">
-        <label class="resource-label">Attack</label>
+        <label class="resource-label">{{localize "RAILERS.Attack"}}</label>
         <select name="system.attack">
           {{#select item.system.attack}}
-          <option value="maneuver">Maneuver</option>
-          <option value="minor">Minor</option>
-          <option value="major">Major</option>
-          <option value="full">Full</option>
+          <option value="maneuver">{{localize "RAILERS.Maneuver"}}</option>
+          <option value="minor">{{localize "RAILERS.Minor"}}</option>
+          <option value="major">{{localize "RAILERS.Major"}}</option>
+          <option value="full">{{localize "RAILERS.Full"}}</option>
           {{/select}}
         </select>
       </div>
       <div class="resource">
-        <label class="resource-label">Range</label>
+        <label class="resource-label">{{localize "RAILERS.Range"}}</label>
         <select name="system.range">
           {{#select item.system.range}}
-          <option value="melee">Melee</option>
-          <option value="short">Short</option>
-          <option value="medium">Medium</option>
-          <option value="long">Long</option>
-          <option value="extreme">Extreme</option>
+          <option value="melee">{{localize "RAILERS.Melee"}}</option>
+          <option value="short">{{localize "RAILERS.Short"}}</option>
+          <option value="medium">{{localize "RAILERS.Medium"}}</option>
+          <option value="long">{{localize "RAILERS.Long"}}</option>
+          <option value="extreme">{{localize "RAILERS.Extreme"}}</option>
           {{/select}}
         </select>
       </div>
       <div class="resource">
-        <label class="resource-label">Reload</label>
+        <label class="resource-label">{{localize "RAILERS.Reload"}}</label>
         <select name="system.reload">
           {{#select item.system.reload}}
-          <option value="maneuver">Maneuver</option>
-          <option value="minor">Minor</option>
-          <option value="major">Major</option>
-          <option value="full">Full</option>
+          <option value="maneuver">{{localize "RAILERS.Maneuver"}}</option>
+          <option value="minor">{{localize "RAILERS.Minor"}}</option>
+          <option value="major">{{localize "RAILERS.Major"}}</option>
+          <option value="full">{{localize "RAILERS.Full"}}</option>
           {{/select}}
         </select>
       </div>
       <div class="resource">
-        <label class="resource-label">Magazine</label>
+        <label class="resource-label">{{localize "RAILERS.Magazine"}}</label>
         <input type="number" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
       </div>
     </div>

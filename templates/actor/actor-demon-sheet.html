@@ -14,7 +14,7 @@
   
       {{!-- HP --}}
       <div class="resource flex-group-center">
-        <label for="system.hitpoints.value" class="resource-label">Hitpoints</label>
+        <label for="system.hitpoints.value" class="resource-label">{{localize "RAILERS.Hitpoints"}}</label>
         <div class="resource-content flexrow flex-center flex-between">
           <input type="number" name="system.hitpoints.value" value="{{system.hitpoints.value}}" data-dtype="Number" readonly/>
           <span> / </span>
@@ -24,7 +24,7 @@
   
       {{!-- Wounds --}}
       <div class="resource flex-group-center">
-        <label for="system.wounds.value" class="resource-label">Wounds</label>
+        <label for="system.wounds.value" class="resource-label">{{localize "RAILERS.Wounds"}}</label>
         <div class="resource-content flexrow flex-center flex-between">
           <input type="number" name="system.wounds.value" value="{{system.wounds.value}}" data-dtype="Number" readonly/>
           <span> / </span>
@@ -34,32 +34,32 @@
   
       {{!-- Attributes --}}
       <div class="resource flex-group-center">
-        <label for="system.attributes.strength" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.strength}}">Strength</label>
+        <label for="system.attributes.strength" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.strength}}">{{localize "RAILERS.Strength"}}</label>
         <input type="number" name="system.attributes.strength" value="{{system.attributes.strength}}" data-dtype="Number"/>
       </div>
   
       <div class="resource flex-group-center">
-        <label for="system.attributes.strength" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.agility}}">Agility</label>
+        <label for="system.attributes.strength" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.agility}}">{{localize "RAILERS.Agility"}}</label>
         <input type="number" name="system.attributes.agility" value="{{system.attributes.agility}}" data-dtype="Number"/>
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.attributes.intellect" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.intellect}}">Intellect</label>
+        <label for="system.attributes.intellect" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.intellect}}">{{localize "RAILERS.Intellect"}}</label>
         <input type="number" name="system.attributes.intellect" value="{{system.attributes.intellect}}" data-dtype="Number"/>
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.attributes.endurance" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.endurance}}">Endurance</label>
+        <label for="system.attributes.endurance" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.endurance}}">{{localize "RAILERS.Endurance"}}</label>
         <input type="number" name="system.attributes.endurance" value="{{system.attributes.endurance}}" data-dtype="Number"/>
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.attributes.fear" class="resource-label flex-group-center">Fear</label>
+        <label for="system.attributes.fear" class="resource-label flex-group-center">{{localize "RAILERS.Fear"}}</label>
         <input type="number" name="system.attributes.fear" value="{{system.attributes.fear}}" data-dtype="Number"/>
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.attributes.attack" class="resource-label flex-group-center">Attack</label>
+        <label for="system.attributes.attack" class="resource-label flex-group-center">{{localize "RAILERS.Attack"}}</label>
         <div class="resource-content flexrow flex-center flex-between">
             <input type="number" name="system.attributes.attack.damage" value="{{system.attributes.attack.damage}}" data-dtype="Number"/>
             <span> / W </span>
@@ -72,9 +72,9 @@
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
       {{!-- Default tab is specified in actor-sheet.mjs --}}
-      <a class="item" data-tab="abilities">Abilities</a>
-      <a class="item" data-tab="wounds">Wounds</a>
-      <a class="item" data-tab="effects">Effects</a>
+      <a class="item" data-tab="abilities">{{localize "RAILERS.Abilities"}}</a>
+      <a class="item" data-tab="wounds">{{localize "RAILERS.Wounds"}}</a>
+      <a class="item" data-tab="effects">{{localize "RAILERS.Effects"}}</a>
     </nav>
   
     {{!-- Sheet Body --}}

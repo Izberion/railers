@@ -7,16 +7,16 @@
         <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
         <select name="system.locomotive">
           {{#select system.locomotive}}
-          <option value="ace">Ace</option>
-          <option value="bigBrother">Big Brother</option>
-          <option value="comet">Comet</option>
-          <option value="compact">Compact</option>
-          <option value="donkey">Donkey</option>
-          <option value="dynamo">Dynamo</option>
-          <option value="flex">Flex</option>
-          <option value="joes">Joe's</option>
-          <option value="littleMan">Little Man</option>
-          <option value="marathoner">Marathoner</option>
+          <option value="ace">{{localize "RAILERS.LocomotiveAce"}}</option>
+          <option value="bigBrother">{{localize "RAILERS.LocomotiveBigBrother"}}</option>
+          <option value="comet">{{localize "RAILERS.LocomotiveComet"}}</option>
+          <option value="compact">{{localize "RAILERS.LocomotiveCompact"}}</option>
+          <option value="donkey">{{localize "RAILERS.LocomotiveDonkey"}}</option>
+          <option value="dynamo">{{localize "RAILERS.LocomotiveDynamo"}}</option>
+          <option value="flex">{{localize "RAILERS.LocomotiveFlex"}}</option>
+          <option value="joes">{{localize "RAILERS.LocomotiveJoes"}}</option>
+          <option value="littleMan">{{localize "RAILERS.LocomotiveLittleMan"}}</option>
+          <option value="marathoner">{{localize "RAILERS.LocomotiveMarathoner"}}</option>
           {{/select}}
         </select>
       </div>
@@ -26,21 +26,21 @@
     <aside class="sheet-sidebar">
 
       <div class="resource flex-group-center">
-        <label for="system.armor" class="resource-label">Armor</label>
+        <label for="system.armor" class="resource-label">{{localize "RAILERS.TrainArmor"}}</label>
         <div class="resource-content flexrow flex-center flex-between">
           <input type="number" name="system.armor" value="{{system.armor}}" data-dtype="Number"/>
         </div>
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.speed" class="resource-label">Max Speed</label>
+        <label for="system.speed" class="resource-label">{{localize "RAILERS.MaxSpeed"}}</label>
         <div class="resource-content flexrow flex-center flex-between">
           <input type="number" name="system.speed" value="{{system.speed}}" data-dtype="Number"/>
         </div>
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.power.value" class="resource-label">Power</label>
+        <label for="system.power.value" class="resource-label">{{localize "RAILERS.Power"}}</label>
         <div class="resource-content flexrow flex-center flex-between">
           <input type="number" name="system.power.value" value="{{system.power.value}}" data-dtype="Number"/>
           <span> / </span>
@@ -49,7 +49,7 @@
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.weight.value" class="resource-label">Weight</label>
+        <label for="system.weight.value" class="resource-label">{{localize "RAILERS.Weight"}}</label>
         <div class="resource-content flexrow flex-center flex-between">
           <input type="number" name="system.weight.value" value="{{system.weight.value}}" data-dtype="Number"/>
           <span> / </span>
@@ -58,7 +58,7 @@
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.fuel.value" class="resource-label">Fuel</label>
+        <label for="system.fuel.value" class="resource-label">{{localize "RAILERS.Fuel"}}</label>
         <div class="resource-content flexrow flex-center flex-between">
           <input type="number" name="system.fuel.value" value="{{system.fuel.value}}" data-dtype="Number"/>
           <span> / </span>
@@ -67,14 +67,14 @@
       </div>
       
       <div class="resource flex-group-center">
-        <label for="system.armor" class="resource-label">Crew</label>
+        <label for="system.armor" class="resource-label">{{localize "RAILERS.Crew"}}</label>
         <div class="resource-content flexrow flex-center flex-between">
           <input type="number" name="system.crew" value="{{system.crew}}" data-dtype="Number"/>
         </div>
       </div>
 
       <div class="resource flex-group-center">
-        <label for="system.armor" class="resource-label">Passengers</label>
+        <label for="system.armor" class="resource-label">{{localize "RAILERS.Passengers"}}</label>
         <div class="resource-content flexrow flex-center flex-between">
           <input type="number" name="system.passengers" value="{{system.passengers}}" data-dtype="Number"/>
         </div>
@@ -86,9 +86,9 @@
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
       {{!-- Default tab is specified in actor-sheet.mjs --}}
-      <a class="item" data-tab="cars">Cars</a>
-      <a class="item" data-tab="cargo">Cargo</a>
-      <a class="item" data-tab="notes">Notes</a>
+      <a class="item" data-tab="cars">{{localize "RAILERS.Cars"}}</a>
+      <a class="item" data-tab="cargo">{{localize "RAILERS.Cargo"}}</a>
+      <a class="item" data-tab="notes">{{localize "RAILERS.Notes"}}</a>
     </nav>
 
     <section class="sheet-body">

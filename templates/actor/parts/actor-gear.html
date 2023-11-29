@@ -1,18 +1,18 @@
 <div class="grid grid-3col">
   <div class="resource flex-group-center">
-    <label class="resource-label">Therms</label>
+    <label class="resource-label">{{localize "RAILERS.Therms"}}</label>
     <input type="number" name="system.therms" value="{{system.therms}}" data-dtype="Number"/>
   </div>
   <div class="resource flex-group-center grid-span-2">
-    <label class="resource-label">Load</label>
+    <label class="resource-label">{{localize "RAILERS.Load"}}</label>
     <div class="resource-content flexrow flex-center flex-between">
-      <label for="system.load.onHand.value">On Hand</label>
+      <label for="system.load.onHand.value">{{localize "RAILERS.OnHand"}}</label>
       <input type="number" name="system.load.onHand.value" value="{{system.load.onHand.value}}" data-dtype="Number" readonly/>
       <span> / </span>
       <input type="number" name="system.load.onHand.max" value="{{system.load.onHand.max}}" data-dtype="Number" readonly/>
     </div>
     <div class="resource-content flexrow flex-center flex-between">
-      <label for="system.load.stowed.value">Stowed</label>
+      <label for="system.load.stowed.value">{{localize "RAILERS.Stowed"}}</label>
       <input type="number" name="system.load.stowed.value" value="{{system.load.stowed.value}}" data-dtype="Number" readonly/>
       <span> / </span>
       <input type="number" name="system.load.stowed.max" value="{{system.load.stowed.max}}" data-dtype="Number"/>
@@ -23,12 +23,12 @@
 {{!-- Item List --}}
 <ol class="items-list">
   <li class="item flexrow items-header">
-    <div class="item-name">Name</div>
-    <div class="item-quantity">Quantity</div>
-    <div class="item-load">Load</div>
-    <div class="item-stowage">Stowage</div>
+    <div class="item-name">{{localize "RAILERS.Name"}}</div>
+    <div class="item-quantity">{{localize "RAILERS.Quantity"}}</div>
+    <div class="item-load">{{localize "RAILERS.Load"}}</div>
+    <div class="item-stowage">{{localize "RAILERS.Stowage"}}</div>
     <div class="item-controls">
-      <a class="item-control item-create" title="Create item" data-type="item"><i class="fas fa-plus"></i> Add item</a>
+      <a class="item-control item-create" title="{{localize 'RAILERS.AddItem'}}" data-type="item"><i class="fas fa-plus"></i> {{localize "RAILERS.AddItem"}}</a>
     </div>
   </li>
   {{#each items as |item id|}}
@@ -44,8 +44,8 @@
       <div class="item-load">{{item.system.load}}</div>
       <div class="item-stowage">{{item.system.stowage}}</div>
       <div class="item-controls">
-        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
-        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+        <a class="item-control item-edit" title="{{localize 'RAILERS.EditItem'}}"><i class="fas fa-edit"></i></a>
+        <a class="item-control item-delete" title="{{localize 'RAILERS.DeleteItem'}}"><i class="fas fa-trash"></i></a>
       </div>
     </li>
     {{/if}}
@@ -55,16 +55,16 @@
 {{!-- Weapon List --}}
 <ol class="weapons-list">
   <li class="weapon flexrow weapons-header items-header">
-    <div class="weapon-name textcenter">Name</div>
-    <div class="weapon-damage textcenter">Damage</div>
-    <div class="weapon-attack textcenter">Attack</div>
-    <div class="weapon-range textcenter">Range</div>
-    <div class="weapon-reload textcenter">Reload</div>
-    <div class="weapon-magazine textcenter">Magazine</div>
-    <div class="weapon-load textcenter">Load</div>
-    <div class="weapon-stowage textcenter">Stowage</div>
+    <div class="weapon-name textcenter">{{localize "RAILERS.Name"}}</div>
+    <div class="weapon-damage textcenter">{{localize "RAILERS.Damage"}}</div>
+    <div class="weapon-attack textcenter">{{localize "RAILERS.Attack"}}</div>
+    <div class="weapon-range textcenter">{{localize "RAILERS.Range"}}</div>
+    <div class="weapon-reload textcenter">{{localize "RAILERS.Reload"}}</div>
+    <div class="weapon-magazine textcenter">{{localize "RAILERS.Magazine"}}</div>
+    <div class="weapon-load textcenter">{{localize "RAILERS.Load"}}</div>
+    <div class="weapon-stowage textcenter">{{localize "RAILERS.Stowage"}}</div>
     <div class="weapon-controls">
-      <a class="weapon-control item-create" title="Create weapon" data-type="weapon"><i class="fas fa-plus"></i> Add weapon</a>
+      <a class="weapon-control item-create" title="{{localize 'RAILERS.AddWeapon'}}" data-type="weapon"><i class="fas fa-plus"></i> {{localize "RAILERS.AddWeapon"}}</a>
     </div>
   </li>
   {{#each items as |item id|}}
@@ -76,7 +76,7 @@
         </div>
         <h4>{{item.name}}</h4>
       </div>
-      <div class="weapon-damage textcenter">{{item.system.damage}}/W{{item.system.severity}}</div>
+      <div class="weapon-damage textcenter">{{item.system.damage}}{{localize "RAILERS.SlashWound"}}{{item.system.severity}}</div>
       <div class="weapon-attack textcenter">{{item.system.attack}}</div>
       <div class="weapon-range textcenter">{{item.system.range}}</div>
       <div class="weapon-reload textcenter">{{item.system.reload}}</div>
@@ -88,9 +88,9 @@
       <div class="weapon-load textcenter">{{item.system.load}}</div>
       <div class="weapon-stowage textcenter">{{item.system.stowage}}</div>
       <div class="weapon-controls">
-        <a class="weapon-control weapon-reload" title="Reload Weapon"><i class="fas fa-sync-alt"></i></a>
-        <a class="weapon-control item-edit" title="Edit Weapon"><i class="fas fa-edit"></i></a>
-        <a class="weapon-control item-delete" title="Delete Weapon"><i class="fas fa-trash"></i></a>
+        <a class="weapon-control weapon-reload" title="{{localize 'RAILERS.ReloadWeapon'}}"><i class="fas fa-sync-alt"></i></a>
+        <a class="weapon-control item-edit" title="{{localize 'RAILERS.EditWeapon'}}"><i class="fas fa-edit"></i></a>
+        <a class="weapon-control item-delete" title="{{localize 'RAILERS.EditWeapon'}}"><i class="fas fa-trash"></i></a>
       </div>
     </li>
     {{/if}}
@@ -100,14 +100,14 @@
 {{!-- Clothing List --}}
 <ol class="clothing-list">
   <li class="clothing flexrow clothing-header items-header">
-    <div class="clothing-name textcenter">Name</div>
-    <div class="clothing-type textcenter">Type</div>
-    <div class="clothing-protection textcenter">Protection</div>
-    <div class="clothing-insulation textcenter">Insulation</div>
-    <div class="clothing-load textcenter">Load</div>
-    <div class="clothing-stowage textcenter">Stowage</div>
+    <div class="clothing-name textcenter">{{localize "RAILERS.Name"}}</div>
+    <div class="clothing-type textcenter">{{localize "RAILERS.Type"}}</div>
+    <div class="clothing-protection textcenter">{{localize "RAILERS.Protection"}}</div>
+    <div class="clothing-insulation textcenter">{{localize "RAILERS.Insulation"}}</div>
+    <div class="clothing-load textcenter">{{localize "RAILERS.Load"}}</div>
+    <div class="clothing-stowage textcenter">{{localize "RAILERS.Stowage"}}</div>
     <div class="clothing-controls">
-      <a class="clothing-control item-create" title="Create clothing" data-type="clothing"><i class="fas fa-plus"></i> Add clothing</a>
+      <a class="clothing-control item-create" title="{{localize 'RAILERS.AddClothing'}}" data-type="clothing"><i class="fas fa-plus"></i>{{localize "RAILERS.AddClothing"}}</a>
     </div>
   </li>
   {{#each items as |item id|}}
@@ -125,8 +125,8 @@
       <div class="clothing-load textcenter">{{item.system.load}}</div>
       <div class="clothing-stowage textcenter">{{item.system.stowage}}</div>
       <div class="clothing-controls">
-        <a class="clothing-control item-edit" title="Edit Clothing"><i class="fas fa-edit"></i></a>
-        <a class="clothing-control item-delete" title="Delete Clothing"><i class="fas fa-trash"></i></a>
+        <a class="clothing-control item-edit" title="{{localize 'RAILERS.EditClothing'}}"><i class="fas fa-edit"></i></a>
+        <a class="clothing-control item-delete" title="{{localize 'RAILERS.DeleteClothing'}}"><i class="fas fa-trash"></i></a>
       </div>
     </li>
     {{/if}}

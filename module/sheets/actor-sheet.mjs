@@ -239,11 +239,11 @@ export class RailersActorSheet extends ActorSheet {
     
       // Mapping of image file names to terrain types
       const terrainTypes = {
-        'snowhex.svg': 'Snow',
-        'hillhex.svg': 'Hill',
-        'icehex.svg': 'Ice',
-        'flathex.svg': 'Flat',
-        'mountainhex.svg': 'Mountain'
+        'snowhex.svg': game.i18n.localize("RAILERS.SnowTerrain"),
+        'hillhex.svg': game.i18n.localize("RAILERS.HillTerrain"),
+        'icehex.svg': game.i18n.localize("RAILERS.IceTerrain"),
+        'flathex.svg': game.i18n.localize("RAILERS.FlatTerrain"),
+        'mountainhex.svg': game.i18n.localize("RAILERS.MountainTerrain")
       };
     
       if ($(event.currentTarget).hasClass('d12hex')) {
@@ -296,8 +296,8 @@ export class RailersActorSheet extends ActorSheet {
     
           // Output the roll and the new terrain type to the chat
           roll.toMessage({
-            flavor: `Rolled on the Terrain Flower`,
-            content: `${rollResultHTML}<div class="dice-results">${newTerrainType} Terrain</div>`,
+            flavor: game.i18n.localize("RAILERS.RollTerrainFlower"),
+            content: `${rollResultHTML}<div class="dice-results">${newTerrainType}</div>`,
             speaker: ChatMessage.getSpeaker({ actor: this.actor })
           });
     
@@ -313,8 +313,8 @@ export class RailersActorSheet extends ActorSheet {
         } else {
           // If the roll is odd, output the roll and the current terrain type to the chat
           roll.toMessage({
-            flavor: `Rolled on the Terrain Flower`,
-            content: `${rollResultHTML}<div class="dice-results">${terrainType} Terrain</div>`,
+            flavor: game.i18n.localize("RAILERS.RollTerrainFlower"),
+            content: `${rollResultHTML}<div class="dice-results">${terrainType}</div>`,
             speaker: ChatMessage.getSpeaker({ actor: this.actor })
           })
           return;
@@ -379,12 +379,12 @@ export class RailersActorSheet extends ActorSheet {
     const rollName = event.currentTarget.dataset.label;
     const content = await renderTemplate("systems/railers/templates/dialog/roll-dialog.html");
     const dialogReturn = await Dialog.wait({
-      title: "Modify the Dice Roll",
+      title: game.i18n.localize("RAILERS.ModifyDiceRoll"),
       content,
       buttons: {
         one: {
           icon: '<i class="fas fa-check"></i>',
-          label: "Roll",
+          label: game.i18n.localize("RAILERS.Roll"),
           callback: async (html) => {
             const mod = parseInt(html.find('input[name="modifier"]').val()) || 0;
             const tn = parseInt(html.find('select[name="tn"]').val()) || 5;
@@ -418,26 +418,26 @@ export class RailersActorSheet extends ActorSheet {
             let successType;
 
             if (rollFormula === "0") {
-              successType = "Automatic Failure";
+              successType = game.i18n.localize("RAILERS.AutomaticFailure");
             }
             else if (!isNaN(skillpool)) {
               if (rollTotal < 0) {
-                successType = "Complicated Failure";
+                successType = game.i18n.localize("RAILERS.ComplicatedFailure");
               } else if (rollTotal === 0) {
-                successType = "Failure";
+                successType = game.i18n.localize("RAILERS.Failure");
               } else if (rollTotal >= 1 && rollTotal <= 2) {
-                successType = "Complicated Success";
+                successType = game.i18n.localize("RAILERS.ComplicatedSuccess");
               } else if (rollTotal >= 3 && rollTotal <= 4) {
-                successType = "Success"
+                successType = game.i18n.localize("RAILERS.Success");
               } else {
-                successType = "Great Success";
+                successType = game.i18n.localize("RAILERS.GreatSuccess");
               }
             }
             else {  
               if (rollTotal <= 0) {
-                successType = "Failure";
+                successType = game.i18n.localize("RAILERS.Failure");
               } else {
-                successType = "Success";
+                successType = game.i18n.localize("RAILERS.Success");
               }
             }
           
@@ -447,7 +447,7 @@ export class RailersActorSheet extends ActorSheet {
                 actor: thisActor,
                 alias: characterName,
               },
-              flavor: !isNaN(npcpool) ? `Making a roll at TN ${tn}` : `Rolling a ${rollName} ${!isNaN(skillpool) ? 'check' : 'save'} at TN${tn}`,
+              flavor: !isNaN(npcpool) ? game.i18n.format("RAILERS.RollRoll", { tn: tn }) : game.i18n.format(!isNaN(skillpool) ? "RAILERS.RollCheck" : "RAILERS.RollSave", { rollName: rollName, tn: tn }),
               content: `${rollResultHTML}<div class="dice-results">${successType}</div>`,
             });
             return {};
@@ -455,7 +455,7 @@ export class RailersActorSheet extends ActorSheet {
         },
         two: {
           icon: '<i class="fas fa-times"></i>',
-          label: "Cancel",
+          label: game.i18n.localize("RAILERS.Cancel"),
           callback: (html) => {
             return {};
           }
@@ -470,31 +470,17 @@ export class RailersActorSheet extends ActorSheet {
  /****************************************************************/
 
   async addWoundDialog(actor) {
-    const content = `
-      <div class="form-group grid">
-        <label>Wound Type:</label>
-        <input type="text" id="wound-name" name="wound-name">
-      </div>
-      <div class="form-group grid">
-        <label>Damage:</label>
-        <input type="number" id="wound-damage" name="wound-damage">
-      </div>
-      <div class="form-group grid">
-        <label>Severity:</label>
-        <input type="number" id="wound-severity" name="wound-severity">
-      </div>
-    `;
-
+    const content = await renderTemplate("systems/railers/templates/dialog/wound-dialog.html");
     const dialogReturn = await Dialog.wait({
-      title: "Add Wound",
+      title: game.i18n.localize("RAILERS.AddWound"),
       content,
       buttons: {
         ok: {
-          label: "Add",
+          label: game.i18n.localize("RAILERS.Add"),
           callback: async (html) => {
-            const damage = parseInt(html.find('#wound-damage').val(), 10) || 0;
-            const severity = parseInt(html.find('#wound-severity').val(), 10) || 0;
-            const name = html.find('#wound-name').val() || "Wound";
+            const damage = parseInt(html.find('input[name="wound-damage"]').val(), 10) || 0;
+            const severity = parseInt(html.find('input[name="wound-severity"]').val(), 10) || 0;
+            const name = html.find('input[name="wound-name"]').val() || "Wound";
 
             // Create a new "Wound" item with the provided values
             const woundData = {
@@ -512,7 +498,7 @@ export class RailersActorSheet extends ActorSheet {
           }
         },
         cancel: {
-          label: "Cancel",
+          label: game.i18n.localize("RAILERS.Cancel"),
         },
       },
       default: "ok",
@@ -621,11 +607,11 @@ export class RailersActorSheet extends ActorSheet {
     const stats = types[selectedType];
   
     new Dialog({
-      title: 'Warning',
-      content: 'Changing the locomotive type will update several stats and any changes to them could be lost. Do you want to continue?',
+      title: game.i18n.localize("RAILERS.Warning"),
+      content: game.i18n.localize("RAILERS.ChangeLocomotiveWarning"),
       buttons: {
         continue: {
-          label: 'Continue',
+          label: game.i18n.localize("RAILERS.Continue"),
           callback: () => {
             // Update the actor's data
             this.actor.update({
@@ -638,7 +624,7 @@ export class RailersActorSheet extends ActorSheet {
           },
         },
         cancel: {
-          label: 'Cancel',
+          label: game.i18n.localize("RAILERS.Cancel"),
         },
       },
       default: 'cancel',
