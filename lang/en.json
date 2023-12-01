@@ -1,5 +1,10 @@
 {
-  
+  "TYPES.Actor.character": "Character",
+  "TYPES.Actor.npc": "NPC",
+  "TYPES.Actor.demon": "Demon",
+  "TYPES.Actor.train": "Train",
+  "TYPES.Actor.terrain": "Terrain Flower",
+
   "RAILERS.Hitpoints": "Hitpoints",
   "RAILERS.Nerve": "Nerve",
   "RAILERS.Wounds": "Wounds",
@@ -36,6 +41,7 @@
   "RAILERS.Passengers": "Passengers",
   "RAILERS.Cars": "Cars",
   "RAILERS.Cargo": "Cargo",
+
   "RAILERS.LocomotiveAce": "Ace",
   "RAILERS.LocomotiveBigBrother": "Big Brother",
   "RAILERS.LocomotiveComet": "Comet",
@@ -104,22 +110,27 @@
   "RAILERS.Name": "Name",
   "RAILERS.Quantity": "Quantity",
   "RAILERS.Stowage": "Stowage",
+
   "RAILERS.AddItem": "Add Item",
   "RAILERS.EditItem": "Edit Item",
   "RAILERS.DeleteItem": "Delete Item",
+
   "RAILERS.Damage": "Damage",
   "RAILERS.Severity": "Severity",
   "RAILERS.Range": "Range",
   "RAILERS.Reload": "Reload",
   "RAILERS.Magazine": "Magazine",
   "RAILERS.SlashWound": "/W",
+
   "RAILERS.AddWeapon": "Add Weapon",
   "RAILERS.ReloadWeapon": "Reload Weapon",
   "RAILERS.EditWeapon": "Edit Weapon",
   "RAILERS.DeleteWeapon": "Delete Weapon",
+
   "RAILERS.Type": "Type",
   "RAILERS.Protection": "Protection",
   "RAILERS.Insulation": "Insulation",
+
   "RAILERS.AddClothing": "Add Clothing",
   "RAILERS.EditClothing": "Edit Clothing",
   "RAILERS.DeleteClothing": "Delete Clothing",
@@ -130,6 +141,7 @@
 
   "RAILERS.PurchasePrice": "Purchase Price",
   "RAILERS.Price": "Price",
+
   "RAILERS.AddCargo": "Add Cargo",
   "RAILERS.EditCargo": "Edit Cargo",
   "RAILERS.DeleteCargo": "Delete Cargo",
@@ -158,10 +170,13 @@
   "RAILERS.Attributes": "Attributes",
   "RAILERS.RollFormula": "RollFormula",
 
+  "RAILERS.NA": "N/A",
+  "RAILERS.Passive": "Passive",
   "RAILERS.Maneuver": "Maneuver",
   "RAILERS.Minor": "Minor",
   "RAILERS.Major": "Major",
   "RAILERS.Full": "Full",
+
   "RAILERS.Melee": "Melee",
   "RAILERS.Short": "Short",
   "RAILERS.Medium": "Medium",
@@ -194,6 +209,7 @@
   "RAILERS.ComplicatedSuccess": "Complicated Success",
   "RAILERS.Success": "Success",
   "RAILERS.GreatSuccess": "Great Success",
+
   "RAILERS.RollRoll": "Making a roll at TN {tn}",
   "RAILERS.RollCheck": "Rolling a {rollName} check at TN {tn}",
   "RAILERS.RollSave": "Rolling a {rollName} save at TN {tn}",

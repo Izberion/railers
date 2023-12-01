@@ -15,11 +15,7 @@
         <div class="resource">
           <label class="resource-label">{{localize "RAILERS.Stowage"}}</label>
           <select name="system.stowage">
-            {{#select item.system.stowage}}
-            <option value="onHand">{{localize "RAILERS.OnHand"}}</option>
-            <option value="stowed">{{localize "RAILERS.Stowed"}}</option>
-            <option value="other">{{localize "RAILERS.Other"}}</option>
-            {{/select}}
+            {{selectOptions stowageOptions selected=system.stowage localize=true}}
           </select>
         </div>
       </div>

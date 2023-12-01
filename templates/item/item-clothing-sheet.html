@@ -15,11 +15,7 @@
         <div class="resource">
           <label class="resource-label">{{localize "RAILERS.Stowage"}}</label>
           <select name="system.stowage">
-            {{#select item.system.stowage}}
-            <option value="onHand">{{localize "RAILERS.OnHand"}}</option>
-            <option value="stowed">{{localize "RAILERS.Stowed"}}</option>
-            <option value="other">{{localize "RAILERS.Other"}}</option>
-            {{/select}}
+            {{selectOptions stowageOptions selected=system.stowage localize=true}}
           </select>
         </div>
       </div>
@@ -45,12 +41,7 @@
       <div class="resource">
         <label class="resource-label">{{localize "RAILERS.Type"}}</label>
         <select name="system.type">
-          {{#select item.system.type}}
-          <option value="headgear">{{localize "RAILERS.Headgear"}}</option>
-          <option value="innerwear">{{localize "RAILERS.Innerwear"}}</option>
-          <option value="armor">{{localize "RAILERS.ClothingArmor"}}</option>
-          <option value="outerwear">{{localize "RAILERS.Outerwear"}}</option>
-          {{/select}}
+          {{selectOptions clothingTypeOptions selected=system.type localize=true}}
         </select>
       </div>
       <div class="resource">

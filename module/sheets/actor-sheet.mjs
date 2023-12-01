@@ -56,6 +56,25 @@ export class RailersActorSheet extends ActorSheet {
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(this.actor.effects);
 
+    context.locomotiveOptions = CONFIG.RAILERS.locomotiveOptions;
+
+    for (let item of context.items) {
+
+      let stowageKey = item.system.stowage;
+      let reloadKey = item.system.reload;
+      let attackKey = item.system.attack;
+      let rangeKey = item.system.range;
+      let typeKey = item.system.type;
+
+      item.system.stowage = game.i18n.localize(CONFIG.RAILERS.stowageOptions[stowageKey]);
+      item.system.reload = game.i18n.localize(CONFIG.RAILERS.actionOptions[reloadKey]);
+      item.system.attack= game.i18n.localize(CONFIG.RAILERS.actionOptions[attackKey]);
+      item.system.range = game.i18n.localize(CONFIG.RAILERS.rangeOptions[rangeKey]);
+      item.system.type = game.i18n.localize(CONFIG.RAILERS.actionTypeOptions[typeKey]);
+      
+    }
+
+
     return context;
   }
 
@@ -71,6 +90,8 @@ export class RailersActorSheet extends ActorSheet {
     for (let [k, v] of Object.entries(context.system.attributes)) {
       v.label = game.i18n.localize(CONFIG.RAILERS.attributes[k]) ?? k;
     }
+
+
   }
 
   /**
@@ -114,6 +135,11 @@ export class RailersActorSheet extends ActorSheet {
     context.gear = gear;
     context.features = features;
     context.spells = spells;
+
+
+
+
+
   }
 
   /* -------------------------------------------- */
@@ -206,7 +232,6 @@ export class RailersActorSheet extends ActorSheet {
 
     html.find('select[name="system.locomotive"]').change(this._onLocomotiveChange.bind(this));
    
-
 
     let hexes = {
       "(0,0)": ["(1,0)", "(1,1)", "(0,1)", "(2,0)", "(4,2)", "(0,3)"],
@@ -634,43 +659,58 @@ export class RailersActorSheet extends ActorSheet {
 
   _onDragStart(event) {
     // Store the source image URL and dimensions in the dataTransfer object
-    let img = event.target.src;
-    let width = 120;
-    let height = 105;
+    if (event.target.classList.contains('draggable-hex')) {
 
-    // Create a temporary Tile data object
-    let tileData = {
-      img: img,
-      width: width,
-      height: height,
-      x: 0,
-      y: 0,
-      z: 0,
-      rotation: 0,
-      hidden: false,
-      locked: false
-    };
+      let img = event.target.src;
+      let width = 120;
+      let height = 105;
 
-    // Set the data for the drag event
-    event.dataTransfer.setData('text/plain', JSON.stringify(tileData));
+      // Create a temporary Tile data object
+      let tileData = {
+        img: img,
+        width: width,
+        height: height,
+        x: 0,
+        y: 0,
+        z: 0,
+        rotation: 0,
+        hidden: false,
+        locked: false
+      };
+
+      // Set the data for the drag event
+      event.dataTransfer.setData('text/plain', JSON.stringify(tileData));
+    } else {
+      super._onDragStart(event);
+    }
   }
 
   async _onDrop(event) {
-    event.preventDefault();
-  
     // Parse the data from the event
     let data = JSON.parse(event.dataTransfer.getData('text/plain'));
   
-    // Acquire the cursor position transformed to Canvas coordinates
-    const [x, y] = [event.clientX, event.clientY];
-    const t = canvas.app.stage.worldTransform;
-    data.x = (x - t.tx) / canvas.app.stage.scale.x;
-    data.y = (y - t.ty) / canvas.app.stage.scale.y;
+    if (data.img) {
+      // Prevent the default behavior for image drops
+      event.preventDefault();
   
-    // Create the Tile
-    await canvas.scene.createEmbeddedDocuments("Tile", [data]);
-  
-    console.log(data);
+      // Acquire the cursor position transformed to Canvas coordinates
+      const [x, y] = [event.clientX, event.clientY];
+      const t = canvas.app.stage.worldTransform;
+      data.x = (x - t.tx) / canvas.app.stage.scale.x;
+      data.y = (y - t.ty) / canvas.app.stage.scale.y;
+    
+      // Create the Tile
+      await canvas.scene.createEmbeddedDocuments("Tile", [data]);
+    
+      console.log(data);
+    } else {
+      super._onDrop(event);
+    }
   }
+
+
+
+
+
 
 }

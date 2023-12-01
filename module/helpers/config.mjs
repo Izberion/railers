@@ -15,56 +15,53 @@ RAILERS.attributes = {
   "stealth": "RAILERS.AttributeStealth"
 };
 
-// RAILERS.attributes.combat.skills = {
-//   "bows": "RAILERS.SkillBows",
-//   "heavyweapons": "RAILERS.SkillHeavyWeapons",
-//   "melee": "RAILERS.SkillMelee",
-//   "smallarms": "RAILERS.SkillSmallArms"
-// };
+RAILERS.stowageOptions = {
+  "onHand": "RAILERS.OnHand",
+  "stowed": "RAILERS.Stowed",
+  "other": "RAILERS.Other"
+}
 
-// RAILERS.attributes.education.skills = {
-//   "instruction": "RAILERS.SkillInstruction",
-//   "knowledge": "RAILERS.SkillKnowledge",
-//   "medical": "RAILERS.SkillMedical",
-//   "survival": "RAILERS.SkillSurvival"
-// };
+RAILERS.actionOptions = {
+  "na": "RAILERS.NA",
+  "maneuver": "RAILERS.Maneuver",
+  "minor": "RAILERS.Minor",
+  "major": "RAILERS.Major",
+  "full": "RAILERS.Full"
+}
 
-// RAILERS.attributes.engineering.skills = {
-//   "chemistry": "RAILERS.SkillChemistry",
-//   "demolition": "RAILERS.SkillDemolition",
-//   "gunsmithing": "RAILERS.SkillGunsmithing",
-//   "locksmithing": "RAILERS.SkillLocksmithing",
-//   "locomotive": "RAILERS.SkillLocomotive"
-//   "mechanics": "RAILERS.SkillMechanics"
-// };
+RAILERS.actionTypeOptions = {
+  "passive": "RAILERS.Passive",
+  "maneuver": "RAILERS.Maneuver",
+  "minor": "RAILERS.Minor",
+  "major": "RAILERS.Major",
+  "full": "RAILERS.Full"
+}
 
-// RAILERS.attributes.fortitude.skills = {
-//   "endurance": "RAILERS.SkillEndurance",
-//   "resolve": "RAILERS.SkillResolve"
-// };
+RAILERS.rangeOptions = {
+  "melee": "RAILERS.Melee",
+  "short": "RAILERS.Short",
+  "medium": "RAILERS.Medium",
+  "long": "RAILERS.Long",
+  "extreme": "RAILERS.Extreme"
+}
 
-// RAILERS.attributes.intuition.skills = {
-//   "insight": "RAILERS.SkillInsight",
-//   "perception": "RAILERS.SkillPerception"
-// };
+RAILERS.clothingTypeOptions = {
+  "headgear": "RAILERS.Headgear",
+  "innerwear": "RAILERS.Innerwear",
+  "armor": "RAILERS.ClothingArmor",
+  "outerwear": "RAILERS.Outerwear"
+}
 
-// RAILERS.attributes.prowess.skills = {
-//   "acrobatics": "RAILERS.SkillAcrobatics",
-//   "athletics": "RAILERS.SkillAthletics",
-//   "exertion": "RAILERS.SkillExertion"
-// };
+RAILERS.locomotiveOptions = {
+  "ace": "RAILERS.LocomotiveAce",
+  "bigBrother": "RAILERS.LocomotiveBigBrother",
+  "comet": "RAILERS.LocomotiveComet",
+  "compact": "RAILERS.LocomotiveCompact",
+  "donkey": "RAILERS.LocomotiveDonkey",
+  "dynamo": "RAILERS.LocomotiveDynamo",
+  "flex": "RAILERS.LocomotiveFlex",
+  "joes": "RAILERS.LocomotiveJoes",
+  "littleMan": "RAILERS.LocomotiveLittleMan",
+  "marathoner": "RAILERS.LocomotiveMarathoner"
+}
 
-// RAILERS.attributes.speech.skills = {
-//   "coercion": "RAILERS.SkillCoercion",
-//   "deception": "RAILERS.SkillDeception",
-//   "leadership": "RAILERS.SkillLeadership",
-//   "negotiation": "RAILERS.SkillNegotiation",
-//   "persuasion": "RAILERS.SkillPersuasion"
-// };
-
-// RAILERS.attributes.stealth.skills = {
-//   "concealment": "RAILERS.SkillConcealment",
-//   "disguise": "RAILERS.SkillDisguise",
-//   "sleighthand": "RAILERS.SkillSleightHand"
-//   "sneaking": "RAILERS.SkillSneaking",
-// };

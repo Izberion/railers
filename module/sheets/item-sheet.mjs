@@ -46,6 +46,12 @@ export class RailersItemSheet extends ItemSheet {
     context.system = itemData.system;
     context.flags = itemData.flags;
 
+    context.stowageOptions = CONFIG.RAILERS.stowageOptions;
+    context.actionOptions = CONFIG.RAILERS.actionOptions;
+    context.actionTypeOptions = CONFIG.RAILERS.actionTypeOptions;
+    context.rangeOptions = CONFIG.RAILERS.rangeOptions;
+    context.clothingTypeOptions = CONFIG.RAILERS.clothingTypeOptions;
+
     return context;
   }
 

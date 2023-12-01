@@ -15,11 +15,7 @@
         <div class="resource">
           <label class="resource-label">{{localize "RAILERS.Stowage"}}</label>
           <select name="system.stowage">
-            {{#select system.stowage}}
-            <option value="onHand">{{localize "RAILERS.OnHand"}}</option>
-            <option value="stowed">{{localize "RAILERS.Stowed"}}</option>
-            <option value="other">{{localize "RAILERS.Other"}}</option>
-            {{/select}}
+            {{selectOptions stowageOptions selected=system.stowage localize=true}}
           </select>
         </div>
       </div>
@@ -57,35 +53,19 @@
       <div class="resource">
         <label class="resource-label">{{localize "RAILERS.Attack"}}</label>
         <select name="system.attack">
-          {{#select item.system.attack}}
-          <option value="maneuver">{{localize "RAILERS.Maneuver"}}</option>
-          <option value="minor">{{localize "RAILERS.Minor"}}</option>
-          <option value="major">{{localize "RAILERS.Major"}}</option>
-          <option value="full">{{localize "RAILERS.Full"}}</option>
-          {{/select}}
+          {{selectOptions actionOptions selected=system.attack localize=true}}
         </select>
       </div>
       <div class="resource">
         <label class="resource-label">{{localize "RAILERS.Range"}}</label>
         <select name="system.range">
-          {{#select item.system.range}}
-          <option value="melee">{{localize "RAILERS.Melee"}}</option>
-          <option value="short">{{localize "RAILERS.Short"}}</option>
-          <option value="medium">{{localize "RAILERS.Medium"}}</option>
-          <option value="long">{{localize "RAILERS.Long"}}</option>
-          <option value="extreme">{{localize "RAILERS.Extreme"}}</option>
-          {{/select}}
+          {{selectOptions rangeOptions selected=system.range localize=true}}
         </select>
       </div>
       <div class="resource">
         <label class="resource-label">{{localize "RAILERS.Reload"}}</label>
         <select name="system.reload">
-          {{#select item.system.reload}}
-          <option value="maneuver">{{localize "RAILERS.Maneuver"}}</option>
-          <option value="minor">{{localize "RAILERS.Minor"}}</option>
-          <option value="major">{{localize "RAILERS.Major"}}</option>
-          <option value="full">{{localize "RAILERS.Full"}}</option>
-          {{/select}}
+          {{selectOptions actionOptions selected=system.reload localize=true}}
         </select>
       </div>
       <div class="resource">

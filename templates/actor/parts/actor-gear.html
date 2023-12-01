@@ -42,7 +42,7 @@
       </div>
       <div class="item-quantity">{{item.system.quantity}}</div>
       <div class="item-load">{{item.system.load}}</div>
-      <div class="item-stowage">{{item.system.stowage}}</div>
+      <div class="item-stowage">{{localize item.system.stowage}}</div>
       <div class="item-controls">
         <a class="item-control item-edit" title="{{localize 'RAILERS.EditItem'}}"><i class="fas fa-edit"></i></a>
         <a class="item-control item-delete" title="{{localize 'RAILERS.DeleteItem'}}"><i class="fas fa-trash"></i></a>
@@ -76,17 +76,13 @@
         </div>
         <h4>{{item.name}}</h4>
       </div>
-      <div class="weapon-damage textcenter">{{item.system.damage}}{{localize "RAILERS.SlashWound"}}{{item.system.severity}}</div>
-      <div class="weapon-attack textcenter">{{item.system.attack}}</div>
-      <div class="weapon-range textcenter">{{item.system.range}}</div>
-      <div class="weapon-reload textcenter">{{item.system.reload}}</div>
-      <div class="weapon-magazine textcenter">
-        <span>{{item.system.magazine.value}}</span>
-        <span> / </span>
-        <span>{{item.system.magazine.max}}</span>
-      </div>
+      <div class="weapon-damage textcenter">{{item.system.damage}} {{localize "RAILERS.SlashWound"}} {{item.system.severity}}</div>
+      <div class="weapon-attack textcenter">{{localize item.system.attack}}</div>
+      <div class="weapon-range textcenter">{{localize item.system.range}}</div>
+      <div class="weapon-reload textcenter">{{localize item.system.reload}}</div>
+      <div class="weapon-magazine textcenter">{{item.system.magazine.value}} / {{item.system.magazine.max}}</div>
       <div class="weapon-load textcenter">{{item.system.load}}</div>
-      <div class="weapon-stowage textcenter">{{item.system.stowage}}</div>
+      <div class="weapon-stowage textcenter">{{localize item.system.stowage}}</div>
       <div class="weapon-controls">
         <a class="weapon-control weapon-reload" title="{{localize 'RAILERS.ReloadWeapon'}}"><i class="fas fa-sync-alt"></i></a>
         <a class="weapon-control item-edit" title="{{localize 'RAILERS.EditWeapon'}}"><i class="fas fa-edit"></i></a>
@@ -119,11 +115,11 @@
         </div>
         <h4>{{item.name}}</h4>
       </div>
-      <div class="clothing-type textcenter">{{item.system.type}}</div>
+      <div class="clothing-type textcenter">{{localize item.system.type}}</div>
       <div class="clothing-protection textcenter">{{item.system.protection}}</div>
       <div class="clothing-insulation textcenter">{{item.system.insulation}}</div>
       <div class="clothing-load textcenter">{{item.system.load}}</div>
-      <div class="clothing-stowage textcenter">{{item.system.stowage}}</div>
+      <div class="clothing-stowage textcenter">{{localize item.system.stowage}}</div>
       <div class="clothing-controls">
         <a class="clothing-control item-edit" title="{{localize 'RAILERS.EditClothing'}}"><i class="fas fa-edit"></i></a>
         <a class="clothing-control item-delete" title="{{localize 'RAILERS.DeleteClothing'}}"><i class="fas fa-trash"></i></a>

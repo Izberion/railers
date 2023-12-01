@@ -6,18 +6,7 @@
       <div class="header-fields">
         <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
         <select name="system.locomotive">
-          {{#select system.locomotive}}
-          <option value="ace">{{localize "RAILERS.LocomotiveAce"}}</option>
-          <option value="bigBrother">{{localize "RAILERS.LocomotiveBigBrother"}}</option>
-          <option value="comet">{{localize "RAILERS.LocomotiveComet"}}</option>
-          <option value="compact">{{localize "RAILERS.LocomotiveCompact"}}</option>
-          <option value="donkey">{{localize "RAILERS.LocomotiveDonkey"}}</option>
-          <option value="dynamo">{{localize "RAILERS.LocomotiveDynamo"}}</option>
-          <option value="flex">{{localize "RAILERS.LocomotiveFlex"}}</option>
-          <option value="joes">{{localize "RAILERS.LocomotiveJoes"}}</option>
-          <option value="littleMan">{{localize "RAILERS.LocomotiveLittleMan"}}</option>
-          <option value="marathoner">{{localize "RAILERS.LocomotiveMarathoner"}}</option>
-          {{/select}}
+          {{selectOptions locomotiveOptions selected=system.locomotive localize=true}}
         </select>
       </div>
     </header>
