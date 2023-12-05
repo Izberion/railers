@@ -638,3 +638,12 @@
 .railers .ability-description {
   flex: 2;
 }
+
+.railers label.checkbox {
+  font-size: 14px;
+}
+
+.railers .toggle {
+  text-align: center;
+  justify-self: flex-start;
+}

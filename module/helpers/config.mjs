@@ -65,3 +65,7 @@ RAILERS.locomotiveOptions = {
   "marathoner": "RAILERS.LocomotiveMarathoner"
 }
 
+RAILERS.seasons = {
+  "summer": "RAILERS.Summer",
+  "winter": "RAILERS.Winter"
+}

@@ -5,7 +5,8 @@
             "npc",
             "demon",
             "train",
-            "terrain"
+            "terrain",
+            "weather"
         ],
         "templates": {
             "base": {
@@ -282,8 +283,9 @@
                 }                
             }
         },
-        "terrain": {
-            
+        "terrain": {},
+        "weather": {
+            "season": ""
         }
     },
     "Item": {

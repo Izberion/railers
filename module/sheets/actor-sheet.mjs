@@ -57,6 +57,7 @@ export class RailersActorSheet extends ActorSheet {
     context.effects = prepareActiveEffectCategories(this.actor.effects);
 
     context.locomotiveOptions = CONFIG.RAILERS.locomotiveOptions;
+    context.seasons = CONFIG.RAILERS.seasons;
 
     for (let item of context.items) {
 
@@ -73,7 +74,6 @@ export class RailersActorSheet extends ActorSheet {
       item.system.type = game.i18n.localize(CONFIG.RAILERS.actionTypeOptions[typeKey]);
       
     }
-
 
     return context;
   }
@@ -135,9 +135,6 @@ export class RailersActorSheet extends ActorSheet {
     context.gear = gear;
     context.features = features;
     context.spells = spells;
-
-
-
 
 
   }
@@ -233,6 +230,27 @@ export class RailersActorSheet extends ActorSheet {
     html.find('select[name="system.locomotive"]').change(this._onLocomotiveChange.bind(this));
    
 
+    html.find('.rollSeason').click(async function() {
+      let season = html.find('input[name="system.season"]:checked').val();
+
+      let tableName;
+      if (season === 'winter') {
+        tableName = 'Winter Temperature';
+      } else if (season === 'summer') {
+        tableName = 'Summer Temperature';
+      }
+
+      // Fetch the RollTable entity
+      let rollTable = game.tables.contents.find(t => t.name === tableName);
+      
+      // Draw from the RollTable
+      await rollTable.draw({roll: true});
+      tableResultText = tableResult.results[0].text;
+      
+    });
+    
+
+
     let hexes = {
       "(0,0)": ["(1,0)", "(1,1)", "(0,1)", "(2,0)", "(4,2)", "(0,3)"],
       "(0,1)": ["(1,1)", "(1,2)", "(0,2)", "(3,0)", "(3,3)", "(0,0)"],
@@ -261,7 +279,7 @@ export class RailersActorSheet extends ActorSheet {
       const hexesElements = html.find('.hex');
       let hexStates = [];
       let coordinates, roll, index;
-    
+      
       // Mapping of image file names to terrain types
       const terrainTypes = {
         'snowhex.svg': game.i18n.localize("RAILERS.SnowTerrain"),
@@ -270,16 +288,29 @@ export class RailersActorSheet extends ActorSheet {
         'flathex.svg': game.i18n.localize("RAILERS.FlatTerrain"),
         'mountainhex.svg': game.i18n.localize("RAILERS.MountainTerrain")
       };
+      const weatherTypes = {
+        'aurorahex.svg': game.i18n.localize("RAILERS.Aurora"),
+        'blizzardhex.svg': game.i18n.localize("RAILERS.Blizzard"),
+        'clearhex.svg': game.i18n.localize("RAILERS.Clear"),
+        'diamonddusthex.svg': game.i18n.localize("RAILERS.DiamondDust"),
+        'flurryhex.svg': game.i18n.localize("RAILERS.Flurry"),
+        'icefoghex.svg': game.i18n.localize("RAILERS.IceFog"),
+        'overcasthex.svg': game.i18n.localize("RAILERS.Overcast"),
+        'polaroutbreakhex.svg': game.i18n.localize("RAILERS.PolarOutbreak"),
+        'snowstormhex.svg': game.i18n.localize("RAILERS.SnowStorm"),
+        'thundersnowhex.svg': game.i18n.localize("RAILERS.ThunderSnow"),
+        'whiteouthex.svg': game.i18n.localize("RAILERS.Whiteout"),
+        'windhex.svg': game.i18n.localize("RAILERS.Wind")
+      };
     
+      let systemIntegrate = html.find('input[name="system.integrate"]').prop('checked');
+
       if ($(event.currentTarget).hasClass('d12hex')) {
         // Roll a d12
         roll = await new Roll('1d12').roll();
 
         // Get the default roll result HTML
         const rollResultHTML = await roll.render();
-    
-        // Log the result to the console for debugging
-        console.log(`Rolled a ${roll.total}`);
     
         // Get the coordinates of the active hex
         coordinates = hexesElements.filter('.active').data('coordinates');
@@ -292,7 +323,27 @@ export class RailersActorSheet extends ActorSheet {
     
         // Get the terrain type based on the file name
         const terrainType = terrainTypes[fileName];
+
+        const weatherType = weatherTypes[fileName];
+      
+        let tableResultText = '';
+        if (systemIntegrate && this.actor.type === "weather") {
+          // Roll on the season table
+          let season = html.find('input[name="system.season"]:checked').val();
+          let tableName;
+          if (season === 'winter') {
+            tableName = 'Winter Temperature';
+          } else if (season === 'summer') {
+            tableName = 'Summer Temperature';
+          }
+          let rollTable = game.tables.contents.find(t => t.name === tableName);
+          let tableResult = await rollTable.roll();
     
+          // Get the table result
+          tableResultText = tableResult.results[0].text;
+        }
+        
+
         // If the roll is even, calculate the new active hex and its terrain
         if (roll.total % 2 === 0) {
           // Calculate the index of the new active hex based on the roll
@@ -318,11 +369,13 @@ export class RailersActorSheet extends ActorSheet {
     
           // Get the terrain type based on the file name
           const newTerrainType = terrainTypes[newFileName];
+
+          const newWeatherType = weatherTypes[newFileName];
     
           // Output the roll and the new terrain type to the chat
           roll.toMessage({
-            flavor: game.i18n.localize("RAILERS.RollTerrainFlower"),
-            content: `${rollResultHTML}<div class="dice-results">${newTerrainType}</div>`,
+            flavor: game.i18n.localize(this.actor.type === 'terrain' ? "RAILERS.RollTerrainFlower" : "RAILERS.RollWeatherFlower"),
+            content: `<div class="dice-results">${this.actor.type === 'terrain' ? newTerrainType : newWeatherType}</div>${systemIntegrate ? `<div class="dice-results">${tableResultText}</div>` : ""}`,
             speaker: ChatMessage.getSpeaker({ actor: this.actor })
           });
     
@@ -338,8 +391,8 @@ export class RailersActorSheet extends ActorSheet {
         } else {
           // If the roll is odd, output the roll and the current terrain type to the chat
           roll.toMessage({
-            flavor: game.i18n.localize("RAILERS.RollTerrainFlower"),
-            content: `${rollResultHTML}<div class="dice-results">${terrainType}</div>`,
+            flavor: game.i18n.localize(this.actor.type === 'terrain' ? "RAILERS.RollTerrainFlower" : "RAILERS.RollWeatherFlower"),
+            content: `<div class="dice-results">${this.actor.type === 'terrain' ? terrainType : weatherType}</div>${systemIntegrate ? `<div class="dice-results">${tableResultText}</div>` : ""}`,
             speaker: ChatMessage.getSpeaker({ actor: this.actor })
           })
           return;
