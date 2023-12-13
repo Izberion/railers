@@ -9,7 +9,6 @@
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
       <a class="item" data-tab="description">Description</a>
-      <a class="item" data-tab="effects">Effects</a>
     </nav>
   
     {{!-- Sheet Body --}}
@@ -17,51 +16,9 @@
   
       {{!-- Description Tab --}}
       <div class="tab" data-group="primary" data-tab="description">
-        {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+        {{{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}}
       </div>
-  
-      {{!-- Effects Tab --}}
-      <div class="tab" data-group="primary" data-tab="effects">
-        <ol class="items-list effects-list">
-          {{#each effects as |section sid|}}
-            <li class="items-header flexrow" data-effect-type="{{section.type}}">
-              <h3 class="item-name effect-name flexrow">{{localize section.label}}</h3>
-              <div class="effect-source">Source</div>
-              <div class="effect-source">Duration</div>
-              <div class="item-controls effect-controls flexrow">
-                <a class="effect-control" data-action="create" title="{{localize 'RAILERS.EffectCreate'}}">
-                  <i class="fas fa-plus"></i> {{localize "RAILERS.Add"}}
-                </a>
-              </div>
-            </li>
-        
-            <ol class="item-list">
-            {{#each section.effects as |effect|}}
-              <li class="item effect flexrow" data-effect-id="{{effect.id}}">
-                <div class="item-name effect-name flexrow">
-                  <img class="item-image" src="{{effect.icon}}"/>
-                  <h4>{{effect.label}}</h4>
-                </div>
-                <div class="effect-source">{{effect.sourceName}}</div>
-                <div class="effect-duration">{{effect.duration.label}}</div>
-                <div class="item-controls effect-controls flexrow">
-                  <a class="effect-control" data-action="toggle" title="{{localize 'RAILERS.EffectToggle'}}">
-                    <i class="fas {{#if effect.disabled}}fa-check{{else}}fa-times{{/if}}"></i>
-                  </a>
-                  <a class="effect-control" data-action="edit" title="{{localize 'RAILERS.EffectEdit'}}">
-                    <i class="fas fa-edit"></i>
-                  </a>
-                  <a class="effect-control" data-action="delete" title="{{localize 'RAILERS.EffectDelete'}}">
-                    <i class="fas fa-trash"></i>
-                  </a>
-                </div>
-              </li>
-            {{/each}}
-            </ol>
-          {{/each}}
-        </ol>
-        
-      </div>
+
     </section>
   </form>
   

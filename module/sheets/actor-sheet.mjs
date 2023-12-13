@@ -1,5 +1,7 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/effects.mjs";
 import { handleHexClick, retrieveHexStates } from "../helpers/hex.mjs";
+import { rollDialog } from "../dialogs/roll-dialog.mjs";
+import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
@@ -187,10 +189,10 @@ export class RailersActorSheet extends ActorSheet {
     }
 
     // Roll Dialog
-    html.on("click", ".roll", {actor: this.actor}, this.rollDialog);
+    html.on("click", ".roll", {actor: this.actor}, rollDialog);
 
     // Add a click listener for the "Add Wound" button
-    html.find('.wound-create').click(this._onWoundCreate.bind(this));
+    html.find('.wound-create').click(addWoundDialog.bind(this, this.actor, html));
 
     // Add a click listener for the "Edit Wound" button
     html.find('.wound-edit').click(ev => {
@@ -211,7 +213,6 @@ export class RailersActorSheet extends ActorSheet {
         item.update({ 'system.damage': damage });
       }
     });
-    
 
     // Add a click listener for the "Clear Wound" button
     html.find('.wound-delete').click(ev => {
@@ -278,185 +279,6 @@ export class RailersActorSheet extends ActorSheet {
   
 
 /*****************************************************************/
-
-  async rollDialog(event) {
-    const attpool = Number(event.currentTarget.dataset.attpool);
-    const skillpool = Number(event.currentTarget.dataset.skillpool);
-    const npcpool = Number(event.currentTarget.dataset.npcpool);
-    const thisActor = event.data.actor;
-    const attributeName = event.currentTarget.dataset.attribute;
-    const skillName = event.currentTarget.dataset.skill;
-    console.log(attributeName);
-    console.log(skillName);
-    const characterName = thisActor.name;
-    const rollName = event.currentTarget.dataset.label;
-    const content = await renderTemplate("systems/railers/templates/dialog/roll-dialog.html", {
-      activeEffects: thisActor.effects.map(effect => ({id: effect.id, label: effect.label})),
-    });
-    const dialogReturn = await Dialog.wait({
-      title: game.i18n.localize("RAILERS.ModifyDiceRoll"),
-      content,
-      buttons: {
-        one: {
-          icon: '<i class="fas fa-check"></i>',
-          label: game.i18n.localize("RAILERS.Roll"),
-          callback: async (html) => {
-            const mod = parseInt(html.find('input[name="modifier"]').val()) || 0;
-            const tn = parseInt(html.find('select[name="tn"]').val()) || 5;
-            const activeEffectStatus = html.find('input[name="activeEffect"]').map((i, input) => ({
-              id: input.value,
-              checked: input.checked,
-            })).get();
-
-            let attributeMod = 0;
-            let skillMod = 0;
-
-            activeEffectStatus.forEach(({ id, checked }) => {
-              const effect = thisActor.effects.get(id);
-              if (effect) {
-                effect.update({ disabled: !checked });
-            
-                // Calculate the modifiers
-                if (attributeName && effect.data.changes.some(change => change.key === `data.attributes.${attributeName}.mod`)) {
-                  attributeMod += Number(effect.data.changes.find(change => change.key === `data.attributes.${attributeName}.mod`).value) * (checked ? 1 : -1);
-                }
-                if (skillName && effect.data.changes.some(change => change.key === `data.attributes.${attributeName}.skills.${skillName}.mod`)) {
-                  skillMod += Number(effect.data.changes.find(change => change.key === `data.attributes.${attributeName}.skills.${skillName}.mod`).value) * (checked ? 1 : -1);
-                }
-              }
-            });
-            
-
-            let rollFormula;
-            let poolTotal;
-
-            if (!isNaN(skillpool)) {
-              poolTotal = skillpool;
-              poolTotal += attpool;
-            } else if (!isNaN(npcpool)) {
-              poolTotal = npcpool;
-            } else {
-                poolTotal = attpool;
-            }
-
-            poolTotal += mod + attributeMod + skillMod;
-
-            console.log(`mod: ${mod}`);
-            console.log(`attributeMod: ${attributeMod}`);
-            console.log(`skillMod: ${skillMod}`);
-            console.log(`poolTotal: ${poolTotal}`);
-
-            if (poolTotal === 0) {
-              rollFormula = `2d8kl1x8cs>=${tn}df=1`;
-            } else if (poolTotal < 0) {
-              rollFormula = "0";
-            } else {
-              rollFormula = `${poolTotal}d8x8cs>=${tn}df=1`;
-            }
-
-            const r = new Roll(rollFormula);
-            await r.roll();
-            const rollResultHTML = await r.render();
-            const rollTotal = r.total;
-
-            let successType;
-
-            if (rollFormula === "0") {
-              successType = game.i18n.localize("RAILERS.AutomaticFailure");
-            }
-            else if (!isNaN(skillpool)) {
-              if (rollTotal < 0) {
-                successType = game.i18n.localize("RAILERS.ComplicatedFailure");
-              } else if (rollTotal === 0) {
-                successType = game.i18n.localize("RAILERS.Failure");
-              } else if (rollTotal >= 1 && rollTotal <= 2) {
-                successType = game.i18n.localize("RAILERS.ComplicatedSuccess");
-              } else if (rollTotal >= 3 && rollTotal <= 4) {
-                successType = game.i18n.localize("RAILERS.Success");
-              } else {
-                successType = game.i18n.localize("RAILERS.GreatSuccess");
-              }
-            }
-            else {  
-              if (rollTotal <= 0) {
-                successType = game.i18n.localize("RAILERS.Failure");
-              } else {
-                successType = game.i18n.localize("RAILERS.Success");
-              }
-            }
-          
-            await r.toMessage({
-              user: game.user.id,
-              speaker: {
-                actor: thisActor,
-                alias: characterName,
-              },
-              flavor: !isNaN(npcpool) ? game.i18n.format("RAILERS.RollRoll", { tn: tn }) : game.i18n.format(!isNaN(skillpool) ? "RAILERS.RollCheck" : "RAILERS.RollSave", { rollName: rollName, tn: tn }),
-              content: `${rollResultHTML}<div class="dice-results">${successType}</div>`,
-            });
-            return {};
-          },
-        },
-        two: {
-          icon: '<i class="fas fa-times"></i>',
-          label: game.i18n.localize("RAILERS.Cancel"),
-          callback: (html) => {
-            return {};
-          }
-        }
-      },
-      default: "one",
-    });
-  }
-
-
-
- /****************************************************************/
-
-  async addWoundDialog(actor) {
-    const content = await renderTemplate("systems/railers/templates/dialog/wound-dialog.html");
-    const dialogReturn = await Dialog.wait({
-      title: game.i18n.localize("RAILERS.AddWound"),
-      content,
-      buttons: {
-        ok: {
-          label: game.i18n.localize("RAILERS.Add"),
-          callback: async (html) => {
-            const damage = parseInt(html.find('input[name="wound-damage"]').val(), 10) || 0;
-            const severity = parseInt(html.find('input[name="wound-severity"]').val(), 10) || 0;
-            const name = html.find('input[name="wound-name"]').val() || "Wound";
-
-            // Create a new "Wound" item with the provided values
-            const woundData = {
-              name,
-              type: "wound",
-              data: {
-                damage,
-                severity
-              },
-            };
-
-            // Use createEmbeddedDocuments to add the new wound to the actor's items
-            const wounds = await actor.createEmbeddedDocuments("Item", [woundData]);
-
-          }
-        },
-        cancel: {
-          label: game.i18n.localize("RAILERS.Cancel"),
-        },
-      },
-      default: "ok",
-    });
-  }
-
-
- /****************************************************************/
-  // Handle the "Add Wound" button click
-  _onWoundCreate(event) {
-    event.preventDefault();
-    // Call the function to show the "Add Wound" dialog
-    this.addWoundDialog(this.actor);
-  }
 
   // Handle the "Edit Wound" button click
   _onWoundEdit(event) {
