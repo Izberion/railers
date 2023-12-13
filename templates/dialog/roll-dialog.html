@@ -13,4 +13,8 @@
             <option value="8">{{localize "RAILERS.TN8"}}</option>
         </select>
     </div>
+    {{#each activeEffects as |effect|}}
+        <input type="checkbox" name="activeEffect" value="{{effect.id}}" {{#unless effect.disabled}}checked{{/unless}}> {{effect.label}}<br>
+    {{/each}}
+
 </div>

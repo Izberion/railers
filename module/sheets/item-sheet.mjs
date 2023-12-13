@@ -1,3 +1,5 @@
+import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/effects.mjs";
+import { onRollDisease } from "../helpers/disease-roll.mjs";
 /**
  * Extend the basic ItemSheet with some very simple modifications
  * @extends {ItemSheet}
@@ -46,6 +48,10 @@ export class RailersItemSheet extends ItemSheet {
     context.system = itemData.system;
     context.flags = itemData.flags;
 
+    context.effects = prepareActiveEffectCategories(this.item.effects);
+
+    context.diseaseRolled = this.item.getFlag('railers', 'diseaseRolled');
+
     context.stowageOptions = CONFIG.RAILERS.stowageOptions;
     context.actionOptions = CONFIG.RAILERS.actionOptions;
     context.actionTypeOptions = CONFIG.RAILERS.actionTypeOptions;
@@ -63,7 +69,13 @@ export class RailersItemSheet extends ItemSheet {
 
     // Everything below here is only needed if the sheet is editable
     if (!this.isEditable) return;
+    
+    html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.item));
 
-    // Roll handlers, click handlers, etc. would go here.
+    html.find('.generate-disease').click(async (event) => {
+      await onRollDisease(event, html, this.item, this);
+    });
+    
+
   }
 }

@@ -58,21 +58,26 @@
                     "label": "RAILERS.AttributeCombat",
                     "value": 0,
                     "min": 0,
+                    "mod": 0,
                     "skills": {
                         "bows": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillBows"
                         },
                         "heavyweapons": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillHeavyweapons"
                         },
                         "melee": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillMelee"
                         },
                         "smallarms": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillSmallArms"
                         }
                     }
@@ -81,21 +86,26 @@
                     "label": "RAILERS.AttributeEducation",
                     "value": 0,
                     "min": 0,
+                    "mod": 0,
                     "skills": {
                         "instruction": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillInstruction"
                         },
                         "knowledge": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillKnowledge"
                         },
                         "medical": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillMedical"
                         },
                         "survival": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillSurvival"
                         }
                     }
@@ -104,29 +114,36 @@
                     "label": "RAILERS.AttributeEngineering",
                     "value": 0,
                     "min": 0,
+                    "mod": 0,
                     "skills": {
                         "chemistry": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillChemistry"
                         },
                         "demolition": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillDemolition"
                         },
                         "gunsmithing": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillGunsmithing"
                         },
                         "locksmithing": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillLocksmithing"
                         },
                         "locomotive": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillLocomotive"
                         },
                         "mechanics": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillMechanics"
                         }
                         
@@ -136,13 +153,16 @@
                     "label": "RAILERS.AttributeFortitude",
                     "value": 0,
                     "min": 0,
+                    "mod": 0,
                     "skills": {
                         "endurance": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillEndurance"
                         },
                         "resolve": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillResolve"
                         }
                     }
@@ -151,13 +171,16 @@
                     "label": "RAILERS.AttributeIntuition",
                     "value": 0,
                     "min": 0,
+                    "mod": 0,
                     "skills": {
                         "insight": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillInsight"
                         },
                         "perception": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillPerception"
                         }
                     }
@@ -166,17 +189,21 @@
                     "label": "RAILERS.AttributeProwess",
                     "value": 0,
                     "min": 0,
+                    "mod": 0,
                     "skills": {
                         "acrobatics": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillAcrobatics"
                         },
                         "athletics": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillAthletics"
                         },
                         "exertion": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillExertion"
                         }
                     }
@@ -185,25 +212,31 @@
                     "label": "RAILERS.AttributeSpeech",
                     "value": 0,
                     "min": 0,
+                    "mod": 0,
                     "skills": {
                         "coercion": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillCoercion"
                         },
                         "deception": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillDeception"
                         },
                         "leadership": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillLeadership"
                         },
                         "negotiation": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillNegotiation"
                         },
                         "persuasion": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillPersuasion"
                         }
                     }
@@ -212,21 +245,26 @@
                     "label": "RAILERS.AttributeStealth",
                     "value": 0,
                     "min": 0,
+                    "mod": 0,
                     "skills": {
                         "concealment": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillConcealment"
                         },
                         "disguise": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillDisguise"
                         },
                         "sleighthand": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillSleighthand"
                         },
                         "sneaking": {
                             "value": 0,
+                            "mod": 0,
                             "label": "RAILERS.SkillSneaking"
                         }
                         
@@ -291,13 +329,18 @@
     "Item": {
         "types": [
             "item",
-            "effect",
             "wound",
             "weapon",
             "clothing",
             "car",
             "cargo",
-            "ability"
+            "ability",
+            "weaponmod",
+            "trainmod",
+            "condition",
+            "disease",
+            "symptom",
+            "mutation"
         ],
         "templates": {
             "base": {
@@ -379,6 +422,41 @@
                 "base"
             ],
             "action": "major"
+        },
+        "weaponmod": {
+            "templates": [
+                "base"
+            ]
+        },
+        "trainmod": {
+            "templates": [
+                "base"
+            ]
+        },
+        "condition": {
+            "templates": [
+                "base"
+            ]
+        },
+        "disease": {
+            "templates": [
+                "base"
+            ],
+            "survivability": 5,
+            "transfer": "",
+            "duration": "",
+            "incubation": "",
+            "symptoms": []
+        },
+        "symptom": {
+            "templates": [
+                "base"
+            ]
+        },
+        "mutation": {
+            "templates": [
+                "base"
+            ]
         }
     }
 }

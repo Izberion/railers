@@ -1,0 +1,42 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="attributes">Attributes</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Description Tab --}}
+    <div class="tab" data-group="primary" data-tab="description">
+      {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+
+    {{!-- Attributes Tab --}}
+    <div class="tab attributes" data-group="primary" data-tab="attributes">
+      <button type="button" class="generate-disease" {{#if diseaseRolled}}style="display: none;"{{/if}}>Roll Disease</button>
+      <div class="disease-fields" {{#unless diseaseRolled}} style="display: none;"{{/unless}}>      
+          <label>Transfer: <input name="transfer" type="text" value="{{system.transfer}}"/></label>
+          <label>Incubation: <input name="incubation" type="text" value="{{system.incubation}}"/></label>
+          <label>Duration: <input name="duration" type="text" value="{{system.duration}}"/></label>
+          <label>Survivability: <input name="survivability" type="number" value="{{system.survivability}}"/></label>
+      
+          <Label>Symptoms:</label>
+          <ol class="symptoms-list items-list">
+            {{#each system.symptoms as |symptom|}}
+              <li class ="symptom item flexrow">{{symptom.name}}</li>
+            {{/each}}
+          </ol>
+        </div>
+      </div>
+      
+  </section>
+</form>

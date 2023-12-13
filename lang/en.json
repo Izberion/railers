@@ -168,6 +168,16 @@
   "RAILERS.EditAbility": "Edit Ability",
   "RAILERS.DeleteAbility": "Delete Ability",
   
+  "RAILERS.AddCondition": "Add Condition",
+
+  "RAILERS.AddMutation": "Add Mutation",
+
+  "RAILERS.Symptoms": "Symptoms",
+  "RAILERS.Transfer": "Transfer",
+  "RAILERS.Incubation": "Incubation",
+  "RAILERS.Survivability": "Survivability",
+  "RAILERS.AddDisease": "Add Disease",
+
   "RAILERS.Duration": "Duration",
   "RAILERS.EffectCreate": "Create Effect",
   "RAILERS.EffectToggle": "Toggle Effect",

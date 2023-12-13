@@ -1,11 +1,11 @@
 <div class="grid grid-8col">
   {{#each system.attributes as |attribute a|}}
     <div class="attribute">
-      <label for="attribute" class="roll" data-attpool="{{attribute.value}}" data-label="{{localize attribute.label}}">{{localize attribute.label}}</label>
+      <label for="attribute" class="roll" data-attribute="{{a}}" data-attpool="{{attribute.value}}" data-label="{{localize attribute.label}}">{{localize attribute.label}}</label>
       <input type="number" name="system.attributes.{{a}}.value" value="{{attribute.value}}" data-dtype="Number"/>
       {{#each skills as |skill s|}}
         <div class="skills">
-          <label for="skill" class="roll" data-attpool="{{attribute.value}}" data-skillpool="{{skill.value}}" data-label="{{localize skill.label}}">{{localize skill.label}}</label>
+          <label for="skill" class="roll" data-skill="{{s}}" data-attpool="{{attribute.value}}" data-skillpool="{{skill.value}}" data-label="{{localize skill.label}}">{{localize skill.label}}</label>
           <input type="number" name="system.attributes.{{a}}.skills.{{s}}.value" value="{{skill.value}}" data-dtype="Number"/>
         </div>
       {{/each}}

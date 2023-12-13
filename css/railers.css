@@ -377,7 +377,9 @@
   display: flex;
 }
 
-.railers .demon .items-list .item-name {
+.railers .demon .items-list .item-name,
+.railers .conditions-list .item-name,
+.railers .mutations-list .item-name {
   flex: 1;
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -635,7 +637,9 @@
   word-break: break-all;
 }
 
-.railers .ability-description {
+.railers .ability-description,
+.railers .condition-description,
+.railers .mutation-description {
   flex: 2;
 }
 

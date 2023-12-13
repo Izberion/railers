@@ -3,42 +3,26 @@
  * @param {MouseEvent} event      The left-click event on the effect control
  * @param {Actor|Item} owner      The owning document which manages this effect
  */
-export function onManageActiveEffect(event, owner) {
+ export function onManageActiveEffect(event, owner) {
   event.preventDefault();
   const a = event.currentTarget;
   const li = a.closest("li");
   const effect = li.dataset.effectId ? owner.effects.get(li.dataset.effectId) : null;
-  let name = "New Effect";
-  let duration = undefined;
-
-  switch (li.dataset.effectType) {
-    case "condition":
-      name = "New Condition";
-      break;
-    case "mutation":
-      name = "New Mutation";
-      break;
-    case "disease":
-      name = "New Disease";
-      duration = {quarters: 1};
-      break;
-  }
-
   switch ( a.dataset.action ) {
     case "create":
       return owner.createEmbeddedDocuments("ActiveEffect", [{
-        name: name,
+        name: "New Effect",
         icon: "icons/svg/aura.svg",
         origin: owner.uuid,
-        duration: duration,
-        flags: { effectType: li.dataset.effectType }
+        "duration.rounds": li.dataset.effectType === "temporary" ? 1 : undefined,
+        disabled: li.dataset.effectType === "inactive"
       }]);
     case "edit":
-      if (effect) return effect.sheet.render(true);
-      break;
+      return effect.sheet.render(true);
     case "delete":
-      if (effect) return effect.delete();
-      break;
+      return effect.delete();
+    case "toggle":
+      return effect.update({disabled: !effect.disabled});
   }
 }
 
@@ -51,31 +35,29 @@ export function prepareActiveEffectCategories(effects) {
 
     // Define effect header categories
     const categories = {
-      condition: {
-        type: "condition",
-        label: "Conditions",
+      temporary: {
+        type: "temporary",
+        label: "Temporary Effects",
         effects: []
       },
-      mutation: {
-        type: "mutation",
-        label: "Mutations",
+      passive: {
+        type: "passive",
+        label: "Passive Effects",
         effects: []
       },
-      disease: {
-        type: "disease",
-        label: "Diseases",
+      inactive: {
+        type: "inactive",
+        label: "Inactive Effects",
         effects: []
       }
     };
 
     // Iterate over active effects, classifying them into categories
     for ( let e of effects ) {
-      if ( e.flags && e.flags.effectType ) {
-        let effectType = e.flags.effectType;
-        if ( categories[effectType] ) {
-          categories[effectType].effects.push(e);
-        }
-      }
+      e._getSourceName(); // Trigger a lookup for the source name
+      if ( e.disabled ) categories.inactive.effects.push(e);
+      else if ( e.isTemporary ) categories.temporary.effects.push(e);
+      else categories.passive.effects.push(e);
     }
     return categories;
 }
