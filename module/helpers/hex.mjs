@@ -117,10 +117,6 @@ export async function handleHexClick(event, html, actor) {
 
             const newWeatherType = weatherTypes[newFileName];
 
-            // Set the weather and temperature flags in the actor
-            actor.setFlag('railers', 'weather', newWeatherType);
-            actor.setFlag('railers', 'temperature', tableResultText);
-
             // Output the roll and the new terrain type to the chat
             roll.toMessage({
             flavor: game.i18n.localize(actor.type === 'terrain' ? "RAILERS.RollTerrainFlower" : "RAILERS.RollWeatherFlower"),
@@ -138,10 +134,6 @@ export async function handleHexClick(event, html, actor) {
             // Record the state of the new active hex
             hexStates[hexesElements.index(newActiveHex)] = 'active'; 
         } else {
-            // Set the weather and temperature flags in the actor
-            actor.setFlag('railers', 'weather', weatherType);
-            actor.setFlag('railers', 'temperature', tableResultText);
-
             // If the roll is odd, output the roll and the current terrain type to the chat
             roll.toMessage({
             flavor: game.i18n.localize(actor.type === 'terrain' ? "RAILERS.RollTerrainFlower" : "RAILERS.RollWeatherFlower"),
