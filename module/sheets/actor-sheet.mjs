@@ -431,7 +431,6 @@ export class RailersActorSheet extends ActorSheet {
     let data = JSON.parse(event.dataTransfer.getData('text/plain'));
   
     if (data.img) {
-      // Prevent the default behavior for image drops
       event.preventDefault();
   
       // Acquire the cursor position transformed to Canvas coordinates
@@ -440,7 +439,6 @@ export class RailersActorSheet extends ActorSheet {
       data.x = (x - t.tx) / canvas.app.stage.scale.x;
       data.y = (y - t.ty) / canvas.app.stage.scale.y;
     
-      // Create the Tile
       await canvas.scene.createEmbeddedDocuments("Tile", [data]);
     
       console.log(data);
