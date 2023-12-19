@@ -276,6 +276,7 @@
             "templates": [
                 "base"
             ],
+            "icon": "",
             "primary": 0,
             "secondary": 0
             },
@@ -283,6 +284,7 @@
             "templates": [
                 "base"
             ],
+            "icon": "",
             "attributes": {
                 "strength": 0,
                 "agility": 0,
@@ -296,6 +298,7 @@
             }
         },
         "train": {
+            "icon": "systems/railers/assets/icons/train.svg",
             "armor": 0,
             "power": {
                 "value": 0,
@@ -321,8 +324,11 @@
                 }                
             }
         },
-        "terrain": {},
+        "terrain": {
+            "icon": "systems/railers/assets/icons/map.svg"
+        },
         "weather": {
+            "icon": "",
             "season": ""
         }
     },
@@ -359,6 +365,7 @@
             "templates": [
                 "base"
             ],
+            "icon": "",
             "quantity": 1,
             "load": 0,
             "stowage": "other",
@@ -373,22 +380,22 @@
             "range": "medium"
         },
         "clothing": {
+            "templates": [
+                "base"
+            ],
+            "icon": "",
             "quantity": 1,
             "load": 0,
             "stowage": "other",
             "protection": 0,
-            "insulation": 0
-        },
-        "effect": {
-            "templates": [
-                "base"
-            ],
-            "type": ""
+            "insulation": 0,
+            "clothingType": ""
         },
         "wound": {
             "templates": [
                 "base"
             ],
+            "icon": "systems/railers/assets/icons/blood.svg",
             "name": "wound",
             "severity": 0,
             "damage": 0
@@ -397,6 +404,7 @@
             "templates": [
                 "base"
             ],
+            "icon": "",
             "type": "",
             "weight": 0,
             "power": 0,
@@ -409,6 +417,7 @@
             "templates": [
                 "base"
             ],
+            "icon": "",
             "price": 0,
             "weight": 0
         },
@@ -420,28 +429,33 @@
         "ability": {
             "templates": [
                 "base"
-            ],
+            ],        
+            "icon": "",
             "action": "major"
         },
         "weaponmod": {
             "templates": [
                 "base"
-            ]
+            ],
+            "icon": ""
         },
         "trainmod": {
             "templates": [
                 "base"
-            ]
+            ],
+            "icon": ""
         },
         "condition": {
             "templates": [
                 "base"
-            ]
+            ],
+            "icon": ""
         },
         "disease": {
             "templates": [
                 "base"
             ],
+            "icon": "systems/railers/assets/icons/train.svg",
             "survivability": 5,
             "transfer": "",
             "duration": "",
@@ -451,12 +465,14 @@
         "symptom": {
             "templates": [
                 "base"
-            ]
+            ],
+            "icon": ""
         },
         "mutation": {
             "templates": [
                 "base"
-            ]
+            ],
+            "icon": "systems/railers/assets/icons/dna.svg"
         }
     }
 }

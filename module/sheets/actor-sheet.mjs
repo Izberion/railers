@@ -2,6 +2,7 @@ import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/ef
 import { handleHexClick, retrieveHexStates } from "../helpers/hex.mjs";
 import { rollDialog } from "../dialogs/roll-dialog.mjs";
 import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
+import { onRollHp } from "../helpers/demon-hp.mjs";
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
@@ -69,6 +70,7 @@ export class RailersActorSheet extends ActorSheet {
       let rangeKey = item.system.range;
       let typeKey = item.system.type;
       let actionKey = item.system.action;
+      let clothingTypeKey = item.system.clothingType;
 
       item.system.stowage = game.i18n.localize(CONFIG.RAILERS.stowageOptions[stowageKey]);
       item.system.reload = game.i18n.localize(CONFIG.RAILERS.actionOptions[reloadKey]);
@@ -76,6 +78,8 @@ export class RailersActorSheet extends ActorSheet {
       item.system.range = game.i18n.localize(CONFIG.RAILERS.rangeOptions[rangeKey]);
       item.system.type = game.i18n.localize(CONFIG.RAILERS.actionTypeOptions[typeKey]);
       item.system.action = game.i18n.localize(CONFIG.RAILERS.actionTypeOptions[actionKey]);
+      item.system.clothingType = game.i18n.localize(CONFIG.RAILERS.clothingTypeOptions[clothingTypeKey]);
+      
 
     }
 
@@ -274,6 +278,10 @@ export class RailersActorSheet extends ActorSheet {
     // Listen for drop events on the canvas
     canvas.app.view.addEventListener('drop', this._onDrop);
 
+
+    // Listen for click events on the roll hp button
+    html.find('.roll-hp').click((event) => onRollHp(event, this.actor));
+
   }
 
   
@@ -427,8 +435,7 @@ export class RailersActorSheet extends ActorSheet {
   }
 
   async _onDrop(event) {
-    // Parse the data from the event
-    let data = JSON.parse(event.dataTransfer.getData('text/plain'));
+   let data = JSON.parse(event.dataTransfer.getData('text/plain'));
   
     if (data.img) {
       event.preventDefault();
@@ -446,6 +453,4 @@ export class RailersActorSheet extends ActorSheet {
       super._onDrop(event);
     }
   }
-
-
 }

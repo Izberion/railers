@@ -166,7 +166,7 @@ export class RailersActor extends Actor {
 
 
       for (let item of this.items) {
-        if (item.system.type === "car") {
+        if (item.type === "car") {
           totalPower += item.system.power;
           totalWeight += item.system.weight;
         } else {

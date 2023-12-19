@@ -46,6 +46,7 @@ Hooks.once('init', async function() {
   // Define custom Document classes
   CONFIG.Actor.documentClass = RailersActor;
   CONFIG.Item.documentClass = RailersItem;
+  
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
@@ -55,6 +56,7 @@ Hooks.once('init', async function() {
 
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();
+
 
 });
 
