@@ -176,6 +176,7 @@ export class RailersActor extends Actor {
       this.system.power.value = maxPower - totalPower;
       this.system.weight.value = maxWeight - totalWeight;
     }
+
   }
 
 

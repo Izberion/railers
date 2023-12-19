@@ -79,9 +79,13 @@ export class RailersActorSheet extends ActorSheet {
       item.system.type = game.i18n.localize(CONFIG.RAILERS.actionTypeOptions[typeKey]);
       item.system.action = game.i18n.localize(CONFIG.RAILERS.actionTypeOptions[actionKey]);
       item.system.clothingType = game.i18n.localize(CONFIG.RAILERS.clothingTypeOptions[clothingTypeKey]);
-      
-
     }
+
+    context.items.sort((a, b) => (a.system.severity || 0) - (b.system.severity || 0) || (a.system.damage || 0) - (b.system.damage || 0));
+
+
+
+
 
     return context;
   }
