@@ -222,6 +222,15 @@
   "RAILERS.TN7": "TN 7",
   "RAILERS.TN8": "TN 8",
 
+  "RAILERS.SelectActionType": "Select Attack Action Type",
+  "RAILERS.SingleFire": "Attack/Single Fire",
+  "RAILERS.BlindFire": "Blind Fire",
+  "RAILERS.BurstFire": "Burst Fire",
+  "RAILERS.SustainedFire": "Sustained Fire",
+  "RAILERS.FieldOfFire": "Field of Fire",
+  "RAILERS.ReactiveShot": "Reactive Shot",
+  "RAILERS.NotEnoughAmmo": "Not enough ammo for this attack action",
+  
   "RAILERS.RollTerrainFlower": "Rolled on the Terrain Flower",
   "RAILERS.SnowTerrain": "Snow Terrain",
   "RAILERS.HillTerrain": "Hill Terrain",
@@ -258,7 +267,9 @@
   "RAILERS.RollRoll": "Making a roll at TN {tn}",
   "RAILERS.RollCheck": "Rolling a {rollName} check at TN {tn}",
   "RAILERS.RollSave": "Rolling a {rollName} save at TN {tn}",
+  "RAILERS.RollAttack": "Attacking with {rollName} at TN {tn}",
   "RAILERS.ModifyDiceRoll": "Modify the Dice Roll",
+  "RAILERS.ModifyAttackRoll": "Modify the Attack Roll",
   
   "RAILERS.Roll": "Roll",
   "RAILERS.Cancel": "Cancel",

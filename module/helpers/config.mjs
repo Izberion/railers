@@ -45,6 +45,14 @@ RAILERS.rangeOptions = {
   "extreme": "RAILERS.Extreme"
 }
 
+RAILERS.weaponSkillOptions = {
+  "bows": "RAILERS.SkillBows",
+  "heavyweapons": "RAILERS.SkillHeavyweapons",
+  "melee": "RAILERS.SkillMelee",
+  "smallarms": "RAILERS.SkillSmallArms",
+  "exertion": "RAILERS.SkillExertion"
+}
+
 RAILERS.clothingTypeOptions = {
   "headgear": "RAILERS.Headgear",
   "innerwear": "RAILERS.Innerwear",

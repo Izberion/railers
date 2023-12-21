@@ -1,0 +1,33 @@
+<div>
+    <div class="modifier grid">
+        <label for="modifier">{{localize "RAILERS.Modifier"}}:</label>
+        <input type="number" name="modifier" value="0" />
+    </div>
+    <div class="form-group grid">
+        <label for="tn">{{localize "RAILERS.SelectTN"}}:</label>
+        <select name="tn" id="tn">
+            <option value="4">{{localize "RAILERS.TN4"}}</option>
+            <option selected value="5">{{localize "RAILERS.TN5"}}</option>
+            <option value="6">{{localize "RAILERS.TN6"}}</option>
+            <option value="7">{{localize "RAILERS.TN7"}}</option>
+            <option value="8">{{localize "RAILERS.TN8"}}</option>
+        </select>
+    </div>
+    {{#if isRanged}}
+    <div class="form-group grid">
+      <label for="actionType">{{localize "RAILERS.SelectActionType"}}:</label>
+      <select name="actionType">
+        <option value="singleFire">{{localize "RAILERS.SingleFire"}}</option>
+        <option value="blindFire">{{localize "RAILERS.BlindFire"}}</option>
+        <option value="burstFire">{{localize "RAILERS.BurstFire"}}</option>
+        <option value="sustainedFire">{{localize "RAILERS.SustainedFire"}}</option>
+        <option value="fieldOfFire">{{localize "RAILERS.FieldOfFire"}}</option>
+        <option value="reactiveShot">{{localize "RAILERS.ReactiveShot"}}</option>
+      </select>
+    </div>
+    {{/if}}
+  
+    {{#each activeEffects as |effect|}}
+        <input type="checkbox" name="activeEffect" value="{{effect.id}}" {{#unless effect.disabled}}checked{{/unless}}> {{effect.label}}<br>
+    {{/each}}
+</div>

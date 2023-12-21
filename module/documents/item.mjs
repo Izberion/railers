@@ -10,6 +10,16 @@ export class RailersItem extends Item {
     // As with the actor class, items are documents that can have their data
     // preparation methods overridden (such as prepareBaseData()).
     super.prepareData();
+
+    const itemData = this;
+    if (itemData.type === "weapon") {
+      const skill = itemData.system.skill;
+      if (skill === "exertion") {
+        itemData.system.attribute = "prowess";
+      } else {
+        itemData.system.attribute = "combat";
+      }
+    }
   }
 
   /**
@@ -37,7 +47,7 @@ export class RailersItem extends Item {
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get('core', 'rollMode');
-    const label = `[${item.type}] ${item.name}`;
+    const label = `${item.name}`;
 
     // If there's no roll data, send a chat message.
     if (!this.system.formula) {

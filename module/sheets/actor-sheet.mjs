@@ -2,6 +2,7 @@ import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/ef
 import { handleHexClick, retrieveHexStates } from "../helpers/hex.mjs";
 import { rollDialog } from "../dialogs/roll-dialog.mjs";
 import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
+import { attackDialog } from "../dialogs/attack-dialog.mjs";
 import { onRollHp } from "../helpers/demon-hp.mjs";
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -175,7 +176,6 @@ export class RailersActorSheet extends ActorSheet {
     html.find('.item-delete').click(ev => {
       const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("itemId"));
-      console.log(item); // Add this line to check the item
       item.delete();
       li.slideUp(200, () => this.render(false));
     });
@@ -198,6 +198,8 @@ export class RailersActorSheet extends ActorSheet {
 
     // Roll Dialog
     html.on("click", ".roll", {actor: this.actor}, rollDialog);
+    html.on("click", ".attack-roll", {actor: this.actor}, attackDialog);
+
 
     // Add a click listener for the "Add Wound" button
     html.find('.wound-create').click(addWoundDialog.bind(this, this.actor, html));

@@ -57,6 +57,17 @@ export class RailersItemSheet extends ItemSheet {
     context.actionTypeOptions = CONFIG.RAILERS.actionTypeOptions;
     context.rangeOptions = CONFIG.RAILERS.rangeOptions;
     context.clothingTypeOptions = CONFIG.RAILERS.clothingTypeOptions;
+    context.weaponSkillOptions = CONFIG.RAILERS.weaponSkillOptions;
+
+    // if (itemData.type === "weapon") {
+    //   const skill = context.system.skill;
+    //   if (skill === "exertion") {
+    //     context.system.attribute = "prowess";
+    //   } else {
+    //     context.system.attribute = "combat";
+    //   }
+    // }
+
 
     return context;
   }

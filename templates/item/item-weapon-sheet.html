@@ -72,6 +72,13 @@
         <label class="resource-label">{{localize "RAILERS.Magazine"}}</label>
         <input type="number" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
       </div>
+      <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Skill"}}</label>
+        <select name="system.skill">
+          {{selectOptions weaponSkillOptions selected=system.skill localize=true}}
+        </select>
+      </div>
+      {{system.attribute}}
     </div>
   </section>
 </form>
