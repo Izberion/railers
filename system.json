@@ -18,91 +18,91 @@
     {
     "name": "ammunition",
     "label": "Ammunition",
-    "path": "./packs/ammunition.db",
+    "path": "./packs/ammunition",
     "type": "Item",
     "entity": "Item"
     },
     {
     "name": "cargo",
     "label": "Cargo",
-    "path": "./packs/cargo.db",
+    "path": "./packs/cargo",
     "type": "Item",
     "entity": "Item"
     },
     {
     "name": "clothing",
     "label": "Clothing",
-    "path": "./packs/clothing.db",
+    "path": "./packs/clothing",
     "type": "Item",
     "entity": "Item"
     },
     {
     "name": "demons",
     "label": "Demons",
-    "path": "./packs/demons.db",
+    "path": "./packs/demons",
     "type": "Actor",
     "entity": "Actor"
     },
     {
     "name": "light-and-heat",
     "label": "Light and Heat",
-    "path": "./packs/light-and-heat.db",
+    "path": "./packs/light-and-heat",
     "type": "Item",
     "entity": "Item"
     },
     {
     "name": "melee-weapons",
     "label": "Melee Weapons",
-    "path": "./packs/melee-weapons.db",
+    "path": "./packs/melee-weapons",
     "type": "Item",
     "entity": "Item"
     },
     {
     "name": "mutations",
     "label": "Mutations",
-    "path": "./packs/mutations.db",
+    "path": "./packs/mutations",
     "type": "Item",
     "entity": "Item"
     },
     {
     "name": "pharmacotics",
     "label": "Pharmacotics",
-    "path": "./packs/pharmacotics.db",
+    "path": "./packs/pharmacotics",
     "type": "Item",
     "entity": "Item"
     },
     {
     "name": "ranged-weapons",
     "label": "Ranged Weapons",
-    "path": "./packs/ranged-weapons.db",
+    "path": "./packs/ranged-weapons",
     "type": "Item",
     "entity": "Item"
     },
     {
     "name": "survival-gear",
     "label": "Survival Gear",
-    "path": "./packs/survival-gear.db",
+    "path": "./packs/survival-gear",
     "type": "Item",
     "entity": "Item"
     },
     {
     "name": "symptoms",
     "label": "Symptoms",
-    "path": "./packs/symptoms.db",
+    "path": "./packs/symptoms",
     "type": "Item",
     "entity": "Item"
     },
     {
     "name": "tools-and-supplies",
     "label": "Tools and Supplies",
-    "path": "./packs/tools-and-supplies.db",
+    "path": "./packs/tools-and-supplies",
     "type": "Item",
     "entity": "Item"
     },
     {
     "name": "train-cars",
     "label": "Train Cars",
-    "path": "./packs/train-cars.db",
+    "path": "./packs/train-cars",
     "type": "Item",
     "entity": "Item"
     }
