@@ -18,9 +18,8 @@
     {
     "name": "ammunition",
     "label": "Ammunition",
-    "path": "./packs/ammunition",
-    "type": "Item",
-    "entity": "Item"
+    "path": "packs/ammunition",
+    "type": "Item"
     },
     {
     "name": "cargo",
