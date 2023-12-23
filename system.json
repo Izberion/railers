@@ -9,12 +9,104 @@
     "maximum": 11
   },
   "authors": [{
-    "name": "izberion"
+    "name": "Izberion"
   }],
   "esmodules": ["module/railers.mjs"],
   "styles": ["css/railers.css"],
   "scripts": [],
-  "packs": [],
+  "packs": [
+    {
+    "name": "ammunition",
+    "label": "Ammunition",
+    "path": "./packs/ammunition.db",
+    "type": "Item",
+    "entity": "Item"
+    },
+    {
+    "name": "cargo",
+    "label": "Cargo",
+    "path": "./packs/cargo.db",
+    "type": "Item",
+    "entity": "Item"
+    },
+    {
+    "name": "clothing",
+    "label": "Clothing",
+    "path": "./packs/clothing.db",
+    "type": "Item",
+    "entity": "Item"
+    },
+    {
+    "name": "demons",
+    "label": "Demons",
+    "path": "./packs/demons.db",
+    "type": "Actor",
+    "entity": "Actor"
+    },
+    {
+    "name": "light-and-heat",
+    "label": "Light and Heat",
+    "path": "./packs/light-and-heat.db",
+    "type": "Item",
+    "entity": "Item"
+    },
+    {
+    "name": "melee-weapons",
+    "label": "Melee Weapons",
+    "path": "./packs/melee-weapons.db",
+    "type": "Item",
+    "entity": "Item"
+    },
+    {
+    "name": "mutations",
+    "label": "Mutations",
+    "path": "./packs/mutations.db",
+    "type": "Item",
+    "entity": "Item"
+    },
+    {
+    "name": "pharmacotics",
+    "label": "Pharmacotics",
+    "path": "./packs/pharmacotics.db",
+    "type": "Item",
+    "entity": "Item"
+    },
+    {
+    "name": "ranged-weapons",
+    "label": "Ranged Weapons",
+    "path": "./packs/ranged-weapons.db",
+    "type": "Item",
+    "entity": "Item"
+    },
+    {
+    "name": "survival-gear",
+    "label": "Survival Gear",
+    "path": "./packs/survival-gear.db",
+    "type": "Item",
+    "entity": "Item"
+    },
+    {
+    "name": "symptoms",
+    "label": "Symptoms",
+    "path": "./packs/symptoms.db",
+    "type": "Item",
+    "entity": "Item"
+    },
+    {
+    "name": "tools-and-supplies",
+    "label": "Tools and Supplies",
+    "path": "./packs/tools-and-supplies.db",
+    "type": "Item",
+    "entity": "Item"
+    },
+    {
+    "name": "train-cars",
+    "label": "Train Cars",
+    "path": "./packs/train-cars.db",
+    "type": "Item",
+    "entity": "Item"
+    }
+  ],
   "languages": [
     {
       "lang": "en",
