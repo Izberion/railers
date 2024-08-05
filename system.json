@@ -4,9 +4,8 @@
   "description": "The Railers tabletop roleplaying system for FoundryVTT",
   "version": "1.0",
   "compatibility": {
-    "minimum": 11,
-    "verified": "11.315",
-    "maximum": 11
+    "minimum": 12,
+    "verified": "12.328"
   },
   "authors": [{
     "name": "Izberion"
@@ -106,8 +105,8 @@
       "path": "lang/en.json"
     }
   ],
-  "gridDistance": 1,
-  "gridUnits": "hex",
+  "grid.distance": 1,
+  "grid.units": "hex",
   "primaryTokenAttribute": "hitpoints",
   "secondaryTokenAttribute": "wounds",
   "url": "",
