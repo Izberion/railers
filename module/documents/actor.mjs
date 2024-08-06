@@ -38,13 +38,16 @@ export class RailersActor extends Actor {
     // things organized.
     this._prepareCharacterData(actorData);
     this._prepareNpcData(actorData);
+    this._prepareTrainData(actorData);
+    this._prepareDemonData(actorData);
+
 
     if (this.type === "character" || this.type === "npc" || this.type === "demon") {
       let totalWounds = 0;
       let totalDamage = 0;
 
       // Store the maximum hitposystem.ints value
-      let maxHitpoints = this.system.hitpoints.max;
+      let maxHitpoints = systemData.hitpoints.max;
 
       // Iterate over the items in the actor
       this.items.forEach(item => {
@@ -56,11 +59,10 @@ export class RailersActor extends Actor {
       });
 
       // Update the actor's data
-      this.system.wounds.value = totalWounds;
-      this.system.hitpoints.value = maxHitpoints - totalDamage;
+      systemData.wounds.value = totalWounds;
+      systemData.hitpoints.value = maxHitpoints - totalDamage;
    
       
-
       if (this.type === "character" || this.type === "npc") {
 
         // Initialize total loads
@@ -79,8 +81,8 @@ export class RailersActor extends Actor {
             totalStowedLoad += totalItemLoad;
           }
         }
-        this.system.load.onHand.value = totalOnHandLoad;
-        this.system.load.stowed.value = totalStowedLoad;
+        systemData.load.onHand.value = totalOnHandLoad;
+        systemData.load.stowed.value = totalStowedLoad;
 
 
         // Initialize total insulation and protection
@@ -99,84 +101,10 @@ export class RailersActor extends Actor {
         }
 
         // Calculate thermal threshold
-        this.system.thermalThreshold = -1 * totalInsulation;
+        systemData.thermalThreshold = -1 * totalInsulation;
       
-
-
-        if (this.type === "character") {
-          // Calculate defense pool
-          this.system.defensePool = totalProtection + this.system.attributes.prowess.value;
-
-          // Calculate wound threshold
-          this.system.wounds.max = 6 + this.system.attributes.fortitude.value + this.system.attributes.fortitude.skills.endurance.value;
-
-          // Calculate load limit
-          this.system.load.onHand.max = 3 + this.system.attributes.prowess.value + this.system.attributes.prowess.skills.exertion.value;
-
-          // Calculate initiative pool
-          this.system.initiativePool = this.system.attributes.intuition.value + this.system.attributes.prowess.skills.athletics.value;
-        }
-
-        if (this.type === "npc") {
-          // Calculate secondary pool
-          this.system.secondary = Math.floor(this.system.primary / 2)
-
-          // Calculate defense pool
-          this.system.defensePool = totalProtection + this.system.secondary;
-
-          // Calculate wound threshold
-          this.system.wounds.max = 6 + this.system.primary + this.system.secondary;
-
-          // Calculate load limit
-          this.system.load.onHand.max = 3 + this.system.primary + this.system.secondary;
-
-          // Calculate initiative pool
-          this.system.initiativePool = this.system.primary;
-        }
       }
     }
-    
-    if (this.type === "demon") {
-      // Calculate wound threshold
-      this.system.wounds.max = this.system.attributes.endurance * 3;
-
-      // Calculate initiative pool
-      this.system.initiativePool = this.system.attributes.agility;
-    }
-
-    if (this.type === "train") {   
-      if (this.system.locomotive === "donkey") {
-        let weight = this.system.weight.value;
-        let speed = 8;
-    
-        // Calculate the speed reduction based on weight
-        let speedReduction = Math.floor(weight / 250);
-    
-        // Update the speed
-        this.system.speed = speed - speedReduction;
-    
-        // Ensure the speed doesn't go below the minimum (2)
-        this.system.speed = Math.max(this.system.speed, 2);
-      }
-      
-      let totalPower = 0;
-      let totalWeight = 0;
-      let maxPower = this.system.power.max;
-      let maxWeight = this.system.weight.max;
-
-
-      for (let item of this.items) {
-        if (item.type === "car") {
-          totalPower += item.system.power;
-          totalWeight += item.system.weight;
-        } else {
-          totalWeight += item.system.weight;
-        }
-      }
-      this.system.power.value = maxPower - totalPower;
-      this.system.weight.value = maxWeight - totalWeight;
-    }
-
   }
 
 
@@ -189,6 +117,18 @@ export class RailersActor extends Actor {
 
     // Make modifications to data here. For example:
     const systemData = actorData.system;
+
+    // Calculate defense pool
+    systemData.defensePool = totalProtection + systemData.attributes.prowess.value;
+
+    // Calculate wound threshold
+    systemData.wounds.max = 6 + systemData.attributes.fortitude.value + systemData.attributes.fortitude.skills.endurance.value;
+
+    // Calculate load limit
+    systemData.load.onHand.max = 3 + systemData.attributes.prowess.value + systemData.attributes.prowess.skills.exertion.value;
+
+    // Calculate initiative pool
+    systemData.initiativePool = systemData.attributes.intuition.value + systemData.attributes.prowess.skills.athletics.value;
     
   }
 
@@ -200,6 +140,21 @@ export class RailersActor extends Actor {
 
     // Make modifications to data here. For example:
     const systemData = actorData.system;
+
+    // Calculate secondary pool
+    systemData.secondary = Math.floor(systemData.primary / 2)
+
+    // Calculate defense pool
+    systemData.defensePool = totalProtection + systemData.secondary;
+
+    // Calculate wound threshold
+    systemData.wounds.max = 6 + systemData.primary + systemData.secondary;
+
+    // Calculate load limit
+    systemData.load.onHand.max = 3 + systemData.primary + systemData.secondary;
+
+    // Calculate initiative pool
+    systemData.initiativePool = systemData.primary;
   }
 
   _prepareDemonData(actorData) {
@@ -207,6 +162,12 @@ export class RailersActor extends Actor {
 
     // Make modifications to data here. For example:
     const systemData = actorData.system;
+
+    // Calculate wound threshold
+    systemData.wounds.max = systemData.attributes.endurance * 3;
+
+    // Calculate initiative pool
+    systemData.initiativePool = systemData.attributes.agility;
   }
 
   _prepareTrainData(actorData) {
@@ -214,6 +175,38 @@ export class RailersActor extends Actor {
 
     // Make modifications to data here. For example:
     const systemData = actorData.system;
+
+    // Calculate Donkey locomotive speeds
+    if (systemData.locomotive === "donkey") {
+      let weight = systemData.weight.value;
+      let speed = 8;
+  
+      // Calculate the speed reduction based on weight
+      let speedReduction = Math.floor(weight / 250);
+  
+      // Update the speed
+      systemData.speed = speed - speedReduction;
+  
+      // Ensure the speed doesn't go below the minimum (2)
+      systemData.speed = Math.max(systemData.speed, 2);
+    }
+    
+    //Calculate car contributions to weight and power
+    let totalPower = 0;
+    let totalWeight = 0;
+    let maxPower = systemData.power.max;
+    let maxWeight = systemData.weight.max;
+    for (let item of this.items) {
+      if (item.type === "car") {
+        totalPower += item.system.power;
+        totalWeight += item.system.weight;
+      } else {
+        totalWeight += item.system.weight;
+      }
+    }
+    systemData.power.value = maxPower - totalPower;
+    systemData.weight.value = maxWeight - totalWeight;
+
   }
 
   /**
