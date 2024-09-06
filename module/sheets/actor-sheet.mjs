@@ -415,14 +415,13 @@ export class RailersActorSheet extends ActorSheet {
   _onDragStart(event) {
     // Store the source image URL and dimensions in the dataTransfer object
     if (event.target.classList.contains('draggable-hex')) {
-
       let img = event.target.src;
       let width = 120;
       let height = 105;
 
       // Create a temporary Tile data object
       let tileData = {
-        img: img,
+        texture: { src: img },
         width: width,
         height: height,
         x: 0,
@@ -441,22 +440,23 @@ export class RailersActorSheet extends ActorSheet {
   }
 
   async _onDrop(event) {
-   let data = JSON.parse(event.dataTransfer.getData('text/plain'));
-  
-    if (data.img) {
-      event.preventDefault();
-  
-      // Acquire the cursor position transformed to Canvas coordinates
+    event.preventDefault();
+
+    const data = JSON.parse(event.dataTransfer.getData('text/plain'));
+
+    if (data.texture && data.texture.src) {
       const [x, y] = [event.clientX, event.clientY];
-      const t = canvas.app.stage.worldTransform;
-      data.x = (x - t.tx) / canvas.app.stage.scale.x;
-      data.y = (y - t.ty) / canvas.app.stage.scale.y;
-    
+      const t = canvas.stage.worldTransform;
+      data.x = (x - t.tx) / canvas.stage.scale.x;
+      data.y = (y - t.ty) / canvas.stage.scale.y;
+
+      // Create the tile on the canvas
       await canvas.scene.createEmbeddedDocuments("Tile", [data]);
-    
-      console.log(data);
+
+      console.log("Tile data dropped:", data);
     } else {
       super._onDrop(event);
     }
   }
+
 }

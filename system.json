@@ -105,8 +105,11 @@
       "path": "lang/en.json"
     }
   ],
-  "grid.distance": 1,
-  "grid.units": "hex",
+  "grid": {
+    "distance": 1,
+    "units": "hex",
+    "type": 4
+  },
   "primaryTokenAttribute": "hitpoints",
   "secondaryTokenAttribute": "wounds",
   "url": "",
