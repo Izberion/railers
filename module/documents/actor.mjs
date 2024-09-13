@@ -100,12 +100,13 @@ export class RailersActor extends Actor {
           }
         }
 
+        //Calculate defense pools
         if (this.type === "character") {
           systemData.defensePool = totalProtection + systemData.attributes.prowess.value;
         }
 
         if (this.type === "npc") {
-        systemData.defensePool = totalProtection + systemData.secondary;
+          systemData.defensePool = totalProtection + systemData.secondary;
         }
 
         // Calculate thermal threshold
