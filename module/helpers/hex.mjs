@@ -26,7 +26,7 @@ export async function handleHexClick(event, html, actor) {
     let hexStates = [];
     let coordinates, roll, index;
     
-    // Mapping of image file names to terrain types
+    // Mapping of image file names
     const terrainTypes = {
     'snowhex.svg': game.i18n.localize("RAILERS.SnowTerrain"),
     'hillhex.svg': game.i18n.localize("RAILERS.HillTerrain"),
