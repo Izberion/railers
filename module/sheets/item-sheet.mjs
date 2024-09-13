@@ -8,7 +8,7 @@ export class RailersItemSheet extends ItemSheet {
 
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["railers", "sheet", "item"],
       width: 520,
       height: 480,

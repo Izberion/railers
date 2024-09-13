@@ -100,6 +100,14 @@ export class RailersActor extends Actor {
           }
         }
 
+        if (this.type === "character") {
+          systemData.defensePool = totalProtection + systemData.attributes.prowess.value;
+        }
+
+        if (this.type === "npc") {
+        systemData.defensePool = totalProtection + systemData.secondary;
+        }
+
         // Calculate thermal threshold
         systemData.thermalThreshold = -1 * totalInsulation;
       
@@ -117,9 +125,6 @@ export class RailersActor extends Actor {
 
     // Make modifications to data here. For example:
     const systemData = actorData.system;
-
-    // Calculate defense pool
-    systemData.defensePool = totalProtection + systemData.attributes.prowess.value;
 
     // Calculate wound threshold
     systemData.wounds.max = 6 + systemData.attributes.fortitude.value + systemData.attributes.fortitude.skills.endurance.value;
@@ -144,8 +149,11 @@ export class RailersActor extends Actor {
     // Calculate secondary pool
     systemData.secondary = Math.floor(systemData.primary / 2)
 
-    // Calculate defense pool
-    systemData.defensePool = totalProtection + systemData.secondary;
+    // Calculate max HP
+    systemData.hitpoints.max = 2 * (systemData.primary + systemData.secondary)
+
+    // Calculate max Nerve
+    systemData.nerve.max = 2 * (systemData.hitpoints.max)
 
     // Calculate wound threshold
     systemData.wounds.max = 6 + systemData.primary + systemData.secondary;

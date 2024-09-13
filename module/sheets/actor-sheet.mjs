@@ -12,7 +12,7 @@ export class RailersActorSheet extends ActorSheet {
 
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["railers", "sheet", "actor"],
       template: "systems/railers/templates/actor/actor-sheet.html",
       width: 750,
