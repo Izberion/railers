@@ -454,8 +454,7 @@ export class RailersActorSheet extends ActorSheet {
       await canvas.scene.createEmbeddedDocuments("Tile", [data]);
 
       console.log("Tile data dropped:", data);
-    } else {
-      super._onDrop(event);
+
     }
   }
 
