@@ -160,15 +160,34 @@ export async function handleHexClick(event, html, actor) {
 
 export function retrieveHexStates(actor, html) {
 
-  // After the listeners are activated, retrieve the hex states from the actor's flags
-  let hexStates = actor.getFlag('railers', 'hexStates');
-  
-  // If the hex states exist, apply them to the corresponding hex
-  if (hexStates) {
+    // After the listeners are activated, retrieve the hex states from the actor's flags
+    let hexStates = actor.getFlag('railers', 'hexStates');
+    
     const hexes = html.find('.hex');
-    hexes.each((i, h) => {
-      h.classList.remove('active', 'inactive');
-      h.classList.add(hexStates[i]);
-    });
+    
+    // If no hexStates exist, set the default center hex as active
+    if (!hexStates) {
+      hexStates = Array(hexes.length).fill('inactive'); // Initialize all hexes as inactive
+  
+      // Set the center hex (2,3) as active
+      const centerHexIndex = hexes.index(html.find('.hex[data-coordinates="(2,2)"]'));
+      hexStates[centerHexIndex] = 'active';
+  
+      // Apply the active state to the center hex
+      hexes.each((i, h) => {
+        h.classList.remove('active', 'inactive');
+        h.classList.add(hexStates[i]);
+      });
+  
+      // Store the initial state in the actor's flags
+      actor.setFlag('railers', 'hexStates', hexStates);
+    } else {
+      // If hex states exist, apply them to the corresponding hex
+      hexes.each((i, h) => {
+        h.classList.remove('active', 'inactive');
+        h.classList.add(hexStates[i]);
+      });
+    }
   }
-}
+  
+  
