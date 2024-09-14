@@ -223,6 +223,7 @@
   text-align: center;
 }
 
+
   /* Styles limited to railers sheets */
 
 .railers .item-form {
@@ -518,6 +519,7 @@
 
 .railers .resource {
   padding-bottom: 5px;
+  align-content: center;
 }
 
 .railers .attributes,
@@ -650,4 +652,36 @@
 .railers .toggle {
   text-align: center;
   justify-self: flex-start;
+}
+
+.railers label.roll:hover {
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}
+
+.railers label.att-label {
+  font-weight: bold;
+}
+
+.railers label.roll {
+  margin: 5px 0;
+}
+
+.railers .skill-list {
+  overflow-y: auto;
+  max-height: 160px;
+  flex: none;
+}
+
+.railers .skill {
+  padding: 5px 0;
+}
+
+.railers .attribute {
+  padding-bottom: 10px;
+  flex: 0;
+}
+
+.railers .att-group {
+  margin-bottom: 30px;
 }

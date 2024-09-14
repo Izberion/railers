@@ -8,8 +8,6 @@ import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { RAILERS } from "./helpers/config.mjs";
 
-// import { RailersCombatant, RailersCombatTracker } from "./combat.mjs";
-
 /* -------------------------------------------- */
 /*  Init Hook                                   */
 /* -------------------------------------------- */
@@ -36,11 +34,6 @@ Hooks.once('init', async function() {
     formula: "(@initiativePool)d8x8cs>=5df1 + (@initiativePool) / 100",
     decimals: 2
   };
-
-
-  // CONFIG.Combatant.entityClass = RailersCombatant;
-  // CONFIG.ui.combat = RailersCombatTracker;
-
 
 
   // Define custom Document classes

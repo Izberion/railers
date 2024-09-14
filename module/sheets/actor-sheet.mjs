@@ -16,7 +16,7 @@ export class RailersActorSheet extends ActorSheet {
       classes: ["railers", "sheet", "actor"],
       template: "systems/railers/templates/actor/actor-sheet.html",
       width: 750,
-      height: 600,
+      height: 680,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "biography" }]
     });
   }

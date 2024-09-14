@@ -1,14 +1,18 @@
-<div class="grid grid-8col">
+<div class="grid grid-4col">
   {{#each system.attributes as |attribute a|}}
-    <div class="attribute">
-      <label for="attribute" class="roll" data-attribute="{{a}}" data-attpool="{{attribute.value}}" data-label="{{localize attribute.label}}">{{localize attribute.label}}</label>
-      <input type="number" name="system.attributes.{{a}}.value" value="{{attribute.value}}" data-dtype="Number"/>
-      {{#each skills as |skill s|}}
-        <div class="skills">
-          <label for="skill" class="roll" data-skill="{{s}}" data-attpool="{{attribute.value}}" data-skillpool="{{skill.value}}" data-label="{{localize skill.label}}">{{localize skill.label}}</label>
-          <input type="number" name="system.attributes.{{a}}.skills.{{s}}.value" value="{{skill.value}}" data-dtype="Number"/>
-        </div>
-      {{/each}}
+    <div class="flexcol att-group">
+      <div class="attribute">
+        <label for="attribute" class="roll att-label" data-attribute="{{a}}" data-attpool="{{attribute.value}}" data-label="{{localize attribute.label}}">{{localize attribute.label}}</label>
+        <input type="number" name="system.attributes.{{a}}.value" value="{{attribute.value}}" data-dtype="Number"/>
+      </div>
+      <div class="skill-list flexcol">
+        {{#each skills as |skill s|}}
+          <div class="skill">
+            <label for="skill" class="roll skill-label" data-skill="{{s}}" data-attpool="{{attribute.value}}" data-skillpool="{{skill.value}}" data-label="{{localize skill.label}}">{{localize skill.label}}</label>
+            <input type="number" name="system.attributes.{{a}}.skills.{{s}}.value" value="{{skill.value}}" data-dtype="Number"/>
+          </div>
+        {{/each}}
+      </div>
     </div>
   {{/each}}
 </div>
