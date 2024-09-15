@@ -14,7 +14,7 @@ export async function addWoundDialog(actor, html) {
             const woundData = {
               name,
               type: "wound",
-              data: {
+              system: {
                 damage,
                 severity
               },
