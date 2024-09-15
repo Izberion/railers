@@ -450,11 +450,13 @@ export class RailersActorSheet extends ActorSheet {
       data.x = (x - t.tx) / canvas.stage.scale.x;
       data.y = (y - t.ty) / canvas.stage.scale.y;
 
-      // Create the tile on the canvas
       await canvas.scene.createEmbeddedDocuments("Tile", [data]);
 
       console.log("Tile data dropped:", data);
 
+    } else {
+      // Make sure all other drops still work
+      super._onDrop(event);
     }
   }
 
