@@ -38,11 +38,11 @@ export async function attackDialog(event, html) {
               ammoReduction = 3;
               break;
             case 'sustainedFire':
-              ammoReduction = 12;
+              ammoReduction = 10;
               break;
             case 'fieldOfFire':
               poolTotal -= 2;
-              ammoReduction = 12;
+              ammoReduction = 30;
               break;
             case 'reactiveShot':
               tn = 6;
