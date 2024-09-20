@@ -266,8 +266,8 @@
   "RAILERS.GreatSuccess": "Great Success",
 
   "RAILERS.RollRoll": "Making a roll at TN {tn}",
-  "RAILERS.RollCheck": "Rolling a {rollName} check at TN {tn}",
-  "RAILERS.RollSave": "Rolling a {rollName} save at TN {tn}",
+  "RAILERS.RollCheck": "Rolling a(n) {rollName} check at TN {tn}",
+  "RAILERS.RollSave": "Rolling a(n) {rollName} save at TN {tn}",
   "RAILERS.RollAttack": "Attacking with {rollName} at TN {tn}",
   "RAILERS.ModifyDiceRoll": "Modify the Dice Roll",
   "RAILERS.ModifyAttackRoll": "Modify the Attack Roll",

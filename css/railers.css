@@ -659,6 +659,11 @@
   cursor: pointer;
 }
 
+.railers label.roll[data-rollable="false"]:hover {
+  text-shadow: none;
+  cursor: default;
+}
+
 .railers label.att-label {
   font-weight: bold;
 }
