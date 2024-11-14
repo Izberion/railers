@@ -45,7 +45,7 @@ export async function attackDialog(event, html) {
               ammoReduction = 30;
               break;
             case 'reactiveShot':
-              tn = 6;
+              tn = Math.min(tn + 1, 8);
               ammoReduction = 1;
               break;
             default:
