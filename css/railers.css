@@ -564,6 +564,11 @@
   content: none;
 }
 
+.railers .hex.active:hover {
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}
+
 .railers .hex img,
 .railers .d12hex img {
   object-fit: fill;
@@ -593,6 +598,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.railers .d12hex:hover {
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
 }
 
 .railers .d12hex-wrapper .face {
