@@ -22,7 +22,7 @@ export async function attackDialog(event, html) {
         label: game.i18n.localize("RAILERS.Roll"),
         callback: async (html) => {
           const mod = parseInt(html.find('input[name="modifier"]').val()) || 0;
-          const tn = parseInt(html.find('select[name="tn"]').val()) || 5;
+          let tn = parseInt(html.find('select[name="tn"]').val()) || 5;
           const actionType = html.find('select[name="actionType"]').val();
 
           let rollFormula;
