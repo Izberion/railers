@@ -1,5 +1,4 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/effects.mjs";
-import { handleHexClick, retrieveHexStates } from "../helpers/hex.mjs";
 import { rollDialog } from "../dialogs/roll-dialog.mjs";
 import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
 import { attackDialog } from "../dialogs/attack-dialog.mjs";
@@ -241,42 +240,7 @@ export class RailersActorSheet extends ActorSheet {
 
 
     html.find('select[name="system.locomotive"]').change(this._onLocomotiveChange.bind(this));
-   
-
-    html.find('.rollSeason').click(async function() {
-      let season = html.find('input[name="system.season"]:checked').val();
-
-      let tableName;
-      if (season === 'winter') {
-        tableName = 'Winter Temperature';
-      } else if (season === 'summer') {
-        tableName = 'Summer Temperature';
-      }
-
-      // Fetch the RollTable entity
-      let rollTable = game.tables.contents.find(t => t.name === tableName);
-      
-      // Draw from the RollTable
-      await rollTable.draw({roll: true});
-      // tableResultText = tableResult.results[0].text;
-      
-    });
     
-
-    html.on('click', '.hex, .d12hex', async (event) => {
-      await handleHexClick(event, html, this.actor);
-    });
-
-    retrieveHexStates(this.actor, html);
-
-
-    let hexImages = html.find('.draggable-hex');
-
-    // Add draggable attribute and event listener to each image
-    hexImages.each((i, img) => {
-      img.setAttribute('draggable', 'true');
-      img.addEventListener('dragstart', this._onDragStart.bind(this));
-    });
     
     // Remove any existing drop event listeners on the canvas
     canvas.app.view.removeEventListener('drop', this._onDrop);
@@ -412,42 +376,5 @@ export class RailersActorSheet extends ActorSheet {
   }
   
 
-  _onDragStart(event) {
-    if (!event.target.classList.contains('draggable-hex')) return super._onDragStart(event);
-
-    const tileData = {
-        texture: { src: event.target.src },
-        width: 120,
-        height: 105,
-        x: 0,
-        y: 0,
-        z: 0,
-        rotation: 0,
-        hidden: false,
-        locked: true
-    };
-    event.dataTransfer.setData('text/plain', JSON.stringify(tileData));
-  }
-
-  async _onDrop(event) {
-      event.preventDefault();
-      const data = JSON.parse(event.dataTransfer.getData('text/plain'));
-
-      if (!data?.texture?.src) return super._onDrop(event);
-
-      const scenePos = canvas.stage.toLocal({ x: event.clientX, y: event.clientY });
-      const snapped = (canvas.grid.type > CONST.GRID_TYPES.GRIDLESS && canvas.grid.isHexagonal)
-          ? canvas.grid.getSnappedPoint(
-              { x: scenePos.x, y: scenePos.y },
-              { mode: CONST.GRID_SNAPPING_MODES.CENTER }
-          )
-          : { x: scenePos.x, y: scenePos.y };
-
-      data.x = snapped.x - 60 + 2;
-      data.y = snapped.y - 50;
-
-      const [createdTile] = await canvas.scene.createEmbeddedDocuments("Tile", [data]);
-      return createdTile;
-  }
-
+  
 }
