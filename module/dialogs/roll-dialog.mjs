@@ -10,7 +10,7 @@ export async function rollDialog(event, html) {
   const thisActor = event.data.actor;
   const characterName = thisActor.name;
   const rollName = event.currentTarget.dataset.label;
-  const content = await renderTemplate("systems/railers/templates/dialog/roll-dialog.html");
+  const content = await renderTemplate("systems/railers/templates/dialog/roll-dialog.hbs");
 
   const dialogReturn = await Dialog.wait({
       title: game.i18n.localize("RAILERS.ModifyDiceRoll"),

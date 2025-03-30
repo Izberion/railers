@@ -12,7 +12,7 @@ export async function attackDialog(event, html) {
   const damage = item.system.damage;
   const severity = item.system.severity;
   const isRanged = item.system.range !== 'melee';
-  const content = await renderTemplate("systems/railers/templates/dialog/attack-dialog.html", { isRanged });
+  const content = await renderTemplate("systems/railers/templates/dialog/attack-dialog.hbs", { isRanged });
     const dialogReturn = await Dialog.wait({
     title: game.i18n.localize("RAILERS.ModifyAttackRoll"),
     content,

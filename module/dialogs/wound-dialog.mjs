@@ -1,5 +1,5 @@
 export async function addWoundDialog(actor, html) {
-    const content = await renderTemplate("systems/railers/templates/dialog/wound-dialog.html");
+    const content = await renderTemplate("systems/railers/templates/dialog/wound-dialog.hbs");
     const dialogReturn = await Dialog.wait({
       title: game.i18n.localize("RAILERS.AddWound"),
       content,

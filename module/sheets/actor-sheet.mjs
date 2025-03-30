@@ -13,7 +13,7 @@ export class RailersActorSheet extends ActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["railers", "sheet", "actor"],
-      template: "systems/railers/templates/actor/actor-sheet.html",
+      template: "systems/railers/templates/actor/actor-sheet.hbs",
       width: 850,
       height: 680,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "biography" }]
@@ -22,7 +22,7 @@ export class RailersActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/railers/templates/actor/actor-${this.actor.type}-sheet.html`;
+    return `systems/railers/templates/actor/actor-${this.actor.type}-sheet.hbs`;
   }
 
   /* -------------------------------------------- */
