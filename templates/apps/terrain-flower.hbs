@@ -1,0 +1,25 @@
+<form class="{{cssClass}} grid grid-4col" autocomplete="off">
+  <div class="dice-flower">
+    <div class="flower">
+        <div class="d12hex-wrapper">
+            <div class="face top">12</div>
+            <div class="face right-top">2</div>
+            <div class="face right-bottom">4</div>
+            <div class="face bottom">6</div>
+            <div class="face left-bottom">8</div>
+            <div class="face left-top">10</div>
+            <div class="d12hex">
+                <img src="systems/railers/assets/tiles/flathex.svg">
+                <div class="inner">1d12</div>
+            </div>
+        </div>
+    </div>
+    <div class="flower grid">
+        {{#each hexes}}
+            <div class="hex {{this.state}}" data-coordinates="{{this.coords}}">
+                <img class="draggable-hex" src="{{this.src}}" draggable="true">
+            </div>
+        {{/each}}
+    </div>
+  </div>
+</form>

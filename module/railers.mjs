@@ -8,7 +8,7 @@ import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { RAILERS } from "./helpers/config.mjs";
 
-import { DiceFlowerApp, WeatherHUD } from "./helpers/hex.mjs";
+import { DiceFlowerApp, WeatherHUD } from "../apps/hex.mjs";
 
 
 /* -------------------------------------------- */

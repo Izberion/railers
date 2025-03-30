@@ -14,8 +14,6 @@ export const preloadHandlebarsTemplates = async function() {
     "systems/railers/templates/actor/parts/actor-cars.hbs",
     "systems/railers/templates/actor/parts/actor-cargo.hbs",
     "systems/railers/templates/actor/parts/actor-notes.hbs",
-    "systems/railers/templates/actor/parts/actor-abilities.hbs",
-    // Add the dice flower template
-    "systems/railers/templates/dice-flower.hbs"
+    "systems/railers/templates/actor/parts/actor-abilities.hbs"
   ]);
 };

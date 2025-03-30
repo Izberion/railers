@@ -1,6 +1,3 @@
-// No import needed; use global foundry namespace
-
-// Shared hex adjacency map for terrain and weather (5x5 grid, 19 hexes)
 export const hexes = {
   "(0,0)": ["(1,0)", "(1,1)", "(0,1)", "(2,0)", "(4,2)", "(0,2)"],
   "(0,1)": ["(1,1)", "(1,2)", "(0,2)", "(3,0)", "(3,3)", "(0,0)"],
@@ -33,7 +30,7 @@ export class DiceFlowerApp extends foundry.applications.api.ApplicationV2 {
           width: 400,
           height: 500,
           resizable: true,
-          template: "systems/railers/templates/dice-flower.hbs"
+          template: "systems/railers/templates/apps/terrain-flower.hbs"
       });
   }
 
