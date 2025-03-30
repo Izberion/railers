@@ -8,6 +8,9 @@ import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { RAILERS } from "./helpers/config.mjs";
 
+import { DiceFlowerApp, WeatherHUD } from "./helpers/hex.mjs";
+
+
 /* -------------------------------------------- */
 /*  Init Hook                                   */
 /* -------------------------------------------- */
@@ -79,6 +82,43 @@ Handlebars.registerHelper('toLowerCase', function(str) {
 Hooks.once("ready", async function() {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   Hooks.on("hotbarDrop", (bar, data, slot) => createItemMacro(data, slot));
+});
+
+Hooks.on("canvasReady", () => {
+  WeatherHUD.showHUD(); 
+  canvas.stage.on("drop", (event) => {
+      const app = Object.values(ui.windows).find(w => w instanceof DiceFlowerApp) || new DiceFlowerApp();
+      app._onDrop(event);
+  });
+});
+
+Hooks.on("getSceneControlButtons", (controls) => {
+  const weatherGroup = {
+      name: "weatherControls",
+      title: game.i18n.localize("RAILERS.WeatherControls"),
+      icon: "fas fa-train",
+      layer: "controls",
+      tools: [
+          {
+              name: "terrain",
+              title: game.i18n.localize("RAILERS.OpenDiceFlower"),
+              icon: "fas fa-flower",
+              onClick: () => new DiceFlowerApp().render(true)
+          },
+          {
+              name: "weather",
+              title: game.i18n.localize("RAILERS.ShowWeatherHUD"),
+              icon: "fas fa-cloud-sun",
+              toggle: true,
+              active: !!document.getElementById("railers-weather-hud"),
+              onClick: (toggle) => {
+                  if (toggle) WeatherHUD.showHUD();
+                  else WeatherHUD.hideHUD();
+              }
+          }
+      ]
+  };
+  controls.push(weatherGroup);
 });
 
 /* -------------------------------------------- */
