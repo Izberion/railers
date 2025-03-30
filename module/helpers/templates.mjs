@@ -15,6 +15,9 @@
     "systems/railers/templates/actor/parts/actor-cars.html",
     "systems/railers/templates/actor/parts/actor-cargo.html",
     "systems/railers/templates/actor/parts/actor-notes.html",
-    "systems/railers/templates/actor/parts/actor-abilities.html"
+    "systems/railers/templates/actor/parts/actor-abilities.html",
+
+    //Others
+    "systems/railers/templates/apps/terrain-flower.html"
   ]);
 };
