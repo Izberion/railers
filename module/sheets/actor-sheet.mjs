@@ -413,51 +413,41 @@ export class RailersActorSheet extends ActorSheet {
   
 
   _onDragStart(event) {
-    // Store the source image URL and dimensions in the dataTransfer object
-    if (event.target.classList.contains('draggable-hex')) {
-      let img = event.target.src;
-      let width = 120;
-      let height = 105;
+    if (!event.target.classList.contains('draggable-hex')) return super._onDragStart(event);
 
-      // Create a temporary Tile data object
-      let tileData = {
-        texture: { src: img },
-        width: width,
-        height: height,
+    const tileData = {
+        texture: { src: event.target.src },
+        width: 120,
+        height: 105,
         x: 0,
         y: 0,
         z: 0,
         rotation: 0,
         hidden: false,
-        locked: false
-      };
-
-      // Set the data for the drag event
-      event.dataTransfer.setData('text/plain', JSON.stringify(tileData));
-    } else {
-      super._onDragStart(event);
-    }
+        locked: true
+    };
+    event.dataTransfer.setData('text/plain', JSON.stringify(tileData));
   }
 
   async _onDrop(event) {
-    event.preventDefault();
+      event.preventDefault();
+      const data = JSON.parse(event.dataTransfer.getData('text/plain'));
 
-    const data = JSON.parse(event.dataTransfer.getData('text/plain'));
+      if (!data?.texture?.src) return super._onDrop(event);
 
-    if (data.texture && data.texture.src) {
-      const [x, y] = [event.clientX, event.clientY];
-      const t = canvas.stage.worldTransform;
-      data.x = (x - t.tx) / canvas.stage.scale.x;
-      data.y = (y - t.ty) / canvas.stage.scale.y;
+      const scenePos = canvas.stage.toLocal({ x: event.clientX, y: event.clientY });
+      const snapped = (canvas.grid.type > CONST.GRID_TYPES.GRIDLESS && canvas.grid.isHexagonal)
+          ? canvas.grid.getSnappedPoint(
+              { x: scenePos.x, y: scenePos.y },
+              { mode: CONST.GRID_SNAPPING_MODES.CENTER }
+          )
+          : { x: scenePos.x, y: scenePos.y };
 
-      await canvas.scene.createEmbeddedDocuments("Tile", [data]);
+      data.x = snapped.x - 60 + 2;
+      data.y = snapped.y - 50;
 
-      console.log("Tile data dropped:", data);
-
-    } else {
-      // Make sure all other drops still work
-      super._onDrop(event);
-    }
+      const [createdTile] = await canvas.scene.createEmbeddedDocuments("Tile", [data]);
+      return createdTile;
   }
 
 }
