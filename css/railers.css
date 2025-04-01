@@ -223,6 +223,9 @@
   text-align: center;
 }
 
+.h100 {
+  height: 100%;
+}
 
   /* Styles limited to railers sheets */
 
@@ -598,6 +601,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: black;
 }
 
 .railers .d12hex:hover {

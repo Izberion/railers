@@ -5,7 +5,6 @@
  */
 export const preloadHandlebarsTemplates = async function() {
   return loadTemplates([
-    // Actor partials
     "systems/railers/templates/actor/parts/actor-skills.hbs",
     "systems/railers/templates/actor/parts/actor-gear.hbs",
     "systems/railers/templates/actor/parts/actor-wounds.hbs",
@@ -14,6 +13,7 @@ export const preloadHandlebarsTemplates = async function() {
     "systems/railers/templates/actor/parts/actor-cars.hbs",
     "systems/railers/templates/actor/parts/actor-cargo.hbs",
     "systems/railers/templates/actor/parts/actor-notes.hbs",
-    "systems/railers/templates/actor/parts/actor-abilities.hbs"
+    "systems/railers/templates/actor/parts/actor-abilities.hbs",
+    "systems/railers/templates/apps/terrain-flower.hbs"
   ]);
 };

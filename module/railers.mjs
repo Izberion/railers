@@ -75,6 +75,23 @@ Handlebars.registerHelper('toLowerCase', function(str) {
   return str.toLowerCase();
 });
 
+Hooks.once("init", () => {
+  Handlebars.registerHelper("calcTop", function(coords) {
+    const [q, r] = coords.slice(1, -1).split(",").map(Number);
+    const size = 52; // Hex height
+    const qOffset = q - 2; // Center on (2,2)
+    const rOffset = r - 2;
+    return 200 + rOffset * size * 0.75 - qOffset * size * 0.375; // Adjust for center
+  });
+
+  Handlebars.registerHelper("calcLeft", function(coords) {
+    const [q, r] = coords.slice(1, -1).split(",").map(Number);
+    const size = 60; // Hex width
+    const qOffset = q - 2; // Center on (2,2)
+    return 200 + qOffset * size * 0.866; // Adjust for center
+  });
+});
+
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */
@@ -84,12 +101,10 @@ Hooks.once("ready", async function() {
   Hooks.on("hotbarDrop", (bar, data, slot) => createItemMacro(data, slot));
 });
 
+let diceFlowerApp = null;
+
 Hooks.on("canvasReady", () => {
   WeatherHUD.showHUD(); 
-  canvas.stage.on("drop", (event) => {
-      const app = Object.values(ui.windows).find(w => w instanceof DiceFlowerApp) || new DiceFlowerApp();
-      app._onDrop(event);
-  });
 });
 
 Hooks.on("getSceneControlButtons", (controls) => {
@@ -99,12 +114,20 @@ Hooks.on("getSceneControlButtons", (controls) => {
       icon: "fas fa-train",
       layer: "controls",
       tools: [
-          {
-              name: "terrain",
-              title: game.i18n.localize("RAILERS.OpenDiceFlower"),
-              icon: "fas fa-flower",
-              onClick: () => new DiceFlowerApp().render(true)
-          },
+        {
+          name: "terrain",
+          title: game.i18n.localize("RAILERS.OpenDiceFlower"),
+          icon: "fas fa-flower",
+          toggle: true,
+          active: false,
+          onClick: (toggle) => {
+              if (!diceFlowerApp) {
+                  diceFlowerApp = new DiceFlowerApp
+              }
+              if (toggle) diceFlowerApp.render(true);
+              else diceFlowerApp.close();
+          }
+      },
           {
               name: "weather",
               title: game.i18n.localize("RAILERS.ShowWeatherHUD"),
