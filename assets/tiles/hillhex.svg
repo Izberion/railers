@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="120" height="105" viewBox="0 0 142 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;">
-    <g transform="matrix(4.58585,0,0,4.58585,-4597.79,-2520.35)">
-        <g transform="matrix(0.0565645,0,0,0.0565645,963.289,546.379)">
-            <g transform="matrix(1,0,0,1,464.438,-966.035)">
-                <path d="M297,1299C333.944,1260.67 407.833,1184 460,1184C477.96,1184 497.468,1193.09 516.659,1206.57C553.211,1232.25 527.001,1217.02 529.497,1220.51" style="fill:none;stroke:black;stroke-width:16.06px;"/>
+<svg
+   width="120"
+   height="105"
+   viewBox="0 0 142 124"
+   version="1.1"
+   xml:space="preserve"
+   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;"
+   id="svg5"
+   sodipodi:docname="hillhex.svg"
+   inkscape:version="1.4.1 (93de688d07, 2025-03-30)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs5" /><sodipodi:namedview
+   id="namedview5"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="8.3809524"
+   inkscape:cx="60.017045"
+   inkscape:cy="52.5"
+   inkscape:window-width="2048"
+   inkscape:window-height="1088"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg5" />
+    <g
+   transform="matrix(0,0.24409149,-0.24409149,0,241.06134,-54.731061)"
+   id="g4"
+   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;fill:#ffffff;fill-opacity:1;opacity:1">
+            <path
+   d="M477,415L721.219,556L721.219,838L477,979L232.781,838L232.781,556L477,415Z"
+   style="fill:#ffffff;stroke:black;stroke-width:17.07px;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:1.5;fill-opacity:1"
+   id="path3" />
+        </g><g
+   transform="matrix(0.25939631,0,0,0.25939631,-180.29114,-14.737863)"
+   id="g3"
+   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round">
+            <g
+   transform="matrix(1,0,0,1,464.438,-966.035)"
+   id="g1">
+                <path
+   d="M297,1299C333.944,1260.67 407.833,1184 460,1184C477.96,1184 497.468,1193.09 516.659,1206.57C553.211,1232.25 527.001,1217.02 529.497,1220.51"
+   style="fill:none;stroke:black;stroke-width:16.06px;"
+   id="path1" />
             </g>
-            <g transform="matrix(1,0,0,1,464.438,-957.974)">
-                <path d="M711,1303C678.167,1271.73 612.5,1209.17 564,1209C515.5,1208.83 451.833,1270.91 420,1301.95" style="fill:white;fill-opacity:0;stroke:black;stroke-width:16.06px;"/>
+            <g
+   transform="matrix(1,0,0,1,464.438,-957.974)"
+   id="g2">
+                <path
+   d="M711,1303C678.167,1271.73 612.5,1209.17 564,1209C515.5,1208.83 451.833,1270.91 420,1301.95"
+   style="fill:white;fill-opacity:0;stroke:black;stroke-width:16.06px;"
+   id="path2" />
             </g>
         </g>
-        <g transform="matrix(3.25922e-18,0.0532271,-0.0532271,3.25922e-18,1055.17,537.658)">
-            <path d="M477,415L721.219,556L721.219,838L477,979L232.781,838L232.781,556L477,415Z" style="fill:none;stroke:black;stroke-width:17.07px;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-    </g>
 </svg>
