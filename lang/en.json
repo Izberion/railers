@@ -231,7 +231,10 @@
   "RAILERS.FieldOfFire": "Field of Fire",
   "RAILERS.ReactiveShot": "Reactive Shot",
   "RAILERS.NotEnoughAmmo": "Not enough ammo for this attack action",
-  
+
+  "RAILERS.RailersControls": "Railers System Controls",
+  "RAILERS.OpenTerrainFlower": "Open Terrain Flower",  
+  "RAILERS.TerrainFlower": "Terrain Flower",  
   "RAILERS.RollTerrainFlower": "Rolled on the Terrain Flower",
   "RAILERS.SnowTerrain": "Snow Terrain",
   "RAILERS.HillTerrain": "Hill Terrain",
@@ -239,7 +242,8 @@
   "RAILERS.FlatTerrain": "Flat Terrain",
   "RAILERS.MountainTerrain": "Mountain Terrain",
 
-  "RAILERS.RollWeatherFlower": "Rolled on the Weather Flower",
+  "RAILERS.ToggleWeatherHUD": "Toggle Weather HUD",
+  "RAILERS.RollWeather": "Rolled on the Weather Flower",
   "RAILERS.Aurora": "Aurora",
   "RAILERS.Blizzard": "Blizzard",
   "RAILERS.Clear": "Clear Skies",
@@ -255,7 +259,7 @@
 
   "RAILERS.Summer": "Summer",
   "RAILERS.Winter": "Winter",
-  "RAILERS.RollTemp": "Roll Temperature",
+  "RAILERS.RollTemperature": "Rolled the temperature",
   "RAILERS.TempIntegrate": "Integrate temperature roll into weather flower roll?",
 
   "RAILERS.AutomaticFailure": "Automatic Failure",
