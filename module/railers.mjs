@@ -101,49 +101,6 @@ Hooks.once("ready", async function() {
   Hooks.on("hotbarDrop", (bar, data, slot) => createItemMacro(data, slot));
 });
 
-let diceFlowerApp = null;
-
-Hooks.on("canvasReady", () => {
-  WeatherHUD.showHUD(); 
-});
-
-Hooks.on("getSceneControlButtons", (controls) => {
-  const weatherGroup = {
-      name: "weatherControls",
-      title: game.i18n.localize("RAILERS.WeatherControls"),
-      icon: "fas fa-train",
-      layer: "controls",
-      tools: [
-        {
-          name: "terrain",
-          title: game.i18n.localize("RAILERS.OpenDiceFlower"),
-          icon: "fas fa-flower",
-          toggle: true,
-          active: false,
-          onClick: (toggle) => {
-              if (!diceFlowerApp) {
-                  diceFlowerApp = new DiceFlowerApp
-              }
-              if (toggle) diceFlowerApp.render(true);
-              else diceFlowerApp.close();
-          }
-      },
-          {
-              name: "weather",
-              title: game.i18n.localize("RAILERS.ShowWeatherHUD"),
-              icon: "fas fa-cloud-sun",
-              toggle: true,
-              active: !!document.getElementById("railers-weather-hud"),
-              onClick: (toggle) => {
-                  if (toggle) WeatherHUD.showHUD();
-                  else WeatherHUD.hideHUD();
-              }
-          }
-      ]
-  };
-  controls.push(weatherGroup);
-});
-
 /* -------------------------------------------- */
 /*  Hotbar Macros                               */
 /* -------------------------------------------- */
