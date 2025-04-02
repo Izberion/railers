@@ -22,10 +22,10 @@ export const hexes = {
 
 export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicationMixin(foundry.applications.api.ApplicationV2) {
     static DEFAULT_OPTIONS = {
-            id: "dice-flower-app",
+            id: "terrain-flower-app",
             tag: "div",
             window: {
-                title: "Dice Flower",
+                title: "RAILERS.TerrainFlower",
                 resizable: true,
                 contentClasses: ["standard-form", "railers"]
             },
@@ -34,7 +34,8 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
                 height: 550
             },
             dragDrop: [{
-                dragSelector: ".draggable-hex", dropSelector: null 
+                dragSelector: ".draggable-hex",
+                dropSelector: null 
             }],
         }
 
@@ -80,49 +81,11 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
         return { columns };
     }
 
-    activateListeners(html) {
-        const d12hex = html.querySelector(".d12hex");
-        if (d12hex) {
-            d12hex.addEventListener("click", (event) => {
-                this._handleHexClick(event, html);
-            });
-        } 
-    
-        const hexes = html.querySelectorAll(".hex");
-        hexes.forEach(hex => {
-            hex.addEventListener("click", (event) => {
-                this._handleHexClick(event, html);
-            });
-        });
-
-        this.dragDrop.forEach(d => d.bind(html));
-    }
-
     constructor(options = {}) {
         super(options);
         this.#dragDrop = this.#createDragDropHandlers();
+        this._canvasBound = false;
       }
-
-    async _onRender(context, options) {
-        this.dragDrop.forEach(d => d.bind(this.element));
-        await super._onRender(context, options);
-        this.activateListeners(this.element);
-    }
-
-    #createDragDropHandlers() {
-        return this.options.dragDrop.map((d) => {
-            d.permissions = {
-                dragstart: this._canDragStart.bind(this),
-                drop: this._canDragDrop.bind(this),
-            };
-            d.callbacks = {
-                dragstart: this._onDragStart.bind(this),
-                dragover: this._onDragOver.bind(this),
-                drop: this._onDrop.bind(this),
-            };
-            return new DragDrop(d);
-        });
-    }
 
     #dragDrop;
 
@@ -130,18 +93,47 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
         return this.#dragDrop;
     }
 
-    _canDragStart(selector) {
-        return this.isEditable;
-      }
+    async _onRender(context, options) {
+        this.dragDrop.forEach(d => d.bind(this.element));
+        await super._onRender(context, options);
+        this.activateListeners(this.element);
+    }
 
-    _canDragDrop(selector) {
-        return this.isEditable;
+    activateListeners(html) {
+        if (game.user.isGM) {
+            const d12hex = html.querySelector(".d12hex");
+            if (d12hex) {
+              d12hex.addEventListener("click", (event) => this._handleHexClick(event, html));
+            }
+            const hexes = html.querySelectorAll(".hex");
+            hexes.forEach(hex => {
+              hex.addEventListener("click", (event) => this._handleHexClick(event, html));
+            });
+        }
+
+        this.dragDrop.forEach(d => d.bind(html));
+    }
+
+    #createDragDropHandlers() {
+        return this.options.dragDrop.map((d) => {
+            d.permissions = {
+                dragstart: this._canDragStart.bind(this),
+            };
+            d.callbacks = {
+                dragstart: this._onDragStart.bind(this),
+            };
+            return new DragDrop(d);
+        });
+    }
+
+    _canDragStart(selector) {
+        return game.user.isGM;
     }
 
     _onDragStart(event) {
         const el = event.currentTarget;
-        if ('link' in event.target.dataset) return;
-        const dragData = {
+        if (!el.classList.contains("draggable-hex")) return;
+        const tileData = {
             type: "Tile",
             texture: { src: el.src },
             width: 120,
@@ -152,34 +144,12 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
             z: 0,
             rotation: 0,
             hidden: false,
-            locked: true
+            locked: false
         };    
-        if (!dragData) return;
-        event.dataTransfer.setData('text/plain', JSON.stringify(dragData));
-      }
+        event.dataTransfer.setData("text/plain", JSON.stringify(tileData));
+    }
 
-    _onDragOver(event) {}
-
-    async _onDrop(event) {
-        const data = TextEditor.getDragEventData(event);
-        switch (data.type) {
-            case "Tile":
-                const canvas = game.canvas;
-                const scenePos = canvas.stage.toLocal({ x: event.clientX, y: event.clientY });
-                const snapped = (canvas.grid.type > CONST.GRID_TYPES.GRIDLESS && canvas.grid.isHexagonal)
-                    ? canvas.grid.getSnappedPoint(
-                        { x: scenePos.x, y: scenePos.y },
-                        { mode: CONST.GRID_SNAPPING_MODES.CENTER, resolution: 1 }
-                    )
-                    : { x: scenePos.x, y: scenePos.y };
-                await canvas.scene.createEmbeddedDocuments("Tile", [tileData]);
-                break;
-            default:
-                console.log("Unhandled drop type:", data.type);
-        }
-      }
-
-      async _handleHexClick(event, html) {
+    async _handleHexClick(event, html) {
         const hexesElements = html.querySelectorAll(".hex");
         let hexStates = [];
         const terrainTypes = {
@@ -279,6 +249,16 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
             game.settings.set("railers", "terrainHexStates", hexStates);
         }
         return hexStates;
+    }
+
+    async _onClose(options) {
+        if (this._canvasBound) {
+          const canvasElement = game.canvas.app.renderer.canvas;
+          canvasElement.removeEventListener("dragover", (event) => event.preventDefault());
+          canvasElement.removeEventListener("drop", this._onCanvasDrop.bind(this));
+          this._canvasBound = false;
+        }
+        await super._onClose(options);
     }
 }
 
@@ -404,8 +384,7 @@ export class WeatherHUD {
             game.settings.set("railers", "currentWeather", newWeather);
             await roll.toMessage({
                 flavor: game.i18n.localize("RAILERS.RollWeather"),
-                content: `<div class="dice-results">${newWeather.name}</div>`,
-                speaker: ChatMessage.getSpeaker({ alias: "Weather System" })
+                content: `<div class="dice-results">${newWeather.name}</div>`
             });
             await this.updateHUD();
         }
@@ -424,8 +403,7 @@ export class WeatherHUD {
         game.settings.set("railers", "currentTemperature", temperature);
         await roll.toMessage({
             flavor: game.i18n.localize("RAILERS.RollTemperature"),
-            content: `<div class="dice-results">${temperature}</div>`,
-            speaker: ChatMessage.getSpeaker({ alias: "Weather System" })
+            content: `<div class="dice-results">${temperature}</div>`
         });
         await this.updateHUD();
     }
@@ -441,6 +419,49 @@ export class WeatherHUD {
         return storedStates;
     }
 }
+
+Hooks.on("canvasReady", () => {
+    WeatherHUD.showHUD(); 
+  });
+
+let diceFlowerApp = null;
+
+Hooks.on("getSceneControlButtons", (controls) => {
+    const railersGroup = {
+        name: "railersControls",
+        title: game.i18n.localize("RAILERS.RailersControls"),
+        icon: "fas fa-train",
+        layer: "controls",
+        tools: [
+            {
+            name: "terrain",
+            title: game.i18n.localize("RAILERS.OpenTerrainFlower"),
+            icon: "fas fa-mountain",
+            toggle: true,
+            active: false,
+            onClick: (toggle) => {
+                if (!diceFlowerApp) {
+                    diceFlowerApp = new DiceFlowerApp
+                }
+                if (toggle) diceFlowerApp.render(true);
+                else diceFlowerApp.close();
+            }
+        },
+            {
+                name: "weather",
+                title: game.i18n.localize("RAILERS.ToggleWeatherHUD"),
+                icon: "fas fa-cloud-sun",
+                toggle: true,
+                active: !!document.getElementById("railers-weather-hud"),
+                onClick: (toggle) => {
+                    if (toggle) WeatherHUD.showHUD();
+                    else WeatherHUD.hideHUD();
+                }
+            }
+        ]
+    };
+    controls.push(railersGroup);
+});
 
 Hooks.once("init", () => {
     game.settings.register("railers", "terrainHexStates", {
