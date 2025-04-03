@@ -274,149 +274,151 @@ Hooks.once("init", () => {
 
 
 
-// WeatherHUD and hooks remain unchanged
 export class WeatherHUD {
     static async showHUD() {
-        let hud = document.getElementById("railers-weather-hud");
-        if (!hud) {
-            hud = document.createElement("div");
-            hud.id = "railers-weather-hud";
-            hud.style.cssText = `
-                position: absolute;
-                top: 10px;
-                left: 50%;
-                transform: translateX(-50%);
-                display: flex;
-                gap: 10px;
-                background: rgba(0, 0, 0, 0.8);
-                padding: 5px 10px;
-                border-radius: 5px;
-                color: white;
-                z-index: 100;
-            `;
-            document.body.appendChild(hud);
-            await this.updateHUD(hud);
-        }
-        hud.style.display = "flex";
+      let hud = document.getElementById("railers-weather-hud");
+      if (!hud) {
+        hud = document.createElement("div");
+        hud.id = "railers-weather-hud";
+        document.body.appendChild(hud);
+        await this.updateHUD(hud);
+      }
+      hud.style.display = "flex";
     }
-
+  
     static hideHUD() {
-        const hud = document.getElementById("railers-weather-hud");
-        if (hud) hud.style.display = "none";
+      const hud = document.getElementById("railers-weather-hud");
+      if (hud) hud.style.display = "none";
     }
-
+  
     static async updateHUD(hud) {
-        hud = hud || document.getElementById("railers-weather-hud");
-        if (!hud) return;
-        const weather = game.settings.get("railers", "currentWeather");
-        const temp = game.settings.get("railers", "currentTemperature");
-        hud.innerHTML = `
-            <div class="weather clickable" style="cursor: pointer;">
-                <img src="${weather.image}" style="width: 30px; height: 30px;"> ${weather.name}
-            </div>
-            <div class="temperature clickable" style="cursor: pointer;">
-                ${temp || "N/A"}
-            </div>
-        `;
-        hud.querySelector(".weather").addEventListener("click", () => this.rollWeather());
-        hud.querySelector(".temperature").addEventListener("click", () => this.rollTemperature());
+      hud = hud || document.getElementById("railers-weather-hud");
+      if (!hud) return;
+  
+      const weather = game.settings.get("railers", "currentWeather");
+      const temp = game.settings.get("railers", "currentTemperature") || "N/A";
+      const season = game.settings.get("railers", "currentSeason") || "winter";
+  
+      // Render the template with weather, temperature, and season
+      const html = await renderTemplate("systems/railers/templates/apps/weather-hud.hbs", {
+        weather: {
+          image: weather.image,
+          name: weather.name
+        },
+        temperature: temp,
+        season: season.charAt(0).toUpperCase() + season.slice(1) // Capitalize
+      });
+  
+      hud.innerHTML = html;
+  
+      // Add event listeners
+      hud.querySelector(".weather").addEventListener("click", () => this.rollWeather());
+      hud.querySelector(".temperature").addEventListener("click", () => this.rollTemperature());
+      hud.querySelector(".season").addEventListener("click", () => this.toggleSeason());
     }
-
+  
     static async rollWeather() {
-        const weatherTypes = {
-            "thundersnowhex.svg": game.i18n.localize("RAILERS.ThunderSnow"),
-            "snowstormhex.svg": game.i18n.localize("RAILERS.SnowStorm"),
-            "blizzardhex.svg": game.i18n.localize("RAILERS.Blizzard"),
-            "windhex.svg": game.i18n.localize("RAILERS.Wind"),
-            "flurryhex.svg": game.i18n.localize("RAILERS.Flurry"),
-            "overcasthex.svg": game.i18n.localize("RAILERS.Overcast"),
-            "polaroutbreakhex.svg": game.i18n.localize("RAILERS.PolarOutbreak"),
-            "aurorahex.svg": game.i18n.localize("RAILERS.Aurora"),
-            "clearhex.svg": game.i18n.localize("RAILERS.Clear"),
-            "icefoghex.svg": game.i18n.localize("RAILERS.IceFog"),
-            "diamonddusthex.svg": game.i18n.localize("RAILERS.DiamondDust"),
-            "whiteouthex.svg": game.i18n.localize("RAILERS.Whiteout")
-        };
-        const weatherData = [
-            { coords: "(0,0)", image: "systems/railers/assets/weather/thundersnowhex.svg", name: weatherTypes["thundersnowhex.svg"] },
-            { coords: "(0,1)", image: "systems/railers/assets/weather/snowstormhex.svg", name: weatherTypes["snowstormhex.svg"] },
-            { coords: "(0,2)", image: "systems/railers/assets/weather/blizzardhex.svg", name: weatherTypes["blizzardhex.svg"] },
-            { coords: "(1,0)", image: "systems/railers/assets/weather/windhex.svg", name: weatherTypes["windhex.svg"] },
-            { coords: "(1,1)", image: "systems/railers/assets/weather/flurryhex.svg", name: weatherTypes["flurryhex.svg"] },
-            { coords: "(1,2)", image: "systems/railers/assets/weather/overcasthex.svg", name: weatherTypes["overcasthex.svg"] },
-            { coords: "(1,3)", image: "systems/railers/assets/weather/polaroutbreakhex.svg", name: weatherTypes["polaroutbreakhex.svg"] },
-            { coords: "(2,0)", image: "systems/railers/assets/weather/aurorahex.svg", name: weatherTypes["aurorahex.svg"] },
-            { coords: "(2,1)", image: "systems/railers/assets/weather/clearhex.svg", name: weatherTypes["clearhex.svg"] },
-            { coords: "(2,2)", image: "systems/railers/assets/weather/clearhex.svg", name: weatherTypes["clearhex.svg"] },
-            { coords: "(2,3)", image: "systems/railers/assets/weather/clearhex.svg", name: weatherTypes["clearhex.svg"] },
-            { coords: "(2,4)", image: "systems/railers/assets/weather/icefoghex.svg", name: weatherTypes["icefoghex.svg"] },
-            { coords: "(3,0)", image: "systems/railers/assets/weather/blizzardhex.svg", name: weatherTypes["blizzardhex.svg"] },
-            { coords: "(3,1)", image: "systems/railers/assets/weather/overcasthex.svg", name: weatherTypes["overcasthex.svg"] },
-            { coords: "(3,2)", image: "systems/railers/assets/weather/flurryhex.svg", name: weatherTypes["flurryhex.svg"] },
-            { coords: "(3,3)", image: "systems/railers/assets/weather/windhex.svg", name: weatherTypes["windhex.svg"] },
-            { coords: "(4,0)", image: "systems/railers/assets/weather/diamonddusthex.svg", name: weatherTypes["diamonddusthex.svg"] },
-            { coords: "(4,1)", image: "systems/railers/assets/weather/snowstormhex.svg", name: weatherTypes["snowstormhex.svg"] },
-            { coords: "(4,2)", image: "systems/railers/assets/weather/whiteouthex.svg", name: weatherTypes["whiteouthex.svg"] }
-        ];
-
-        const states = this._getHexStates("weatherHexStates");
-        const activeIndex = states.indexOf("active");
-        const coordinates = weatherData[activeIndex].coords;
-        const roll = await new Roll("1d12").evaluate();
-
-        let newWeather;
-        if (roll.total % 2 === 0) {
-            const index = Math.floor(roll.total / 2) - 1;
-            const adjacent = hexes[coordinates];
-            if (index >= 0 && index < adjacent.length) {
-                const newCoords = adjacent[index];
-                const newIndex = weatherData.findIndex(w => w.coords === newCoords);
-                newWeather = weatherData[newIndex];
-                states.fill("inactive");
-                states[newIndex] = "active";
-                game.settings.set("railers", "weatherHexStates", states);
-            }
-        } else {
-            newWeather = weatherData[activeIndex];
+      const weatherTypes = {
+        "thundersnowhex.svg": game.i18n.localize("RAILERS.ThunderSnow"),
+        "snowstormhex.svg": game.i18n.localize("RAILERS.SnowStorm"),
+        "blizzardhex.svg": game.i18n.localize("RAILERS.Blizzard"),
+        "windhex.svg": game.i18n.localize("RAILERS.Wind"),
+        "flurryhex.svg": game.i18n.localize("RAILERS.Flurry"),
+        "overcasthex.svg": game.i18n.localize("RAILERS.Overcast"),
+        "polaroutbreakhex.svg": game.i18n.localize("RAILERS.PolarOutbreak"),
+        "aurorahex.svg": game.i18n.localize("RAILERS.Aurora"),
+        "clearhex.svg": game.i18n.localize("RAILERS.Clear"),
+        "icefoghex.svg": game.i18n.localize("RAILERS.IceFog"),
+        "diamonddusthex.svg": game.i18n.localize("RAILERS.DiamondDust"),
+        "whiteouthex.svg": game.i18n.localize("RAILERS.Whiteout")
+      };
+      const weatherData = [
+        { coords: "(0,0)", image: "systems/railers/assets/weather/thundersnowhex.svg", name: weatherTypes["thundersnowhex.svg"] },
+        { coords: "(0,1)", image: "systems/railers/assets/weather/snowstormhex.svg", name: weatherTypes["snowstormhex.svg"] },
+        { coords: "(0,2)", image: "systems/railers/assets/weather/blizzardhex.svg", name: weatherTypes["blizzardhex.svg"] },
+        { coords: "(1,0)", image: "systems/railers/assets/weather/windhex.svg", name: weatherTypes["windhex.svg"] },
+        { coords: "(1,1)", image: "systems/railers/assets/weather/flurryhex.svg", name: weatherTypes["flurryhex.svg"] },
+        { coords: "(1,2)", image: "systems/railers/assets/weather/overcasthex.svg", name: weatherTypes["overcasthex.svg"] },
+        { coords: "(1,3)", image: "systems/railers/assets/weather/polaroutbreakhex.svg", name: weatherTypes["polaroutbreakhex.svg"] },
+        { coords: "(2,0)", image: "systems/railers/assets/weather/aurorahex.svg", name: weatherTypes["aurorahex.svg"] },
+        { coords: "(2,1)", image: "systems/railers/assets/weather/clearhex.svg", name: weatherTypes["clearhex.svg"] },
+        { coords: "(2,2)", image: "systems/railers/assets/weather/clearhex.svg", name: weatherTypes["clearhex.svg"] },
+        { coords: "(2,3)", image: "systems/railers/assets/weather/clearhex.svg", name: weatherTypes["clearhex.svg"] },
+        { coords: "(2,4)", image: "systems/railers/assets/weather/icefoghex.svg", name: weatherTypes["icefoghex.svg"] },
+        { coords: "(3,0)", image: "systems/railers/assets/weather/blizzardhex.svg", name: weatherTypes["blizzardhex.svg"] },
+        { coords: "(3,1)", image: "systems/railers/assets/weather/overcasthex.svg", name: weatherTypes["overcasthex.svg"] },
+        { coords: "(3,2)", image: "systems/railers/assets/weather/flurryhex.svg", name: weatherTypes["flurryhex.svg"] },
+        { coords: "(3,3)", image: "systems/railers/assets/weather/windhex.svg", name: weatherTypes["windhex.svg"] },
+        { coords: "(4,0)", image: "systems/railers/assets/weather/diamonddusthex.svg", name: weatherTypes["diamonddusthex.svg"] },
+        { coords: "(4,1)", image: "systems/railers/assets/weather/snowstormhex.svg", name: weatherTypes["snowstormhex.svg"] },
+        { coords: "(4,2)", image: "systems/railers/assets/weather/whiteouthex.svg", name: weatherTypes["whiteouthex.svg"] }
+      ];
+  
+      const states = this._getHexStates("weatherHexStates");
+      const activeIndex = states.indexOf("active");
+      const coordinates = weatherData[activeIndex].coords;
+      const roll = await new Roll("1d12").evaluate();
+  
+      let newWeather;
+      if (roll.total % 2 === 0) {
+        const index = Math.floor(roll.total / 2) - 1;
+        const adjacent = hexes[coordinates];
+        if (index >= 0 && index < adjacent.length) {
+          const newCoords = adjacent[index];
+          const newIndex = weatherData.findIndex(w => w.coords === newCoords);
+          newWeather = weatherData[newIndex];
+          states.fill("inactive");
+          states[newIndex] = "active";
+          game.settings.set("railers", "weatherHexStates", states);
         }
-
-        if (newWeather) {
-            game.settings.set("railers", "currentWeather", newWeather);
-            await roll.toMessage({
-                flavor: game.i18n.localize("RAILERS.RollWeather"),
-                content: `<div class="dice-results">${newWeather.name}</div>`
-            });
-            await this.updateHUD();
-        }
-    }
-
-    static async rollTemperature() {
-        const season = game.settings.get("railers", "currentSeason") || "winter";
-        const tableName = season === "winter" ? "Winter Temperature" : "Summer Temperature";
-        const rollTable = game.tables.find(t => t.name === tableName);
-        if (!rollTable) return;
-
-        const result = await rollTable.roll();
-        const temperature = result.results[0]?.text || "N/A";
-        const roll = result.roll;
-
-        game.settings.set("railers", "currentTemperature", temperature);
+      } else {
+        newWeather = weatherData[activeIndex];
+      }
+  
+      if (newWeather) {
+        game.settings.set("railers", "currentWeather", newWeather);
         await roll.toMessage({
-            flavor: game.i18n.localize("RAILERS.RollTemperature"),
-            content: `<div class="dice-results">${temperature}</div>`
+          flavor: game.i18n.localize("RAILERS.RollWeather"),
+          content: `<div class="dice-results">${newWeather.name}</div>`
         });
         await this.updateHUD();
+      }
     }
-
+  
+    static async rollTemperature() {
+      const season = game.settings.get("railers", "currentSeason") || "winter";
+      const tableName = season === "winter" ? "Winter Temperature" : "Summer Temperature";
+      const rollTable = game.tables.find(t => t.name === tableName);
+      if (!rollTable) return;
+  
+      const result = await rollTable.roll();
+      const temperature = result.results[0]?.text || "N/A";
+      const roll = result.roll;
+  
+      game.settings.set("railers", "currentTemperature", temperature);
+      await roll.toMessage({
+        flavor: game.i18n.localize("RAILERS.RollTemperature"),
+        content: `<div class="dice-results">${temperature}</div>`
+      });
+      await this.updateHUD();
+    }
+  
+    static async toggleSeason() {
+      const currentSeason = game.settings.get("railers", "currentSeason") || "winter";
+      const newSeason = currentSeason === "winter" ? "summer" : "winter";
+      await game.settings.set("railers", "currentSeason", newSeason);
+      await this.updateHUD(); 
+    }
+  
     static _getHexStates(settingKey) {
-        const storedStates = game.settings.get("railers", settingKey);
-        if (!storedStates || storedStates.length !== 19) {
-            const states = Array(19).fill("inactive");
-            states[9] = "active"; // Center (2,2)
-            game.settings.set("railers", settingKey, states);
-            return states;
-        }
-        return storedStates;
+      const storedStates = game.settings.get("railers", settingKey);
+      if (!storedStates || storedStates.length !== 19) {
+        const states = Array(19).fill("inactive");
+        states[9] = "active"; 
+        game.settings.set("railers", settingKey, states);
+        return states;
+      }
+      return storedStates;
     }
 }
 
