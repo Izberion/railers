@@ -4,9 +4,7 @@
             "character",
             "npc",
             "demon",
-            "train",
-            "terrain",
-            "weather"
+            "train"
         ],
         "templates": {
             "base": {
