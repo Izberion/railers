@@ -14,6 +14,7 @@ export const preloadHandlebarsTemplates = async function() {
     "systems/railers/templates/actor/parts/actor-cargo.hbs",
     "systems/railers/templates/actor/parts/actor-notes.hbs",
     "systems/railers/templates/actor/parts/actor-abilities.hbs",
-    "systems/railers/templates/apps/terrain-flower.hbs"
+    "systems/railers/templates/apps/terrain-flower.hbs",
+    "systems/railers/templates/apps/weather-hud.hbs"
   ]);
 };
