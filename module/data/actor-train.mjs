@@ -7,8 +7,18 @@ export default class RailersTrain extends RailersActorBase {
     const fields = foundry.data.fields;
     const requiredInteger = { required: true, nullable: false, integer: true };
     const schema = super.defineSchema();
+
+    schema.locomotive = new fields.StringField({
+      required: true,
+      nullable: false,
+      blank: false,
+      initial: 'ace',
+      choices: Object.keys(RAILERS.locomotiveOptions)
+    });
+
     return schema;
   }
+  
 
   prepareDerivedData() {
     const systemData = this.system;

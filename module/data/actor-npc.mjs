@@ -7,10 +7,33 @@ export default class RailersNPC extends RailersActorBase {
     const fields = foundry.data.fields;
     const requiredInteger = { required: true, nullable: false, integer: true };
     const schema = super.defineSchema();
+
+    schema.attributes = new fields.SchemaField(
+      Object.keys(CONFIG.RAILERS.attributes.npc || CONFIG.RAILERS.attributes.character).reduce((obj, attr) => {
+        obj[attr] = new fields.SchemaField({
+          value: new fields.NumberField({
+            ...requiredInteger,
+            initial: 0,
+            min: 0,
+            max: 5 // Adjust max as needed
+          })
+        });
+        return obj;
+      }, {})
+    );
+
+
+
     return schema;
   }
 
   prepareDerivedData() {
+    for (const attrKey in this.attributes) {
+      this.attributes[attrKey].label = game.i18n.localize(
+        (CONFIG.RAILERS.attributes.npc || CONFIG.RAILERS.attributes.character)[attrKey]
+      ) ?? attrKey;
+    }
+
     const systemData = this.system;
 
     systemData.secondary = Math.floor(systemData.primary / 2)
@@ -60,5 +83,14 @@ export default class RailersNPC extends RailersActorBase {
       }
     }
     systemData.thermalThreshold = -1 * totalInsulation;    
+  }
+  getRollData() {
+    const data = {};
+    if (this.attributes) {
+      for (const [attrKey, attrData] of Object.entries(this.attributes)) {
+        data[attrKey] = foundry.utils.deepClone(attrData);
+      }
+    }
+    return data;
   }
 }

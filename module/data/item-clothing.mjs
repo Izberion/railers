@@ -10,19 +10,19 @@ export default class RailersClothing extends RailersItemBase {
     const fields = foundry.data.fields;
     const schema = super.defineSchema();
 
-    schema.layer = new fields.NumberField({
-      required: false,
+    schema.layer = new fields.StringField({
+      required: true,
       nullable: false,
-      integer: true,
-      initial: 1,
-      min: 1,
+      blank: false,
+      initial: 'headgear',
+      choices: Object.keys(RAILERS.stowageOptions)
     });
 
     schema.protection = new fields.NumberField({
       required: true,
       nullable: false,
       integer: true,
-      initial: 1,
+      initial: 0,
       min: 0,
     });
 
@@ -30,26 +30,9 @@ export default class RailersClothing extends RailersItemBase {
       required: true,
       nullable: false,
       integer: true,
-      initial: 1,
+      initial: 0,
       min: 0,
     });
-
-    schema.load = new fields.NumberField({
-      required: true,
-      nullable: false,
-      integer: true,
-      initial: 1,
-      min: 0,
-    });
-
-    schema.quantity = new fields.NumberField({
-      required: true,
-      nullable: false,
-      integer: true,
-      initial: 1,
-      min: 1,
-    });
-
 
     return schema;
   }

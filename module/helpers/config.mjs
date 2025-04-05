@@ -19,11 +19,6 @@ export const RAILERS = {
       agility: 'RAILERS.Attributes.Agility',
       intellect: 'RAILERS.Attributes.Intellect',
       endurance: 'RAILERS.Attributes.Endurance'
-    },
-    train: {
-      speed: 'RAILERS.Attributes.Speed',
-      handling: 'RAILERS.Attributes.Handling',
-      durability: 'RAILERS.Attributes.Durability'
     }
   },
   skills: {
@@ -75,18 +70,12 @@ export const RAILERS = {
     }
   },
   stowageOptions: {
-    "onHand": "RAILERS.Item.base.FIELDS.onHand",
-    "stowed": "RAILERS.Item.base.FIELDS.stowed",
-    "other": "RAILERS.Item.base.FIELDS.other"
-  },
-  actionOptions: {
-    "na": "RAILERS.Item.Ability.FIELDS.action.types.na",
-    "maneuver": "RAILERS.Item.Ability.FIELDS.action.types.maneuver",
-    "minor": "RAILERS.Item.Ability.FIELDS.action.types.minor",
-    "major": "RAILERS.Item.Ability.FIELDS.action.types.major",
-    "full": "RAILERS.Item.Ability.FIELDS.action.types.full"
+    "onHand": "RAILERS.Item.base.FIELDS.stowage.type.onHand",
+    "stowed": "RAILERS.Item.base.FIELDS.stowage.type.stowed",
+    "other": "RAILERS.Item.base.FIELDS.stowage.type.other"
   },
   actionTypeOptions: {
+    "na": "RAILERS.Item.Ability.FIELDS.action.types.na",
     "passive": "RAILERS.Item.Ability.FIELDS.action.types.passive",
     "maneuver": "RAILERS.Item.Ability.FIELDS.action.types.maneuver",
     "minor": "RAILERS.Item.Ability.FIELDS.action.types.minor",
@@ -108,10 +97,10 @@ export const RAILERS = {
     "exertion": 'RAILERS.Skills.Exertion'
   },
   clothingTypeOptions: {
-    "headgear": "RAILERS.Item.Clothing.FIELDS.type.layer.headgear",
-    "innerwear": "RAILERS.Item.Clothing.FIELDS.type.layer.innerwear",
-    "armor": "RAILERS.Item.Clothing.FIELDS.type.layer.armor",
-    "outerwear": "RAILERS.Item.Clothing.FIELDS.type.layer.outerwear"
+    "headgear": "RAILERS.Item.Clothing.FIELDS.layer.type.headgear",
+    "innerwear": "RAILERS.Item.Clothing.FIELDS.layer.type.innerwear",
+    "armor": "RAILERS.Item.Clothing.FIELDS.layer.type.armor",
+    "outerwear": "RAILERS.Item.Clothing.FIELDS.layer.type.outerwear"
   },
   locomotiveOptions: {
     "ace": "RAILERS.Actor.Train.FIELDS.locomotives.ace",

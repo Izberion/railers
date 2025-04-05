@@ -2,8 +2,7 @@ export default class RailersItemBase extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
     const schema = {};
-    const requiredInteger = { required: true, nullable: false, integer: true };
-
+    
     schema.description = new fields.StringField({
       required: true,
       blank: true,

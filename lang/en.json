@@ -76,7 +76,7 @@
           },
           "wounds": {
             "value": "Wounds",
-            "threshold": "Wound Threshold"
+            "max": "Wound Threshold"
           },
           "nerve": {
             "value": "Nerve",
@@ -192,12 +192,16 @@
           "numDice": "Number of Dice",
           "therms": "Therms",
           "load": "Load",
-          "onHand": "On Hand",
-          "stowed": "Stowed",
-          "other": "Other",
           "name": "Name",
           "quantity": "Quantity",
-          "stowage": "Stowage"
+          "stowage": {
+            "label": "Stowage",
+            "type": {
+              "onHand": "On Hand",
+              "stowed": "Stowed",
+              "other": "Other"
+            }
+          }
         },
         "actions": {
           "add": "Add {type}",
@@ -220,9 +224,9 @@
       },
       "Clothing": {
         "FIELDS": {
-          "type": {
-            "label": "Type",
-            "layer": {
+          "layer": {
+            "label": "Layer",
+            "type": {
               "headgear": "Headgear",
               "innerwear": "Innerwear",
               "armor": "Armor",

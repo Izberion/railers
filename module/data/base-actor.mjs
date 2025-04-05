@@ -5,19 +5,97 @@ export default class RailersActorBase extends foundry.abstract
     const requiredInteger = { required: true, nullable: false, integer: true };
     const schema = {};
 
-    schema.health = new fields.SchemaField({
+    schema.hitpoints = new fields.SchemaField({
       value: new fields.NumberField({
-        ...requiredInteger,
-        initial: 10,
+        required: false,
+        nullable: true,
+        initial: 12,
         min: 0,
       }),
-      max: new fields.NumberField({ ...requiredInteger, initial: 10 }),
+      max: new fields.NumberField({ 
+        required: false,
+        nullable: true,
+        initial: 12,
+        min: 0,
+      })
     });
-    schema.power = new fields.SchemaField({
-      value: new fields.NumberField({ ...requiredInteger, initial: 5, min: 0 }),
-      max: new fields.NumberField({ ...requiredInteger, initial: 5 }),
+
+    schema.wounds = new fields.SchemaField({
+      value: new fields.NumberField({
+        required: false,
+        nullable: true,
+        integer: true,
+        initial: null,
+        min: 0,
+      }),
+      max: new fields.NumberField({
+        required: false,
+        nullable: true,
+        integer: true,
+        initial: null,
+        min: 0,
+      }),
     });
-    schema.biography = new fields.StringField({ required: true, blank: true }); // equivalent to passing ({initial: ""}) for StringFields
+
+    schema.nerve = new fields.SchemaField({
+      value: new fields.NumberField({
+        required: false,
+        nullable: true,
+        integer: true,
+        initial: null,
+        min: 0,
+      }),
+      max: new fields.NumberField({
+        required: false,
+        nullable: true,
+        integer: true,
+        initial: null,
+        min: 0,
+      }),
+    });
+
+    schema.corruption = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: null,
+      min: 0,
+    });
+
+    schema.thermalThreshold = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: null,
+      min: 0,
+    });
+
+    schema.initiativePool = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: null,
+      min: 0,
+    });
+
+    schema.defensePool = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: null,
+      min: 0,
+    });
+
+    schema.fear = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: null,
+      min: 0,
+    });
+
+    schema.biography = new fields.StringField({ required: false, blank: true }); 
+    schema.notes = new fields.StringField({ required: false, blank: true }); 
 
     return schema;
   }

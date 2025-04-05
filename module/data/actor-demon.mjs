@@ -11,6 +11,12 @@ export default class RailersDemon extends RailersActorBase {
   }
 
   prepareDerivedData() {
+    for (const attrKey in this.attributes) {
+      this.attributes[attrKey].label = game.i18n.localize(
+        (CONFIG.RAILERS.attributes.npc || CONFIG.RAILERS.attributes.character)[attrKey]
+      ) ?? attrKey;
+    }
+
     const systemData = this.system;
 
     systemData.wounds.max = systemData.attributes.endurance * 3;
@@ -28,5 +34,14 @@ export default class RailersDemon extends RailersActorBase {
 
     systemData.wounds.value = totalWounds;
     systemData.hitpoints.value = maxHitpoints - totalDamage;    
+  }
+  getRollData() {
+    const data = {};
+    if (this.attributes) {
+      for (const [attrKey, attrData] of Object.entries(this.attributes)) {
+        data[attrKey] = foundry.utils.deepClone(attrData);
+      }
+    }
+    return data;
   }
 }

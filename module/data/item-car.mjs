@@ -14,7 +14,7 @@ export default class RailersCar extends RailersItemBase {
       required: true,
       nullable: false,
       integer: true,
-      initial: 1,
+      initial: 0,
       min: 0,
     });
 
@@ -22,7 +22,7 @@ export default class RailersCar extends RailersItemBase {
         required: true,
         nullable: false,
         integer: true,
-        initial: 1,
+        initial: 0,
         min: 0,
     });
 
@@ -48,7 +48,7 @@ export default class RailersCar extends RailersItemBase {
           required: false,
           nullable: true,
           integer: true,
-          initial: 0,
+          initial: null,
           min: 0
         }),
         sleep: new fields.NumberField({

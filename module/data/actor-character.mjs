@@ -8,21 +8,29 @@ export default class RailersCharacter extends RailersActorBase {
     const requiredInteger = { required: true, nullable: false, integer: true };
     const schema = super.defineSchema();
 
-    schema.attributes = new fields.SchemaField({
-      level: new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 1 }),
-      }),
-    });
-
-    // Iterate over ability names and create a new SchemaField for each.
+    // Dynamic attributes (e.g., combat, education, prowess) with nested skills
     schema.attributes = new fields.SchemaField(
-      Object.keys(CONFIG.RAILERS.attributes).reduce((obj, attribute) => {
-        obj[attribute] = new fields.SchemaField({
+      Object.keys(CONFIG.RAILERS.attributes.character).reduce((obj, attr) => {
+        obj[attr] = new fields.SchemaField({
           value: new fields.NumberField({
             ...requiredInteger,
-            initial: 10,
-            min: 0,
+            initial: 0,
+            min: 0 // Adjust max based on your system
           }),
+          skills: new fields.SchemaField(
+            // Nested skills under this attribute
+            Object.keys(CONFIG.RAILERS.skills[attr] || {}).reduce((skillObj, skill) => {
+              skillObj[skill] = new fields.SchemaField({
+                value: new fields.NumberField({
+                  ...requiredInteger,
+                  initial: 0,
+                  min: 0,
+                  max: 5 // Adjust max as needed
+                })
+              });
+              return skillObj;
+            }, {})
+          )
         });
         return obj;
       }, {})
@@ -32,12 +40,12 @@ export default class RailersCharacter extends RailersActorBase {
   }
 
   prepareDerivedData() {
-    for (const key in this.abilities) {
-      this.abilities[key].mod = Math.floor(
-        (this.abilities[key].value - 10) / 2
-      );
-      this.abilities[key].label =
-        game.i18n.localize(CONFIG.RAILERS.abilities[key]) ?? key;
+    for (const attrKey in this.attributes) {
+      this.attributes[attrKey].label = game.i18n.localize(CONFIG.RAILERS.attributes.character[attrKey]) ?? attrKey;
+      for (const skillKey in this.attributes[attrKey].skills) {
+        this.attributes[attrKey].skills[skillKey].label =
+          game.i18n.localize(CONFIG.RAILERS.skills[attrKey]?.[skillKey]) ?? skillKey;
+      }
     }
 
     const systemData = this.system;
@@ -94,11 +102,14 @@ export default class RailersCharacter extends RailersActorBase {
   getRollData() {
     const data = {};
 
-    // Copy the ability scores to the top level, so that rolls can use
-    // formulas like `@str.mod + 4`.
-    if (this.abilities) {
-      for (let [k, v] of Object.entries(this.abilities)) {
-        data[k] = foundry.utils.deepClone(v);
+    // Flatten attributes for roll formulas (e.g., @combat.value, @combat.smallarms.value)
+    if (this.attributes) {
+      for (const [attrKey, attrData] of Object.entries(this.attributes)) {
+        data[attrKey] = foundry.utils.deepClone(attrData);
+        // Optionally flatten skills to top-level for convenience (e.g., @smallarms)
+        for (const [skillKey, skillData] of Object.entries(attrData.skills)) {
+          data[`${attrKey}.${skillKey}`] = foundry.utils.deepClone(skillData);
+        }
       }
     }
 
