@@ -15,9 +15,9 @@ export default class RailersCharacter extends RailersActorBase {
     });
 
     // Iterate over ability names and create a new SchemaField for each.
-    schema.abilities = new fields.SchemaField(
-      Object.keys(CONFIG.RAILERS.abilities).reduce((obj, ability) => {
-        obj[ability] = new fields.SchemaField({
+    schema.attributes = new fields.SchemaField(
+      Object.keys(CONFIG.RAILERS.attributes).reduce((obj, attribute) => {
+        obj[attribute] = new fields.SchemaField({
           value: new fields.NumberField({
             ...requiredInteger,
             initial: 10,

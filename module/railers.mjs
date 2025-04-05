@@ -8,6 +8,7 @@ import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 import { RAILERS } from "./helpers/config.mjs";
 
 import { DiceFlowerApp, WeatherHUD } from "../apps/hex.mjs";
+import * as models from "./data/_module.mjs"
 
 
 /* -------------------------------------------- */
