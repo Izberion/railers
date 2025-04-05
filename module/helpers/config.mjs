@@ -1,5 +1,6 @@
-export const RAILERS = {
-  attributes: {
+export const RAILERS = {};
+
+  RAILERS.attributes = {
     character: {
       combat: 'RAILERS.Attributes.Combat',
       education: 'RAILERS.Attributes.Education',
@@ -20,8 +21,8 @@ export const RAILERS = {
       intellect: 'RAILERS.Attributes.Intellect',
       endurance: 'RAILERS.Attributes.Endurance'
     }
-  },
-  skills: {
+  }
+  RAILERS.skills = {
     combat: {
       bows: 'RAILERS.Skills.Bows',
       heavyweapons: 'RAILERS.Skills.HeavyWeapons',
@@ -69,12 +70,12 @@ export const RAILERS = {
       sneaking: 'RAILERS.Skills.Sneaking'
     }
   },
-  stowageOptions: {
+  RAILERS.stowageOptions = {
     "onHand": "RAILERS.Item.base.FIELDS.stowage.type.onHand",
     "stowed": "RAILERS.Item.base.FIELDS.stowage.type.stowed",
     "other": "RAILERS.Item.base.FIELDS.stowage.type.other"
   },
-  actionTypeOptions: {
+  RAILERS.actionTypeOptions= {
     "na": "RAILERS.Item.Ability.FIELDS.action.types.na",
     "passive": "RAILERS.Item.Ability.FIELDS.action.types.passive",
     "maneuver": "RAILERS.Item.Ability.FIELDS.action.types.maneuver",
@@ -82,27 +83,27 @@ export const RAILERS = {
     "major": "RAILERS.Item.Ability.FIELDS.action.types.major",
     "full": "RAILERS.Item.Ability.FIELDS.action.types.full"
   },
-  rangeOptions: {
+  RAILERS.rangeOptions= {
     "melee": "RAILERS.Item.Weapon.FIELDS.range.types.melee",
     "short": "RAILERS.Item.Weapon.FIELDS.range.types.short",
     "medium": "RAILERS.Item.Weapon.FIELDS.range.types.medium",
     "long": "RAILERS.Item.Weapon.FIELDS.range.types.long",
     "extreme": "RAILERS.Item.Weapon.FIELDS.range.types.extreme"
   },
-  weaponSkillOptions: {
+  RAILERS.weaponSkillOptions= {
     "bows": 'RAILERS.Skills.Bows',
     "heavyweapons": 'RAILERS.Skills.HeavyWeapons',
     "melee": 'RAILERS.Skills.Melee',
     "smallarms": 'RAILERS.Skills.SmallArms',
     "exertion": 'RAILERS.Skills.Exertion'
   },
-  clothingTypeOptions: {
+  RAILERS.clothingTypeOptions= {
     "headgear": "RAILERS.Item.Clothing.FIELDS.layer.type.headgear",
     "innerwear": "RAILERS.Item.Clothing.FIELDS.layer.type.innerwear",
     "armor": "RAILERS.Item.Clothing.FIELDS.layer.type.armor",
     "outerwear": "RAILERS.Item.Clothing.FIELDS.layer.type.outerwear"
   },
-  locomotiveOptions: {
+  RAILERS.locomotiveOptions= {
     "ace": "RAILERS.Actor.Train.FIELDS.locomotives.ace",
     "bigBrother": "RAILERS.Actor.Train.FIELDS.locomotives.bigBrother",
     "comet": "RAILERS.Actor.Train.FIELDS.locomotives.comet",
@@ -114,8 +115,7 @@ export const RAILERS = {
     "littleMan": "RAILERS.Actor.Train.FIELDS.locomotives.littleMan",
     "marathoner": "RAILERS.Actor.Train.FIELDS.locomotives.marathoner"
   },
-  seasons: {
+  RAILERS.seasons= {
     "summer": "RAILERS.apps.weather.summer",
     "winter": "RAILERS.apps.weather.winter"
   }
-};

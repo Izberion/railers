@@ -1,5 +1,9 @@
 export default class RailersActorBase extends foundry.abstract
   .TypeDataModel {
+
+  static LOCALIZATION_PREFIXES = ['RAILERS.Actor.base'];
+
+
   static defineSchema() {
     const fields = foundry.data.fields;
     const requiredInteger = { required: true, nullable: false, integer: true };

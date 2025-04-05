@@ -1,7 +1,7 @@
 import RailersActorBase from './base-actor.mjs';
 
 export default class RailersCharacter extends RailersActorBase {
-  static LOCALIZATION_PREFIXES = ['RAILERS.Actor.Character'];
+  static LOCALIZATION_PREFIXES = ['RAILERS.Actor.base', 'RAILERS.Actor.Character'];
 
   static defineSchema() {
     const fields = foundry.data.fields;

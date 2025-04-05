@@ -1,4 +1,7 @@
 export default class RailersItemBase extends foundry.abstract.TypeDataModel {
+  
+  static LOCALIZATION_PREFIXES = ['RAILERS.Item.base'];
+  
   static defineSchema() {
     const fields = foundry.data.fields;
     const schema = {};

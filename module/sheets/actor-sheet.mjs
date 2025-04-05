@@ -1,6 +1,5 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/effects.mjs";
 import { rollDialog } from "../dialogs/roll-dialog.mjs";
-import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
 import { attackDialog } from "../dialogs/attack-dialog.mjs";
 import { onRollHp } from "../helpers/demon-hp.mjs";
 
@@ -262,6 +261,13 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     const wounds = [];
     const cars = [];
     const cargo = [];
+    const clothing = [];
+    const weapons = [];
+    const mutations = [];
+    const conditions = [];
+    const abilities = [];
+
+
 
     // Iterate through items, allocating to containers
     for (let i of this.document.items) {
@@ -280,10 +286,21 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       else if (i.type === 'cargo') {
         cargo.push(i);
       }
-    }
-
-    for (const s of Object.values(spells)) {
-      s.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+      else if (i.type === 'weapons') {
+        weapons.push(i);
+      }
+      else if (i.type === 'abilities') {
+        abilities.push(i);
+      }
+      else if (i.type === 'conditions') {
+        conditions.push(i);
+      }
+      else if (i.type === 'mutations') {
+        mutations.push(i);
+      }
+      else if (i.type === 'clothing') {
+        clothing.push(i);
+      }
     }
 
     // Sort then assign
