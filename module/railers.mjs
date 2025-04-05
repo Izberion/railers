@@ -5,27 +5,34 @@ import { RailersItem } from "./documents/item.mjs";
 import { RailersActorSheet } from "./sheets/actor-sheet.mjs";
 import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
-import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { RAILERS } from "./helpers/config.mjs";
 
 import { DiceFlowerApp, WeatherHUD } from "../apps/hex.mjs";
+import * as models from "./data/_module.mjs"
 
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
 /* -------------------------------------------- */
 
+
+globalThis.railers = {
+  documents: {
+    RailersActor,
+    RailersItem
+  },
+  applications: {
+    RailersActorSheet,
+    RailersItemSheet
+  },
+  utils: {
+    rollItemMacro
+  },
+  models
+};
+
 Hooks.once('init', async function() {
 
-  // Add utility classes to the global game object so that they're more easily
-  // accessible in global contexts.
-  game.railers = {
-    RailersActor,
-    RailersItem,
-    rollItemMacro
-  };
-
-  // Add custom constants for configuration.
   CONFIG.RAILERS = RAILERS;
 
   /**
@@ -41,19 +48,31 @@ Hooks.once('init', async function() {
 
   // Define custom Document classes
   CONFIG.Actor.documentClass = RailersActor;
+  CONFIG.Actor.dataModels = {
+    character: models.RailersCharacter,
+    npc: models.RailerNPC,
+    demon: models.RailersDemon,
+    train: models.RailersTrain
+  };
+
   CONFIG.Item.documentClass = RailersItem;
+  CONFIG.Item.dataModels = {
+    gear: models.RailersGear
+  };
   
+  CONFIG.ActiveEffect.legacyTransferral = false;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("railers", RailersActorSheet, { makeDefault: true });
+  Actors.registerSheet("railers", RailersActorSheet, { 
+    makeDefault: true,
+    label: "RAILERS.SheetLabels.Actor"
+  });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("railers", RailersItemSheet, { makeDefault: true });
-
-  // Preload Handlebars templates.
-  return preloadHandlebarsTemplates();
-
-
+  Items.registerSheet("railers", RailersItemSheet, {
+    makeDefault: true,
+    label: "RAILERS.SheetLabels.Item"
+  });
 });
 
 /* -------------------------------------------- */
@@ -112,7 +131,7 @@ Hooks.once("ready", async function() {
  * @param {number} slot     The hotbar slot to use
  * @returns {Promise}
  */
-async function createItemMacro(data, slot) {
+async function createDocMacro(data, slot) {
   // First, determine if this is a valid owned item.
   if (data.type !== "Item") return;
   if (!data.uuid.includes('Actor.') && !data.uuid.includes('Token.')) {

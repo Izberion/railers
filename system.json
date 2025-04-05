@@ -7,6 +7,16 @@
     "minimum": 12,
     "verified": "12.328"
   },
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlFields": ["biography.value", "biography.gm"]
+      },
+      "npc": {
+        "htmlFields": ["biography.value", "biography.gm"]
+      }
+    }
+  },
   "authors": [{
     "name": "Izberion"
   }],

@@ -1,0 +1,24 @@
+{{! Attributes Tab }}
+<section
+  class='tab attributes {{tab.cssClass}}'
+  data-group='primary'
+  data-tab='attributes'
+>
+    <div class="grid grid-3col">
+        <div class="resource">
+            <label class="resource-label">{{localize "RAILERS.Quantity"}}</label>
+            <input type="number" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+            <label class="resource-label">{{localize "RAILERS.Load"}}</label>
+            <input type="number" name="system.load" value="{{system.load}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+            <label class="resource-label">{{localize "RAILERS.Stowage"}}</label>
+            <select name="system.stowage">
+            {{selectOptions stowageOptions selected=system.stowage localize=true}}
+            </select>
+        </div>
+    </div>
+
+</section>

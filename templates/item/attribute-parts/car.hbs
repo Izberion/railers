@@ -1,0 +1,23 @@
+{{! Attributes Tab }}
+<section
+  class='tab attributes {{tab.cssClass}}'
+  data-group='primary'
+  data-tab='attributes'
+>
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.TrainArmor"}}</label>
+        <input type="number" name="system.armor" value="{{system.armor}}" data-dtype="Number"/>
+    </div>
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Capacity"}}</label>
+        <input type="number" name="system.capacity" value="{{system.capacity}}" data-dtype="Number"/>
+    </div>
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Power"}}</label>
+        <input type="number" name="system.power" value="{{system.power}}" data-dtype="Number"/>
+    </div>
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Weight"}}</label>
+        <input type="number" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
+    </div>
+</section>
