@@ -1,0 +1,48 @@
+{{! Attributes Tab }}
+<section
+  class='tab attributes {{tab.cssClass}}'
+  data-group='primary'
+  data-tab='attributes'
+>
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.RollFormula"}}</label>
+        <input type="text" name="system.formula" value="{{system.formula}}" data-dtype="String"/>
+    </div>
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Damage"}}</label>
+        <input type="number" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
+    </div>
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Severity"}}</label>
+        <input type="number" name="system.severity" value="{{system.severity}}" data-dtype="Number"/>
+    </div>
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Attack"}}</label>
+        <select name="system.attack">
+            {{selectOptions actionOptions selected=system.attack localize=true}}
+        </select>
+    </div>
+        <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Range"}}</label>
+        <select name="system.range">
+            {{selectOptions rangeOptions selected=system.range localize=true}}
+        </select>
+    </div>
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Reload"}}</label>
+        <select name="system.reload">
+            {{selectOptions actionOptions selected=system.reload localize=true}}
+        </select>
+    </div>
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Magazine"}}</label>
+        <input type="number" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
+    </div>
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Skill"}}</label>
+        <select name="system.skill">
+            {{selectOptions weaponSkillOptions selected=system.skill localize=true}}
+        </select>
+    </div>
+    {{system.attribute}}
+</section>

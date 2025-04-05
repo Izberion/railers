@@ -60,8 +60,26 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     attributesWeapon: {
       template: 'systems/railers/templates/item/attribute-parts/weapon.hbs',
     },
-    attributesArmor: {
-      template: 'systems/railers/templates/item/attribute-parts/armor.hbs',
+    attributesClothing: {
+      template: 'systems/railers/templates/item/attribute-parts/clothing.hbs',
+    },
+    attributesCondition: {
+      template: 'systems/railers/templates/item/attribute-parts/condition.hbs',
+    },
+    attributesMutation: {
+      template: 'systems/railers/templates/item/attribute-parts/mutation.hbs',
+    },
+    attributesWeaponMod: {
+      template: 'systems/railers/templates/item/attribute-parts/weapon-mod.hbs',
+    },
+    attributesTrainMod: {
+      template: 'systems/railers/templates/item/attribute-parts/train-mod.hbs',
+    },
+    attributesAbility: {
+      template: 'systems/railers/templates/item/attribute-parts/ability.hbs',
+    },
+    attributesCargo: {
+      template: 'systems/railers/templates/item/attribute-parts/cargo.hbs',
     },
     effects: {
       template: 'systems/railers/templates/item/effects.hbs',
@@ -73,27 +91,43 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     super._configureRenderOptions(options);
     // Not all parts always render
     options.parts = ['header', 'tabs', 'description'];
-    // Don't show the other tabs if only limited view
     if (this.document.limited) return;
-    // Control which parts show based on document subtype
     switch (this.document.type) {
       case 'feature':
         options.parts.push('attributesFeature', 'effects');
         break;
       case 'gear':
-        options.parts.push('attributesGear');
+        options.parts.push('attributesGear', 'effects');
         break;
       case 'wound':
-        options.parts.push('attributesWound');
+        options.parts.push('attributesWound', 'effects');
         break;
       case 'car':
-        options.parts.push('attributesCar');
+        options.parts.push('attributesCar', 'effects');
         break;
       case 'weapon':
-        options.parts.push('attributesWeapon');
+        options.parts.push('attributesWeapon', 'effects');
         break;
-      case 'armor':
-        options.parts.push('attributesArmor');
+      case 'clothing':
+        options.parts.push('attributesClothing', 'effects');
+        break;
+      case 'mutation':
+        options.parts.push('attributesMutation', 'effects');
+        break;
+      case 'condition':
+        options.parts.push('attributesCondition', 'effects');
+        break;
+      case 'weaponMod':
+        options.parts.push('attributesWeaponMod', 'effects');
+        break;
+      case 'trainMod':
+        options.parts.push('attributesTrainMod', 'effects');
+        break;
+      case 'ability':
+        options.parts.push('attributesAbility', 'effects');
+        break;
+      case 'cargo':
+        options.parts.push('attributesCargo', 'effects');
         break;
     }
   }
@@ -127,7 +161,13 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
       case 'attributesWound':
       case 'attributeCar':
       case 'attributeWeapon':
-      case 'attributeArmor':
+      case 'attributeCargo':
+      case 'attributeMutation':
+      case 'attributeCondition':
+      case 'attributeAbility':
+      case 'attributeTrainMod':
+      case 'attributeWeaponMod':
+      case 'attributeClothing':
         // Necessary for preserving active tab on re-render
         context.tab = context.tabs[partId];
         break;
@@ -187,11 +227,50 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
           tab.label += 'Description';
           break;
         case 'attributesFeature':
+          tab.id = 'attributes';
+          tab.label += 'Attributes';
+          break;
         case 'attributesGear':
+          tab.id = 'attributes';
+          tab.label += 'Attributes';
+          break;
         case 'attributesWound':
+          tab.id = 'attributes';
+          tab.label += 'Attributes';
+          break;
         case 'attributeCar':
+          tab.id = 'attributes';
+          tab.label += 'Attributes';
+          break;
         case 'attributeWeapon':
-        case 'attributeArmor':
+          tab.id = 'attributes';
+          tab.label += 'Attributes';
+          break;
+        case 'attributeClothing':
+          tab.id = 'attributes';
+          tab.label += 'Attributes';
+          break;
+        case 'attributeMutation':
+          tab.id = 'attributes';
+          tab.label += 'Attributes';
+          break;
+        case 'attributeCondition':
+          tab.id = 'attributes';
+          tab.label += 'Attributes';
+          break;
+        case 'attributeCargo':
+          tab.id = 'attributes';
+          tab.label += 'Attributes';
+          break;
+        case 'attributeWeaponMod':
+          tab.id = 'attributes';
+          tab.label += 'Attributes';
+          break;
+        case 'attributeTrainMod':
+          tab.id = 'attributes';
+          tab.label += 'Attributes';
+          break;
+        case 'attributeAbility':
           tab.id = 'attributes';
           tab.label += 'Attributes';
           break;

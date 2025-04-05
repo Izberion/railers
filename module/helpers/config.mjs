@@ -108,10 +108,10 @@ export const RAILERS = {
     "exertion": 'RAILERS.Skills.Exertion'
   },
   clothingTypeOptions: {
-    "headgear": "RAILERS.Item.Clothing.FIELDS.type.type.headgear",
-    "innerwear": "RAILERS.Item.Clothing.FIELDS.type.type.innerwear",
-    "armor": "RAILERS.Item.Clothing.FIELDS.type.type.armor",
-    "outerwear": "RAILERS.Item.Clothing.FIELDS.type.type.outerwear"
+    "headgear": "RAILERS.Item.Clothing.FIELDS.type.layer.headgear",
+    "innerwear": "RAILERS.Item.Clothing.FIELDS.type.layer.innerwear",
+    "armor": "RAILERS.Item.Clothing.FIELDS.type.layer.armor",
+    "outerwear": "RAILERS.Item.Clothing.FIELDS.type.layer.outerwear"
   },
   locomotiveOptions: {
     "ace": "RAILERS.Actor.Train.FIELDS.locomotives.ace",

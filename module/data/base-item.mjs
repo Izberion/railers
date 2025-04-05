@@ -1,12 +1,66 @@
-export default class RailersItemBase extends foundry.abstract
-  .TypeDataModel {
+export default class RailersItemBase extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
     const schema = {};
+    const requiredInteger = { required: true, nullable: false, integer: true };
 
     schema.description = new fields.StringField({
       required: true,
       blank: true,
+      initial: ""
+    });
+
+    schema.name = new fields.StringField({
+      required: true,
+      blank: true,
+      initial: ""
+    });
+
+    schema.rollFormula = new fields.StringField({
+      required: false,
+      nullable: true,
+      blank: true,
+      initial: null
+    });
+
+    schema.numDice = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: null,
+      min: 0
+    });
+
+    schema.therms = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: null,
+      min: 0
+    });
+
+    schema.load = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: null,
+      min: 0
+    });
+
+    schema.quantity = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: null,
+      min: 0
+    });
+
+    schema.stowage = new fields.StringField({
+      required: false,
+      nullable: true,
+      blank: true,
+      initial: null,
+      choices: Object.keys(RAILERS.stowageOptions)
     });
 
     return schema;

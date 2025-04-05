@@ -1,6 +1,6 @@
 import RailersItemBase from './base-item.mjs';
 
-export default class RailersArmor extends RailersItemBase {
+export default class RailersClothing extends RailersItemBase {
   static LOCALIZATION_PREFIXES = [
     'RAILERS.Item.base',
     'RAILERS.Item.Weapon',

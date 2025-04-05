@@ -222,7 +222,7 @@
         "FIELDS": {
           "type": {
             "label": "Type",
-            "type": {
+            "layer": {
               "headgear": "Headgear",
               "innerwear": "Innerwear",
               "armor": "Armor",
@@ -235,6 +235,10 @@
       },
       "Weapon": {
         "FIELDS": {
+          "ammo": {
+            "value": "Remaining Ammo",
+            "max": "Maximum Ammo"
+          },
           "damage": "Damage",
           "severity": "Severity",
           "range": { 
