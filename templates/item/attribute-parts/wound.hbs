@@ -1,0 +1,15 @@
+{{! Attributes Tab }}
+<section
+  class='tab attributes {{tab.cssClass}}'
+  data-group='primary'
+  data-tab='attributes'
+>
+    <div class="attribute">
+        <label for="system.damage">{{localize "RAILERS.Damage"}}:</label>
+        <input name="system.damage" type="number" min="0" step="1" value="{{system.damage}}" />
+    </div>
+    <div class="attribute">
+        <label for="system.severity">{{localize "RAILERS.Severity"}}:</label>
+        <input name="system.severity" type="number" min="0" step="1" value="{{system.severity}}" />
+    </div>
+</section>

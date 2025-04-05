@@ -1,354 +1,399 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/effects.mjs";
 import { rollDialog } from "../dialogs/roll-dialog.mjs";
-import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
 import { attackDialog } from "../dialogs/attack-dialog.mjs";
 import { onRollHp } from "../helpers/demon-hp.mjs";
+
+const { api, sheets } = foundry.applications;
+
 /**
  * Extend the basic ActorSheet with some very simple modifications
- * @extends {ActorSheet}
+ * @extends {ActorSheetV2}
  */
-export class RailersActorSheet extends ActorSheet {
+export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.ActorSheetV2) {
 
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["railers", "sheet", "actor"],
-      template: "systems/railers/templates/actor/actor-sheet.hbs",
-      width: 850,
-      height: 680,
-      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "biography" }]
-    });
+  constructor(options = {}) {
+    super(options);
+    this.#dragDrop = this.#createDragDropHandlers();
   }
 
+   /** @override */
+  static DEFAULT_OPTIONS = {
+    classes: ['railers', 'actor'],
+    position: {
+      width: 600,
+      height: 600,
+    },
+    actions: {
+      viewDoc: this._viewDoc,
+      createDoc: this._createDoc,
+      deleteDoc: this._deleteDoc,
+      toggleEffect: this._toggleEffect,
+      attackRoll: this._onAttackRoll,
+      woundHeal: this._onWoundHeal,
+      weaponReload: this._onWeaponReload,
+      rollHp: this._onRollHp
+    },
+    // Custom property that's merged into `this.options`
+    dragDrop: [{ dragSelector: '[data-drag]', dropSelector: null }],
+    form: {
+      handler: this.#onSubmitActorForm,
+      submitOnChange: true,
+    },
+  };
+
   /** @override */
-  get template() {
-    return `systems/railers/templates/actor/actor-${this.actor.type}-sheet.hbs`;
-  }
+  static PARTS = {
+    header: {
+      template: 'systems/railers/templates/actor/header.hbs',
+    },
+    tabs: {
+      // Foundry-provided generic template
+      template: 'templates/generic/tab-navigation.hbs',
+    },
+    features: {
+      template: 'systems/railers/templates/actor/features.hbs',
+    },
+    skills: {
+      template: 'systems/railers/templates/actor/skills.hbs',
+    },
+    biography: {
+      template: 'systems/railers/templates/actor/biography.hbs',
+    },
+    gear: {
+      template: 'systems/railers/templates/actor/gear.hbs',
+    },
+    wounds: {
+      template: 'systems/railers/templates/actor/wounds.hbs',
+    },
+    effects: {
+      template: 'systems/railers/templates/actor/effects.hbs',
+    },
+    cars: {
+      template: 'systems/railers/templates/actor/cars.hbs',
+    },
+    notes: {
+      template: 'systems/railers/templates/actor/notes.hbs',
+    },
+    abilities: {
+      template: 'systems/railers/templates/actor/abilities.hbs',
+    },
+    cargo: {
+      template: 'systems/railers/templates/actor/cargo.hbs',
+    },
+  };
+
+    /** @override */
+    _configureRenderOptions(options) {
+      super._configureRenderOptions(options);
+      // Not all parts always render
+      options.parts = ['header', 'tabs'];
+      // Don't show the other tabs if only limited view
+      if (this.document.limited) return;
+      // Control which parts show based on document subtype
+      switch (this.document.type) {
+        case 'character':
+          options.parts.push('biography', 'skills', 'gear', 'wounds', 'effects');
+          break;
+        case 'npc':
+          options.parts.push('biography', 'gear', 'wounds', 'effects');
+          break;
+        case 'demon':
+          options.parts.push('abilities', 'wounds', 'notes', 'effects');
+          break;
+        case 'train':
+          options.parts.push('cars', 'cargo', 'notes');
+          break;
+      }
+    }
 
   /* -------------------------------------------- */
 
   /** @override */
-  getData() {
-    // Retrieve the data structure from the base sheet. You can inspect or log
-    // the context variable to see the structure, but some key properties for
-    // sheets are the actor object, the data object, whether or not it's
-    // editable, the items array, and the effects array.
-    const context = super.getData();
+  async _prepareContext(options) {
+    // Output initialization
+    const context = {
+      // Validates both permissions and compendium status
+      editable: this.isEditable,
+      actor: this.actor,
+      // Add the actor's data to context.data for easier access, as well as flags.
+      system: this.actor.system,
+      flags: this.actor.flags,
+      // Adding a pointer to CONFIG.RAILERS
+      config: CONFIG.RAILERS,
+      tabs: this._getTabs(options.parts),
+      // Necessary for formInput and formFields helpers
+      fields: this.document.schema.fields,
+      systemFields: this.document.system.schema.fields,
+    };
 
-    // Use a safe clone of the actor data for further operations.
-    const actorData = this.actor.toObject(false);
-
-    // Add the actor's data to context.data for easier access, as well as flags.
-    context.system = actorData.system;
-    context.flags = actorData.flags;
-
-    // Prepare character data and items.
-    if (actorData.type == 'character') {
-      this._prepareItems(context);
-      this._prepareCharacterData(context);
-    }
-
-    // Prepare NPC data and items.
-    if (actorData.type == 'npc') {
-      this._prepareItems(context);
-    }
-
-    // Add roll data for TinyMCE editors.
-    context.rollData = context.actor.getRollData();
-
-    // Prepare active effects
-    context.effects = prepareActiveEffectCategories(this.actor.effects);
-
-    context.locomotiveOptions = CONFIG.RAILERS.locomotiveOptions;
-    context.seasons = CONFIG.RAILERS.seasons;
-
-    for (let item of context.items) {
-
-      let stowageKey = item.system.stowage;
-      let reloadKey = item.system.reload;
-      let attackKey = item.system.attack;
-      let rangeKey = item.system.range;
-      let typeKey = item.system.type;
-      let actionKey = item.system.action;
-      let clothingTypeKey = item.system.clothingType;
-
-      item.system.stowage = game.i18n.localize(CONFIG.RAILERS.stowageOptions[stowageKey]);
-      item.system.reload = game.i18n.localize(CONFIG.RAILERS.actionOptions[reloadKey]);
-      item.system.attack= game.i18n.localize(CONFIG.RAILERS.actionOptions[attackKey]);
-      item.system.range = game.i18n.localize(CONFIG.RAILERS.rangeOptions[rangeKey]);
-      item.system.type = game.i18n.localize(CONFIG.RAILERS.actionTypeOptions[typeKey]);
-      item.system.action = game.i18n.localize(CONFIG.RAILERS.actionTypeOptions[actionKey]);
-      item.system.clothingType = game.i18n.localize(CONFIG.RAILERS.clothingTypeOptions[clothingTypeKey]);
-    }
-
-    context.items.sort((a, b) => (a.system.severity || 0) - (b.system.severity || 0) || (a.system.damage || 0) - (b.system.damage || 0));
-
-
-
-
+    // Offloading context prep to a helper function
+    this._prepareItems(context);
 
     return context;
   }
 
-  /**
-   * Organize and classify Items for Character sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareCharacterData(context) {
-    // Handle ability scores.
-    for (let [k, v] of Object.entries(context.system.attributes)) {
-      v.label = game.i18n.localize(CONFIG.RAILERS.attributes[k]) ?? k;
+
+  /** @override */
+  async _preparePartContext(partId, context) {
+    switch (partId) {
+      case 'features':
+      case 'wounds':
+      case 'gear':
+      case 'abilities':
+      case 'skills':
+      case 'cars':
+      case 'cargo':
+        context.tab = context.tabs[partId];
+        break;
+      case 'biography':
+      case 'notes':
+        context.tab = context.tabs[partId];
+        // Enrich biography info for display
+        // Enrichment turns text like `[[/r 1d20]]` into buttons
+        context.enrichedBiography = await TextEditor.enrichHTML(
+          this.actor.system.biography,
+          {
+            // Whether to show secret blocks in the finished html
+            secrets: this.document.isOwner,
+            // Data to fill in for inline rolls
+            rollData: this.actor.getRollData(),
+            // Relative UUID resolution
+            relativeTo: this.actor,
+          }
+        );
+        break;
+      case 'effects':
+        context.tab = context.tabs[partId];
+        // Prepare active effects
+        context.effects = prepareActiveEffectCategories(
+          // A generator that returns all effects stored on the actor
+          // as well as any items
+          this.actor.allApplicableEffects()
+        );
+        break;
     }
+    return context;
+  }
 
 
+  /**
+   * Generates the data for the generic tab navigation template
+   * @param {string[]} parts An array of named template parts to render
+   * @returns {Record<string, Partial<ApplicationTab>>}
+   * @protected
+   */
+  _getTabs(parts) {
+    // If you have sub-tabs this is necessary to change
+    const tabGroup = 'primary';
+    // Default tab for first time it's rendered this session
+    if (!this.tabGroups[tabGroup]) this.tabGroups[tabGroup] = 'biography';
+    return parts.reduce((tabs, partId) => {
+      const tab = {
+        cssClass: '',
+        group: tabGroup,
+        // Matches tab property to
+        id: '',
+        // FontAwesome Icon, if you so choose
+        icon: '',
+        // Run through localization
+        label: 'RAILERS.Actor.Tabs.',
+      };
+      switch (partId) {
+        case 'header':
+        case 'tabs':
+          return tabs;
+        case 'biography':
+          tab.id = 'biography';
+          tab.label += 'Biography';
+          break;
+        case 'features':
+          tab.id = 'features';
+          tab.label += 'Features';
+          break;
+        case 'gear':
+          tab.id = 'gear';
+          tab.label += 'Gear';
+          break;
+        case 'wounds':
+          tab.id = 'wounds';
+          tab.label += 'Wounds';
+          break;
+        case 'effects':
+          tab.id = 'effects';
+          tab.label += 'Effects';
+          break;
+        case 'cars':
+          tab.id = 'cars';
+          tab.label += 'Cars';
+          break;
+        case 'cargo':
+          tab.id = 'cargo';
+          tab.label += 'Cargo';
+          break;
+        case 'skills':
+          tab.id = 'skills';
+          tab.label += 'Skills';
+          break;
+        case 'abilities':
+          tab.id = 'abilities';
+          tab.label += 'Abilities';
+          break;
+        case 'notes':
+          tab.id = 'notes';
+          tab.label += 'Notes';
+          break;
+      }
+      if (this.tabGroups[tabGroup] === tab.id) tab.cssClass = 'active';
+      tabs[partId] = tab;
+      return tabs;
+    }, {});
   }
 
   /**
-   * Organize and classify Items for Character sheets.
+   * Organize and classify Items for Actor sheets.
    *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
+   * @param {object} context The context object to mutate
    */
   _prepareItems(context) {
     // Initialize containers.
     const gear = [];
     const features = [];
-    const spells = {
-      0: [],
-      1: [],
-      2: [],
-      3: [],
-      4: [],
-      5: [],
-      6: [],
-      7: [],
-      8: [],
-      9: []
-    };
+    const wounds = [];
+    const cars = [];
+    const cargo = [];
+    const clothing = [];
+    const weapons = [];
+    const mutations = [];
+    const conditions = [];
+    const abilities = [];
+
+
 
     // Iterate through items, allocating to containers
-    for (let i of context.items) {
-      i.img = i.img || DEFAULT_TOKEN;
-      // Append to gear.
-      if (i.type === 'item') {
+    for (let i of this.document.items) {
+      if (i.type === 'gear') {
         gear.push(i);
       }
-      // Append to features.
       else if (i.type === 'feature') {
         features.push(i);
       }
+      else if (i.type === 'wounds') {
+        wounds.push(i);
+      }
+      else if (i.type === 'cars') {
+        cars.push(i);
+      }
+      else if (i.type === 'cargo') {
+        cargo.push(i);
+      }
+      else if (i.type === 'weapons') {
+        weapons.push(i);
+      }
+      else if (i.type === 'abilities') {
+        abilities.push(i);
+      }
+      else if (i.type === 'conditions') {
+        conditions.push(i);
+      }
+      else if (i.type === 'mutations') {
+        mutations.push(i);
+      }
+      else if (i.type === 'clothing') {
+        clothing.push(i);
+      }
     }
 
-    // Assign and return
-    context.gear = gear;
-    context.features = features;
-    context.spells = spells;
-
+    // Sort then assign
+    context.gear = gear.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+    context.features = features.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+    context.wounds = wounds.sort((a, b) => (a.system.severity || 0) - (b.system.severity || 0) || (a.system.damage || 0) - (b.system.damage || 0));
+    context.cars = cars.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+    context.cargo = cargo.sort((a, b) => (a.sort || 0) - (b.sort || 0));
 
   }
 
-  /* -------------------------------------------- */
+  /**
+   * Actions performed after any render of the Application.
+   * Post-render steps are not awaited by the render process.
+   * @param {ApplicationRenderContext} context      Prepared context data
+   * @param {RenderOptions} options                 Provided render options
+   * @protected
+   */
+  _onRender(context, options) {
+    this.#dragDrop.forEach((d) => d.bind(this.element));
+    this.#disableOverrides();
+    // You may want to add other special handling here
+    // Foundry comes with a large number of utility classes, e.g. SearchFilter
+    // That you may want to implement yourself.
+  }
 
-  /** @override */
+  /**************
+   *
+   *   ACTIONS
+   *
+   **************/
+
+  static _onRoll(event, target) {
+    // Assuming rollDialog is a function from V1 (e.g., in railer-roll-dialog.mjs)
+    const actor = this.actor;
+    rollDialog({ actor }); // Replace with your roll dialog logic
+  }
+  
+  static _onAttackRoll(event, target) {
+    const actor = this.actor;
+    attackDialog({ actor }); // Replace with your attack dialog logic or weapon roll
+  }
+  
+  static _onWoundHeal(event, target) {
+    const itemId = target.closest('.item').dataset.woundId;
+    const item = this.actor.items.get(itemId);
+    if (!item) return;
+  
+    const damage = Math.max(0, (item.system.damage || 0) - 1);
+    if (damage === 0) {
+      item.delete();
+    } else {
+      item.update({ 'system.damage': damage });
+    }
+  }
+  
+  static _onWeaponReload(event, target) {
+    const itemId = target.closest('.item').dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (item) item.update({ 'system.magazine.value': item.system.magazine.max });
+  }
+  
+  static _onRollHp(event, target) {
+    onRollHp(event, this.actor); 
+  }
+  
   activateListeners(html) {
     super.activateListeners(html);
-
-    // Render the item sheet for viewing/editing prior to the editable check.
-    html.find('.item-edit').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(li.data("itemId"));
-      item.sheet.render(true);
-    });
-
-    // -------------------------------------------------------------
-    // Everything below here is only needed if the sheet is editable
-    if (!this.isEditable) return;
-
-    // Add Inventory Item
-    html.find('.item-create').click(this._onItemCreate.bind(this));
-
-    // Delete Inventory Item
-    html.find('.item-delete').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(li.data("itemId"));
-      item.delete();
-      li.slideUp(200, () => this.render(false));
-    });
-
-    // Active Effect management
-    html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.actor));
-
-    // Rollable abilities.
-    html.find('.rollable').click(this._onRoll.bind(this));
-
-    // Drag events for macros.
-    if (this.actor.isOwner) {
-      let handler = ev => this._onDragStart(ev);
-      html.find('li.item').each((i, li) => {
-        if (li.classList.contains("inventory-header")) return;
-        li.setAttribute("draggable", true);
-        li.addEventListener("dragstart", handler, false);
-      });
+    const locomotiveSelect = html.querySelector('select[name="system.locomotive"]');
+    if (locomotiveSelect) {
+      locomotiveSelect.addEventListener('change', this._onLocomotiveChange.bind(this));
     }
-
-    // Roll Dialog
-    html.on("click", ".roll", {actor: this.actor}, rollDialog);
-    html.on("click", ".attack-roll", {actor: this.actor}, attackDialog);
-
-
-    // Add a click listener for the "Add Wound" button
-    html.find('.wound-create').click(addWoundDialog.bind(this, this.actor, html));
-
-    // Add a click listener for the "Edit Wound" button
-    html.find('.wound-edit').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(li.data("woundId"));
-      item.sheet.render(true);
-    });
-
-    html.find('.wound-heal').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(li.data("woundId"));
-      let damage = Math.max(0, item.system.damage - 1);
-      
-      if (damage === 0) {
-        item.delete();
-        li.slideUp(200, () => this.render(false));
-      } else {
-        item.update({ 'system.damage': damage });
-      }
-    });
-
-    // Add a click listener for the "Clear Wound" button
-    html.find('.wound-delete').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(li.data("woundId"));
-      item.delete();
-      li.slideUp(200, () => this.render(false));
-    });
-
-
-    html.find('.weapon-reload').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(li.data("itemId"));
-      item.update({ 'system.magazine.value': item.system.magazine.max})
-    });
-
-
-    html.find('select[name="system.locomotive"]').change(this._onLocomotiveChange.bind(this));
-    
-    
-    // Remove any existing drop event listeners on the canvas
-    canvas.app.view.removeEventListener('drop', this._onDrop);
-    
-    // Listen for drop events on the canvas
-    canvas.app.view.addEventListener('drop', this._onDrop);
-
-
-    // Listen for click events on the roll hp button
-    html.find('.roll-hp').click((event) => onRollHp(event, this.actor));
-
   }
-
   
-
-/*****************************************************************/
-
-  // Handle the "Edit Wound" button click
-  _onWoundEdit(event) {
-    event.preventDefault();
-    // Get the ID of the wound to edit
-    let woundId = $(event.currentTarget).parents('.item').data('wound-id');
-    // Get the wound data and show the edit dialog
-    let wound = this.actor.items.get(woundId);
-    if (wound) {
-      wound.sheet.render(true);
-    }
-  }
-
-  /**
-   * Handle creating a new Owned Item for the actor using initial data defined in the HTML dataset
-   * @param {Event} event   The originating click event
-   * @private
-   */
-  async _onItemCreate(event) {
-    event.preventDefault();
-    const header = event.currentTarget;
-    // Get the type of item to create.
-    const type = header.dataset.type;
-    // Grab any data associated with this control.
-    const data = foundry.utils.duplicate(header.dataset);
-    // Initialize a default name.
-    const name = `New ${type.capitalize()}`;
-    // Prepare the item object.
-    const itemData = {
-      name: name,
-      type: type,
-      system: data
-    };
-    // Remove the type from the dataset since it's in the itemData.type prop.
-    delete itemData.system["type"];
-
-    // Finally, create the item!
-    return await Item.create(itemData, {parent: this.actor});
-  }
-
-  /**
-   * Handle clickable rolls.
-   * @param {Event} event   The originating click event
-   * @private
-   */
-  _onRoll(event) {
-    event.preventDefault();
-    const element = event.currentTarget;
-    const dataset = element.dataset;
-
-    // Handle item rolls.
-    if (dataset.rollType) {
-      if (dataset.rollType == 'item') {
-        const itemId = element.closest('.item').dataset.itemId;
-        const item = this.actor.items.get(itemId);
-        if (item) return item.roll();
-      }
-    }
-
-    // Handle rolls that supply the formula directly.
-    if (dataset.roll) {
-      let label = dataset.label ? `[attribute] ${dataset.label}` : '';
-      let roll = new Roll(dataset.roll, this.actor.getRollData());
-      roll.toMessage({
-        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        flavor: label,
-        rollMode: game.settings.get('core', 'rollMode'),
-      });
-      return roll;
-    }
-  }
-
-
   _onLocomotiveChange(event) {
     event.preventDefault();
-  
     const selectedType = event.target.value;
   
     const types = {
-      ace: { armor: 4, power: 24, speed: 7, fuel: 100, weight: 1050},
-      bigBrother: { armor: 5, power: 15, speed: 3, fuel: 60, weight: 950},
-      comet: { armor: 2, power: 12, speed: 9, fuel: 42, weight: 650},
-      compact: { armor: 3, power: 0, speed: 3, fuel: 48, weight: 0},
-      donkey: { armor: 3, power: 10, speed: 8, fuel: 80, weight: 1500},
-      dynamo: { armor: 4, power: 25, speed: 5, fuel: 56, weight: 750},
-      flex: { armor: 2, power: 8, speed: 3, fuel: 36, weight: 500},
-      joes: { armor: 3, power: 15, speed: 5, fuel: 70, weight: 800},
-      littleMan: { armor: 1, power: 9, speed: 3, fuel: 60, weight: 550},
-      marathoner: { armor: 1, power: 16, speed: 4, fuel: 128, weight: 700}
+      ace: { armor: 4, power: 24, speed: 7, fuel: 100, weight: 1050 },
+      bigBrother: { armor: 5, power: 15, speed: 3, fuel: 60, weight: 950 },
+      comet: { armor: 2, power: 12, speed: 9, fuel: 42, weight: 650 },
+      compact: { armor: 3, power: 0, speed: 3, fuel: 48, weight: 0 },
+      donkey: { armor: 3, power: 10, speed: 8, fuel: 80, weight: 1500 },
+      dynamo: { armor: 4, power: 25, speed: 5, fuel: 56, weight: 750 },
+      flex: { armor: 2, power: 8, speed: 3, fuel: 36, weight: 500 },
+      joes: { armor: 3, power: 15, speed: 5, fuel: 70, weight: 800 },
+      littleMan: { armor: 1, power: 9, speed: 3, fuel: 60, weight: 550 },
+      marathoner: { armor: 1, power: 16, speed: 4, fuel: 128, weight: 700 }
     };
   
     const stats = types[selectedType];
+    if (!stats) return;
   
     new Dialog({
       title: game.i18n.localize("RAILERS.Warning"),
@@ -357,7 +402,6 @@ export class RailersActorSheet extends ActorSheet {
         continue: {
           label: game.i18n.localize("RAILERS.Continue"),
           callback: () => {
-            // Update the actor's data
             this.actor.update({
               'system.speed': stats.speed,
               'system.fuel.max': stats.fuel,
@@ -374,7 +418,458 @@ export class RailersActorSheet extends ActorSheet {
       default: 'cancel',
     }).render(true);
   }
-  
 
-  
+  /**
+   * Renders an embedded document's sheet
+   *
+   * @this RailersActorSheet
+   * @param {PointerEvent} event   The originating click event
+   * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
+   * @protected
+   */
+  static async _viewDoc(event, target) {
+    const doc = this._getEmbeddedDocument(target);
+    doc.sheet.render(true);
+  }
+
+  /**
+   * Handles item deletion
+   *
+   * @this RailersActorSheet
+   * @param {PointerEvent} event   The originating click event
+   * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
+   * @protected
+   */
+  static async _deleteDoc(event, target) {
+    const doc = this._getEmbeddedDocument(target);
+    await doc.delete();
+  }
+
+  /**
+   * Handle creating a new Owned Item or ActiveEffect for the actor using initial data defined in the HTML dataset
+   *
+   * @this RailersActorSheet
+   * @param {PointerEvent} event   The originating click event
+   * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
+   * @private
+   */
+  static async _createDoc(event, target) {
+    // Retrieve the configured document class for Item or ActiveEffect
+    const docCls = getDocumentClass(target.dataset.documentClass);
+    // Prepare the document creation data by initializing it a default name.
+    const docData = {
+      name: docCls.defaultName({
+        // defaultName handles an undefined type gracefully
+        type: target.dataset.type,
+        parent: this.actor,
+      }),
+    };
+    // Loop through the dataset and add it to our docData
+    for (const [dataKey, value] of Object.entries(target.dataset)) {
+      // These data attributes are reserved for the action handling
+      if (['action', 'documentClass'].includes(dataKey)) continue;
+      // Nested properties require dot notation in the HTML, e.g. anything with `system`
+      // An example exists in spells.hbs, with `data-system.spell-level`
+      // which turns into the dataKey 'system.spellLevel'
+      foundry.utils.setProperty(docData, dataKey, value);
+    }
+
+    // Finally, create the embedded document!
+    await docCls.create(docData, { parent: this.actor });
+  }
+
+  /**
+   * Determines effect parent to pass to helper
+   *
+   * @this RailersActorSheet
+   * @param {PointerEvent} event   The originating click event
+   * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
+   * @private
+   */
+  static async _toggleEffect(event, target) {
+    const effect = this._getEmbeddedDocument(target);
+    await effect.update({ disabled: !effect.disabled });
+  }
+
+  /**
+   * Handle clickable rolls.
+   *
+   * @this RailersActorSheet
+   * @param {PointerEvent} event   The originating click event
+   * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
+   * @protected
+   */
+  static async _onRoll(event, target) {
+    event.preventDefault();
+    const dataset = target.dataset;
+
+    // Handle item rolls.
+    switch (dataset.rollType) {
+      case 'item':
+        const item = this._getEmbeddedDocument(target);
+        if (item) return item.roll();
+    }
+
+    // Handle rolls that supply the formula directly.
+    if (dataset.roll) {
+      let label = dataset.label ? `[ability] ${dataset.label}` : '';
+      let roll = new Roll(dataset.roll, this.actor.getRollData());
+      await roll.toMessage({
+        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+        flavor: label,
+        rollMode: game.settings.get('core', 'rollMode'),
+      });
+      return roll;
+    }
+  }
+
+  /** Helper Functions */
+
+  /**
+   * Fetches the embedded document representing the containing HTML element
+   *
+   * @param {HTMLElement} target    The element subject to search
+   * @returns {Item | ActiveEffect} The embedded Item or ActiveEffect
+   */
+  _getEmbeddedDocument(target) {
+    const docRow = target.closest('li[data-document-class]');
+    if (docRow.dataset.documentClass === 'Item') {
+      return this.actor.items.get(docRow.dataset.itemId);
+    } else if (docRow.dataset.documentClass === 'ActiveEffect') {
+      const parent =
+        docRow.dataset.parentId === this.actor.id
+          ? this.actor
+          : this.actor.items.get(docRow?.dataset.parentId);
+      return parent.effects.get(docRow?.dataset.effectId);
+    } else return console.warn('Could not find document class');
+  }
+
+  /***************
+   *
+   * Drag and Drop
+   *
+   ***************/
+
+  /**
+   * Define whether a user is able to begin a dragstart workflow for a given drag selector
+   * @param {string} selector       The candidate HTML selector for dragging
+   * @returns {boolean}             Can the current user drag this selector?
+   * @protected
+   */
+  _canDragStart(selector) {
+    // game.user fetches the current user
+    return this.isEditable;
+  }
+
+  /**
+   * Define whether a user is able to conclude a drag-and-drop workflow for a given drop selector
+   * @param {string} selector       The candidate HTML selector for the drop target
+   * @returns {boolean}             Can the current user drop on this selector?
+   * @protected
+   */
+  _canDragDrop(selector) {
+    // game.user fetches the current user
+    return this.isEditable;
+  }
+
+  /**
+   * Callback actions which occur at the beginning of a drag start workflow.
+   * @param {DragEvent} event       The originating DragEvent
+   * @protected
+   */
+  _onDragStart(event) {
+    const docRow = event.currentTarget.closest('li');
+    if ('link' in event.target.dataset) return;
+
+    // Chained operation
+    let dragData = this._getEmbeddedDocument(docRow)?.toDragData();
+
+    if (!dragData) return;
+
+    // Set data transfer
+    event.dataTransfer.setData('text/plain', JSON.stringify(dragData));
+  }
+
+  /**
+   * Callback actions which occur when a dragged element is over a drop target.
+   * @param {DragEvent} event       The originating DragEvent
+   * @protected
+   */
+  _onDragOver(event) {}
+
+  /**
+   * Callback actions which occur when a dragged element is dropped on a target.
+   * @param {DragEvent} event       The originating DragEvent
+   * @protected
+   */
+  async _onDrop(event) {
+    const data = TextEditor.getDragEventData(event);
+    const actor = this.actor;
+    const allowed = Hooks.call('dropActorSheetData', actor, this, data);
+    if (allowed === false) return;
+
+    // Handle different data types
+    switch (data.type) {
+      case 'ActiveEffect':
+        return this._onDropActiveEffect(event, data);
+      case 'Actor':
+        return this._onDropActor(event, data);
+      case 'Item':
+        return this._onDropItem(event, data);
+      case 'Folder':
+        return this._onDropFolder(event, data);
+    }
+  }
+
+  /**
+   * Handle the dropping of ActiveEffect data onto an Actor Sheet
+   * @param {DragEvent} event                  The concluding DragEvent which contains drop data
+   * @param {object} data                      The data transfer extracted from the event
+   * @returns {Promise<ActiveEffect|boolean>}  The created ActiveEffect object or false if it couldn't be created.
+   * @protected
+   */
+  async _onDropActiveEffect(event, data) {
+    const aeCls = getDocumentClass('ActiveEffect');
+    const effect = await aeCls.fromDropData(data);
+    if (!this.actor.isOwner || !effect) return false;
+    if (effect.target === this.actor)
+      return this._onSortActiveEffect(event, effect);
+    return aeCls.create(effect, { parent: this.actor });
+  }
+
+  /**
+   * Handle a drop event for an existing embedded Active Effect to sort that Active Effect relative to its siblings
+   *
+   * @param {DragEvent} event
+   * @param {ActiveEffect} effect
+   */
+  async _onSortActiveEffect(event, effect) {
+    /** @type {HTMLElement} */
+    const dropTarget = event.target.closest('[data-effect-id]');
+    if (!dropTarget) return;
+    const target = this._getEmbeddedDocument(dropTarget);
+
+    // Don't sort on yourself
+    if (effect.uuid === target.uuid) return;
+
+    // Identify sibling items based on adjacent HTML elements
+    const siblings = [];
+    for (const el of dropTarget.parentElement.children) {
+      const siblingId = el.dataset.effectId;
+      const parentId = el.dataset.parentId;
+      if (
+        siblingId &&
+        parentId &&
+        (siblingId !== effect.id || parentId !== effect.parent.id)
+      )
+        siblings.push(this._getEmbeddedDocument(el));
+    }
+
+    // Perform the sort
+    const sortUpdates = SortingHelpers.performIntegerSort(effect, {
+      target,
+      siblings,
+    });
+
+    // Split the updates up by parent document
+    const directUpdates = [];
+
+    const grandchildUpdateData = sortUpdates.reduce((items, u) => {
+      const parentId = u.target.parent.id;
+      const update = { _id: u.target.id, ...u.update };
+      if (parentId === this.actor.id) {
+        directUpdates.push(update);
+        return items;
+      }
+      if (items[parentId]) items[parentId].push(update);
+      else items[parentId] = [update];
+      return items;
+    }, {});
+
+    // Effects-on-items updates
+    for (const [itemId, updates] of Object.entries(grandchildUpdateData)) {
+      await this.actor.items
+        .get(itemId)
+        .updateEmbeddedDocuments('ActiveEffect', updates);
+    }
+
+    // Update on the main actor
+    return this.actor.updateEmbeddedDocuments('ActiveEffect', directUpdates);
+  }
+
+  /**
+   * Handle dropping of an Actor data onto another Actor sheet
+   * @param {DragEvent} event            The concluding DragEvent which contains drop data
+   * @param {object} data                The data transfer extracted from the event
+   * @returns {Promise<object|boolean>}  A data object which describes the result of the drop, or false if the drop was
+   *                                     not permitted.
+   * @protected
+   */
+  async _onDropActor(event, data) {
+    if (!this.actor.isOwner) return false;
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Handle dropping of an item reference or item data onto an Actor Sheet
+   * @param {DragEvent} event            The concluding DragEvent which contains drop data
+   * @param {object} data                The data transfer extracted from the event
+   * @returns {Promise<Item[]|boolean>}  The created or updated Item instances, or false if the drop was not permitted.
+   * @protected
+   */
+  async _onDropItem(event, data) {
+    if (!this.actor.isOwner) return false;
+    const item = await Item.implementation.fromDropData(data);
+
+    // Handle item sorting within the same Actor
+    if (this.actor.uuid === item.parent?.uuid)
+      return this._onSortItem(event, item);
+
+    // Create the owned item
+    return this._onDropItemCreate(item, event);
+  }
+
+  /**
+   * Handle dropping of a Folder on an Actor Sheet.
+   * The core sheet currently supports dropping a Folder of Items to create all items as owned items.
+   * @param {DragEvent} event     The concluding DragEvent which contains drop data
+   * @param {object} data         The data transfer extracted from the event
+   * @returns {Promise<Item[]>}
+   * @protected
+   */
+  async _onDropFolder(event, data) {
+    if (!this.actor.isOwner) return [];
+    const folder = await Folder.implementation.fromDropData(data);
+    if (folder.type !== 'Item') return [];
+    const droppedItemData = await Promise.all(
+      folder.contents.map(async (item) => {
+        if (!(document instanceof Item)) item = await fromUuid(item.uuid);
+        return item;
+      })
+    );
+    return this._onDropItemCreate(droppedItemData, event);
+  }
+
+  /**
+   * Handle the final creation of dropped Item data on the Actor.
+   * This method is factored out to allow downstream classes the opportunity to override item creation behavior.
+   * @param {object[]|object} itemData      The item data requested for creation
+   * @param {DragEvent} event               The concluding DragEvent which provided the drop data
+   * @returns {Promise<Item[]>}
+   * @private
+   */
+  async _onDropItemCreate(itemData, event) {
+    itemData = itemData instanceof Array ? itemData : [itemData];
+    return this.actor.createEmbeddedDocuments('Item', itemData);
+  }
+
+  /**
+   * Handle a drop event for an existing embedded Item to sort that Item relative to its siblings
+   * @param {Event} event
+   * @param {Item} item
+   * @private
+   */
+  _onSortItem(event, item) {
+    // Get the drag source and drop target
+    const items = this.actor.items;
+    const dropTarget = event.target.closest('[data-item-id]');
+    if (!dropTarget) return;
+    const target = items.get(dropTarget.dataset.itemId);
+
+    // Don't sort on yourself
+    if (item.id === target.id) return;
+
+    // Identify sibling items based on adjacent HTML elements
+    const siblings = [];
+    for (let el of dropTarget.parentElement.children) {
+      const siblingId = el.dataset.itemId;
+      if (siblingId && siblingId !== item.id)
+        siblings.push(items.get(el.dataset.itemId));
+    }
+
+    // Perform the sort
+    const sortUpdates = SortingHelpers.performIntegerSort(item, {
+      target,
+      siblings,
+    });
+    const updateData = sortUpdates.map((u) => {
+      const update = u.update;
+      update._id = u.target._id;
+      return update;
+    });
+
+    // Perform the update
+    return this.actor.updateEmbeddedDocuments('Item', updateData);
+  }
+
+  /** The following pieces set up drag handling and are unlikely to need modification  */
+
+  /**
+   * Returns an array of DragDrop instances
+   * @type {DragDrop[]}
+   */
+  get dragDrop() {
+    return this.#dragDrop;
+  }
+
+  // This is marked as private because there's no real need
+  // for subclasses or external hooks to mess with it directly
+  #dragDrop;
+
+  /**
+   * Create drag-and-drop workflow handlers for this Application
+   * @returns {DragDrop[]}     An array of DragDrop handlers
+   * @private
+   */
+  #createDragDropHandlers() {
+    return this.options.dragDrop.map((d) => {
+      d.permissions = {
+        dragstart: this._canDragStart.bind(this),
+        drop: this._canDragDrop.bind(this),
+      };
+      d.callbacks = {
+        dragstart: this._onDragStart.bind(this),
+        dragover: this._onDragOver.bind(this),
+        drop: this._onDrop.bind(this),
+      };
+      return new DragDrop(d);
+    });
+  }
+
+   /********************
+   *
+   * Actor Override Handling
+   *
+   ********************/
+
+  /**
+   * Process form submission for the sheet, removing overrides created by active effects
+   * @this {RailersActorSheet}                The handler is called with the application as its bound scope
+   * @param {SubmitEvent} event                   The originating form submission event
+   * @param {HTMLFormElement} form                The form element that was submitted
+   * @param {FormDataExtended} formData           Processed data for the submitted form
+   * @returns {Promise<void>}
+   */
+  static async #onSubmitActorForm(event, form, formData) {
+    const submitData = this._prepareSubmitData(event, form, formData);
+    const overrides = foundry.utils.flattenObject(this.actor.overrides);
+    for (let k of Object.keys(overrides)) delete submitData[k];
+    await this.actor.update(submitData);
+  }
+
+  /**
+   * Disables inputs subject to active effects
+   */
+  #disableOverrides() {
+    const flatOverrides = foundry.utils.flattenObject(this.actor.overrides);
+    for (const override of Object.keys(flatOverrides)) {
+      const input = this.element.querySelector(`[name="${override}"]`);
+      if (input) {
+        input.disabled = true;
+      }
+    }
+  }
 }
+
+

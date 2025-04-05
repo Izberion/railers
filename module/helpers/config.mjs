@@ -1,79 +1,121 @@
 export const RAILERS = {};
 
-/**
- * The set of Ability Scores used within the sytem.
- * @type {Object}
- */
-RAILERS.attributes = {
-  "combat": "RAILERS.AttributeCombat",
-  "education": "RAILERS.AttributeEducation",
-  "engineering": "RAILERS.AttributeEngineering",
-  "fortitude": "RAILERS.AttributeFortitude",
-  "intuition": "RAILERS.AttributeIntuition",
-  "prowess": "RAILERS.AttributeProwess",
-  "speech": "RAILERS.AttributeSpeech",
-  "stealth": "RAILERS.AttributeStealth"
-};
-
-RAILERS.stowageOptions = {
-  "onHand": "RAILERS.OnHand",
-  "stowed": "RAILERS.Stowed",
-  "other": "RAILERS.Other"
-}
-
-RAILERS.actionOptions = {
-  "na": "RAILERS.NA",
-  "maneuver": "RAILERS.Maneuver",
-  "minor": "RAILERS.Minor",
-  "major": "RAILERS.Major",
-  "full": "RAILERS.Full"
-}
-
-RAILERS.actionTypeOptions = {
-  "passive": "RAILERS.Passive",
-  "maneuver": "RAILERS.Maneuver",
-  "minor": "RAILERS.Minor",
-  "major": "RAILERS.Major",
-  "full": "RAILERS.Full"
-}
-
-RAILERS.rangeOptions = {
-  "melee": "RAILERS.Melee",
-  "short": "RAILERS.Short",
-  "medium": "RAILERS.Medium",
-  "long": "RAILERS.Long",
-  "extreme": "RAILERS.Extreme"
-}
-
-RAILERS.weaponSkillOptions = {
-  "bows": "RAILERS.SkillBows",
-  "heavyweapons": "RAILERS.SkillHeavyweapons",
-  "melee": "RAILERS.SkillMelee",
-  "smallarms": "RAILERS.SkillSmallArms",
-  "exertion": "RAILERS.SkillExertion"
-}
-
-RAILERS.clothingTypeOptions = {
-  "headgear": "RAILERS.Headgear",
-  "innerwear": "RAILERS.Innerwear",
-  "armor": "RAILERS.ClothingArmor",
-  "outerwear": "RAILERS.Outerwear"
-}
-
-RAILERS.locomotiveOptions = {
-  "ace": "RAILERS.LocomotiveAce",
-  "bigBrother": "RAILERS.LocomotiveBigBrother",
-  "comet": "RAILERS.LocomotiveComet",
-  "compact": "RAILERS.LocomotiveCompact",
-  "donkey": "RAILERS.LocomotiveDonkey",
-  "dynamo": "RAILERS.LocomotiveDynamo",
-  "flex": "RAILERS.LocomotiveFlex",
-  "joes": "RAILERS.LocomotiveJoes",
-  "littleMan": "RAILERS.LocomotiveLittleMan",
-  "marathoner": "RAILERS.LocomotiveMarathoner"
-}
-
-RAILERS.seasons = {
-  "summer": "RAILERS.Summer",
-  "winter": "RAILERS.Winter"
-}
+  RAILERS.attributes = {
+    character: {
+      combat: 'RAILERS.Attributes.Combat',
+      education: 'RAILERS.Attributes.Education',
+      engineering: 'RAILERS.Attributes.Engineering',
+      fortitude: 'RAILERS.Attributes.Fortitude',
+      intuition: 'RAILERS.Attributes.Intuition',
+      prowess: 'RAILERS.Attributes.Prowess',
+      speech: 'RAILERS.Attributes.Speech',
+      stealth: 'RAILERS.Attributes.Stealth'
+    },
+    npc: {
+      primary: 'RAILERS.Attributes.Primary',
+      secondary: 'RAILERS.Attributes.Secondary'
+    },
+    demon: {
+      strength: 'RAILERS.Attributes.Strength',
+      agility: 'RAILERS.Attributes.Agility',
+      intellect: 'RAILERS.Attributes.Intellect',
+      endurance: 'RAILERS.Attributes.Endurance'
+    }
+  }
+  RAILERS.skills = {
+    combat: {
+      bows: 'RAILERS.Skills.Bows',
+      heavyweapons: 'RAILERS.Skills.HeavyWeapons',
+      melee: 'RAILERS.Skills.Melee',
+      smallarms: 'RAILERS.Skills.SmallArms'
+    },
+    education: {
+      instruction: 'RAILERS.Skills.Instruction',
+      knowledge: 'RAILERS.Skills.Knowledge',
+      medical: 'RAILERS.Skills.Medical',
+      survival: 'RAILERS.Skills.Survival'
+    },
+    engineering: {
+      chemistry: 'RAILERS.Skills.Chemistry',
+      demolition: 'RAILERS.Skills.Demolition',
+      gunsmithing: 'RAILERS.Skills.Gunsmithing',
+      locksmithing: 'RAILERS.Skills.Locksmithing',
+      locomotive: 'RAILERS.Skills.Locomotive',
+      mechanics: 'RAILERS.Skills.Mechanics'
+    },
+    fortitude: {
+      endurance: 'RAILERS.Skills.Endurance',
+      resolve: 'RAILERS.Skills.Resolve'
+    },
+    intuition: {
+      insight: 'RAILERS.Skills.Insight',
+      perception: 'RAILERS.Skills.Perception'
+    },
+    prowess: {
+      acrobatics: 'RAILERS.Skills.Acrobatics',
+      athletics: 'RAILERS.Skills.Athletics',
+      exertion: 'RAILERS.Skills.Exertion'
+    },
+    speech: {
+      coercion: 'RAILERS.Skills.Coercion',
+      deception: 'RAILERS.Skills.Deception',
+      leadership: 'RAILERS.Skills.Leadership',
+      negotiation: 'RAILERS.Skills.Negotiation',
+      persuasion: 'RAILERS.Skills.Persuasion'
+    },
+    stealth: {
+      concealment: 'RAILERS.Skills.Concealment',
+      disguise: 'RAILERS.Skills.Disguise',
+      sleightofhand: 'RAILERS.Skills.SleightOfHand',
+      sneaking: 'RAILERS.Skills.Sneaking'
+    }
+  },
+  RAILERS.stowageOptions = {
+    "onHand": "RAILERS.Item.base.FIELDS.stowage.type.onHand",
+    "stowed": "RAILERS.Item.base.FIELDS.stowage.type.stowed",
+    "other": "RAILERS.Item.base.FIELDS.stowage.type.other"
+  },
+  RAILERS.actionTypeOptions= {
+    "na": "RAILERS.Item.Ability.FIELDS.action.types.na",
+    "passive": "RAILERS.Item.Ability.FIELDS.action.types.passive",
+    "maneuver": "RAILERS.Item.Ability.FIELDS.action.types.maneuver",
+    "minor": "RAILERS.Item.Ability.FIELDS.action.types.minor",
+    "major": "RAILERS.Item.Ability.FIELDS.action.types.major",
+    "full": "RAILERS.Item.Ability.FIELDS.action.types.full"
+  },
+  RAILERS.rangeOptions= {
+    "melee": "RAILERS.Item.Weapon.FIELDS.range.types.melee",
+    "short": "RAILERS.Item.Weapon.FIELDS.range.types.short",
+    "medium": "RAILERS.Item.Weapon.FIELDS.range.types.medium",
+    "long": "RAILERS.Item.Weapon.FIELDS.range.types.long",
+    "extreme": "RAILERS.Item.Weapon.FIELDS.range.types.extreme"
+  },
+  RAILERS.weaponSkillOptions= {
+    "bows": 'RAILERS.Skills.Bows',
+    "heavyweapons": 'RAILERS.Skills.HeavyWeapons',
+    "melee": 'RAILERS.Skills.Melee',
+    "smallarms": 'RAILERS.Skills.SmallArms',
+    "exertion": 'RAILERS.Skills.Exertion'
+  },
+  RAILERS.clothingTypeOptions= {
+    "headgear": "RAILERS.Item.Clothing.FIELDS.layer.type.headgear",
+    "innerwear": "RAILERS.Item.Clothing.FIELDS.layer.type.innerwear",
+    "armor": "RAILERS.Item.Clothing.FIELDS.layer.type.armor",
+    "outerwear": "RAILERS.Item.Clothing.FIELDS.layer.type.outerwear"
+  },
+  RAILERS.locomotiveOptions= {
+    "ace": "RAILERS.Actor.Train.FIELDS.locomotives.ace",
+    "bigBrother": "RAILERS.Actor.Train.FIELDS.locomotives.bigBrother",
+    "comet": "RAILERS.Actor.Train.FIELDS.locomotives.comet",
+    "compact": "RAILERS.Actor.Train.FIELDS.locomotives.compact",
+    "donkey": "RAILERS.Actor.Train.FIELDS.locomotives.donkey",
+    "dynamo": "RAILERS.Actor.Train.FIELDS.locomotives.dynamo",
+    "flex": "RAILERS.Actor.Train.FIELDS.locomotives.flex",
+    "joes": "RAILERS.Actor.Train.FIELDS.locomotives.joes",
+    "littleMan": "RAILERS.Actor.Train.FIELDS.locomotives.littleMan",
+    "marathoner": "RAILERS.Actor.Train.FIELDS.locomotives.marathoner"
+  },
+  RAILERS.seasons= {
+    "summer": "RAILERS.apps.weather.summer",
+    "winter": "RAILERS.apps.weather.winter"
+  }

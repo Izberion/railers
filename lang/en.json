@@ -1,286 +1,426 @@
 {
-  "TYPES.Actor.character": "Character",
-  "TYPES.Actor.npc": "NPC",
-  "TYPES.Actor.demon": "Demon",
-  "TYPES.Actor.train": "Train",
-  "TYPES.Actor.terrain": "Terrain Flower",
-  "TYPES.Actor.weather": "Weather Flower",
+  "RAILERS": {
+    "SheetLabels": {
+      "Actor": "Railers Actor Sheet",
+      "Item": "Railers Item Sheet"
+    },
+    "Attributes": {
+      "Combat": "Combat",
+      "Education": "Education",
+      "Engineering": "Engineering",
+      "Fortitude": "Fortitude",
+      "Intuition": "Intuition",
+      "Prowess": "Prowess",
+      "Speech": "Speech",
+      "Stealth": "Stealth",
+      "Primary": "Primary",
+      "Secondary": "Secondary",
+      "Strength": "Strength",
+      "Agility": "Agility",
+      "Intellect": "Intellect",
+      "Endurance": "Endurance",
+      "Attack": "Attack"
+    },
+    "Skills": {
+      "Bows": "Bows",
+      "HeavyWeapons": "Heavy Weapons",
+      "Melee": "Melee",
+      "SmallArms": "Small Arms",
+      "Instruction": "Instruction",
+      "Knowledge": "Knowledge",
+      "Medical": "Medical",
+      "Survival": "Survival",
+      "Chemistry": "Chemistry",
+      "Demolition": "Demolition",
+      "Gunsmithing": "Gunsmithing",
+      "Locksmithing": "Locksmithing",
+      "Locomotive": "Locomotive",
+      "Mechanics": "Mechanics",
+      "Endurance": "Endurance",
+      "Resolve": "Resolve",
+      "Insight": "Insight",
+      "Perception": "Perception",
+      "Acrobatics": "Acrobatics",
+      "Athletics": "Athletics",
+      "Exertion": "Exertion",
+      "Coercion": "Coercion",
+      "Deception": "Deception",
+      "Leadership": "Leadership",
+      "Negotiation": "Negotiation",
+      "Persuasion": "Persuasion",
+      "Concealment": "Concealment",
+      "Disguise": "Disguise",
+      "SleightOfHand": "Sleight of Hand",
+      "Sneaking": "Sneaking"
+    },
+    "Actor": {
+      "Tabs": {
+        "Biography": "Biography",
+        "Skills": "Skills",
+        "Gear": "Gear",
+        "Wounds": "Wounds",
+        "Effects": "Effects",
+        "Abilities": "Abilities",
+        "Notes": "Notes",
+        "Cars": "Cars",
+        "Cargo": "Cargo",
+        "Description": "Description"
+      },
+      "base": {
+        "FIELDS": {
+          "biography": "Biography",
+          "notes": "Notes",
+          "hitpoints": {
+            "value": "Hitpoints",
+            "max": "Maximum Hitpoints"
+          },
+          "wounds": {
+            "value": "Wounds",
+            "max": "Wound Threshold"
+          },
+          "nerve": {
+            "value": "Nerve",
+            "max": "Maximum Nerve"
+          },
+          "corruption": "Corruption",
+          "thermalthreshold": "Thermal Threshold",
+          "initiativePool": "Initiative Pool",
+          "defensePool": "Defense Pool",
+          "fear": "Fear"
+        }
+      },
+      "Character": {
+        "FIELDS": {
+          "xp": "XP",
+          "age": "Age",
+          "sex": "Sex",
+          "hometown": "Hometown",
+          "allies": "Allies",
+          "rivals": "Rivals",
+          "successes": "Successes",
+          "failures": "Failures",
+          "goals": "Goals"
+        }
+      },
+      "NPC": {
+        "FIELDS": {}
+      },
+      "Demon": {
+        "FIELDS": {},
+        "actions": {
+          "rollHP": "Roll HP"
+        }
+      },
+      "Train": {
+        "FIELDS": {
+          "power": {
+            "value": "Remaining Power",
+            "max": "Power Capacity"
+          },
+          "speed": "Max Speed",
+          "armor": "Armor",
+          "weight": {
+            "value": "Current Tonnage",
+            "max": "Maximum Tonnage"
+          },
+          "fuel": {
+            "value": "Fuel",
+            "max": "Maximum Fuel"
+          },
+          "crew": "Crew",
+          "passengers": "Passengers",
+          "capacity": {
+            "standard": {
+              "dine": {
+                "value": "Current Standard Diners",
+                "max": "Maximum Standard Dining"
+              },
+              "sleep": {
+                "value": "Current Standard Beds",
+                "max": "Maximum Standard Beds"
+              }
+            },
+            "luxury": {
+              "dine": {
+                "value": "Current Luxury Diners",
+                "max": "Maximum Luxury Dining"
+              },
+              "sleep": {
+                "value": "Current Luxury Beds",
+                "max": "Maximum Luxury Beds"
+              }
+            },
+            "other": {
+              "dine": {
+                "value": "Current Other Diners",
+                "max": "Maximum Other Dining"
+              },
+              "sleep": {
+                "value": "Current Other Beds",
+                "max": "Maximum Other Beds"
+              }
+            }
+          },
+          "rations": {
+            "value": "Rations",
+            "max": "Maximum Rations"
+          },
+          "locomotives": {
+            "ace": "Ace",
+            "bigBrother": "Big Brother",
+            "comet": "Comet",
+            "compact": "Compact",
+            "donkey": "Donkey",
+            "dynamo": "Dynamo",
+            "flex": "Flex",
+            "joes": "Joe's",
+            "littleMan": "Little Man",
+            "marathoner": "Marathoner"
+          }
+        }
+      }
+    },
+    "Item": {
+      "Tabs": {
+        "Attributes": "Attributes",
+        "Description": "Description",
+        "Effects": "Effects"
+      },
+      "base": {
+        "FIELDS": {
+          "rollFormula": "Roll Formula",
+          "numDice": "Number of Dice",
+          "therms": "Therms",
+          "load": "Load",
+          "name": "Name",
+          "quantity": "Quantity",
+          "stowage": {
+            "label": "Stowage",
+            "type": {
+              "onHand": "On Hand",
+              "stowed": "Stowed",
+              "other": "Other"
+            }
+          }
+        },
+        "actions": {
+          "add": "Add {type}",
+          "edit": "Edit {type}",
+          "delete": "Delete {type}",
+          "heal": "Heal {type}",
+          "reload": "Reload {type}"
+        }
+      },
+      "Gear": {
+        "FIELDS": {
 
-  "TYPES.Item.item": "Item",
-  "TYPES.Item.weapon": "Weapon",
-  "TYPES.Item.clothing": "Clothing",
-  "TYPES.Item.car": "Car",
-  "TYPES.Item.cargo": "Cargo",
-  "TYPES.Item.wound": "Wound",
-  "TYPES.Item.weaponmod": "Weapon Mod",
-  "TYPES.Item.trainmod": "Train Mod",
-  "TYPES.Item.condition": "Condition",
-  "TYPES.Item.disease": "Disease",
-  "TYPES.Item.symptom": "Symptom",
-  "TYPES.Item.mutation": "Mutation",
-  "TYPES.Item.ability": "Ability",
-
-  "RAILERS.Hitpoints": "Hitpoints",
-  "RAILERS.Nerve": "Nerve",
-  "RAILERS.Wounds": "Wounds",
-  "RAILERS.Corruption": "Corruption",
-  "RAILERS.ThermalThreshold": "Thermal Threshold",
-  "RAILERS.InitiativePool": "Initiative Pool",
-  "RAILERS.DefensePool": "Defense Pool",
-  "RAILERS.XP": "XP",
-  "RAILERS.Biography": "Biography",
-  "RAILERS.Skills": "Skills",
-  "RAILERS.Gear": "Gear",
-  "RAILERS.Effects": "Effects",
-  "RAILERS.Notes": "Notes",
-
-  "RAILERS.Primary": "Primary",
-  "RAILERS.Secondary": "Secondary",
-  "RAILERS.Tertiary": "Tertiary",
-
-  "RAILERS.Strength": "Strength",
-  "RAILERS.Agility": "Agility",
-  "RAILERS.Intellect": "Intellect",
-  "RAILERS.Endurance": "Endurance",
-  "RAILERS.Fear": "Fear",
-  "RAILERS.Attack": "Attack",
-  "RAILERS.Abilities": "Abilities",
-  "RAILERS.RollHP": "Roll HP",
-
-  "RAILERS.TrainArmor": "Armor",
-  "RAILERS.MaxSpeed": "Max Speed",
-  "RAILERS.Power": "Power",
-  "RAILERS.Weight": "Weight",
-  "RAILERS.Fuel": "Fuel",  
-  "RAILERS.Capacity": "Capacity",
-  "RAILERS.Crew": "Crew",
-  "RAILERS.Passengers": "Passengers",
-  "RAILERS.Cars": "Cars",
-  "RAILERS.Cargo": "Cargo",
-  "RAILERS.Rations": "Rations",
-
-  "RAILERS.LocomotiveAce": "Ace",
-  "RAILERS.LocomotiveBigBrother": "Big Brother",
-  "RAILERS.LocomotiveComet": "Comet",
-  "RAILERS.LocomotiveCompact": "Compact",
-  "RAILERS.LocomotiveDonkey": "Donkey",
-  "RAILERS.LocomotiveDynamo": "Dynamo",
-  "RAILERS.LocomotiveFlex": "Flex",
-  "RAILERS.LocomotiveJoes": "Joe's",
-  "RAILERS.LocomotiveLittleMan": "Little Man",
-  "RAILERS.LocomotiveMarathoner": "Marathoner",
-
-  "RAILERS.Age": "Age",
-  "RAILERS.Sex": "Sex",
-  "RAILERS.Hometown": "Hometown",
-  "RAILERS.Allies": "Allies",
-  "RAILERS.Rivals": "Rivals",
-  "RAILERS.Successes": "Successes",
-  "RAILERS.Failures": "Failures",
-  "RAILERS.Goals": "Goals",
-
-  "RAILERS.AttributeCombat": "Combat",
-  "RAILERS.AttributeEducation": "Education",
-  "RAILERS.AttributeEngineering": "Engineering",
-  "RAILERS.AttributeFortitude": "Fortitude",
-  "RAILERS.AttributeIntuition": "Intuition",
-  "RAILERS.AttributeProwess": "Prowess",
-  "RAILERS.AttributeSpeech": "Speech",
-  "RAILERS.AttributeStealth": "Stealth",
-
-  "RAILERS.SkillBows": "Bows",
-  "RAILERS.SkillHeavyweapons": "Heavy Weapons",
-  "RAILERS.SkillMelee": "Melee",
-  "RAILERS.SkillSmallArms": "Small Arms",
-  "RAILERS.SkillInstruction": "Instruction",
-  "RAILERS.SkillKnowledge": "Knowledge",
-  "RAILERS.SkillMedical": "Medical",
-  "RAILERS.SkillSurvival": "Survival",
-  "RAILERS.SkillChemistry": "Chemistry",
-  "RAILERS.SkillDemolition": "Demolition",
-  "RAILERS.SkillGunsmithing": "Gunsmithing",
-  "RAILERS.SkillLocksmithing": "Locksmithing",
-  "RAILERS.SkillLocomotive": "Locomotive",
-  "RAILERS.SkillMechanics": "Mechanics",
-  "RAILERS.SkillEndurance": "Endurance",
-  "RAILERS.SkillResolve": "Resolve",
-  "RAILERS.SkillInsight": "Insight",
-  "RAILERS.SkillPerception": "Perception",
-  "RAILERS.SkillAcrobatics": "Acrobatics",
-  "RAILERS.SkillAthletics": "Athletics",
-  "RAILERS.SkillExertion": "Exertion",
-  "RAILERS.SkillCoercion": "Coercion",
-  "RAILERS.SkillDeception": "Deception",
-  "RAILERS.SkillLeadership": "Leadership",
-  "RAILERS.SkillNegotiation": "Negotiation",
-  "RAILERS.SkillPersuasion": "Persuation",
-  "RAILERS.SkillConcealment": "Concealment",
-  "RAILERS.SkillDisguise": "Disguise",
-  "RAILERS.SkillSleighthand": "Sleight of Hand",
-  "RAILERS.SkillSneaking": "Sneaking",
-
-  "RAILERS.Therms": "Therms",
-  "RAILERS.Load": "Load",
-  "RAILERS.OnHand": "On Hand",
-  "RAILERS.Stowed": "Stowed",
-  "RAILERS.Other": "Other",
-  "RAILERS.Name": "Name",
-  "RAILERS.Quantity": "Quantity",
-  "RAILERS.Stowage": "Stowage",
-
-  "RAILERS.AddItem": "Add Item",
-  "RAILERS.EditItem": "Edit Item",
-  "RAILERS.DeleteItem": "Delete Item",
-
-  "RAILERS.Damage": "Damage",
-  "RAILERS.Severity": "Severity",
-  "RAILERS.Range": "Range",
-  "RAILERS.Reload": "Reload",
-  "RAILERS.Magazine": "Magazine",
-  "RAILERS.SlashWound": "/W",
-
-  "RAILERS.AddWeapon": "Add Weapon",
-  "RAILERS.ReloadWeapon": "Reload Weapon",
-  "RAILERS.EditWeapon": "Edit Weapon",
-  "RAILERS.DeleteWeapon": "Delete Weapon",
-
-  "RAILERS.Type": "Type",
-  "RAILERS.Protection": "Protection",
-  "RAILERS.Insulation": "Insulation",
-
-  "RAILERS.AddClothing": "Add Clothing",
-  "RAILERS.EditClothing": "Edit Clothing",
-  "RAILERS.DeleteClothing": "Delete Clothing",
-
-  "RAILERS.AddCar": "Add Car",
-  "RAILERS.EditCar": "Edit Car",
-  "RAILERS.DeleteCar": "Delete Car",
-
-  "RAILERS.PurchasePrice": "Purchase Price",
-  "RAILERS.Price": "Price",
-
-  "RAILERS.AddCargo": "Add Cargo",
-  "RAILERS.EditCargo": "Edit Cargo",
-  "RAILERS.DeleteCargo": "Delete Cargo",
-
-  "RAILERS.Wound": "Wound",
-  "RAILERS.WoundType": "Wound Type",
-  "RAILERS.AddWound": "Add Wound",
-  "RAILERS.HealWound": "Heal Wound",
-  "RAILERS.EditWound": "Edit Wound",
-  "RAILERS.ClearWound": "Clear Wound",
-
-  "RAILERS.Action": "Action",
-  "RAILERS.AddAbility": "Add Ability",
-  "RAILERS.EditAbility": "Edit Ability",
-  "RAILERS.DeleteAbility": "Delete Ability",
-  
-  "RAILERS.AddCondition": "Add Condition",
-
-  "RAILERS.AddMutation": "Add Mutation",
-
-  "RAILERS.Symptoms": "Symptoms",
-  "RAILERS.Transfer": "Transfer",
-  "RAILERS.Incubation": "Incubation",
-  "RAILERS.Survivability": "Survivability",
-  "RAILERS.AddDisease": "Add Disease",
-
-  "RAILERS.Duration": "Duration",
-  "RAILERS.EffectCreate": "Create Effect",
-  "RAILERS.EffectToggle": "Toggle Effect",
-  "RAILERS.EffectEdit": "Edit Effect",
-  "RAILERS.EffectDelete": "Delete Effect",
-
-  "RAILERS.Add": "Add",
-
-  "RAILERS.Description": "Description",
-  "RAILERS.Attributes": "Attributes",
-  "RAILERS.RollFormula": "RollFormula",
-
-  "RAILERS.NA": "N/A",
-  "RAILERS.Passive": "Passive",
-  "RAILERS.Maneuver": "Maneuver",
-  "RAILERS.Minor": "Minor",
-  "RAILERS.Major": "Major",
-  "RAILERS.Full": "Full",
-
-  "RAILERS.Melee": "Melee",
-  "RAILERS.Short": "Short",
-  "RAILERS.Medium": "Medium",
-  "RAILERS.Long": "Long",
-  "RAILERS.Extreme": "Extreme",
-
-  "RAILERS.Headgear": "Headgear",
-  "RAILERS.Innerwear": "Innerwear",
-  "RAILERS.ClothingArmor": "Armor",
-  "RAILERS.Outerwear": "Outerwear",
-
-  "RAILERS.Modifier": "Modifier",
-  "RAILERS.SelectTN": "Select TN",
-  "RAILERS.TN4": "TN 4",
-  "RAILERS.TN5": "TN 5",
-  "RAILERS.TN6": "TN 6",
-  "RAILERS.TN7": "TN 7",
-  "RAILERS.TN8": "TN 8",
-
-  "RAILERS.SelectActionType": "Select Attack Action Type",
-  "RAILERS.SingleFire": "Attack/Single Fire",
-  "RAILERS.BlindFire": "Blind Fire",
-  "RAILERS.BurstFire": "Burst Fire",
-  "RAILERS.SustainedFire": "Sustained Fire",
-  "RAILERS.FieldOfFire": "Field of Fire",
-  "RAILERS.ReactiveShot": "Reactive Shot",
-  "RAILERS.NotEnoughAmmo": "Not enough ammo for this attack action",
-
-  "RAILERS.RailersControls": "Railers System Controls",
-  "RAILERS.OpenTerrainFlower": "Open Terrain Flower",  
-  "RAILERS.TerrainFlower": "Terrain Flower",  
-  "RAILERS.RollTerrainFlower": "Rolled on the Terrain Flower",
-  "RAILERS.SnowTerrain": "Snow Terrain",
-  "RAILERS.HillTerrain": "Hill Terrain",
-  "RAILERS.IceTerrain": "Ice Terrain",
-  "RAILERS.FlatTerrain": "Flat Terrain",
-  "RAILERS.MountainTerrain": "Mountain Terrain",
-
-  "RAILERS.ToggleWeatherHUD": "Toggle Weather HUD",
-  "RAILERS.RollWeather": "Rolled on the Weather Flower",
-  "RAILERS.Aurora": "Aurora",
-  "RAILERS.Blizzard": "Blizzard",
-  "RAILERS.Clear": "Clear Skies",
-  "RAILERS.DiamondDust": "Diamond Dust",
-  "RAILERS.Flurry": "Flurry",
-  "RAILERS.IceFog": "Ice Fog",
-  "RAILERS.Overcast": "Overcast Skies",
-  "RAILERS.PolarOutbreak": "Polar Outbreak",
-  "RAILERS.SnowStorm": "Snow Storm",
-  "RAILERS.ThunderSnow": "Thunder Snow",
-  "RAILERS.Whiteout": "Whiteout",
-  "RAILERS.Wind": "Wind Storm",
-
-  "RAILERS.Summer": "Summer",
-  "RAILERS.Winter": "Winter",
-  "RAILERS.RollTemperature": "Rolled the temperature",
-  "RAILERS.TempIntegrate": "Integrate temperature roll into weather flower roll?",
-
-  "RAILERS.AutomaticFailure": "Automatic Failure",
-  "RAILERS.ComplicatedFailure": "Complicated Failure",
-  "RAILERS.Failure": "Failure",
-  "RAILERS.ComplicatedSuccess": "Complicated Success",
-  "RAILERS.Success": "Success",
-  "RAILERS.GreatSuccess": "Great Success",
-
-  "RAILERS.RollRoll": "Making a roll at TN {tn}",
-  "RAILERS.RollCheck": "Rolling a(n) {rollName} check at TN {tn}",
-  "RAILERS.RollSave": "Rolling a(n) {rollName} save at TN {tn}",
-  "RAILERS.RollAttack": "Attacking with {rollName} at TN {tn}",
-  "RAILERS.ModifyDiceRoll": "Modify the Dice Roll",
-  "RAILERS.ModifyAttackRoll": "Modify the Attack Roll",
-  
-  "RAILERS.Roll": "Roll",
-  "RAILERS.Cancel": "Cancel",
-  "RAILERS.Warning": "Warning",
-  "RAILERS.Continue": "Continue",
-
-  "RAILERS.ChangeLocomotiveWarning": "Changing the locomotive type will update several stats and any changes to them could be lost. Do you want to continue?"
-
+        }
+      },
+      "Wound": {
+        "FIELDS": {
+          "damage": "Damage",
+          "severity": "Severity"
+        }
+      },
+      "Clothing": {
+        "FIELDS": {
+          "layer": {
+            "label": "Layer",
+            "type": {
+              "headgear": "Headgear",
+              "innerwear": "Innerwear",
+              "armor": "Armor",
+              "outerwear": "Outerwear"
+            }
+          },
+          "protection": "Protection",
+          "insulation": "Insulation"
+        }
+      },
+      "Weapon": {
+        "FIELDS": {
+          "ammo": {
+            "value": "Remaining Ammo",
+            "max": "Maximum Ammo"
+          },
+          "damage": "Damage",
+          "severity": "Severity",
+          "range": { 
+            "label": "Range",
+            "types": {
+              "melee": "Melee",
+              "short": "Short",
+              "medium": "Medium",
+              "long": "Long",
+              "extreme": "Extreme"
+            }
+          },
+          "reload": "Reload",
+          "magazine": "Magazine",
+          "slashWound": "/W"
+        }
+      },
+      "Car": {
+        "FIELDS": {
+          "power": "Power Usage",
+          "weight": "Tonnage",
+          "capacity": {
+            "standard": {
+              "dine": "Standard Dining Capacity",
+              "sleep": "Standard Sleeping Capacity"
+            },
+            "luxury": {
+              "dine": "Luxury Dining Capacity",
+              "sleep": "Luxury Sleeping Capacity"
+            },
+            "other": {
+              "dine": "Other Dining Capacity",
+              "sleep": "Other Sleeping Capacity"
+            }
+          }
+        }
+      },
+      "Cargo": {
+        "FIELDS": {
+          "purchasePrice": "Purchase Price"
+        }
+      },
+      "Ability": {
+        "FIELDS": {
+          "action": {
+            "label": "Action",
+            "types": {
+              "na": "N/A",
+              "passive": "Passive",
+              "maneuver": "Maneuver",
+              "minor": "Minor",
+              "major": "Major",
+              "full": "Full"
+            }
+          }
+        }
+      },
+      "Mutation": {
+        "FIELDS": {}
+      },
+      "Condition": {
+        "FIELDS": {}
+      },
+      "weaponMod": {
+        "FIELDS": {}
+      },
+      "trainMod": {
+        "FIELDS": {}
+      }
+    },
+    "Effect": {
+      "Source": "Source",
+      "Toggle": "Toggle Effect",
+      "Temporary": "Temporary Effects",
+      "Passive": "Passive Effects",
+      "Inactive": "Inactive Effects"
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "npc": "NPC",
+      "demon": "Demon",
+      "train": "Train"
+    },
+    "Item": {
+      "item": "Item",
+      "weapon": "Weapon",
+      "clothing": "Clothing",
+      "car": "Car",
+      "cargo": "Cargo",
+      "wound": "Wound",
+      "weaponMod": "Weapon Mod",
+      "trainMod": "Train Mod",
+      "condition": "Condition",
+      "mutation": "Mutation",
+      "ability": "Ability"
+    }
+  },
+  "dialogs": {
+    "base": {
+      "modifier": "Modifier",
+      "selectTN": "Select TN",
+      "tn4": "TN 4",
+      "tn5": "TN 5",
+      "tn6": "TN 6",
+      "tn7": "TN 7",
+      "tn8": "TN 8",
+      "roll": "Roll",
+      "cancel": "Cancel",
+      "warning": "Warning",
+      "continue": "Continue",
+      "modifyDiceRoll": "Modify the Dice Roll"
+    },
+    "attack": {
+      "selectActionType": "Select Attack Action Type",
+      "singleFire": "Attack/Single Fire",
+      "blindFire": "Blind Fire",
+      "burstFire": "Burst Fire",
+      "sustainedFire": "Sustained Fire",
+      "fieldOfFire": "Field of Fire",
+      "reactiveShot": "Reactive Shot",
+      "notEnoughAmmo": "Not enough ammo for this attack action",
+      "modifyAttackRoll": "Modify the Attack Roll"
+    }
+  },
+  "apps": {
+    "base": {
+      "railersControls": "Railers System Controls"
+    },
+    "terrain": {
+      "openTerrainFlower": "Open Terrain Flower",  
+      "terrainFlower": "Terrain Flower",  
+      "rollTerrainFlower": "Rolled on the Terrain Flower",
+      "snowTerrain": "Snow Terrain",
+      "hillTerrain": "Hill Terrain",
+      "iceTerrain": "Ice Terrain",
+      "flatTerrain": "Flat Terrain",
+      "mountainTerrain": "Mountain Terrain"
+    },
+    "weather": {
+      "toggleWeatherHUD": "Toggle Weather HUD",
+      "rollWeather": "Rolled on the Weather Flower",
+      "aurora": "Aurora",
+      "blizzard": "Blizzard",
+      "clear": "Clear Skies",
+      "diamondDust": "Diamond Dust",
+      "flurry": "Flurry",
+      "iceFog": "Ice Fog",
+      "overcast": "Overcast Skies",
+      "polarOutbreak": "Polar Outbreak",
+      "snowStorm": "Snow Storm",
+      "thunderSnow": "Thunder Snow",
+      "whiteout": "Whiteout",
+      "wind": "Wind Storm",
+      "season": "Season",
+      "summer": "Summer",
+      "winter": "Winter",
+      "rollTemperature": "Rolled the temperature"
+    },
+    "train": {
+      "changeLocomotiveWarning": "Changing the locomotive type will update several stats and any changes to them could be lost. Do you want to continue?"
+    }
+  },
+  "chat": {
+    "result": {
+      "automaticFailure": "Automatic Failure",
+      "complicatedFailure": "Complicated Failure",
+      "failure": "Failure",
+      "complicatedSuccess": "Complicated Success",
+      "success": "Success",
+      "greatSuccess": "Great Success"
+    },
+    "roll": {
+      "rollRoll": "Making a roll at TN {tn}",
+      "rollCheck": "Rolling a(n) {rollName} check at TN {tn}",
+      "rollSave": "Rolling a(n) {rollName} save at TN {tn}",
+      "rollAttack": "Attacking with {rollName} at TN {tn}"
+    }
+  }
 }
