@@ -29,7 +29,10 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       createDoc: this._createDoc,
       deleteDoc: this._deleteDoc,
       toggleEffect: this._toggleEffect,
-      roll: this._onRoll,
+      attackRoll: this._onAttackRoll,
+      woundHeal: this._onWoundHeal,
+      weaponReload: this._onWeaponReload,
+      rollHp: this._onRollHp
     },
     // Custom property that's merged into `this.options`
     dragDrop: [{ dragSelector: '[data-drag]', dropSelector: null }],
@@ -312,6 +315,92 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    *   ACTIONS
    *
    **************/
+
+  static _onRoll(event, target) {
+    // Assuming rollDialog is a function from V1 (e.g., in railer-roll-dialog.mjs)
+    const actor = this.actor;
+    rollDialog({ actor }); // Replace with your roll dialog logic
+  }
+  
+  static _onAttackRoll(event, target) {
+    const actor = this.actor;
+    attackDialog({ actor }); // Replace with your attack dialog logic or weapon roll
+  }
+  
+  static _onWoundHeal(event, target) {
+    const itemId = target.closest('.item').dataset.woundId;
+    const item = this.actor.items.get(itemId);
+    if (!item) return;
+  
+    const damage = Math.max(0, (item.system.damage || 0) - 1);
+    if (damage === 0) {
+      item.delete();
+    } else {
+      item.update({ 'system.damage': damage });
+    }
+  }
+  
+  static _onWeaponReload(event, target) {
+    const itemId = target.closest('.item').dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (item) item.update({ 'system.magazine.value': item.system.magazine.max });
+  }
+  
+  static _onRollHp(event, target) {
+    onRollHp(event, this.actor); 
+  }
+  
+  activateListeners(html) {
+    super.activateListeners(html);
+    const locomotiveSelect = html.querySelector('select[name="system.locomotive"]');
+    if (locomotiveSelect) {
+      locomotiveSelect.addEventListener('change', this._onLocomotiveChange.bind(this));
+    }
+  }
+  
+  _onLocomotiveChange(event) {
+    event.preventDefault();
+    const selectedType = event.target.value;
+  
+    const types = {
+      ace: { armor: 4, power: 24, speed: 7, fuel: 100, weight: 1050 },
+      bigBrother: { armor: 5, power: 15, speed: 3, fuel: 60, weight: 950 },
+      comet: { armor: 2, power: 12, speed: 9, fuel: 42, weight: 650 },
+      compact: { armor: 3, power: 0, speed: 3, fuel: 48, weight: 0 },
+      donkey: { armor: 3, power: 10, speed: 8, fuel: 80, weight: 1500 },
+      dynamo: { armor: 4, power: 25, speed: 5, fuel: 56, weight: 750 },
+      flex: { armor: 2, power: 8, speed: 3, fuel: 36, weight: 500 },
+      joes: { armor: 3, power: 15, speed: 5, fuel: 70, weight: 800 },
+      littleMan: { armor: 1, power: 9, speed: 3, fuel: 60, weight: 550 },
+      marathoner: { armor: 1, power: 16, speed: 4, fuel: 128, weight: 700 }
+    };
+  
+    const stats = types[selectedType];
+    if (!stats) return;
+  
+    new Dialog({
+      title: game.i18n.localize("RAILERS.Warning"),
+      content: game.i18n.localize("RAILERS.ChangeLocomotiveWarning"),
+      buttons: {
+        continue: {
+          label: game.i18n.localize("RAILERS.Continue"),
+          callback: () => {
+            this.actor.update({
+              'system.speed': stats.speed,
+              'system.fuel.max': stats.fuel,
+              'system.armor': stats.armor,
+              'system.power.max': stats.power,
+              'system.weight.max': stats.weight
+            });
+          },
+        },
+        cancel: {
+          label: game.i18n.localize("RAILERS.Cancel"),
+        },
+      },
+      default: 'cancel',
+    }).render(true);
+  }
 
   /**
    * Renders an embedded document's sheet
@@ -767,119 +856,3 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
 }
 
 
-//   /** @override */
-//   activateListeners(html) {
-//     super.activateListeners(html);
-
-
-
-//     // Roll Dialog
-//     html.on("click", ".roll", {actor: this.actor}, rollDialog);
-//     html.on("click", ".attack-roll", {actor: this.actor}, attackDialog);
-
-
-//     // Add a click listener for the "Add Wound" button
-//     html.find('.wound-create').click(addWoundDialog.bind(this, this.actor, html));
-
-//     // Add a click listener for the "Edit Wound" button
-//     html.find('.wound-edit').click(ev => {
-//       const li = $(ev.currentTarget).parents(".item");
-//       const item = this.actor.items.get(li.data("woundId"));
-//       item.sheet.render(true);
-//     });
-
-//     html.find('.wound-heal').click(ev => {
-//       const li = $(ev.currentTarget).parents(".item");
-//       const item = this.actor.items.get(li.data("woundId"));
-//       let damage = Math.max(0, item.system.damage - 1);
-      
-//       if (damage === 0) {
-//         item.delete();
-//         li.slideUp(200, () => this.render(false));
-//       } else {
-//         item.update({ 'system.damage': damage });
-//       }
-//     });
-
-//     // Add a click listener for the "Clear Wound" button
-//     html.find('.wound-delete').click(ev => {
-//       const li = $(ev.currentTarget).parents(".item");
-//       const item = this.actor.items.get(li.data("woundId"));
-//       item.delete();
-//       li.slideUp(200, () => this.render(false));
-//     });
-
-
-//     html.find('.weapon-reload').click(ev => {
-//       const li = $(ev.currentTarget).parents(".item");
-//       const item = this.actor.items.get(li.data("itemId"));
-//       item.update({ 'system.magazine.value': item.system.magazine.max})
-//     });
-
-
-//     html.find('select[name="system.locomotive"]').change(this._onLocomotiveChange.bind(this));
-    
-//     html.find('.roll-hp').click((event) => onRollHp(event, this.actor));
-
-//   }
-
-  
-
-// /*****************************************************************/
-
-//   // Handle the "Edit Wound" button click
-//   _onWoundEdit(event) {
-//     event.preventDefault();
-//     // Get the ID of the wound to edit
-//     let woundId = $(event.currentTarget).parents('.item').data('wound-id');
-//     // Get the wound data and show the edit dialog
-//     let wound = this.actor.items.get(woundId);
-//     if (wound) {
-//       wound.sheet.render(true);
-//     }
-//   }
-
-//   _onLocomotiveChange(event) {
-//     event.preventDefault();
-  
-//     const selectedType = event.target.value;
-  
-//     const types = {
-//       ace: { armor: 4, power: 24, speed: 7, fuel: 100, weight: 1050},
-//       bigBrother: { armor: 5, power: 15, speed: 3, fuel: 60, weight: 950},
-//       comet: { armor: 2, power: 12, speed: 9, fuel: 42, weight: 650},
-//       compact: { armor: 3, power: 0, speed: 3, fuel: 48, weight: 0},
-//       donkey: { armor: 3, power: 10, speed: 8, fuel: 80, weight: 1500},
-//       dynamo: { armor: 4, power: 25, speed: 5, fuel: 56, weight: 750},
-//       flex: { armor: 2, power: 8, speed: 3, fuel: 36, weight: 500},
-//       joes: { armor: 3, power: 15, speed: 5, fuel: 70, weight: 800},
-//       littleMan: { armor: 1, power: 9, speed: 3, fuel: 60, weight: 550},
-//       marathoner: { armor: 1, power: 16, speed: 4, fuel: 128, weight: 700}
-//     };
-  
-//     const stats = types[selectedType];
-  
-//     new Dialog({
-//       title: game.i18n.localize("RAILERS.Warning"),
-//       content: game.i18n.localize("RAILERS.ChangeLocomotiveWarning"),
-//       buttons: {
-//         continue: {
-//           label: game.i18n.localize("RAILERS.Continue"),
-//           callback: () => {
-//             // Update the actor's data
-//             this.actor.update({
-//               'system.speed': stats.speed,
-//               'system.fuel.max': stats.fuel,
-//               'system.armor': stats.armor,
-//               'system.power.max': stats.power,
-//               'system.weight.max': stats.weight
-//             });
-//           },
-//         },
-//         cancel: {
-//           label: game.i18n.localize("RAILERS.Cancel"),
-//         },
-//       },
-//       default: 'cancel',
-//     }).render(true);
-//   }

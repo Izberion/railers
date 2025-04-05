@@ -16,9 +16,35 @@ export default class RailersTrain extends RailersActorBase {
       choices: Object.keys(RAILERS.locomotiveOptions)
     });
 
+    schema.speed = new fields.NumberField({
+      ...requiredInteger,
+      initial: 7, 
+      min: 0
+    });
+
+    schema.fuel = new fields.SchemaField({
+      value: new fields.NumberField({ ...requiredInteger, initial: 100, min: 0 }),
+      max: new fields.NumberField({ ...requiredInteger, initial: 100, min: 0 })
+    });
+
+    schema.armor = new fields.NumberField({
+      ...requiredInteger,
+      initial: 4, 
+      min: 0
+    });
+
+    schema.power = new fields.SchemaField({
+      value: new fields.NumberField({ ...requiredInteger, initial: 24, min: 0 }),
+      max: new fields.NumberField({ ...requiredInteger, initial: 24, min: 0 })
+    });
+
+    schema.weight = new fields.SchemaField({
+      value: new fields.NumberField({ ...requiredInteger, initial: 1050, min: 0 }),
+      max: new fields.NumberField({ ...requiredInteger, initial: 1050, min: 0 })
+    });
+
     return schema;
   }
-  
 
   prepareDerivedData() {
     const systemData = this.system;
@@ -45,5 +71,16 @@ export default class RailersTrain extends RailersActorBase {
       }
       systemData.power.value = maxPower - totalPower;
       systemData.weight.value = maxWeight - totalWeight;
+  }
+  getRollData() {
+    const data = {
+      locomotive: this.system.locomotive,
+      speed: this.system.speed,
+      fuel: this.system.fuel,
+      armor: this.system.armor,
+      power: this.system.power,
+      weight: this.system.weight
+    };
+    return data;
   }
 }
