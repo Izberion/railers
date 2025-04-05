@@ -62,7 +62,7 @@ export default class RailersItemBase extends foundry.abstract.TypeDataModel {
       nullable: true,
       blank: true,
       initial: null,
-      choices: Object.keys(RAILERS.stowageOptions)
+      choices: Object.keys(CONFIG.RAILERS.stowageOptions)
     });
 
     return schema;

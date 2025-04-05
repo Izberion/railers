@@ -50,7 +50,7 @@ Hooks.once('init', async function() {
   CONFIG.Actor.documentClass = RailersActor;
   CONFIG.Actor.dataModels = {
     character: models.RailersCharacter,
-    npc: models.RailerNPC,
+    npc: models.RailersNPC,
     demon: models.RailersDemon,
     train: models.RailersTrain
   };

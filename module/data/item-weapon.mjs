@@ -48,7 +48,7 @@ export default class RailersWeapon extends RailersItemBase {
       nullable: false,
       blank: false,
       initial: 'melee',
-      choices: Object.keys(RAILERS.rangeOptions)
+      choices: Object.keys(CONFIG.RAILERS.rangeOptions)
     });
 
     schema.attribute = new fields.StringField({
@@ -56,7 +56,7 @@ export default class RailersWeapon extends RailersItemBase {
       nullable: false,
       blank: false,
       initial: 'combat',
-      choices: Object.keys(RAILERS.attributes.character)
+      choices: Object.keys(CONFIG.RAILERS.attributes.character)
     });
 
     schema.skill = new fields.StringField({
@@ -64,7 +64,7 @@ export default class RailersWeapon extends RailersItemBase {
       nullable: false,
       blank: false,
       initial: 'melee',
-      choices: Object.keys(RAILERS.weaponSkillOptions)
+      choices: Object.keys(CONFIG.RAILERS.weaponSkillOptions)
     });
 
     schema.roll = new fields.SchemaField({

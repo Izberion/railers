@@ -13,7 +13,7 @@ export default class RailersTrain extends RailersActorBase {
       nullable: false,
       blank: false,
       initial: 'ace',
-      choices: Object.keys(RAILERS.locomotiveOptions)
+      choices: Object.keys(CONFIG.RAILERS.locomotiveOptions)
     });
 
     schema.speed = new fields.NumberField({

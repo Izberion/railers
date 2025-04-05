@@ -15,7 +15,7 @@ export default class RailersClothing extends RailersItemBase {
       nullable: false,
       blank: false,
       initial: 'headgear',
-      choices: Object.keys(RAILERS.stowageOptions)
+      choices: Object.keys(CONFIG.RAILERS.stowageOptions)
     });
 
     schema.protection = new fields.NumberField({
