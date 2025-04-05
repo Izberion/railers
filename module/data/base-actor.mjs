@@ -98,6 +98,41 @@ export default class RailersActorBase extends foundry.abstract
       min: 0,
     });
 
+    schema.load = new fields.SchemaField({
+      onHand: new fields.SchemaField({
+        value: new fields.NumberField({
+          required: false,
+          nullable: true,
+          integer: true,
+          initial: null,
+          min: 0
+        }),
+        max: new fields.NumberField({
+          required: false,
+          nullable: true,
+          integer: true,
+          initial: null,
+          min: 0
+        })
+      }),
+      stowed: new fields.SchemaField({
+        value: new fields.NumberField({
+          required: false,
+          nullable: true,
+          integer: true,
+          initial: null,
+          min: 0
+        }),
+        max: new fields.NumberField({
+          required: false,
+          nullable: true,
+          integer: true,
+          initial: null,
+          min: 0
+        })
+      })
+    });
+
     schema.biography = new fields.StringField({ required: false, blank: true }); 
     schema.notes = new fields.StringField({ required: false, blank: true }); 
 

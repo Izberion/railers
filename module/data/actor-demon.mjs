@@ -15,26 +15,9 @@ export default class RailersDemon extends RailersActorBase {
       this.attributes[attrKey].label = game.i18n.localize(
         (CONFIG.RAILERS.attributes.npc || CONFIG.RAILERS.attributes.character)[attrKey]
       ) ?? attrKey;
-    }
-
-    const systemData = this.system;
-
-    systemData.wounds.max = systemData.attributes.endurance * 3;
-    systemData.initiativePool = systemData.attributes.agility;
-
-    let totalWounds = 0;
-    let totalDamage = 0;
-    let maxHitpoints = systemData.hitpoints.max;
-    this.items.forEach(item => {
-        if (item.type === "wound") {
-            totalWounds += item.system.severity;
-            totalDamage += item.system.damage;
-        }
-    });
-
-    systemData.wounds.value = totalWounds;
-    systemData.hitpoints.value = maxHitpoints - totalDamage;    
+    }  
   }
+  
   getRollData() {
     const data = {};
     if (this.attributes) {

@@ -47,40 +47,8 @@ export default class RailersTrain extends RailersActorBase {
   }
 
   prepareDerivedData() {
-    const systemData = this.system;
-
-    if (systemData.locomotive === "donkey") {
-        let weight = systemData.weight.value;
-        let speed = 8;
-        let speedReduction = Math.floor(weight / 250);
-        systemData.speed = speed - speedReduction;
-        systemData.speed = Math.max(systemData.speed, 2);
-      }
-      
-      let totalPower = 0;
-      let totalWeight = 0;
-      let maxPower = systemData.power.max;
-      let maxWeight = systemData.weight.max;
-      for (let item of this.items) {
-        if (item.type === "car") {
-          totalPower += item.system.power;
-          totalWeight += item.system.weight;
-        } else {
-          totalWeight += item.system.weight;
-        }
-      }
-      systemData.power.value = maxPower - totalPower;
-      systemData.weight.value = maxWeight - totalWeight;
   }
   getRollData() {
-    const data = {
-      locomotive: this.system.locomotive,
-      speed: this.system.speed,
-      fuel: this.system.fuel,
-      armor: this.system.armor,
-      power: this.system.power,
-      weight: this.system.weight
-    };
     return data;
   }
 }

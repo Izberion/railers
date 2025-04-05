@@ -47,56 +47,6 @@ export default class RailersCharacter extends RailersActorBase {
           game.i18n.localize(CONFIG.RAILERS.skills[attrKey]?.[skillKey]) ?? skillKey;
       }
     }
-
-    const systemData = this.system;
-
-    systemData.wounds.max = 6 + systemData.attributes.fortitude.value + systemData.attributes.fortitude.skills.endurance.value;
-    systemData.load.onHand.max = 3 + systemData.attributes.prowess.value + systemData.attributes.prowess.skills.exertion.value;
-    systemData.initiativePool = systemData.attributes.intuition.value + systemData.attributes.prowess.skills.athletics.value;
-
-    let totalWounds = 0;
-    let totalDamage = 0;
-    let maxHitpoints = systemData.hitpoints.max;
-    this.items.forEach(item => {
-        if (item.type === "wound") {
-            totalWounds += item.system.severity;
-            totalDamage += item.system.damage;
-        }
-    });
-    systemData.wounds.value = totalWounds;
-    systemData.hitpoints.value = maxHitpoints - totalDamage;
-
-    let totalOnHandLoad = 0;
-    let totalStowedLoad = 0;
-
-    for (let item of this.items) {
-      let totalItemLoad = item.system.load * item.system.quantity;
-
-      if (item.system.stowage === 'onHand') {
-        totalOnHandLoad += totalItemLoad;
-      } else if (item.system.stowage === 'stowed') {
-        totalStowedLoad += totalItemLoad;
-      }
-    }
-    systemData.load.onHand.value = totalOnHandLoad;
-    systemData.load.stowed.value = totalStowedLoad;
-
-
-    let totalInsulation = 0;
-    let totalProtection = 0;
-
-    for (let item of this.items) {
-
-      if (item.type === 'clothing' && item.system.stowage === 'onHand') {
-        totalInsulation += item.system.insulation;
-        totalProtection += item.system.protection;
-      }
-    }
-
-    systemData.defensePool = totalProtection + systemData.attributes.prowess.value;
-    systemData.thermalThreshold = -1 * totalInsulation;
-
-
   }
 
   getRollData() {
@@ -112,8 +62,6 @@ export default class RailersCharacter extends RailersActorBase {
         }
       }
     }
-
-    data.lvl = this.attributes.level.value;
 
     return data;
   }

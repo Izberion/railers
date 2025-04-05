@@ -46,12 +46,12 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     header: {
       template: 'systems/railers/templates/actor/header.hbs',
     },
+    aside: {
+      template: 'systems/railers/templates/actor/aside.hbs'
+    },
     tabs: {
       // Foundry-provided generic template
       template: 'templates/generic/tab-navigation.hbs',
-    },
-    features: {
-      template: 'systems/railers/templates/actor/features.hbs',
     },
     skills: {
       template: 'systems/railers/templates/actor/skills.hbs',
@@ -86,7 +86,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     _configureRenderOptions(options) {
       super._configureRenderOptions(options);
       // Not all parts always render
-      options.parts = ['header', 'tabs'];
+      options.parts = ['header', 'aside', 'tabs'];
       // Don't show the other tabs if only limited view
       if (this.document.limited) return;
       // Control which parts show based on document subtype
@@ -136,7 +136,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
   /** @override */
   async _preparePartContext(partId, context) {
     switch (partId) {
-      case 'features':
       case 'wounds':
       case 'gear':
       case 'abilities':
@@ -206,10 +205,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
           tab.id = 'biography';
           tab.label += 'Biography';
           break;
-        case 'features':
-          tab.id = 'features';
-          tab.label += 'Features';
-          break;
         case 'gear':
           tab.id = 'gear';
           tab.label += 'Gear';
@@ -257,7 +252,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
   _prepareItems(context) {
     // Initialize containers.
     const gear = [];
-    const features = [];
     const wounds = [];
     const cars = [];
     const cargo = [];
@@ -274,28 +268,25 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       if (i.type === 'gear') {
         gear.push(i);
       }
-      else if (i.type === 'feature') {
-        features.push(i);
-      }
-      else if (i.type === 'wounds') {
+      else if (i.type === 'wound') {
         wounds.push(i);
       }
-      else if (i.type === 'cars') {
+      else if (i.type === 'car') {
         cars.push(i);
       }
       else if (i.type === 'cargo') {
         cargo.push(i);
       }
-      else if (i.type === 'weapons') {
+      else if (i.type === 'weapon') {
         weapons.push(i);
       }
-      else if (i.type === 'abilities') {
+      else if (i.type === 'ability') {
         abilities.push(i);
       }
-      else if (i.type === 'conditions') {
+      else if (i.type === 'condition') {
         conditions.push(i);
       }
-      else if (i.type === 'mutations') {
+      else if (i.type === 'mutation') {
         mutations.push(i);
       }
       else if (i.type === 'clothing') {
@@ -305,7 +296,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
 
     // Sort then assign
     context.gear = gear.sort((a, b) => (a.sort || 0) - (b.sort || 0));
-    context.features = features.sort((a, b) => (a.sort || 0) - (b.sort || 0));
     context.wounds = wounds.sort((a, b) => (a.system.severity || 0) - (b.system.severity || 0) || (a.system.damage || 0) - (b.system.damage || 0));
     context.cars = cars.sort((a, b) => (a.sort || 0) - (b.sort || 0));
     context.cargo = cargo.sort((a, b) => (a.sort || 0) - (b.sort || 0));

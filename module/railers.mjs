@@ -94,21 +94,10 @@ Handlebars.registerHelper('toLowerCase', function(str) {
   return str.toLowerCase();
 });
 
-Hooks.once("init", () => {
-  Handlebars.registerHelper("calcTop", function(coords) {
-    const [q, r] = coords.slice(1, -1).split(",").map(Number);
-    const size = 52; // Hex height
-    const qOffset = q - 2; // Center on (2,2)
-    const rOffset = r - 2;
-    return 200 + rOffset * size * 0.75 - qOffset * size * 0.375; // Adjust for center
-  });
-
-  Handlebars.registerHelper("calcLeft", function(coords) {
-    const [q, r] = coords.slice(1, -1).split(",").map(Number);
-    const size = 60; // Hex width
-    const qOffset = q - 2; // Center on (2,2)
-    return 200 + qOffset * size * 0.866; // Adjust for center
-  });
+Handlebars.registerHelper('ifOr', function (...args) {
+  const options = args.pop();
+  const isTrue = args.some(arg => !!arg);
+  return isTrue ? options.fn(this) : options.inverse(this);
 });
 
 /* -------------------------------------------- */

@@ -86,7 +86,20 @@
           "thermalthreshold": "Thermal Threshold",
           "initiativePool": "Initiative Pool",
           "defensePool": "Defense Pool",
-          "fear": "Fear"
+          "fear": "Fear",
+          "load": {
+            "label": "Load",
+            "onHand": {
+              "label": "On Hand",
+              "value": "Load On Hand",
+              "max": "On Hand Limit"
+            },
+            "stowed": {
+              "label": "Stowed",
+              "value": "Load Stowed",
+              "max": "Stowage Limit"
+            }
+          }
         }
       },
       "Character": {

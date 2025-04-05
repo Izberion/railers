@@ -44,10 +44,6 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     description: {
       template: 'systems/railers/templates/item/description.hbs',
     },
-    attributesFeature: {
-      template:
-        'systems/railers/templates/item/attribute-parts/feature.hbs',
-    },
     attributesGear: {
       template: 'systems/railers/templates/item/attribute-parts/gear.hbs',
     },
@@ -93,9 +89,6 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     options.parts = ['header', 'tabs', 'description'];
     if (this.document.limited) return;
     switch (this.document.type) {
-      case 'feature':
-        options.parts.push('attributesFeature', 'effects');
-        break;
       case 'gear':
         options.parts.push('attributesGear', 'effects');
         break;
@@ -156,7 +149,6 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
   /** @override */
   async _preparePartContext(partId, context) {
     switch (partId) {
-      case 'attributesFeature':
       case 'attributesGear':
       case 'attributesWound':
       case 'attributeCar':
@@ -225,10 +217,6 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
         case 'description':
           tab.id = 'description';
           tab.label += 'Description';
-          break;
-        case 'attributesFeature':
-          tab.id = 'attributes';
-          tab.label += 'Attributes';
           break;
         case 'attributesGear':
           tab.id = 'attributes';
