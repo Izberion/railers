@@ -48,7 +48,4 @@ export default class RailersTrain extends RailersActorBase {
 
   prepareDerivedData() {
   }
-  getRollData() {
-    return data;
-  }
 }

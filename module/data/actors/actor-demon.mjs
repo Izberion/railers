@@ -1,7 +1,7 @@
 import RailersActorBase from './base-actor.mjs';
 
-export default class RailersNPC extends RailersActorBase {
-  static LOCALIZATION_PREFIXES = ['RAILERS.Actor.base', 'RAILERS.Actor.NPC'];
+export default class RailersDemon extends RailersActorBase {
+  static LOCALIZATION_PREFIXES = ['RAILERS.Actor.base', 'RAILERS.Actor.Demon'];
 
   static defineSchema() {
     const fields = foundry.data.fields;
@@ -9,19 +9,17 @@ export default class RailersNPC extends RailersActorBase {
     const schema = super.defineSchema();
 
     schema.attributes = new fields.SchemaField(
-      Object.keys(CONFIG.RAILERS.attributes.npc || CONFIG.RAILERS.attributes.character).reduce((obj, attr) => {
+      Object.keys(CONFIG.RAILERS.attributes.demon).reduce((obj, attr) => {
         obj[attr] = new fields.SchemaField({
           value: new fields.NumberField({
             ...requiredInteger,
             initial: 0,
-            min: 0,
-            max: 5 // Adjust max as needed
+            min: 0
           })
         });
         return obj;
       }, {})
     );
-
 
 
     return schema;
@@ -32,7 +30,7 @@ export default class RailersNPC extends RailersActorBase {
       this.attributes[attrKey].label = game.i18n.localize(
         (CONFIG.RAILERS.attributes.npc || CONFIG.RAILERS.attributes.character)[attrKey]
       ) ?? attrKey;
-    }   
+    }  
   }
   
   getRollData() {

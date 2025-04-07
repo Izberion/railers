@@ -264,9 +264,7 @@
   margin-right: 10px;
 }
 .railers .sheet-head .header-fields {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  display: flex;
 }
 .railers .sheet-head h1.charname {
   height: 50px;
@@ -279,19 +277,21 @@
   height: 100%;
   margin: 0;
 }
-.railers .sheet-tabs {
-  -webkit-box-flex: 0;
-  -ms-flex: 0;
-  flex: 0;
+.railers .tab[data-tab].active {
+  display: block;
+  overflow-y: auto;
+  max-height: 250px;
 }
-.railers .sheet-sidebar {
-  width: 120px;
-  padding-right: 10px;
-  border-right: 1px solid #b5b3a4;
-  float: left;
+.railers input[type="number"] {
+  width: 40px;
+  background: none;
+  border: none;
+  border-bottom: white 1px solid;
+  border-radius: 0%;
 }
-
-.railers .sheet-sidebar,
+.railers .sheet-head .resource {
+  padding: 5px;
+}
 .railers .sheet-body,
 .railers .sheet-body .tab,
 .railers .sheet-body .tab .editor {

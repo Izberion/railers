@@ -46,9 +46,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     header: {
       template: 'systems/railers/templates/actor/header.hbs',
     },
-    aside: {
-      template: 'systems/railers/templates/actor/aside.hbs'
-    },
     tabs: {
       // Foundry-provided generic template
       template: 'templates/generic/tab-navigation.hbs',
@@ -86,7 +83,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     _configureRenderOptions(options) {
       super._configureRenderOptions(options);
       // Not all parts always render
-      options.parts = ['header', 'aside', 'tabs'];
+      options.parts = ['header', 'tabs'];
       // Don't show the other tabs if only limited view
       if (this.document.limited) return;
       // Control which parts show based on document subtype

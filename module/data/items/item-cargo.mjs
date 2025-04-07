@@ -18,5 +18,6 @@ export default class RailersCargo extends RailersItemBase {
       min: 0,
     });
 
+    return schema;
   }
 }

@@ -14,8 +14,10 @@ export default class RailersAbility extends RailersItemBase {
       required: true,
       nullable: false,
       blank: false,
-      initial: 'headgear',
+      initial: 'passive',
       choices: Object.keys(CONFIG.RAILERS.actionTypeOptions)
     });
+
+    return schema;
   }
 }

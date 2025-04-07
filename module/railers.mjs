@@ -33,6 +33,9 @@ globalThis.railers = {
 
 Hooks.once('init', async function() {
 
+  console.log("System JSON:", game.system);
+  console.log("Document types:", game.system.documentTypes);
+
   CONFIG.RAILERS = RAILERS;
 
   /**
@@ -45,9 +48,10 @@ Hooks.once('init', async function() {
     decimals: 2
   };
 
-
+  
   // Define custom Document classes
   CONFIG.Actor.documentClass = RailersActor;
+
   CONFIG.Actor.dataModels = {
     character: models.RailersCharacter,
     npc: models.RailersNPC,
@@ -55,10 +59,23 @@ Hooks.once('init', async function() {
     train: models.RailersTrain
   };
 
+
   CONFIG.Item.documentClass = RailersItem;
+
   CONFIG.Item.dataModels = {
-    gear: models.RailersGear
+    gear: models.RailersGear,
+    wound: models.RailersWound,
+    weapon: models.RailersWeapon,
+    clothing: models.RailersClothing,
+    condition: models.RailersCondition,
+    mutation: models.RailersMutation,
+    car: models.RailersCar,
+    cargo: models.RailersCargo,
+    ability: models.RailersAbility,
+    trainMod: models.RailersTrainMod,
+    weaponMod: models.RailersWeaponMod
   };
+
   
   CONFIG.ActiveEffect.legacyTransferral = false;
 
@@ -66,12 +83,14 @@ Hooks.once('init', async function() {
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("railers", RailersActorSheet, { 
     makeDefault: true,
-    label: "RAILERS.SheetLabels.Actor"
+    label: "RAILERS.SheetLabels.Actor",
+    types: ["character", "npc", "demon", "train"]
   });
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("railers", RailersItemSheet, {
     makeDefault: true,
-    label: "RAILERS.SheetLabels.Item"
+    label: "RAILERS.SheetLabels.Item",
+    types: ["gear", "wound", "weapon", "clothing", "condition", "mutation", "car", "cargo", "ability", "trainMod", "weaponMod"]
   });
 });
 

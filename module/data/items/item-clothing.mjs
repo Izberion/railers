@@ -3,7 +3,7 @@ import RailersItemBase from './base-item.mjs';
 export default class RailersClothing extends RailersItemBase {
   static LOCALIZATION_PREFIXES = [
     'RAILERS.Item.base',
-    'RAILERS.Item.Weapon',
+    'RAILERS.Item.Clothing',
   ];
 
   static defineSchema() {

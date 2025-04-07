@@ -46,14 +46,14 @@ export default class RailersActorBase extends foundry.abstract
         required: false,
         nullable: true,
         integer: true,
-        initial: null,
+        initial: 20,
         min: 0,
       }),
       max: new fields.NumberField({
         required: false,
         nullable: true,
         integer: true,
-        initial: null,
+        initial: 20,
         min: 0,
       }),
     });
@@ -62,7 +62,7 @@ export default class RailersActorBase extends foundry.abstract
       required: false,
       nullable: true,
       integer: true,
-      initial: null,
+      initial: 0,
       min: 0,
     });
 

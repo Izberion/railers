@@ -8,14 +8,21 @@ export default class RailersCharacter extends RailersActorBase {
     const requiredInteger = { required: true, nullable: false, integer: true };
     const schema = super.defineSchema();
 
-    // Dynamic attributes (e.g., combat, education, prowess) with nested skills
+    schema.xp = new fields.NumberField({
+      required: true,
+      nullable: false,
+      integer: true,
+      initial: 0,
+      min: 0,
+    });
+
     schema.attributes = new fields.SchemaField(
       Object.keys(CONFIG.RAILERS.attributes.character).reduce((obj, attr) => {
         obj[attr] = new fields.SchemaField({
           value: new fields.NumberField({
             ...requiredInteger,
             initial: 0,
-            min: 0 // Adjust max based on your system
+            min: 0 
           }),
           skills: new fields.SchemaField(
             // Nested skills under this attribute
@@ -25,7 +32,7 @@ export default class RailersCharacter extends RailersActorBase {
                   ...requiredInteger,
                   initial: 0,
                   min: 0,
-                  max: 5 // Adjust max as needed
+                  max: 0
                 })
               });
               return skillObj;

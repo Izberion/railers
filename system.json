@@ -10,10 +10,51 @@
   "documentTypes": {
     "Actor": {
       "character": {
-        "htmlFields": ["biography.value", "biography.gm"]
+        "htmlFields": ["biography"]
       },
       "npc": {
-        "htmlFields": ["biography.value", "biography.gm"]
+        "htmlFields": ["biography"]
+      },
+      "demon": {
+        "htmlFields": ["notes"]
+      },
+      "train": {
+        "htmlFields": ["notes"]
+      }
+    },
+    "Item": {
+      "gear": {
+        "htmlFields": ["description"]
+      },
+      "wound": {
+        "htmlFields": ["description"]
+      },
+      "weapon": {
+        "htmlFields": ["description"]
+      },
+      "clothing": {
+        "htmlFields": ["description"]
+      },
+      "car": {
+        "htmlFields": ["description"]
+      },
+      "cargo": {
+        "htmlFields": ["description"]
+      },
+      "ability": {
+        "htmlFields": ["description"]
+      },
+      "mutation": {
+        "htmlFields": ["description"]
+      },
+      "condition": {
+        "htmlFields": ["description"]
+      },
+      "trainMod": {
+        "htmlFields": ["description"]
+      },
+      "weaponMod": {
+        "htmlFields": ["description"]
       }
     }
   },
