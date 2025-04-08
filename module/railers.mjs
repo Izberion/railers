@@ -33,9 +33,6 @@ globalThis.railers = {
 
 Hooks.once('init', async function() {
 
-  console.log("System JSON:", game.system);
-  console.log("Document types:", game.system.documentTypes);
-
   CONFIG.RAILERS = RAILERS;
 
   /**
