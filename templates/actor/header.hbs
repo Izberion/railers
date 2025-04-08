@@ -89,22 +89,22 @@
   {{!-- Attributes --}}
   <div class="demon-attributes">
     <div class="resource flex-group-center">
-      <label for="system.attributes.strength.value" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.strength}}">{{localize "RAILERS.Attributes.Strength"}}</label>
+      <label for="system.attributes.strength.value" class="resource-label flex-group-center roll" data-action="onStatRoll" data-npcpool="{{system.attributes.strength.value}}">{{localize "RAILERS.Attributes.Strength"}}</label>
       <input type="number" name="system.attributes.strength.value" value="{{system.attributes.strength.value}}" data-dtype="Number"/>
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.attributes.agility.value" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.agility}}">{{localize "RAILERS.Attributes.Agility"}}</label>
+      <label for="system.attributes.agility.value" class="resource-label flex-group-center roll" data-action="onStatRoll" data-npcpool="{{system.attributes.agility.value}}">{{localize "RAILERS.Attributes.Agility"}}</label>
       <input type="number" name="system.attributes.agility.value" value="{{system.attributes.agility.value}}" data-dtype="Number"/>
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.attributes.intellect.value" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.intellect}}">{{localize "RAILERS.Attributes.Intellect"}}</label>
+      <label for="system.attributes.intellect.value" class="resource-label flex-group-center roll" data-action="onStatRoll" data-npcpool="{{system.attributes.intellect.value}}">{{localize "RAILERS.Attributes.Intellect"}}</label>
       <input type="number" name="system.attributes.intellect.value" value="{{system.attributes.intellect.value}}" data-dtype="Number"/>
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.attributes.endurance.value" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.endurance}}">{{localize "RAILERS.Attributes.Endurance"}}</label>
+      <label for="system.attributes.endurance.value" class="resource-label flex-group-center roll" data-action="onStatRoll" data-npcpool="{{system.attributes.endurance.value}}">{{localize "RAILERS.Attributes.Endurance"}}</label>
       <input type="number" name="system.attributes.endurance.value" value="{{system.attributes.endurance.value}}" data-dtype="Number"/>
     </div>
 
@@ -197,15 +197,15 @@
   <div class="npc-attributes">
     <div class="resources grid grid-3col">
       <div class="resource flex-group-center">
-        <label for="system.primary.value" class="resource-label roll" data-npcpool="{{system.primary}}">{{localize "RAILERS.Attributes.Primary"}}</label>
+        <label for="system.primary.value" class="resource-label roll" data-action="onStatRoll" data-npcpool="{{system.primary.value}}">{{localize "RAILERS.Attributes.Primary"}}</label>
         <input type="number" name="system.primary.value" value="{{system.primary.value}}" data-dtype="Number"/>
       </div>
       <div class="resource flex-group-center">
-        <label for="system.secondary.value" class="resource-label roll" data-npcpool="{{system.secondary}}">{{localize "RAILERS.Attributes.Secondary"}}</label>
+        <label for="system.secondary.value" class="resource-label roll" data-action="onStatRoll" data-npcpool="{{system.secondary.value}}">{{localize "RAILERS.Attributes.Secondary"}}</label>
         <input type="number" name="system.secondary.value" value="{{system.secondary.value}}" data-dtype="Number" readonly/>
       </div>
       <div class="resource flex-group-center">
-        <label class="resource-label roll" data-npcpool="0">{{localize "RAILERS.Attributes.Unskilled"}}</label>
+        <label class="resource-label roll" data-action="onStatRoll" data-npcpool="0">{{localize "RAILERS.Attributes.Unskilled"}}</label>
       </div>
     </div>
   </div>
