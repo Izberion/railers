@@ -240,7 +240,7 @@
   -webkit-box-flex: 0;
   -ms-flex: 0 auto;
   flex: 0 auto;
-  overflow: hidden;
+  overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,12 +255,14 @@
   justify-content: flex-start;
   margin-bottom: 10px;
   align-items: center;
+  height: 200px;
 }
 .railers .sheet-head .profile-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100px;
   flex: 0 0 100px;
   height: 100px;
+  width: 100px;
   margin-right: 10px;
 }
 .railers .sheet-head .header-fields {
@@ -268,6 +270,7 @@
 }
 .railers .sheet-head h1.charname {
   height: 50px;
+  width: 100px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
