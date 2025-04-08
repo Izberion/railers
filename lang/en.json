@@ -335,6 +335,87 @@
       "Temporary": "Temporary Effects",
       "Passive": "Passive Effects",
       "Inactive": "Inactive Effects"
+    },
+    "dialogs": {
+      "base": {
+        "modifier": "Modifier",
+        "selectTN": "Select TN",
+        "tn4": "TN 4",
+        "tn5": "TN 5",
+        "tn6": "TN 6",
+        "tn7": "TN 7",
+        "tn8": "TN 8",
+        "roll": "Roll",
+        "cancel": "Cancel",
+        "warning": "Warning",
+        "continue": "Continue",
+        "modifyDiceRoll": "Modify the Dice Roll"
+      },
+      "attack": {
+        "selectActionType": "Select Attack Action Type",
+        "singleFire": "Attack/Single Fire",
+        "blindFire": "Blind Fire",
+        "burstFire": "Burst Fire",
+        "sustainedFire": "Sustained Fire",
+        "fieldOfFire": "Field of Fire",
+        "reactiveShot": "Reactive Shot",
+        "notEnoughAmmo": "Not enough ammo for this attack action",
+        "modifyAttackRoll": "Modify the Attack Roll"
+      },
+      "train": {
+        "changeLocomotiveWarning": "Changing the locomotive type will update several stats and any changes to them could be lost. Do you want to continue?"
+      }
+    },
+    "apps": {
+      "base": {
+        "railersControls": "Railers System Controls"
+      },
+      "terrain": {
+        "openTerrainFlower": "Open Terrain Flower",  
+        "terrainFlower": "Terrain Flower",  
+        "rollTerrainFlower": "Rolled on the Terrain Flower",
+        "snowTerrain": "Snow Terrain",
+        "hillTerrain": "Hill Terrain",
+        "iceTerrain": "Ice Terrain",
+        "flatTerrain": "Flat Terrain",
+        "mountainTerrain": "Mountain Terrain"
+      },
+      "weather": {
+        "toggleWeatherHUD": "Toggle Weather HUD",
+        "rollWeather": "Rolled on the Weather Flower",
+        "aurora": "Aurora",
+        "blizzard": "Blizzard",
+        "clear": "Clear Skies",
+        "diamondDust": "Diamond Dust",
+        "flurry": "Flurry",
+        "iceFog": "Ice Fog",
+        "overcast": "Overcast Skies",
+        "polarOutbreak": "Polar Outbreak",
+        "snowStorm": "Snow Storm",
+        "thunderSnow": "Thunder Snow",
+        "whiteout": "Whiteout",
+        "wind": "Wind Storm",
+        "season": "Season",
+        "summer": "Summer",
+        "winter": "Winter",
+        "rollTemperature": "Rolled the temperature"
+      }
+    },
+    "chat": {
+      "result": {
+        "automaticFailure": "Automatic Failure",
+        "complicatedFailure": "Complicated Failure",
+        "failure": "Failure",
+        "complicatedSuccess": "Complicated Success",
+        "success": "Success",
+        "greatSuccess": "Great Success"
+      },
+      "roll": {
+        "rollRoll": "Making a roll at TN {tn}",
+        "rollCheck": "Rolling a(n) {rollName} check at TN {tn}",
+        "rollSave": "Rolling a(n) {rollName} save at TN {tn}",
+        "rollAttack": "Attacking with {rollName} at TN {tn}"
+      }
     }
   },
   "TYPES": {
@@ -357,87 +438,6 @@
       "condition": "Condition",
       "mutation": "Mutation",
       "ability": "Ability"
-    }
-  },
-  "dialogs": {
-    "base": {
-      "modifier": "Modifier",
-      "selectTN": "Select TN",
-      "tn4": "TN 4",
-      "tn5": "TN 5",
-      "tn6": "TN 6",
-      "tn7": "TN 7",
-      "tn8": "TN 8",
-      "roll": "Roll",
-      "cancel": "Cancel",
-      "warning": "Warning",
-      "continue": "Continue",
-      "modifyDiceRoll": "Modify the Dice Roll"
-    },
-    "attack": {
-      "selectActionType": "Select Attack Action Type",
-      "singleFire": "Attack/Single Fire",
-      "blindFire": "Blind Fire",
-      "burstFire": "Burst Fire",
-      "sustainedFire": "Sustained Fire",
-      "fieldOfFire": "Field of Fire",
-      "reactiveShot": "Reactive Shot",
-      "notEnoughAmmo": "Not enough ammo for this attack action",
-      "modifyAttackRoll": "Modify the Attack Roll"
-    }
-  },
-  "apps": {
-    "base": {
-      "railersControls": "Railers System Controls"
-    },
-    "terrain": {
-      "openTerrainFlower": "Open Terrain Flower",  
-      "terrainFlower": "Terrain Flower",  
-      "rollTerrainFlower": "Rolled on the Terrain Flower",
-      "snowTerrain": "Snow Terrain",
-      "hillTerrain": "Hill Terrain",
-      "iceTerrain": "Ice Terrain",
-      "flatTerrain": "Flat Terrain",
-      "mountainTerrain": "Mountain Terrain"
-    },
-    "weather": {
-      "toggleWeatherHUD": "Toggle Weather HUD",
-      "rollWeather": "Rolled on the Weather Flower",
-      "aurora": "Aurora",
-      "blizzard": "Blizzard",
-      "clear": "Clear Skies",
-      "diamondDust": "Diamond Dust",
-      "flurry": "Flurry",
-      "iceFog": "Ice Fog",
-      "overcast": "Overcast Skies",
-      "polarOutbreak": "Polar Outbreak",
-      "snowStorm": "Snow Storm",
-      "thunderSnow": "Thunder Snow",
-      "whiteout": "Whiteout",
-      "wind": "Wind Storm",
-      "season": "Season",
-      "summer": "Summer",
-      "winter": "Winter",
-      "rollTemperature": "Rolled the temperature"
-    },
-    "train": {
-      "changeLocomotiveWarning": "Changing the locomotive type will update several stats and any changes to them could be lost. Do you want to continue?"
-    }
-  },
-  "chat": {
-    "result": {
-      "automaticFailure": "Automatic Failure",
-      "complicatedFailure": "Complicated Failure",
-      "failure": "Failure",
-      "complicatedSuccess": "Complicated Success",
-      "success": "Success",
-      "greatSuccess": "Great Success"
-    },
-    "roll": {
-      "rollRoll": "Making a roll at TN {tn}",
-      "rollCheck": "Rolling a(n) {rollName} check at TN {tn}",
-      "rollSave": "Rolling a(n) {rollName} save at TN {tn}",
-      "rollAttack": "Attacking with {rollName} at TN {tn}"
     }
   }
 }

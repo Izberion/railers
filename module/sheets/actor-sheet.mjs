@@ -397,11 +397,11 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     if (!stats) return;
   
     new Dialog({
-      title: game.i18n.localize("RAILERS.Warning"),
-      content: game.i18n.localize("RAILERS.ChangeLocomotiveWarning"),
+      title: game.i18n.localize("RAILERS.dialogs.base.warning"),
+      content: game.i18n.localize("RAILERS.dialogs.train.changeLocomotiveWarning"),
       buttons: {
         continue: {
-          label: game.i18n.localize("RAILERS.Continue"),
+          label: game.i18n.localize("RAILERS.dialogs.base.continue"),
           callback: async () => {
             await this.actor.update({
               'system.speed': stats.speed,
@@ -414,7 +414,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
           },
         },
         cancel: {
-          label: game.i18n.localize("RAILERS.Cancel"),
+          label: game.i18n.localize("RAILERS.dialogs.base.cancel"),
           callback: async ()=> {
             await this.actor.update({ system: originalState }); 
             const select = this.element.querySelector('select[name="system.locomotive"]');
