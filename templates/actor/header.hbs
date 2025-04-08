@@ -1,9 +1,7 @@
 <header class="sheet-head">
   <div class="header-fields">
-    <div class="charinfo">
-      <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
-      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
-    </div>
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+    <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
 
     {{#ifOr (eq actor.type "character") (eq actor.type "npc") (eq actor.type "demon")}}
     {{!-- HP --}}
@@ -16,7 +14,7 @@
           <input type="number" name="system.hitpoints.max" value="{{system.hitpoints.max}}" data-dtype="Number"/>
         </div>
         {{#if (eq actor.type "demon")}}
-          <button type="button" class="roll-hp">{{localize "RAILERS.Actor.Demon.FIELDS.actions.rollHP"}}</button>
+          <button type="button" data-action="rollHp" class="roll-hp">{{localize "RAILERS.Actor.Demon.FIELDS.actions.rollHP"}}</button>
         {{/if}}
       </div>
 
@@ -91,28 +89,28 @@
   {{!-- Attributes --}}
   <div class="demon-attributes">
     <div class="resource flex-group-center">
-      <label for="system.attributes.strength" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.strength}}">{{localize "RAILERS.Attributes.Strength"}}</label>
-      <input type="number" name="system.attributes.strength" value="{{system.attributes.strength}}" data-dtype="Number"/>
+      <label for="system.attributes.strength.value" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.strength}}">{{localize "RAILERS.Attributes.Strength"}}</label>
+      <input type="number" name="system.attributes.strength.value" value="{{system.attributes.strength.value}}" data-dtype="Number"/>
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.attributes.agility" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.agility}}">{{localize "RAILERS.Attributes.Agility"}}</label>
-      <input type="number" name="system.attributes.agility" value="{{system.attributes.agility}}" data-dtype="Number"/>
+      <label for="system.attributes.agility.value" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.agility}}">{{localize "RAILERS.Attributes.Agility"}}</label>
+      <input type="number" name="system.attributes.agility.value" value="{{system.attributes.agility.value}}" data-dtype="Number"/>
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.attributes.intellect" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.intellect}}">{{localize "RAILERS.Attributes.Intellect"}}</label>
-      <input type="number" name="system.attributes.intellect" value="{{system.attributes.intellect}}" data-dtype="Number"/>
+      <label for="system.attributes.intellect.value" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.intellect}}">{{localize "RAILERS.Attributes.Intellect"}}</label>
+      <input type="number" name="system.attributes.intellect.value" value="{{system.attributes.intellect.value}}" data-dtype="Number"/>
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.attributes.endurance" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.endurance}}">{{localize "RAILERS.Attributes.Endurance"}}</label>
-      <input type="number" name="system.attributes.endurance" value="{{system.attributes.endurance}}" data-dtype="Number"/>
+      <label for="system.attributes.endurance.value" class="resource-label flex-group-center roll" data-npcpool="{{system.attributes.endurance}}">{{localize "RAILERS.Attributes.Endurance"}}</label>
+      <input type="number" name="system.attributes.endurance.value" value="{{system.attributes.endurance.value}}" data-dtype="Number"/>
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.attributes.fear" class="resource-label flex-group-center">{{localize "RAILERS.Actor.base.FIELDS.fear"}}</label>
-      <input type="number" name="system.attributes.fear" value="{{system.attributes.fear}}" data-dtype="Number"/>
+      <label for="system.fear" class="resource-label flex-group-center">{{localize "RAILERS.Actor.base.FIELDS.fear"}}</label>
+      <input type="number" name="system.fear" value="{{system.fear}}" data-dtype="Number"/>
     </div>
 
     <div class="resource flex-group-center">
@@ -137,7 +135,7 @@
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.speed" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.maxSpeed"}}</label>
+      <label for="system.speed" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.speed"}}</label>
       <div class="resource-content flexrow flex-center flex-between">
         <input type="number" name="system.speed" value="{{system.speed}}" data-dtype="Number"/>
       </div>
@@ -162,7 +160,7 @@
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.fuel.value" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.fuel.label"}}</label>
+      <label for="system.fuel.value" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.fuel.value"}}</label>
       <div class="resource-content flexrow flex-center flex-between">
         <input type="number" name="system.fuel.value" value="{{system.fuel.value}}" data-dtype="Number"/>
         <span> / </span>
@@ -199,12 +197,12 @@
   <div class="npc-attributes">
     <div class="resources grid grid-3col">
       <div class="resource flex-group-center">
-        <label for="system.primary" class="resource-label roll" data-npcpool="{{system.primary}}">{{localize "RAILERS.Attributes.Primary"}}</label>
-        <input type="number" name="system.primary" value="{{system.primary}}" data-dtype="Number"/>
+        <label for="system.primary.value" class="resource-label roll" data-npcpool="{{system.primary}}">{{localize "RAILERS.Attributes.Primary"}}</label>
+        <input type="number" name="system.primary.value" value="{{system.primary.value}}" data-dtype="Number"/>
       </div>
       <div class="resource flex-group-center">
-        <label for="system.secondary" class="resource-label roll" data-npcpool="{{system.secondary}}">{{localize "RAILERS.Attributes.Secondary"}}</label>
-        <input type="number" name="system.secondary" value="{{system.secondary}}" data-dtype="Number" readonly/>
+        <label for="system.secondary.value" class="resource-label roll" data-npcpool="{{system.secondary}}">{{localize "RAILERS.Attributes.Secondary"}}</label>
+        <input type="number" name="system.secondary.value" value="{{system.secondary.value}}" data-dtype="Number" readonly/>
       </div>
       <div class="resource flex-group-center">
         <label class="resource-label roll" data-npcpool="0">{{localize "RAILERS.Attributes.Unskilled"}}</label>
@@ -221,8 +219,8 @@
 
   {{#if (eq actor.type "train")}}
   <div class="train-select">
-    <select name="system.locomotive">
-      {{selectOptions locomotiveOptions selected=system.locomotive localize=true}}
+    <select name="system.locomotive" data-action="locomotiveChange">
+      {{selectOptions config.locomotiveOptions selected=system.locomotive localize=true}}
     </select>
   </div>
   {{/if}}
