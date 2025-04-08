@@ -20,7 +20,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
   static DEFAULT_OPTIONS = {
     classes: ['railers', 'actor'],
     position: {
-      width: 600,
+      width: 700,
       height: 600,
     },
     actions: {
@@ -148,6 +148,17 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
         // Enrichment turns text like `[[/r 1d20]]` into buttons
         context.enrichedBiography = await TextEditor.enrichHTML(
           this.actor.system.biography,
+          {
+            // Whether to show secret blocks in the finished html
+            secrets: this.document.isOwner,
+            // Data to fill in for inline rolls
+            rollData: this.actor.getRollData(),
+            // Relative UUID resolution
+            relativeTo: this.actor,
+          }
+        );
+        context.enrichedNotes = await TextEditor.enrichHTML(
+          this.actor.system.notes,
           {
             // Whether to show secret blocks in the finished html
             secrets: this.document.isOwner,
@@ -354,18 +365,21 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     onRollHp(event, this.actor); 
   }
   
-  activateListeners(html) {
-    super.activateListeners(html);
+  _onRender(context, options) {
+    const html = this.element.querySelector(".window-content");
     const locomotiveSelect = html.querySelector('select[name="system.locomotive"]');
     if (locomotiveSelect) {
+      locomotiveSelect.removeEventListener('change', this._onLocomotiveChange.bind(this));
       locomotiveSelect.addEventListener('change', this._onLocomotiveChange.bind(this));
     }
   }
   
+  
   _onLocomotiveChange(event) {
     event.preventDefault();
+    const originalState = foundry.utils.deepClone(this.actor.system);
     const selectedType = event.target.value;
-  
+
     const types = {
       ace: { armor: 4, power: 24, speed: 7, fuel: 100, weight: 1050 },
       bigBrother: { armor: 5, power: 15, speed: 3, fuel: 60, weight: 950 },
@@ -388,19 +402,27 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       buttons: {
         continue: {
           label: game.i18n.localize("RAILERS.Continue"),
-          callback: () => {
-            this.actor.update({
+          callback: async () => {
+            await this.actor.update({
               'system.speed': stats.speed,
               'system.fuel.max': stats.fuel,
               'system.armor': stats.armor,
               'system.power.max': stats.power,
               'system.weight.max': stats.weight
             });
+            this.render();
           },
         },
         cancel: {
           label: game.i18n.localize("RAILERS.Cancel"),
-        },
+          callback: async ()=> {
+            await this.actor.update({ system: originalState }); 
+            const select = this.element.querySelector('select[name="system.locomotive"]');
+            if (select) select.value = originalState.locomotive;
+            this.render();
+          }
+          
+        }
       },
       default: 'cancel',
     }).render(true);
