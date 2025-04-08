@@ -25,7 +25,7 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
             id: "terrain-flower-app",
             tag: "div",
             window: {
-                title: "RAILERS.TerrainFlower",
+                title: "RAILERS.apps.terrain.terrainFlower",
                 resizable: true,
                 contentClasses: ["standard-form", "railers"]
             },
@@ -153,11 +153,11 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
         const hexesElements = html.querySelectorAll(".hex");
         let hexStates = [];
         const terrainTypes = {
-            "snowhex.svg": game.i18n.localize("RAILERS.SnowTerrain"),
-            "hillhex.svg": game.i18n.localize("RAILERS.HillTerrain"),
-            "icehex.svg": game.i18n.localize("RAILERS.IceTerrain"),
-            "flathex.svg": game.i18n.localize("RAILERS.FlatTerrain"),
-            "mountainhex.svg": game.i18n.localize("RAILERS.MountainTerrain")
+            "snowhex.svg": game.i18n.localize("RAILERS.apps.terrain.snowTerrain"),
+            "hillhex.svg": game.i18n.localize("RAILERS.apps.terrain.hillTerrain"),
+            "icehex.svg": game.i18n.localize("RAILERS.apps.terrain.iceTerrain"),
+            "flathex.svg": game.i18n.localize("RAILERS.apps.terrain.flatTerrain"),
+            "mountainhex.svg": game.i18n.localize("RAILERS.apps.terrain.mountainTerrain")
         };
 
         const target = event.currentTarget;
@@ -204,7 +204,7 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
                 const newTerrainType = terrainTypes[newFileName] || "Unknown";
 
                 await roll.toMessage({
-                    flavor: game.i18n.localize("RAILERS.RollTerrainFlower"),
+                    flavor: game.i18n.localize("RAILERS.apps.terrain.rollTerrainFlower"),
                     content: `<div class="dice-results">${newTerrainType}</div>`
                 });
 
@@ -220,7 +220,7 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
                 hexStates[newIndex] = "active";
             } else {
                 await roll.toMessage({
-                    flavor: game.i18n.localize("RAILERS.RollTerrainFlower"),
+                    flavor: game.i18n.localize("RAILERS.apps.terrain.rollTerrainFlower"),
                     content: `<div class="dice-results">${terrainType}</div>`
                 });
                 hexStates = currentStates; // Preserve current state on odd roll
@@ -319,18 +319,18 @@ export class WeatherHUD {
   
     static async rollWeather() {
       const weatherTypes = {
-        "thundersnowhex.svg": game.i18n.localize("RAILERS.ThunderSnow"),
-        "snowstormhex.svg": game.i18n.localize("RAILERS.SnowStorm"),
-        "blizzardhex.svg": game.i18n.localize("RAILERS.Blizzard"),
-        "windhex.svg": game.i18n.localize("RAILERS.Wind"),
-        "flurryhex.svg": game.i18n.localize("RAILERS.Flurry"),
-        "overcasthex.svg": game.i18n.localize("RAILERS.Overcast"),
-        "polaroutbreakhex.svg": game.i18n.localize("RAILERS.PolarOutbreak"),
-        "aurorahex.svg": game.i18n.localize("RAILERS.Aurora"),
-        "clearhex.svg": game.i18n.localize("RAILERS.Clear"),
-        "icefoghex.svg": game.i18n.localize("RAILERS.IceFog"),
-        "diamonddusthex.svg": game.i18n.localize("RAILERS.DiamondDust"),
-        "whiteouthex.svg": game.i18n.localize("RAILERS.Whiteout")
+        "thundersnowhex.svg": game.i18n.localize("RAILERS.apps.weather.thunderSnow"),
+        "snowstormhex.svg": game.i18n.localize("RAILERS.apps.weather.snowStorm"),
+        "blizzardhex.svg": game.i18n.localize("RAILERS.apps.weather.blizzard"),
+        "windhex.svg": game.i18n.localize("RAILERS.apps.weather.wind"),
+        "flurryhex.svg": game.i18n.localize("RAILERS.apps.weather.flurry"),
+        "overcasthex.svg": game.i18n.localize("RAILERS.apps.weather.overcast"),
+        "polaroutbreakhex.svg": game.i18n.localize("RAILERS.apps.weather.polarOutbreak"),
+        "aurorahex.svg": game.i18n.localize("RAILERS.apps.weather.aurora"),
+        "clearhex.svg": game.i18n.localize("RAILERS.apps.weather.clear"),
+        "icefoghex.svg": game.i18n.localize("RAILERS.apps.weather.iceFog"),
+        "diamonddusthex.svg": game.i18n.localize("RAILERS.apps.weather.diamondDust"),
+        "whiteouthex.svg": game.i18n.localize("RAILERS.apps.weather.whiteout")
       };
       const weatherData = [
         { coords: "(0,0)", image: "systems/railers/assets/weather/thundersnowhex.svg", name: weatherTypes["thundersnowhex.svg"] },
@@ -378,7 +378,7 @@ export class WeatherHUD {
       if (newWeather) {
         game.settings.set("railers", "currentWeather", newWeather);
         await roll.toMessage({
-          flavor: game.i18n.localize("RAILERS.RollWeather"),
+          flavor: game.i18n.localize("RAILERS.apps.weather.rollWeather"),
           content: `<div class="dice-results">${newWeather.name}</div>`
         });
         await this.updateHUD();
@@ -397,7 +397,7 @@ export class WeatherHUD {
   
       game.settings.set("railers", "currentTemperature", temperature);
       await roll.toMessage({
-        flavor: game.i18n.localize("RAILERS.RollTemperature"),
+        flavor: game.i18n.localize("RAILERS.apps.weather.rollTemperature"),
         content: `<div class="dice-results">${temperature}</div>`
       });
       await this.updateHUD();
@@ -431,13 +431,13 @@ let diceFlowerApp = null;
 Hooks.on("getSceneControlButtons", (controls) => {
     const railersGroup = {
         name: "railersControls",
-        title: game.i18n.localize("RAILERS.RailersControls"),
+        title: game.i18n.localize("RAILERS.apps.base.railersControls"),
         icon: "fas fa-train",
         layer: "controls",
         tools: [
             {
             name: "terrain",
-            title: game.i18n.localize("RAILERS.OpenTerrainFlower"),
+            title: game.i18n.localize("RAILERS.apps.terrain.openTerrainFlower"),
             icon: "fas fa-mountain",
             toggle: true,
             active: false,
@@ -451,7 +451,7 @@ Hooks.on("getSceneControlButtons", (controls) => {
         },
             {
                 name: "weather",
-                title: game.i18n.localize("RAILERS.ToggleWeatherHUD"),
+                title: game.i18n.localize("RAILERS.apps.weather.toggleWeatherHUD"),
                 icon: "fas fa-cloud-sun",
                 toggle: true,
                 active: !!document.getElementById("railers-weather-hud"),
@@ -482,7 +482,7 @@ Hooks.once("init", () => {
         scope: "world",
         config: false,
         type: Object,
-        default: { image: "systems/railers/assets/weather/clearhex.svg", name: game.i18n.localize("RAILERS.Clear") }
+        default: { image: "systems/railers/assets/weather/clearhex.svg", name: game.i18n.localize("RAILERS.apps.weather.clear") }
     });
     game.settings.register("railers", "currentTemperature", {
         scope: "world",
