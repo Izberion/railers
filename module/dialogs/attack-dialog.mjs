@@ -1,7 +1,7 @@
 export async function attackDialog(event, html) {
   const thisActor = event.data.actor;
   const characterName = thisActor.name;
-  const li = $(event.currentTarget).parents(".item");
+  const li = $(event.target).parents(".item");
   const item = thisActor.items.get(li.data("itemId"));
   const rollName = item.name;
 

@@ -28,6 +28,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       createDoc: this._createDoc,
       deleteDoc: this._deleteDoc,
       toggleEffect: this._toggleEffect,
+      onStatRoll: this._onStatRoll,
       attackRoll: this._onAttackRoll,
       woundHeal: this._onWoundHeal,
       weaponReload: this._onWeaponReload,
@@ -331,10 +332,8 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    *
    **************/
 
-  static _onRoll(event, target) {
-    // Assuming rollDialog is a function from V1 (e.g., in railer-roll-dialog.mjs)
-    const actor = this.actor;
-    rollDialog({ actor }); // Replace with your roll dialog logic
+  static async _onStatRoll(event, target) {
+    rollDialog(event, this.actor );
   }
   
   static _onAttackRoll(event, target) {
