@@ -43,6 +43,40 @@ export default class RailersTrain extends RailersActorBase {
       max: new fields.NumberField({ ...requiredInteger, initial: 1050, min: 0 })
     });
 
+    schema.crew = new fields.NumberField({
+      required: false,
+      integer: true,
+      nullable: true,
+      initial: 0, 
+      min: 0
+    });
+
+    schema.passengers = new fields.NumberField({
+      required: false,
+      integer: true,
+      nullable: true,
+      initial: 0, 
+      min: 0
+    });
+
+    schema.rations = new fields.SchemaField({
+      value: new fields.NumberField({
+        required: false,
+        integer: true,
+        nullable: true,
+        initial: 0, 
+        min: 0
+      }),
+      max: new fields.NumberField({
+        required: false,
+        integer: true,
+        nullable: true,
+        initial: 0, 
+        min: 0
+      })
+    });
+
+
     return schema;
   }
 
