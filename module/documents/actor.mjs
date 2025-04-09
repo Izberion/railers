@@ -108,7 +108,7 @@ export class RailersActor extends Actor {
           }
   
           if (this.type === "npc") {
-            systemData.defensePool = totalProtection + systemData.secondary;
+            systemData.defensePool = totalProtection + systemData.attributes.secondary.value;
           }
   
           // Calculate thermal threshold
@@ -125,17 +125,19 @@ export class RailersActor extends Actor {
       }
 
       _prepareNPCData(systemData) {
-        systemData.secondary = Math.floor(systemData.primary / 2)
-        systemData.hitpoints.max = 2 * (systemData.primary + systemData.secondary)
-        systemData.nerve.max = 2 * (systemData.hitpoints.max)
-        systemData.wounds.max = 6 + systemData.primary + systemData.secondary;
-        systemData.load.onHand.max = 3 + systemData.primary + systemData.secondary;
-        systemData.initiativePool = systemData.primary;
+        systemData.attributes.secondary.value = Math.floor(systemData.attributes.primary.value / 2);
+        console.log(systemData.attributes.primary.value);
+        console.log(systemData.attributes.secondary.value);
+        systemData.hitpoints.max = 2 * (systemData.attributes.primary.value + systemData.attributes.secondary.value);
+        systemData.nerve.max = 2 * (systemData.hitpoints.max);
+        systemData.wounds.max = 6 + systemData.attributes.primary.value + systemData.attributes.secondary.value;
+        systemData.load.onHand.max = 3 + systemData.attributes.primary.value + systemData.attributes.secondary.value;
+        systemData.initiativePool = systemData.attributes.primary.value;
       }
 
       _prepareDemonData(systemData) {
-        systemData.wounds.max = systemData.attributes.endurance * 3;
-        systemData.initiativePool = systemData.attributes.agility;
+        systemData.wounds.max = systemData.attributes.endurance.value * 3;
+        systemData.initiativePool = systemData.attributes.agility.value;
       }
 
       _prepareTrainData(systemData) {
