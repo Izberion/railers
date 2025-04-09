@@ -21,6 +21,12 @@ export default class RailersDemon extends RailersActorBase {
       }, {})
     );
 
+    schema.tags = new fields.StringField({
+      required: false,
+      nullable: true,
+      blank: true
+    });
+
 
     return schema;
   }
