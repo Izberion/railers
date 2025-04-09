@@ -41,7 +41,7 @@ Hooks.once('init', async function() {
    */
   
   CONFIG.Combat.initiative = {
-    formula: "(@initiativePool)d8x8cs>=5df1 + (@initiativePool) / 100",
+    formula: "(@initiativePool)d8x8cs>=5 + (@initiativePool) / 100",
     decimals: 2
   };
 
