@@ -233,14 +233,13 @@
 
   /* Styles limited to railers sheets */
 
-.railers .item-form {
-  font-family: "Roboto", sans-serif;
+.railers .sheet-head input[type="text"] {
+  font-family: 'Modesto Condensed';
 }
 .railers .sheet-head {
   -webkit-box-flex: 0;
   -ms-flex: 0 auto;
   flex: 0 auto;
-  overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,9 +252,8 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-bottom: 10px;
   align-items: center;
-  height: 200px;
+  height: 159px;
 }
 .railers .sheet-head .profile-img {
   -webkit-box-flex: 0;
@@ -267,18 +265,22 @@
 }
 .railers .sheet-head .header-fields {
   display: flex;
+  flex-wrap: wrap;
 }
 .railers .sheet-head h1.charname {
+  width: 200px;
   height: 50px;
-  width: 100px;
-  padding: 0px;
-  margin: 5px 0;
   border-bottom: 0;
+  display: flex;
 }
 .railers .sheet-head h1.charname input {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 50px;
   margin: 0;
+}
+.railers .sheet-head .health {
+  display: flex;
+  align-items: flex-start;
 }
 .railers .tab[data-tab].active {
   display: block;
@@ -289,18 +291,22 @@
   width: 40px;
   background: none;
   border: none;
-  border-bottom: white 1px solid;
-  border-radius: 0%;
 }
 .railers .sheet-head .resource {
   padding: 5px;
+  display: grid;
+  justify-items: center;
+}
+.railers .sheet-head .demon-attributes,
+.railers .sheet-head .npc-attributes {
+  display: flex;
+  flex-direction: row;
 }
 .railers .sheet-body,
 .railers .sheet-body .tab,
 .railers .sheet-body .tab .editor {
   height: 100%;
 }
-
 .railers .character .sheet-body,
 .railers .npc .sheet-body,
 .railers .train .sheet-body,
@@ -743,10 +749,6 @@
 
 .railers label.att-label {
   font-weight: bold;
-}
-
-.railers label.roll {
-  margin: 5px 0;
 }
 
 .railers .skill-list {
