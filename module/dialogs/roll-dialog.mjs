@@ -12,12 +12,12 @@ export async function rollDialog(event, actor) {
     const content = await renderTemplate("systems/railers/templates/dialog/roll-dialog.hbs");
   
     const dialogReturn = await Dialog.wait({
-      title: game.i18n.localize("RAILERS.ModifyDiceRoll"),
+      title: game.i18n.localize("RAILERS.dialogs.base.modifyDiceRoll"),
       content,
       buttons: {
         one: {
           icon: '<i class="fas fa-check"></i>',
-          label: game.i18n.localize("RAILERS.Roll"),
+          label: game.i18n.localize("RAILERS.dialogs.base.roll"),
           callback: async (html) => {
             const mod = parseInt(html.find('input[name="modifier"]').val()) || 0;
             const tn = parseInt(html.find('select[name="tn"]').val()) || 5;
@@ -27,22 +27,22 @@ export async function rollDialog(event, actor) {
   
             if (isSpecialSkill) {
               poolTotal = skillpool;
-            } else if (skillpool > 0) { // Check if skillpool exists
+          } else if (!isNaN(skillpool)) {
               poolTotal = skillpool + attpool;
-            } else if (npcpool > 0) {
+          } else if (!isNaN(npcpool)) {
               poolTotal = npcpool;
-            } else {
+          } else {
               poolTotal = attpool;
-            }
+          }
   
             poolTotal += mod;
   
             if (poolTotal === 0) {
-              rollFormula = `2d8kl1x8cs>=${tn}df=1`;
+              rollFormula = `2d8kl1x8cs>=${tn}`;
             } else if (poolTotal < 0) {
               rollFormula = "0";
             } else {
-              rollFormula = `${poolTotal}d8x8cs>=${tn}df=1`;
+              rollFormula = `${poolTotal}d8x8cs>=${tn}`;
             }
   
             const r = new Roll(rollFormula);
@@ -52,26 +52,26 @@ export async function rollDialog(event, actor) {
   
             let successType;
             if (rollFormula === "0") {
-              successType = game.i18n.localize("RAILERS.AutomaticFailure");
+              successType = game.i18n.localize("RAILERS.chat.result.automaticFailure");
             } else if (isSpecialSkill) {
-              successType = rollTotal <= 0 ? game.i18n.localize("RAILERS.Failure") : game.i18n.localize("RAILERS.Success");
-            } else if (skillpool > 0) {
-              if (rollTotal < 0) successType = game.i18n.localize("RAILERS.ComplicatedFailure");
-              else if (rollTotal === 0) successType = game.i18n.localize("RAILERS.Failure");
-              else if (rollTotal <= 2) successType = game.i18n.localize("RAILERS.ComplicatedSuccess");
-              else if (rollTotal <= 4) successType = game.i18n.localize("RAILERS.Success");
-              else successType = game.i18n.localize("RAILERS.GreatSuccess");
+              successType = rollTotal <= 0 ? game.i18n.localize("RAILERS.chat.result.failure") : game.i18n.localize("RAILERS.chat.result.success");
+            } else if (!isNaN(skillpool)) {
+              if (rollTotal < 0) successType = game.i18n.localize("RAILERS.chat.result.complicatedFailure");
+              else if (rollTotal === 0) successType = game.i18n.localize("RAILERS.chat.result.failure");
+              else if (rollTotal <= 2) successType = game.i18n.localize("RAILERS.chat.result.complicatedSuccess");
+              else if (rollTotal <= 4) successType = game.i18n.localize("RAILERS.chat.result.success");
+              else successType = game.i18n.localize("RAILERS.chat.result.greatSuccess");
             } else {
-              successType = rollTotal <= 0 ? game.i18n.localize("RAILERS.Failure") : game.i18n.localize("RAILERS.Success");
+              successType = rollTotal <= 0 ? game.i18n.localize("RAILERS.chat.result.failure") : game.i18n.localize("RAILERS.chat.result.success");
             }
   
             await r.toMessage({
               user: game.user.id,
               speaker: { actor: actor.id, alias: characterName },
-              flavor: npcpool > 0
-                ? game.i18n.format("RAILERS.RollRoll", { tn })
+              flavor: !isNaN(npcpool)
+                ? game.i18n.format("RAILERS.chat.roll.rollRoll", { tn })
                 : game.i18n.format(
-                    isSpecialSkill || skillpool === 0 ? "RAILERS.RollSave" : "RAILERS.RollCheck",
+                    isSpecialSkill || isNaN(skillpool) ? "RAILERS.chat.roll.rollSave" : "RAILERS.chat.roll.rollCheck",
                     { rollName, tn }
                   ),
               content: `${rollResultHTML}<div class="dice-results">${successType}</div>`
@@ -80,7 +80,7 @@ export async function rollDialog(event, actor) {
         },
         two: {
           icon: '<i class="fas fa-times"></i>',
-          label: game.i18n.localize("RAILERS.Cancel")
+          label: game.i18n.localize("RAILERS.dialogs.base.cancel")
         }
       },
       default: "one"
