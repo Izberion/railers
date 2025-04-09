@@ -133,7 +133,6 @@ export default class RailersActorBase extends foundry.abstract
       })
     });
 
-    schema.biography = new fields.StringField({ required: false, blank: true }); 
     schema.notes = new fields.StringField({ required: false, blank: true }); 
 
     return schema;
