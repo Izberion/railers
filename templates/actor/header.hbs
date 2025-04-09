@@ -1,7 +1,14 @@
 <header class="sheet-head">
   <div class="header-fields">
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
-    <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+    <div class="charname">
+      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+      {{#if (eq actor.type "demon")}}
+      <div class="demon-tags">
+        <input type="text" name="system.tags" value="{{system.tags}}" data-dtype="String" placeholder="Tags"/>
+      </div>
+      {{/if}}
+    </div>
 
     {{#ifOr (eq actor.type "character") (eq actor.type "npc") (eq actor.type "demon")}}
     {{!-- HP --}}
@@ -14,7 +21,7 @@
           <input type="number" name="system.hitpoints.max" value="{{system.hitpoints.max}}" data-dtype="Number"/>
         </div>
         {{#if (eq actor.type "demon")}}
-          <button type="button" data-action="rollHp" class="roll-hp">{{localize "RAILERS.Actor.Demon.FIELDS.actions.rollHP"}}</button>
+          <button type="button" data-action="rollHp" class="roll-hp">{{localize "RAILERS.Actor.Demon.actions.rollHP"}}</button>
         {{/if}}
       </div>
 
@@ -41,6 +48,23 @@
       </div>
     </div>
 
+    {{#if (eq actor.type "npc")}}
+    <div class="npc-attributes">
+      <div class="resource flex-group-center">
+        <label for="system.attributes.primary.value" class="resource-label roll" data-action="onStatRoll" data-npcpool="{{system.attributes.primary.value}}">{{localize "RAILERS.Attributes.Primary"}}</label>
+        <input type="number" name="system.attributes.primary.value" value="{{system.attributes.primary.value}}" data-dtype="Number"/>
+      </div>
+      <div class="resource flex-group-center">
+        <label for="system.attributes.secondary.value" class="resource-label roll" data-action="onStatRoll" data-npcpool="{{system.attributes.secondary.value}}">{{localize "RAILERS.Attributes.Secondary"}}</label>
+        <input type="number" name="system.attributes.secondary.value" value="{{system.attributes.secondary.value}}" data-dtype="Number" readonly/>
+      </div>
+      <div class="resource flex-group-center">
+        <label class="resource-label roll" data-action="onStatRoll" data-npcpool="0">{{localize "RAILERS.Attributes.Unskilled"}}</label>
+        <input type="number" value="0" data-dtype="Number" readonly/>
+      </div>
+    </div>
+    {{/if}}
+
     {{!-- Corruption --}}
     <div class="corruption">
       <div class="resource flex-group-center">
@@ -60,30 +84,28 @@
     </div>
 
     {{!-- Initiative Pool --}}
-    <div class="combat-pools">
-      <div class="resource flex-group-center">
-        <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.initiativePool"}}</label>
-        <input type="number" name="system.initiativePool" value="{{system.initiativePool}}" data-dtype="Number" readonly/>
-      </div>
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.initiativePool"}}</label>
+      <input type="number" name="system.initiativePool" value="{{system.initiativePool}}" data-dtype="Number" readonly/>
+    </div>
 
     {{!-- Defense Pool --}}
-      <div class="resource flex-group-center">
-        <label class="resource-label rollable" data-roll="(@defensePool)d8x8cs>=5df1">{{localize "RAILERS.Actor.base.FIELDS.defensePool"}}</label>
-        <input type="number" name="system.defensePool" value="{{system.defensePool}}" data-dtype="Number" readonly/>
-      </div>
+    <div class="resource flex-group-center">
+      <label class="resource-label rollable" data-roll="(@defensePool)d8x8cs>=5">{{localize "RAILERS.Actor.base.FIELDS.defensePool"}}</label>
+      <input type="number" name="system.defensePool" value="{{system.defensePool}}" data-dtype="Number" readonly/>
     </div>
     {{/ifOr}}
-  </div>
 
-  {{!-- XP --}}
-  {{#if (eq actor.type "character")}}
-  <div class="xp">
-    <div class="resource flex-group-center">
-      <label class="resource-label">{{localize "RAILERS.Actor.Character.FIELDS.xp"}}</label>
-      <input type="number" name="system.xp" value="{{system.xp}}" data-dtype="Number"/>
+    {{!-- XP --}}
+    {{#if (eq actor.type "character")}}
+    <div class="xp">
+      <div class="resource flex-group-center">
+        <label class="resource-label">{{localize "RAILERS.Actor.Character.FIELDS.xp"}}</label>
+        <input type="number" name="system.xp" value="{{system.xp}}" data-dtype="Number"/>
+      </div>
     </div>
+    {{/if}}
   </div>
-  {{/if}}
 
   {{#if (eq actor.type "demon")}}
   {{!-- Attributes --}}
@@ -193,29 +215,9 @@
   </div>
   {{/if}}
 
-  {{#if (eq actor.type "npc")}}
-  <div class="npc-attributes">
-    <div class="resources grid grid-3col">
-      <div class="resource flex-group-center">
-        <label for="system.attributes.primary.value" class="resource-label roll" data-action="onStatRoll" data-npcpool="{{system.attributes.primary.value}}">{{localize "RAILERS.Attributes.Primary"}}</label>
-        <input type="number" name="system.attributes.primary.value" value="{{system.attributes.primary.value}}" data-dtype="Number"/>
-      </div>
-      <div class="resource flex-group-center">
-        <label for="system.attributes.secondary.value" class="resource-label roll" data-action="onStatRoll" data-npcpool="{{system.attributes.secondary.value}}">{{localize "RAILERS.Attributes.Secondary"}}</label>
-        <input type="number" name="system.attributes.secondary.value" value="{{system.attributes.secondary.value}}" data-dtype="Number" readonly/>
-      </div>
-      <div class="resource flex-group-center">
-        <label class="resource-label roll" data-action="onStatRoll" data-npcpool="0">{{localize "RAILERS.Attributes.Unskilled"}}</label>
-      </div>
-    </div>
-  </div>
-  {{/if}}
 
-  {{#if (eq actor.type "demon")}}
-  <div class="demon-tags">
-    <input type="text" name="system.tags" value="{{system.tags}}" data-dtype="String" placeholder="Tags"/>
-  </div>
-  {{/if}}
+
+
 
   {{#if (eq actor.type "train")}}
   <div class="train-select">
