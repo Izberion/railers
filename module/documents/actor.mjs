@@ -126,8 +126,6 @@ export class RailersActor extends Actor {
 
       _prepareNPCData(systemData) {
         systemData.attributes.secondary.value = Math.floor(systemData.attributes.primary.value / 2);
-        console.log(systemData.attributes.primary.value);
-        console.log(systemData.attributes.secondary.value);
         systemData.hitpoints.max = 2 * (systemData.attributes.primary.value + systemData.attributes.secondary.value);
         systemData.nerve.max = 2 * (systemData.hitpoints.max);
         systemData.wounds.max = 6 + systemData.attributes.primary.value + systemData.attributes.secondary.value;
