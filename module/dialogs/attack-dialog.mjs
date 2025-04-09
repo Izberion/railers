@@ -5,8 +5,6 @@ export async function attackDialog(event, html) {
   const item = thisActor.items.get(li.data("itemId"));
   const rollName = item.name;
 
-  console.log(item);
-  console.log(item.system.attribute);  
   const attribute = Number(thisActor.system.attributes[item.system.attribute].value);
   const skill = Number(thisActor.system.attributes[item.system.attribute].skills[item.system.skill].value);
   const damage = item.system.damage;
@@ -14,12 +12,12 @@ export async function attackDialog(event, html) {
   const isRanged = item.system.range !== 'melee';
   const content = await renderTemplate("systems/railers/templates/dialog/attack-dialog.hbs", { isRanged });
     const dialogReturn = await Dialog.wait({
-    title: game.i18n.localize("RAILERS.ModifyAttackRoll"),
+    title: game.i18n.localize("RAILERS.dialog.attack.modifyAttackRoll"),
     content,
     buttons: {
       one: {
         icon: '<i class="fas fa-check"></i>',
-        label: game.i18n.localize("RAILERS.Roll"),
+        label: game.i18n.localize("RAILERS.dialog.base.roll"),
         callback: async (html) => {
           const mod = parseInt(html.find('input[name="modifier"]').val()) || 0;
           let tn = parseInt(html.find('select[name="tn"]').val()) || 5;
@@ -55,7 +53,7 @@ export async function attackDialog(event, html) {
           poolTotal += mod;
 
           if (isRanged && item.system.magazine.value < ammoReduction) {
-            ui.notifications.error(game.i18n.localize("RAILERS.NotEnoughAmmo"));
+            ui.notifications.error(game.i18n.localize("RAILERS.dialog.attack.notEnoughAmmo"));
             return {};
           }
 
@@ -81,7 +79,7 @@ export async function attackDialog(event, html) {
               actor: thisActor,
               alias: characterName,
             },
-            flavor: game.i18n.format("RAILERS.RollAttack", { rollName: rollName, tn: tn }),
+            flavor: game.i18n.format("RAILERS.chat.roll.rollAttack", { rollName: rollName, tn: tn }),
             content: `${rollResultHTML}<div class="dice-results">${damage}/W${severity}</div>`,
           });
           return {};
@@ -89,7 +87,7 @@ export async function attackDialog(event, html) {
       },
       two: {
         icon: '<i class="fas fa-times"></i>',
-        label: game.i18n.localize("RAILERS.Cancel"),
+        label: game.i18n.localize("RAILERS.dialogs.base.cancel"),
         callback: (html) => {
           return {};
         }
