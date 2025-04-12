@@ -1,0 +1,63 @@
+export async function defenseDialog(actor) {
+
+    const defensePool = actor.system.defensePool;
+    const characterName = actor.name;
+  
+    const content = await renderTemplate("systems/railers/templates/dialog/roll-dialog.hbs");
+  
+    await foundry.applications.api.DialogV2.prompt({
+      window: {
+        title: game.i18n.localize("RAILERS.dialogs.base.modifyDiceRoll")
+      },
+      content,
+      rejectClose: false,
+      modal: true,
+      ok: {
+        label: game.i18n.localize("RAILERS.dialogs.base.roll"),
+        icon: 'fas fa-check',
+        callback: async (event, button, dialog) => {
+          // Extract form data
+          const formData = new FormData(button.form);
+          const mod = parseInt(formData.get("modifier"), 10) || 0;
+          const tn = parseInt(formData.get("tn"), 10) || 5;
+  
+          // Compute pool
+          let poolTotal = defensePool;  
+          poolTotal += mod;
+  
+          // Build roll formula
+          let rollFormula;
+          if (poolTotal === 0) {
+            rollFormula = `2d8kl1x8cs>=${tn}df=1`;
+          } else if (poolTotal < 0) {
+            rollFormula = "0";
+          } else {
+            rollFormula = `${poolTotal}d8x8cs>=${tn}df=1`;
+          }
+  
+          // Roll and render
+          const r = new Roll(rollFormula);
+          await r.evaluate();
+          const rollResultHTML = await r.render();
+          const rollTotal = r.total;
+  
+          // Post to chat
+          await r.toMessage({
+            user: game.user.id,
+            speaker: {
+              actor: actor,
+              alias: characterName
+            },
+            flavor: game.i18n.format("RAILERS.chat.roll.rollDefense", { tn }),
+            content: `${rollResultHTML}`
+          });
+        }
+      },
+      cancel: {
+        icon: 'fas fa-times',
+        label: game.i18n.localize("RAILERS.dialogs.base.cancel"),
+        callback: () => {}
+      },
+      default: "ok"
+    });
+  }
