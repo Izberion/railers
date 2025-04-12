@@ -1,7 +1,9 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/effects.mjs";
 import { rollDialog } from "../dialogs/roll-dialog.mjs";
 import { attackDialog } from "../dialogs/attack-dialog.mjs";
+import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
 import { onRollHp } from "../helpers/demon-hp.mjs";
+import { defenseDialog } from "../dialogs/defense-dialog.mjs";
 
 const { api, sheets } = foundry.applications;
 
@@ -14,22 +16,24 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
   constructor(options = {}) {
     super(options);
     this.#dragDrop = this.#createDragDropHandlers();
-  }
+   }
 
    /** @override */
   static DEFAULT_OPTIONS = {
     classes: ['railers', 'actor'],
     position: {
       width: 700,
-      height: 600,
+      height: 700,
     },
     actions: {
       viewDoc: this._viewDoc,
       createDoc: this._createDoc,
       deleteDoc: this._deleteDoc,
       toggleEffect: this._toggleEffect,
-      onStatRoll: this._onStatRoll,
+      addWound: this._addWound,
+      statRoll: this._statRoll,
       attackRoll: this._onAttackRoll,
+      defenseRoll: this._onDefenseRoll,
       woundHeal: this._onWoundHeal,
       weaponReload: this._onWeaponReload,
       rollHp: this._onRollHp
@@ -39,7 +43,10 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     form: {
       handler: this.#onSubmitActorForm,
       submitOnChange: true,
-    },
+    },    
+    window: {
+      resizable: true
+    }
   };
 
   /** @override */
@@ -121,8 +128,9 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       tabs: this._getTabs(options.parts),
       // Necessary for formInput and formFields helpers
       fields: this.document.schema.fields,
-      systemFields: this.document.system.schema.fields,
+      systemFields: this.document.system.schema.fields
     };
+
 
     // Offloading context prep to a helper function
     this._prepareItems(context);
@@ -142,30 +150,13 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       case 'cargo':
         context.tab = context.tabs[partId];
         break;
-      case 'biography':
       case 'notes':
         context.tab = context.tabs[partId];
-        // Enrich biography info for display
-        // Enrichment turns text like `[[/r 1d20]]` into buttons
-        context.enrichedBiography = await TextEditor.enrichHTML(
-          this.actor.system.biography,
-          {
-            // Whether to show secret blocks in the finished html
-            secrets: this.document.isOwner,
-            // Data to fill in for inline rolls
-            rollData: this.actor.getRollData(),
-            // Relative UUID resolution
-            relativeTo: this.actor,
-          }
-        );
         context.enrichedNotes = await TextEditor.enrichHTML(
           this.actor.system.notes,
           {
-            // Whether to show secret blocks in the finished html
             secrets: this.document.isOwner,
-            // Data to fill in for inline rolls
             rollData: this.actor.getRollData(),
-            // Relative UUID resolution
             relativeTo: this.actor,
           }
         );
@@ -193,8 +184,16 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
   _getTabs(parts) {
     // If you have sub-tabs this is necessary to change
     const tabGroup = 'primary';
-    // Default tab for first time it's rendered this session
-    if (!this.tabGroups[tabGroup]) this.tabGroups[tabGroup] = 'biography';
+    // Set default tab based on actor type if not already set
+    if (!this.tabGroups[tabGroup]) {
+      const defaultTabs = {
+        character: 'biography',
+        npc: 'biography',
+        demon: 'abilities',
+        train: 'cars'
+      };
+      this.tabGroups[tabGroup] = defaultTabs[this.actor.type];
+    }
     return parts.reduce((tabs, partId) => {
       const tab = {
         cssClass: '',
@@ -308,6 +307,11 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     context.wounds = wounds.sort((a, b) => (a.system.severity || 0) - (b.system.severity || 0) || (a.system.damage || 0) - (b.system.damage || 0));
     context.cars = cars.sort((a, b) => (a.sort || 0) - (b.sort || 0));
     context.cargo = cargo.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+    context.weapons = weapons.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+    context.clothing = clothing.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+    context.mutations = mutations.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+    context.conditions = conditions.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+    context.abilities = abilities.sort((a, b) => (a.sort || 0) - (b.sort || 0));
 
   }
 
@@ -318,12 +322,18 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    * @param {RenderOptions} options                 Provided render options
    * @protected
    */
+
+  
+  // Keep this for now, but it might not be needed
   _onRender(context, options) {
     this.#dragDrop.forEach((d) => d.bind(this.element));
     this.#disableOverrides();
-    // You may want to add other special handling here
-    // Foundry comes with a large number of utility classes, e.g. SearchFilter
-    // That you may want to implement yourself.
+    const html = this.element.querySelector(".window-content");
+    const locomotiveSelect = html.querySelector('select[name="system.locomotive"]');
+    if (locomotiveSelect) {
+      locomotiveSelect.removeEventListener('change', this._onLocomotiveChange.bind(this));
+      locomotiveSelect.addEventListener('change', this._onLocomotiveChange.bind(this));
+    }
   }
 
   /**************
@@ -332,17 +342,24 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    *
    **************/
 
-  static async _onStatRoll(event, target) {
-    rollDialog(event, this.actor );
+  static async _addWound(actor) {
+    addWoundDialog(this.actor);
+  }
+
+  static async _statRoll(event, target) {
+    rollDialog(this.actor, target);
   }
   
+  static _onDefenseRoll(event, target) {
+    defenseDialog(this.actor);
+  }
+
   static _onAttackRoll(event, target) {
-    const actor = this.actor;
-    attackDialog({ actor }); // Replace with your attack dialog logic or weapon roll
+    attackDialog(this.actor, target);
   }
   
   static _onWoundHeal(event, target) {
-    const itemId = target.closest('.item').dataset.woundId;
+    const itemId = target.closest('.item').dataset.itemId;
     const item = this.actor.items.get(itemId);
     if (!item) return;
   
@@ -364,32 +381,93 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     onRollHp(event, this.actor); 
   }
   
-  _onRender(context, options) {
-    const html = this.element.querySelector(".window-content");
-    const locomotiveSelect = html.querySelector('select[name="system.locomotive"]');
-    if (locomotiveSelect) {
-      locomotiveSelect.removeEventListener('change', this._onLocomotiveChange.bind(this));
-      locomotiveSelect.addEventListener('change', this._onLocomotiveChange.bind(this));
-    }
-  }
-  
-  
+
   _onLocomotiveChange(event) {
     event.preventDefault();
     const originalState = foundry.utils.deepClone(this.actor.system);
     const selectedType = event.target.value;
 
     const types = {
-      ace: { armor: 4, power: 24, speed: 7, fuel: 100, weight: 1050 },
-      bigBrother: { armor: 5, power: 15, speed: 3, fuel: 60, weight: 950 },
-      comet: { armor: 2, power: 12, speed: 9, fuel: 42, weight: 650 },
-      compact: { armor: 3, power: 0, speed: 3, fuel: 48, weight: 0 },
-      donkey: { armor: 3, power: 10, speed: 8, fuel: 80, weight: 1500 },
-      dynamo: { armor: 4, power: 25, speed: 5, fuel: 56, weight: 750 },
-      flex: { armor: 2, power: 8, speed: 3, fuel: 36, weight: 500 },
-      joes: { armor: 3, power: 15, speed: 5, fuel: 70, weight: 800 },
-      littleMan: { armor: 1, power: 9, speed: 3, fuel: 60, weight: 550 },
-      marathoner: { armor: 1, power: 16, speed: 4, fuel: 128, weight: 700 }
+      ace: { 
+        armor: 4, 
+        power: 24, 
+        speed: 7, 
+        fuel: 100, 
+        weight: 1050,
+        capacity: 0
+      },
+      bigBrother: { 
+        armor: 5, 
+        power: 15, 
+        speed: 3, 
+        fuel: 60, 
+        weight: 950,
+        capacity: 0
+      },
+      comet: { 
+        armor: 2, 
+        power: 12, 
+        speed: 9, 
+        fuel: 42, 
+        weight: 650,
+        capacity: 0
+      },
+      compact: { 
+        armor: 3, 
+        power: 0, 
+        speed: 3, 
+        fuel: 48, 
+        weight: 0,
+        capacity: 8
+      },
+      donkey: { 
+        armor: 3, 
+        power: 10, 
+        speed: 8, 
+        fuel: 80, 
+        weight: 1500,
+        capacity: 0
+      },
+      dynamo: { 
+        armor: 4, 
+        power: 25, 
+        speed: 5, 
+        fuel: 56, 
+        weight: 750,
+        capacity: 0
+      },
+      flex: { 
+        armor: 2, 
+        power: 8, 
+        speed: 3, 
+        fuel: 36, 
+        weight: 500,
+        capacity: 0
+      },
+      joes: { 
+        armor: 3, 
+        power: 15, 
+        speed: 5, 
+        fuel: 70, 
+        weight: 800,
+        capacity: 0
+      },
+      littleMan: { 
+        armor: 1, 
+        power: 9, 
+        speed: 3, 
+        fuel: 60, 
+        weight: 550,
+        capacity: 0
+      },
+      marathoner: { 
+        armor: 1, 
+        power: 16, 
+        speed: 4, 
+        fuel: 128, 
+        weight: 700,
+        capacity: 0  
+      }
     };
   
     const stats = types[selectedType];
@@ -407,7 +485,9 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
               'system.fuel.max': stats.fuel,
               'system.armor': stats.armor,
               'system.power.max': stats.power,
-              'system.weight.max': stats.weight
+              'system.weight.max': stats.weight,
+              'system.capacity': stats.capacity,
+              'system.locomotive': selectedType
             });
             this.render();
           },
@@ -565,7 +645,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    * @protected
    */
   _canDragStart(selector) {
-    // game.user fetches the current user
     return this.isEditable;
   }
 
@@ -576,7 +655,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    * @protected
    */
   _canDragDrop(selector) {
-    // game.user fetches the current user
     return this.isEditable;
   }
 
@@ -603,14 +681,14 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    * @param {DragEvent} event       The originating DragEvent
    * @protected
    */
-  _onDragOver(event) {}
+  _onDragOver(event, target) { }
 
   /**
    * Callback actions which occur when a dragged element is dropped on a target.
    * @param {DragEvent} event       The originating DragEvent
    * @protected
    */
-  async _onDrop(event) {
+  async _onDrop(event, target) {
     const data = TextEditor.getDragEventData(event);
     const actor = this.actor;
     const allowed = Hooks.call('dropActorSheetData', actor, this, data);
