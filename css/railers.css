@@ -285,12 +285,17 @@
 .railers .tab[data-tab].active {
   display: block;
   overflow-y: auto;
-  max-height: 250px;
 }
 .railers input[type="number"] {
-  width: 40px;
-  background: none;
+  width: 32px;
   border: none;
+  min-width: inherit;
+}
+.railers input[type="number"].w50 {
+  width: 50px;
+}
+.railers input[type="number"].w40 {
+  width: 40px;
 }
 .railers .sheet-head .resource {
   padding: 5px;
@@ -298,7 +303,8 @@
   justify-items: center;
 }
 .railers .sheet-head .demon-attributes,
-.railers .sheet-head .npc-attributes {
+.railers .sheet-head .npc-attributes,
+.railers .sheet-head .train-attributes {
   display: flex;
   flex-direction: row;
 }
@@ -367,7 +373,7 @@
   padding: 0;
   overflow-y: auto;
   scrollbar-width: thin;
-  color: #444;
+  color: #ffffff;
 }
 .railers .items-list .item-list,
 .railers .weapons-list .weapon-list,
@@ -423,6 +429,7 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  width: 110px;
 }
 .railers .items-list .item-controls a,
 .railers .wound-controls a,
@@ -432,6 +439,7 @@
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
+  text-wrap-mode: nowrap;
 }
 .railers .items-list .item,
 .railers .weapons-list .weapon,
@@ -439,6 +447,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: center;
   padding: 0 2px;
   border-bottom: 1px solid #c9c7b8;
 }
@@ -446,11 +455,6 @@
 .railers .weapons-list .weapon:last-child,
 .railers .clothing-list .clothing:last-child {
   border-bottom: none;
-}
-.railers .items-list .item .item-name,
-.railers .weapons-list .weapon .weapon-name,
-.railers .clothing-list .clothing .clothing-name {
-  color: #191813;
 }
 .railers .items-list .item .item-name .item-image,
 .railers .weapons-list .weapon .weapon-name .weapon-image,
@@ -496,6 +500,9 @@
   padding-left: 5px;
   text-align: left;
 }
+.railers .items-list .item-description {
+  text-align: left;
+}
 .railers .item-formula,
 .railers .weapon-formula,
 .railers .clothing-formula {
@@ -516,11 +523,9 @@
 .railers .effects .item .effect-controls {
   border: none;
 }
-
 .railers .widthmin {
   width: min-content;
 }
-
 .railers .asl,
 .railers .achievements,
 .railers .contacts {
@@ -528,26 +533,27 @@
   padding-bottom: 10px;
   gap: 10px;
 }
-
 .railers .fillspace {
   width: -webkit-fill-available;
 }
-
 .railers .resource {
   padding-bottom: 5px;
   align-content: center;
 }
-
+.railers .train-resources {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5px;
+  align-items: flex-start;
+}
 .railers .attributes,
 .railers .skills {
   text-align: center;
 }
-
 .railers span {
   align-self: center;
   font-size: 16px;
 }
-
 .railers .flower {
   display: flex;
   align-items: center;
@@ -555,7 +561,6 @@
   margin: 0;
   flex-wrap: wrap;
 }
-
 .railers .hex {
   display: flex;
   position: relative;
@@ -565,7 +570,6 @@
   background-color: #ffffff;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }
-
 .railers .hex.inactive::after {
   content: "";
   position: absolute;
@@ -575,22 +579,18 @@
   left: 0;
   background-color: rgba(128, 128, 128, 0.5);
 }
-
 .railers .hex.active::after {
   content: none;
 }
-
 .railers .hex.active:hover {
   text-shadow: 0 0 10px red;
   cursor: pointer;
 }
-
 .railers .hex img,
 .railers .d12hex img {
   object-fit: fill;
   border: none;
 }
-
 .railers .d12hex-wrapper {
   position: relative;
   padding: 25px;
@@ -598,7 +598,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .railers .d12hex {
   display: flex;
   position: relative;
@@ -607,7 +606,6 @@
   background-color: #ffffff;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }
-
 .railers .d12hex .inner {
   position: absolute;
   top: 50%;
@@ -616,43 +614,34 @@
   text-align: center;
   color: black;
 }
-
 .railers .d12hex:hover {
   text-shadow: 0 0 10px red;
   cursor: pointer;
 }
-
 .railers .d12hex-wrapper .face {
   position: absolute;
   width: 50px;
   height: 50px;
   text-align: center;
 }
-
 .railers .d12hex-wrapper .face.top {
   transform: translate(0%, -75%);
 }
-
 .railers .d12hex-wrapper .face.right-top {
   transform: translate(100%, -25%);
 }
-
 .railers .d12hex-wrapper .face.right-bottom {
   transform: translate(100%, 85%);
 }
-
 .railers .d12hex-wrapper .face.bottom {
   transform: translate(0%, 145%);
 }
-
 .railers .d12hex-wrapper .face.left-bottom {
   transform: translate(-100%, 85%);
 }
-
 .railers .d12hex-wrapper .face.left-top {
   transform: translate(-100%, -25%);
 }
-
 #railers-weather-hud {
   position: absolute;
   top: 10px;
@@ -668,27 +657,23 @@
   width: 150px;
   height: 75px;
 }
-
 .weather-hud {
   display: flex;
   width: 100%;
   height: 100%;
 }
-
 .weather-hud .weather {
   width: 50%;
   display: grid;
   justify-items: center;
   align-content: center;
 }
-
 .weather-hud .right-column {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-content: center;
 }
-
 .weather-hud .temperature {
   height: 60px;
   display: flex;
@@ -701,14 +686,12 @@
   align-items: center;
   justify-content: center; 
 }
-
 .weather-hud img {
   width: 50px;
   height: 50px;
   vertical-align: middle;
   border: none;
 }
-
 .dice-results {
   flex: 0 0 100%;
   position: relative;
@@ -721,55 +704,51 @@
   box-shadow: 0 0 2px #FFF inset;
   word-break: break-all;
 }
-
 .railers .ability-description,
 .railers .condition-description,
 .railers .mutation-description {
   flex: 2;
 }
-
 .railers label.checkbox {
   font-size: 14px;
 }
-
 .railers .toggle {
   text-align: center;
   justify-self: flex-start;
 }
-
 .railers label.roll:hover {
   text-shadow: 0 0 10px red;
   cursor: pointer;
 }
-
 .railers label.roll[data-rollable="false"]:hover {
   text-shadow: none;
   cursor: default;
 }
-
+.railers .skill-tab {
+  display: flex;
+}
 .railers label.att-label {
   font-weight: bold;
 }
-
 .railers .skill-list {
   overflow-y: auto;
-  max-height: 160px;
-  flex: none;
-}
 
+}
 .railers .skill {
   padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
-
 .railers .attribute {
   padding-bottom: 10px;
-  flex: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
-
 .railers .att-group {
-  margin-bottom: 30px;
+  padding: 0 5px;
 }
-
 .railers .load-label {
   margin-left: 25%;
 }

@@ -145,38 +145,7 @@
           },
           "crew": "Crew",
           "passengers": "Passengers",
-          "capacity": {
-            "standard": {
-              "dine": {
-                "value": "Current Standard Diners",
-                "max": "Maximum Standard Dining"
-              },
-              "sleep": {
-                "value": "Current Standard Beds",
-                "max": "Maximum Standard Beds"
-              }
-            },
-            "luxury": {
-              "dine": {
-                "value": "Current Luxury Diners",
-                "max": "Maximum Luxury Dining"
-              },
-              "sleep": {
-                "value": "Current Luxury Beds",
-                "max": "Maximum Luxury Beds"
-              }
-            },
-            "other": {
-              "dine": {
-                "value": "Current Other Diners",
-                "max": "Maximum Other Dining"
-              },
-              "sleep": {
-                "value": "Current Other Beds",
-                "max": "Maximum Other Beds"
-              }
-            }
-          },
+          "capacity": "Capacity",
           "rations": {
             "value": "Rations",
             "max": "Maximum Rations"
@@ -204,6 +173,7 @@
       },
       "base": {
         "FIELDS": {
+          "description": "Description",
           "rollFormula": "Roll Formula",
           "numDice": "Number of Dice",
           "therms": "Therms",
@@ -235,7 +205,8 @@
       "Wound": {
         "FIELDS": {
           "damage": "Damage",
-          "severity": "Severity"
+          "severity": "Severity",
+          "wound": "Wound"
         }
       },
       "Clothing": {
@@ -259,6 +230,7 @@
             "value": "Remaining Ammo",
             "max": "Maximum Ammo"
           },
+          "attack": "Attack",
           "damage": "Damage",
           "severity": "Severity",
           "range": { 
@@ -273,32 +245,22 @@
           },
           "reload": "Reload",
           "magazine": "Magazine",
-          "slashWound": "/W"
+          "slashWound": "/W",
+          "skill": "Skill"
         }
       },
       "Car": {
         "FIELDS": {
-          "power": "Power Usage",
-          "weight": "Tonnage",
-          "capacity": {
-            "standard": {
-              "dine": "Standard Dining Capacity",
-              "sleep": "Standard Sleeping Capacity"
-            },
-            "luxury": {
-              "dine": "Luxury Dining Capacity",
-              "sleep": "Luxury Sleeping Capacity"
-            },
-            "other": {
-              "dine": "Other Dining Capacity",
-              "sleep": "Other Sleeping Capacity"
-            }
-          }
+          "power": "Power",
+          "weight": "Weight",
+          "armor": "Armor",
+          "capacity": "Capacity"
         }
       },
       "Cargo": {
         "FIELDS": {
-          "purchasePrice": "Purchase Price"
+          "purchasePrice": "Purchase Price",
+          "weight": "Weight"
         }
       },
       "Ability": {
@@ -364,6 +326,13 @@
       },
       "train": {
         "changeLocomotiveWarning": "Changing the locomotive type will update several stats and any changes to them could be lost. Do you want to continue?"
+      },
+      "wound": {
+        "add": "Add",
+        "addWound": "Add a Wound",
+        "woundType": "Wound Type",
+        "damage": "Damage",
+        "severity": "Severity"
       }
     },
     "apps": {
@@ -403,18 +372,15 @@
     },
     "chat": {
       "result": {
-        "automaticFailure": "Automatic Failure",
-        "complicatedFailure": "Complicated Failure",
         "failure": "Failure",
-        "complicatedSuccess": "Complicated Success",
-        "success": "Success",
-        "greatSuccess": "Great Success"
+        "success": "Success"
       },
       "roll": {
         "rollRoll": "Making a roll at TN {tn}",
         "rollCheck": "Rolling a(n) {rollName} check at TN {tn}",
         "rollSave": "Rolling a(n) {rollName} save at TN {tn}",
-        "rollAttack": "Attacking with {rollName} at TN {tn}"
+        "rollAttack": "Attacking with {rollName} at TN {tn}",
+        "rollDefense": "Rolling to defend at TN {tn}"
       }
     }
   },
