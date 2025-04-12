@@ -59,18 +59,6 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     attributesClothing: {
       template: 'systems/railers/templates/item/attribute-parts/clothing.hbs',
     },
-    attributesCondition: {
-      template: 'systems/railers/templates/item/attribute-parts/condition.hbs',
-    },
-    attributesMutation: {
-      template: 'systems/railers/templates/item/attribute-parts/mutation.hbs',
-    },
-    attributesWeaponMod: {
-      template: 'systems/railers/templates/item/attribute-parts/weapon-mod.hbs',
-    },
-    attributesTrainMod: {
-      template: 'systems/railers/templates/item/attribute-parts/train-mod.hbs',
-    },
     attributesAbility: {
       template: 'systems/railers/templates/item/attribute-parts/ability.hbs',
     },
@@ -105,16 +93,16 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
         options.parts.push('attributesClothing', 'effects');
         break;
       case 'mutation':
-        options.parts.push('attributesMutation', 'effects');
+        options.parts.push('effects');
         break;
       case 'condition':
-        options.parts.push('attributesCondition', 'effects');
+        options.parts.push('effects');
         break;
       case 'weaponMod':
-        options.parts.push('attributesWeaponMod', 'effects');
+        options.parts.push('effects');
         break;
       case 'trainMod':
-        options.parts.push('attributesTrainMod', 'effects');
+        options.parts.push('effects');
         break;
       case 'ability':
         options.parts.push('attributesAbility', 'effects');
@@ -130,6 +118,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
   /** @override */
   async _prepareContext(options) {
     const context = {
+      editable: this.isEditable,
       item: this.item,
       // Adding system and flags for easier access
       system: this.item.system,
@@ -151,30 +140,20 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     switch (partId) {
       case 'attributesGear':
       case 'attributesWound':
-      case 'attributeCar':
-      case 'attributeWeapon':
-      case 'attributeCargo':
-      case 'attributeMutation':
-      case 'attributeCondition':
-      case 'attributeAbility':
-      case 'attributeTrainMod':
-      case 'attributeWeaponMod':
-      case 'attributeClothing':
-        // Necessary for preserving active tab on re-render
+      case 'attributesCar':
+      case 'attributesWeapon':
+      case 'attributesCargo':
+      case 'attributesAbility':
+      case 'attributesClothing':
         context.tab = context.tabs[partId];
         break;
       case 'description':
         context.tab = context.tabs[partId];
-        // Enrich description info for display
-        // Enrichment turns text like `[[/r 1d20]]` into buttons
         context.enrichedDescription = await TextEditor.enrichHTML(
           this.item.system.description,
           {
-            // Whether to show secret blocks in the finished html
             secrets: this.document.isOwner,
-            // Data to fill in for inline rolls
             rollData: this.item.getRollData(),
-            // Relative UUID resolution
             relativeTo: this.item,
           }
         );
@@ -226,39 +205,23 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
           tab.id = 'attributes';
           tab.label += 'Attributes';
           break;
-        case 'attributeCar':
+        case 'attributesCar':
           tab.id = 'attributes';
           tab.label += 'Attributes';
           break;
-        case 'attributeWeapon':
+        case 'attributesWeapon':
           tab.id = 'attributes';
           tab.label += 'Attributes';
           break;
-        case 'attributeClothing':
+        case 'attributesClothing':
           tab.id = 'attributes';
           tab.label += 'Attributes';
           break;
-        case 'attributeMutation':
+        case 'attributesCargo':
           tab.id = 'attributes';
           tab.label += 'Attributes';
           break;
-        case 'attributeCondition':
-          tab.id = 'attributes';
-          tab.label += 'Attributes';
-          break;
-        case 'attributeCargo':
-          tab.id = 'attributes';
-          tab.label += 'Attributes';
-          break;
-        case 'attributeWeaponMod':
-          tab.id = 'attributes';
-          tab.label += 'Attributes';
-          break;
-        case 'attributeTrainMod':
-          tab.id = 'attributes';
-          tab.label += 'Attributes';
-          break;
-        case 'attributeAbility':
+        case 'attributesAbility':
           tab.id = 'attributes';
           tab.label += 'Attributes';
           break;
