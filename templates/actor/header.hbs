@@ -8,7 +8,48 @@
         <input type="text" name="system.tags" value="{{system.tags}}" data-dtype="String" placeholder="Tags"/>
       </div>
       {{/if}}
+      {{#if (eq actor.type "train")}}
+      <div class="train-select">
+        <select name="system.locomotive" data-action="locomotiveChange">
+          {{selectOptions config.locomotiveOptions selected=system.locomotive localize=true}}
+        </select>
+      </div>
+      {{/if}}
     </div>
+    
+    {{#if (eq actor.type "train")}}
+    <div class="train-resources">
+      <div class="resource flex-group-center">
+        <label for="system.crew" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.crew"}}</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.crew" value="{{system.crew}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      <div class="resource flex-group-center">
+        <label for="system.passengers" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.passengers"}}</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.passengers" value="{{system.passengers}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      <div class="resource flex-group-center">
+        <label for="system.capacity" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.capacity"}}</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.capacity" value="{{system.capacity}}" data-dtype="Number" readonly/>
+        </div>
+      </div>
+
+      <div class="resource flex-group-center">
+        <label for="system.rations.value" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.rations.value"}}</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.rations.value" value="{{system.rations.value}}" data-dtype="Number"/>
+          <span> / </span>
+          <input type="number" name="system.rations.max" value="{{system.rations.max}}" data-dtype="Number"/>
+        </div>
+      </div>
+    </div>
+    {{/if}}
 
     {{#ifOr (eq actor.type "character") (eq actor.type "npc") (eq actor.type "demon")}}
     {{!-- HP --}}
@@ -51,15 +92,15 @@
     {{#if (eq actor.type "npc")}}
     <div class="npc-attributes">
       <div class="resource flex-group-center">
-        <label for="system.attributes.primary.value" class="resource-label roll" data-action="onStatRoll" data-npcpool="{{system.attributes.primary.value}}">{{localize "RAILERS.Attributes.Primary"}}</label>
+        <label for="system.attributes.primary.value" class="resource-label roll" data-action="statRoll" data-npcpool="{{system.attributes.primary.value}}">{{localize "RAILERS.Attributes.Primary"}}</label>
         <input type="number" name="system.attributes.primary.value" value="{{system.attributes.primary.value}}" data-dtype="Number"/>
       </div>
       <div class="resource flex-group-center">
-        <label for="system.attributes.secondary.value" class="resource-label roll" data-action="onStatRoll" data-npcpool="{{system.attributes.secondary.value}}">{{localize "RAILERS.Attributes.Secondary"}}</label>
+        <label for="system.attributes.secondary.value" class="resource-label roll" data-action="statRoll" data-npcpool="{{system.attributes.secondary.value}}">{{localize "RAILERS.Attributes.Secondary"}}</label>
         <input type="number" name="system.attributes.secondary.value" value="{{system.attributes.secondary.value}}" data-dtype="Number" readonly/>
       </div>
       <div class="resource flex-group-center">
-        <label class="resource-label roll" data-action="onStatRoll" data-npcpool="0">{{localize "RAILERS.Attributes.Unskilled"}}</label>
+        <label class="resource-label roll" data-action="statRoll" data-npcpool="0">{{localize "RAILERS.Attributes.Unskilled"}}</label>
         <input type="number" value="0" data-dtype="Number" readonly/>
       </div>
     </div>
@@ -91,7 +132,7 @@
 
     {{!-- Defense Pool --}}
     <div class="resource flex-group-center">
-      <label class="resource-label rollable" data-roll="(@defensePool)d8x8cs>=5">{{localize "RAILERS.Actor.base.FIELDS.defensePool"}}</label>
+      <label class="resource-label rollable" data-action="defenseRoll">{{localize "RAILERS.Actor.base.FIELDS.defensePool"}}</label>
       <input type="number" name="system.defensePool" value="{{system.defensePool}}" data-dtype="Number" readonly/>
     </div>
     {{/ifOr}}
@@ -111,22 +152,22 @@
   {{!-- Attributes --}}
   <div class="demon-attributes">
     <div class="resource flex-group-center">
-      <label for="system.attributes.strength.value" class="resource-label flex-group-center roll" data-action="onStatRoll" data-npcpool="{{system.attributes.strength.value}}">{{localize "RAILERS.Attributes.Strength"}}</label>
+      <label for="system.attributes.strength.value" class="resource-label flex-group-center roll" data-action="statRoll" data-npcpool="{{system.attributes.strength.value}}">{{localize "RAILERS.Attributes.Strength"}}</label>
       <input type="number" name="system.attributes.strength.value" value="{{system.attributes.strength.value}}" data-dtype="Number"/>
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.attributes.agility.value" class="resource-label flex-group-center roll" data-action="onStatRoll" data-npcpool="{{system.attributes.agility.value}}">{{localize "RAILERS.Attributes.Agility"}}</label>
+      <label for="system.attributes.agility.value" class="resource-label flex-group-center roll" data-action="statRoll" data-npcpool="{{system.attributes.agility.value}}">{{localize "RAILERS.Attributes.Agility"}}</label>
       <input type="number" name="system.attributes.agility.value" value="{{system.attributes.agility.value}}" data-dtype="Number"/>
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.attributes.intellect.value" class="resource-label flex-group-center roll" data-action="onStatRoll" data-npcpool="{{system.attributes.intellect.value}}">{{localize "RAILERS.Attributes.Intellect"}}</label>
+      <label for="system.attributes.intellect.value" class="resource-label flex-group-center roll" data-action="statRoll" data-npcpool="{{system.attributes.intellect.value}}">{{localize "RAILERS.Attributes.Intellect"}}</label>
       <input type="number" name="system.attributes.intellect.value" value="{{system.attributes.intellect.value}}" data-dtype="Number"/>
     </div>
 
     <div class="resource flex-group-center">
-      <label for="system.attributes.endurance.value" class="resource-label flex-group-center roll" data-action="onStatRoll" data-npcpool="{{system.attributes.endurance.value}}">{{localize "RAILERS.Attributes.Endurance"}}</label>
+      <label for="system.attributes.endurance.value" class="resource-label flex-group-center roll" data-action="statRoll" data-npcpool="{{system.attributes.endurance.value}}">{{localize "RAILERS.Attributes.Endurance"}}</label>
       <input type="number" name="system.attributes.endurance.value" value="{{system.attributes.endurance.value}}" data-dtype="Number"/>
     </div>
 
@@ -175,55 +216,20 @@
     <div class="resource flex-group-center">
       <label for="system.weight.value" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.weight.label"}}</label>
       <div class="resource-content flexrow flex-center flex-between">
-        <input type="number" name="system.weight.value" value="{{system.weight.value}}" data-dtype="Number"/>
+        <input type="number" class="w50" name="system.weight.value" value="{{system.weight.value}}" data-dtype="Number"/>
         <span> / </span>
-        <input type="number" name="system.weight.max" value="{{system.weight.max}}" data-dtype="Number"/>
+        <input type="number" class="w50" name="system.weight.max" value="{{system.weight.max}}" data-dtype="Number"/>
       </div>
     </div>
 
     <div class="resource flex-group-center">
       <label for="system.fuel.value" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.fuel.value"}}</label>
       <div class="resource-content flexrow flex-center flex-between">
-        <input type="number" name="system.fuel.value" value="{{system.fuel.value}}" data-dtype="Number"/>
+        <input type="number" class="w40" name="system.fuel.value" value="{{system.fuel.value}}" data-dtype="Number"/>
         <span> / </span>
-        <input type="number" name="system.fuel.max" value="{{system.fuel.max}}" data-dtype="Number"/>
+        <input type="number" class="w40" name="system.fuel.max" value="{{system.fuel.max}}" data-dtype="Number"/>
       </div>
     </div>
-
-    <div class="resource flex-group-center">
-      <label for="system.crew" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.crew"}}</label>
-      <div class="resource-content flexrow flex-center flex-between">
-        <input type="number" name="system.crew" value="{{system.crew}}" data-dtype="Number"/>
-      </div>
-    </div>
-
-    <div class="resource flex-group-center">
-      <label for="system.passengers" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.passengers"}}</label>
-      <div class="resource-content flexrow flex-center flex-between">
-        <input type="number" name="system.passengers" value="{{system.passengers}}" data-dtype="Number"/>
-      </div>
-    </div>
-
-    <div class="resource flex-group-center">
-      <label for="system.rations.value" class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.rations.value"}}</label>
-      <div class="resource-content flexrow flex-center flex-between">
-        <input type="number" name="system.rations.value" value="{{system.rations.value}}" data-dtype="Number"/>
-        <span> / </span>
-        <input type="number" name="system.rations.max" value="{{system.rations.max}}" data-dtype="Number"/>
-      </div>
-    </div>
-  </div>
-  {{/if}}
-
-
-
-
-
-  {{#if (eq actor.type "train")}}
-  <div class="train-select">
-    <select name="system.locomotive" data-action="locomotiveChange">
-      {{selectOptions config.locomotiveOptions selected=system.locomotive localize=true}}
-    </select>
   </div>
   {{/if}}
 </header>

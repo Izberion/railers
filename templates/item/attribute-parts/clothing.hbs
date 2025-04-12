@@ -5,17 +5,17 @@
   data-tab='attributes'
 >
   <div class="resource">
-    <label class="resource-label">{{localize "RAILERS.Type"}}</label>
-    <select name="system.clothingType">
-      {{selectOptions clothingTypeOptions selected=system.clothingType localize=true}}
+    <label class="resource-label">{{localize "RAILERS.Item.Clothing.FIELDS.layer.label"}}</label>
+    <select name="system.layer">
+      {{selectOptions config.clothingTypeOptions selected=system.layer localize=true}}
     </select>
   </div>
   <div class="resource">
-    <label class="resource-label">{{localize "RAILERS.Protection"}}</label>
+    <label class="resource-label">{{localize "RAILERS.Item.Clothing.FIELDS.protection"}}</label>
     <input type="number" name="system.protection" value="{{system.protection}}" data-dtype="Number"/>
   </div>
   <div class="resource">
-    <label class="resource-label">{{localize "RAILERS.Insulation"}}</label>
+    <label class="resource-label">{{localize "RAILERS.Item.Clothing.FIELDS.insulation"}}</label>
     <input type="number" name="system.insulation" value="{{system.insulation}}" data-dtype="Number"/>
   </div>
 </section>

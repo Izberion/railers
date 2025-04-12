@@ -4,20 +4,46 @@
   data-group='primary'
   data-tab='attributes'
 >
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.TrainArmor"}}</label>
-        <input type="number" name="system.armor" value="{{system.armor}}" data-dtype="Number"/>
+  <div class="resource">
+    <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.armor"}}</label>
+    <input type="number" name="system.armor" value="{{system.armor}}" data-dtype="Number"/>
+  </div>
+
+  <div class="resource">
+    <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.power"}}</label>
+    <input type="number" name="system.power" value="{{system.power}}" data-dtype="Number"/>
+  </div>
+
+  <div class="resource">
+    <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.weight"}}</label>
+    <input type="number" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
+  </div>
+
+  <div class="resource capacity-group">
+    <h3>{{localize "RAILERS.Item.Car.FIELDS.capacity.label"}}</h3>
+    <div class="resource capacity-subgroup">
+      <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacity.standard.dine"}}</label>
+      <input type="number" name="system.capacity.standard.dine" value="{{system.capacity.standard.dine}}" data-dtype="Number"/>
     </div>
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Capacity"}}</label>
-        <input type="number" name="system.capacity" value="{{system.capacity}}" data-dtype="Number"/>
+    <div class="resource capacity-subgroup">
+      <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacity.standard.sleep"}}</label>
+      <input type="number" name="system.capacity.standard.sleep" value="{{system.capacity.standard.sleep}}" data-dtype="Number"/>
     </div>
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Power"}}</label>
-        <input type="number" name="system.power" value="{{system.power}}" data-dtype="Number"/>
+    <div class="resource capacity-subgroup">
+      <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacity.luxury.dine"}}</label>
+      <input type="number" name="system.capacity.luxury.dine" value="{{system.capacity.luxury.dine}}" data-dtype="Number"/>
     </div>
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Weight"}}</label>
-        <input type="number" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
+    <div class="resource capacity-subgroup">
+      <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacity.luxury.sleep"}}</label>
+      <input type="number" name="system.capacity.luxury.sleep" value="{{system.capacity.luxury.sleep}}" data-dtype="Number"/>
     </div>
+    <div class="resource capacity-subgroup">
+      <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacity.other.dine"}}</label>
+      <input type="number" name="system.capacity.other.dine" value="{{system.capacity.other.dine}}" data-dtype="Number"/>
+    </div>
+    <div class="resource capacity-subgroup">
+      <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacity.other.sleep"}}</label>
+      <input type="number" name="system.capacity.other.sleep" value="{{system.capacity.other.sleep}}" data-dtype="Number"/>
+    </div>
+  </div>
 </section>

@@ -1,28 +1,27 @@
 <div>
     <div class="modifier grid">
-        <label for="modifier">{{localize "RAILERS.Modifier"}}:</label>
+        <label for="modifier">{{localize "RAILERS.dialogs.base.modifier"}}:</label>
         <input type="number" name="modifier" value="0" />
     </div>
     <div class="form-group grid">
-        <label for="tn">{{localize "RAILERS.SelectTN"}}:</label>
+        <label for="tn">{{localize "RAILERS.dialogs.base.selectTN"}}:</label>
         <select name="tn" id="tn">
-            <option value="4">{{localize "RAILERS.TN4"}}</option>
-            <option selected value="5">{{localize "RAILERS.TN5"}}</option>
-            <option value="6">{{localize "RAILERS.TN6"}}</option>
-            <option value="7">{{localize "RAILERS.TN7"}}</option>
-            <option value="8">{{localize "RAILERS.TN8"}}</option>
+            <option value="5">{{localize "RAILERS.dialogs.base.tn5"}}</option>
+            <option selected value="6">{{localize "RAILERS.dialogs.base.tn6"}}</option>
+            <option value="7">{{localize "RAILERS.dialogs.base.tn7"}}</option>
+            <option value="8">{{localize "RAILERS.dialogs.base.tn8"}}</option>
         </select>
     </div>
     {{#if isRanged}}
     <div class="form-group grid">
-      <label for="actionType">{{localize "RAILERS.SelectActionType"}}:</label>
+      <label for="actionType">{{localize "RAILERS.dialogs.attack.selectActionType"}}:</label>
       <select name="actionType">
-        <option value="singleFire">{{localize "RAILERS.SingleFire"}}</option>
-        <option value="blindFire">{{localize "RAILERS.BlindFire"}}</option>
-        <option value="burstFire">{{localize "RAILERS.BurstFire"}}</option>
-        <option value="sustainedFire">{{localize "RAILERS.SustainedFire"}}</option>
-        <option value="fieldOfFire">{{localize "RAILERS.FieldOfFire"}}</option>
-        <option value="reactiveShot">{{localize "RAILERS.ReactiveShot"}}</option>
+        <option value="singleFire">{{localize "RAILERS.dialogs.attack.singleFire"}}</option>
+        <option value="blindFire">{{localize "RAILERS.dialogs.attack.blindFire"}}</option>
+        <option value="burstFire">{{localize "RAILERS.dialogs.attack.burstFire"}}</option>
+        <option value="sustainedFire">{{localize "RAILERS.dialogs.attack.sustainedFire"}}</option>
+        <option value="fieldOfFire">{{localize "RAILERS.dialogs.attack.fieldOfFire"}}</option>
+        <option value="reactiveShot">{{localize "RAILERS.dialogs.attack.reactiveShot"}}</option>
       </select>
     </div>
     {{/if}}

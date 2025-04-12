@@ -6,17 +6,17 @@
 >
     <div class="grid grid-3col">
         <div class="resource">
-            <label class="resource-label">{{localize "RAILERS.Quantity"}}</label>
+            <label class="resource-label">{{localize "RAILERS.Item.base.FIELDS.quantity"}}</label>
             <input type="number" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
         </div>
         <div class="resource">
-            <label class="resource-label">{{localize "RAILERS.Load"}}</label>
+            <label class="resource-label">{{localize "RAILERS.Item.base.FIELDS.load"}}</label>
             <input type="number" name="system.load" value="{{system.load}}" data-dtype="Number"/>
         </div>
         <div class="resource">
-            <label class="resource-label">{{localize "RAILERS.Stowage"}}</label>
+            <label class="resource-label">{{localize "RAILERS.Item.base.FIELDS.stowage.label"}}</label>
             <select name="system.stowage">
-            {{selectOptions stowageOptions selected=system.stowage localize=true}}
+            {{selectOptions config.stowageOptions selected=system.stowage localize=true}}
             </select>
         </div>
     </div>

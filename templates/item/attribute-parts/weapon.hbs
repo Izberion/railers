@@ -5,43 +5,39 @@
   data-tab='attributes'
 >
     <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.RollFormula"}}</label>
-        <input type="text" name="system.formula" value="{{system.formula}}" data-dtype="String"/>
-    </div>
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Damage"}}</label>
+        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.damage"}}</label>
         <input type="number" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
     </div>
     <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Severity"}}</label>
+        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.severity"}}</label>
         <input type="number" name="system.severity" value="{{system.severity}}" data-dtype="Number"/>
     </div>
     <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Attack"}}</label>
+        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.attack"}}</label>
         <select name="system.attack">
-            {{selectOptions actionOptions selected=system.attack localize=true}}
+            {{selectOptions config.actionTypeOptions selected=system.attack localize=true}}
         </select>
     </div>
         <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Range"}}</label>
+        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.range.label"}}</label>
         <select name="system.range">
-            {{selectOptions rangeOptions selected=system.range localize=true}}
+            {{selectOptions config.rangeOptions selected=system.range localize=true}}
         </select>
     </div>
     <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Reload"}}</label>
+        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.reload"}}</label>
         <select name="system.reload">
-            {{selectOptions actionOptions selected=system.reload localize=true}}
+            {{selectOptions config.actionTypeOptions selected=system.reload localize=true}}
         </select>
     </div>
     <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Magazine"}}</label>
+        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.magazine"}}</label>
         <input type="number" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
     </div>
     <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Skill"}}</label>
+        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.skill"}}</label>
         <select name="system.skill">
-            {{selectOptions weaponSkillOptions selected=system.skill localize=true}}
+            {{selectOptions config.weaponSkillOptions selected=system.skill localize=true}}
         </select>
     </div>
     {{system.attribute}}
