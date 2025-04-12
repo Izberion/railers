@@ -26,9 +26,7 @@ export class RailersActor extends Actor {
    * is queried and has a roll executed directly from it).
    */
   prepareDerivedData() {
-    const actorData = this;
     const systemData = this.system;
-    const flags = actorData.flags.railers || {};
 
     switch (this.type) {
       case 'character':
@@ -46,38 +44,26 @@ export class RailersActor extends Actor {
       }
 
       if (this.type === "character" || this.type === "npc" || this.type === "demon") {
+        
         let totalWounds = 0;
         let totalDamage = 0;
-  
-        // Store the maximum hitposystem.ints value
         let maxHitpoints = systemData.hitpoints.max;
-  
-        // Iterate over the items in the actor
         this.items.forEach(item => {
           if (item.type === "wound") {
-            // Increase the total wounds and damage
             totalWounds += item.system.severity;
             totalDamage += item.system.damage;
           }
         });
-  
-        // Update the actor's data
         systemData.wounds.value = totalWounds;
         systemData.hitpoints.value = maxHitpoints - totalDamage;
      
         
         if (this.type === "character" || this.type === "npc") {
   
-          // Initialize total loads
           let totalOnHandLoad = 0;
           let totalStowedLoad = 0;
-  
-          // Iterate over each item
           for (let item of this.items) {
-            // Calculate the item's total load based on its quantity
             let totalItemLoad = item.system.load * item.system.quantity;
-  
-            // Add the item's total load to the correct total
             if (item.system.stowage === 'onHand') {
               totalOnHandLoad += totalItemLoad;
             } else if (item.system.stowage === 'stowed') {
@@ -88,16 +74,10 @@ export class RailersActor extends Actor {
           systemData.load.stowed.value = totalStowedLoad;
   
   
-          // Initialize total insulation and protection
           let totalInsulation = 0;
           let totalProtection = 0;
-  
-          // Loop through all items
           for (let item of this.items) {
-  
-            // Check if the item is on hand
             if (item.type === 'clothing' && item.system.stowage === 'onHand') {
-              // Add the item's insulation and protection to the total
               totalInsulation += item.system.insulation;
               totalProtection += item.system.protection;
             }
@@ -111,7 +91,6 @@ export class RailersActor extends Actor {
             systemData.defensePool = totalProtection + systemData.attributes.secondary.value;
           }
   
-          // Calculate thermal threshold
           systemData.thermalThreshold = -1 * totalInsulation;
         
         }
@@ -146,23 +125,29 @@ export class RailersActor extends Actor {
           systemData.speed = speed - speedReduction;
           systemData.speed = Math.max(systemData.speed, 2);
         }
-
+      
         let totalPower = 0;
         let totalWeight = 0;
-        let maxPower = systemData.power.max;
-        let maxWeight = systemData.weight.max;
+        let totalCapacity = systemData.capacity;
+      
+        const maxPower = systemData.power.max;
+        const maxWeight = systemData.weight.max;
+      
         for (let item of this.items) {
           if (item.type === "car") {
-            totalPower += item.system.power;
-            totalWeight += item.system.weight;
+            totalPower += item.system.power || 0;
+            totalWeight += item.system.weight || 0;
+            totalCapacity += item.system.capacity || 0;
           } else {
-            totalWeight += item.system.weight;
+            totalWeight += item.system.weight || 0;
           }
         }
+      
+        // Update systemData
         systemData.power.value = maxPower - totalPower;
         systemData.weight.value = maxWeight - totalWeight;
+        systemData.capacity = totalCapacity;
       }
-
 
   /**
    *
