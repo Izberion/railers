@@ -1,48 +1,14 @@
+{{! Biography Tab }}
 <section
   class='tab biography {{tab.cssClass}}'
   data-group='primary'
   data-tab='biography'
 >
-  <div class="asl">
-    <div class="widthmin">
-      <label for="system.age">{{localize "RAILERS.Actor.Character.FIELDS.age"}}:</label>
-      <input type="text" name="system.age" value="{{system.age}}">  
-    </div>
-    <div class="widthmin">
-      <label for="system.sex">{{localize "RAILERS.Actor.Character.FIELDS.sex"}}:</label>
-      <input type="text" name="system.sex" value="{{system.sex}}">
-    </div>
-    <div class="fillspace">
-      <label for="system.hometown">{{localize "RAILERS.Actor.Character.FIELDS.hometown"}}:</label>
-      <input type="text" name="system.hometown" value="{{system.hometown}}">
-    </div>  
-  </div>
-  <div class="contacts">
-    <div>
-      <label for="system.allies">{{localize "RAILERS.Actor.Character.FIELDS.allies"}}:</label>
-      <textarea name="system.allies" rows="4" cols="50">{{system.allies}}</textarea>
-    </div>
-    <div>
-      <label for="system.rivals">{{localize "RAILERS.Actor.Character.FIELDS.rivals"}}:</label>
-      <textarea name="system.rivals" rows="4" cols="50">{{system.rivals}}</textarea>
-    </div>
-  </div>
-  <div class="achievements">
-    <div>
-      <label for="system.successes">{{localize "RAILERS.Actor.Character.FIELDS.successes"}}:</label>
-      <textarea name="system.successes" rows="4" cols="50">{{system.successes}}</textarea>
-    </div>
-    <div>
-      <label for="system.failures">{{localize "RAILERS.Actor.Character.FIELDS.failures"}}:</label>
-      <textarea name="system.failures" rows="4" cols="50">{{system.failures}}</textarea>
-    </div>
-    <div>
-      <label for="system.goals">{{localize "RAILERS.Actor.Character.FIELDS.goals"}}:</label>
-      <textarea name="system.goals" rows="4" cols="50">{{system.goals}}</textarea>
-    </div>
-  </div>
-  <div>
-    <label for="system">{{localize "RAILERS.Actor.base.FIELDS.notes"}}:</label>
-    <textarea name="system.notes" rows="4" cols="50">{{system.notes}}</textarea>
-  </div>
+  {{! Editors must receive enriched text data from getData to properly handle rolls, UUID links, etc. }}
+  {{#if editable}} 
+    <prose-mirror name="system.biography" data-document-u-u-i-d="{{actor.uuid}}" value="{{system.biography}}" collaborate="true" toggled="true">
+      {{{enrichedBiography}}}
+    </prose-mirror>
+  {{else}} {{{enrichedBiography}}}
+  {{/if}}
 </section>

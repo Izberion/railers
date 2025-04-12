@@ -42,54 +42,6 @@ export default class RailersCharacter extends RailersActorBase {
       }, {})
     );
 
-    schema.age = new fields.StringField({
-      required: false,
-      nullable: false,
-      blank: true
-    });
-
-    schema.sex = new fields.StringField({
-      required: false,
-      nullable: false,
-      blank: true
-    });
-
-    schema.hometown = new fields.StringField({
-      required: false,
-      nullable: false,
-      blank: true
-    });
-
-    schema.allies = new fields.StringField({
-      required: false,
-      nullable: false,
-      blank: true
-    });
-
-    schema.rivals = new fields.StringField({
-      required: false,
-      nullable: false,
-      blank: true
-    });
-
-    schema.successes = new fields.StringField({
-      required: false,
-      nullable: false,
-      blank: true
-    });
-
-    schema.failures = new fields.StringField({
-      required: false,
-      nullable: false,
-      blank: true
-    });
-
-    schema.goals = new fields.StringField({
-      required: false,
-      nullable: false,
-      blank: true
-    });
-
     schema.therms = new fields.NumberField({
       required: false,
       nullable: true,

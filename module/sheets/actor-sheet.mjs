@@ -150,6 +150,17 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       case 'cargo':
         context.tab = context.tabs[partId];
         break;
+      case 'biography':
+      context.tab = context.tabs[partId];
+      context.enrichedBiography = await TextEditor.enrichHTML(
+        this.actor.system.biography,
+        {
+          secrets: this.document.isOwner,
+          rollData: this.actor.getRollData(),
+          relativeTo: this.actor,
+        }
+      );
+      break;
       case 'notes':
         context.tab = context.tabs[partId];
         context.enrichedNotes = await TextEditor.enrichHTML(

@@ -129,6 +129,8 @@ export default class RailersActorBase extends foundry.abstract.TypeDataModel {
       })
     });
 
+    schema.biography = new fields.HTMLField(); 
+
     schema.notes = new fields.HTMLField(); 
 
     return schema;
