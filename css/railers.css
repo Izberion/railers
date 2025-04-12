@@ -319,12 +319,6 @@
 .railers .demon .sheet-body {
   padding-left: 130px;
 }
-.railers .tox .tox-editor-container {
-  background: #fff;
-}
-.railers .tox .tox-edit-area {
-  padding: 0 8px;
-}
 .railers .resource-label {
   font-weight: bold;
 }
@@ -503,14 +497,6 @@
 .railers .items-list .item-description {
   text-align: left;
 }
-.railers .item-formula,
-.railers .weapon-formula,
-.railers .clothing-formula {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 200px;
-  flex: 0 0 200px;
-  padding: 0 8px;
-}
 .railers .effects .item .effect-source,
 .railers .effects .item .effect-duration,
 .railers .effects .item .effect-description,
@@ -525,13 +511,6 @@
 }
 .railers .widthmin {
   width: min-content;
-}
-.railers .asl,
-.railers .achievements,
-.railers .contacts {
-  display: flex;
-  padding-bottom: 10px;
-  gap: 10px;
 }
 .railers .fillspace {
   width: -webkit-fill-available;
