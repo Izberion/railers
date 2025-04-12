@@ -41,12 +41,11 @@ Hooks.once('init', async function() {
    */
   
   CONFIG.Combat.initiative = {
-    formula: "(@initiativePool)d8x8cs>=5 + (@initiativePool) / 100",
+    formula: "(@initiativePool)d8x8cs>=6df=1 + (@initiativePool) / 100",
     decimals: 2
   };
 
   
-  // Define custom Document classes
   CONFIG.Actor.documentClass = RailersActor;
 
   CONFIG.Actor.dataModels = {
