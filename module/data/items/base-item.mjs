@@ -6,16 +6,14 @@ export default class RailersItemBase extends foundry.abstract.TypeDataModel {
     const fields = foundry.data.fields;
     const schema = {};
     
-    schema.description = new fields.StringField({
+    schema.description = new fields.HTMLField({
       required: true,
-      blank: true,
-      initial: ""
+      blank: true
     });
 
     schema.name = new fields.StringField({
       required: true,
       blank: true,
-      initial: ""
     });
 
     schema.rollFormula = new fields.StringField({
@@ -45,7 +43,7 @@ export default class RailersItemBase extends foundry.abstract.TypeDataModel {
       required: false,
       nullable: true,
       integer: true,
-      initial: null,
+      initial: 0,
       min: 0
     });
 
@@ -53,7 +51,7 @@ export default class RailersItemBase extends foundry.abstract.TypeDataModel {
       required: false,
       nullable: true,
       integer: true,
-      initial: null,
+      initial: 0,
       min: 0
     });
 
@@ -61,7 +59,7 @@ export default class RailersItemBase extends foundry.abstract.TypeDataModel {
       required: false,
       nullable: true,
       blank: true,
-      initial: null,
+      initial: "other",
       choices: Object.keys(CONFIG.RAILERS.stowageOptions)
     });
 

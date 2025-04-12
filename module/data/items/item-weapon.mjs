@@ -10,7 +10,7 @@ export default class RailersWeapon extends RailersItemBase {
     const fields = foundry.data.fields;
     const schema = super.defineSchema();
 
-    schema.ammo = new fields.SchemaField({
+    schema.magazine = new fields.SchemaField({
       value: new fields.NumberField({
         required: false,
         nullable: true,
@@ -66,6 +66,22 @@ export default class RailersWeapon extends RailersItemBase {
       initial: 'melee',
       choices: Object.keys(CONFIG.RAILERS.weaponSkillOptions)
     });
+
+    schema.attack = new fields.StringField({
+      required: true,
+      nullable: false,
+      blank: false,
+      initial: 'major',
+      choices: Object.keys(CONFIG.RAILERS.actionTypeOptions)
+    })
+
+    schema.reload = new fields.StringField({
+      required: true,
+      nullable: false,
+      blank: false,
+      initial: 'na',
+      choices: Object.keys(CONFIG.RAILERS.actionTypeOptions)
+    })
 
     schema.roll = new fields.SchemaField({
       diceNum: new fields.NumberField({

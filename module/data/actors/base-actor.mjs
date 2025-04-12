@@ -1,5 +1,4 @@
-export default class RailersActorBase extends foundry.abstract
-  .TypeDataModel {
+export default class RailersActorBase extends foundry.abstract.TypeDataModel {
 
   static LOCALIZATION_PREFIXES = ['RAILERS.Actor.base'];
 
@@ -13,8 +12,7 @@ export default class RailersActorBase extends foundry.abstract
       value: new fields.NumberField({
         required: false,
         nullable: true,
-        initial: 12,
-        min: 0,
+        initial: 12
       }),
       max: new fields.NumberField({ 
         required: false,
@@ -46,8 +44,7 @@ export default class RailersActorBase extends foundry.abstract
         required: false,
         nullable: true,
         integer: true,
-        initial: 20,
-        min: 0,
+        initial: 20
       }),
       max: new fields.NumberField({
         required: false,
@@ -70,8 +67,7 @@ export default class RailersActorBase extends foundry.abstract
       required: false,
       nullable: true,
       integer: true,
-      initial: null,
-      min: 0,
+      initial: null
     });
 
     schema.initiativePool = new fields.NumberField({
@@ -127,13 +123,13 @@ export default class RailersActorBase extends foundry.abstract
           required: false,
           nullable: true,
           integer: true,
-          initial: null,
+          initial: 0,
           min: 0
         })
       })
     });
 
-    schema.notes = new fields.StringField({ required: false, blank: true }); 
+    schema.notes = new fields.HTMLField(); 
 
     return schema;
   }

@@ -13,7 +13,7 @@ export default class RailersCharacter extends RailersActorBase {
       nullable: false,
       integer: true,
       initial: 0,
-      min: 0,
+      min: 0
     });
 
     schema.attributes = new fields.SchemaField(
@@ -90,7 +90,12 @@ export default class RailersCharacter extends RailersActorBase {
       blank: true
     });
 
-    
+    schema.therms = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: 0
+    });
 
     return schema;
   }

@@ -8,7 +8,7 @@ export default class RailersAbility extends RailersItemBase {
 
   static defineSchema() {
     const fields = foundry.data.fields;
-    const schema = {};
+    const schema = super.defineSchema();
 
     schema.action = new fields.StringField({
       required: true,

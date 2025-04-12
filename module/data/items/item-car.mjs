@@ -19,64 +19,28 @@ export default class RailersCar extends RailersItemBase {
     });
 
     schema.weight = new fields.NumberField({
-        required: true,
-        nullable: false,
-        integer: true,
-        initial: 0,
-        min: 0,
+      required: true,
+      nullable: false,
+      integer: true,
+      initial: 0,
+      min: 0,
     });
 
-    schema.capacity = new fields.SchemaField({
-      standard: new fields.SchemaField({
-        dine: new fields.NumberField({
-          required: false,
-          nullable: true,
-          integer: true,
-          initial: null,
-          min: 0
-        }),
-        sleep: new fields.NumberField({
-          required: false,
-          nullable: true,
-          integer: true,
-          initial: null,
-          min: 0
-        })
-      }),
-      luxury: new fields.SchemaField({
-        dine: new fields.NumberField({
-          required: false,
-          nullable: true,
-          integer: true,
-          initial: null,
-          min: 0
-        }),
-        sleep: new fields.NumberField({
-          required: false,
-          nullable: true,
-          integer: true,
-          initial: null,
-          min: 0
-        })
-      }),
-      other: new fields.SchemaField({
-        dine: new fields.NumberField({
-          required: false,
-          nullable: true,
-          integer: true,
-          initial: null,
-          min: 0
-        }),
-        sleep: new fields.NumberField({
-          required: false,
-          nullable: true,
-          integer: true,
-          initial: null,
-          min: 0
-        })
-      })
+    schema.capacity = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: 0,
+      min: 0
     });
 
+    schema.armor = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: 0,
+      min: 0
+    });
     return schema;
   }
 }

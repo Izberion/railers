@@ -76,6 +76,13 @@ export default class RailersTrain extends RailersActorBase {
       })
     });
 
+    schema.capacity = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: 0,
+      min: 0
+    });
 
     return schema;
   }
