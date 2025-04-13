@@ -141,12 +141,6 @@ export default class RailersWeapon extends RailersItemBase {
     return game.i18n.localize(key);
   }
 
-  get localizedAction() {
-    if (!this.action) return "";
-    const key = CONFIG.RAILERS.actionTypeOptions[this.action] || this.action;
-    return game.i18n.localize(key);
-  }
-
   get localizedRange() {
     if (!this.range) return "";
     const key = CONFIG.RAILERS.rangeOptions[this.range] || this.range;
