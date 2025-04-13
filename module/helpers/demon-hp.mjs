@@ -1,9 +1,25 @@
 export async function onRollHp(event, actor) {
-    event.preventDefault();
-    if(actor.type === 'demon') {
-      let endurance = Number(actor.system.attributes.endurance.value);
-      let roll = await new Roll(`${endurance}d8`).roll();  
-      actor.update({'system.hitpoints.max': roll.result});     
+  event.preventDefault();
+  if (actor.type !== 'demon') return;
+
+  let useSwarmRoll = false;
+  const effectName = "Swarm"; // Update if different
+  for (const item of actor.items) {
+    if (item.type === 'ability' && item.effects.some(e => e.name === effectName && !e.disabled)) {
+      useSwarmRoll = true;
+      break;
     }
+  }
+
+  // Roll HP
+  let rollFormula;
+  if (useSwarmRoll) {
+    rollFormula = "2d8";
+  } else {
+    const endurance = Number(actor.system.attributes.endurance.value) || 0;
+    rollFormula = `${endurance}d8`;
+  }
+
+  const roll = await new Roll(rollFormula).evaluate();
+  await actor.update({ 'system.hitpoints.max': roll.total });
 }
-  
