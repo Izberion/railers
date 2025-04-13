@@ -43,111 +43,145 @@ export class RailersActor extends Actor {
         break;
       }
 
-      if (this.type === "character" || this.type === "npc" || this.type === "demon") {
-        
-        let totalWounds = 0;
-        let totalDamage = 0;
-        let maxHitpoints = systemData.hitpoints.max;
-        this.items.forEach(item => {
-          if (item.type === "wound") {
-            totalWounds += item.system.severity;
-            totalDamage += item.system.damage;
-          }
-        });
-        systemData.wounds.value = totalWounds;
-        systemData.hitpoints.value = maxHitpoints - totalDamage;
-     
-        
-        if (this.type === "character" || this.type === "npc") {
-  
-          let totalOnHandLoad = 0;
-          let totalStowedLoad = 0;
-          for (let item of this.items) {
-            let totalItemLoad = item.system.load * item.system.quantity;
-            if (item.system.stowage === 'onHand') {
-              totalOnHandLoad += totalItemLoad;
-            } else if (item.system.stowage === 'stowed') {
-              totalStowedLoad += totalItemLoad;
-            }
-          }
-          systemData.load.onHand.value = totalOnHandLoad;
-          systemData.load.stowed.value = totalStowedLoad;
-  
-  
-          let totalInsulation = 0;
-          let totalProtection = 0;
-          for (let item of this.items) {
-            if (item.type === 'clothing' && item.system.stowage === 'onHand') {
-              totalInsulation += item.system.insulation;
-              totalProtection += item.system.protection;
-            }
-          }
+    if (this.type === "character" || this.type === "npc" || this.type === "demon") {
+      
+      let totalWounds = 0;
+      let totalDamage = 0;
+      let maxHitpoints = systemData.hitpoints.max;
+      this.items.forEach(item => {
+        if (item.type === "wound") {
+          totalWounds += item.system.severity;
+          totalDamage += item.system.damage;
+        }
+      });
+      systemData.wounds.value = totalWounds;
+      systemData.hitpoints.value = maxHitpoints - totalDamage;
+    
+      
+      if (this.type === "character" || this.type === "npc") {
 
-          if (this.type === "character") {
-            systemData.defensePool = totalProtection + systemData.attributes.prowess.value;
+        let totalOnHandLoad = 0;
+        let totalStowedLoad = 0;
+        for (let item of this.items) {
+          let totalItemLoad = item.system.load * item.system.quantity;
+          if (item.system.stowage === 'onHand') {
+            totalOnHandLoad += totalItemLoad;
+          } else if (item.system.stowage === 'stowed') {
+            totalStowedLoad += totalItemLoad;
           }
-  
-          if (this.type === "npc") {
-            systemData.defensePool = totalProtection + systemData.attributes.secondary.value;
+        }
+        systemData.load.onHand.value = totalOnHandLoad;
+        systemData.load.stowed.value = totalStowedLoad;
+
+
+        let totalInsulation = 0;
+        let totalProtection = 0;
+        for (let item of this.items) {
+          if (item.type === 'clothing' && item.system.stowage === 'onHand') {
+            totalInsulation += item.system.insulation;
+            totalProtection += item.system.protection;
           }
+        }
+
+        if (this.type === "character") {
+          systemData.defensePool = totalProtection + systemData.attributes.prowess.value;
+        }
+
+        if (this.type === "npc") {
+          systemData.defensePool = totalProtection + systemData.attributes.secondary.value;
+        }
+
+        systemData.thermalThreshold = -1 * totalInsulation;
+      
+      }
+    }
+  }
+
+  _prepareCharacterData(systemData) {
+    systemData.wounds.max = 6 + systemData.attributes.fortitude.value + systemData.attributes.fortitude.skills.endurance.value;
+    systemData.load.onHand.max = 3 + systemData.attributes.prowess.value + systemData.attributes.prowess.skills.exertion.value;
+    systemData.initiativePool = systemData.attributes.intuition.value + systemData.attributes.prowess.skills.athletics.value;
+  }
+
+  _prepareNPCData(systemData) {
+    systemData.attributes.secondary.value = Math.floor(systemData.attributes.primary.value / 2);
+    systemData.hitpoints.max = 2 * (systemData.attributes.primary.value + systemData.attributes.secondary.value);
+    systemData.nerve.max = 2 * (systemData.hitpoints.max);
+    systemData.wounds.max = 6 + systemData.attributes.primary.value + systemData.attributes.secondary.value;
+    systemData.load.onHand.max = 3 + systemData.attributes.primary.value + systemData.attributes.secondary.value;
+    systemData.initiativePool = systemData.attributes.primary.value;
+  }
+
+  _prepareDemonData(systemData) {
+    systemData.wounds.max = systemData.attributes.endurance.value * 3;
+    systemData.initiativePool = systemData.attributes.agility.value;
+  }
+
+  _prepareTrainData(systemData) {
+    if (systemData.locomotive === "donkey") {
+      let weight = systemData.weight.value;
+      let speed = 8;
+      let speedReduction = Math.floor(weight / 250);
+      systemData.speed = speed - speedReduction;
+      systemData.speed = Math.max(systemData.speed, 2);
+    }
   
-          systemData.thermalThreshold = -1 * totalInsulation;
-        
+    let totalPower = 0;
+    let totalWeight = 0;
+    let totalCapacity = systemData.capacity;
+  
+    const maxPower = systemData.power.max;
+    const maxWeight = systemData.weight.max;
+  
+    for (let item of this.items) {
+      if (item.type === "car") {
+        totalPower += item.system.power || 0;
+        totalWeight += item.system.weight || 0;
+        totalCapacity += item.system.capacity || 0;
+      } else {
+        totalWeight += item.system.weight || 0;
+      }
+    }
+  
+    // Update systemData
+    systemData.power.value = maxPower - totalPower;
+    systemData.weight.value = maxWeight - totalWeight;
+    systemData.capacity = totalCapacity;
+  }
+
+  /**
+  * Handle custom active effects, especially for item-based formulas
+  */
+  async applyActiveEffects() {
+    // Clear previous overrides
+    const overrides = {};
+
+    // Ensure derived data is ready
+    this.prepareDerivedData();
+
+    // Process all effects
+    for (const effect of this.allApplicableEffects()) {
+      if (effect.disabled) continue;
+      for (const change of effect.changes) {
+        if (change.mode === CONST.ACTIVE_EFFECT_MODES.CUSTOM) {
+          try {
+            const rollData = effect.parent.getRollData();
+            const roll = new Roll(change.value, rollData);
+            const result = roll.evaluateSync();
+            const value = Math.floor(Number(result.total) || 0);
+            const key = change.key.replace(/^system\./, '');
+            foundry.utils.setProperty(overrides, key, value);
+          } catch (err) {}
         }
       }
     }
 
-      _prepareCharacterData(systemData) {
-        systemData.wounds.max = 6 + systemData.attributes.fortitude.value + systemData.attributes.fortitude.skills.endurance.value;
-        systemData.load.onHand.max = 3 + systemData.attributes.prowess.value + systemData.attributes.prowess.skills.exertion.value;
-        systemData.initiativePool = systemData.attributes.intuition.value + systemData.attributes.prowess.skills.athletics.value;
-      }
+    // Apply standard effects
+    super.applyActiveEffects();
 
-      _prepareNPCData(systemData) {
-        systemData.attributes.secondary.value = Math.floor(systemData.attributes.primary.value / 2);
-        systemData.hitpoints.max = 2 * (systemData.attributes.primary.value + systemData.attributes.secondary.value);
-        systemData.nerve.max = 2 * (systemData.hitpoints.max);
-        systemData.wounds.max = 6 + systemData.attributes.primary.value + systemData.attributes.secondary.value;
-        systemData.load.onHand.max = 3 + systemData.attributes.primary.value + systemData.attributes.secondary.value;
-        systemData.initiativePool = systemData.attributes.primary.value;
-      }
-
-      _prepareDemonData(systemData) {
-        systemData.wounds.max = systemData.attributes.endurance.value * 3;
-        systemData.initiativePool = systemData.attributes.agility.value;
-      }
-
-      _prepareTrainData(systemData) {
-        if (systemData.locomotive === "donkey") {
-          let weight = systemData.weight.value;
-          let speed = 8;
-          let speedReduction = Math.floor(weight / 250);
-          systemData.speed = speed - speedReduction;
-          systemData.speed = Math.max(systemData.speed, 2);
-        }
-      
-        let totalPower = 0;
-        let totalWeight = 0;
-        let totalCapacity = systemData.capacity;
-      
-        const maxPower = systemData.power.max;
-        const maxWeight = systemData.weight.max;
-      
-        for (let item of this.items) {
-          if (item.type === "car") {
-            totalPower += item.system.power || 0;
-            totalWeight += item.system.weight || 0;
-            totalCapacity += item.system.capacity || 0;
-          } else {
-            totalWeight += item.system.weight || 0;
-          }
-        }
-      
-        // Update systemData
-        systemData.power.value = maxPower - totalPower;
-        systemData.weight.value = maxWeight - totalWeight;
-        systemData.capacity = totalCapacity;
-      }
+    // Merge overrides
+    foundry.utils.mergeObject(this.system, overrides);
+  }
 
   /**
    *
