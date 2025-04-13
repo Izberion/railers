@@ -60,7 +60,7 @@ export default class RailersActorBase extends foundry.abstract.TypeDataModel {
       nullable: true,
       integer: true,
       initial: 0,
-      min: 0,
+      min: 0
     });
 
     schema.thermalThreshold = new fields.NumberField({
