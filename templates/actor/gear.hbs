@@ -59,7 +59,7 @@
         </div>
         <div class="item-quantity">{{item.system.quantity}}</div>
         <div class="item-load">{{item.system.load}}</div>
-        <div class="item-stowage">{{localize item.system.stowage}}</div>
+        <div class="item-stowage">{{localize item.system.localizedStowage}}</div>
         <div class="item-controls">
           <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Gear'}}" data-action="viewDoc">
             <i class="fas fa-edit"></i>
@@ -111,12 +111,12 @@
           <div>{{item.name}}</div>
         </div>
         <div class="item-damage">{{item.system.damage}} {{localize "RAILERS.Item.Weapon.FIELDS.slashWound"}} {{item.system.severity}}</div>
-        <div class="item-attack">{{localize item.system.attack}}</div>
-        <div class="item-range">{{localize item.system.range}}</div>
-        <div class="item-reload">{{localize item.system.reload}}</div>
+        <div class="item-attack">{{localize item.system.localizedAction}}</div>
+        <div class="item-range">{{localize item.system.localizedRange}}</div>
+        <div class="item-reload">{{localize item.system.localizedAction}}</div>
         <div class="item-magazine">{{item.system.magazine.value}} / {{item.system.magazine.max}}</div>
         <div class="item-load">{{item.system.load}}</div>
-        <div class="item-stowage">{{localize item.system.stowage}}</div>
+        <div class="item-stowage">{{localize item.system.localizedStowage}}</div>
         <div class="item-controls">
           <a class="item-control weapon-reload" title="{{localize 'RAILERS.Item.base.actions.reload'}}" data-action="weaponReload">
             <i class="fas fa-sync-alt"></i>
@@ -168,11 +168,11 @@
           </div>
           <div>{{item.name}}</div>
         </div>
-        <div class="item-layer">{{localize item.system.type}}</div>
+        <div class="item-layer">{{localize item.system.localizedLayer}}</div>
         <div class="item-protection">{{item.system.protection}}</div>
         <div class="item-insulation">{{item.system.insulation}}</div>
         <div class="item-load">{{item.system.load}}</div>
-        <div class="item-stowage">{{localize item.system.stowage}}</div>
+        <div class="item-stowage">{{localize item.system.localizedStowage}}</div>
         <div class="item-controls">
           <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
             <i class="fas fa-edit"></i>

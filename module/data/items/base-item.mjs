@@ -65,4 +65,11 @@ export default class RailersItemBase extends foundry.abstract.TypeDataModel {
 
     return schema;
   }
+
+  get localizedStowage() {
+    if (!this.stowage) return "";
+    const key = CONFIG.RAILERS.stowageOptions[this.stowage] || this.stowage;
+    return game.i18n.localize(key);
+  }
+  
 }

@@ -36,4 +36,11 @@ export default class RailersClothing extends RailersItemBase {
 
     return schema;
   }
+
+  get localizedLayer() {
+    if (!this.layer) return "";
+    const key = CONFIG.RAILERS.clothingTypeOptions[this.layer] || this.layer;
+    return game.i18n.localize(key);
+  }
+
 }

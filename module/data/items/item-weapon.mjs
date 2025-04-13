@@ -135,73 +135,22 @@ export default class RailersWeapon extends RailersItemBase {
     return schema;
   }
 
-  async rollAttack() {
-    const actor = this.actor;
-    if (!actor) throw new Error("No actor available for weapon attack roll");
-
-    const attributeValue = actor.system.attributes[this.attribute]?.value || 0;
-    const skillValue = actor.system.attributes[this.attribute]?.skills?.[this.skill]?.value || 0;
-    const baseDice = attributeValue + skillValue;
-
-    const rollData = await RailerRollDialog.createAttackRoll(actor, this, baseDice);
-    if (!rollData) return; 
-
-    const { diceMod, tnMod, skipDialog } = rollData;
-    const diceNum = baseDice;
-    const diceBonus = this.roll.diceBonus || 0;
-    const totalDice = Math.max(0, diceNum + diceBonus + (diceMod || 0));
-    const tn = Math.max(1, Math.min(8, this.roll.targetNumber + (tnMod || 0)));
-    const formula = `${totalDice}d8!>=${tn}`;
-
-    await this.update({
-      'roll.diceNum': diceNum,
-      'roll.modifiers.diceMod': diceMod,
-      'roll.modifiers.tnMod': tnMod,
-      'roll.skipDialog': skipDialog,
-      formula
-    });
-
-    const roll = new Roll(formula);
-    await roll.evaluate({ async: true });
-
-    const hits = roll.terms[0].results.reduce((count, result) => {
-      return count + (result.result >= tn ? 1 : 0);
-    }, 0);
-
-    await roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor }),
-      flavor: `${this.name} Attack: ${formula} (${hits} hits)`
-    });
-
-    return { roll, hits };
+  get localizedAction() {
+    if (!this.action) return "";
+    const key = CONFIG.RAILERS.actionTypeOptions[this.action] || this.action;
+    return game.i18n.localize(key);
   }
 
-  async _quickRoll(diceMod, tnMod) {
-    const actor = this.actor;
-    if (!actor) throw new Error("No actor available for quick roll");
-
-    const attributeValue = actor.system.attributes[this.attribute]?.value || 0;
-    const skillValue = actor.system.attributes[this.attribute]?.skills?.[this.skill]?.value || 0;
-    const diceNum = attributeValue + skillValue;
-    const diceBonus = this.roll.diceBonus || 0;
-    const totalDice = Math.max(0, diceNum + diceBonus + (diceMod || 0));
-    const tn = Math.max(1, Math.min(8, this.roll.targetNumber + (tnMod || 0)));
-    const formula = `${totalDice}d8!>=${tn}`;
-
-    await this.update({ 'roll.diceNum': diceNum, formula });
-
-    const roll = new Roll(formula);
-    await roll.evaluate({ async: true });
-
-    const hits = roll.terms[0].results.reduce((count, result) => {
-      return count + (result.result >= tn ? 1 : 0);
-    }, 0);
-
-    await roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor }),
-      flavor: `${this.name} Attack: ${formula} (${hits} hits)`
-    });
-
-    return { roll, hits };
+  get localizedAction() {
+    if (!this.action) return "";
+    const key = CONFIG.RAILERS.actionTypeOptions[this.action] || this.action;
+    return game.i18n.localize(key);
   }
+
+  get localizedRange() {
+    if (!this.range) return "";
+    const key = CONFIG.RAILERS.rangeOptions[this.range] || this.range;
+    return game.i18n.localize(key);
+  }
+
 }

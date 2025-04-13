@@ -20,4 +20,11 @@ export default class RailersAbility extends RailersItemBase {
 
     return schema;
   }
+
+  get localizedAction() {
+    if (!this.action) return "";
+    const key = CONFIG.RAILERS.actionTypeOptions[this.action] || this.action;
+    return game.i18n.localize(key);
+  }
+
 }
