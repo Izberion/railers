@@ -27,6 +27,18 @@ export default class RailersDemon extends RailersActorBase {
       blank: true
     });
 
+    schema.damage = new fields.NumberField({
+      ...requiredInteger,
+      initial: 0,
+      min: 0
+    });
+
+    schema.severity = new fields.NumberField({
+      ...requiredInteger,
+      initial: 0,
+      min: 0
+    })
+
 
     return schema;
   }
