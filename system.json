@@ -49,12 +49,6 @@
       },
       "condition": {
         "htmlFields": ["description"]
-      },
-      "trainMod": {
-        "htmlFields": ["description"]
-      },
-      "weaponMod": {
-        "htmlFields": ["description"]
       }
     }
   },
