@@ -3,7 +3,7 @@ export async function onRollHp(event, actor) {
   if (actor.type !== 'demon') return;
 
   let useSwarmRoll = false;
-  const effectName = "Swarm"; // Update if different
+  const effectName = "Swarm";
   for (const item of actor.items) {
     if (item.type === 'ability' && item.effects.some(e => e.name === effectName && !e.disabled)) {
       useSwarmRoll = true;
@@ -11,7 +11,6 @@ export async function onRollHp(event, actor) {
     }
   }
 
-  // Roll HP
   let rollFormula;
   if (useSwarmRoll) {
     rollFormula = "2d8";
