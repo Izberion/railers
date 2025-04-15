@@ -65,6 +65,7 @@
         "Notes": "Notes",
         "Cars": "Cars",
         "Cargo": "Cargo",
+        "Conditions": "Conditions",
         "Description": "Description"
       },
       "base": {
@@ -99,7 +100,8 @@
               "label": "Stowed",
               "value": "Load Stowed",
               "max": "Stowage Limit"
-            }
+            },
+            "limit": "Load Limit"
           }
         }
       },
@@ -368,6 +370,26 @@
         "summer": "Summer",
         "winter": "Winter",
         "rollTemperature": "Rolled the temperature"
+      },
+      "character": {
+        "creator": "Character Creator",
+        "create": "Create",
+        "openCreator": "Open Character Creator",
+        "created": "Character successfully created",
+        "point": "Point",
+        "points": "Points",
+        "pointsRemaining": "Points Remaining",
+        "pointsExceeded": "You have exceeded your available points",
+        "mutationRoll": "Roll a mutation?",
+        "mutation": "Mutation",
+        "tableNotFound": "Mutation Table Not Found",
+        "stats": "Stats",
+        "derivedStats": "Derived Stats",
+        "skills": "Skills",
+        "attributes": "Attributes",
+        "openWarning": "You are about to open the character creator. Any changes you've made to your character's stats may be overwritten. Proceed?",
+        "skip": "Skip Character Creator",
+        "createWarning": "You have {remaining} unspent points. These will be lost after character creation. Proceed?"
       }
     },
     "chat": {
