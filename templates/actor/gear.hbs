@@ -3,28 +3,32 @@
   data-group='primary'
   data-tab='gear'
 >
-  <div class="grid grid-3col">
+  <div class="gear-head">
     <div class="resource flex-group-center">
       <label class="resource-label">{{localize "RAILERS.Item.base.FIELDS.therms"}}</label>
-      <input type="number" name="system.therms" value="{{system.therms}}" data-dtype="Number"/>
-    </div>
-    <div class="resource flex-group-center grid-span-2">
-      <label class="resource-label load-label">{{localize "RAILERS.Item.base.FIELDS.load"}}</label>
-      <div class="resource-content flexrow flex-center flex-between">
-        <label for="system.load.onHand.value">{{localize "RAILERS.Item.base.FIELDS.stowage.type.onHand"}}</label>
-        <input type="number" name="system.load.onHand.value" value="{{system.load.onHand.value}}" data-dtype="Number" readonly/>
-        <span> / </span>
-        <input type="number" name="system.load.onHand.max" value="{{system.load.onHand.max}}" data-dtype="Number" readonly/>
+      <div class="resource-content flex-group-center">
+        <input type="number" class="therms" name="system.therms" value="{{system.therms}}" data-dtype="Number"/>
       </div>
-      <div class="resource-content flexrow flex-center flex-between">
+    </div>
+    <div class="load-group">
+      <div class="resource flex-group-center">
+        <label for="system.load.onHand.value">{{localize "RAILERS.Item.base.FIELDS.stowage.type.onHand"}}</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.load.onHand.value" value="{{system.load.onHand.value}}" data-dtype="Number" readonly/>
+          <span> / </span>
+          <input type="number" name="system.load.onHand.max" value="{{system.load.onHand.max}}" data-dtype="Number" readonly/>
+        </div>
+      </div>
+      <div class="resource flex-group-center">
         <label for="system.load.stowed.value">{{localize "RAILERS.Item.base.FIELDS.stowage.type.stowed"}}</label>
-        <input type="number" name="system.load.stowed.value" value="{{system.load.stowed.value}}" data-dtype="Number" readonly/>
-        <span> / </span>
-        <input type="number" name="system.load.stowed.max" value="{{system.load.stowed.max}}" data-dtype="Number"/>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.load.stowed.value" value="{{system.load.stowed.value}}" data-dtype="Number" readonly/>
+          <span> / </span>
+          <input type="number" name="system.load.stowed.max" value="{{system.load.stowed.max}}" data-dtype="Number"/>
+        </div>
       </div>
     </div>
   </div>
-
   <!-- Gear List -->
   <ol class="items-list gear-list">
     <li class="item flexrow items-header">
@@ -51,7 +55,7 @@
       <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <a class="rollable" data-roll-type="gear" data-action="roll">
+            <a class="rollable" data-roll-type="item" data-action="roll">
               <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
             </a>
           </div>
@@ -104,16 +108,16 @@
       <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <a class="rollable" data-roll-type="weapon" data-action="attackRoll">
+            <a class="rollable" data-roll-type="attack" data-action="roll">
               <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
             </a>
           </div>
           <div>{{item.name}}</div>
         </div>
         <div class="item-damage">{{item.system.damage}} {{localize "RAILERS.Item.Weapon.FIELDS.slashWound"}} {{item.system.severity}}</div>
-        <div class="item-attack">{{localize item.system.localizedAction}}</div>
+        <div class="item-attack">{{localize item.system.localizedAttackAction}}</div>
         <div class="item-range">{{localize item.system.localizedRange}}</div>
-        <div class="item-reload">{{localize item.system.localizedAction}}</div>
+        <div class="item-reload">{{localize item.system.localizedReloadAction}}</div>
         <div class="item-magazine">{{item.system.magazine.value}} / {{item.system.magazine.max}}</div>
         <div class="item-load">{{item.system.load}}</div>
         <div class="item-stowage">{{localize item.system.localizedStowage}}</div>
@@ -162,7 +166,7 @@
       <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <a class="rollable" data-roll-type="clothing" data-action="roll">
+            <a class="rollable" data-roll-type="item" data-action="roll">
               <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
             </a>
           </div>
