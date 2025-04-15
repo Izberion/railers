@@ -40,5 +40,10 @@
             {{selectOptions config.weaponSkillOptions selected=system.skill localize=true}}
         </select>
     </div>
-    {{system.attribute}}
+    <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Item.base.FIELDS.stowage.label"}}</label>
+        <select name="system.stowage">
+        {{selectOptions config.stowageOptions selected=system.stowage localize=true}}
+        </select>
+    </div>
 </section>

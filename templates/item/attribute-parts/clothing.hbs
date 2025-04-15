@@ -18,4 +18,10 @@
     <label class="resource-label">{{localize "RAILERS.Item.Clothing.FIELDS.insulation"}}</label>
     <input type="number" name="system.insulation" value="{{system.insulation}}" data-dtype="Number"/>
   </div>
+  <div class="resource">
+    <label class="resource-label">{{localize "RAILERS.Item.base.FIELDS.stowage.label"}}</label>
+    <select name="system.stowage">
+    {{selectOptions config.stowageOptions selected=system.stowage localize=true}}
+    </select>
+  </div>
 </section>
