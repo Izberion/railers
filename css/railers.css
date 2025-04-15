@@ -262,6 +262,7 @@
   height: 100px;
   width: 100px;
   margin-right: 10px;
+  cursor: pointer;
 }
 .railers .sheet-head .header-fields {
   display: flex;
