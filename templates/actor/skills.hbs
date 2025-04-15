@@ -9,7 +9,8 @@
         <div class="attribute">
           <label for="attribute" class="roll att-label" 
             data-attribute="{{a}}"
-            data-action="statRoll" 
+            data-action="roll"
+            data-roll-type="stat" 
             data-attpool="{{attribute.value}}" 
             data-label="{{localize attribute.label}}"
             data-rollable="{{#if (eq (localize attribute.label) (localize 'RAILERS.Attributes.Fortitude'))}}false{{else}}true{{/if}}">
@@ -22,7 +23,8 @@
           <div class="skill">
             <label for="skill" class="roll skill-label" 
                   data-skill="{{s}}" 
-                  data-action="statRoll"
+                  data-action="roll"
+                  data-roll-type="stat"
                   data-attpool="{{attribute.value}}" 
                   data-skillpool="{{skill.value}}" 
                   data-label="{{localize skill.label}}"
