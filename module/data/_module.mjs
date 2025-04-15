@@ -14,7 +14,5 @@ export { default as RailersWeapon } from './items/item-weapon.mjs';
 export { default as RailersCargo } from './items/item-cargo.mjs';
 export { default as RailersMutation } from './items/item-mutation.mjs';
 export { default as RailersCondition } from './items/item-condition.mjs';
-export { default as RailersTrainMod } from './items/item-train-mod.mjs';
-export { default as RailersWeaponMod } from './items/item-weapon-mod.mjs';
 export { default as RailersAbility } from './items/item-ability.mjs';
 export { default as RailersClothing } from './items/item-clothing.mjs';
