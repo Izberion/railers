@@ -149,6 +149,12 @@ export class RailersActor extends Actor {
     systemData.capacity = totalCapacity;
   }
 
+  static getDefaultArtwork(actorData) {
+    const type = actorData.type || 'default';
+    const images = CONFIG.RAILERS.defaultImages.actors[type] || CONFIG.RAILERS.defaultImages.actors.default;
+    return images;
+  }
+
   /**
   * Handle custom active effects, especially for item-based formulas
   */

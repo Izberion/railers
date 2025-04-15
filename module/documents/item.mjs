@@ -46,22 +46,26 @@ export class RailersItem extends Item {
     }
   }
 
-    _prepareAbilityData(systemData){};
-    _prepareCarData(systemData){};
-    _prepareCargoData(systemData){};
-    _prepareClothingData(systemData){};
-    _prepareGearData(systemData){};
-    _prepareWeaponData(systemData){
-      const skill = systemData.skill;
-      if (skill === "exertion") {
-        systemData.attribute = "prowess";
-      } else {
-        systemData.attribute = "combat";
-      }
-    };
-    _prepareWoundData(systemData){};
+  _prepareAbilityData(systemData){};
+  _prepareCarData(systemData){};
+  _prepareCargoData(systemData){};
+  _prepareClothingData(systemData){};
+  _prepareGearData(systemData){};
+  _prepareWeaponData(systemData){
+    const skill = systemData.skill;
+    if (skill === "exertion") {
+      systemData.attribute = "prowess";
+    } else {
+      systemData.attribute = "combat";
+    }
+  };
+  _prepareWoundData(systemData){};
 
-
+  static getDefaultArtwork(itemData) {
+    const type = itemData.type || 'default';
+    const images = CONFIG.RAILERS.defaultImages.items[type] || CONFIG.RAILERS.defaultImages.items.default;
+    return images;
+  }
 
   /**
    * Prepare a data object which defines the data schema used by dice roll commands against this Item

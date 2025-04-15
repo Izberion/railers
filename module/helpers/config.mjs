@@ -70,6 +70,62 @@ export const RAILERS = {};
       sneaking: 'RAILERS.Skills.Sneaking'
     }
   },
+  RAILERS.defaultImages = {
+    actors: {
+      character: {
+        img: 'icons/svg/mystery-man.svg',
+        token: 'icons/svg/mystery-man.svg',
+      },
+      npc: {
+        img: 'icons/svg/mystery-man.svg',
+        token: 'icons/svg/mystery-man.svg',
+      },
+      demon: {
+        img: 'icons/svg/mystery-man.svg',
+        token: 'icons/svg/mystery-man.svg',
+      },
+      train: {
+        img: 'systems/railers/assets/icons/train-icon.svg',
+        token: 'systems/railers/assets/icons/train-icon.svg',
+      },
+      default: {
+        img: 'icons/svg/mystery-man.svg',
+        token: 'icons/svg/mystery-man.svg',
+      },
+    },
+    items: {
+      gear: {
+        img: 'icons/svg/item-bag.svg',
+      },
+      wound: {
+        img: 'systems/railers/assets/icons/wound-icon.svg',
+      },
+      weapon: {
+        img: 'systems/railers/assets/icons/weapon-icon.svg',
+      },
+      clothing: {
+        img: 'icons/svg/item-bag.svg',
+      },
+      condition: {
+        img: 'icons/svg/item-bag.svg',
+      },
+      mutation: {
+        img: 'systems/railers/assets/icons/mutation-icon.svg',
+      },
+      car: {
+        img: 'icons/svg/item-bag.svg',
+      },
+      cargo: {
+        img: 'icons/svg/item-bag.svg',
+      },
+      ability: {
+        img: 'icons/svg/item-bag.svg',
+      },
+      default: {
+        img: 'icons/svg/item-bag.svg',
+      }
+    }
+  },
   RAILERS.stowageOptions = {
     "onHand": "RAILERS.Item.base.FIELDS.stowage.type.onHand",
     "stowed": "RAILERS.Item.base.FIELDS.stowage.type.stowed",
