@@ -141,6 +141,13 @@
       "name": "mutations",
       "path": "packs/mutations",
       "system": "railers"
+    },
+    {
+      "label": "Tables",
+      "type": "RollTable",
+      "name": "tables",
+      "path": "packs/tables",
+      "system": "railers"
     }
   ],
   "languages": [
