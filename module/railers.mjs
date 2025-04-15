@@ -6,8 +6,8 @@ import { RailersActorSheet } from "./sheets/actor-sheet.mjs";
 import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { RAILERS } from "./helpers/config.mjs";
-
-import { DiceFlowerApp, WeatherHUD } from "../apps/hex.mjs";
+import { CharacterCreator } from "./apps/character-creator.mjs";
+import { DiceFlowerApp, WeatherHUD } from "./apps/hex.mjs";
 import * as models from "./data/_module.mjs"
 
 
@@ -67,9 +67,7 @@ Hooks.once('init', async function() {
     mutation: models.RailersMutation,
     car: models.RailersCar,
     cargo: models.RailersCargo,
-    ability: models.RailersAbility,
-    trainMod: models.RailersTrainMod,
-    weaponMod: models.RailersWeaponMod
+    ability: models.RailersAbility
   };
 
   
@@ -86,8 +84,14 @@ Hooks.once('init', async function() {
   Items.registerSheet("railers", RailersItemSheet, {
     makeDefault: true,
     label: "RAILERS.SheetLabels.Item",
-    types: ["gear", "wound", "weapon", "clothing", "condition", "mutation", "car", "cargo", "ability", "trainMod", "weaponMod"]
+    types: ["gear", "wound", "weapon", "clothing", "condition", "mutation", "car", "cargo", "ability"]
   });
+
+
+  CONFIG.RAILERS.CharacterCreator = CharacterCreator;
+  CONFIG.RAILERS.DiceFlowerApp = DiceFlowerApp;
+  CONFIG.RAILERS.WeatherHUD = WeatherHUD;
+
 });
 
 /* -------------------------------------------- */
