@@ -35,39 +35,39 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
   /** @override */
   static PARTS = {
     header: {
-      template: 'systems/railers/templates/item/header.hbs',
+      template: 'systems/railers/templates/item/header.hbs'
     },
     tabs: {
       // Foundry-provided generic template
-      template: 'templates/generic/tab-navigation.hbs',
+      template: 'templates/generic/tab-navigation.hbs'
     },
     description: {
-      template: 'systems/railers/templates/item/description.hbs',
+      template: 'systems/railers/templates/item/description.hbs'
     },
     attributesGear: {
-      template: 'systems/railers/templates/item/attribute-parts/gear.hbs',
+      template: 'systems/railers/templates/item/attribute-parts/gear.hbs'
     },
     attributesWound: {
-      template: 'systems/railers/templates/item/attribute-parts/wound.hbs',
+      template: 'systems/railers/templates/item/attribute-parts/wound.hbs'
     },
     attributesCar: {
-      template: 'systems/railers/templates/item/attribute-parts/car.hbs',
+      template: 'systems/railers/templates/item/attribute-parts/car.hbs'
     },
     attributesWeapon: {
-      template: 'systems/railers/templates/item/attribute-parts/weapon.hbs',
+      template: 'systems/railers/templates/item/attribute-parts/weapon.hbs'
     },
     attributesClothing: {
-      template: 'systems/railers/templates/item/attribute-parts/clothing.hbs',
+      template: 'systems/railers/templates/item/attribute-parts/clothing.hbs'
     },
     attributesAbility: {
-      template: 'systems/railers/templates/item/attribute-parts/ability.hbs',
+      template: 'systems/railers/templates/item/attribute-parts/ability.hbs'
     },
     attributesCargo: {
-      template: 'systems/railers/templates/item/attribute-parts/cargo.hbs',
+      template: 'systems/railers/templates/item/attribute-parts/cargo.hbs'
     },
     effects: {
-      template: 'systems/railers/templates/item/effects.hbs',
-    },
+      template: 'systems/railers/templates/item/effects.hbs'
+    }
   };
 
   /** @override */
@@ -145,6 +145,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
       case 'attributesCargo':
       case 'attributesAbility':
       case 'attributesClothing':
+      case 'mods':
         context.tab = context.tabs[partId];
         break;
       case 'description':
