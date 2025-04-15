@@ -253,7 +253,7 @@
   -ms-flex-pack: start;
   justify-content: flex-start;
   align-items: center;
-  height: 159px;
+  height: 158px;
 }
 .railers .sheet-head .profile-img {
   -webkit-box-flex: 0;
@@ -287,7 +287,7 @@
   overflow-y: auto;
 }
 .railers input[type="number"] {
-  width: 32px;
+  width: 36px;
   border: none;
   min-width: inherit;
 }
@@ -297,7 +297,11 @@
 .railers input[type="number"].w40 {
   width: 40px;
 }
-.railers .sheet-head .resource {
+.railers input[type="number"].therms {
+  width: 60px;
+}
+.railers .sheet-head .resource,
+.railers .gear-head .resource {
   padding: 5px;
   display: grid;
   justify-items: center;
@@ -307,6 +311,13 @@
 .railers .sheet-head .train-attributes {
   display: flex;
   flex-direction: row;
+}
+.railers .gear-head {
+  justify-content: space-evenly;
+  display: flex;
+}
+.railers .gear-head .load-group {
+  display: flex;
 }
 .railers .sheet-body,
 .railers .sheet-body .tab,
@@ -526,7 +537,9 @@
   align-items: flex-start;
 }
 .railers .attributes,
-.railers .skills {
+.railers .skills,
+.railers .stats,
+.railers .derived-stats {
   text-align: center;
 }
 .railers span {
@@ -711,9 +724,9 @@
 }
 .railers .skill-list {
   overflow-y: auto;
-
 }
-.railers .skill {
+.railers .skill,
+.railers .stat {
   padding: 5px 0;
   display: flex;
   flex-direction: column;
@@ -730,4 +743,37 @@
 }
 .railers .load-label {
   margin-left: 25%;
+}
+.railers .character-creator .creator-head {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  height: 50px;
+}
+.railers .character-creator .attribute-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.railers .character-creator .skill-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+}
+.railers .character-creator .stat-list,
+.railers .character-creator .derived-stat-list {
+  display: flex;
+  justify-content: space-around;
+}
+.railers .character-creator h3 {
+  padding: 5px 0;
+}
+.railers .character-creator .attribute-label {
+  flex: 0;
+  padding-right: 80px;
+  width: 80px;
+  font-size: 16px;
+}
+.railers .character-creator .skills, 
+.railers .character-creator .attributes,
+.railers .character-creator .stats {
+  padding-bottom: 10px;
 }
