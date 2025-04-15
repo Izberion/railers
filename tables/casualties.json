@@ -1,0 +1,188 @@
+{
+  "name": "Casualties",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 5,
+      "range": [
+        1,
+        5
+      ],
+      "drawn": false,
+      "_id": "LgyfIsJe7rWq4odx",
+      "text": "Brakes Out",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 5,
+      "range": [
+        6,
+        10
+      ],
+      "drawn": false,
+      "_id": "fo4fq6rHdvnM08gQ",
+      "text": "Broken Coupling",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 10,
+      "range": [
+        11,
+        20
+      ],
+      "drawn": false,
+      "_id": "SNQThEBRwSI6GjHl",
+      "text": "Cargo Loss",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 15,
+      "range": [
+        21,
+        35
+      ],
+      "drawn": false,
+      "_id": "dhm9NPAlqv88JavN",
+      "text": "Crew Hit",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 10,
+      "range": [
+        36,
+        45
+      ],
+      "drawn": false,
+      "_id": "4e2SGBNQwqlKDJhW",
+      "text": "Exposed Wiring",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 15,
+      "range": [
+        46,
+        60
+      ],
+      "drawn": false,
+      "_id": "fxHqoNhK0HEk1LQW",
+      "text": "Exposure",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 5,
+      "range": [
+        61,
+        65
+      ],
+      "drawn": false,
+      "_id": "l4LIbPxv5Iu1Vk0V",
+      "text": "Fire",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 5,
+      "range": [
+        66,
+        70
+      ],
+      "drawn": false,
+      "_id": "J2FbNq3XzsSPMkov",
+      "text": "Fuel Leak",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 10,
+      "range": [
+        71,
+        80
+      ],
+      "drawn": false,
+      "_id": "QQFmHhloaNOriZUR",
+      "text": "Jammed Door",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 5,
+      "range": [
+        81,
+        85
+      ],
+      "drawn": false,
+      "_id": "9Ig3iemCdKq9alWE",
+      "text": "Motors Out",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 10,
+      "range": [
+        86,
+        95
+      ],
+      "drawn": false,
+      "_id": "Y42vWhdouwg7GRn8",
+      "text": "Power Loss",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 5,
+      "range": [
+        96,
+        100
+      ],
+      "drawn": false,
+      "_id": "9eYLbkkDq7uP7ShA",
+      "text": "Radio Out",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "createdTime": 1726201197419,
+    "modifiedTime": 1744692638611,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+  },
+  "formula": "1d100"
+}

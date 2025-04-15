@@ -1,0 +1,132 @@
+{
+  "name": "Population Size",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 5,
+      "range": [
+        1,
+        5
+      ],
+      "drawn": false,
+      "_id": "OFPJI1ijFFmzEIlY",
+      "text": "Abandoned",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 10,
+      "range": [
+        6,
+        15
+      ],
+      "drawn": false,
+      "_id": "rsEEbuVbtswm6D4i",
+      "text": "Declining",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 15,
+      "range": [
+        16,
+        30
+      ],
+      "drawn": false,
+      "_id": "CUqpct5saoDcCzu9",
+      "text": "Sparse",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 20,
+      "range": [
+        31,
+        50
+      ],
+      "drawn": false,
+      "_id": "JwBQglvbSh9VLXAI",
+      "text": "Modest",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 20,
+      "range": [
+        51,
+        70
+      ],
+      "drawn": false,
+      "_id": "9zy62U5kdrQHAJar",
+      "text": "Stable",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 15,
+      "range": [
+        71,
+        85
+      ],
+      "drawn": false,
+      "_id": "FPFMAEL4wTX6s9Lp",
+      "text": "Sprawling",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 10,
+      "range": [
+        86,
+        95
+      ],
+      "drawn": false,
+      "_id": "tgywYJORS10P36EB",
+      "text": "Booming",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    },
+    {
+      "type": "text",
+      "weight": 5,
+      "range": [
+        96,
+        100
+      ],
+      "drawn": false,
+      "_id": "V77Qg1T2ZQRqA5wg",
+      "text": "Bursting",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {}
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "SettlementCreationTablesFolder",
+  "flags": {},
+  "_stats": {
+    "coreVersion": "12.328",
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "createdTime": 1726202503076,
+    "modifiedTime": 1726202854197,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+  },
+  "formula": "1d100"
+}

@@ -1,0 +1,110 @@
+{
+  "name": "Settlement Generation",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "document",
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "text": "Settlement Tags",
+      "documentId": "yJ5XIglinpgbW1PN",
+      "img": "icons/svg/d20-grey.svg",
+      "_id": "WR36bMftYZnEbIlt",
+      "flags": {}
+    },
+    {
+      "type": "document",
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "text": "Settlement Tags",
+      "documentId": "yJ5XIglinpgbW1PN",
+      "img": "icons/svg/d20-grey.svg",
+      "_id": "gISlilEacqRxyiF4",
+      "flags": {}
+    },
+    {
+      "type": "document",
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "text": "Population Size",
+      "documentId": "P2pUymFglypeiyKE",
+      "img": "icons/svg/d20-grey.svg",
+      "_id": "QpYt6YrFiDID7CAf",
+      "flags": {}
+    },
+    {
+      "type": "document",
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "text": "Economy Type",
+      "documentId": "x4QWmtCTjjv47bEj",
+      "img": "icons/svg/d20-grey.svg",
+      "_id": "31MGGAWVW6KXuHQZ",
+      "flags": {}
+    },
+    {
+      "type": "document",
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "text": "Law",
+      "documentId": "puG15ViRcM6DmiNw",
+      "img": "icons/svg/d20-grey.svg",
+      "_id": "GSPQ6IHXPVqH3hhd",
+      "flags": {}
+    },
+    {
+      "type": "document",
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "text": "Demon Presence",
+      "documentId": "0ab4IU398LbVfQpT",
+      "img": "icons/svg/d20-grey.svg",
+      "_id": "m3nIy8XEXNPxcYwV",
+      "flags": {}
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "createdTime": 1726202879100,
+    "modifiedTime": 1744643067075,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+  },
+  "formula": "1d1"
+}
