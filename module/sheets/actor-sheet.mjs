@@ -4,6 +4,7 @@ import { attackDialog } from "../dialogs/attack-dialog.mjs";
 import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
 import { onRollHp } from "../helpers/demon-hp.mjs";
 import { defenseDialog } from "../dialogs/defense-dialog.mjs";
+import { CharacterCreator } from "../apps/character-creator.mjs";
 
 const { api, sheets } = foundry.applications;
 
@@ -31,12 +32,9 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       deleteDoc: this._deleteDoc,
       toggleEffect: this._toggleEffect,
       addWound: this._addWound,
-      statRoll: this._statRoll,
-      attackRoll: this._onAttackRoll,
-      defenseRoll: this._onDefenseRoll,
       woundHeal: this._onWoundHeal,
-      weaponReload: this._onWeaponReload,
-      rollHp: this._onRollHp
+      roll: this._onRoll,
+      weaponReload: this._onWeaponReload
     },
     // Custom property that's merged into `this.options`
     dragDrop: [{ dragSelector: '[data-drag]', dropSelector: null }],
@@ -70,6 +68,9 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     wounds: {
       template: 'systems/railers/templates/actor/wounds.hbs',
     },
+    conditions: {
+      template: 'systems/railers/templates/actor/conditions.hbs'
+    },
     effects: {
       template: 'systems/railers/templates/actor/effects.hbs',
     },
@@ -84,7 +85,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     },
     cargo: {
       template: 'systems/railers/templates/actor/cargo.hbs',
-    },
+    }
   };
 
     /** @override */
@@ -97,16 +98,16 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       // Control which parts show based on document subtype
       switch (this.document.type) {
         case 'character':
-          options.parts.push('biography', 'skills', 'gear', 'wounds', 'effects');
+          options.parts.push('biography', 'skills', 'gear', 'wounds', 'conditions', 'effects');
           break;
         case 'npc':
-          options.parts.push('biography', 'gear', 'wounds', 'effects');
+          options.parts.push('biography', 'gear', 'wounds', 'conditions', 'effects');
           break;
         case 'demon':
-          options.parts.push('abilities', 'wounds', 'notes', 'effects');
+          options.parts.push('abilities', 'wounds', 'conditions', 'notes', 'effects');
           break;
         case 'train':
-          options.parts.push('cars', 'cargo', 'notes');
+          options.parts.push('cars', 'cargo', 'notes', 'effects');
           break;
       }
     }
@@ -131,6 +132,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       systemFields: this.document.system.schema.fields
     };
 
+    context.isCreated = this.actor.getFlag('railers', 'isCreated') || false;
 
     // Offloading context prep to a helper function
     this._prepareItems(context);
@@ -148,6 +150,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       case 'skills':
       case 'cars':
       case 'cargo':
+      case 'conditions':
         context.tab = context.tabs[partId];
         break;
       case 'biography':
@@ -231,6 +234,10 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
         case 'wounds':
           tab.id = 'wounds';
           tab.label += 'Wounds';
+          break;
+        case 'conditions':
+          tab.id = 'conditions';
+          tab.label = 'Conditions';
           break;
         case 'effects':
           tab.id = 'effects';
@@ -324,6 +331,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     context.conditions = conditions.sort((a, b) => (a.sort || 0) - (b.sort || 0));
     context.abilities = abilities.sort((a, b) => (a.sort || 0) - (b.sort || 0));
 
+
   }
 
   /**
@@ -335,15 +343,19 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    */
 
   
-  // Keep this for now, but it might not be needed
   _onRender(context, options) {
     this.#dragDrop.forEach((d) => d.bind(this.element));
     this.#disableOverrides();
-    const html = this.element.querySelector(".window-content");
+    const html = this.element.querySelector('.window-content');
     const locomotiveSelect = html.querySelector('select[name="system.locomotive"]');
     if (locomotiveSelect) {
       locomotiveSelect.removeEventListener('change', this._onLocomotiveChange.bind(this));
       locomotiveSelect.addEventListener('change', this._onLocomotiveChange.bind(this));
+    }
+    const createButton = html.querySelector('.create-character');
+    if (createButton) {
+      createButton.removeEventListener('click', this._onCreateCharacter.bind(this));
+      createButton.addEventListener('click', this._onCreateCharacter.bind(this));
     }
   }
 
@@ -353,20 +365,42 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    *
    **************/
 
+  async _onCreateCharacter(event) {
+    event.preventDefault();
+    const result = await api.DialogV2.prompt({
+      content: game.i18n.localize('RAILERS.apps.character.openWarning'),
+      modal: true,
+      window: { title: game.i18n.localize('RAILERS.dialogs.base.warning') },
+      rejectClose: false,
+      ok: {
+        label: game.i18n.localize('RAILERS.dialogs.base.continue'),
+        callback: () => 'confirm',
+      },
+      buttons: [
+        {
+          action: 'skip',
+          label: `<i class="fas fa-forward"></i> ${game.i18n.localize('RAILERS.apps.character.skip')}`,
+          callback: () => 'skip',
+        },
+        {
+          action: 'cancel',
+          label: `<i class="fas fa-times"></i> ${game.i18n.localize('RAILERS.dialogs.base.cancel')}`,
+          callback: () => 'cancel',
+        },
+      ],
+    });
+  
+    if (result === 'confirm') {
+      const app = new CharacterCreator(this.actor);
+      app.render(true);
+    } else if (result === 'skip') {
+      await this.actor.setFlag('railers', 'isCreated', true);
+    }
+    // 'cancel' does nothing
+  }
+
   static async _addWound(actor) {
     addWoundDialog(this.actor);
-  }
-
-  static async _statRoll(event, target) {
-    rollDialog(this.actor, target);
-  }
-  
-  static _onDefenseRoll(event, target) {
-    defenseDialog(this.actor);
-  }
-
-  static _onAttackRoll(event, target) {
-    attackDialog(this.actor, target);
   }
   
   static _onWoundHeal(event, target) {
@@ -387,11 +421,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     const item = this.actor.items.get(itemId);
     if (item) item.update({ 'system.magazine.value': item.system.magazine.max });
   }
-  
-  static _onRollHp(event, target) {
-    onRollHp(event, this.actor); 
-  }
-  
 
   _onLocomotiveChange(event) {
     event.preventDefault();
@@ -601,24 +630,38 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
   static async _onRoll(event, target) {
     event.preventDefault();
     const dataset = target.dataset;
-
-    // Handle item rolls.
+    const actor = this.actor;
+  
     switch (dataset.rollType) {
       case 'item':
         const item = this._getEmbeddedDocument(target);
         if (item) return item.roll();
-    }
-
-    // Handle rolls that supply the formula directly.
-    if (dataset.roll) {
-      let label = dataset.label ? `[ability] ${dataset.label}` : '';
-      let roll = new Roll(dataset.roll, this.actor.getRollData());
-      await roll.toMessage({
-        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        flavor: label,
-        rollMode: game.settings.get('core', 'rollMode'),
-      });
-      return roll;
+        break;
+  
+      case 'stat':
+        return rollDialog(actor, target);
+  
+      case 'attack':
+        return attackDialog(actor, target);
+  
+      case 'defense':
+        return defenseDialog(actor);
+  
+      case 'hp':
+        return onRollHp(event, actor);
+  
+      default:
+        if (dataset.roll) {
+          let label = dataset.label ? `[ability] ${dataset.label}` : '';
+          let roll = new Roll(dataset.roll, actor.getRollData());
+          await roll.toMessage({
+            speaker: ChatMessage.getSpeaker({ actor: actor }),
+            flavor: label,
+            rollMode: game.settings.get('core', 'rollMode'),
+          });
+          return roll;
+        }
+        console.warn(`Unknown roll type: ${dataset.rollType}`);
     }
   }
 
