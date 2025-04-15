@@ -22,6 +22,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
       createDoc: this._createEffect,
       deleteDoc: this._deleteEffect,
       toggleEffect: this._toggleEffect,
+      editImage: this._onEditImage
     },
     form: {
       submitOnChange: true,
@@ -256,6 +257,25 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
    *   ACTIONS
    *
    **************/
+
+  static async _onEditImage(event, target) {
+    const attr = target.dataset.edit;
+    const current = foundry.utils.getProperty(this.document, attr);
+    const { img } =
+      this.document.constructor.getDefaultArtwork?.(this.document.toObject()) ??
+      {};
+    const fp = new FilePicker({
+      current,
+      type: 'image',
+      redirectToRoot: img ? [img] : [],
+      callback: (path) => {
+        this.document.update({ [attr]: path });
+      },
+      top: this.position.top + 40,
+      left: this.position.left + 10,
+    });
+    return fp.browse();
+  }
 
   /**
    * Renders an embedded document's sheet
