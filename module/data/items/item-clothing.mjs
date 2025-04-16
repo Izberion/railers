@@ -30,8 +30,7 @@ export default class RailersClothing extends RailersItemBase {
       required: true,
       nullable: false,
       integer: true,
-      initial: 0,
-      min: 0,
+      initial: 0
     });
 
     return schema;
