@@ -1,15 +1,16 @@
 <form class="character-creator flexcol" onsubmit="event.preventDefault();">
   <header class="creator-head">
     <div class="remaining-points">{{localize "RAILERS.apps.character.pointsRemaining"}}: {{pointsRemaining}} / {{data.pointsTotal}}</div>
-      <div class="mutation">
-        <label>
+    <div class="mutation">
+      <label>
         <input
-            type="checkbox"
-            data-action="toggleMutation"
-            {{checked data.useMutation}}
+          type="checkbox"
+          name="useMutation"
+          data-action="toggleMutation"
+          {{checked data.useMutation}}
         />
         {{localize "RAILERS.apps.character.mutationRoll"}} (+25 {{localize "RAILERS.apps.character.points"}})
-        </label>
+      </label>
         {{#if data.mutation}}
         <div>{{localize "RAILERS.apps.character.mutation"}}: {{data.mutation.name}}</div>
         {{/if}}
@@ -21,13 +22,16 @@
     <div class="attribute-list">
       {{#each data.attributes as |attribute a|}}
         <div class="attribute">
-          <label>{{localize attribute.label}}</label>
+          <label for="attr-{{a}}">{{localize attribute.label}}</label>
           <input
+            id="attr-{{a}}"
             type="number"
+            name="attributes.{{a}}.value"
             data-type="attribute"
             data-attribute="{{a}}"
             value="{{attribute.value}}"
             min="0"
+            max="10"
           />
         </div>
       {{/each}}
@@ -42,9 +46,11 @@
         <div class="skill-list">
           {{#each attribute.skills as |skill s|}}
             <div class="skill">
-              <label>{{localize skill.label}}</label>
+              <label for="skill-{{a}}-{{s}}">{{localize skill.label}}</label>
               <input
+                id="skill-{{a}}-{{s}}"
                 type="number"
+                name="attributes.{{a}}.skills.{{s}}.value"
                 data-type="skill"
                 data-attribute="{{a}}"
                 data-skill="{{s}}"
@@ -63,9 +69,11 @@
     <h3>{{localize "RAILERS.apps.character.stats"}}</h3>
     <div class="stat-list">
       <div class="stat">
-        <label>{{localize "RAILERS.Actor.base.FIELDS.hitpoints.max"}} (2 {{localize "RAILERS.apps.character.points"}} / +2)</label>
+        <label for="hitpoints">{{localize "RAILERS.Actor.base.FIELDS.hitpoints.max"}} (2 {{localize "RAILERS.apps.character.points"}} / +2)</label>
         <input
+          id="hitpoints"
           type="number"
+          name="hitpoints.max"
           data-type="hitpoints"
           value="{{data.hitpoints.max}}"
           min="12"
@@ -73,9 +81,11 @@
         />
       </div>
       <div class="stat">
-        <label>{{localize "RAILERS.Actor.base.FIELDS.nerve.max"}} (2 {{localize "RAILERS.apps.character.points"}} / +4)</label>
+        <label for="nerve">{{localize "RAILERS.Actor.base.FIELDS.nerve.max"}} (2 {{localize "RAILERS.apps.character.points"}} / +4)</label>
         <input
+          id="nerve"
           type="number"
+          name="nerve.max"
           data-type="nerve"
           value="{{data.nerve.max}}"
           min="20"
@@ -83,9 +93,11 @@
         />
       </div>
       <div class="stat">
-        <label>{{localize "RAILERS.Item.base.FIELDS.therms"}} (1 {{localize "RAILERS.apps.character.points"}} / +5)</label>
+        <label for="therms">{{localize "RAILERS.Item.base.FIELDS.therms"}} (1 {{localize "RAILERS.apps.character.points"}} / +5)</label>
         <input
+          id="therms"
           type="number"
+          name="therms"
           class="therms"
           data-type="therms"
           value="{{data.therms}}"
