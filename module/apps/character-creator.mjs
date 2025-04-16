@@ -26,7 +26,7 @@ export class CharacterCreator extends api.HandlebarsApplicationMixin(api.Applica
     position: { width: 800, height: 'auto' },
     actions: {
       createCharacter: this._createCharacter,
-      toggleMutation: this._toggleMutation,
+      toggleMutation: this._toggleMutation
     },
   };
 
@@ -132,7 +132,7 @@ export class CharacterCreator extends api.HandlebarsApplicationMixin(api.Applica
     }
     this.calculatePointsSpent();
     await this.saveState();
-    await this.render();
+    setTimeout(() => this.render(), 0);
   }
 
   async _updateSkill(event) {
@@ -148,7 +148,7 @@ export class CharacterCreator extends api.HandlebarsApplicationMixin(api.Applica
     this.data.attributes[attrKey].skills[skillKey].value = value;
     this.calculatePointsSpent();
     await this.saveState();
-    await this.render();
+    setTimeout(() => this.render(), 0);
   }
 
   async _updateHitpoints(event) {
@@ -157,7 +157,7 @@ export class CharacterCreator extends api.HandlebarsApplicationMixin(api.Applica
     this.data.hitpoints.max = Math.floor(value / 2) * 2;
     this.calculatePointsSpent();
     await this.saveState();
-    await this.render();
+    setTimeout(() => this.render(), 0);
   }
 
   async _updateNerve(event) {
@@ -167,7 +167,7 @@ export class CharacterCreator extends api.HandlebarsApplicationMixin(api.Applica
     this.data.nerve.value = this.data.nerve.max;
     this.calculatePointsSpent();
     await this.saveState();
-    await this.render();
+    setTimeout(() => this.render(), 0);
   }
 
   async _updateTherms(event) {
@@ -176,7 +176,7 @@ export class CharacterCreator extends api.HandlebarsApplicationMixin(api.Applica
     this.data.therms = Math.floor(value / 5) * 5;
     this.calculatePointsSpent();
     await this.saveState();
-    await this.render();
+    setTimeout(() => this.render(), 0);
   }
 
   async rollMutation() {
@@ -262,7 +262,7 @@ export class CharacterCreator extends api.HandlebarsApplicationMixin(api.Applica
       };
       for (const skillKey in instance.data.attributes[attrKey].skills) {
         updateData['system.attributes'][attrKey].skills[skillKey] = {
-          value: this.data.attributes[attrKey].skills[skillKey].value,
+          value: instance.data.attributes[attrKey].skills[skillKey].value,
         };
       }
     }
@@ -312,29 +312,65 @@ export class CharacterCreator extends api.HandlebarsApplicationMixin(api.Applica
       ui.notifications.error('Form not found');
       return;
     }
+
+    // Preserve focus after render
+    const activeElement = document.activeElement;
+    const activeName = activeElement?.name;
+
+    // Attribute inputs
     form.querySelectorAll('input[data-type="attribute"]').forEach((el) => {
       el.removeEventListener('change', this._updateAttribute.bind(this));
       el.addEventListener('change', this._updateAttribute.bind(this));
+      el.removeEventListener('focus', this._onInputFocus.bind(this));
+      el.addEventListener('focus', this._onInputFocus.bind(this));
     });
+
+    // Skill inputs
     form.querySelectorAll('input[data-type="skill"]').forEach((el) => {
       el.removeEventListener('change', this._updateSkill.bind(this));
       el.addEventListener('change', this._updateSkill.bind(this));
+      el.removeEventListener('focus', this._onInputFocus.bind(this));
+      el.addEventListener('focus', this._onInputFocus.bind(this));
     });
+
+    // Hitpoints input
     const hitpointsInput = form.querySelector('input[data-type="hitpoints"]');
     if (hitpointsInput) {
       hitpointsInput.removeEventListener('change', this._updateHitpoints.bind(this));
       hitpointsInput.addEventListener('change', this._updateHitpoints.bind(this));
+      hitpointsInput.removeEventListener('focus', this._onInputFocus.bind(this));
+      hitpointsInput.addEventListener('focus', this._onInputFocus.bind(this));
     }
+
+    // Nerve input
     const nerveInput = form.querySelector('input[data-type="nerve"]');
     if (nerveInput) {
       nerveInput.removeEventListener('change', this._updateNerve.bind(this));
       nerveInput.addEventListener('change', this._updateNerve.bind(this));
+      nerveInput.removeEventListener('focus', this._onInputFocus.bind(this));
+      nerveInput.addEventListener('focus', this._onInputFocus.bind(this));
     }
+
+    // Therms input
     const thermsInput = form.querySelector('input[data-type="therms"]');
     if (thermsInput) {
       thermsInput.removeEventListener('change', this._updateTherms.bind(this));
       thermsInput.addEventListener('change', this._updateTherms.bind(this));
+      thermsInput.removeEventListener('focus', this._onInputFocus.bind(this));
+      thermsInput.addEventListener('focus', this._onInputFocus.bind(this));
     }
+
+    if (activeName) {
+      const newInput = form.querySelector(`input[name="${activeName}"]`);
+      if (newInput && newInput !== activeElement) {
+        newInput.focus();
+        newInput.select();
+      }
+    }
+  }
+
+  _onInputFocus(event) {
+    event.currentTarget.select();
   }
 
   async _prepareContext() {
