@@ -6,7 +6,6 @@ import { RailersActorSheet } from "./sheets/actor-sheet.mjs";
 import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { RAILERS } from "./helpers/config.mjs";
-import { CharacterCreator } from "./apps/character-creator.mjs";
 import { DiceFlowerApp, WeatherHUD } from "./apps/hex.mjs";
 import * as models from "./data/_module.mjs"
 
@@ -88,7 +87,6 @@ Hooks.once('init', async function() {
   });
 
 
-  CONFIG.RAILERS.CharacterCreator = CharacterCreator;
   CONFIG.RAILERS.DiceFlowerApp = DiceFlowerApp;
   CONFIG.RAILERS.WeatherHUD = WeatherHUD;
 

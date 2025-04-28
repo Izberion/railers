@@ -4,7 +4,6 @@ import { attackDialog } from "../dialogs/attack-dialog.mjs";
 import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
 import { onRollHp } from "../helpers/demon-hp.mjs";
 import { defenseDialog } from "../dialogs/defense-dialog.mjs";
-import { CharacterCreator } from "../apps/character-creator.mjs";
 
 const { api, sheets } = foundry.applications;
 
@@ -132,8 +131,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       fields: this.document.schema.fields,
       systemFields: this.document.system.schema.fields
     };
-
-    context.isCreated = this.actor.getFlag('railers', 'isCreated') || false;
 
     // Offloading context prep to a helper function
     this._prepareItems(context);
@@ -353,11 +350,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       locomotiveSelect.removeEventListener('change', this._onLocomotiveChange.bind(this));
       locomotiveSelect.addEventListener('change', this._onLocomotiveChange.bind(this));
     }
-    const createButton = html.querySelector('.create-character');
-    if (createButton) {
-      createButton.removeEventListener('click', this._onCreateCharacter.bind(this));
-      createButton.addEventListener('click', this._onCreateCharacter.bind(this));
-    }
   }
 
   /**************
@@ -365,40 +357,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    *   ACTIONS
    *
    **************/
-
-  async _onCreateCharacter(event) {
-    event.preventDefault();
-    const result = await api.DialogV2.prompt({
-      content: game.i18n.localize('RAILERS.apps.character.openWarning'),
-      modal: true,
-      window: { title: game.i18n.localize('RAILERS.dialogs.base.warning') },
-      rejectClose: false,
-      ok: {
-        label: game.i18n.localize('RAILERS.dialogs.base.continue'),
-        callback: () => 'confirm',
-      },
-      buttons: [
-        {
-          action: 'skip',
-          label: `<i class="fas fa-forward"></i> ${game.i18n.localize('RAILERS.apps.character.skip')}`,
-          callback: () => 'skip',
-        },
-        {
-          action: 'cancel',
-          label: `<i class="fas fa-times"></i> ${game.i18n.localize('RAILERS.dialogs.base.cancel')}`,
-          callback: () => 'cancel',
-        },
-      ],
-    });
-  
-    if (result === 'confirm') {
-      const app = new CharacterCreator(this.actor);
-      app.render(true);
-    } else if (result === 'skip') {
-      await this.actor.setFlag('railers', 'isCreated', true);
-    }
-    // 'cancel' does nothing
-  }
 
   static async _addWound(actor) {
     addWoundDialog(this.actor);
