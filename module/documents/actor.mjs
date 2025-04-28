@@ -56,48 +56,35 @@ export class RailersActor extends Actor {
       });
       systemData.wounds.value = totalWounds;
       systemData.hitpoints.value = maxHitpoints - totalDamage;
-    
-      
-      if (this.type === "character" || this.type === "npc") {
 
-        let totalOnHandLoad = 0;
-        let totalStowedLoad = 0;
-        for (let item of this.items) {
-          let totalItemLoad = item.system.load * item.system.quantity;
-          if (item.system.stowage === 'onHand') {
-            totalOnHandLoad += totalItemLoad;
-          } else if (item.system.stowage === 'stowed') {
-            totalStowedLoad += totalItemLoad;
-          }
-        }
-        systemData.load.onHand.value = totalOnHandLoad;
-        systemData.load.stowed.value = totalStowedLoad;
-
-
-        let totalInsulation = 0;
-        let totalProtection = 0;
-        for (let item of this.items) {
-          if (item.type === 'clothing' && item.system.stowage === 'onHand') {
-            totalInsulation += item.system.insulation;
-            totalProtection += item.system.protection;
-          }
-        }
-
-        if (this.type === "character") {
-          systemData.defensePool = totalProtection + systemData.attributes.prowess.value;
-        }
-
-        if (this.type === "npc") {
-          systemData.defensePool = totalProtection + systemData.attributes.secondary.value;
-        }
-
-        systemData.thermalThreshold = -1 * totalInsulation;
-      
-      }
     }
   }
 
   _prepareCharacterData(systemData) {
+    let totalOnHandLoad = 0;
+    let totalStowedLoad = 0;
+    for (let item of this.items) {
+      let totalItemLoad = item.system.load * item.system.quantity;
+      if (item.system.stowage === 'onHand') {
+        totalOnHandLoad += totalItemLoad;
+      } else if (item.system.stowage === 'stowed') {
+        totalStowedLoad += totalItemLoad;
+      }
+    }
+    systemData.load.onHand.value = totalOnHandLoad;
+    systemData.load.stowed.value = totalStowedLoad;
+
+    let totalInsulation = 0;
+    let totalProtection = 0;
+    for (let item of this.items) {
+      if (item.type === 'clothing' && item.system.stowage === 'onHand') {
+        totalInsulation += item.system.insulation;
+        totalProtection += item.system.protection;
+      }
+    }
+    systemData.defensePool = totalProtection + systemData.attributes.combat.value;
+    systemData.thermalThreshold = -1 * totalInsulation;
+
     systemData.wounds.max = 6 + systemData.attributes.fortitude.value + systemData.attributes.fortitude.skills.endurance.value;
     systemData.load.onHand.max = 3 + systemData.attributes.prowess.value + systemData.attributes.prowess.skills.exertion.value;
     systemData.initiativePool = systemData.attributes.intuition.value + systemData.attributes.prowess.skills.athletics.value;
@@ -105,11 +92,7 @@ export class RailersActor extends Actor {
 
   _prepareNPCData(systemData) {
     systemData.attributes.secondary.value = Math.floor(systemData.attributes.primary.value / 2);
-    systemData.hitpoints.max = 2 * (systemData.attributes.primary.value + systemData.attributes.secondary.value);
-    systemData.nerve.max = 2 * (systemData.hitpoints.max);
     systemData.wounds.max = 6 + systemData.attributes.primary.value + systemData.attributes.secondary.value;
-    systemData.load.onHand.max = 3 + systemData.attributes.primary.value + systemData.attributes.secondary.value;
-    systemData.initiativePool = systemData.attributes.primary.value;
   }
 
   _prepareDemonData(systemData) {
@@ -143,7 +126,6 @@ export class RailersActor extends Actor {
       }
     }
   
-    // Update systemData
     systemData.power.value = maxPower - totalPower;
     systemData.weight.value = maxWeight - totalWeight;
     systemData.capacity = totalCapacity;
