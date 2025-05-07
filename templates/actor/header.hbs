@@ -15,15 +15,6 @@
         </select>
       </div>
       {{/if}}
-      {{#if (eq actor.type "character")}}
-        {{#if @root.editable}}
-          {{#unless @root.isCreated}}
-          <button type="button" class="header-button create-character" title="{{localize 'RAILERS.apps.character.openCreator'}}">
-            <i class="fas fa-user-plus"></i> {{localize "RAILERS.apps.character.openCreator"}}
-          </button>
-         {{/unless}}
-        {{/if}}
-      {{/if}}
     </div>
     
     {{#if (eq actor.type "train")}}
@@ -70,8 +61,11 @@
           <span> / </span>
           <input type="number" name="system.hitpoints.max" value="{{system.hitpoints.max}}" data-dtype="Number"/>
         </div>
-        {{#if (eq actor.type "demon")}}
-          <button type="button" data-roll-type="hp" data-action="roll" class="roll-hp">{{localize "RAILERS.Actor.Demon.actions.rollHP"}}</button>
+        {{#ifOr (eq actor.type "npc") (eq actor.type "demon")}}
+          <button type="button" data-roll-type="hp" data-action="roll" class="roll-hp">{{localize "RAILERS.Actor.base.actions.rollHP"}}</button>
+        {{/ifOr}}
+        {{#if (eq actor.type "character")}}
+          <button type="button" data-roll-type="hp" data-action="roll" class="roll-hp">{{localize "RAILERS.Actor.Character.actions.rollHPNerve"}}</button>
         {{/if}}
       </div>
 
