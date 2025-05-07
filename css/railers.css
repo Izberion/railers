@@ -723,8 +723,13 @@
 .railers label.att-label {
   font-weight: bold;
 }
-.railers .skill-list {
-  overflow-y: auto;
+.railers .attribute-container {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(80px, 1fr));
+}
+.railers .skill-container {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(80px, 1fr));
 }
 .railers .skill,
 .railers .stat {

@@ -1,41 +1,80 @@
 <section
-  class='tab skills {{tab.cssClass}}'
-  data-group='primary'
-  data-tab='skills'
+  class="tab skills {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="skills"
 > 
   <div class="skill-tab">
-    {{#each system.attributes as |attribute a|}}
-      <div class="att-group">
-        <div class="attribute">
-          <label for="attribute" class="roll att-label" 
-            data-attribute="{{a}}"
-            data-action="roll"
-            data-roll-type="stat" 
-            data-attpool="{{attribute.value}}" 
-            data-label="{{localize attribute.label}}"
-            data-rollable="{{#if (eq (localize attribute.label) (localize 'RAILERS.Attributes.Fortitude'))}}false{{else}}true{{/if}}">
-            {{localize attribute.label}}
-          </label>
-          <input type="number" name="system.attributes.{{a}}.value" value="{{attribute.value}}" data-dtype="Number"/>
-        </div>
-        <div class="skill-list">
-        {{#each skills as |skill s|}}
-          <div class="skill">
-            <label for="skill" class="roll skill-label" 
-                  data-skill="{{s}}" 
-                  data-action="roll"
-                  data-roll-type="stat"
-                  data-attpool="{{attribute.value}}" 
-                  data-skillpool="{{skill.value}}" 
-                  data-label="{{localize skill.label}}"
-                  data-special="{{#if (or (eq (localize skill.label) (localize 'RAILERS.Skills.Endurance')) (eq (localize skill.label) (localize 'RAILERS.Skills.Resolve')))}}true{{else}}false{{/if}}">
-              {{localize skill.label}}
+    <div class="attribute-skill-container">
+      <!-- Attributes -->
+      <div class="attribute-container">
+        {{#each system.attributes as |attribute a|}}
+          <div class="attribute">
+            <label
+              for="attribute-{{a}}"
+              class="roll att-label"
+              data-attribute="{{a}}"
+              data-action="roll"
+              data-roll-type="stat"
+              data-attpool="{{attribute.mod}}"
+              data-label="{{localize attribute.label}}"
+              data-rollable="{{#if (eq (localize attribute.label) (localize 'RAILERS.Attributes.Fortitude'))}}false{{else}}true{{/if}}"
+            >
+              {{localize attribute.label}}
             </label>
-            <input type="number" name="system.attributes.{{a}}.skills.{{s}}.value" value="{{skill.value}}" data-dtype="Number"/>
+            <div class="attribute-inputs">
+              <input
+                type="number"
+                name="system.attributes.{{a}}.value"
+                value="{{attribute.value}}"
+                data-dtype="Number"
+                title="Attribute Value"
+              />
+              <input
+                type="number"
+                name="system.attributes.{{a}}.mod"
+                value="{{attribute.mod}}"
+                data-dtype="Number"
+                title="Attribute Mod"
+              />
+            </div>
           </div>
         {{/each}}
-        </div>
       </div>
-    {{/each}}
+
+      <!-- Single Dividing Line -->
+      <hr class="attribute-skill-divider">
+
+      <!-- Skills -->
+      <div class="skill-container">
+        {{#each system.attributes as |attribute a|}}
+          <div class="skill-list">
+            {{#each attribute.skills as |skill s Rabinowitz|}}
+              <div class="skill">
+                <label
+                  for="skill-{{a}}-{{s}}"
+                  class="roll skill-label"
+                  data-skill="{{s}}"
+                  data-action="roll"
+                  data-roll-type="stat"
+                  data-attpool="{{attribute.mod}}"
+                  data-skillpool="{{skill.value}}"
+                  data-label="{{localize skill.label}}"
+                  data-special="{{#if (or (eq (localize skill.label) (localize 'RAILERS.Skills.Endurance')) (eq (localize skill.label) (localize 'RAILERS.Skills.Resolve')))}}true{{else}}false{{/if}}"
+                >
+                  {{localize skill.label}}
+                </label>
+                <input
+                  type="number"
+                  name="system.attributes.{{a}}.skills.{{s}}.value"
+                  value="{{skill.value}}"
+                  data-dtype="Number"
+                  title="Skill Value"
+                />
+              </div>
+            {{/each}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
   </div>
 </section>
