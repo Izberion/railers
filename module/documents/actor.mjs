@@ -61,6 +61,16 @@ export class RailersActor extends Actor {
   }
 
   _prepareCharacterData(systemData) {
+
+    for (const attrKey in systemData.attributes) {
+      const attr = systemData.attributes[attrKey];
+      if (attr.value <= 1) attr.mod = 0;
+      else if (attr.value <= 8) attr.mod = 1;
+      else if (attr.value <= 16) attr.mod = 2;
+      else if (attr.value <= 24) attr.mod = 3;
+      else attr.mod = 4;
+    }
+
     let totalOnHandLoad = 0;
     let totalStowedLoad = 0;
     for (let item of this.items) {

@@ -24,6 +24,11 @@ export default class RailersCharacter extends RailersActorBase {
             initial: 0,
             min: 0 
           }),
+          mod: new fields.NumberField({
+            ...requiredInteger,
+            initial: 0,
+            min: 0 
+          }),
           skills: new fields.SchemaField(
             // Nested skills under this attribute
             Object.keys(CONFIG.RAILERS.skills[attr] || {}).reduce((skillObj, skill) => {
