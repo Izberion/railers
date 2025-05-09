@@ -388,7 +388,9 @@ export class WeatherHUD {
     static async rollTemperature() {
       const season = game.settings.get("railers", "currentSeason") || "winter";
       const tableName = season === "winter" ? "Winter Temperature" : "Summer Temperature";
-      const rollTable = game.tables.find(t => t.name === tableName);
+      const compendium = game.packs.get("railers.tables");
+      const tableEntry = compendium.index.find(t => t.name === tableName);
+      const rollTable = await compendium.getDocument(tableEntry._id);
       if (!rollTable) return;
   
       const result = await rollTable.roll();
