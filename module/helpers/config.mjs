@@ -74,23 +74,23 @@ export const RAILERS = {};
     actors: {
       character: {
         img: 'icons/svg/mystery-man.svg',
-        token: 'icons/svg/mystery-man.svg',
+        texture: { src: 'icons/svg/mystery-man.svg' },
       },
       npc: {
         img: 'icons/svg/mystery-man.svg',
-        token: 'icons/svg/mystery-man.svg',
+        texture: { src: 'icons/svg/mystery-man.svg' },
       },
       demon: {
         img: 'icons/svg/mystery-man.svg',
-        token: 'icons/svg/mystery-man.svg',
+        texture: { src: 'icons/svg/mystery-man.svg' },
       },
       train: {
         img: 'systems/railers/assets/icons/train-icon.svg',
-        token: 'systems/railers/assets/icons/train-icon.svg',
+        texture: { src: 'systems/railers/assets/icons/train-icon.svg' },
       },
       default: {
         img: 'icons/svg/mystery-man.svg',
-        token: 'icons/svg/mystery-man.svg',
+        texture: { src: 'icons/svg/mystery-man.svg' },
       },
     },
     items: {

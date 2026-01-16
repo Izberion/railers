@@ -142,9 +142,15 @@ export class RailersActor extends Actor {
   }
 
   static getDefaultArtwork(actorData) {
-    const type = actorData.type || 'default';
-    const images = CONFIG.RAILERS.defaultImages.actors[type] || CONFIG.RAILERS.defaultImages.actors.default;
-    return images;
+    const type = actorData.type || "default";
+    const defaults = CONFIG.RAILERS.defaultImages.actors[type] || CONFIG.RAILERS.defaultImages.actors.default;
+
+    return {
+      img: defaults.img || defaults.actor || "icons/svg/mystery-man.svg",
+      texture: {
+        src: defaults.token || defaults.texture?.src || defaults.src || "icons/svg/mystery-man.svg"
+      }
+    };
   }
 
   /**

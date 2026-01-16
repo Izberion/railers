@@ -64,7 +64,9 @@ export class RailersItem extends Item {
   static getDefaultArtwork(itemData) {
     const type = itemData.type || 'default';
     const images = CONFIG.RAILERS.defaultImages.items[type] || CONFIG.RAILERS.defaultImages.items.default;
-    return images;
+    return {
+      img: images.img || images.item || "icons/svg/item-bag.svg",  
+    };
   }
 
   /**
