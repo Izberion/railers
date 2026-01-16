@@ -73,14 +73,14 @@ Hooks.once('init', async function() {
   CONFIG.ActiveEffect.legacyTransferral = false;
 
   // Register sheet application classes
-  Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("railers", RailersActorSheet, { 
+  foundry.documents.collections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
+  foundry.documents.collections.Actors.registerSheet("railers", RailersActorSheet, { 
     makeDefault: true,
     label: "RAILERS.SheetLabels.Actor",
     types: ["character", "npc", "demon", "train"]
   });
-  Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("railers", RailersItemSheet, {
+  foundry.documents.collections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
+  foundry.documents.collections.Items.registerSheet("railers", RailersItemSheet, {
     makeDefault: true,
     label: "RAILERS.SheetLabels.Item",
     types: ["gear", "wound", "weapon", "clothing", "condition", "mutation", "car", "cargo", "ability"]

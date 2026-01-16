@@ -151,7 +151,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
         break;
       case 'biography':
       context.tab = context.tabs[partId];
-      context.enrichedBiography = await TextEditor.enrichHTML(
+      context.enrichedBiography = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
         this.actor.system.biography,
         {
           secrets: this.document.isOwner,
@@ -162,7 +162,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       break;
       case 'notes':
         context.tab = context.tabs[partId];
-        context.enrichedNotes = await TextEditor.enrichHTML(
+        context.enrichedNotes = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
           this.actor.system.notes,
           {
             secrets: this.document.isOwner,
@@ -719,7 +719,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    * @protected
    */
   async _onDrop(event, target) {
-    const data = TextEditor.getDragEventData(event);
+    const data = foundry.applications.ux.TextEditor.implementation.getDragEventData(event);
     const actor = this.actor;
     const allowed = Hooks.call('dropActorSheetData', actor, this, data);
     if (allowed === false) return;
@@ -949,7 +949,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
         dragover: this._onDragOver.bind(this),
         drop: this._onDrop.bind(this),
       };
-      return new DragDrop(d);
+      return new foundry.applications.ux.DragDrop.implementation(d);
     });
   }
 

@@ -443,7 +443,7 @@ Hooks.on("getSceneControlButtons", (controls) => {
         title: game.i18n.localize("RAILERS.apps.terrain.openTerrainFlower"),
         icon: "fas fa-mountain",
         button: true,
-        onClick: () => {
+        onChange: () => {
           if (diceFlowerApp?.rendered) diceFlowerApp.close();
           else {
             diceFlowerApp ??= new DiceFlowerApp();
@@ -457,20 +457,21 @@ Hooks.on("getSceneControlButtons", (controls) => {
         icon: "fas fa-cloud-sun",
         toggle: true,
         active: true,
-        onClick: (toggled) => {
-          if (toggled) {
-            WeatherHUD.showHUD();
-          } else {
+        onChange: () => {
+          const hud = document.getElementById("railers-weather-hud");
+          if (hud && hud.style.display === "flex") {
             WeatherHUD.hideHUD();
+          } else {
+            WeatherHUD.showHUD();
           }
         }
       },
-      dummy: {                        // ← The invisible placeholder
+      dummy: {                       
         name: "dummy",
-        title: "Dummy Tool",          // Doesn't matter, never shown
-        visible: true,               // Key: hide it completely
+        title: "Dummy Tool",          
+        visible: true,               
         button: true,
-        onClick: () => {return;}             // Empty handler (or onChange: () => {})
+        onChange: () => {return;}             
       }
     },
     activeTool: "dummy",
