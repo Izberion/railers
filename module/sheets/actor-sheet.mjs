@@ -1,8 +1,8 @@
-import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/effects.mjs";
+import { onManageActiveEffect, prepareActiveEffectCategories } from "../helpers/effects.mjs";
 import { rollDialog } from "../dialogs/roll-dialog.mjs";
 import { attackDialog } from "../dialogs/attack-dialog.mjs";
 import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
-import { onRollHp } from "../helpers/demon-hp.mjs";
+import { onRollHp } from "../helpers/hp-roller.mjs";
 import { defenseDialog } from "../dialogs/defense-dialog.mjs";
 
 const { api, sheets } = foundry.applications;
@@ -36,7 +36,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       weaponReload: this._onWeaponReload,
       editImage: this._onEditImage
     },
-    // Custom property that's merged into `this.options`
     dragDrop: [{ dragSelector: '[data-drag]', dropSelector: null }],
     form: {
       handler: this.#onSubmitActorForm,
@@ -53,7 +52,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       template: 'systems/railers/templates/actor/header.hbs',
     },
     tabs: {
-      // Foundry-provided generic template
       template: 'templates/generic/tab-navigation.hbs',
     },
     skills: {
