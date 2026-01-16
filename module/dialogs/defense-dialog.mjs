@@ -3,7 +3,7 @@ export async function defenseDialog(actor) {
     const defensePool = actor.system.defensePool;
     const characterName = actor.name;
   
-    const content = await renderTemplate("systems/railers/templates/dialog/roll-dialog.hbs");
+    const content = await foundry.applications.handlebars.renderTemplate("systems/railers/templates/dialog/roll-dialog.hbs");
   
     await foundry.applications.api.DialogV2.prompt({
       window: {

@@ -1,7 +1,7 @@
 export async function addWoundDialog(actor) {
   const ItemCls = getDocumentClass("Item");
 
-  const content = await renderTemplate("systems/railers/templates/dialog/wound-dialog.hbs");
+  const content = await foundry.applications.handlebars.renderTemplate("systems/railers/templates/dialog/wound-dialog.hbs");
 
   await foundry.applications.api.DialogV2.prompt({
     window: {

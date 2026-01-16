@@ -12,7 +12,7 @@ export async function attackDialog(actor, target) {
   const severity = item.system.severity || 0;
   const isRanged = item.system.range !== "melee";
 
-  const content = await renderTemplate("systems/railers/templates/dialog/attack-dialog.hbs", { isRanged });
+  const content = await foundry.applications.handlebars.renderTemplate("systems/railers/templates/dialog/attack-dialog.hbs", { isRanged });
 
   await foundry.applications.api.DialogV2.prompt({
     window: {
