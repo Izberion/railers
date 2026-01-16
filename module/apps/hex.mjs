@@ -117,12 +117,12 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
     #createDragDropHandlers() {
         return this.options.dragDrop.map((d) => {
             d.permissions = {
-                dragstart: this._canDragStart.bind(this),
+            dragstart: this._canDragStart.bind(this),
             };
             d.callbacks = {
-                dragstart: this._onDragStart.bind(this),
+            dragstart: this._onDragStart.bind(this),
             };
-            return new DragDrop(d);
+            return new foundry.applications.ux.DragDrop.implementation(d);
         });
     }
 
@@ -300,7 +300,7 @@ export class WeatherHUD {
       const season = game.settings.get("railers", "currentSeason") || "winter";
   
       // Render the template with weather, temperature, and season
-      const html = await renderTemplate("systems/railers/templates/apps/weather-hud.hbs", {
+      const html = await foundry.applications.handlebars.renderTemplate("systems/railers/templates/apps/weather-hud.hbs", {
         weather: {
           image: weather.image,
           name: weather.name
@@ -353,7 +353,7 @@ export class WeatherHUD {
         { coords: "(4,1)", image: "systems/railers/assets/weather/snowstormhex.svg", name: weatherTypes["snowstormhex.svg"] },
         { coords: "(4,2)", image: "systems/railers/assets/weather/whiteouthex.svg", name: weatherTypes["whiteouthex.svg"] }
       ];
-  
+
       const states = this._getHexStates("weatherHexStates");
       const activeIndex = states.indexOf("active");
       const coordinates = weatherData[activeIndex].coords;
@@ -394,7 +394,7 @@ export class WeatherHUD {
       if (!rollTable) return;
   
       const result = await rollTable.roll();
-      const temperature = result.results[0]?.text || "N/A";
+      const temperature = result.results[0]?.description || "N/A";
       const roll = result.roll;
   
       game.settings.set("railers", "currentTemperature", temperature);
@@ -431,41 +431,55 @@ Hooks.on("canvasReady", () => {
 let diceFlowerApp = null;
 
 Hooks.on("getSceneControlButtons", (controls) => {
-    const railersGroup = {
-        name: "railersControls",
-        title: game.i18n.localize("RAILERS.apps.base.railersControls"),
-        icon: "fas fa-train",
-        layer: "controls",
-        tools: [
-            {
-            name: "terrain",
-            title: game.i18n.localize("RAILERS.apps.terrain.openTerrainFlower"),
-            icon: "fas fa-mountain",
-            toggle: true,
-            active: false,
-            onClick: (toggle) => {
-                if (!diceFlowerApp) {
-                    diceFlowerApp = new DiceFlowerApp
-                }
-                if (toggle) diceFlowerApp.render(true);
-                else diceFlowerApp.close();
-            }
-        },
-            {
-                name: "weather",
-                title: game.i18n.localize("RAILERS.apps.weather.toggleWeatherHUD"),
-                icon: "fas fa-cloud-sun",
-                toggle: true,
-                active: !!document.getElementById("railers-weather-hud"),
-                onClick: (toggle) => {
-                    if (toggle) WeatherHUD.showHUD();
-                    else WeatherHUD.hideHUD();
-                }
-            }
-        ]
-    };
-    controls.push(railersGroup);
+  const group = {
+    name: "railersControls",
+    title: game.i18n.localize("RAILERS.apps.base.railersControls"),
+    icon: "fas fa-train",
+    layer: "tokens",
+    visible: true,
+    tools: {
+      terrain: {
+        name: "terrain",
+        title: game.i18n.localize("RAILERS.apps.terrain.openTerrainFlower"),
+        icon: "fas fa-mountain",
+        button: true,
+        onClick: () => {
+          if (diceFlowerApp?.rendered) diceFlowerApp.close();
+          else {
+            diceFlowerApp ??= new DiceFlowerApp();
+            diceFlowerApp.render(true);
+          }
+        }
+      },
+      weather: {
+        name: "weather",
+        title: game.i18n.localize("RAILERS.apps.weather.toggleWeatherHUD"),
+        icon: "fas fa-cloud-sun",
+        toggle: true,
+        active: true,
+        onClick: (toggled) => {
+          if (toggled) {
+            WeatherHUD.showHUD();
+          } else {
+            WeatherHUD.hideHUD();
+          }
+        }
+      },
+      dummy: {                        // ← The invisible placeholder
+        name: "dummy",
+        title: "Dummy Tool",          // Doesn't matter, never shown
+        visible: true,               // Key: hide it completely
+        button: true,
+        onClick: () => {return;}             // Empty handler (or onChange: () => {})
+      }
+    },
+    activeTool: "dummy",
+    active: false
+  };
+
+  controls["railersControls"] = group;
 });
+
 
 Hooks.once("init", () => {
     game.settings.register("railers", "terrainHexStates", {
