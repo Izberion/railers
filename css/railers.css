@@ -647,7 +647,7 @@
   border-radius: 5px;
   color: white;
   z-index: 100;
-  width: 200px;
+  width: 210px;
   height: 75px;
 }
 .weather-hud {
@@ -750,6 +750,9 @@
 .railers .load-label {
   margin-left: 25%;
 }
+.railers .biography {
+  height: 100%;
+}
 .railers .character-creator .creator-head {
   display: flex;
   justify-content: space-around;
@@ -782,4 +785,7 @@
 .railers .character-creator .attributes,
 .railers .character-creator .stats {
   padding-bottom: 10px;
+}
+.control[data-tool="dummy"] { 
+  display: none !important; 
 }
