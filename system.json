@@ -164,9 +164,9 @@
   },
   "primaryTokenAttribute": "hitpoints",
   "secondaryTokenAttribute": "wounds",
-  "url": "",
-  "manifest": "",
-  "download": "",
-  "license": "LICENSE.txt",
-  "changelog": "CHANGELOG.md"
+  "url": "https://github.com/izberion/railers",
+  "manifest": "https://github.com/izberion/railers/releases/latest/download/manifest.json",
+  "download": "https://github.com/izberion/railers/releases/download/v1.0.0/railers-1.0.0.zip",
+  "license": "https://raw.githubusercontent.com/izberion/railers/main/LICENSE.txt",
+  "changelog": "https://raw.githubusercontent.com/izberion/railers/main/CHANGELOG.md"
 }

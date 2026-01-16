@@ -1,5 +1,8 @@
 MIT License
 
+Copyright (c) 2026 Izberion
+
+Based on the Foundry VTT boilerplate system by Asacolips Projects
 Copyright (c) 2020 Asacolips Projects / Foundry Mods
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

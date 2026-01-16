@@ -1,0 +1,20 @@
+{
+  "id": "railers",
+  "title": "Railers",
+  "description": "The Railers tabletop roleplaying system for FoundryVTT",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": 13,
+    "verified": "13.351"
+  },
+  "authors": [
+    {
+      "name": "Izberion"
+    }
+  ],
+  "url": "https://github.com/izberion/railers",
+  "manifest": "https://github.com/izberion/railers/releases/latest/download/manifest.json",
+  "download": "https://github.com/izberion/railers/releases/download/v1.0.0/railers-1.0.0.zip",
+  "license": "https://raw.githubusercontent.com/izberion/railers/main/LICENSE.txt",
+  "changelog": "https://raw.githubusercontent.com/izberion/railers/main/CHANGELOG.md"
+}
