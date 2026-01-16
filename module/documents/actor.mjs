@@ -98,15 +98,18 @@ export class RailersActor extends Actor {
     systemData.wounds.max = 6 + systemData.attributes.fortitude.mod + systemData.attributes.fortitude.skills.endurance.value;
     systemData.load.onHand.max = 5 + systemData.attributes.prowess.mod + systemData.attributes.prowess.skills.exertion.value;
     systemData.initiativePool = systemData.attributes.intuition.mod + systemData.attributes.prowess.skills.athletics.value;
+    if (!systemData.initiativeGroup) systemData.initiativeGroup = "PCs";
   }
 
   _prepareNPCData(systemData) {
     systemData.initiativePool = systemData.combatPool;
+    if (!systemData.initiativeGroup) systemData.initiativeGroup = "NPCs";
   }
 
   _prepareDemonData(systemData) {
     systemData.wounds.max = systemData.attributes.endurance.value * 3;
     systemData.initiativePool = systemData.attributes.agility.value;
+    if (!systemData.initiativeGroup) systemData.initiativeGroup = "Demons";
   }
 
   _prepareTrainData(systemData) {

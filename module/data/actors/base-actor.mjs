@@ -78,6 +78,12 @@ export default class RailersActorBase extends foundry.abstract.TypeDataModel {
       min: 0,
     });
 
+    schema.initiativeGroup = new fields.StringField({
+      required: false,
+      nullable: true,
+      initial: null
+    });
+
     schema.defensePool = new fields.NumberField({
       required: false,
       nullable: true,
