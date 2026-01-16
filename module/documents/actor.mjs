@@ -92,12 +92,12 @@ export class RailersActor extends Actor {
         totalProtection += item.system.protection;
       }
     }
-    systemData.defensePool = totalProtection + systemData.attributes.combat.value;
+    systemData.defensePool = totalProtection + systemData.attributes.combat.mod;
     systemData.thermalThreshold = -1 * totalInsulation;
 
-    systemData.wounds.max = 6 + systemData.attributes.fortitude.value + systemData.attributes.fortitude.skills.endurance.value;
-    systemData.load.onHand.max = 3 + systemData.attributes.prowess.value + systemData.attributes.prowess.skills.exertion.value;
-    systemData.initiativePool = systemData.attributes.intuition.value + systemData.attributes.prowess.skills.athletics.value;
+    systemData.wounds.max = 6 + systemData.attributes.fortitude.mod + systemData.attributes.fortitude.skills.endurance.value;
+    systemData.load.onHand.max = 3 + systemData.attributes.prowess.mod + systemData.attributes.prowess.skills.exertion.value;
+    systemData.initiativePool = systemData.attributes.intuition.mod + systemData.attributes.prowess.skills.athletics.value;
   }
 
   _prepareNPCData(systemData) {
