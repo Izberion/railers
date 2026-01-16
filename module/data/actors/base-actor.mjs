@@ -12,12 +12,12 @@ export default class RailersActorBase extends foundry.abstract.TypeDataModel {
       value: new fields.NumberField({
         required: false,
         nullable: true,
-        initial: 12
+        initial: 0
       }),
       max: new fields.NumberField({ 
         required: false,
         nullable: true,
-        initial: 12,
+        initial: 0,
         min: 0,
       })
     });
@@ -44,13 +44,13 @@ export default class RailersActorBase extends foundry.abstract.TypeDataModel {
         required: false,
         nullable: true,
         integer: true,
-        initial: 20
+        initial: 0
       }),
       max: new fields.NumberField({
         required: false,
         nullable: true,
         integer: true,
-        initial: 20,
+        initial: 0,
         min: 0,
       }),
     });
