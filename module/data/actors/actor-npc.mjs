@@ -21,7 +21,11 @@ export default class RailersNPC extends RailersActorBase {
       }, {})
     );
 
-
+    schema.combatPool = new fields.NumberField({
+      ...requiredInteger,
+      initial: 0,
+      min: 0
+    });
 
     return schema;
   }
@@ -31,7 +35,7 @@ export default class RailersNPC extends RailersActorBase {
       this.attributes[attrKey].label = game.i18n.localize(
         (CONFIG.RAILERS.attributes.npc)[attrKey]
       ) ?? attrKey;
-    }   
+    }
   }
   
   getRollData() {

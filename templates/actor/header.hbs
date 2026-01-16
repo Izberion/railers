@@ -100,7 +100,7 @@
       </div>
       <div class="resource flex-group-center">
         <label for="system.attributes.secondary.value" class="resource-label roll" data-roll-type="stat" data-action="roll" data-npcpool="{{system.attributes.secondary.value}}">{{localize "RAILERS.Attributes.Secondary"}}</label>
-        <input type="number" name="system.attributes.secondary.value" value="{{system.attributes.secondary.value}}" data-dtype="Number" readonly/>
+        <input type="number" name="system.attributes.secondary.value" value="{{system.attributes.secondary.value}}" data-dtype="Number"/>
       </div>
       <div class="resource flex-group-center">
         <label class="resource-label roll" data-roll-type="stat" data-action="roll" data-npcpool="0">{{localize "RAILERS.Attributes.Unskilled"}}</label>
@@ -127,17 +127,25 @@
       </div>
     </div>
 
-    {{!-- Initiative Pool --}}
+    {{!-- Combat Pool (NPCs only) --}}
+    {{#if (eq actor.type "npc")}}
+    <div class="resource flex-group-center">
+      <label for="system.combatPool" class="resource-label roll" data-roll-type="stat" data-action="roll" data-npcpool="{{system.combatPool}}">{{localize "RAILERS.Attributes.CombatPool"}}</label>
+      <input type="number" name="system.combatPool" value="{{system.combatPool}}" data-dtype="Number"/>
+    </div>
+    {{/if}}
+
+    {{!-- Defense Pool (Characters only) --}}
+    {{#if (eq actor.type "character")}}
     <div class="resource flex-group-center">
       <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.initiativePool"}}</label>
       <input type="number" name="system.initiativePool" value="{{system.initiativePool}}" data-dtype="Number" readonly/>
     </div>
-
-    {{!-- Defense Pool --}}
     <div class="resource flex-group-center">
       <label class="resource-label rollable" data-roll-type="defense" data-action="roll">{{localize "RAILERS.Actor.base.FIELDS.defensePool"}}</label>
       <input type="number" name="system.defensePool" value="{{system.defensePool}}" data-dtype="Number" readonly/>
     </div>
+    {{/if}}
     {{/ifOr}}
 
     {{!-- XP --}}

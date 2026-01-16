@@ -3,11 +3,18 @@ export async function attackDialog(actor, target) {
   const itemId = target.closest(".item")?.dataset.itemId;
   const item = actor.items.get(itemId);
 
-
   const characterName = actor.name;
   const rollName = item.name;
-  const attribute = Number(actor.system.attributes[item.system.attribute]?.mod) || 0;
-  const skill = Number(actor.system.attributes[item.system.attribute]?.skills[item.system.skill]?.value) || 0;
+  
+  let attribute = 0;
+  let skill = 0;
+  if (actor.type === "npc") {
+    attribute = Number(actor.system.combatPool) || 0;
+  } else {
+    attribute = Number(actor.system.attributes[item.system.attribute]?.mod) || 0;
+    skill = Number(actor.system.attributes[item.system.attribute]?.skills[item.system.skill]?.value) || 0;
+  }
+  
   const damage = item.system.damage || 0;
   const severity = item.system.severity || 0;
   const isRanged = item.system.range !== "melee";

@@ -96,13 +96,12 @@ export class RailersActor extends Actor {
     systemData.thermalThreshold = -1 * totalInsulation;
 
     systemData.wounds.max = 6 + systemData.attributes.fortitude.mod + systemData.attributes.fortitude.skills.endurance.value;
-    systemData.load.onHand.max = 3 + systemData.attributes.prowess.mod + systemData.attributes.prowess.skills.exertion.value;
+    systemData.load.onHand.max = 5 + systemData.attributes.prowess.mod + systemData.attributes.prowess.skills.exertion.value;
     systemData.initiativePool = systemData.attributes.intuition.mod + systemData.attributes.prowess.skills.athletics.value;
   }
 
   _prepareNPCData(systemData) {
-    systemData.attributes.secondary.value = Math.floor(systemData.attributes.primary.value / 2);
-    systemData.wounds.max = 6 + systemData.attributes.primary.value + systemData.attributes.secondary.value;
+    systemData.initiativePool = systemData.combatPool;
   }
 
   _prepareDemonData(systemData) {
