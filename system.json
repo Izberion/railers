@@ -4,8 +4,8 @@
   "description": "The Railers tabletop roleplaying system for FoundryVTT",
   "version": "1.0",
   "compatibility": {
-    "minimum": 12,
-    "verified": "12.328"
+    "minimum": 13,
+    "verified": "13.351"
   },
   "documentTypes": {
     "Actor": {
