@@ -7,6 +7,7 @@ import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { RAILERS } from "./helpers/config.mjs";
 import { DiceFlowerApp, WeatherHUD } from "./apps/hex.mjs";
+import { RailersCombat, RailersCombatTracker } from "./helpers/combat.mjs";
 import * as models from "./data/_module.mjs"
 
 
@@ -40,9 +41,11 @@ Hooks.once('init', async function() {
    */
   
   CONFIG.Combat.initiative = {
-    formula: "(@initiativePool)d8x8cs>=6df=1 + (@initiativePool) / 100",
+    formula: "(@initiativePool)d8x8cs>=6df=1",
     decimals: 2
   };
+
+  CONFIG.Combat.documentClass = RailersCombat;
 
   
   CONFIG.Actor.documentClass = RailersActor;
@@ -85,7 +88,6 @@ Hooks.once('init', async function() {
     label: "RAILERS.SheetLabels.Item",
     types: ["gear", "wound", "weapon", "clothing", "condition", "mutation", "car", "cargo", "ability"]
   });
-
 
   CONFIG.RAILERS.DiceFlowerApp = DiceFlowerApp;
   CONFIG.RAILERS.WeatherHUD = WeatherHUD;
