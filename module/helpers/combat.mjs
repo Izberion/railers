@@ -86,7 +86,7 @@ Combat.prototype.rollInitiative = async function (ids, options = {}) {
 
     await roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor }),
-      flavor: `${actor.name} rolls for Initiative! (${group})`
+      flavor: game.i18n.format("RAILERS.chat.roll.rollInitiative", { group })
     });
 
     const X = roll.total ?? 0;

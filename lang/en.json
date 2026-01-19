@@ -132,7 +132,9 @@
         "FIELDS": {}
       },
       "Demon": {
-        "FIELDS": {}
+        "FIELDS": {
+          "tags": "Tags"
+        }
       },
       "Train": {
         "FIELDS": {
@@ -389,7 +391,8 @@
         "rollCheck": "Rolling a(n) {rollName} check at TN {tn}",
         "rollSave": "Rolling a(n) {rollName} save at TN {tn}",
         "rollAttack": "Attacking with {rollName} at TN {tn}",
-        "rollDefense": "Rolling to defend at TN {tn}"
+        "rollDefense": "Rolling to defend at TN {tn}",
+        "rollInitiative": "Rolling for Initiative (Faction: {group})"
       }
     }
   },
