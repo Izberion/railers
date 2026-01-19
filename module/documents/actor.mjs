@@ -102,8 +102,7 @@ export class RailersActor extends Actor {
   }
 
   _prepareNPCData(systemData) {
-    systemData.initiativePool = systemData.combatPool;
-    if (!systemData.initiativeGroup) systemData.initiativeGroup = "NPCs";
+
   }
 
   _prepareDemonData(systemData) {

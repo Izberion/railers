@@ -1,61 +1,99 @@
-export class RailersCombat extends Combat {
-  /** @override */
-  async rollInitiative(ids = [], formula = null, messageOptions = {}) {
-    // Use the system formula if none is provided
-    if (!formula) {
-      formula = this.settings.formula;
-    }
-    
-    // Call the parent rollInitiative
-    await super.rollInitiative(ids, formula, messageOptions);
-    
-    // Format initiative values correctly (hits.pool format)
-    const updates = [];
-    
-    for (let id of ids) {
-      const combatant = this.combatants.get(id);
-      if (!combatant || !combatant.actor) continue;
-      
-      const initiativePool = combatant.actor.system.initiativePool || 0;
-      const rollResult = combatant.initiative;
-      
-      if (rollResult !== null && initiativePool > 0) {
-        // Format: hits.poolSize
-        // Handle negative rolls correctly
-        const hits = Math.trunc(rollResult);
-        const poolDecimal = initiativePool / 100;
-        const sign = rollResult < 0 ? -1 : 1;
-        const formattedInitiative = hits + (sign * poolDecimal);
-        
-        updates.push({
-          _id: combatant.id,
-          initiative: formattedInitiative
-        });
-      }
-    }
-    
-    // Update all combatants at once
-    if (updates.length > 0) {
-      await this.updateEmbeddedDocuments("Combatant", updates);
-    }
+Hooks.once("init", () => {
+  console.log("Group Initiative | Loaded");
+
+  Hooks.on("updateCombatant", onCombatantUpdate);
+});
+
+async function onCombatantUpdate(combatant, changed) {
+  if (changed.initiative === undefined) return;
+
+  if (!combatant.actor) return;
+
+  try {
+    await finalizeGroupSlot(combatant);
+  } catch (err) {
+    console.error("Group Initiative | Finalization error", err);
   }
 }
 
-export class RailersCombatTracker extends foundry.applications.sidebar.tabs.CombatTracker {
-  /** @override */
-  _getEntryContextOptions() {
-    let options = super._getEntryContextOptions();
-    for (let option of options) {
-      if (option.name === "COMBAT.CombatantReroll") {
-        option.condition = (li) => {
-          let combatantId = li.data("combatant-id");
-          let combatant = this.combat.combatants.get(combatantId);
-          let actor = combatant?.actor;
-          // Show reroll option for any combatant with an actor
-          return !!actor;
-        }
+async function finalizeGroupSlot(combatant) {
+  const actor = combatant.actor;
+  if (!actor) return;
+
+  const group = actor.system?.initiativeGroup ?? "unknown";
+
+  await combatant.update({
+    name: group,
+    img: null,
+    flags: {
+      ...combatant.flags,
+      yourSystem: {
+        initiativeGroup: group
       }
-    }
-    return options;
-  }
+    },
+    actorId: null,
+    tokenId: null
+  });
 }
+
+function buildInitiativeFormula(pool) {
+  if (pool > 0) {
+    return {
+      formula: `${pool}d8x8cs>=6df=1`,
+      poolValue: pool
+    };
+  }
+
+  if (pool === 0) {
+    return {
+      formula: `2d8kl1x8cs>=6df=1`,
+      poolValue: 0
+    };
+  }
+
+  return {
+    formula: `2d8kl1cs>=6df=1`,
+    poolValue: 0
+  };
+}
+
+function encodeInitiative(X, Y) {
+  const frac = Y / 100;
+
+  return X >= 0
+    ? X + frac
+    : X - frac;
+}
+
+const _rollInitiative = Combat.prototype.rollInitiative;
+
+Combat.prototype.rollInitiative = async function (ids, options = {}) {
+  for (const id of ids) {
+    const combatant = this.combatants.get(id);
+    if (!combatant?.actor) continue;
+
+    const actor = combatant.actor;
+    const pool = actor.system?.initiativePool ?? 0;
+
+    const { formula, poolValue } = buildInitiativeFormula(pool);
+
+    const roll = await Roll.create(
+      formula,
+      actor.getRollData()
+    ).evaluate();
+
+    const group = actor.system?.initiativeGroup ?? "unknown";
+
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor }),
+      flavor: `${actor.name} rolls for Initiative! (${group})`
+    });
+
+    const X = roll.total ?? 0;
+    const initiative = encodeInitiative(X, poolValue);
+
+    await combatant.update({ initiative });
+  }
+
+  return this;
+};

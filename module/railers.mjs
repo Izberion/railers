@@ -7,8 +7,8 @@ import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { RAILERS } from "./helpers/config.mjs";
 import { DiceFlowerApp, WeatherHUD } from "./apps/hex.mjs";
-import { RailersCombat, RailersCombatTracker } from "./helpers/combat.mjs";
 import * as models from "./data/_module.mjs"
+import "./helpers/combat.mjs";
 
 
 /* -------------------------------------------- */
@@ -40,14 +40,12 @@ Hooks.once('init', async function() {
    * @type {String}
    */
   
-  CONFIG.Combat.initiative = {
+  /*CONFIG.Combat.initiative = {
     formula: "(@initiativePool)d8x8cs>=6df=1",
     decimals: 2
-  };
+  };*/
 
-  CONFIG.Combat.documentClass = RailersCombat;
-
-  
+ 
   CONFIG.Actor.documentClass = RailersActor;
 
   CONFIG.Actor.dataModels = {

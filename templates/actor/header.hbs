@@ -3,6 +3,11 @@
     <img class="profile-img" src="{{actor.img}}" data-edit="img" data-action="editImage" title="{{actor.name}}" height="100" width="100"/>
     <div class="charname">
       <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+      {{#if (eq actor.type "npc")}}
+      <div class="npc-faction">
+        <input type="text" name="system.initiativeGroup" value="{{system.initiativeGroup}}" data-dtype="String" placeholder="Faction"/>
+      </div>
+      {{/if}}
       {{#if (eq actor.type "demon")}}
       <div class="demon-tags">
         <input type="text" name="system.tags" value="{{system.tags}}" data-dtype="String" placeholder="Tags"/>

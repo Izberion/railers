@@ -88,6 +88,8 @@
           "corruption": "Corruption",
           "thermalThreshold": "Thermal Threshold",
           "initiativePool": "Initiative Pool",
+          "initiativeMod": "Initiative Modifier",
+          "initiativeGroup": "Faction",
           "defensePool": "Defense Pool",
           "fear": "Fear",
           "load": {
