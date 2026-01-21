@@ -7,6 +7,7 @@ import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { RAILERS } from "./helpers/config.mjs";
 import { DiceFlowerApp, WeatherHUD } from "./apps/hex.mjs";
+import { ActorTweaks } from "./apps/actor-tweaks.mjs";
 import * as models from "./data/_module.mjs"
 import "./helpers/combat.mjs";
 
@@ -89,7 +90,7 @@ Hooks.once('init', async function() {
 
   CONFIG.RAILERS.DiceFlowerApp = DiceFlowerApp;
   CONFIG.RAILERS.WeatherHUD = WeatherHUD;
-
+  CONFIG.RAILERS.ActorTweaks = ActorTweaks;
 });
 
 /* -------------------------------------------- */
@@ -176,6 +177,8 @@ Hooks.once("ready", async function() {
     img.src = src;
   });
 });
+
+
 
 /* -------------------------------------------- */
 /*  Hotbar Macros                               */

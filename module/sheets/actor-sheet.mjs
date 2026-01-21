@@ -4,6 +4,8 @@ import { attackDialog } from "../dialogs/attack-dialog.mjs";
 import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
 import { onRollHp } from "../helpers/hp-roller.mjs";
 import { defenseDialog } from "../dialogs/defense-dialog.mjs";
+import { ActorTweaks } from "../apps/actor-tweaks.mjs";
+
 
 const { api, sheets } = foundry.applications;
 
@@ -34,7 +36,8 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       woundHeal: this._onWoundHeal,
       roll: this._onRoll,
       weaponReload: this._onWeaponReload,
-      editImage: this._onEditImage
+      editImage: this._onEditImage,
+      openTweaks: this._openTweaks
     },
     dragDrop: [{ dragSelector: '[data-drag]', dropSelector: null }],
     form: {
@@ -326,8 +329,21 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     context.mutations = mutations.sort((a, b) => (a.sort || 0) - (b.sort || 0));
     context.conditions = conditions.sort((a, b) => (a.sort || 0) - (b.sort || 0));
     context.abilities = abilities.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+  }
 
+  /** @override */
+  _getHeaderControls() {
+    const controls = super._getHeaderControls();
 
+    controls.push({
+      label: game.i18n.localize("RAILERS.apps.actorTweaks.title"),
+      title: game.i18n.localize("RAILERS.apps.actorTweaks.title"),
+      class: "actor-tweaks",
+      icon: "fas fa-wrench",
+      action: "openTweaks"
+    });
+
+    return controls;
   }
 
   /**
@@ -355,6 +371,10 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    *   ACTIONS
    *
    **************/
+
+  static async _openTweaks(actor) {
+    new ActorTweaks({ actor: this.actor }).render(true); 
+  }
 
   static async _addWound(actor) {
     addWoundDialog(this.actor);

@@ -1,0 +1,17 @@
+<div>
+    <div class="form-group">
+      <label for="initiativeMod">{{localize "RAILERS.apps.actorTweaks.initiativeMod"}}</label>
+      <input type="number" name="initiativeMod" value="{{initiativeMod}}" placeholder="0"/>
+    </div>
+
+    <div class="form-group">
+      <label for="initiativeGroup">{{localize "RAILERS.apps.actorTweaks.initiativeGroup"}}</label>
+      <input type="text" name="initiativeGroup" value="{{initiativeGroup}}"/>
+      <p class="hint">{{localize "RAILERS.apps.actorTweaks.initiativeGroupHint"}}</p>
+    </div>
+
+    <footer class="sheet-footer flexrow justify-end gap-2">
+    <button type="button" data-action="close">{{localize "Cancel"}}</button>
+    <button type="submit" class="submit" data-action="submit">{{localize "Save"}}</button>
+  </footer>
+</div>

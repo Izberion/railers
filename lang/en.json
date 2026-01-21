@@ -379,6 +379,12 @@
         "summer": "Summer",
         "winter": "Winter",
         "rollTemperature": "Rolled the temperature"
+      },
+      "actorTweaks": {
+        "title": "Actor Tweaks",
+        "initiativeMod": "Initiative Modifier",
+        "initiativeGroup": "Faction",
+        "initiativeGroupHint": "This will be used to determine the character's group in initiative."
       }
     },
     "chat": {
