@@ -107,7 +107,7 @@ export class RailersActor extends Actor {
 
   _prepareDemonData(systemData) {
     systemData.wounds.max = systemData.attributes.endurance.value * 3;
-    systemData.initiativePool = systemData.attributes.agility.value;
+    systemData.initiativePool = systemData.attributes.agility.value + systemData.initiativeMod ?? 0;
     if (!systemData.initiativeGroup) systemData.initiativeGroup = "Demons";
   }
 
