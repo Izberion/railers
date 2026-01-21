@@ -15,9 +15,13 @@ Or install directly through FoundryVTT's system browser.
 ## Features
 
 -Drag and drop hex map building
+
 -Procedural sandbox exploration
+
 -Complete compendiums
+
 -Quick randomized weather and temperature
+
 -Custom initiative logic
 
 ## License
