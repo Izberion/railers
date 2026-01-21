@@ -109,6 +109,21 @@ export class RailersActor extends Actor {
     systemData.wounds.max = systemData.attributes.endurance.value * 3;
     systemData.initiativePool = systemData.attributes.agility.value + systemData.initiativeMod ?? 0;
     if (!systemData.initiativeGroup) systemData.initiativeGroup = "Demons";
+
+    const hasSwarm = this.items.some(i => i.type === "ability" && i.name === "Swarm");
+    if (!hasSwarm) return;
+
+    const hp = systemData.hitpoints?.value;
+    if (hp == null) return;
+
+    const swarmStat = Math.ceil(hp / 2);
+
+    for (const attr of ["strength", "agility", "intellect", "endurance"]) {
+      if (!systemData.attributes[attr]) continue;
+      systemData.attributes[attr].value = swarmStat;
+      systemData.damage = 1 + systemData.attributes.strength.value;
+    }
+
   }
 
   _prepareTrainData(systemData) {

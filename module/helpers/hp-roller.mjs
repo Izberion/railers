@@ -6,7 +6,7 @@ export async function onRollHp(event, actor) {
     let useSwarmRoll = false;
     const effectName = "Swarm";
     for (const item of actor.items) {
-      if (item.type === 'ability' && item.effects.some(e => e.name === effectName && !e.disabled)) {
+      if (item.type === 'ability' && item.name === 'Swarm') {
         useSwarmRoll = true;
         break;
       }
@@ -16,7 +16,7 @@ export async function onRollHp(event, actor) {
     if (useSwarmRoll) {
       rollFormula = "2d8";
     } else {
-      const endurance = Number(actor.system.attributes.secondary.value) || 0;
+      const endurance = Number(actor.system.attributes.endurance.value) || 0;
       rollFormula = `${endurance}d8`;
     }
 
