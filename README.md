@@ -7,14 +7,18 @@ A tabletop roleplaying system for FoundryVTT.
 To install this system in FoundryVTT, use the following manifest URL:
 
 ```
-https://github.com/YOUR_USERNAME/railers/releases/latest/download/manifest.json
+https://github.com/izberion/railers/releases/latest/download/manifest.json
 ```
 
 Or install directly through FoundryVTT's system browser.
 
 ## Features
 
-
+-Drag and drop hex map building
+-Procedural sandbox exploration
+-Complete compendiums
+-Quick randomized weather and temperature
+-Custom initiative logic
 
 ## License
 
