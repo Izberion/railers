@@ -322,6 +322,7 @@
         "cancel": "Cancel",
         "warning": "Warning",
         "continue": "Continue",
+        "save": "Save",
         "modifyDiceRoll": "Modify the Dice Roll"
       },
       "attack": {

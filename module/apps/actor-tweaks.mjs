@@ -34,10 +34,13 @@ export class ActorTweaks extends foundry.applications.api.HandlebarsApplicationM
   /** @override */
   async _prepareContext(options) {
     const { system } = this.actor;
+    const actorType = this.actor.type;
+    const showInitiative = ["character", "demon"].includes(actorType);
 
     return {
       initiativeMod: system.initiativeMod ?? 0,          
       initiativeGroup: system.initiativeGroup ?? "",   
+      showInitiative
       // Add more fields later
     };
   }
