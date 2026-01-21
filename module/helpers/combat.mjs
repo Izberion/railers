@@ -1,6 +1,4 @@
 Hooks.once("init", () => {
-  console.log("Group Initiative | Loaded");
-
   Hooks.on("updateCombatant", onCombatantUpdate);
 });
 
@@ -73,7 +71,10 @@ Combat.prototype.rollInitiative = async function (ids, options = {}) {
     if (!combatant?.actor) continue;
 
     const actor = combatant.actor;
-    const pool = actor.system?.initiativePool ?? 0;
+    const basePool = actor.system?.initiativePool ?? 0;
+    const mod = actor.system?.initiativeMod ?? 0;
+
+    const pool = basePool + mod;
 
     const { formula, poolValue } = buildInitiativeFormula(pool);
 
