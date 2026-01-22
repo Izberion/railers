@@ -786,6 +786,6 @@
 .railers .character-creator .stats {
   padding-bottom: 10px;
 }
-.control[data-tool="dummy"] { 
+button.fa-circle.control[data-tool="foreground"] { 
   display: none !important; 
 }
