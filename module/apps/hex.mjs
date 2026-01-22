@@ -84,7 +84,6 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
     constructor(options = {}) {
         super(options);
         this.#dragDrop = this.#createDragDropHandlers();
-        this._canvasBound = false;
       }
 
     #dragDrop;
@@ -94,8 +93,8 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
     }
 
     async _onRender(context, options) {
-        this.dragDrop.forEach(d => d.bind(this.element));
         await super._onRender(context, options);
+        this.dragDrop.forEach(d => d.bind(this.element));
         this.activateListeners(this.element);
     }
 
@@ -110,20 +109,21 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
               hex.addEventListener("click", (event) => this._handleHexClick(event, html));
             });
         }
-
-        this.dragDrop.forEach(d => d.bind(html));
     }
 
     #createDragDropHandlers() {
-        return this.options.dragDrop.map((d) => {
-            d.permissions = {
-            dragstart: this._canDragStart.bind(this),
-            };
-            d.callbacks = {
-            dragstart: this._onDragStart.bind(this),
-            };
-            return new foundry.applications.ux.DragDrop.implementation(d);
-        });
+      return this.options.dragDrop.map((d) => {
+        d.permissions = {
+          dragstart: this._canDragStart.bind(this),
+          drop: () => true        
+        };
+
+        d.callbacks = {
+          dragstart: this._onDragStart.bind(this)
+        };
+
+        return new foundry.applications.ux.DragDrop.implementation(d);
+      });
     }
 
     _canDragStart(selector) {
@@ -131,22 +131,26 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
     }
 
     _onDragStart(event) {
-        const el = event.currentTarget;
-        if (!el.classList.contains("draggable-hex")) return;
-        const tileData = {
-            type: "Tile",
-            texture: { src: el.src },
-            width: 120,
-            height: 105,
-            scale: 1,
-            x: 0,
-            y: 0,
-            z: 0,
-            rotation: 0,
-            hidden: false,
-            locked: false
-        };    
-        event.dataTransfer.setData("text/plain", JSON.stringify(tileData));
+      const el = event.currentTarget;
+      if (!el.classList.contains("draggable-hex")) return;
+
+      const tileData = {
+        type: "Tile",
+        texture: { src: el.src },
+        width: 120,
+        height: 105,
+        rotation: 0,
+        hidden: false,
+        locked: false
+      };
+
+      const json = JSON.stringify(tileData);
+
+      event.dataTransfer.setData("application/vnd.foundry.document+json", json);
+
+      event.dataTransfer.setData("text/plain", json);
+
+      event.dataTransfer.effectAllowed = "copy";
     }
 
     async _handleHexClick(event, html) {
@@ -164,7 +168,7 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
         if (target.classList.contains("d12hex")) {
             const currentStates = this._retrieveHexStates(); // Get current state
 
-            const activeHex = Array.from(hexesElements).find((h, i) => currentStates[i] === "active");
+            let activeHex = Array.from(hexesElements).find((h, i) => currentStates[i] === "active");
             if (!activeHex) {
                 activeHex = html.querySelector('.hex[data-coordinates="(2,2)"]');
                 hexesElements.forEach(h => {
@@ -238,7 +242,6 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
         }
 
         await game.settings.set("railers", "terrainHexStates", hexStates); // Ensure saved
-        await this.render(); // Force immediate render
     }
 
     _retrieveHexStates() {
@@ -252,25 +255,9 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
     }
 
     async _onClose(options) {
-        if (this._canvasBound) {
-          const canvasElement = game.canvas.app.renderer.canvas;
-          canvasElement.removeEventListener("dragover", (event) => event.preventDefault());
-          canvasElement.removeEventListener("drop", this._onCanvasDrop.bind(this));
-          this._canvasBound = false;
-        }
-        await super._onClose(options);
+      await super._onClose(options);
     }
 }
-
-Hooks.once("init", () => {
-    game.settings.register("railers", "terrainHexStates", {
-        name: "Terrain Hex States",
-        scope: "world",
-        config: false,
-        type: Array,
-        default: []
-    });
-});
 
 
 
@@ -466,18 +453,14 @@ Hooks.on("getSceneControlButtons", (controls) => {
           }
         }
       },
-      dummy: {                       
-        name: "dummy",
-        title: "Dummy Tool",          
-        visible: true,               
-        button: true,
-        onChange: () => {return;}             
+      foreground: {                       
+        name: "foreground",
+        icon: "fas fa-circle"
       }
     },
-    activeTool: "dummy",
+    activeTool: "foreground",
     active: false
   };
-
   controls["railersControls"] = group;
 });
 
