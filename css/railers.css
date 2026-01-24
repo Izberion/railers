@@ -753,39 +753,10 @@
 .railers .biography {
   height: 100%;
 }
-.railers .character-creator .creator-head {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  height: 50px;
+section.tab.biography.active > prose-mirror {
+  height: 100%;
 }
-.railers .character-creator .attribute-list {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-}
-.railers .character-creator .skill-list {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); 
-}
-.railers .character-creator .stat-list,
-.railers .character-creator .derived-stat-list {
-  display: flex;
-  justify-content: space-around;
-}
-.railers .character-creator h3 {
-  padding: 5px 0;
-}
-.railers .character-creator .attribute-label {
-  flex: 0;
-  padding-right: 80px;
-  width: 80px;
-  font-size: 16px;
-}
-.railers .character-creator .skills, 
-.railers .character-creator .attributes,
-.railers .character-creator .stats {
-  padding-bottom: 10px;
-}
+
 button.fa-circle.control[data-tool="foreground"] { 
   display: none !important; 
 }
