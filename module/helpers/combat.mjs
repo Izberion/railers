@@ -44,13 +44,13 @@ function buildInitiativeFormula(pool) {
 
   if (pool === 0) {
     return {
-      formula: `2d8kl1x8cs>=6df=1`,
+      formula: `2d8dh1x8cs>=6df=1`,
       poolValue: 0
     };
   }
 
   return {
-    formula: `2d8kl1cs>=6df=1`,
+    formula: `2d8dh1cs>=6df=1`,
     poolValue: 0
   };
 }
