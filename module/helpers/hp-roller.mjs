@@ -25,12 +25,18 @@ export async function onRollHp(event, actor) {
     return;
   }
 
+  const hasPainless = actor.items.some(i =>
+    i.type === 'mutation' && i.name === 'Painless'
+  );
+
+  const diceMult = hasPainless ? 2 : 1;
+
   //NPC HP roll
   if (actor.type === 'npc') {
       let pool = Number(actor.system.attributes.secondary.value) || 0;
       if (pool < 1) pool = 1; 
 
-      const hpFormula = `${pool}d8x8`;
+      const hpFormula = `${pool * diceMult}d8x8`;
 
       const hpRoll = await new Roll(hpFormula).evaluate();
 
@@ -45,10 +51,10 @@ export async function onRollHp(event, actor) {
 
   let hpFormula, nerveFormula;
   if (pool <= 0) {
-    hpFormula    = '2d8kl1x8';
-    nerveFormula = '4d8kl2x8';
+    hpFormula    = `${2 * diceMult}d8dh1x8`;
+    nerveFormula = '4d8dh2x8';
   } else {
-    hpFormula    = `${pool}d8x8`;
+    hpFormula    = `${pool * diceMult}d8x8`;
     nerveFormula = `${pool * 2}d8x8`;
   }
 
