@@ -401,7 +401,16 @@
         "rollSave": "Rolling a(n) {rollName} save at TN {tn}",
         "rollAttack": "Attacking with {rollName} at TN {tn}",
         "rollDefense": "Rolling to defend at TN {tn}",
-        "rollInitiative": "Rolling for Initiative (Faction: {group})"
+        "rollInitiative": "Rolling for Initiative (Faction: {group})",
+        "rollHPNerve": "Rolling Hitpoints and Nerve"
+      },
+      "hpNerve": {
+        "hpRoll": "HP Roll",
+        "nerveRoll": "Nerve Roll",
+        "newMaxHP": "Max HP improved from {currentHpMax}",
+        "newMaxNerve": "Max Nerve improved from {currentNerveMax}",
+        "oldMaxHP": "Max HP remains {currentHpMax}",
+        "oldMaxNerve": "Max Nerve remains {currentNerveMax}"
       }
     }
   },

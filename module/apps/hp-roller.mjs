@@ -61,6 +61,9 @@ export async function onRollHp(event, actor) {
   const hpRoll    = await new Roll(hpFormula).evaluate();
   const nerveRoll = await new Roll(nerveFormula).evaluate();
 
+  const hpHtml    = await hpRoll.render();
+  const nerveHtml = await nerveRoll.render();
+
   const currentHpMax   = Number(actor.system.hitpoints.max)   || 0;
   const currentNerveMax = Number(actor.system.nerve.max) || 0;
 
@@ -80,26 +83,42 @@ export async function onRollHp(event, actor) {
   const speaker = ChatMessage.getSpeaker({ actor });
   const rollMode = game.settings.get("core", "rollMode");
 
-  let flavor = `${actor.name} rolls for new maximum HP & Nerve`;
+  let flavor = `${game.i18n.localize("RAILERS.chat.roll.rollHPNerve")}`;
   let content = '';
 
-  if (hpImproved || nerveImproved) {
-    if (hpImproved) {
-      content += `<div class="dice-results">HP improved. New max: ${hpRoll.total} (was ${currentHpMax})</div>`;
-    }
-    if (nerveImproved) {
-      content += `<div class="dice-results">Nerve improved. New max: ${nerveRoll.total} (was ${currentNerveMax})</div>`;
-    }
-  } else {
-    content = `<div class="dice-results">No improvement to HP or Nerve.</div>`;
-  }
+  content += `
+  <div class="dice-roll">
+    <div>${game.i18n.localize("RAILERS.chat.hpNerve.hpRoll")}</div>
+    ${hpHtml}
+    <div class="dice-results">
+      ${
+        hpImproved
+          ? `<span class="dice-result">${game.i18n.format("RAILERS.chat.hpNerve.newMaxHP", { currentHpMax })}</span>`
+          : `<span class="dice-result">${game.i18n.format("RAILERS.chat.hpNerve.oldMaxHP", { currentHpMax })}</span>`
+      }
+    </div>
+  </div>
+  `;
+
+  content += `
+  <div class="dice-roll">
+    <div>${game.i18n.localize("RAILERS.chat.hpNerve.nerveRoll")}</div>
+    ${nerveHtml}
+    <div class="dice-results">
+      ${
+        nerveImproved
+          ? `<span class="dice-result">${game.i18n.format("RAILERS.chat.hpNerve.newMaxNerve", { currentNerveMax })}</span>`
+          : `<span class="dice-result">${game.i18n.format("RAILERS.chat.hpNerve.oldMaxNerve", { currentNerveMax })}</span>`
+      }
+    </div>
+  </div>
+  `;
 
   const messageData = {
     speaker: speaker,
     flavor: flavor,
     rollMode: rollMode,
     content: content,
-    type: CONST.CHAT_MESSAGE_TYPES.ROLL,
     rolls: [hpRoll, nerveRoll]
   };
 
