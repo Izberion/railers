@@ -96,7 +96,18 @@ export class RailersActor extends Actor {
     systemData.thermalThreshold = -1 * totalInsulation;
 
     systemData.wounds.max = 6 + systemData.attributes.fortitude.mod + systemData.attributes.fortitude.skills.endurance.value;
-    systemData.load.onHand.max = 5 + systemData.attributes.prowess.mod + systemData.attributes.prowess.skills.exertion.value;
+
+    const baseLoad =
+      5 +
+      systemData.attributes.prowess.mod +
+      systemData.attributes.prowess.skills.exertion.value;
+
+    // Allow load max to be overridden by items or effects
+    if (systemData.load.onHand.max == null) {
+      systemData.load.onHand.max = baseLoad;
+    }
+
+
     systemData.initiativePool = systemData.attributes.intuition.mod + systemData.attributes.prowess.skills.athletics.value + systemData.initiativeMod ?? 0;
     if (!systemData.initiativeGroup) systemData.initiativeGroup = "PCs";
   }
@@ -173,13 +184,8 @@ export class RailersActor extends Actor {
   * Handle custom active effects, especially for item-based formulas
   */
   async applyActiveEffects() {
-    // Clear previous overrides
     const overrides = {};
 
-    // Ensure derived data is ready
-    this.prepareDerivedData();
-
-    // Process all effects
     for (const effect of this.allApplicableEffects()) {
       if (effect.disabled) continue;
       for (const change of effect.changes) {
@@ -196,12 +202,11 @@ export class RailersActor extends Actor {
       }
     }
 
-    // Apply standard effects
-    super.applyActiveEffects();
-
-    // Merge overrides
     foundry.utils.mergeObject(this.system, overrides);
+
+    super.applyActiveEffects();
   }
+
 
   /**
    *

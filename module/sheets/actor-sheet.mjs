@@ -2,7 +2,7 @@ import { onManageActiveEffect, prepareActiveEffectCategories } from "../helpers/
 import { rollDialog } from "../dialogs/roll-dialog.mjs";
 import { attackDialog } from "../dialogs/attack-dialog.mjs";
 import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
-import { onRollHp } from "../helpers/hp-roller.mjs";
+import { onRollHp } from "../apps/hp-roller.mjs";
 import { defenseDialog } from "../dialogs/defense-dialog.mjs";
 import { ActorTweaks } from "../apps/actor-tweaks.mjs";
 
@@ -551,10 +551,19 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @protected
    */
-  static async _viewDoc(event, target) {
-    const doc = this._getEmbeddedDocument(target);
-    doc.sheet.render(true);
+static async _viewDoc(event, target) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  const doc = this._getEmbeddedDocument(target);
+  if (!doc?.sheet) {
+    console.warn("No embedded document found for click target", target);
+    return;
   }
+
+  doc.sheet.render(true);
+}
+
 
   /**
    * Handles item deletion
@@ -670,17 +679,34 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    * @returns {Item | ActiveEffect} The embedded Item or ActiveEffect
    */
   _getEmbeddedDocument(target) {
-    const docRow = target.closest('li[data-document-class]');
-    if (docRow.dataset.documentClass === 'Item') {
-      return this.actor.items.get(docRow.dataset.itemId);
-    } else if (docRow.dataset.documentClass === 'ActiveEffect') {
-      const parent =
-        docRow.dataset.parentId === this.actor.id
-          ? this.actor
-          : this.actor.items.get(docRow?.dataset.parentId);
-      return parent.effects.get(docRow?.dataset.effectId);
-    } else return console.warn('Could not find document class');
+    const li = target.closest("li");
+    if (!li) return null;
+
+    // --- Active Effects ---
+    if (li.dataset.effectId) {
+      const effectId = li.dataset.effectId;
+
+      // 1. Actor-owned effect
+      let effect = this.actor.effects.get(effectId);
+      if (effect) return effect;
+
+      // 2. Item-owned effect
+      for (const item of this.actor.items) {
+        effect = item.effects.get(effectId);
+        if (effect) return effect;
+      }
+
+      return null;
+    }
+
+    // --- Items ---
+    if (li.dataset.documentClass === "Item" && li.dataset.itemId) {
+      return this.actor.items.get(li.dataset.itemId) ?? null;
+    }
+
+    return null;
   }
+
 
   /***************
    *
