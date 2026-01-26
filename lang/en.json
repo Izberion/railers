@@ -381,7 +381,8 @@
         "season": "Season",
         "summer": "Summer",
         "winter": "Winter",
-        "rollTemperature": "Rolled the temperature"
+        "rollTemperature": "Rolled the temperature",
+        "adjustedTemperature": "{adjustedTemperature} due to Polar Outbreak"
       },
       "actorTweaks": {
         "title": "Actor Tweaks",

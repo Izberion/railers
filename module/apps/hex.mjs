@@ -281,28 +281,41 @@ export class WeatherHUD {
     static async updateHUD(hud) {
       hud = hud || document.getElementById("railers-weather-hud");
       if (!hud) return;
-  
+
       const weather = game.settings.get("railers", "currentWeather");
-      const temp = game.settings.get("railers", "currentTemperature") || "N/A";
+      let temp = game.settings.get("railers", "currentTemperature") || "N/A";
       const season = game.settings.get("railers", "currentSeason") || "winter";
-  
+
+      // Apply Polar Outbreak modifier dynamically
+      if (weather?.name === "Polar Outbreak" && temp !== "N/A") {
+        const tempMatch = temp.match(/-?\d+/); // extract numeric part
+        if (tempMatch) {
+          const tempValue = parseInt(tempMatch[0], 10) - 20;
+          temp = temp.replace(/-?\d+/, tempValue);
+        }
+      }
+
       // Render the template with weather, temperature, and season
-      const html = await foundry.applications.handlebars.renderTemplate("systems/railers/templates/apps/weather-hud.hbs", {
-        weather: {
-          image: weather.image,
-          name: weather.name
-        },
-        temperature: temp,
-        season: season.charAt(0).toUpperCase() + season.slice(1) // Capitalize
-      });
-  
+      const html = await foundry.applications.handlebars.renderTemplate(
+        "systems/railers/templates/apps/weather-hud.hbs",
+        {
+          weather: {
+            image: weather?.image,
+            name: weather?.name
+          },
+          temperature: temp,
+          season: season.charAt(0).toUpperCase() + season.slice(1) // Capitalize
+        }
+      );
+
       hud.innerHTML = html;
-  
+
       // Add event listeners
       hud.querySelector(".weather").addEventListener("click", () => this.rollWeather());
       hud.querySelector(".temperature").addEventListener("click", () => this.rollTemperature());
       hud.querySelector(".season").addEventListener("click", () => this.toggleSeason());
     }
+
   
     static async rollWeather() {
       const weatherTypes = {
@@ -379,18 +392,40 @@ export class WeatherHUD {
       const tableEntry = compendium.index.find(t => t.name === tableName);
       const rollTable = await compendium.getDocument(tableEntry._id);
       if (!rollTable) return;
-  
+
       const result = await rollTable.roll();
       const temperature = result.results[0]?.description || "N/A";
       const roll = result.roll;
-  
+
+      // Save the original rolled temperature to settings
       game.settings.set("railers", "currentTemperature", temperature);
+
+      // Calculate adjusted for chat only
+      let adjustedTemperature = temperature;
+      const weather = game.settings.get("railers", "currentWeather");
+      if (weather?.name === "Polar Outbreak" && temperature !== "N/A") {
+        const tempMatch = temperature.match(/-?\d+/);
+        if (tempMatch) {
+          const tempValue = parseInt(tempMatch[0], 10) - 20;
+          adjustedTemperature = temperature.replace(/-?\d+/, tempValue);
+        }
+      }
+
+      // Output to chat showing original roll and adjusted temperature if different
+      const content = adjustedTemperature !== temperature
+        ? `<div class="dice-results">${game.i18n.format("RAILERS.apps.weather.adjustedTemperature", { adjustedTemperature })}</div>`
+        : `<div class="dice-results">${temperature}</div>`;
+
       await roll.toMessage({
         flavor: game.i18n.localize("RAILERS.apps.weather.rollTemperature"),
-        content: `<div class="dice-results">${temperature}</div>`
+        content: content
       });
+
+      // Update the HUD (which applies the adjustment)
       await this.updateHUD();
     }
+
+
   
     static async toggleSeason() {
       const currentSeason = game.settings.get("railers", "currentSeason") || "winter";
