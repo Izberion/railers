@@ -1,0 +1,41 @@
+{
+  "name": "Improvised Weapon",
+  "type": "weapon",
+  "_id": "KBWwAofVWhhV13q3",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Improvised weapons are any and all things that can&nbsp;be used to slice, stab, or bludgeon someone, though&nbsp;weren&rsquo;t designed with that intent in mind. Attack rolls&nbsp;made with improvised weapons have a -2d penalty.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "attack": "major",
+    "damage": 2,
+    "severity": 1,
+    "reload": "na",
+    "magazine": {
+      "value": 0,
+      "max": 0
+    },
+    "range": "melee",
+    "skill": "melee",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720119432100,
+    "modifiedTime": 1720119465266,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!KBWwAofVWhhV13q3"
+}

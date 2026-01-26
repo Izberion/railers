@@ -1,0 +1,193 @@
+{
+  "name": "Mastodon",
+  "type": "demon",
+  "_id": "w51t80i1FMSG8X5s",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "hitpoints": {
+      "label": "RAILERS.Hitpoints",
+      "value": 12,
+      "min": 0,
+      "max": 12
+    },
+    "wounds": {
+      "label": "RAILERS.Wounds",
+      "value": 0,
+      "min": 0,
+      "max": 0
+    },
+    "nerve": {
+      "label": "RAILERS.Nerve",
+      "value": 20,
+      "min": 0,
+      "max": 20
+    },
+    "corruption": {
+      "label": "RAILERS.Corruption",
+      "value": 0,
+      "max": 60,
+      "min": 0
+    },
+    "load": {
+      "onHand": {
+        "value": 0,
+        "max": 0
+      },
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "faction": "",
+    "biography": "",
+    "notes": "",
+    "attributes": {
+      "strength": 7,
+      "agility": 4,
+      "intellect": 5,
+      "endurance": 6,
+      "fear": 7,
+      "attack": {
+        "damage": 6,
+        "severity": 8
+      }
+    },
+    "tags": "Quadrupedal, Huge, Familial, Territorial"
+  },
+  "prototypeToken": {
+    "name": "Mastodon",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "hitpoints"
+    },
+    "bar2": {
+      "attribute": "wounds"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Corrupting",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon practically oozes Corruption from special organs on its back.&nbsp;Any character sharing a zone with the demon at the end of the character&rsquo;s turn will gain Corruption&nbsp;points according to his Corruption stage. If the character has a gas mask, he can roll an Endurance&nbsp;save to take half the normal amount of Corruption, rounded up.</p>",
+        "action": "passive"
+      },
+      "_id": "FjYBhtLXNq8RuOxu",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720139634892,
+        "modifiedTime": 1720139656231,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!w51t80i1FMSG8X5s.FjYBhtLXNq8RuOxu"
+    },
+    {
+      "name": "Trample",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon runs across an adjacent zone, ending in a zone adjacent to that one,&nbsp;potentially running down any character or demon of smaller size in its path. They must make a TN5&nbsp;Prowess save or be trampled. Failure results in being knocked Prone and taking a 7/W8 Wound.</p>",
+        "action": "full"
+      },
+      "_id": "BiKB6CnSv53bhwzP",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720139658256,
+        "modifiedTime": 1720139680686,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!w51t80i1FMSG8X5s.BiKB6CnSv53bhwzP"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720139613537,
+    "modifiedTime": 1720139680686,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!actors!w51t80i1FMSG8X5s"
+}

@@ -1,0 +1,220 @@
+{
+  "name": "Crawler",
+  "type": "demon",
+  "_id": "4onlObIdFcjrHUWw",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "hitpoints": {
+      "label": "RAILERS.Hitpoints",
+      "value": 12,
+      "min": 0,
+      "max": 12
+    },
+    "wounds": {
+      "label": "RAILERS.Wounds",
+      "value": 0,
+      "min": 0,
+      "max": 0
+    },
+    "nerve": {
+      "label": "RAILERS.Nerve",
+      "value": 20,
+      "min": 0,
+      "max": 20
+    },
+    "corruption": {
+      "label": "RAILERS.Corruption",
+      "value": 0,
+      "max": 60,
+      "min": 0
+    },
+    "load": {
+      "onHand": {
+        "value": 0,
+        "max": 0
+      },
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "faction": "",
+    "biography": "",
+    "notes": "",
+    "attributes": {
+      "strength": 4,
+      "agility": 4,
+      "intellect": 1,
+      "endurance": 3,
+      "fear": 6,
+      "attack": {
+        "damage": 5,
+        "severity": 4
+      }
+    },
+    "tags": "Insectile, Large, Spring-loaded"
+  },
+  "prototypeToken": {
+    "name": "Crawler",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "hitpoints"
+    },
+    "bar2": {
+      "attribute": "wounds"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Restrain",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon attacks a target that is as large or smaller than it with one of its&nbsp;pincers, aiming to deal 4/W3. If the attack is successful, the target becomes Restrained. Breaking&nbsp;the restraint requires a successful TN 6 Exertion check on the target&rsquo;s turn.</p>",
+        "action": "major"
+      },
+      "_id": "Zqg4eE6WqLFPCN27",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138306323,
+        "modifiedTime": 1720138329159,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!4onlObIdFcjrHUWw.Zqg4eE6WqLFPCN27"
+    },
+    {
+      "name": "Snack",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon attacks a target it has Restrained, attempting to take a bite and dealing 8/W7 on a successful attack. If the target is hit twice with this attack before he is able to get free,&nbsp;he must make a TN 5 Endurance save. Failure will result in the loss of a body part.</p>",
+        "action": "full"
+      },
+      "_id": "pxs6zaY3wfZDkIdm",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138334263,
+        "modifiedTime": 1720138353951,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!4onlObIdFcjrHUWw.pxs6zaY3wfZDkIdm"
+    },
+    {
+      "name": "Leap",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon leaps high into the air, moving up to 2 zones. It is unaffected by terrain, simply hopping over it.</p>",
+        "action": "minor"
+      },
+      "_id": "1Ak340jcRoiIGVsQ",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138357112,
+        "modifiedTime": 1720138376133,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!4onlObIdFcjrHUWw.1Ak340jcRoiIGVsQ"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720138254540,
+    "modifiedTime": 1720138376133,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!actors!4onlObIdFcjrHUWw"
+}

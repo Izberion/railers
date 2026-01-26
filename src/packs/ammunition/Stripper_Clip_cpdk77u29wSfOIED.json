@@ -1,0 +1,30 @@
+{
+  "name": "Stripper Clip",
+  "type": "gear",
+  "_id": "cpdk77u29wSfOIED",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Stripper clips, or just clips, are used exclusively by&nbsp;bolt-action rifles. They can hold a full magazine worth of&nbsp;ammunition. The clip fills the magazine all at once, allowing for much faster reloading compared to other&nbsp;weapons with internal magazines. When the gun fires&nbsp;the last bullet, the clip is automatically ejected, allowing&nbsp;you to add a fresh clip without having to remove the previous one.</p>",
+    "quantity": 1,
+    "load": 0.25,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720116701843,
+    "modifiedTime": 1720116726267,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!cpdk77u29wSfOIED"
+}

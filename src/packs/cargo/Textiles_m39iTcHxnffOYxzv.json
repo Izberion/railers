@@ -1,0 +1,28 @@
+{
+  "name": "Textiles",
+  "type": "cargo",
+  "_id": "m39iTcHxnffOYxzv",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Cloth, silk, furs, wool, and other textiles&nbsp;are always in demand in the Snowlands.</p>",
+    "price": 1200,
+    "weight": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720117389930,
+    "modifiedTime": 1720117408671,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!m39iTcHxnffOYxzv"
+}

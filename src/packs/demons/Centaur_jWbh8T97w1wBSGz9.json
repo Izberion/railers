@@ -1,0 +1,197 @@
+{
+  "name": "Centaur",
+  "type": "demon",
+  "_id": "jWbh8T97w1wBSGz9",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "hitpoints": {
+      "label": "RAILERS.Hitpoints",
+      "value": 12,
+      "min": 0,
+      "max": 12
+    },
+    "wounds": {
+      "label": "RAILERS.Wounds",
+      "value": 0,
+      "min": 0,
+      "max": 0
+    },
+    "nerve": {
+      "label": "RAILERS.Nerve",
+      "value": 20,
+      "min": 0,
+      "max": 20
+    },
+    "corruption": {
+      "label": "RAILERS.Corruption",
+      "value": 0,
+      "max": 60,
+      "min": 0
+    },
+    "load": {
+      "onHand": {
+        "value": 0,
+        "max": 0
+      },
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "faction": "",
+    "biography": "",
+    "notes": "",
+    "attributes": {
+      "strength": 4,
+      "agility": 2,
+      "intellect": 4,
+      "endurance": 3,
+      "fear": 6,
+      "attack": {
+        "damage": 3,
+        "severity": 4
+      }
+    },
+    "tags": "Centaurian, Medium, Cave Dweller"
+  },
+  "prototypeToken": {
+    "name": "Centaur",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "hitpoints"
+    },
+    "bar2": {
+      "attribute": "wounds"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Light Blind",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action&nbsp;taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
+        "action": "passive"
+      },
+      "_id": "7otr1UIzM8YXFRE5",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.world.demons.Actor.meU1dN5YfEjV0XAw.Item.gV1tq8hs5m4kWefT"
+        }
+      },
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138049115,
+        "modifiedTime": 1720138149043,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!jWbh8T97w1wBSGz9.7otr1UIzM8YXFRE5"
+    },
+    {
+      "name": "Stupefy",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon can somehow get into the minds&rsquo; of its prey. It attempts to daze a&nbsp;target within Short range. The target must make a TN 6 Resolve saving throw or become Dazed for&nbsp;1d Rounds.</p>",
+        "action": "major"
+      },
+      "_id": "tHCIm25fC5RpmkE3",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138161748,
+        "modifiedTime": 1720138179183,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!jWbh8T97w1wBSGz9.tHCIm25fC5RpmkE3"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720138123394,
+    "modifiedTime": 1720138179183,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!actors!jWbh8T97w1wBSGz9"
+}

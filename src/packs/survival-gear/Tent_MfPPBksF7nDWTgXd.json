@@ -1,0 +1,30 @@
+{
+  "name": "Tent",
+  "type": "gear",
+  "_id": "MfPPBksF7nDWTgXd",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Tents offer a place out of the snow and wind. Throwing up a tent will provide you and one other person you&nbsp;don't mind getting close to with adequate protection&nbsp;from the elements and the snow's Corruption, as well as&nbsp;a space that is easy to keep warm.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136949253,
+    "modifiedTime": 1720136960303,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!MfPPBksF7nDWTgXd"
+}

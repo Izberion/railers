@@ -1,0 +1,30 @@
+{
+  "name": "Skiing Gear",
+  "type": "gear",
+  "_id": "aGshV7o848disOkG",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Skiing gear includes a pair of skis and poles. While&nbsp;wearing skis, the crew can cover 2 hexes per quarter&nbsp;over flat terrain as opposed to the usual 1 hex when traveling by foot. Additionally, moving through hills will not&nbsp;slow them down, as the difference is made on any downhill sections. Mountains increase travel time by 1 Quarter instead of 2 Quarters. Skis are ineffective at traversing loose snow hexes, and should be swapped out in favor of snowshoes. Skis only count as 1 Load while worn&nbsp;instead of the 2 Load required to lug them around.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136876609,
+    "modifiedTime": 1720136903739,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!aGshV7o848disOkG"
+}

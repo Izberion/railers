@@ -1,0 +1,26 @@
+{
+  "name": "Tail",
+  "type": "mutation",
+  "_id": "dUtQwmTR1ewEBKkK",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character grows a prehensile&nbsp;tail. It can function as an extra limb, though lacks the&nbsp;dexterity of a hand and cannot be used to complex tasks.&nbsp;It has enough strength to hold a single item of 2 Load or&nbsp;less. The character also gains a +2d bonus on Acrobatics&nbsp;checks thanks to the extra balance the tail provides.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720145043573,
+    "modifiedTime": 1720145051729,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!dUtQwmTR1ewEBKkK"
+}

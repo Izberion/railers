@@ -1,0 +1,26 @@
+{
+  "name": "Fur",
+  "type": "mutation",
+  "_id": "6H0BnWsuVZERv2ao",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character may have been hairy,&nbsp;but the patches of fur he&rsquo;s been growing are nothing like&nbsp;what he had before. The fur can come in any variety of&nbsp;patterns or colors, but some will be more obvious than&nbsp;others. The fur covers most or all of the corrupted character&rsquo;s body. The character&rsquo;s Thermal Threshold is lowered by -5&deg;F as long as it isn&rsquo;t 0. If he had the scales mutation, that mutation is replaced by this one.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143625611,
+    "modifiedTime": 1720143636483,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!6H0BnWsuVZERv2ao"
+}

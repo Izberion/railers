@@ -1,0 +1,30 @@
+{
+  "name": "Toolkit",
+  "type": "gear",
+  "_id": "iv4BHI5xkUtGsjsX",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Toolkits contain most of the tools you will need for&nbsp;mechanical maintenance. The kit includes a hammer,&nbsp;various wrenches and screwdrivers, pliers, a small knife,&nbsp;wire cutters, and the metal toolbox itself. All tools in the&nbsp;toolbox count as improvised weapons when used to attack, including the knife.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720137411540,
+    "modifiedTime": 1720137439936,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!iv4BHI5xkUtGsjsX"
+}

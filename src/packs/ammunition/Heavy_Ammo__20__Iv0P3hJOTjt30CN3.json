@@ -1,0 +1,30 @@
+{
+  "name": "Heavy Ammo (20)",
+  "type": "gear",
+  "_id": "Iv0P3hJOTjt30CN3",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Heavy ammo is usable in big guns like machine guns&nbsp;or autocannons. Heavy ammo comes in boxes of 20.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720116278473,
+    "modifiedTime": 1720137589417,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!Iv0P3hJOTjt30CN3"
+}

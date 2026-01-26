@@ -1,0 +1,30 @@
+{
+  "name": "Climbing Gear",
+  "type": "gear",
+  "_id": "Ct2DYAZ1zw9O4BvE",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Climbing gear includes a pair of crampons, several&nbsp;pitons and ice screws, carabiners, and an ice axe. This&nbsp;kit will allow one person to climb up icy cliffs, assuming&nbsp;he also has rope. If the ice axe is used as an improvised&nbsp;weapon, it deals 4/W3 instead of the normal 2/W1.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136715299,
+    "modifiedTime": 1720136736295,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!Ct2DYAZ1zw9O4BvE"
+}

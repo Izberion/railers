@@ -1,0 +1,30 @@
+{
+  "name": "Hand Generator",
+  "type": "gear",
+  "_id": "Oq33MLS6XjJoyDJI",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Hand generators are crank-operated electrical generators that create a small amount of power. They can be&nbsp;used recharge D-cell batteries. You can charge up to four&nbsp;batteries back to full with an hour of cranking.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720118859189,
+    "modifiedTime": 1720118869830,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!Oq33MLS6XjJoyDJI"
+}

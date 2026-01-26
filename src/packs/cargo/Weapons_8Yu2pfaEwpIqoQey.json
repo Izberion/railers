@@ -1,0 +1,28 @@
+{
+  "name": "Weapons",
+  "type": "cargo",
+  "_id": "8Yu2pfaEwpIqoQey",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Any non-firearm weapons, including&nbsp;melee weapons, explosives, and bows.</p>",
+    "price": 1500,
+    "weight": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720117415942,
+    "modifiedTime": 1720117436118,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!8Yu2pfaEwpIqoQey"
+}

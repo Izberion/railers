@@ -1,0 +1,30 @@
+{
+  "name": "Cyrosene",
+  "type": "gear",
+  "_id": "SFVkW6ZihHjX6B4s",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Cryosene is the primary liquid fuel used in the&nbsp;Snowlands thanks to its extremely low gel point. Though&nbsp;most of the crew&rsquo;s cryosene will come directly from the&nbsp;train&rsquo;s fuel tanks, purchased by the barrel, it can be purchased by the gallon and stored in a cryosene can.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720118494310,
+    "modifiedTime": 1720118504698,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!SFVkW6ZihHjX6B4s"
+}

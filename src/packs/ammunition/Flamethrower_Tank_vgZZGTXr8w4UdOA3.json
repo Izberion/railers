@@ -1,0 +1,30 @@
+{
+  "name": "Flamethrower Tank",
+  "type": "gear",
+  "_id": "vgZZGTXr8w4UdOA3",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Flamethrower tanks are usable only by flamethrowers. These tanks hold a liquid fuel and a gas propellant.&nbsp;The gas is what forces the liquid out of the flamethrower&nbsp;nozzle at high speed, allowing it to project a long stream.&nbsp;One tank holds 6 bursts worth of fuel. The tanks have&nbsp;straps, allowing you to carry them on your back in place&nbsp;of your backpack, or you can just place them on the&nbsp;ground nearby if you don't intent to move.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720116544866,
+    "modifiedTime": 1720116566053,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!vgZZGTXr8w4UdOA3"
+}

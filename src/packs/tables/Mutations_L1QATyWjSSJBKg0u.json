@@ -1,0 +1,1629 @@
+{
+  "name": "Mutations",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "text": "Acidic Blood",
+      "documentId": "AkfYpHIAlvPaDQ1p",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "W8B1IrIbkcArF6Qy",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.W8B1IrIbkcArF6Qy"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "text": "Amorphous",
+      "documentId": "NvIFgUAcWF5nEcZJ",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "QS4XC6rmLrTtTlLo",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.QS4XC6rmLrTtTlLo"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "text": "Antennae",
+      "documentId": "DTfcsBhjWmQ2mk3a",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "3cPqJP5NCtOdOh2I",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.3cPqJP5NCtOdOh2I"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "text": "Aura of Fear",
+      "documentId": "Xt1AQhOrdFU4Rkw3",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "331pnpSxII29vvu0",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.331pnpSxII29vvu0"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "text": "Backwards Knees",
+      "documentId": "80T92k7aRIRCF530",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "V7fV0dGclKQ5oxrD",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.V7fV0dGclKQ5oxrD"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "text": "Beak",
+      "documentId": "bgP41i38xZn98SlU",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "z9nzwhBB9CAA3lld",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.z9nzwhBB9CAA3lld"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "text": "Bioluminescence",
+      "documentId": "gBr3JrKhh7iSeHGj",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "xuv8nW0o6RiMUSQc",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.xuv8nW0o6RiMUSQc"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "text": "Chameleon",
+      "documentId": "0vBPPa2gqjPTx7us",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "8zXq3PIjh9pY2mVy",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.8zXq3PIjh9pY2mVy"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "text": "Claws",
+      "documentId": "aE9ucxqFCABaAfc6",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "9VewZICgUA6bVecG",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.9VewZICgUA6bVecG"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "text": "Cold Resistance",
+      "documentId": "Ir6ZQJbkXe8sGDN2",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "9KCpW3CecnWUT0Kz",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.9KCpW3CecnWUT0Kz"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "text": "Compromised",
+      "documentId": "BDL4akYtjCz5PWYA",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "OZe5aNbwBj5lq7VF",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.OZe5aNbwBj5lq7VF"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "text": "Cravings",
+      "documentId": "pKaCnO6XlCP1inM2",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "2x4OR2hdzhevSC04",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.2x4OR2hdzhevSC04"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "text": "Cyclopean",
+      "documentId": "HixKT6vDwngyk2fS",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "ctUnDlFFIKm6z6cm",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.ctUnDlFFIKm6z6cm"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "text": "Demon Bane",
+      "documentId": "iYLTURet2RbPKeqP",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "j8LZ0c24PfOFHCKV",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.j8LZ0c24PfOFHCKV"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "text": "Demon Friend",
+      "documentId": "AWU9mRxB5SFc3eiP",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "dQOkZGkKI1bKNroc",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.dQOkZGkKI1bKNroc"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "text": "Demon Host",
+      "documentId": "SxKZcKgsGy08nlRI",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "oJ6JS2qpXd8drGf1",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.oJ6JS2qpXd8drGf1"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "text": "Detachable Limbs",
+      "documentId": "S3FdUgraRPr6pCMv",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "UN2ade1HYHtmnZB8",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.UN2ade1HYHtmnZB8"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "text": "Drug Resistance",
+      "documentId": "gsszzJHdDyRF0C7a",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "czrdK0CDT9vnYo2p",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.czrdK0CDT9vnYo2p"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "text": "Dulled Senses",
+      "documentId": "zCPAagS10gEnXbQU",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "URvlSSoGflJ2PWbH",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.URvlSSoGflJ2PWbH"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "text": "Dwarf",
+      "documentId": "trOBcHMAt3uDAu9r",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "sIZ40dAFaL8NWHvd",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.sIZ40dAFaL8NWHvd"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        21,
+        21
+      ],
+      "drawn": false,
+      "text": "Ears",
+      "documentId": "t5F3HT9bmpDL9Hul",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "Fb9PSBpK7O6Lcvk1",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.Fb9PSBpK7O6Lcvk1"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        22,
+        22
+      ],
+      "drawn": false,
+      "text": "Echolocation",
+      "documentId": "edfsWfKHI46hsefC",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "tTnFbQd9dQMKOjFe",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.tTnFbQd9dQMKOjFe"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        23,
+        23
+      ],
+      "drawn": false,
+      "text": "Electrical Discharge",
+      "documentId": "ZtzBqp4FwIHgUFaM",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "nugrIgtS2UAA1MO9",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.nugrIgtS2UAA1MO9"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        24,
+        24
+      ],
+      "drawn": false,
+      "text": "Explosive Exit",
+      "documentId": "mqok5BZEUz4DQfFp",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "06IqNqQvF8dc5fpT",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.06IqNqQvF8dc5fpT"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        25,
+        25
+      ],
+      "drawn": false,
+      "text": "Extra Arms",
+      "documentId": "jHzQ718BPTEM599i",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "seK7DToD5H3lfuBW",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.seK7DToD5H3lfuBW"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        27,
+        27
+      ],
+      "drawn": false,
+      "text": "Face Blind",
+      "documentId": "N8yXqfOFaWANFjoh",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "SLYC7aUNjrVth8cT",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.SLYC7aUNjrVth8cT"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        28,
+        28
+      ],
+      "drawn": false,
+      "text": "Fearless",
+      "documentId": "5J9iJDLMPcA0mg0M",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "PnGSW1x7blX3KYFj",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.PnGSW1x7blX3KYFj"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        29,
+        29
+      ],
+      "drawn": false,
+      "text": "Feathers",
+      "documentId": "WffafTAICO9HwVxt",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "zAius6QEMK1m57UT",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.zAius6QEMK1m57UT"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        30,
+        30
+      ],
+      "drawn": false,
+      "text": "Fungal Growths",
+      "documentId": "mQuF8qTrUU7w2S3K",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "gv3rcTHD2C8Xxfm5",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.gv3rcTHD2C8Xxfm5"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        31,
+        31
+      ],
+      "drawn": false,
+      "text": "Fur",
+      "documentId": "6H0BnWsuVZERv2ao",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "3QBEUrq8dN36y7WZ",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.3QBEUrq8dN36y7WZ"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        32,
+        32
+      ],
+      "drawn": false,
+      "text": "Genetic Manipulation",
+      "documentId": "La5eszzndlYYxOg0",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "FqDxvBvsUQeU98rR",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.FqDxvBvsUQeU98rR"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        33,
+        33
+      ],
+      "drawn": false,
+      "text": "Genetically Stable",
+      "documentId": "WNUmUSxU1kx6wrNc",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "uX6vCNIX7BiEszG7",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.uX6vCNIX7BiEszG7"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        34,
+        34
+      ],
+      "drawn": false,
+      "text": "Giant",
+      "documentId": "kw6WiXo8Sl6kbUXR",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "wX52dgRX9UBYB1yf",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.wX52dgRX9UBYB1yf"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        35,
+        35
+      ],
+      "drawn": false,
+      "text": "Gills",
+      "documentId": "SwE504ZMtoivNZIj",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "iYbySwQBDqSzUqhD",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.iYbySwQBDqSzUqhD"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        36,
+        36
+      ],
+      "drawn": false,
+      "text": "Goat's Eyes",
+      "documentId": "Xwcl13mApovWwk2L",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "MCNhBsuOHIqHd17m",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.MCNhBsuOHIqHd17m"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        37,
+        37
+      ],
+      "drawn": false,
+      "text": "Gorgeous",
+      "documentId": "mySJpjtd5MUM3Sgw",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "tRBgEXo58nP4T7b5",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.tRBgEXo58nP4T7b5"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        38,
+        38
+      ],
+      "drawn": false,
+      "text": "Gorilla Arms",
+      "documentId": "rpxue7Qt1g3oNOQv",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "SUia0jjgmlis9nKM",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.SUia0jjgmlis9nKM"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        39,
+        39
+      ],
+      "drawn": false,
+      "text": "Grotesque",
+      "documentId": "E5MAWCABD4E5fRdG",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "vCcxJG2RER8nqcuM",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.vCcxJG2RER8nqcuM"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        40,
+        40
+      ],
+      "drawn": false,
+      "text": "Heat Resistant",
+      "documentId": "GCCR3I9wfC8YtBLC",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "SWMqRFUxK4zPxY6S",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.SWMqRFUxK4zPxY6S"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        41,
+        41
+      ],
+      "drawn": false,
+      "text": "Heightened Senses",
+      "documentId": "gCM9fHWI0JpZbavt",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "5xI0tn6EaG0uKpmN",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.5xI0tn6EaG0uKpmN"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        42,
+        42
+      ],
+      "drawn": false,
+      "text": "Highly Flammable",
+      "documentId": "pGN6J1rs2Kc7NSxA",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "kRGhTaxfrVFXO9d0",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.kRGhTaxfrVFXO9d0"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        43,
+        43
+      ],
+      "drawn": false,
+      "text": "Highly Mutable",
+      "documentId": "fgmuh1gfwwjHyWMK",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "Xf7g0hRvYcvLCeVb",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.Xf7g0hRvYcvLCeVb"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        44,
+        44
+      ],
+      "drawn": false,
+      "text": "Horns",
+      "documentId": "4X9k4OhXsXAoDsa8",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "e0zfJnddda5IPXUt",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.e0zfJnddda5IPXUt"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        45,
+        45
+      ],
+      "drawn": false,
+      "text": "Hunger",
+      "documentId": "wlbetoSTTw4KoY3q",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "wHtjgCcuRIZkRgl0",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.wHtjgCcuRIZkRgl0"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        46,
+        46
+      ],
+      "drawn": false,
+      "text": "Idiot",
+      "documentId": "P18xlJcFQdUFkF03",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "CrfEWi1m6IjyMagy",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.CrfEWi1m6IjyMagy"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        47,
+        47
+      ],
+      "drawn": false,
+      "text": "Infrared Vision",
+      "documentId": "GtUXHtIlkYqJDnqS",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "yqjECHPz7dbBNhuk",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.yqjECHPz7dbBNhuk"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        48,
+        48
+      ],
+      "drawn": false,
+      "text": "Iron Stomach",
+      "documentId": "i3zuoBLWziUMiUAf",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "0ZjOkRLD4YcGfp5h",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.0ZjOkRLD4YcGfp5h"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        49,
+        49
+      ],
+      "drawn": false,
+      "text": "Irregular Walk",
+      "documentId": "lz1d76cm8OzVLGdp",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "HFGPfMejUXmxaYR5",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.HFGPfMejUXmxaYR5"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        50,
+        50
+      ],
+      "drawn": false,
+      "text": "Longing",
+      "documentId": "RuaoeHHXUQ7C4esc",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "V9WmgOldyBWRaunU",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.V9WmgOldyBWRaunU"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        51,
+        51
+      ],
+      "drawn": false,
+      "text": "Lots of Blood",
+      "documentId": "WGZXaqZ0xawrKGYg",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "DVX5oKla703FGxNG",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.DVX5oKla703FGxNG"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        52,
+        52
+      ],
+      "drawn": false,
+      "text": "Magnetic",
+      "documentId": "8QvkNQEcV5hhfGZ3",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "MEI7LvnOReg7H7XN",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.MEI7LvnOReg7H7XN"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        53,
+        53
+      ],
+      "drawn": false,
+      "text": "Mandibles",
+      "documentId": "e6mSZGFZr7GDVj6u",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "vScndZUTLigAsVJj",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.vScndZUTLigAsVJj"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        54,
+        54
+      ],
+      "drawn": false,
+      "text": "Monkey's Paw",
+      "documentId": "6lcNB7CzY4umBvJs",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "q382VlFgmzAglEmO",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.q382VlFgmzAglEmO"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        55,
+        55
+      ],
+      "drawn": false,
+      "text": "Mood Hair",
+      "documentId": "jaIh4fOANE8MT47u",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "LVP17ZUxFatNTXJy",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.LVP17ZUxFatNTXJy"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        56,
+        56
+      ],
+      "drawn": false,
+      "text": "Musculature",
+      "documentId": "lsGpdwCE5hLXuoc1",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "gqQEbQM5nc2n4pNf",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.gqQEbQM5nc2n4pNf"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        57,
+        57
+      ],
+      "drawn": false,
+      "text": "Natural Armor",
+      "documentId": "JwvKN2TCbvvsZvHW",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "opkL2e6qg592upji",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.opkL2e6qg592upji"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        58,
+        58
+      ],
+      "drawn": false,
+      "text": "Newt Limbs",
+      "documentId": "K36oIw0VGwbraPUt",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "SGGd0plGvaan8abL",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.SGGd0plGvaan8abL"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        59,
+        59
+      ],
+      "drawn": false,
+      "text": "Nightmares",
+      "documentId": "WrgiZiTKConaDyQ2",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "zfT5H9USEhhk08DA",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.zfT5H9USEhhk08DA"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        60,
+        60
+      ],
+      "drawn": false,
+      "text": "Nocturnal",
+      "documentId": "dehZqDxVDdWmBuka",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "Rp2QUHTSh2efqC8x",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.Rp2QUHTSh2efqC8x"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        61,
+        61
+      ],
+      "drawn": false,
+      "text": "Normalization",
+      "documentId": "wBRcPJe8LjZ6DaU2",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "1iXhJGTZ3hN1dhMu",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.1iXhJGTZ3hN1dhMu"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        62,
+        62
+      ],
+      "drawn": false,
+      "text": "Oviparous",
+      "documentId": "ERI9wdquNzGR6274",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "PtpcyQZ9Lyex2G9p",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.PtpcyQZ9Lyex2G9p"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        63,
+        63
+      ],
+      "drawn": false,
+      "text": "Painless",
+      "documentId": "DNW1KFYIk0M0NHq5",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "H2dNBDRAZ7igmQ0C",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.H2dNBDRAZ7igmQ0C"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        64,
+        64
+      ],
+      "drawn": false,
+      "text": "Pheromones",
+      "documentId": "482uluMx4ofF2CA8",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "HuV8Kld8MfMe5kmw",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.HuV8Kld8MfMe5kmw"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        65,
+        65
+      ],
+      "drawn": false,
+      "text": "Phobia",
+      "documentId": "tuVlHG7th0gCkLlp",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "tXFy0Z5vycFsy8YG",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.tXFy0Z5vycFsy8YG"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        66,
+        66
+      ],
+      "drawn": false,
+      "text": "Photosensitivity",
+      "documentId": "2xtlLU3Ba1kjEnbN",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "iqhq5ymaTwyJ5YLH",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.iqhq5ymaTwyJ5YLH"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        67,
+        67
+      ],
+      "drawn": false,
+      "text": "Photosynthetic",
+      "documentId": "2fP7R497GKuAZJ5F",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "IpUYLDO35PmnqNbn",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.IpUYLDO35PmnqNbn"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        68,
+        68
+      ],
+      "drawn": false,
+      "text": "Poison Saliva",
+      "documentId": "UYW5KuFvMTBXgyL9",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "y8eMLAZQS2u6tUVB",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.y8eMLAZQS2u6tUVB"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        69,
+        69
+      ],
+      "drawn": false,
+      "text": "Pouch",
+      "documentId": "i0zhmW7qWFHSU3CC",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "2V52ci8CITKBoSFy",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.2V52ci8CITKBoSFy"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        70,
+        70
+      ],
+      "drawn": false,
+      "text": "Prehensile Tongue",
+      "documentId": "Q7RIQWAkJbqT4ThL",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "4z0ReXonMkyKQayW",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.4z0ReXonMkyKQayW"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        71,
+        71
+      ],
+      "drawn": false,
+      "text": "Quadrupedal",
+      "documentId": "30VNzvAkha3IEIu1",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "7MeM7EdnRjmCusdp",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.7MeM7EdnRjmCusdp"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        72,
+        72
+      ],
+      "drawn": false,
+      "text": "Quadruple Jointed",
+      "documentId": "hjtXZOkGPScMtlNs",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "ZwSaOTuGsDpyECXg",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.ZwSaOTuGsDpyECXg"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        73,
+        73
+      ],
+      "drawn": false,
+      "text": "Rage",
+      "documentId": "7fHy1qvnCxs3mT3t",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "x9nLs5hVco4Q2Njj",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.x9nLs5hVco4Q2Njj"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        74,
+        74
+      ],
+      "drawn": false,
+      "text": "Rapid Healing",
+      "documentId": "lVCihMSloUFClWNo",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "9chOlvvIs8Ug2fPY",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.9chOlvvIs8Ug2fPY"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        75,
+        75
+      ],
+      "drawn": false,
+      "text": "Rebirth",
+      "documentId": "OKtHdVCSbnQkfiP8",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "2CaaSMUZ6DIjykHx",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.2CaaSMUZ6DIjykHx"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        76,
+        76
+      ],
+      "drawn": false,
+      "text": "Scales",
+      "documentId": "fTNsE1R1UxiEdHqZ",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "gzyks64wL3CKRzkS",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.gzyks64wL3CKRzkS"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        77,
+        77
+      ],
+      "drawn": false,
+      "text": "Sex Change",
+      "documentId": "0qEASGED75isAQiu",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "onVE8XvcInUTH3Uc",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.onVE8XvcInUTH3Uc"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        78,
+        78
+      ],
+      "drawn": false,
+      "text": "Side Eye",
+      "documentId": "pnScc5yMDc4LllHb",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "L8HXuTBD1HfxGmoL",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.L8HXuTBD1HfxGmoL"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        79,
+        79
+      ],
+      "drawn": false,
+      "text": "Skin Folds",
+      "documentId": "wShWOYQUxsNYt4y6",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "efL2D7iQ6AXOOlUU",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.efL2D7iQ6AXOOlUU"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        80,
+        80
+      ],
+      "drawn": false,
+      "text": "Slippery",
+      "documentId": "b0hT69egKAWn8771",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "syweGgJReE5fIqE9",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.syweGgJReE5fIqE9"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        81,
+        81
+      ],
+      "drawn": false,
+      "text": "Snakeskin",
+      "documentId": "eyrsbe8AoVOfLoDh",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "FOcNuTPZ7qycdTOK",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.FOcNuTPZ7qycdTOK"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        82,
+        82
+      ],
+      "drawn": false,
+      "text": "Snout",
+      "documentId": "UbDMSSlf2eM1pPjB",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "5MCZxoT8WrBO5ah8",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.5MCZxoT8WrBO5ah8"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        83,
+        83
+      ],
+      "drawn": false,
+      "text": "Spikes",
+      "documentId": "tAbVs8x2n9hbDGaa",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "jztzygfarmkD7YhV",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.jztzygfarmkD7YhV"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        84,
+        84
+      ],
+      "drawn": false,
+      "text": "Strange Ability",
+      "documentId": "rxNlsoFOlQyNGHj2",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "94C5ZmN4QVu7OqSv",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.94C5ZmN4QVu7OqSv"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        85,
+        85
+      ],
+      "drawn": false,
+      "text": "Strange Skin",
+      "documentId": "KLLFORNZzLLVkKfh",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "oGqPCjxjwBvrhvAi",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.oGqPCjxjwBvrhvAi"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        86,
+        86
+      ],
+      "drawn": false,
+      "text": "Strange Speech",
+      "documentId": "vQmfFvlNBp2s6d94",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "yBWDRkb5KT6NwvAf",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.yBWDRkb5KT6NwvAf"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        87,
+        87
+      ],
+      "drawn": false,
+      "text": "Strong Back",
+      "documentId": "bE4Slx2wtx3V2Hvy",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "WUr7dXSnZc9Vr3Lx",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.WUr7dXSnZc9Vr3Lx"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        88,
+        88
+      ],
+      "drawn": false,
+      "text": "Super Immunity",
+      "documentId": "PiGXtmFsGHOGDYFA",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "SAtOjNtV0pzvxtNG",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.SAtOjNtV0pzvxtNG"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        89,
+        89
+      ],
+      "drawn": false,
+      "text": "Tail",
+      "documentId": "dUtQwmTR1ewEBKkK",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "JvggBfrmOPkhuBfP",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.JvggBfrmOPkhuBfP"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        90,
+        90
+      ],
+      "drawn": false,
+      "text": "Teeth",
+      "documentId": "KQzFYkTJzd5MbFJ0",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "im2vDpFnf2dMDTc1",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.im2vDpFnf2dMDTc1"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        91,
+        91
+      ],
+      "drawn": false,
+      "text": "Temporary Normal",
+      "documentId": "kBgj5LlORDXuT3xp",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "zGKQassb532FFxHP",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.zGKQassb532FFxHP"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        92,
+        92
+      ],
+      "drawn": false,
+      "text": "Toxin Resistance",
+      "documentId": "6sud0X3CM7uuXjN3",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "w3FxfJZD2nYAP9uh",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.w3FxfJZD2nYAP9uh"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        93,
+        93
+      ],
+      "drawn": false,
+      "text": "Toxin Sink",
+      "documentId": "EUcEoeVH2hSb7JLM",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "Z9tWw8ZeZ3Gcpuj6",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.Z9tWw8ZeZ3Gcpuj6"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        94,
+        94
+      ],
+      "drawn": false,
+      "text": "Trunk",
+      "documentId": "KDIetdSpdLiIEsdJ",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "0fnMhhCJkMVZi7z9",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.0fnMhhCJkMVZi7z9"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        95,
+        95
+      ],
+      "drawn": false,
+      "text": "Unappetizing",
+      "documentId": "baRawxvqGaYnEviF",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "0Ak0vHQ8Ft7alVRy",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.0Ak0vHQ8Ft7alVRy"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        96,
+        96
+      ],
+      "drawn": false,
+      "text": "Uncanny Valley",
+      "documentId": "4MDGTTrcuCaSi4o9",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "HFklWDU253W2l1FE",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.HFklWDU253W2l1FE"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        97,
+        97
+      ],
+      "drawn": false,
+      "text": "Unstable",
+      "documentId": "jc0BxLRE0RUvVQ2s",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "c5B7fep08cmL8M3P",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.c5B7fep08cmL8M3P"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        98,
+        98
+      ],
+      "drawn": false,
+      "text": "Venom",
+      "documentId": "rcT0LgMgcRKrNgTP",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "7IHaKYfxOjkkz2Gj",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.7IHaKYfxOjkkz2Gj"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        99,
+        99
+      ],
+      "drawn": false,
+      "text": "Vulnerability",
+      "documentId": "mrtzLcoSixIN1t9u",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "0PL2FkgrZUmVWWpL",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.0PL2FkgrZUmVWWpL"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        100,
+        100
+      ],
+      "drawn": false,
+      "text": "Wings",
+      "documentId": "40JMZ6ef2ycCnMOj",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "LSOFgOTZJPseXyEM",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.LSOFgOTZJPseXyEM"
+    },
+    {
+      "type": "pack",
+      "documentCollection": "railers.mutations",
+      "weight": 1,
+      "range": [
+        26,
+        26
+      ],
+      "drawn": false,
+      "text": "Extra Eyes",
+      "documentId": "hYzwBHKoVPqaUvRI",
+      "img": "icons/svg/item-bag.svg",
+      "_id": "H1mdyMB4cn910j9N",
+      "flags": {},
+      "_key": "!tables.results!L1QATyWjSSJBKg0u.H1mdyMB4cn910j9N"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 2,
+    "Rkv9Xf9nMjw1REva": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "createdTime": 1744695731005,
+    "modifiedTime": 1744695735433,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+  },
+  "formula": "1d100",
+  "_id": "L1QATyWjSSJBKg0u",
+  "sort": 600000,
+  "_key": "!tables!L1QATyWjSSJBKg0u"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Armored Jacket",
+  "type": "clothing",
+  "_id": "3EGOdvJwKhakipZ7",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Armored jackets are for those people who can&rsquo;t get&nbsp;enough armor between them and all the dangers of the&nbsp;Snowlands. At the cost of a heavier Load, they provide&nbsp;additional Protection with a moderate sacrifice to Insulation.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "protection": 1,
+    "insulation": 12,
+    "clothingType": "outerwear"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720117967153,
+    "modifiedTime": 1720118006599,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!3EGOdvJwKhakipZ7"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Cryosene Heater",
+  "type": "gear",
+  "_id": "1DRFYPVjzNraGM3h",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Cryosene heaters are portable space heaters that&nbsp;can provide enough heat to warm a small house with just&nbsp;a few rooms to above freezing. They are even warm&nbsp;enough to keep you from freezing outdoors if you keep&nbsp;close. They have 5 gallon tanks and can run for 2 Quarters from full. If used to warm a small space, such as a&nbsp;tent, to above freezing, the tank can last 4 Quarters from&nbsp;full.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720118582752,
+    "modifiedTime": 1720118602075,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!1DRFYPVjzNraGM3h"
+}

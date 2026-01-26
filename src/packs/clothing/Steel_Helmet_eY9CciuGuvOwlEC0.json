@@ -1,0 +1,32 @@
+{
+  "name": "Steel Helmet",
+  "type": "clothing",
+  "_id": "eY9CciuGuvOwlEC0",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Steel helmets are little more than shaped metal with&nbsp;a leather lining for comfort. They provide extra Protection but no Insulation.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "protection": 2,
+    "insulation": 0,
+    "clothingType": "headgear"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720118248433,
+    "modifiedTime": 1720118264792,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!eY9CciuGuvOwlEC0"
+}

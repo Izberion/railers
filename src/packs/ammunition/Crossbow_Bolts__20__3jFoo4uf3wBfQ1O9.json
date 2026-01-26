@@ -1,0 +1,30 @@
+{
+  "name": "Crossbow Bolts (20)",
+  "type": "gear",
+  "_id": "3jFoo4uf3wBfQ1O9",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Crossbow bolts are similar to arrows, but can only&nbsp;be fired from a crossbow. Bolts can be tipped with either&nbsp;sharp or blunt heads. Sharp heads cause W4 Wounds.&nbsp;Blunt heads inflict W1 Wounds. When firing a blunt bolt,&nbsp;your crossbow&rsquo;s range will be reduced to Medium. It is&nbsp;assumed any bolts you fire will have a sharp head, unless&nbsp;you state otherwise. You don't need to track how many&nbsp;blunt bolts you have versus pointed, they're the same&nbsp;item. Bolts come in bundles of 20.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720116506680,
+    "modifiedTime": 1720137628668,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!3jFoo4uf3wBfQ1O9"
+}

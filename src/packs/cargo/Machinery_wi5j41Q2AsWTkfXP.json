@@ -1,0 +1,28 @@
+{
+  "name": "Machinery",
+  "type": "cargo",
+  "_id": "wi5j41Q2AsWTkfXP",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Spare parts, industrial components,&nbsp;and other bits and pieces that can be used to get any mechanical or electrical devices back up and running.</p>",
+    "price": 1500,
+    "weight": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720117259951,
+    "modifiedTime": 1720117284751,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!wi5j41Q2AsWTkfXP"
+}

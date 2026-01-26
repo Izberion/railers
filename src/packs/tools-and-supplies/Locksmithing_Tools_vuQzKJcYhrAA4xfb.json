@@ -1,0 +1,30 @@
+{
+  "name": "Locksmithing Tools",
+  "type": "gear",
+  "_id": "vuQzKJcYhrAA4xfb",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Locksmithing kits contain a set of picks, hooks, and&nbsp;jeweler&rsquo;s files in an easily concealed leather tool roll.&nbsp;While any small tool you can fit into a lock can be used to&nbsp;pick it, using the tools from these kits to pick a lock provides a +2d bonus.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720137208886,
+    "modifiedTime": 1720137220697,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!vuQzKJcYhrAA4xfb"
+}

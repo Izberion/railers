@@ -1,0 +1,193 @@
+{
+  "name": "Cave Roach",
+  "type": "demon",
+  "_id": "meU1dN5YfEjV0XAw",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "hitpoints": {
+      "label": "RAILERS.Hitpoints",
+      "value": 12,
+      "min": 0,
+      "max": 12
+    },
+    "wounds": {
+      "label": "RAILERS.Wounds",
+      "value": 0,
+      "min": 0,
+      "max": 0
+    },
+    "nerve": {
+      "label": "RAILERS.Nerve",
+      "value": 20,
+      "min": 0,
+      "max": 20
+    },
+    "corruption": {
+      "label": "RAILERS.Corruption",
+      "value": 0,
+      "max": 60,
+      "min": 0
+    },
+    "load": {
+      "onHand": {
+        "value": 0,
+        "max": 0
+      },
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "faction": "",
+    "biography": "",
+    "notes": "",
+    "attributes": {
+      "strength": 2,
+      "agility": 2,
+      "intellect": 1,
+      "endurance": 1,
+      "fear": 5,
+      "attack": {
+        "damage": 2,
+        "severity": 2
+      }
+    },
+    "tags": "Insectile, Small, Scavenger, Cave Dweller"
+  },
+  "prototypeToken": {
+    "name": "Cave Roach",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "hitpoints"
+    },
+    "bar2": {
+      "attribute": "wounds"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Light Blind",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action&nbsp;taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
+        "action": "passive"
+      },
+      "_id": "gV1tq8hs5m4kWefT",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138049115,
+        "modifiedTime": 1720138069374,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!meU1dN5YfEjV0XAw.gV1tq8hs5m4kWefT"
+    },
+    {
+      "name": "Clingy",
+      "type": "ability",
+      "system": {
+        "description": "<p>The creature is able to walk freely up walls and along ceilings.</p>",
+        "action": "passive"
+      },
+      "_id": "DTSRkDNTgtz4tpD9",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138071787,
+        "modifiedTime": 1720138086381,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!meU1dN5YfEjV0XAw.DTSRkDNTgtz4tpD9"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720138035002,
+    "modifiedTime": 1720138108071,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!actors!meU1dN5YfEjV0XAw"
+}

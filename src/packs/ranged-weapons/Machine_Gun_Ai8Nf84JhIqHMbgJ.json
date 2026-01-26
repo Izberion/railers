@@ -1,0 +1,41 @@
+{
+  "name": "Machine Gun",
+  "type": "weapon",
+  "_id": "Ai8Nf84JhIqHMbgJ",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Machine guns are the best way to throw tons of lead&nbsp;towards the enemy. They are very heavy and are simply&nbsp;too unwieldy to fire without deploying the tripod or firing from a mounted position. They are automatic&nbsp;firearms and use belts of heavy ammunition which can&nbsp;hold up to 250 rounds each.</p>",
+    "quantity": 1,
+    "load": 3,
+    "stowage": "other",
+    "attack": "minor",
+    "damage": 6,
+    "severity": 5,
+    "reload": "full",
+    "magazine": {
+      "value": 0,
+      "max": 250
+    },
+    "range": "long",
+    "skill": "heavyweapons",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720135765589,
+    "modifiedTime": 1720135843230,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!Ai8Nf84JhIqHMbgJ"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Hot Plate",
+  "type": "gear",
+  "_id": "i5101i09nSF29dT4",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Hot plates are portable, electrically-heated cooking&nbsp;surfaces. They require 1 lead-acid battery and can be&nbsp;used for 1 Quarter of continuous operation.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720118892324,
+    "modifiedTime": 1720118899749,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!i5101i09nSF29dT4"
+}

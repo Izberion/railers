@@ -1,0 +1,232 @@
+{
+  "name": "Mushroom Man",
+  "type": "demon",
+  "_id": "ukk8R6NceJgPv5QC",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "hitpoints": {
+      "label": "RAILERS.Hitpoints",
+      "value": 12,
+      "min": 0,
+      "max": 12
+    },
+    "wounds": {
+      "label": "RAILERS.Wounds",
+      "value": 0,
+      "min": 0,
+      "max": 0
+    },
+    "nerve": {
+      "label": "RAILERS.Nerve",
+      "value": 20,
+      "min": 0,
+      "max": 20
+    },
+    "corruption": {
+      "label": "RAILERS.Corruption",
+      "value": 0,
+      "max": 60,
+      "min": 0
+    },
+    "load": {
+      "onHand": {
+        "value": 0,
+        "max": 0
+      },
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "faction": "",
+    "biography": "",
+    "notes": "",
+    "attributes": {
+      "strength": 3,
+      "agility": 3,
+      "intellect": 6,
+      "endurance": 1,
+      "fear": 4,
+      "attack": {
+        "damage": 3,
+        "severity": 3
+      }
+    },
+    "tags": "Bipedal, Small, Cave Dweller"
+  },
+  "prototypeToken": {
+    "name": "Mushroom Man",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "hitpoints"
+    },
+    "bar2": {
+      "attribute": "wounds"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Light Blind",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action&nbsp;taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
+        "action": "passive"
+      },
+      "_id": "o0agsLvzjgYzvwTZ",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.world.demons.Actor.meU1dN5YfEjV0XAw.Item.gV1tq8hs5m4kWefT"
+        }
+      },
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138049115,
+        "modifiedTime": 1720139781126,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!ukk8R6NceJgPv5QC.o0agsLvzjgYzvwTZ"
+    },
+    {
+      "name": "Human-ish",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon is able to use tools and speak with its own rudimentary language. For all intents and purposes, it&rsquo;s in its stone age.</p>",
+        "action": "passive"
+      },
+      "_id": "Ma88zWf2gp01UD63",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.world.demons.Actor.HLr1MTqbl8CRddfZ.Item.aXlOas6BausA5xNO"
+        }
+      },
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720137771601,
+        "modifiedTime": 1720139784374,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!ukk8R6NceJgPv5QC.Ma88zWf2gp01UD63"
+    },
+    {
+      "name": "Tolerable",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon isn&rsquo;t as horrifying as most. Three consecutive successful Resolve saves will immunize the rolling character to its Fear effects. It may still give the character the&nbsp;willies, but it&rsquo;ll be tolerable enough to interact with.</p>",
+        "action": "passive"
+      },
+      "_id": "E7KnXSLwXm5qsyFL",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.world.demons.Actor.HLr1MTqbl8CRddfZ.Item.fia1g9LE44HRLZjB"
+        }
+      },
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720137794074,
+        "modifiedTime": 1720139785377,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!ukk8R6NceJgPv5QC.E7KnXSLwXm5qsyFL"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720139752306,
+    "modifiedTime": 1720139798524,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!actors!ukk8R6NceJgPv5QC"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Bow",
+  "type": "weapon",
+  "_id": "g79cBoPgVfnM0I2m",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Bows, while primitive, remain effective. If you make&nbsp;an attack with a bow while Hidden, you will not be revealed immediately, as long as you aren't standing out in&nbsp;the open. Enemies that saw the arrow hit will get to make&nbsp;an immediate contested Perception check to locate you.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "attack": "major",
+    "damage": 4,
+    "severity": 3,
+    "reload": "maneuver",
+    "magazine": {
+      "value": 0,
+      "max": 1
+    },
+    "range": "long",
+    "skill": "bows",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720119546166,
+    "modifiedTime": 1720119602006,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!g79cBoPgVfnM0I2m"
+}

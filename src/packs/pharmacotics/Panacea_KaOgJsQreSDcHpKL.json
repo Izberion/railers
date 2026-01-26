@@ -1,0 +1,30 @@
+{
+  "name": "Panacea",
+  "type": "gear",
+  "_id": "KaOgJsQreSDcHpKL",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Panacea greatly reduces the chance of catching a&nbsp;disease. The character gains a +2d bonus on any Endurance save to resist catching a disease. They also&nbsp;cause night terrors, preventing the diseased character&nbsp;from recovering Nerve from sleep for a week after taking&nbsp;the pharmacotic. The antiviral effects last for 4 days.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136319411,
+    "modifiedTime": 1720136329044,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!KaOgJsQreSDcHpKL"
+}

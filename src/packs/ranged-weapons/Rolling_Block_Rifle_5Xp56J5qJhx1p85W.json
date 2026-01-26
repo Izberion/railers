@@ -1,0 +1,41 @@
+{
+  "name": "Rolling Block Rifle",
+  "type": "weapon",
+  "_id": "5Xp56J5qJhx1p85W",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Rolling block rifles are what you want when encountering a demon bigger than a house, preferably at a&nbsp;good distance. They have excellent range and damage,&nbsp;but only have a single round internal magazine.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "attack": "major",
+    "damage": 8,
+    "severity": 7,
+    "reload": "maneuver",
+    "magazine": {
+      "value": 0,
+      "max": 1
+    },
+    "range": "extreme",
+    "skill": "smallarms",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720120232456,
+    "modifiedTime": 1720120326068,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!5Xp56J5qJhx1p85W"
+}

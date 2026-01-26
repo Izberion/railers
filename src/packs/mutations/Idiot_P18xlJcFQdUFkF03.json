@@ -1,0 +1,26 @@
+{
+  "name": "Idiot",
+  "type": "mutation",
+  "_id": "P18xlJcFQdUFkF03",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character isn&rsquo;t the sharpest tool in the shed. His Education and Engineering ranks cap at 1. If Education, Engineering, or any associated skills are above 1, they drop to 1.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143948393,
+    "modifiedTime": 1720143977715,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!P18xlJcFQdUFkF03"
+}

@@ -1,0 +1,247 @@
+{
+  "name": "Tunnelcat Soldier",
+  "type": "demon",
+  "_id": "hVTa28sCkCUBGvWA",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "hitpoints": {
+      "label": "RAILERS.Hitpoints",
+      "value": 12,
+      "min": 0,
+      "max": 12
+    },
+    "wounds": {
+      "label": "RAILERS.Wounds",
+      "value": 0,
+      "min": 0,
+      "max": 0
+    },
+    "nerve": {
+      "label": "RAILERS.Nerve",
+      "value": 20,
+      "min": 0,
+      "max": 20
+    },
+    "corruption": {
+      "label": "RAILERS.Corruption",
+      "value": 0,
+      "max": 60,
+      "min": 0
+    },
+    "load": {
+      "onHand": {
+        "value": 0,
+        "max": 0
+      },
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "faction": "",
+    "biography": "",
+    "notes": "",
+    "attributes": {
+      "strength": 5,
+      "agility": 4,
+      "intellect": 3,
+      "endurance": 3,
+      "fear": 6,
+      "attack": {
+        "damage": 5,
+        "severity": 4
+      }
+    },
+    "tags": "Bipedal, Small, Territorial, Colony Builder"
+  },
+  "prototypeToken": {
+    "name": "Tunnelcat Soldier",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "hitpoints"
+    },
+    "bar2": {
+      "attribute": "wounds"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Organized",
+      "type": "ability",
+      "system": {
+        "description": "<p>When in groups, these demons get access to more abilities.</p>",
+        "action": "passive"
+      },
+      "_id": "PkGJ5e9eS4b0mTLH",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720141736850,
+        "modifiedTime": 1720141748343,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!hVTa28sCkCUBGvWA.PkGJ5e9eS4b0mTLH"
+    },
+    {
+      "name": "Part of the Pack",
+      "type": "ability",
+      "system": {
+        "description": "<p>As long as there are at least 2 of these demons in the same zone, they&nbsp;receive +1d to any attack or defense roll.</p>",
+        "action": "passive"
+      },
+      "_id": "yEt3rXCYLfP07zW3",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720141749940,
+        "modifiedTime": 1720141770275,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!hVTa28sCkCUBGvWA.yEt3rXCYLfP07zW3"
+    },
+    {
+      "name": "Battle Song",
+      "type": "ability",
+      "system": {
+        "description": "<p>&nbsp;As long as there are at least 4 of these demons in the same zone, they are able to harmonize their song, creating a tone that melts the glue that holds the tunnels together,&nbsp;causing the zone to collapse, as long as it is in the colony. All 4 must use this action in the same&nbsp;round. The collapse happens at the end of the turn of the final demon.</p>",
+        "action": "major"
+      },
+      "_id": "77o6eP2NItYDOQtx",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720141781882,
+        "modifiedTime": 1720141806536,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!hVTa28sCkCUBGvWA.77o6eP2NItYDOQtx"
+    },
+    {
+      "name": "Tunnelcat King",
+      "type": "ability",
+      "system": {
+        "description": "<p>As long as there are at least 6 of these demons in the same zone, they are&nbsp;able to form together into a Medium sized demon called a Tunnelcat King. The demon&rsquo;s stats become 8/W8 ATK, 9 STR, 6 AGI, 4 INT, 5 END, and 7 FEAR. Anyone that witnesses the transformation&nbsp;must make a Resolve save at the new Fear rating. All 6 demons must use this action in the same&nbsp;round. The transformation happens at the end of the turn of the final demon. If the transformation&nbsp;is stopped before it can finish, whether by moving a demon out of the zone or killing one, demons&nbsp;involved are struck with a 6/W8 Wound.</p>",
+        "action": "full"
+      },
+      "_id": "1FHDwY1KiEhJpuoJ",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720141813272,
+        "modifiedTime": 1720141833303,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!hVTa28sCkCUBGvWA.1FHDwY1KiEhJpuoJ"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720141693993,
+    "modifiedTime": 1720141833303,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!actors!hVTa28sCkCUBGvWA"
+}

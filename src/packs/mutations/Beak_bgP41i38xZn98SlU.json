@@ -1,0 +1,26 @@
+{
+  "name": "Beak",
+  "type": "mutation",
+  "_id": "bgP41i38xZn98SlU",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character&rsquo;s mouth becomes a&nbsp;beak. He has difficulty producing some sounds while&nbsp;speaking do to the lack of lips. He gains a natural&nbsp;weapon that deals 4/W3.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143116032,
+    "modifiedTime": 1720143128280,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!bgP41i38xZn98SlU"
+}

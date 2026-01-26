@@ -1,0 +1,26 @@
+{
+  "name": "Extra Arms",
+  "type": "mutation",
+  "_id": "jHzQ718BPTEM599i",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character gains an extra&nbsp;set of arms. The arms might be full sized or much&nbsp;smaller. Either way, the character has 1 extra Load Limit.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143519590,
+    "modifiedTime": 1720143526728,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!jHzQ718BPTEM599i"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Rifle Ammo (20)",
+  "type": "gear",
+  "_id": "DFrtsmTk3Pl4ut4I",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Rifle ammo is usable in nearly any kind of rifle,&nbsp;whether bolt-action, lever-action, semi-automatic, or&nbsp;full auto. Rifle ammo comes in boxes of 20.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720116297927,
+    "modifiedTime": 1720137601527,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!DFrtsmTk3Pl4ut4I"
+}

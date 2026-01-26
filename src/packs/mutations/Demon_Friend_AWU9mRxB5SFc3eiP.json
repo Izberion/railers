@@ -1,0 +1,26 @@
+{
+  "name": "Demon Friend",
+  "type": "mutation",
+  "_id": "AWU9mRxB5SFc3eiP",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character is able to&nbsp;walk among demons, even territorial or hostile ones,&nbsp;without fear of attack. This neutrality will not hold if he&nbsp;attacks a demon first. If the character has both Demon&nbsp;Bane and Demon Friend, neither will have any effect.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143314889,
+    "modifiedTime": 1720143323182,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!AWU9mRxB5SFc3eiP"
+}

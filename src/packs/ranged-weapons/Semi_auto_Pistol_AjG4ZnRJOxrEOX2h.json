@@ -1,0 +1,41 @@
+{
+  "name": "Semi-auto Pistol",
+  "type": "weapon",
+  "_id": "AjG4ZnRJOxrEOX2h",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Semi-automatic pistols are the standard sidearm of&nbsp;the Snowlands. They have a 9 round detachable magazine.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "attack": "minor",
+    "damage": 4,
+    "severity": 3,
+    "reload": "minor",
+    "magazine": {
+      "value": 0,
+      "max": 9
+    },
+    "range": "medium",
+    "skill": "smallarms",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720119796488,
+    "modifiedTime": 1720119833883,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!AjG4ZnRJOxrEOX2h"
+}

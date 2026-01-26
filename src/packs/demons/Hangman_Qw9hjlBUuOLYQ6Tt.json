@@ -1,0 +1,224 @@
+{
+  "name": "Hangman",
+  "type": "demon",
+  "_id": "Qw9hjlBUuOLYQ6Tt",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "hitpoints": {
+      "label": "RAILERS.Hitpoints",
+      "value": 12,
+      "min": 0,
+      "max": 12
+    },
+    "wounds": {
+      "label": "RAILERS.Wounds",
+      "value": 0,
+      "min": 0,
+      "max": 0
+    },
+    "nerve": {
+      "label": "RAILERS.Nerve",
+      "value": 20,
+      "min": 0,
+      "max": 20
+    },
+    "corruption": {
+      "label": "RAILERS.Corruption",
+      "value": 0,
+      "max": 60,
+      "min": 0
+    },
+    "load": {
+      "onHand": {
+        "value": 0,
+        "max": 0
+      },
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "faction": "",
+    "biography": "",
+    "notes": "",
+    "attributes": {
+      "strength": 2,
+      "agility": 4,
+      "intellect": 1,
+      "endurance": 2,
+      "fear": 6,
+      "attack": {
+        "damage": 4,
+        "severity": 3
+      }
+    },
+    "tags": "Insectile, Small, Ambush"
+  },
+  "prototypeToken": {
+    "name": "Hangman",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "hitpoints"
+    },
+    "bar2": {
+      "attribute": "wounds"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Winged",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon can fly. It cannot move faster than it normally would on the&nbsp;ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
+        "action": "passive"
+      },
+      "_id": "WYHyoWOvHV7xXTiG",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.world.demons.Actor.vJ7lG4Nkm5xtyXMN.Item.887Bd10VUTjC1Bap"
+        }
+      },
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720137970625,
+        "modifiedTime": 1720139222522,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!Qw9hjlBUuOLYQ6Tt.WYHyoWOvHV7xXTiG"
+    },
+    {
+      "name": "Paralytic Venom",
+      "type": "ability",
+      "system": {
+        "description": "<p>With each successful attack, the demon has a chance to inject its&nbsp;venom into its target. The target must make a TN 4 Endurance saving throw or become Paralyzed for&nbsp;a number of Rounds equal to the saving throw difficulty. The target number increases by 1 for each&nbsp;following successful attack against an individual target. Succeeding on the TN 8 save will make the&nbsp;target immune to the venom for a month.</p>",
+        "action": "passive"
+      },
+      "_id": "JS5i5yTYPrmCTq6r",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720139225981,
+        "modifiedTime": 1720139245131,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!Qw9hjlBUuOLYQ6Tt.JS5i5yTYPrmCTq6r"
+    },
+    {
+      "name": "Steel Web",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon encases a Paralyzed target in thick webs. The target becomes Restrained. If the paralysis wears off in time, the Restrained character can attempt to break free with&nbsp;a TN 7 Exertion check. Another character can cut the Restrained character free with a TN 6 Exertion&nbsp;check at any time.</p>",
+        "action": "full"
+      },
+      "_id": "a2EHHTV1kFvjwSqw",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720139247221,
+        "modifiedTime": 1720139269310,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!Qw9hjlBUuOLYQ6Tt.a2EHHTV1kFvjwSqw"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720139195533,
+    "modifiedTime": 1720139269310,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!actors!Qw9hjlBUuOLYQ6Tt"
+}

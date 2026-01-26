@@ -1,0 +1,41 @@
+{
+  "name": "Automatic Rifle",
+  "type": "weapon",
+  "_id": "8U43vhTT0uoS0Bv2",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Automatic rifles aren&rsquo;t as powerful as other rifles,&nbsp;but have a high rate of fire. They are automatic firearms&nbsp;and come with a 20 round detachable magazine.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "attack": "minor",
+    "damage": 5,
+    "severity": 4,
+    "reload": "minor",
+    "magazine": {
+      "value": 0,
+      "max": 20
+    },
+    "range": "long",
+    "skill": "smallarms",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720119987216,
+    "modifiedTime": 1720120026792,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!8U43vhTT0uoS0Bv2"
+}

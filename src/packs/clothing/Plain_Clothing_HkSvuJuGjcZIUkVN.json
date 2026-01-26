@@ -1,0 +1,32 @@
+{
+  "name": "Plain Clothing",
+  "type": "clothing",
+  "_id": "HkSvuJuGjcZIUkVN",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Plain clothing consists of a shirt, pants, socks and&nbsp;undergarments, those things typically required in a&nbsp;modesty society. You can safely assume your character&nbsp;owns these, no need to buy them unless they are somehow lost.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "protection": 0,
+    "insulation": 3,
+    "clothingType": "innerwear"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720117609806,
+    "modifiedTime": 1720117643511,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!HkSvuJuGjcZIUkVN"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Longing",
+  "type": "mutation",
+  "_id": "RuaoeHHXUQ7C4esc",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character feels an inexplicable urge to go out into the Snowlands. If he spends&nbsp;more than a day in civilization, roll a Resolve saving&nbsp;throw. On a failure, he flees to the Snowlands. Repeat the&nbsp;save after every Quarter until success, at which time he&nbsp;can return from his outing.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720144046928,
+    "modifiedTime": 1720144054463,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!RuaoeHHXUQ7C4esc"
+}

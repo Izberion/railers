@@ -1,0 +1,32 @@
+{
+  "name": "Parka",
+  "type": "clothing",
+  "_id": "Nl1Dix432umqqUWx",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Parkas, whether made from furs or natural fibers,&nbsp;provide the best protection from the freezing weather of&nbsp;the Snowlands.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "protection": 0,
+    "insulation": 26,
+    "clothingType": "outerwear"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720118074592,
+    "modifiedTime": 1720118098300,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!Nl1Dix432umqqUWx"
+}

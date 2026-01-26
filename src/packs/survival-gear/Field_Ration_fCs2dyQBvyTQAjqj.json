@@ -1,0 +1,30 @@
+{
+  "name": "Field Ration",
+  "type": "gear",
+  "_id": "fCs2dyQBvyTQAjqj",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Field rations are shelf stable or canned goods that&nbsp;can usually be eaten cold, though heating them makes&nbsp;them much more tolerable. They are equal to 1 ration&nbsp;worth of food. They can be purchased or pulled directly&nbsp;from the train&rsquo;s stores, 1 to 1.</p>",
+    "quantity": 1,
+    "load": 0.25,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136746640,
+    "modifiedTime": 1720136755370,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!fCs2dyQBvyTQAjqj"
+}

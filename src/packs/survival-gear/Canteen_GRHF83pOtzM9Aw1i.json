@@ -1,0 +1,30 @@
+{
+  "name": "Canteen",
+  "type": "gear",
+  "_id": "GRHF83pOtzM9Aw1i",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Canteens are the best way to store water when away&nbsp;from the train. A single canteen holds 2 rations of water.&nbsp;They can be filled with water directly from the train&rsquo;s&nbsp;stores for 2 rations worth of supply per canteen. They&nbsp;can also be filled with snow melt, though without treating it, your character will gain 1 Corruption for each ration of water he drinks.</p>",
+    "quantity": 1,
+    "load": 0.5,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136681252,
+    "modifiedTime": 1720136701950,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!GRHF83pOtzM9Aw1i"
+}

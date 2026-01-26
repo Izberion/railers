@@ -1,0 +1,26 @@
+{
+  "name": "Gorgeous",
+  "type": "mutation",
+  "_id": "mySJpjtd5MUM3Sgw",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character is beautiful in&nbsp;all the right ways and none of the wrong ones. He has&nbsp;+2d to any Speech skill checks.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143747412,
+    "modifiedTime": 1720143755090,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!mySJpjtd5MUM3Sgw"
+}

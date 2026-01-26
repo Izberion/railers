@@ -1,0 +1,26 @@
+{
+  "name": "Face Blind",
+  "type": "mutation",
+  "_id": "N8yXqfOFaWANFjoh",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character cannot recognize faces. He may be able to recognize people by their&nbsp;shape, dress, voice, or mannerisms. Perception checks&nbsp;to find a particular person have a -2d penalty. Checks to&nbsp;see through a disguise have a -3d penalty.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143549168,
+    "modifiedTime": 1720143558601,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!N8yXqfOFaWANFjoh"
+}

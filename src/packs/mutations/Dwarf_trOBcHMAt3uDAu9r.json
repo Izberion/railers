@@ -1,0 +1,26 @@
+{
+  "name": "Dwarf",
+  "type": "mutation",
+  "_id": "trOBcHMAt3uDAu9r",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character shrinks in size, to&nbsp;just under 4 feet tall. Stout and compact, he is now considered Small, whereas a normal person is Medium, according to demon sizing on page 94. If the character has&nbsp;the Giant mutation, he returns to normal size, though&nbsp;likely retains his stocky stature.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143426027,
+    "modifiedTime": 1720143436248,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!trOBcHMAt3uDAu9r"
+}

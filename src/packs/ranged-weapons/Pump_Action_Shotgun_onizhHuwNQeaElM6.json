@@ -1,0 +1,41 @@
+{
+  "name": "Pump-Action Shotgun",
+  "type": "weapon",
+  "_id": "onizhHuwNQeaElM6",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Pump-action shotguns are the classic shotgun. Due&nbsp;to the manual action, a second attack in a Round will&nbsp;suffer a -1d penalty. These have a 6 round internal magazine. Rounds must be fed into the magazine by hand,one at a time. A single round can be loaded for a Maneuver, in place of reloading the entire magazine.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "attack": "major",
+    "damage": 6,
+    "severity": 7,
+    "reload": "major",
+    "magazine": {
+      "value": 0,
+      "max": 6
+    },
+    "range": "medium",
+    "skill": "smallarms",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720135506264,
+    "modifiedTime": 1720135546405,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!onizhHuwNQeaElM6"
+}

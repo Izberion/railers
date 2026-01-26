@@ -1,0 +1,41 @@
+{
+  "name": "Revolver",
+  "type": "weapon",
+  "_id": "UUo8KzPDuwzRaM8I",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Revolvers have good damage but are limited by their&nbsp;slow reload speed and 6 round cylinder. Each round&nbsp;must be loaded by hand, one at a time.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "attack": "minor",
+    "damage": 5,
+    "severity": 4,
+    "reload": "major",
+    "magazine": {
+      "value": 0,
+      "max": 6
+    },
+    "range": "medium",
+    "skill": "smallarms",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720119740758,
+    "modifiedTime": 1720119778034,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!UUo8KzPDuwzRaM8I"
+}

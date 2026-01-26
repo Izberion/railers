@@ -1,0 +1,41 @@
+{
+  "name": "Spear",
+  "type": "weapon",
+  "_id": "pmQetu9y3x0iGYye",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Spears were once used by your ancient ancestors to&nbsp;bring down massive ice age beasts. Now you can too.&nbsp;Spears don&rsquo;t require you to Close Distance to attack a&nbsp;target and can be thrown at Short range.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "attack": "major",
+    "damage": 5,
+    "severity": 4,
+    "reload": "na",
+    "magazine": {
+      "value": 0,
+      "max": 0
+    },
+    "range": "melee",
+    "skill": "melee",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720119392361,
+    "modifiedTime": 1720119420077,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!pmQetu9y3x0iGYye"
+}

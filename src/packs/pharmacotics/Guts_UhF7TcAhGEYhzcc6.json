@@ -1,0 +1,30 @@
+{
+  "name": "Guts",
+  "type": "gear",
+  "_id": "UhF7TcAhGEYhzcc6",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Guts removes the character&rsquo;s sense of fear entirely,&nbsp;filling him with a confidence bordering on rage. He will&nbsp;be unaffected by any demon&rsquo;s Fear effects but may have&nbsp;difficulty telling friend from foe. In combat, the character must succeed on a TN 5 Resolve save to choose his&nbsp;target and not just attack the closest one.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136190111,
+    "modifiedTime": 1720136197217,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!UhF7TcAhGEYhzcc6"
+}

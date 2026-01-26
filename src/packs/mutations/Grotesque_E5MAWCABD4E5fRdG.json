@@ -1,0 +1,26 @@
+{
+  "name": "Grotesque",
+  "type": "mutation",
+  "_id": "E5MAWCABD4E5fRdG",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character is sickeningly&nbsp;ugly. The target number of all Speech skill checks, excluding Coercion checks, are increased by 1, up to a&nbsp;maximum of TN 8.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143793086,
+    "modifiedTime": 1720143804836,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!E5MAWCABD4E5fRdG"
+}

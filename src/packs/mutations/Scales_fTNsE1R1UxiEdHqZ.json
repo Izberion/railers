@@ -1,0 +1,26 @@
+{
+  "name": "Scales",
+  "type": "mutation",
+  "_id": "fTNsE1R1UxiEdHqZ",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>&nbsp;The corrupted character&rsquo;s skin is mostly or completely replaced by scales. The scales provide 1 Protection. If he had the fur mutation, that mutation is replaced by this one.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720144782956,
+    "modifiedTime": 1720144795420,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!fTNsE1R1UxiEdHqZ"
+}

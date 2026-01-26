@@ -1,0 +1,30 @@
+{
+  "name": "Phoenix",
+  "type": "gear",
+  "_id": "1Y2Soz7cNvcgdV7L",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Phoenix completely heals the most severe Wound&nbsp;worth the most damage that the character has. It is extremely toxic and can only be take once a week. Until&nbsp;that time, the character will not heal naturally, no matter the quality of medical attention he is receiving.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136334863,
+    "modifiedTime": 1720136346684,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!1Y2Soz7cNvcgdV7L"
+}

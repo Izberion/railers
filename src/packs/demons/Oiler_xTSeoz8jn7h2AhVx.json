@@ -1,0 +1,274 @@
+{
+  "name": "Oiler",
+  "type": "demon",
+  "_id": "xTSeoz8jn7h2AhVx",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "hitpoints": {
+      "label": "RAILERS.Hitpoints",
+      "value": 12,
+      "min": 0,
+      "max": 12
+    },
+    "wounds": {
+      "label": "RAILERS.Wounds",
+      "value": 0,
+      "min": 0,
+      "max": 0
+    },
+    "nerve": {
+      "label": "RAILERS.Nerve",
+      "value": 20,
+      "min": 0,
+      "max": 20
+    },
+    "corruption": {
+      "label": "RAILERS.Corruption",
+      "value": 0,
+      "max": 60,
+      "min": 0
+    },
+    "load": {
+      "onHand": {
+        "value": 0,
+        "max": 0
+      },
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "faction": "",
+    "biography": "",
+    "notes": "",
+    "attributes": {
+      "strength": 1,
+      "agility": 2,
+      "intellect": 1,
+      "endurance": 3,
+      "fear": 4,
+      "attack": {
+        "damage": 2,
+        "severity": 2
+      }
+    },
+    "tags": "Amorphous, Varying Size, Slimy, The Blob"
+  },
+  "prototypeToken": {
+    "name": "Oiler",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "hitpoints"
+    },
+    "bar2": {
+      "attribute": "wounds"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Size Matters",
+      "type": "ability",
+      "system": {
+        "description": "<p>The size of this demon determines its stats. The numbers listed are for&nbsp;its minimum size: Small. For each size above that, all its stats and damage increase by 2 and Wound&nbsp;severity increases by 1.</p>",
+        "action": "passive"
+      },
+      "_id": "OU52UA37cFcqCzYN",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720140007291,
+        "modifiedTime": 1720140022461,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!xTSeoz8jn7h2AhVx.OU52UA37cFcqCzYN"
+    },
+    {
+      "name": "Divide",
+      "type": "ability",
+      "system": {
+        "description": "<p>&nbsp;If the demon is at least Large, it can split itself in half. Each division creates two demons of one size smaller.</p>",
+        "action": "minor"
+      },
+      "_id": "xoyzynNUB3G0V64A",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720140032831,
+        "modifiedTime": 1720140068700,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!xTSeoz8jn7h2AhVx.xoyzynNUB3G0V64A"
+    },
+    {
+      "name": "Fluid",
+      "type": "ability",
+      "system": {
+        "description": "<p>This demon can push itself through any opening as long as it isn&rsquo;t watertight. If&nbsp;moving from one zone to another in this manner, it will require a Major action.</p>",
+        "action": "passive"
+      },
+      "_id": "mD4uCv4f8MBaO74J",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720140130382,
+        "modifiedTime": 1720140153474,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!xTSeoz8jn7h2AhVx.mD4uCv4f8MBaO74J"
+    },
+    {
+      "name": "Jelly",
+      "type": "ability",
+      "system": {
+        "description": "<p>Wounds from bullets and blades are reduced by 1 severity and 2 damage, for a&nbsp;minimum of 1/W1.</p>",
+        "action": "passive"
+      },
+      "_id": "0jnmSExNgnWdlpRr",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720140156333,
+        "modifiedTime": 1720140170690,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!xTSeoz8jn7h2AhVx.0jnmSExNgnWdlpRr"
+    },
+    {
+      "name": "Envelope",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon makes an attack against a target, attempting to wrap itself<br>around its prey. If successful, instead of dealing damage the target is Restrained and will begin to&nbsp;suffocate soon. The target can attempt a TN 6 Exertion roll to break free on his turn. The demon can&nbsp;envelope a single target of one size greater than itself, two of equal size, four of one size less, or&nbsp;eight of two sizes less. In cases where the demon has enveloped several targets of various sizes, two&nbsp;Tiny targets count as one Small, two Small count as one Medium, two Medium as one Large, two&nbsp;Large as one Huge, and two Huge count as one Massive.</p>",
+        "action": "major"
+      },
+      "_id": "dexXX6dUSrXQE2yl",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720140173264,
+        "modifiedTime": 1720140205912,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!xTSeoz8jn7h2AhVx.dexXX6dUSrXQE2yl"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720139985635,
+    "modifiedTime": 1720140205912,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!actors!xTSeoz8jn7h2AhVx"
+}

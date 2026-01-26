@@ -1,0 +1,32 @@
+{
+  "name": "Wool Peacoat",
+  "type": "clothing",
+  "_id": "SektB9ksM5rRJJ5P",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Woolen peacoats are for the fashionable that require&nbsp;Insulation. Not everyone can be seen going about their&nbsp;daily business in bulky coats or parkas. And if one is ever&nbsp;invited to an outdoor party? Forget it. Similar to fine&nbsp;clothing, this provides a +1d bonus to all Speech skills&nbsp;when interacting with people who respect wealth or finery. This does not stack with fine clothing&rsquo;s bonus.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "protection": 0,
+    "insulation": 20,
+    "clothingType": "outerwear"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720118111709,
+    "modifiedTime": 1720118138782,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!SektB9ksM5rRJJ5P"
+}

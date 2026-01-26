@@ -1,0 +1,26 @@
+{
+  "name": "Horns",
+  "type": "mutation",
+  "_id": "4X9k4OhXsXAoDsa8",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character has sprouted&nbsp;horns. They can be any conceivable form, natural or unnatural. He gains a natural melee weapon that deals 4/W3. Headgear must be modified to accommodate the&nbsp;horns.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143915627,
+    "modifiedTime": 1720143925242,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!4X9k4OhXsXAoDsa8"
+}

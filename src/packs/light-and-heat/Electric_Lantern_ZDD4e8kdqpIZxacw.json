@@ -1,0 +1,30 @@
+{
+  "name": "Electric Lantern",
+  "type": "gear",
+  "_id": "ZDD4e8kdqpIZxacw",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Electric lanterns provide a large amount of bright&nbsp;light without a flame or much waste heat. They can illuminate an entire room, provided it isn&rsquo;t too large, or up&nbsp;to several yards outside. They require 4 D-cell batteries&nbsp;but can run for 3 Quarters of constant operation.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720118683861,
+    "modifiedTime": 1720118694960,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!ZDD4e8kdqpIZxacw"
+}

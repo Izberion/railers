@@ -1,0 +1,33 @@
+{
+  "name": "Troop Sleeper",
+  "type": "car",
+  "_id": "hx8Fe4YS640hBBXY",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Troop sleeper cars contain ten rows of bunks,&nbsp;stacked three high, allowing a total 30 people to sleep&nbsp;per car. There are no curtains so don&rsquo;t expect much privacy. The bunks are oriented left to right to allow more&nbsp;to fit, so the passageway is on the right-hand side of the&nbsp;car against the outer wall.</p>",
+    "type": "",
+    "weight": 100,
+    "power": 2,
+    "capacity": 30,
+    "armor": 2,
+    "damaged": "",
+    "destroyed": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720142433910,
+    "modifiedTime": 1720142477641,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!hx8Fe4YS640hBBXY"
+}

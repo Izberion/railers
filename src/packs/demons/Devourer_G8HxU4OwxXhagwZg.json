@@ -1,0 +1,247 @@
+{
+  "name": "Devourer",
+  "type": "demon",
+  "_id": "G8HxU4OwxXhagwZg",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "hitpoints": {
+      "label": "RAILERS.Hitpoints",
+      "value": 12,
+      "min": 0,
+      "max": 12
+    },
+    "wounds": {
+      "label": "RAILERS.Wounds",
+      "value": 0,
+      "min": 0,
+      "max": 0
+    },
+    "nerve": {
+      "label": "RAILERS.Nerve",
+      "value": 20,
+      "min": 0,
+      "max": 20
+    },
+    "corruption": {
+      "label": "RAILERS.Corruption",
+      "value": 0,
+      "max": 60,
+      "min": 0
+    },
+    "load": {
+      "onHand": {
+        "value": 0,
+        "max": 0
+      },
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "faction": "",
+    "biography": "",
+    "notes": "",
+    "attributes": {
+      "strength": 8,
+      "agility": 5,
+      "intellect": 2,
+      "endurance": 6,
+      "fear": 7,
+      "attack": {
+        "damage": 8,
+        "severity": 7
+      }
+    },
+    "tags": "Insectile, Huge, Durable"
+  },
+  "prototypeToken": {
+    "name": "Devourer",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "hitpoints"
+    },
+    "bar2": {
+      "attribute": "wounds"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Armored",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon is covered in a thick exoskeleton, reducing the damage and&nbsp;severity of any Wounds it takes by 2.</p>",
+        "action": "passive"
+      },
+      "_id": "KTBqpndKmsMFr7VP",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138663374,
+        "modifiedTime": 1720138683238,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!G8HxU4OwxXhagwZg.KTBqpndKmsMFr7VP"
+    },
+    {
+      "name": "Restrain",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon melee attacks a target that is smaller than it with one of its&nbsp;spiked tentacles, aiming to deal 4/W3. If the attack is successful, the target becomes Restrained and&nbsp;will take a 3/W2 Wound at the start of each of their following turns for as long as they are Restrained. The Restrained characters are typically held aloft, several feet off the ground. Breaking&nbsp;free requires a TN 6 Exertion check. The demon can have up to four targets Restrained at one time,&nbsp;one for each tentacle.</p>",
+        "action": "major"
+      },
+      "_id": "PO9t4fcBkQ6YafPD",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138698699,
+        "modifiedTime": 1720138721407,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!G8HxU4OwxXhagwZg.PO9t4fcBkQ6YafPD"
+    },
+    {
+      "name": "Crush",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon squeezes any target it has Restrained inflicting a 3/W3 Wound.</p>",
+        "action": "maneuver"
+      },
+      "_id": "ccfHxxoJZUa4DmtG",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138725296,
+        "modifiedTime": 1720138743015,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!G8HxU4OwxXhagwZg.ccfHxxoJZUa4DmtG"
+    },
+    {
+      "name": "Feast",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon attacks one of the characters it has Restrained, attempting to eat the&nbsp;target, dealing 10/W9 on success. If hit and still alive, the target must succeed on a TN 6 Endurance&nbsp;saving throw or lose a limb. If the attack drops the target to 0 Hitpoints but they only fall Unconscious, not Dying, they will be eaten if this action is used on them again. If the attack causes the target to begin Dying, they die immediately, the result of being eaten by a giant monster.</p>",
+        "action": "full"
+      },
+      "_id": "VOzRuGKr64pIoaj3",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138745882,
+        "modifiedTime": 1720138772795,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!G8HxU4OwxXhagwZg.VOzRuGKr64pIoaj3"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720138625504,
+    "modifiedTime": 1720138772795,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!actors!G8HxU4OwxXhagwZg"
+}

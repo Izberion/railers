@@ -1,0 +1,30 @@
+{
+  "name": "Eclipse",
+  "type": "gear",
+  "_id": "segQ8RoHUdYTCY7J",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Eclipse improves the character&rsquo;s low light vision.&nbsp;Any penalties associated with darkness are removed.&nbsp;Continued use is hard on the eyes. Each time a dose is&nbsp;taken, the character must make an Endurance save. Each&nbsp;failure means his vision is being damaged, applying a&nbsp;penalty to actions requiring sight equal to the number of&nbsp;failures, to a max of -4d, at which point the character is&nbsp;blind. This penalty can be removed temporarily by taking another dose. The effects last for 1 Quarter.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136108579,
+    "modifiedTime": 1720136122818,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!segQ8RoHUdYTCY7J"
+}

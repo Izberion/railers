@@ -1,0 +1,30 @@
+{
+  "name": "Snowshoes",
+  "type": "gear",
+  "_id": "2LyFMqbGm14KUKix",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Snowshoes make walking through hexes with loose&nbsp;snow much easier. While wearing snowshoes, loose snow&nbsp;is not treated as difficult terrain in combat. While exploring, it does not slow the crew&rsquo;s walking speed as&nbsp;long as all those traveling together have snowshoes of&nbsp;their own.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136928614,
+    "modifiedTime": 1720136943887,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!2LyFMqbGm14KUKix"
+}

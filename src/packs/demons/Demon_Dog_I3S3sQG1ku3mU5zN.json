@@ -1,0 +1,193 @@
+{
+  "name": "Demon Dog",
+  "type": "demon",
+  "_id": "I3S3sQG1ku3mU5zN",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "hitpoints": {
+      "label": "RAILERS.Hitpoints",
+      "value": 12,
+      "min": 0,
+      "max": 12
+    },
+    "wounds": {
+      "label": "RAILERS.Wounds",
+      "value": 0,
+      "min": 0,
+      "max": 0
+    },
+    "nerve": {
+      "label": "RAILERS.Nerve",
+      "value": 20,
+      "min": 0,
+      "max": 20
+    },
+    "corruption": {
+      "label": "RAILERS.Corruption",
+      "value": 0,
+      "max": 60,
+      "min": 0
+    },
+    "load": {
+      "onHand": {
+        "value": 0,
+        "max": 0
+      },
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "faction": "",
+    "biography": "",
+    "notes": "",
+    "attributes": {
+      "strength": 3,
+      "agility": 5,
+      "intellect": 3,
+      "endurance": 3,
+      "fear": 4,
+      "attack": {
+        "damage": 6,
+        "severity": 5
+      }
+    },
+    "tags": "Quadruped, Small, Neutral"
+  },
+  "prototypeToken": {
+    "name": "Demon Dog",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "hitpoints"
+    },
+    "bar2": {
+      "attribute": "wounds"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Clamp",
+      "type": "ability",
+      "system": {
+        "description": "<p>When the demon makes a successful attack against a target, it has a chance to&nbsp;clamp down and not let go. The target must make a TN 5 Prowess save. On a failure, the demon gains&nbsp;the Clamped condition. The demon has -2d on defense rolls. The target takes 4/W3 at the beginning&nbsp;of each of his following turns. The demon must make a TN 5 Intellect save to release.</p>",
+        "action": "major"
+      },
+      "_id": "3CGa7gCeIHYkwQ65",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138527646,
+        "modifiedTime": 1720138571936,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!I3S3sQG1ku3mU5zN.3CGa7gCeIHYkwQ65"
+    },
+    {
+      "name": "Tracker",
+      "type": "ability",
+      "system": {
+        "description": "<p>When the demon attempts to find a character or demon attempting to hide&nbsp;from it, it gains +2d as long as it is able to catch its quarry&rsquo;s scent.</p>",
+        "action": "passive"
+      },
+      "_id": "vS6wFjDqIuU7BHJh",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720138578386,
+        "modifiedTime": 1720138592350,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!I3S3sQG1ku3mU5zN.vS6wFjDqIuU7BHJh"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720138500202,
+    "modifiedTime": 1720138592350,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!actors!I3S3sQG1ku3mU5zN"
+}

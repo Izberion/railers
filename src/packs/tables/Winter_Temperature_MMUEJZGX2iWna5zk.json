@@ -1,0 +1,224 @@
+{
+  "name": "Winter Temperature",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_id": "oprVM0FVwAnASq67",
+      "text": "0F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.oprVM0FVwAnASq67"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        3
+      ],
+      "drawn": false,
+      "_id": "dIfUdTdJrN4kGTt9",
+      "text": "-5F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.dIfUdTdJrN4kGTt9"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        6
+      ],
+      "drawn": false,
+      "_id": "5llfzngazrFVs4Gf",
+      "text": "-10F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.5llfzngazrFVs4Gf"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        10
+      ],
+      "drawn": false,
+      "_id": "U4f8F6gp4pm7pWql",
+      "text": "-15F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.U4f8F6gp4pm7pWql"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        15
+      ],
+      "drawn": false,
+      "_id": "qs9u7dAAe19MxAAX",
+      "text": "-20F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.qs9u7dAAe19MxAAX"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        16,
+        20
+      ],
+      "drawn": false,
+      "_id": "6Bok66GiiYLogBAZ",
+      "text": "-25F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.6Bok66GiiYLogBAZ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        21,
+        25
+      ],
+      "drawn": false,
+      "_id": "0JaeZSm5evKvbqCE",
+      "text": "-30F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.0JaeZSm5evKvbqCE"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        26,
+        35
+      ],
+      "drawn": false,
+      "_id": "HsSzfZP6zHKKniam",
+      "text": "-35F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.HsSzfZP6zHKKniam"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        36,
+        45
+      ],
+      "drawn": false,
+      "_id": "ohBT6Fn2p6qMZdbT",
+      "text": "-40F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.ohBT6Fn2p6qMZdbT"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        46,
+        60
+      ],
+      "drawn": false,
+      "_id": "FlpylSNMxS8gqjnH",
+      "text": "-45F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.FlpylSNMxS8gqjnH"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        61,
+        75
+      ],
+      "drawn": false,
+      "_id": "t2KRQ49ikovjoALJ",
+      "text": "-50F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.t2KRQ49ikovjoALJ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        76,
+        90
+      ],
+      "drawn": false,
+      "_id": "34hM43KHA39F5ubz",
+      "text": "-55F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.34hM43KHA39F5ubz"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        91,
+        100
+      ],
+      "drawn": false,
+      "_id": "s3hkF0KwYCDWWG3c",
+      "text": "-60F",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!MMUEJZGX2iWna5zk.s3hkF0KwYCDWWG3c"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "Rkv9Xf9nMjw1REva": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "createdTime": 1744695735394,
+    "modifiedTime": 1744695735433,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+  },
+  "formula": "d100",
+  "_id": "MMUEJZGX2iWna5zk",
+  "sort": 200000,
+  "_key": "!tables!MMUEJZGX2iWna5zk"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Scrap",
+  "type": "gear",
+  "_id": "DgpzvU4WMzAR4ZhN",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Scrap is assorted chunks of metal, wood, and any&nbsp;other material that might prove useful. It can be used to&nbsp;make field repairs on most damaged or broken equipment. Any item fixed with scrap is likely to break again.&nbsp;Every time you use a piece of equipment that has had&nbsp;field repairs done to it, roll an Engineering save, else the&nbsp;repairs come undone.&nbsp;</p>",
+    "quantity": 1,
+    "load": 0.25,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720137315293,
+    "modifiedTime": 1720137336547,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!DgpzvU4WMzAR4ZhN"
+}

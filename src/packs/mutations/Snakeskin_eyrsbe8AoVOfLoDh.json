@@ -1,0 +1,26 @@
+{
+  "name": "Snakeskin",
+  "type": "mutation",
+  "_id": "eyrsbe8AoVOfLoDh",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character must shed his&nbsp;skin once a month. This can be used to escape restraint&nbsp;in place of a skill check.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720144894318,
+    "modifiedTime": 1720144900829,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!eyrsbe8AoVOfLoDh"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Super Immunity",
+  "type": "mutation",
+  "_id": "PiGXtmFsGHOGDYFA",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character has developed an immune system powerful enough to keep him&nbsp;safe from any disease.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720145024084,
+    "modifiedTime": 1720145038555,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!PiGXtmFsGHOGDYFA"
+}

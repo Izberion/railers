@@ -1,0 +1,33 @@
+{
+  "name": "Flatbed",
+  "type": "car",
+  "_id": "WJRPGoLpEb6aq6IH",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Flatbed cars are storage cars exposed to the elements that can be used to transport vehicles or any large&nbsp;freight such as wood. These cars can carry up to 100 tons&nbsp;of freight. Because it is entirely exposed, it has no heat&nbsp;or lighting. Anything transported on a flatbed must be&nbsp;tied down if it&rsquo;s intended to reach its destination. Luckily straps are built onto the bed. The freight on these&nbsp;cars will contribute to the train&rsquo;s total weight.</p>",
+    "type": "",
+    "weight": 20,
+    "power": 0,
+    "capacity": 0,
+    "armor": 1,
+    "damaged": "",
+    "destroyed": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720142770969,
+    "modifiedTime": 1720142891300,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!WJRPGoLpEb6aq6IH"
+}

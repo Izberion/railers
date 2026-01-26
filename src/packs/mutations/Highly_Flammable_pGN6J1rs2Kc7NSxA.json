@@ -1,0 +1,26 @@
+{
+  "name": "Highly Flammable",
+  "type": "mutation",
+  "_id": "pGN6J1rs2Kc7NSxA",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character is&nbsp;highly flammable and must be careful around open&nbsp;flames. When rolling to resist being set ablaze, the target&nbsp;number is increased by 1. The target number to extinguish the character is also increased by 1. Damage from&nbsp;Burning increases to 8/W7.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143879849,
+    "modifiedTime": 1720143890975,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!pGN6J1rs2Kc7NSxA"
+}

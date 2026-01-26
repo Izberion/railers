@@ -1,0 +1,150 @@
+{
+  "name": "Demon Presence",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 5,
+      "range": [
+        1,
+        5
+      ],
+      "drawn": false,
+      "_id": "OFPJI1ijFFmzEIlY",
+      "text": "Absent",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "documentCollection": "",
+      "_key": "!tables.results!0ab4IU398LbVfQpT.OFPJI1ijFFmzEIlY"
+    },
+    {
+      "type": "text",
+      "weight": 10,
+      "range": [
+        6,
+        15
+      ],
+      "drawn": false,
+      "_id": "rsEEbuVbtswm6D4i",
+      "text": "Minimal",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!0ab4IU398LbVfQpT.rsEEbuVbtswm6D4i"
+    },
+    {
+      "type": "text",
+      "weight": 15,
+      "range": [
+        16,
+        30
+      ],
+      "drawn": false,
+      "_id": "CUqpct5saoDcCzu9",
+      "text": "Managed",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!0ab4IU398LbVfQpT.CUqpct5saoDcCzu9"
+    },
+    {
+      "type": "text",
+      "weight": 20,
+      "range": [
+        31,
+        50
+      ],
+      "drawn": false,
+      "_id": "JwBQglvbSh9VLXAI",
+      "text": "Moderate",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!0ab4IU398LbVfQpT.JwBQglvbSh9VLXAI"
+    },
+    {
+      "type": "text",
+      "weight": 20,
+      "range": [
+        51,
+        70
+      ],
+      "drawn": false,
+      "_id": "9zy62U5kdrQHAJar",
+      "text": "Significant",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!0ab4IU398LbVfQpT.9zy62U5kdrQHAJar"
+    },
+    {
+      "type": "text",
+      "weight": 15,
+      "range": [
+        71,
+        85
+      ],
+      "drawn": false,
+      "_id": "FPFMAEL4wTX6s9Lp",
+      "text": "Persistant",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!0ab4IU398LbVfQpT.FPFMAEL4wTX6s9Lp"
+    },
+    {
+      "type": "text",
+      "weight": 10,
+      "range": [
+        86,
+        95
+      ],
+      "drawn": false,
+      "_id": "tgywYJORS10P36EB",
+      "text": "Surrounded",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!0ab4IU398LbVfQpT.tgywYJORS10P36EB"
+    },
+    {
+      "type": "text",
+      "weight": 5,
+      "range": [
+        96,
+        100
+      ],
+      "drawn": false,
+      "_id": "V77Qg1T2ZQRqA5wg",
+      "text": "Overrun",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!0ab4IU398LbVfQpT.V77Qg1T2ZQRqA5wg"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "fPWaJS6UwaUalU6f",
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "Rkv9Xf9nMjw1REva": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": "RollTable.puG15ViRcM6DmiNw",
+    "coreVersion": "12.331",
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "createdTime": 1744695728725,
+    "modifiedTime": 1744695728725,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+  },
+  "formula": "1d100",
+  "_id": "0ab4IU398LbVfQpT",
+  "_key": "!tables!0ab4IU398LbVfQpT"
+}

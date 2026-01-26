@@ -1,0 +1,41 @@
+{
+  "name": "Grenade",
+  "type": "weapon",
+  "_id": "Kpvfs1JBoJXbXqQq",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Grenades are a highly destructive force in a tiny&nbsp;package, able to shred apart anyone it lands near.&nbsp;Grenade attacks function just like dynamite attacks. If&nbsp;you only intend to pull the pin, that requires a Maneuver&nbsp;rather than a Minor action to attack.</p>",
+    "quantity": 1,
+    "load": 0.33,
+    "stowage": "other",
+    "attack": "minor",
+    "damage": 8,
+    "severity": 8,
+    "reload": "na",
+    "magazine": {
+      "value": 0,
+      "max": null
+    },
+    "range": "medium",
+    "skill": "exertion",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720135945400,
+    "modifiedTime": 1720136008790,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!Kpvfs1JBoJXbXqQq"
+}

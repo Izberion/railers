@@ -1,0 +1,41 @@
+{
+  "name": "Truncheon",
+  "type": "weapon",
+  "_id": "SWdNadmm5ExH75fx",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Truncheons are maybe the oldest type of weapon in&nbsp;existence outside of the classic &ldquo;heavy rock.&rdquo; They can&nbsp;be any of several things, from blackjacks to batons to&nbsp;baseball bats to a caveman&rsquo;s club.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "attack": "major",
+    "damage": 5,
+    "severity": 2,
+    "reload": "na",
+    "magazine": {
+      "value": 0,
+      "max": 0
+    },
+    "range": "melee",
+    "skill": "melee",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720119067811,
+    "modifiedTime": 1720119331013,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!SWdNadmm5ExH75fx"
+}

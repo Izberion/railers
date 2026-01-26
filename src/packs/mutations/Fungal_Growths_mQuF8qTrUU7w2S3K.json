@@ -1,0 +1,26 @@
+{
+  "name": "Fungal Growths",
+  "type": "mutation",
+  "_id": "mQuF8qTrUU7w2S3K",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character has&nbsp;mushrooms and similar fungus growing all over his&nbsp;body. The mushrooms can either be edible or poisonous.&nbsp;If edible, the character can provide the equivalent of a&nbsp;food ration per day. If poisonous, ingesting the mushroom will lead to a TN 5 Endurance save or becoming&nbsp;Poisoned. The poison deals 3/W2.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143609464,
+    "modifiedTime": 1720143619927,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!mQuF8qTrUU7w2S3K"
+}

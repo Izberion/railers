@@ -1,0 +1,41 @@
+{
+  "name": "Gun Butt",
+  "type": "weapon",
+  "_id": "xxfkS5Cc08uvRIXc",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Gun butts make adequate weapons when engaged in&nbsp;melee range with an enemy and you lack the time or&nbsp;ability to draw a proper melee weapon. Sometimes, hitting them with your gun is just easier.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "attack": "major",
+    "damage": 3,
+    "severity": 1,
+    "reload": "na",
+    "magazine": {
+      "value": 0,
+      "max": 0
+    },
+    "range": "melee",
+    "skill": "melee",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720119353802,
+    "modifiedTime": 1720119382708,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!xxfkS5Cc08uvRIXc"
+}

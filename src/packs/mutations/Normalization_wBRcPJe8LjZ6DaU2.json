@@ -1,0 +1,26 @@
+{
+  "name": "Normalization",
+  "type": "mutation",
+  "_id": "wBRcPJe8LjZ6DaU2",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character drops to&nbsp;the previous stage of demonization, losing a number of&nbsp;random mutations equal to the amount gained at his now&nbsp;previous demonization stage.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720144268509,
+    "modifiedTime": 1720144276023,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!wBRcPJe8LjZ6DaU2"
+}

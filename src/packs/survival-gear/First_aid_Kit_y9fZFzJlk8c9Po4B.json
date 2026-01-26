@@ -1,0 +1,30 @@
+{
+  "name": "First-aid Kit",
+  "type": "gear",
+  "_id": "y9fZFzJlk8c9Po4B",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>First-aid kits contain bandages, alcohol, scissors,&nbsp;surgical tape, clean rags, and aspirin. Every time you&nbsp;make a Medical check using a first-aid kit, take a +2d&nbsp;bonus on the roll. Each kit has 4 uses before it is exhausted. The bonuses no longer apply and the kit should&nbsp;be replaced.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136764428,
+    "modifiedTime": 1720136779769,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!y9fZFzJlk8c9Po4B"
+}

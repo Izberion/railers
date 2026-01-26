@@ -1,0 +1,26 @@
+{
+  "name": "Gorilla Arms",
+  "type": "mutation",
+  "_id": "rpxue7Qt1g3oNOQv",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character&rsquo;s arms become huge. His knuckles now reach the ground. He gains&nbsp;+2d on Exertion rolls when upper body strength is the&nbsp;primary factor. When the character connects with a&nbsp;melee attack, the severity is increased by 2 and damage&nbsp;is increased by half, rounded down.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143772888,
+    "modifiedTime": 1720143782853,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!rpxue7Qt1g3oNOQv"
+}

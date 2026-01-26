@@ -1,0 +1,30 @@
+{
+  "name": "Savvy",
+  "type": "gear",
+  "_id": "tTO9FkUFA7Z8GXhC",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Savvy greatly increase the character&rsquo;s mental acuity&nbsp;and capacity for 1 hour. He gains a +2d bonus on any Engineering, Intuition, Knowledge, or Speech skill check.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136379197,
+    "modifiedTime": 1720136392913,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!tTO9FkUFA7Z8GXhC"
+}

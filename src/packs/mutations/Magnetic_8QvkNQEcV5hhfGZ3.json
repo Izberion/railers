@@ -1,0 +1,26 @@
+{
+  "name": "Magnetic",
+  "type": "mutation",
+  "_id": "8QvkNQEcV5hhfGZ3",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character has become&nbsp;magnetic. Steel, iron, and other magnetic metals will&nbsp;stick to the character, as long as they are 1 Load or less.&nbsp;The magnetism is not strong enough to attract items&nbsp;from any measurable distance and is unlikely to interfere with movement. He gains a +2d bonus to resist being&nbsp;disarmed, assuming the held item is magnetic.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720144080766,
+    "modifiedTime": 1720144092709,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!8QvkNQEcV5hhfGZ3"
+}

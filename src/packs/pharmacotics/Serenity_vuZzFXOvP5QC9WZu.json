@@ -1,0 +1,30 @@
+{
+  "name": "Serenity",
+  "type": "gear",
+  "_id": "vuZzFXOvP5QC9WZu",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Serenity eases the character&rsquo;s sense of fear. Under&nbsp;its effects, he cannot lose Nerve. Unfortunately this also&nbsp;slows his reaction time. Any physical action has a -2d&nbsp;penalty on the check. These are highly addictive and&nbsp;tend to be psychoactive. After taking a dose, the character must make a TN 5 Resolve save or become Addicted.&nbsp;Once Addicted, he will require at least 1 dose every week&nbsp;else begin Withdrawing.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136246056,
+    "modifiedTime": 1720136259108,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!vuZzFXOvP5QC9WZu"
+}

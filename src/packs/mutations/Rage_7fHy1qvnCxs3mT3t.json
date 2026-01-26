@@ -1,0 +1,26 @@
+{
+  "name": "Rage",
+  "type": "mutation",
+  "_id": "7fHy1qvnCxs3mT3t",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character has a beast hidden&nbsp;in his heart. Whenever he rolls multiple 1&rsquo;s, he gains the&nbsp;Raging condition. While Raging, he will likely be singleminded. All his melee attacks deal 2 extra damage. He&nbsp;has a -2d penalty to Intuition, Perception, and Insight&nbsp;rolls.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720144564805,
+    "modifiedTime": 1720144574203,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!7fHy1qvnCxs3mT3t"
+}

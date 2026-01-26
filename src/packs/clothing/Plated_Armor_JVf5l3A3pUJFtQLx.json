@@ -1,0 +1,32 @@
+{
+  "name": "Plated Armor",
+  "type": "clothing",
+  "_id": "JVf5l3A3pUJFtQLx",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Plated armor consists of overlapping metal plates&nbsp;worn as a vest. While pretty heavy and not warm at all, it&nbsp;provides plenty of Protection, potentially stopping bullets and blades alike. The severity of Wounds inflicted by&nbsp;firearms are reduced by 1.</p>",
+    "quantity": 1,
+    "load": 3,
+    "stowage": "other",
+    "protection": 3,
+    "insulation": -3,
+    "clothingType": "armor"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720117762877,
+    "modifiedTime": 1720117846710,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!JVf5l3A3pUJFtQLx"
+}

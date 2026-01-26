@@ -1,0 +1,30 @@
+{
+  "name": "Cryosene Can",
+  "type": "gear",
+  "_id": "UfFV3tXfIuSUT6pI",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Cryosene cans are metal fuel canisters capable of&nbsp;holding 5 gallons of cryosene. They can be used to refill&nbsp;cryosene burning equipment, though it won&rsquo;t even put a&nbsp;dent in the train&rsquo;s fuel tank. Cryosene can be siphoned&nbsp;from the train to the can with negligible impact on the&nbsp;train&rsquo;s fuel stores. When holding 3 or more gallons, it&rsquo;s&nbsp;Load increases to 2.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720118552550,
+    "modifiedTime": 1720118572218,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!UfFV3tXfIuSUT6pI"
+}

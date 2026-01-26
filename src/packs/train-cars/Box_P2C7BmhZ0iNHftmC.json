@@ -1,0 +1,33 @@
+{
+  "name": "Box",
+  "type": "car",
+  "_id": "P2C7BmhZ0iNHftmC",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Box cars allow the crew to move large amounts of&nbsp;freight. Because it is only for moving freight, it has no&nbsp;heating or lighting. Each car can hold up to 100 tons of&nbsp;freight. The freight in these cars will contribute to the&nbsp;train&rsquo;s total weight. These cars can only carry ammunition, firearms, food, luxury goods, machinery, medicine,&nbsp;textiles, and weapons.</p>",
+    "type": "",
+    "weight": 30,
+    "power": 0,
+    "capacity": 0,
+    "armor": 1,
+    "damaged": "",
+    "destroyed": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720142732573,
+    "modifiedTime": 1720142757580,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!P2C7BmhZ0iNHftmC"
+}

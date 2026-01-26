@@ -1,0 +1,26 @@
+{
+  "name": "Cyclopean",
+  "type": "mutation",
+  "_id": "HixKT6vDwngyk2fS",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character&rsquo;s eyes merge&nbsp;into a large, singular eye. The character takes a -1d&nbsp;penalty to all perception checks requiring sight, but actions performed in the dark only have a -1d penalty.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143276596,
+    "modifiedTime": 1720143286193,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!HixKT6vDwngyk2fS"
+}

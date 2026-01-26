@@ -1,0 +1,33 @@
+{
+  "name": "Crane",
+  "type": "car",
+  "_id": "TDJvoJKxIotMUOWw",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Crane cars are used to load or unload flatbed cars,&nbsp;right derailed train cars, and anything else a crane can&nbsp;be used for. The crane&rsquo;s stabilizers must be deployed to&nbsp;lift exceptionally heavy cargo or train cars. This takes a&nbsp;full action for each of the 4 stabilizer legs if done in&nbsp;combat. The crane runs off of cryosene and has its own&nbsp;tank which can hold 1 barrel and run for 2 Quarters from&nbsp;full.</p>",
+    "type": "",
+    "weight": 210,
+    "power": 0,
+    "capacity": 0,
+    "armor": 2,
+    "damaged": "",
+    "destroyed": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720142762725,
+    "modifiedTime": 1720142923600,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!TDJvoJKxIotMUOWw"
+}

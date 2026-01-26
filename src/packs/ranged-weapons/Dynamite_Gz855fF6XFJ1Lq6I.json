@@ -1,0 +1,41 @@
+{
+  "name": "Dynamite",
+  "type": "weapon",
+  "_id": "Gz855fF6XFJ1Lq6I",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Dynamite can be used as a deconstruction tool or a&nbsp;weapon, both with great effect. Dynamite attacks rely on&nbsp;fictional positioning. If there is anyone nearby to a target of an attack, they must also make a defense roll, but&nbsp;with a +1d bonus. The same applies to anyone within&nbsp;melee range of the target, friend or foe. If you only intend to light the fuse, that requires a Maneuver rather&nbsp;than a Minor action to attack.</p>",
+    "quantity": 1,
+    "load": 0.5,
+    "stowage": "other",
+    "attack": "minor",
+    "damage": 7,
+    "severity": 7,
+    "reload": "na",
+    "magazine": {
+      "value": 0,
+      "max": null
+    },
+    "range": "medium",
+    "skill": "exertion",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720135850028,
+    "modifiedTime": 1720135926368,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!Gz855fF6XFJ1Lq6I"
+}

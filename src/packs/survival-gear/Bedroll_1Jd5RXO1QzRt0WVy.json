@@ -1,0 +1,30 @@
+{
+  "name": "Bedroll",
+  "type": "gear",
+  "_id": "1Jd5RXO1QzRt0WVy",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Bedrolls provide a comfortable spot to sleep when&nbsp;away from the train. When sleeping on the ground without a bedroll, make an Endurance save the next morning.&nbsp;If you fail, you gain the Exhausted condition. If you already have it, your exhaustion worsens. A bedroll counts&nbsp;as 0 Load when stowed with a backpack.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720136617000,
+    "modifiedTime": 1720136668887,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!1Jd5RXO1QzRt0WVy"
+}

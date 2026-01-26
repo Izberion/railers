@@ -1,0 +1,30 @@
+{
+  "name": "Whistle",
+  "type": "gear",
+  "_id": "I2gaGVSiY4PfoKLU",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Whistles come in handy when separated and without&nbsp;a radio. A blown whistle can be heard within a few hundred yards.</p>",
+    "quantity": 1,
+    "load": 0,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720137474504,
+    "modifiedTime": 1720137484866,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!I2gaGVSiY4PfoKLU"
+}

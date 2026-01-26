@@ -1,0 +1,26 @@
+{
+  "name": "Extra Eyes",
+  "type": "mutation",
+  "_id": "hYzwBHKoVPqaUvRI",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character gains an extra&nbsp;set of eyes somewhere on his face. He has a +1d bonus to&nbsp;Perception checks where sight is the primary factor.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143534776,
+    "modifiedTime": 1720143541737,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!hYzwBHKoVPqaUvRI"
+}

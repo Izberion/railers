@@ -1,0 +1,247 @@
+{
+  "name": "Snow Drake",
+  "type": "demon",
+  "_id": "61he2BLfblUaVlkE",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "hitpoints": {
+      "label": "RAILERS.Hitpoints",
+      "value": 12,
+      "min": 0,
+      "max": 12
+    },
+    "wounds": {
+      "label": "RAILERS.Wounds",
+      "value": 0,
+      "min": 0,
+      "max": 0
+    },
+    "nerve": {
+      "label": "RAILERS.Nerve",
+      "value": 20,
+      "min": 0,
+      "max": 20
+    },
+    "corruption": {
+      "label": "RAILERS.Corruption",
+      "value": 0,
+      "max": 60,
+      "min": 0
+    },
+    "load": {
+      "onHand": {
+        "value": 0,
+        "max": 0
+      },
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "faction": "",
+    "biography": "",
+    "notes": "",
+    "attributes": {
+      "strength": 2,
+      "agility": 3,
+      "intellect": 2,
+      "endurance": 4,
+      "fear": 5,
+      "attack": {
+        "damage": 3,
+        "severity": 4
+      }
+    },
+    "tags": "Quadrupedal, Small, Familial, Neutral, Burrower"
+  },
+  "prototypeToken": {
+    "name": "Snow Drake",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "hitpoints"
+    },
+    "bar2": {
+      "attribute": "wounds"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Red Barrel",
+      "type": "ability",
+      "system": {
+        "description": "<p>If this demon is killed by a firearm or explosive, or hit by a flamethrower&nbsp;at all, it will explode. The explosion is mechanically similar to a grenade, except all within the affected area also have the chance to catch fire. A TN 5 Prowess save is required to avoid this.</p>",
+        "action": "passive"
+      },
+      "_id": "e1tC9DGJrnFRffRX",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720141371267,
+        "modifiedTime": 1720141392000,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!61he2BLfblUaVlkE.e1tC9DGJrnFRffRX"
+    },
+    {
+      "name": "Furnace",
+      "type": "ability",
+      "system": {
+        "description": "<p>When threatened, this demon automatically increases its heat output. This&nbsp;can get to so high a temperature that it can actually burn other characters. If any character or demon, excluding other demons of the same type, spends more than 3 turns in combat with this demon in an enclosed space, at the beginning of their following turn and every turn after, they will&nbsp;take a 3/W3 Wound. For every additional demon of this type present, increase the damage by 1. For&nbsp;every third demon of this type present, increase the Wound severity by 1.</p>",
+        "action": "passive"
+      },
+      "_id": "0zJQWAaJEfc4ziHA",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720141393387,
+        "modifiedTime": 1720141414759,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!61he2BLfblUaVlkE.0zJQWAaJEfc4ziHA"
+    },
+    {
+      "name": "Thick Skin",
+      "type": "ability",
+      "system": {
+        "description": "<p>This demon has a very thick dermal layer which reduces the damage and&nbsp;severity of any Wound taken by 1.</p>",
+        "action": "passive"
+      },
+      "_id": "O1DWvqeycg59sAdB",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720141416030,
+        "modifiedTime": 1720141433673,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!61he2BLfblUaVlkE.O1DWvqeycg59sAdB"
+    },
+    {
+      "name": "Spit",
+      "type": "ability",
+      "system": {
+        "description": "<p>The demon spits a wad of saliva at a target. This attack does no damage, but if hit&nbsp;the target will be covered in a thick coat of extremely flammable saliva. Saving throws to avoid&nbsp;catching fire increase to TN 7. During combat it can be removed by spending a Full action to do so&nbsp;before it catches fire.</p>",
+        "action": "major"
+      },
+      "_id": "0BQKhYZRcFqW0ZA3",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3ea5GTLITViAGJ4q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "coreVersion": "11.315",
+        "createdTime": 1720141419589,
+        "modifiedTime": 1720141446793,
+        "lastModifiedBy": "3ea5GTLITViAGJ4q"
+      },
+      "_key": "!actors.items!61he2BLfblUaVlkE.0BQKhYZRcFqW0ZA3"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720141350809,
+    "modifiedTime": 1720141446793,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!actors!61he2BLfblUaVlkE"
+}

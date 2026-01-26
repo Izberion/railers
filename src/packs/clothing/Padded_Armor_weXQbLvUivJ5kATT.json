@@ -1,0 +1,32 @@
+{
+  "name": "Padded Armor",
+  "type": "clothing",
+  "_id": "weXQbLvUivJ5kATT",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Padded armor consists of several layers of natural&nbsp;fabric and that's it. It offers some amount of Protection,&nbsp;while helping to keep your body warm at the same time.&nbsp;When defending against firearms, take a -1d penalty.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "protection": 1,
+    "insulation": 9,
+    "clothingType": "armor"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720117727329,
+    "modifiedTime": 1720117749568,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!weXQbLvUivJ5kATT"
+}

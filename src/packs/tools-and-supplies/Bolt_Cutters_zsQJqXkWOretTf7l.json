@@ -1,0 +1,30 @@
+{
+  "name": "Bolt Cutters",
+  "type": "gear",
+  "_id": "zsQJqXkWOretTf7l",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Bolt cutters are the best skeleton keys you can find&nbsp;for many occasions. It will also cut bolts and thick wire.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720137000562,
+    "modifiedTime": 1720137012464,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!zsQJqXkWOretTf7l"
+}

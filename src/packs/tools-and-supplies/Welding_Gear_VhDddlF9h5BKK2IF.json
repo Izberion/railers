@@ -1,0 +1,30 @@
+{
+  "name": "Welding Gear",
+  "type": "gear",
+  "_id": "VhDddlF9h5BKK2IF",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Welding gear consists of an oxyacetylene torch and&nbsp;tanks, welding goggles, leathers, and a striker. It can be&nbsp;used to cut or fuse metal together. The tanks hold&nbsp;enough gas for 12 welds or cuts. It&rsquo;s up to the GM to decide whether trying to cut a human size hole in a metal&nbsp;wall will take 1 cut or, more likely, most of the gas. Using&nbsp;the tanks while repairing the train provides +2d to the&nbsp;Locomotive check and uses 4 welds per Quarter.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720137451621,
+    "modifiedTime": 1720137467347,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!VhDddlF9h5BKK2IF"
+}

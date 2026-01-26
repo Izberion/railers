@@ -1,0 +1,26 @@
+{
+  "name": "Pheromones",
+  "type": "mutation",
+  "_id": "482uluMx4ofF2CA8",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character has a particular scent about him that influences people. They affect&nbsp;men and women differently. One sex is unconsciously&nbsp;attracted by the pheromones, providing a +2d bonus to&nbsp;all Speech skill checks with them, excluding Coercion.&nbsp;The other is unconsciously repelled, inflicting a -2d&nbsp;penalty to all Speech skill checks with them, excluding&nbsp;Coercion.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720144337168,
+    "modifiedTime": 1720144348279,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!482uluMx4ofF2CA8"
+}

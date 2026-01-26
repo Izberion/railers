@@ -1,0 +1,26 @@
+{
+  "name": "Temporary Normal",
+  "type": "mutation",
+  "_id": "kBgj5LlORDXuT3xp",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character&rsquo;s mutations only come out when stressed. In extremely&nbsp;stressful situations or after losing Nerve, his mutations&nbsp;manifest themselves after a failed TN 6 Resolve save. He&nbsp;will return to baseline human after a Quarter. Each&nbsp;transformation is sudden and extremely painful.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720145077660,
+    "modifiedTime": 1720145086134,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!kBgj5LlORDXuT3xp"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Flamethrower",
+  "type": "weapon",
+  "_id": "fiZktuDY6JtKak8q",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Flamethrowers consist of three parts: a tank filled&nbsp;with a liquid fuel and a gas propellant, a long nozzle with&nbsp;an ignition source at the end, and someone willing to set&nbsp;other people on fire. Flamethrowers don't do damage on&nbsp;a successful attack. Instead they apply the Burning condition to the target. Ammunition is measured in bursts.&nbsp;Each tank has 9 bursts worth of fuel.</p>",
+    "quantity": 1,
+    "load": 2,
+    "stowage": "other",
+    "attack": "minor",
+    "damage": null,
+    "severity": null,
+    "reload": "full",
+    "magazine": {
+      "value": 0,
+      "max": 9
+    },
+    "range": "medium",
+    "skill": "heavyweapons",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720135689077,
+    "modifiedTime": 1720135757851,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!fiZktuDY6JtKak8q"
+}

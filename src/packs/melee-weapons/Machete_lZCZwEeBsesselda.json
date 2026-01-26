@@ -1,0 +1,41 @@
+{
+  "name": "Machete",
+  "type": "weapon",
+  "_id": "lZCZwEeBsesselda",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Machetes are medium length bladed weapons, about&nbsp;as long as your forearm. While there aren't many jungles&nbsp;to cut through in the Snowlands, it can cut its way&nbsp;through flesh just as well as underbrush.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "attack": "major",
+    "damage": 4,
+    "severity": 4,
+    "reload": "na",
+    "magazine": {
+      "value": 0,
+      "max": 0
+    },
+    "range": "melee",
+    "skill": "melee",
+    "attribute": "",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720119137707,
+    "modifiedTime": 1720119269222,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!lZCZwEeBsesselda"
+}

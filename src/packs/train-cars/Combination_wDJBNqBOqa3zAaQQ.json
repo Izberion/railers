@@ -1,0 +1,33 @@
+{
+  "name": "Combination",
+  "type": "car",
+  "_id": "wDJBNqBOqa3zAaQQ",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Combination cars are any two cars from this list,&nbsp;excluding freight cars, combined into a single car. The&nbsp;statistics will be the average of the two cars. Utility and&nbsp;weapon cars can be combined if desired, but weapon&nbsp;cars cannot be combined with one another.</p>",
+    "type": "",
+    "weight": 0,
+    "power": 0,
+    "capacity": 0,
+    "armor": 0,
+    "damaged": "",
+    "destroyed": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720142787431,
+    "modifiedTime": 1720142797900,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!wDJBNqBOqa3zAaQQ"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Photosensitivity",
+  "type": "mutation",
+  "_id": "2xtlLU3Ba1kjEnbN",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character is particularly sensitive to bright lights. Actions requiring&nbsp;sight have a -2d penalty when in bright light or full sun.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720144396597,
+    "modifiedTime": 1720144404977,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!2xtlLU3Ba1kjEnbN"
+}

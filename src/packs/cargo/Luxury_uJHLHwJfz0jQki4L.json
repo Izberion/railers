@@ -1,0 +1,28 @@
+{
+  "name": "Luxury",
+  "type": "cargo",
+  "_id": "uJHLHwJfz0jQki4L",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This is anything that isn&rsquo;t particularly necessary to survival, but maybe still be useful or valuable.&nbsp;It can be traditional luxury items like jewelry or wine, or&nbsp;much less traditional goods like demons or people.</p>",
+    "price": 5000,
+    "weight": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720116882308,
+    "modifiedTime": 1720116910228,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!uJHLHwJfz0jQki4L"
+}

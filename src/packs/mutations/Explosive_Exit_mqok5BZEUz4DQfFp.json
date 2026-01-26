@@ -1,0 +1,26 @@
+{
+  "name": "Explosive Exit",
+  "type": "mutation",
+  "_id": "mqok5BZEUz4DQfFp",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character is a time&nbsp;bomb waiting to go off. Treat his body as a grenade. Acid&nbsp;is thrown across the zone he was occupying, coating everyone who was hit by the explosion. Anyone outside of&nbsp;the initial burst radius but within the zone must make a&nbsp;Prowess saving throw or be coated. The acid inflicts&nbsp;5/W3 at the beginning of each of the affected characters&rsquo;&nbsp;turns until a Full action can be spent removing the acid.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720143500570,
+    "modifiedTime": 1720143511793,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!mqok5BZEUz4DQfFp"
+}

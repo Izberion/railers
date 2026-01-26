@@ -1,0 +1,30 @@
+{
+  "name": "Box Magazine",
+  "type": "gear",
+  "_id": "huk9yX92qVWrlIlv",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Box magazines allow for quick reloading. A given&nbsp;magazine will work on any weapon that can use them, no&nbsp;matter the actual dimensions or magazine size required.&nbsp;The magazine&rsquo;s capacity is equal to the ammo capacity of&nbsp;the gun it is being used with. Magazines do not take up&nbsp;Load when loaded into a firearm.</p>",
+    "quantity": 1,
+    "load": 0.5,
+    "stowage": "other",
+    "formula": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720116609547,
+    "modifiedTime": 1720116626606,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!huk9yX92qVWrlIlv"
+}

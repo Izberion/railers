@@ -1,0 +1,26 @@
+{
+  "name": "Natural Armor",
+  "type": "mutation",
+  "_id": "JwvKN2TCbvvsZvHW",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The corrupted character has developed some form of natural armor, whether it be external&nbsp;or subdermal. The armor provides 2 Protection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "3ea5GTLITViAGJ4q": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720144195674,
+    "modifiedTime": 1720144206875,
+    "lastModifiedBy": "3ea5GTLITViAGJ4q"
+  },
+  "_key": "!items!JwvKN2TCbvvsZvHW"
+}
