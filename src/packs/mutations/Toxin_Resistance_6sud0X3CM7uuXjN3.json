@@ -4,23 +4,6 @@
   "_id": "6sud0X3CM7uuXjN3",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character is resistant to all types of poisons, venom, and toxins. Gain a&nbsp;+2d bonus to Endurance saves when resisting their effects.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720145097423,
-    "modifiedTime": 1720145106160,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!6sud0X3CM7uuXjN3"
+    "description": "<p>The corrupted character is resistant to all types of poisons, venom, and toxins. Gain a +2d bonus to Endurance saves when resisting their effects.</p>"
+  }
 }

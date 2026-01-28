@@ -4,27 +4,10 @@
   "_id": "364aPAwegoPAM4P8",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Compasses make navigating the Snowlands much&nbsp;easier. As long as you have a compass and your Atlas,&nbsp;you'll be able to locate points on it without having to&nbsp;make a Survival check. Without the compass, navigating&nbsp;with the Atlas will require a Survival check.</p>",
+    "description": "<p>Compasses make navigating the Snowlands much easier. As long as you have a compass and your Atlas, you'll be able to locate points on it without having to make a Survival check. Without the compass, navigating with the Atlas will require a Survival check.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137020453,
-    "modifiedTime": 1720137029563,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!364aPAwegoPAM4P8"
+  }
 }

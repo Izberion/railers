@@ -4,29 +4,12 @@
   "_id": "aTEG9mzOLUXCLl6f",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Leather caps are made from thick leather, making&nbsp;them both durable and practical. They provide a small&nbsp;amount of both Protection and Insulation.</p>",
+    "description": "<p>Leather caps are made from thick leather, making them both durable and practical. They provide a small amount of both Protection and Insulation.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "protection": 1,
     "insulation": 3,
     "clothingType": "headgear"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118223249,
-    "modifiedTime": 1720118240150,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!aTEG9mzOLUXCLl6f"
+  }
 }

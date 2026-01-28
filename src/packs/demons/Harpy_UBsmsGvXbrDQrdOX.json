@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 5,
       "intellect": 2,
       "endurance": 3,
-      "fear": 5,
+      "fear": 6,
       "attack": {
         "damage": 5,
         "severity": 5
@@ -122,76 +122,21 @@
       "name": "Winged",
       "type": "ability",
       "system": {
-        "description": "<p>The demon can fly. It cannot move faster than it normally would on the&nbsp;ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
+        "description": "<p>The demon can fly. It cannot move faster than it normally would on the ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
         "action": "passive"
       },
       "_id": "J7QloZwAvFUKDhgU",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.vJ7lG4Nkm5xtyXMN.Item.887Bd10VUTjC1Bap"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720137970625,
-        "modifiedTime": 1720139314234,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!UBsmsGvXbrDQrdOX.J7QloZwAvFUKDhgU"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Siren",
       "type": "ability",
       "system": {
-        "description": "<p>The demon sings an enchanting melody. Any character or other type of demon&nbsp;that hears the song must make a Resolve save or become Mesmerized. While Mesmerized, the character is unable to act or remember the situation he was just in.</p>",
+        "description": "<p>The demon sings an enchanting melody. Any character or other type of demon that hears the song must make a Resolve save or become Mesmerized. While Mesmerized, the character is unable to act or remember the situation he was just in.</p>",
         "action": "full"
       },
       "_id": "5sXxhOtWQ7j9iAF7",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139316497,
-        "modifiedTime": 1720139338770,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!UBsmsGvXbrDQrdOX.5sXxhOtWQ7j9iAF7"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139279797,
-    "modifiedTime": 1720139338770,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!UBsmsGvXbrDQrdOX"
+  ]
 }

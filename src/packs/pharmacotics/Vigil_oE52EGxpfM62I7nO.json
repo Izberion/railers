@@ -4,27 +4,10 @@
   "_id": "oE52EGxpfM62I7nO",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Vigil greatly increases the character&rsquo;s reaction time,&nbsp;perception, and coordination for 1 hour. The character&nbsp;can take a free Major or Minor action every turn. He will&nbsp;gain a +2d bonus on any Combat, Prowess, or Stealth&nbsp;skill check.</p>",
+    "description": "<p>Vigil greatly increases the character’s reaction time, perception, and coordination for 1 hour. The character can take a free Major or Minor action every turn. He will gain a +2d bonus on any Combat, Prowess, or Stealth skill check. Due to the strain on the body, only a single dose is effective per day, assuming the character gets a good night’s sleep between doses.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136440728,
-    "modifiedTime": 1720136453723,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!oE52EGxpfM62I7nO"
+  }
 }

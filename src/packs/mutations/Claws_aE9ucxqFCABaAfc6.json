@@ -4,23 +4,6 @@
   "_id": "aE9ucxqFCABaAfc6",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character&rsquo;s finger and toenails have been hardening, developing into claws. He&nbsp;gains a natural weapon that deals 6/W4.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143198603,
-    "modifiedTime": 1720143217544,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!aE9ucxqFCABaAfc6"
+    "description": "<p>The corrupted character’s finger and toenails have been hardening, developing into claws. He gains a natural weapon that deals 6/W4.</p>"
+  }
 }

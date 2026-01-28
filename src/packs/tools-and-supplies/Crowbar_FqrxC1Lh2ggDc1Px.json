@@ -4,27 +4,10 @@
   "_id": "FqrxC1Lh2ggDc1Px",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Crowbars make prying much easier. Using this tool&nbsp;with certain Exertion checks, such as forcing open a&nbsp;locked door, will give you +2d on the check.</p>",
+    "description": "<p>Crowbars make prying much easier. Using this tool with certain Exertion checks, such as forcing open a locked door, will give you +2d on the check.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137057575,
-    "modifiedTime": 1720137069694,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!FqrxC1Lh2ggDc1Px"
+  }
 }

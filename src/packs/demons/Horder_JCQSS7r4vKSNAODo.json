@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 3,
       "intellect": 3,
       "endurance": 1,
-      "fear": 6,
+      "fear": 7,
       "attack": {
         "damage": 3,
         "severity": 2
@@ -122,45 +122,11 @@
       "name": "Magpie",
       "type": "ability",
       "system": {
-        "description": "<p>The demon likes to collect shiny things. Its nests are often full of useful&nbsp;scavenge and junk.</p>",
+        "description": "<p>The demon likes to collect shiny things. Its nests are often full of useful scavenge and junk.</p>",
         "action": "passive"
       },
       "_id": "BMqYuIBvxkSDMcNE",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139386492,
-        "modifiedTime": 1720139399961,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!JCQSS7r4vKSNAODo.BMqYuIBvxkSDMcNE"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139366037,
-    "modifiedTime": 1720139399961,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!JCQSS7r4vKSNAODo"
+  ]
 }

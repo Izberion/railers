@@ -4,7 +4,7 @@
   "_id": "chkkuAABNtlH9lhP",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Coach passenger cars feature two by two rows of&nbsp;seating with a center passageway dividing them. They&nbsp;can seat much more than a sleeper, and while they can&nbsp;be used to sleep in, upright is not a terribly comfortable&nbsp;position for long periods of time.</p>",
+    "description": "<p>Coach passenger cars feature two by two rows of seating with a center passageway dividing them. They can seat much more than a sleeper, and while they can be used to sleep in, upright is not a terribly comfortable position for long periods of time. If push comes to shove, you can sleep 72 souls in this car.</p>",
     "type": "",
     "weight": 100,
     "power": 2,
@@ -12,22 +12,5 @@
     "armor": 2,
     "damaged": "",
     "destroyed": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720142282047,
-    "modifiedTime": 1720142314195,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!chkkuAABNtlH9lhP"
+  }
 }

@@ -4,7 +4,7 @@
   "_id": "hW5ff7oFGHTCoe8s",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Anti-materiel rifles are large bolt-action rifles designed to punch through heavy armor or structures.&nbsp;They feature an integral bipod and a single round internal magazine. When attacking, the target&rsquo;s Armor or&nbsp;Protection is treated as if it were 4 points lower. Due to&nbsp;the massive recoil, the gun should be fired from a prone&nbsp;position or mounted. Firing without a fixed position will&nbsp;inflict a -3d penalty on the attack roll and require the&nbsp;shooter to make a Combat save or take a 1/W1 Wound&nbsp;from the blunt force of the recoil. Defenders get no cover&nbsp;bonus when defending against this weapon.</p>",
+    "description": "<p>Anti-materiel rifles are large bolt-action rifles designed to punch through heavy armor or structures. They feature an integral bipod and a single round internal magazine. When attacking, the target’s Armor or Protection is treated as if it were 4 points lower. Due to the massive recoil, the gun should be fired from a prone position or mounted. Firing without a fixed position will inflict a -3d penalty on the attack roll and require the shooter to make a Combat save or take a 1/W1 Wound from the blunt force of the recoil. Defenders get no cover bonus when defending against this weapon.</p>",
     "quantity": 1,
     "load": 3,
     "stowage": "other",
@@ -20,22 +20,5 @@
     "skill": "heavyweapons",
     "attribute": "",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720119848665,
-    "modifiedTime": 1720119965372,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!hW5ff7oFGHTCoe8s"
+  }
 }

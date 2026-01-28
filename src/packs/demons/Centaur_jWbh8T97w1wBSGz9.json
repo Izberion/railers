@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,76 +122,21 @@
       "name": "Light Blind",
       "type": "ability",
       "system": {
-        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action&nbsp;taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
+        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
         "action": "passive"
       },
       "_id": "7otr1UIzM8YXFRE5",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.meU1dN5YfEjV0XAw.Item.gV1tq8hs5m4kWefT"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138049115,
-        "modifiedTime": 1720138149043,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!jWbh8T97w1wBSGz9.7otr1UIzM8YXFRE5"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Stupefy",
       "type": "ability",
       "system": {
-        "description": "<p>The demon can somehow get into the minds&rsquo; of its prey. It attempts to daze a&nbsp;target within Short range. The target must make a TN 6 Resolve saving throw or become Dazed for&nbsp;1d Rounds.</p>",
+        "description": "<p>The demon can somehow get into the minds’ of its prey. It attempts to daze a target within Short range. The target must make a TN 6 Resolve saving throw or become Dazed for 1d Rounds.</p>",
         "action": "major"
       },
       "_id": "tHCIm25fC5RpmkE3",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138161748,
-        "modifiedTime": 1720138179183,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!jWbh8T97w1wBSGz9.tHCIm25fC5RpmkE3"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720138123394,
-    "modifiedTime": 1720138179183,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!jWbh8T97w1wBSGz9"
+  ]
 }

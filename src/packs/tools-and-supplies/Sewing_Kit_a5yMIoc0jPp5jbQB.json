@@ -4,27 +4,10 @@
   "_id": "a5yMIoc0jPp5jbQB",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Sewing kits consist of a few spools of thread, various&nbsp;needles, and a thimbles. They can be used to patch holes&nbsp;in clothing or people.</p>",
+    "description": "<p>Sewing kits consist of a few spools of thread, various needles, and a thimbles. They can be used to patch holes in clothing or people.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137344639,
-    "modifiedTime": 1720137354334,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!a5yMIoc0jPp5jbQB"
+  }
 }

@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 3,
       "intellect": 1,
       "endurance": 1,
-      "fear": 5,
+      "fear": 6,
       "attack": {
         "damage": 1,
         "severity": 1
@@ -122,72 +122,21 @@
       "name": "Winged",
       "type": "ability",
       "system": {
-        "description": "<p>The demon can fly. It cannot move faster than it normally would on the&nbsp;ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
+        "description": "<p>The demon can fly. It cannot move faster than it normally would on the ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
         "action": "passive"
       },
       "_id": "887Bd10VUTjC1Bap",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720137970625,
-        "modifiedTime": 1720137991151,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!vJ7lG4Nkm5xtyXMN.887Bd10VUTjC1Bap"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Pestilence",
       "type": "ability",
       "system": {
-        "description": "<p>&nbsp;Anyone that comes in direct contact with this demon is immediately exposed to disease. The body of anything that dies by this disease will become food for the demon&rsquo;s&nbsp;larvae, which begin to consume it from within shortly after death.</p>",
+        "description": "<p>Anyone that comes in direct contact with this demon is immediately exposed to disease. The body of anything that dies by this disease will become food for the demon’s larvae, which begin to consume it from within shortly after death.</p>",
         "action": "passive"
       },
       "_id": "zM8EE7bKOC4ajEty",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720137994655,
-        "modifiedTime": 1720138012081,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!vJ7lG4Nkm5xtyXMN.zM8EE7bKOC4ajEty"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137944970,
-    "modifiedTime": 1720138012081,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!vJ7lG4Nkm5xtyXMN"
+  ]
 }

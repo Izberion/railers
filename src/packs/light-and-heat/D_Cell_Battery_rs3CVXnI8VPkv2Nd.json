@@ -4,27 +4,10 @@
   "_id": "rs3CVXnI8VPkv2Nd",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>D-Cell batteries provide power to most portable&nbsp;electrical devices such as flashlights. They can be&nbsp;recharged with a hand generator. Their duration depends on the application and do not take up Load when&nbsp;installed in a piece of gear.</p>",
+    "description": "<p>D-Cell batteries provide power to most portable electrical devices such as flashlights. They can be recharged with a hand generator. Their duration depends on the application and do not take up Load when installed in a piece of gear.</p>",
     "quantity": 1,
     "load": 0.25,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118354039,
-    "modifiedTime": 1720118376994,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!rs3CVXnI8VPkv2Nd"
+  } 
 }

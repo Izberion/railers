@@ -4,27 +4,10 @@
   "_id": "qsoOe9DcJupvIlbO",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Matches are needed to light candles, cryosene&nbsp;lanterns and heaters, fuses, cigarettes, and anything else&nbsp;you want to burn. They can be struck on almost any surface, as long as it isn&rsquo;t smooth or frictionless. They come&nbsp;in packs of 20. If used as a light source, they go out in a&nbsp;few seconds and only provide dim light, illuminating just&nbsp;a few inches.</p>",
+    "description": "<p>Matches are needed to light candles, cryosene lanterns and heaters, fuses, cigarettes, and anything else you want to burn. They can be struck on almost any surface, as long as it isn’t smooth, frictionless, or wet. They come in packs of 20. If used as a light source, they go out in a few seconds and only provide dim light, illuminating just a few inches.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118944109,
-    "modifiedTime": 1720118953335,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!qsoOe9DcJupvIlbO"
+  } 
 }

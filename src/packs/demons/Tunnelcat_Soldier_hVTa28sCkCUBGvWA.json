@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -126,122 +126,37 @@
         "action": "passive"
       },
       "_id": "PkGJ5e9eS4b0mTLH",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141736850,
-        "modifiedTime": 1720141748343,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!hVTa28sCkCUBGvWA.PkGJ5e9eS4b0mTLH"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Part of the Pack",
       "type": "ability",
       "system": {
-        "description": "<p>As long as there are at least 2 of these demons in the same zone, they&nbsp;receive +1d to any attack or defense roll.</p>",
+        "description": "<p>As long as there are at least 2 of these demons in the same zone, they receive +1d to any attack or defense roll.</p>",
         "action": "passive"
       },
       "_id": "yEt3rXCYLfP07zW3",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141749940,
-        "modifiedTime": 1720141770275,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!hVTa28sCkCUBGvWA.yEt3rXCYLfP07zW3"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Battle Song",
       "type": "ability",
       "system": {
-        "description": "<p>&nbsp;As long as there are at least 4 of these demons in the same zone, they are able to harmonize their song, creating a tone that melts the glue that holds the tunnels together,&nbsp;causing the zone to collapse, as long as it is in the colony. All 4 must use this action in the same&nbsp;round. The collapse happens at the end of the turn of the final demon.</p>",
+        "description": "<p>As long as there are at least 4 of these demons in the same zone, they are able to harmonize their song, creating a tone that melts the glue that holds the tunnels together, causing the zone to collapse, as long as it is in the colony. All 4 must use this action in the same round. The collapse happens at the end of the turn of the final demon.</p>",
         "action": "major"
       },
       "_id": "77o6eP2NItYDOQtx",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141781882,
-        "modifiedTime": 1720141806536,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!hVTa28sCkCUBGvWA.77o6eP2NItYDOQtx"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Tunnelcat King",
       "type": "ability",
       "system": {
-        "description": "<p>As long as there are at least 6 of these demons in the same zone, they are&nbsp;able to form together into a Medium sized demon called a Tunnelcat King. The demon&rsquo;s stats become 8/W8 ATK, 9 STR, 6 AGI, 4 INT, 5 END, and 7 FEAR. Anyone that witnesses the transformation&nbsp;must make a Resolve save at the new Fear rating. All 6 demons must use this action in the same&nbsp;round. The transformation happens at the end of the turn of the final demon. If the transformation&nbsp;is stopped before it can finish, whether by moving a demon out of the zone or killing one, demons&nbsp;involved are struck with a 6/W8 Wound.</p>",
+        "description": "<p>As long as there are at least 6 of these demons in the same zone, they are able to form together into a Medium sized demon called a Tunnelcat King. The demon’s stats become 8/W8 ATK, 9 STR, 6 AGI, 4 INT, 5 END, and 7 FEAR. Anyone that witnesses the transformation must make a Resolve save against the new Fear rank. All 6 demons must use this action in the same round. The transformation happens at the end of the turn of the final demon. If the transformation is stopped before it can finish, whether by moving a demon out of the zone or killing one, demons involved are struck with a 6/W8 Wound.</p>",
         "action": "full"
       },
       "_id": "1FHDwY1KiEhJpuoJ",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141813272,
-        "modifiedTime": 1720141833303,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!hVTa28sCkCUBGvWA.1FHDwY1KiEhJpuoJ"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720141693993,
-    "modifiedTime": 1720141833303,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!hVTa28sCkCUBGvWA"
+  ]
 }

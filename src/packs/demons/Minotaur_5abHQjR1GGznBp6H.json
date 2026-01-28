@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,45 +122,11 @@
       "name": "Charge",
       "type": "ability",
       "system": {
-        "description": "<p>The demon runs straight towards a target, making a melee attack when it&nbsp;reaches them. It can move through up to 2 zones to do so and is unaffected by terrain. Anyone in its&nbsp;path that is not its target can choose to either get out of the way quickly or risk an Attack of Opportunity as it goes by. Both options will give the character a chance to make a Prowess save to avoid&nbsp;being trampled, but making the Attack of Opportunity will increase the TN 5 to 16. Failing the roll&nbsp;will knock the character prone and deal 4/W4.</p>",
+        "description": "<p>The demon runs straight towards a target, making a melee attack when it reaches them. It can move through up to 2 zones to do so and is unaffected by terrain. Anyone in its path that is not its target can choose to either get out of the way quickly or risk making an Attack of Opportunity as it goes by. Both options will give the character a chance to make a Prowess save to avoid being trampled, but making the Attack of Opportunity will increase the difficulty from TN 6 to TN 7. Failing the roll will knock the character prone and deal 4/W4.</p>",
         "action": "full"
       },
       "_id": "DKENJyxrEtcSKOBY",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139716375,
-        "modifiedTime": 1720139734792,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!5abHQjR1GGznBp6H.DKENJyxrEtcSKOBY"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139691305,
-    "modifiedTime": 1720139734792,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!5abHQjR1GGznBp6H"
+  ]
 }

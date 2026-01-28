@@ -4,23 +4,6 @@
   "_id": "KQzFYkTJzd5MbFJ0",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character&rsquo;s teeth have have&nbsp;changed, becoming more animal, or at least less human.&nbsp;They could be anything from fangs to shark&rsquo;s teeth to a&nbsp;mouth full of metal to anything in between. He gains a&nbsp;natural weapon that deals 5/W4.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720145059365,
-    "modifiedTime": 1720145066962,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!KQzFYkTJzd5MbFJ0"
+    "description": "<p>The corrupted character’s teeth have have changed, becoming more animal, or at least less human. They could be anything from fangs to shark’s teeth to a mouth full of metal to anything in between. He gains a natural weapon that deals 5/W4.</p>"
+  }
 }

@@ -4,27 +4,10 @@
   "_id": "WLQkE8oTnXwu0Wdx",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Satchels provide a small amount of extra storage&nbsp;space, effectively acting as a second backpack. Removing&nbsp;anything stored in the satchel only requires a Minor action, as opposed to a Major action for normally stowed&nbsp;gear. It can go around your waist or hang from a shoulder and is able to fit 2 Load worth of equipment.</p>",
+    "description": "<p>Satchels provide a small amount of extra storage space, effectively acting as a second backpack. Removing anything stored in the satchel only requires a Minor action, as opposed to a Major action for normally stowed gear. It can go around your waist or hang from a shoulder and is able to fit 2 Load worth of equipment.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136849057,
-    "modifiedTime": 1720136862223,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!WLQkE8oTnXwu0Wdx"
+  }
 }

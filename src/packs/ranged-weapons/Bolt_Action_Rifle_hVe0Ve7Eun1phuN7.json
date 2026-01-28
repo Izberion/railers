@@ -4,7 +4,7 @@
   "_id": "hVe0Ve7Eun1phuN7",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Bolt-action rifles are some of the most common and&nbsp;reliable rifles in the Snowlands. Though they lack rate of&nbsp;fire, they make up for it in range, accuracy, and stopping&nbsp;power. They have a 5 round internal magazine and must&nbsp;be loaded using stripper clips.</p>",
+    "description": "<p>Automatic rifles aren’t as powerful as other rifles, but have a high rate of fire. They are automatic firearms and come with a 20 round detachable magazine.</p>",
     "quantity": 1,
     "load": 2,
     "stowage": "other",
@@ -20,22 +20,5 @@
     "skill": "smallarms",
     "attribute": "",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720120080280,
-    "modifiedTime": 1720120153198,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!hVe0Ve7Eun1phuN7"
+  }
 }

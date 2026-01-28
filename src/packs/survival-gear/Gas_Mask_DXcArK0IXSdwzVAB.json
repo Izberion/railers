@@ -4,27 +4,10 @@
   "_id": "DXcArK0IXSdwzVAB",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Gas masks, while technically headgear, can be worn&nbsp;under almost any hat, helmet, or other cranial covering,&nbsp;excluding balaclavas. They cover the entire face and are&nbsp;completely sealed to the outside air, except for through&nbsp;the filter. They have eye holes filled with glass lenses to&nbsp;allow sight and maintain the seal. While wearing a gas&nbsp;mask, you will not gain Corruption points, however you&nbsp;will have a -2d penalty to all Perception checks.</p>",
+    "description": "<p>Gas masks, while technically headgear, can be worn under almost any hat, helmet, or other cranial covering, excluding balaclavas. They cover the entire face and are completely sealed to the outside air, except through the filter. They have eye holes filled with glass lenses to allow sight and maintain the seal. While wearing a gas mask, you will not gain Corruption points, however you will have a -2d penalty to all Perception checks.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136787910,
-    "modifiedTime": 1720136801479,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!DXcArK0IXSdwzVAB"
+  }
 }

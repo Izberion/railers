@@ -4,7 +4,7 @@
   "_id": "wokrrsmQvb2KY9ZB",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Trench guns are short-barreled shotguns that can&nbsp;be slam fired. Because of that, they are exceptionally&nbsp;deadly in close quarters. These have a 6 round internal&nbsp;magazine that must be fed by hand, one at a time. A single round can be loaded for a Maneuver, in place of&nbsp;reloading the entire magazine.</p>",
+    "description": "<p>Trench guns are short-barreled shotguns that can be slam fired. They are exceptionally deadly in close quarters and can be fired in melee range with a -2d penalty. They have a 6 round internal magazine that must be fed by hand, one at a time. A single round can be loaded for a Maneuver, in place of reloading the entire magazine.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
@@ -20,22 +20,5 @@
     "skill": "smallarms",
     "attribute": "",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720135642449,
-    "modifiedTime": 1720135679826,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!wokrrsmQvb2KY9ZB"
+  }
 }

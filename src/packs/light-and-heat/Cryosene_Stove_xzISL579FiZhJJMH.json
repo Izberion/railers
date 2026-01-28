@@ -4,27 +4,10 @@
   "_id": "xzISL579FiZhJJMH",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Cryosene stoves are portable camp stoves which run&nbsp;off of cryosene. While not hot enough to warm yourself&nbsp;while out in the open, it will heat a small room or tent to&nbsp;above freezing while in use, though a heater would be&nbsp;much more efficient. It is also great for cooking food or&nbsp;boiling water. They have 1 gallon tanks and can operate&nbsp;for 1 Quarter from full.</p>",
+    "description": "<p>Cryosene stoves are portable camp stoves which run off of cryosene. While not hot enough to warm yourself while out in the open, it will heat a small room or tent to above freezing while in use, though a heater would be much more efficient. It is also great for cooking food or boiling water. They have 1 gallon tanks and can operate for 1 Quarter from full.</p>",
     "quantity": 1,
     "load": 2,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118634874,
-    "modifiedTime": 1720118649080,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!xzISL579FiZhJJMH"
+  }
 }

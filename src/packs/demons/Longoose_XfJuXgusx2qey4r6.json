@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,45 +122,11 @@
       "name": "Slippery",
       "type": "ability",
       "system": {
-        "description": "<p>The demon is tough to nail down. It gains +2d to defend against all melee&nbsp;attacks or attempts to restrain it.</p>",
+        "description": "<p>The demon is tough to nail down. It gains +2d to defend against all melee attacks or attempts to restrain it.</p>",
         "action": "passive"
       },
       "_id": "YejP5VOxQ6YAksWh",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139519839,
-        "modifiedTime": 1720139534796,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!XfJuXgusx2qey4r6.YejP5VOxQ6YAksWh"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139494685,
-    "modifiedTime": 1720139534796,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!XfJuXgusx2qey4r6"
+  ]
 }

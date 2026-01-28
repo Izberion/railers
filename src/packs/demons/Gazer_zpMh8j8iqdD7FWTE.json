@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,49 +122,11 @@
       "name": "Light Blind",
       "type": "ability",
       "system": {
-        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action&nbsp;taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
+        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
         "action": "passive"
       },
       "_id": "bsiXHLnZKxkJBUfh",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.meU1dN5YfEjV0XAw.Item.gV1tq8hs5m4kWefT"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138049115,
-        "modifiedTime": 1720138843497,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!zpMh8j8iqdD7FWTE.bsiXHLnZKxkJBUfh"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720138838862,
-    "modifiedTime": 1720138871648,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!zpMh8j8iqdD7FWTE"
+  ]
 }

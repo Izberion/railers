@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,103 +122,31 @@
       "name": "Winged",
       "type": "ability",
       "system": {
-        "description": "<p>The demon can fly. It cannot move faster than it normally would on the&nbsp;ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
+        "description": "<p>The demon can fly. It cannot move faster than it normally would on the ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
         "action": "passive"
       },
       "_id": "WYHyoWOvHV7xXTiG",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.vJ7lG4Nkm5xtyXMN.Item.887Bd10VUTjC1Bap"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720137970625,
-        "modifiedTime": 1720139222522,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!Qw9hjlBUuOLYQ6Tt.WYHyoWOvHV7xXTiG"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Paralytic Venom",
       "type": "ability",
       "system": {
-        "description": "<p>With each successful attack, the demon has a chance to inject its&nbsp;venom into its target. The target must make a TN 4 Endurance saving throw or become Paralyzed for&nbsp;a number of Rounds equal to the saving throw difficulty. The target number increases by 1 for each&nbsp;following successful attack against an individual target. Succeeding on the TN 8 save will make the&nbsp;target immune to the venom for a month.</p>",
+        "description": "<p>With each successful attack, the demon has a chance to inject its venom into its target. The target must make a TN 6 Endurance saving throw or become Paralyzed for a number of Rounds equal to the saving throw difficulty. The target number increases by 1 for each following successful attack against an individual target. Succeeding on the TN 8 save will make the target immune to the venom for a month.</p>",
         "action": "passive"
       },
       "_id": "JS5i5yTYPrmCTq6r",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139225981,
-        "modifiedTime": 1720139245131,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!Qw9hjlBUuOLYQ6Tt.JS5i5yTYPrmCTq6r"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Steel Web",
       "type": "ability",
       "system": {
-        "description": "<p>The demon encases a Paralyzed target in thick webs. The target becomes Restrained. If the paralysis wears off in time, the Restrained character can attempt to break free with&nbsp;a TN 7 Exertion check. Another character can cut the Restrained character free with a TN 6 Exertion&nbsp;check at any time.</p>",
+        "description": "<p>The demon encases a Paralyzed target in thick webs. The target becomes Restrained. If the paralysis wears off in time, the Restrained character can attempt to break free with a TN 7 Exertion check. Another character can cut the Restrained character free with a TN 6 Exertion check at any time.</p>",
         "action": "full"
       },
       "_id": "a2EHHTV1kFvjwSqw",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139247221,
-        "modifiedTime": 1720139269310,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!Qw9hjlBUuOLYQ6Tt.a2EHHTV1kFvjwSqw"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139195533,
-    "modifiedTime": 1720139269310,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!Qw9hjlBUuOLYQ6Tt"
+  ]
 }

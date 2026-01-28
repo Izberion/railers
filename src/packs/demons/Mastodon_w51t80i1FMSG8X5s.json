@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,72 +122,21 @@
       "name": "Corrupting",
       "type": "ability",
       "system": {
-        "description": "<p>The demon practically oozes Corruption from special organs on its back.&nbsp;Any character sharing a zone with the demon at the end of the character&rsquo;s turn will gain Corruption&nbsp;points according to his Corruption stage. If the character has a gas mask, he can roll an Endurance&nbsp;save to take half the normal amount of Corruption, rounded up.</p>",
+        "description": "<p>The demon practically oozes Corruption from special organs on its back. Any character sharing a zone with the demon at the end of the character’s turn will gain Corruption points according to his Corruption stage. If the character has a gas mask, he can roll an Endurance save to take half the normal amount of Corruption, rounded down.</p>",
         "action": "passive"
       },
       "_id": "FjYBhtLXNq8RuOxu",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139634892,
-        "modifiedTime": 1720139656231,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!w51t80i1FMSG8X5s.FjYBhtLXNq8RuOxu"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Trample",
       "type": "ability",
       "system": {
-        "description": "<p>The demon runs across an adjacent zone, ending in a zone adjacent to that one,&nbsp;potentially running down any character or demon of smaller size in its path. They must make a TN5&nbsp;Prowess save or be trampled. Failure results in being knocked Prone and taking a 7/W8 Wound.</p>",
+        "description": "<p>The demon runs across an adjacent zone, ending in a zone adjacent to that one, potentially running down any character or demon of smaller size in its path. They must make a TN 6 Prowess save or be trampled. Failure results in being knocked Prone and taking a 7/W8 Wound.</p>",
         "action": "full"
       },
       "_id": "BiKB6CnSv53bhwzP",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139658256,
-        "modifiedTime": 1720139680686,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!w51t80i1FMSG8X5s.BiKB6CnSv53bhwzP"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139613537,
-    "modifiedTime": 1720139680686,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!w51t80i1FMSG8X5s"
+  ]
 }

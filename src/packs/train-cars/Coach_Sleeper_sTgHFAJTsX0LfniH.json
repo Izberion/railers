@@ -4,7 +4,7 @@
   "_id": "sTgHFAJTsX0LfniH",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Coach sleeper cars feature partially walled sections&nbsp;in which the seats face one another, one to either side of&nbsp;the center passageway. For nighttime use, the seats fold&nbsp;down to form a lower bunk. An upper bunk folds down&nbsp;from above. Each has a curtain for privacy. This car can&nbsp;seat twice the number of people it can fit sleeping.</p>",
+    "description": "<p>Coach sleeper cars feature partially walled sections in which the seats face one another, one to either side of the center passageway. For nighttime use, the seats fold down to form a lower bunk. An upper bunk folds down from above. Each has a curtain for privacy. This car can seat twice the number of people it can fit sleeping.</p>",
     "type": "",
     "weight": 120,
     "power": 2,
@@ -12,22 +12,5 @@
     "armor": 2,
     "damaged": "",
     "destroyed": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720142322859,
-    "modifiedTime": 1720142347245,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!sTgHFAJTsX0LfniH"
+  }
 }

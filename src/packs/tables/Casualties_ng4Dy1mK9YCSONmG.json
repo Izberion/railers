@@ -186,24 +186,7 @@
   ],
   "replacement": true,
   "displayRoll": true,
-  "folder": null,
-  "ownership": {
-    "default": 0,
-    "Rkv9Xf9nMjw1REva": 3
-  },
-  "flags": {},
-  "_stats": {
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "coreVersion": "12.331",
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "createdTime": 1744695729817,
-    "modifiedTime": 1744695735433,
-    "lastModifiedBy": "Rkv9Xf9nMjw1REva"
-  },
   "formula": "1d100",
   "_id": "ng4Dy1mK9YCSONmG",
-  "sort": 400000,
-  "_key": "!tables!ng4Dy1mK9YCSONmG"
+  "sort": 400000
 }

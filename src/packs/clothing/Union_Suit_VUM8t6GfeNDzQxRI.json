@@ -4,29 +4,12 @@
   "_id": "VUM8t6GfeNDzQxRI",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Union suits are single-piece long underwear that&nbsp;cover the entire body. While good Insulation for cheap, it&nbsp;probably isn&rsquo;t wise to wear just your union suit in polite&nbsp;society.</p>",
+    "description": "<p>Union suits are single-piece long underwear that cover the entire body. While good Insulation for cheap, it probably isn’t wise to wear just your union suit in polite society.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "protection": 0,
     "insulation": 10,
     "clothingType": "innerwear"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720117685196,
-    "modifiedTime": 1720117702003,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!VUM8t6GfeNDzQxRI"
+  }
 }

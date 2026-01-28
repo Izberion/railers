@@ -4,23 +4,6 @@
   "_id": "DTfcsBhjWmQ2mk3a",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character sprouts a pair&nbsp;of antennae from his head. Gain +1d when making a Perception check to locate anything not made of metal,&nbsp;stone, or another inert material.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143037877,
-    "modifiedTime": 1720143046218,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!DTfcsBhjWmQ2mk3a"
+    "description": "<p>The corrupted character sprouts a pair of antennae from his head. Gain +1d when making a Perception check to locate anything not made of metal, stone, or another inert material.</p>"
+  }
 }

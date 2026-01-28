@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,76 +122,21 @@
       "name": "Light Blind",
       "type": "ability",
       "system": {
-        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action&nbsp;taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
+        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
         "action": "passive"
       },
       "_id": "CFerP7ix5rcSHzW1",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.meU1dN5YfEjV0XAw.Item.gV1tq8hs5m4kWefT"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138049115,
-        "modifiedTime": 1720142204374,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!o6bZ6e8q1iQ8XhTM.CFerP7ix5rcSHzW1"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Forgettable",
       "type": "ability",
       "system": {
-        "description": "<p>The creature edits itself out of the minds of anyone and anything it&nbsp;nears, making them unable to sense it. They can resist this affect with a TN 6 Resolve saving throw.&nbsp;Succeed or fail they will be aware something is wrong as their heads will feel faintly fuzzy.</p>",
+        "description": "<p>The creature edits itself out of the minds of anyone and anything it nears, making them unable to sense it. They can resist this affect with a TN 6 Resolve saving throw. Succeed or fail they will be aware something is wrong as their heads will feel faintly fuzzy.</p>",
         "action": "passive"
       },
       "_id": "DF4GwXovEhWdreZ5",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720142206847,
-        "modifiedTime": 1720142224696,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!o6bZ6e8q1iQ8XhTM.DF4GwXovEhWdreZ5"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720142178090,
-    "modifiedTime": 1720142224696,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!o6bZ6e8q1iQ8XhTM"
+  ]
 }

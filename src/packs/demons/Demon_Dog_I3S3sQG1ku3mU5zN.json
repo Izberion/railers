@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 5,
       "intellect": 3,
       "endurance": 3,
-      "fear": 4,
+      "fear": 5,
       "attack": {
         "damage": 6,
         "severity": 5
@@ -122,72 +122,21 @@
       "name": "Clamp",
       "type": "ability",
       "system": {
-        "description": "<p>When the demon makes a successful attack against a target, it has a chance to&nbsp;clamp down and not let go. The target must make a TN 5 Prowess save. On a failure, the demon gains&nbsp;the Clamped condition. The demon has -2d on defense rolls. The target takes 4/W3 at the beginning&nbsp;of each of his following turns. The demon must make a TN 5 Intellect save to release.</p>",
+        "description": "<p>When the demon makes a successful attack against a target, it has a chance to clamp down and not let go. The target must make a TN 6 Prowess save. On a failure, the demon gains the Clamped condition. The demon has -2d on defense rolls. The target takes 4/W3 at the beginning of each of his following turns. The demon must make a TN 5 Intellect roll to release.</p>",
         "action": "major"
       },
       "_id": "3CGa7gCeIHYkwQ65",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138527646,
-        "modifiedTime": 1720138571936,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!I3S3sQG1ku3mU5zN.3CGa7gCeIHYkwQ65"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Tracker",
       "type": "ability",
       "system": {
-        "description": "<p>When the demon attempts to find a character or demon attempting to hide&nbsp;from it, it gains +2d as long as it is able to catch its quarry&rsquo;s scent.</p>",
+        "description": "<p>When the demon attempts to find a character or demon, it gains +2d as long as it is able to catch its quarry’s scent.</p>",
         "action": "passive"
       },
       "_id": "vS6wFjDqIuU7BHJh",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138578386,
-        "modifiedTime": 1720138592350,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!I3S3sQG1ku3mU5zN.vS6wFjDqIuU7BHJh"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720138500202,
-    "modifiedTime": 1720138592350,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!I3S3sQG1ku3mU5zN"
+  ]
 }

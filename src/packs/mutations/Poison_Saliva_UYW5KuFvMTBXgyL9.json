@@ -4,23 +4,6 @@
   "_id": "UYW5KuFvMTBXgyL9",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character now has&nbsp;poisonous saliva. The poison deals 4/W3. As a Minor action, he can spit at a target in Melee range. If hit, the target must make an Endurance save or become poisoned.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144451950,
-    "modifiedTime": 1720144463433,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!UYW5KuFvMTBXgyL9"
+    "description": "<p>The corrupted character now has poisonous saliva. The poison deals 4/W3. As a Minor action, he can spit at a target in Melee range. If hit, the target must make an Endurance save or become poisoned.</p>"
+  }
 }

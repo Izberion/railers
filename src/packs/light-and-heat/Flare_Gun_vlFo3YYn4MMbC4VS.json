@@ -4,27 +4,10 @@
   "_id": "vlFo3YYn4MMbC4VS",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Flare guns are single-shot, breech-loaded handguns&nbsp;that can fit one flare. They are not intended as weapons,&nbsp;and while you could use it to shoot at someone, they are&nbsp;not accurate or particularly dangerous. If used as a&nbsp;weapon, the attack roll has a -4d penalty and will only&nbsp;deal 2/W1. On a hit, the target must make a TN 4 Endurance save or catch fire.</p>",
+    "description": "<p>Flare guns are single-shot, breech-loaded handguns that can fit one flare. They are not intended as weapons, and while you could use it to shoot at someone, they are not accurate or particularly dangerous. If used as a weapon, the attack roll has a -4d penalty and will only deal 2/W1. On a hit, the target must make a TN 5 Endurance save or catch fire.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118778230,
-    "modifiedTime": 1720118796192,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!vlFo3YYn4MMbC4VS"
+  } 
 }

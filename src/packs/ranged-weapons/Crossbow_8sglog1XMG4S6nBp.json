@@ -4,7 +4,7 @@
   "_id": "8sglog1XMG4S6nBp",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Crossbows, though dated, are very lethal. If you&nbsp;make an attack with a crossbow while Hidden, you will&nbsp;not be revealed immediately, as long as you aren't standing out in the open. Enemies that saw the bolt hit will get&nbsp;to make an immediate contested Perception check to locate you. Crossbows have a small horizontal quiver attached to the bottom that can hold 10 bolts.</p>",
+    "description": "<p>Crossbows, though dated, are very lethal. If you make an attack with a crossbow while Hidden, you will not be revealed immediately, as long as you aren't standing out in the open. Enemies that saw the bolt hit will get to make an immediate contested Perception check to locate you. Crossbows have a small horizontal quiver attached to the bottom that can hold 10 bolts.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
@@ -20,22 +20,5 @@
     "skill": "bows",
     "attribute": "",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720119625171,
-    "modifiedTime": 1720119676153,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!8sglog1XMG4S6nBp"
+  }
 }

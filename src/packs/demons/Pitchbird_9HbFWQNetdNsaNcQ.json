@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,76 +122,21 @@
       "name": "Winged",
       "type": "ability",
       "system": {
-        "description": "<p>The demon can fly. It cannot move faster than it normally would on the&nbsp;ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
+        "description": "<p>This demon can fly. It cannot move faster than it normally would on the ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
         "action": "passive"
       },
       "_id": "MAR5pRXiRlHV770k",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.vJ7lG4Nkm5xtyXMN.Item.887Bd10VUTjC1Bap"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720137970625,
-        "modifiedTime": 1720141013565,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!9HbFWQNetdNsaNcQ.MAR5pRXiRlHV770k"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Harmful to Touch",
       "type": "ability",
       "system": {
-        "description": "<p>When the demon makes a successful attack on a target, the target&nbsp;must make a TN 6 Endurance saving throw. On a Failure, they come in contact with the acid oil&nbsp;coating the demon and take an additional 2/W2 Wound. This saving throw is also applied to those&nbsp;who make successful melee attacks against the demon or otherwise come in contact with it</p>",
+        "description": "<p>When the demon makes a successful attack on a target, the target must make a TN 6 Endurance saving throw. On a Failure, they come in contact with the acid oil coating the demon and take an additional 2/W2 Wound. This saving throw is also applied to those who make successful melee attacks against the demon or otherwise come in contact with it.</p>",
         "action": "passive"
       },
       "_id": "c68tClLSyv16LdND",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141016249,
-        "modifiedTime": 1720141048711,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!9HbFWQNetdNsaNcQ.c68tClLSyv16LdND"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720140984461,
-    "modifiedTime": 1720141048711,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!9HbFWQNetdNsaNcQ"
+  ]
 }

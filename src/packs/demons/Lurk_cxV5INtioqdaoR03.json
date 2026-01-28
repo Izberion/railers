@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -44,7 +44,7 @@
     "attributes": {
       "strength": 2,
       "agility": 4,
-      "intellect": 3,
+      "intellect": 5,
       "endurance": 1,
       "fear": 6,
       "attack": {
@@ -122,76 +122,21 @@
       "name": "Light Blind",
       "type": "ability",
       "system": {
-        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action&nbsp;taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
+        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
         "action": "passive"
       },
       "_id": "OcGNnepexJkPhR34",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.meU1dN5YfEjV0XAw.Item.gV1tq8hs5m4kWefT"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138049115,
-        "modifiedTime": 1720139575021,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!cxV5INtioqdaoR03.OcGNnepexJkPhR34"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Whispers",
       "type": "ability",
       "system": {
-        "description": "<p>The creature triggers a chorus of whispering in the minds of a target it can&nbsp;see. The target must roll against the demon&rsquo;s Fear, even if normally immune.</p>",
+        "description": "<p>The creature triggers a chorus of whispering in the minds of a target it can see. The target must roll against the demon’s Fear, even if normally immune.</p>",
         "action": "major"
       },
       "_id": "LdoQa4ogP5VUehJU",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139577713,
-        "modifiedTime": 1720139589575,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!cxV5INtioqdaoR03.LdoQa4ogP5VUehJU"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139544474,
-    "modifiedTime": 1720139589575,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!cxV5INtioqdaoR03"
+  ]
 }

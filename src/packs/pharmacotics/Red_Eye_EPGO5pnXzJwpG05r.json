@@ -4,27 +4,10 @@
   "_id": "EPGO5pnXzJwpG05r",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Red Eye will eliminate the character&rsquo;s need to sleep&nbsp;for 2 Quarters, leaving him feeling refreshed. After that&nbsp;time, the character can take another dose to renew the&nbsp;effect. Taking more than 6 doses in a 48 hour period is&nbsp;potentially deadly. The character must make a Endurance save if he exceeds that limit. Failure will result&nbsp;in the character&rsquo;s death. If the character does not renew&nbsp;the effect, he will crash, falling Unconscious for 1 Quarter for every dose taken. Red Eye can be used to clear the&nbsp;effects of Oblivion, though the character will gain no&nbsp;other benefit or drawback from the dose of Red Eye.</p>",
+    "description": "<p>Red Eye will eliminate the character’s need to sleep for 2 Quarters, leaving him feeling refreshed. After that time, the character can take another dose to renew the effect. Taking more than 6 doses in a 48 hour period is potentially deadly. The character must make an Endurance save if he exceeds that limit. Failure will result in the character’s death. If the character does not renew the effect, he will crash, falling Unconscious for 1 Quarter for every dose taken. Red Eye can be used to clear the effects of Oblivion, though the character will gain no other benefit or drawback from the dose of Red Eye.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136355226,
-    "modifiedTime": 1720136370548,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!EPGO5pnXzJwpG05r"
+  }
 }

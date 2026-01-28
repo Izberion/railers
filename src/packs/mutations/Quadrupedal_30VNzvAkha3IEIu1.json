@@ -4,23 +4,6 @@
   "_id": "30VNzvAkha3IEIu1",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character&rsquo;s body has&nbsp;changed to allow him to walk on four limbs. He may still&nbsp;walk upright, but doing so is complicated and requires&nbsp;an occasional Acrobatics check to remain upright.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144517096,
-    "modifiedTime": 1720144526431,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!30VNzvAkha3IEIu1"
+    "description": "<p>The corrupted character’s body has changed to allow him to walk on four limbs. He may still walk upright, but doing so is complicated and requires an occasional Acrobatics check to remain upright.</p>"
+  }
 }

@@ -4,23 +4,6 @@
   "_id": "BDL4akYtjCz5PWYA",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character&rsquo;s immune&nbsp;system functions poorly. Any time he must make a roll to&nbsp;resist a disease or its effects, apply a -2d penalty.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143243929,
-    "modifiedTime": 1720143252380,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!BDL4akYtjCz5PWYA"
+    "description": "<p>The corrupted character’s immune system functions poorly. Any time he must make a roll to resist a disease or its effects, apply a -2d penalty.</p>"
+  }
 }

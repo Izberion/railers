@@ -4,23 +4,6 @@
   "_id": "GtUXHtIlkYqJDnqS",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character can see&nbsp;infrared radiation, allowing him to see in the dark well&nbsp;enough to eliminate any penalties.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143987957,
-    "modifiedTime": 1720143992731,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!GtUXHtIlkYqJDnqS"
+    "description": "<p>The corrupted character can see infrared radiation, allowing him to see in the dark well enough to eliminate any penalties.</p>"
+  }
 }

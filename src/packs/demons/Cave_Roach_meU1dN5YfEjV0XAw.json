@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 2,
       "intellect": 1,
       "endurance": 1,
-      "fear": 5,
+      "fear": 6,
       "attack": {
         "damage": 2,
         "severity": 2
@@ -122,28 +122,11 @@
       "name": "Light Blind",
       "type": "ability",
       "system": {
-        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action&nbsp;taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
+        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
         "action": "passive"
       },
       "_id": "gV1tq8hs5m4kWefT",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138049115,
-        "modifiedTime": 1720138069374,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!meU1dN5YfEjV0XAw.gV1tq8hs5m4kWefT"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Clingy",
@@ -153,41 +136,7 @@
         "action": "passive"
       },
       "_id": "DTSRkDNTgtz4tpD9",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138071787,
-        "modifiedTime": 1720138086381,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!meU1dN5YfEjV0XAw.DTSRkDNTgtz4tpD9"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720138035002,
-    "modifiedTime": 1720138108071,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!meU1dN5YfEjV0XAw"
+  ]
 }

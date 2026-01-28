@@ -4,29 +4,12 @@
   "_id": "A8WjX3w5PiR8Y3s8",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Fur coats, while likely not the best for exploring the&nbsp;Snowlands, will still keep you warm. They&rsquo;re also long&nbsp;and bulky enough to make hiding weapons a little easier.&nbsp;While wearing a fur coat, whenever attempting to conceal something that could reasonably be hidden inside&nbsp;the coat, add +1d to the Concealment check.</p>",
+    "description": "<p>Fur coats, while likely not the best for exploring the Snowlands, will still keep you warm. They’re also long and bulky enough to make hiding weapons a little easier. While wearing a fur coat, whenever attempting to conceal something load 1 or less inside the coat that would be plausible to conceal, add +1d to the Concealment check.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "protection": 0,
     "insulation": 18,
     "clothingType": "outerwear"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118030754,
-    "modifiedTime": 1720118069047,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!A8WjX3w5PiR8Y3s8"
+  }
 }

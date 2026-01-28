@@ -4,27 +4,10 @@
   "_id": "0VQfZxkG1PfsDDhX",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Ammunition belts are only usable with machine&nbsp;guns. A single belt can hold 250 rounds. Filling a belt&nbsp;takes too long to do mid-initiative, so make sure you&nbsp;have some prepared before you really need them. An&nbsp;ammunition belt contributes to the Load of the weapon&nbsp;it is loaded into, increasing the weapon&rsquo;s Load by 2. It&nbsp;may be wise to have someone carry the ammo separately.</p>",
+    "description": "<p>Ammunition belts are only usable with machine guns. A single belt can hold 250 rounds. Filling a belt takes too long to do mid-initiative, so make sure you have some prepared before you really need them. The belt remains a separate item when loaded into a weapon. It may be wise to have someone carry the ammo for you.</p>",
     "quantity": 1,
     "load": 2,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720116577507,
-    "modifiedTime": 1720116599068,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!0VQfZxkG1PfsDDhX"
+  }
 }

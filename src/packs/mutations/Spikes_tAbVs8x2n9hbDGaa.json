@@ -4,23 +4,6 @@
   "_id": "tAbVs8x2n9hbDGaa",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character has spikes protruding from his body in various locations. He gains a&nbsp;natural weapon that deals 4/W2. If he is the target of a&nbsp;melee attack, he gains a +1d bonus on his defense roll.&nbsp;Hit or miss, the attacker must make a Combat save to&nbsp;avoid the spikes.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144939436,
-    "modifiedTime": 1720144946439,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!tAbVs8x2n9hbDGaa"
+    "description": "<p>The corrupted character has spikes protruding from his body in various locations. He gains a natural weapon that deals 4/W2. If he is the target of a melee attack, he gains a +1d bonus on his defense roll. Hit or miss, the attacker must make a Combat save to avoid the spikes.</p>"
+  }
 }

@@ -4,7 +4,7 @@
   "_id": "su3kp5QnPFqopq44",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Pocket pistols are just small semi-automatic pistols.&nbsp;Their size makes them easy to hide, though they lack the&nbsp;stopping power of other handguns. They have a 5 round&nbsp;detachable magazine. When attempting to hide them on&nbsp;your person, take a +1d to your Concealment check.</p>",
+    "description": "<p>Pocket pistols are just small semi-automatic pistols. Their size makes them easy to hide, though they lack the stopping power of other handguns. They have a 5 round detachable magazine. When attempting to hide them on your person, take a +1d to your Concealment check.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
@@ -20,22 +20,5 @@
     "skill": "smallarms",
     "attribute": "",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720119689169,
-    "modifiedTime": 1720119731984,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!su3kp5QnPFqopq44"
+  }
 }

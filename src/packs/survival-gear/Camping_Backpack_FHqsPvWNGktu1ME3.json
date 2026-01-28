@@ -4,27 +4,10 @@
   "_id": "FHqsPvWNGktu1ME3",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Camping backpacks hold more gear, but are bulkier&nbsp;to carry around. They can fit 8 Load worth of gear.</p>",
+    "description": "<p>Camping backpacks hold more gear, but are bulkier to carry around. They can fit 8 Load worth of gear.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136573878,
-    "modifiedTime": 1720136584627,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!FHqsPvWNGktu1ME3"
+  }
 }

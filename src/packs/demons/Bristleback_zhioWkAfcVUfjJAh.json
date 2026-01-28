@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 3,
       "intellect": 1,
       "endurance": 2,
-      "fear": 5,
+      "fear": 6,
       "attack": {
         "damage": 3,
         "severity": 3
@@ -122,45 +122,11 @@
       "name": "Quilled",
       "type": "ability",
       "system": {
-        "description": "<p>Anytime the demon attacks a target, hit or miss the target must roll a TN 5&nbsp;Prowess save or take a 2/W1 Wound. This also applies to characters or demons that melee attack this&nbsp;demon or attempt to restrain it while it is conscious.</p>",
+        "description": "<p>Anytime the demon attacks a target, hit or miss the target must roll a TN 5 Prowess save or take a 2/W1 Wound. This also applies to characters or demons that melee attack this demon or attempt to restrain it while it is conscious.</p>",
         "action": "passive"
       },
       "_id": "LpJfSeRyqoeEMipQ",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720137882605,
-        "modifiedTime": 1720137924551,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!zhioWkAfcVUfjJAh.LpJfSeRyqoeEMipQ"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137845147,
-    "modifiedTime": 1720137924551,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!zhioWkAfcVUfjJAh"
+  ]
 }

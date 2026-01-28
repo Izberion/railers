@@ -4,23 +4,6 @@
   "_id": "hjtXZOkGPScMtlNs",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character can&nbsp;bend his joints in any direction. He has a +2d bonus to&nbsp;escaping restraints or any other situation this may be&nbsp;handy.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144551606,
-    "modifiedTime": 1720144559402,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!hjtXZOkGPScMtlNs"
+    "description": "<p>The corrupted character can bend his joints in any direction. He has a +2d bonus to escaping restraints or any other situation this may be handy.</p>"
+  }
 }

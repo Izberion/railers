@@ -4,23 +4,6 @@
   "_id": "edfsWfKHI46hsefC",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character develops&nbsp;the ability to perceive his surroundings by sound. Actions performed in the dark no longer have any penalties, assuming the action doesn&rsquo;t require the fine detail&nbsp;that only sight can provide like reading.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143459269,
-    "modifiedTime": 1720143468502,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!edfsWfKHI46hsefC"
+    "description": "<p>The corrupted character develops the ability to perceive his surroundings by sound. Actions performed in the dark no longer have any penalties, assuming the action doesn’t require the fine detail that only sight can provide like reading.</p>"
+  }
 }

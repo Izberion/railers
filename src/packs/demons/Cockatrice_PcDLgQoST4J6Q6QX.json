@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 3,
       "intellect": 1,
       "endurance": 2,
-      "fear": 4,
+      "fear": 5,
       "attack": {
         "damage": 2,
         "severity": 2
@@ -126,68 +126,17 @@
         "action": "passive"
       },
       "_id": "MsdRdzvfN76jj4d1",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138202653,
-        "modifiedTime": 1720138221819,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!PcDLgQoST4J6Q6QX.MsdRdzvfN76jj4d1"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Resourceful",
       "type": "ability",
       "system": {
-        "description": "<p>When rations are harvested from this demon, treat it as if it were Large&nbsp;sized. These rations do not need extra preparation to clean them of Corruption.</p>",
+        "description": "<p>When rations are harvested from this demon, treat it as if it were Large sized. These rations do not need extra preparation to clean them of Corruption.</p>",
         "action": "passive"
       },
       "_id": "H0f0n7ZiVvqw8ZlA",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138226390,
-        "modifiedTime": 1720138244622,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!PcDLgQoST4J6Q6QX.H0f0n7ZiVvqw8ZlA"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720138194657,
-    "modifiedTime": 1720138291807,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!PcDLgQoST4J6Q6QX"
+  ]
 }

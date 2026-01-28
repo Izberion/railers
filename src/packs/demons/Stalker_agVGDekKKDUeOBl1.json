@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 6,
       "intellect": 5,
       "endurance": 3,
-      "fear": 7,
+      "fear": 8,
       "attack": {
         "damage": 7,
         "severity": 7
@@ -122,28 +122,11 @@
       "name": "Chameleon",
       "type": "ability",
       "system": {
-        "description": "<p>The demon blends in with its environment, becoming much harder to detect. Any roll to find it will be against TN 7, including contested checks. In that case, the demon's&nbsp;target number remains the usual TN 5. The demon must make a TN 6 Intellect save to remain&nbsp;blended with its environment whenever it uses the Move action or is successfully hit by an attack.</p>",
+        "description": "<p>The demon blends in with its environment, becoming much harder to detect. Any roll to find it will be against TN 7, including contested checks. In that case, the demon's target number remains the usual TN 6. The demon must make a TN 7 Intellect roll to remain blended with its environment whenever it uses the Move action or is successfully hit by an attack.</p>",
         "action": "major"
       },
       "_id": "IH7x5wxR0NenPDBV",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141542946,
-        "modifiedTime": 1720141566691,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!agVGDekKKDUeOBl1.IH7x5wxR0NenPDBV"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Stealthy",
@@ -153,41 +136,7 @@
         "action": "passive"
       },
       "_id": "OEcwPSbBpXpKqJIz",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141561642,
-        "modifiedTime": 1720141580381,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!agVGDekKKDUeOBl1.OEcwPSbBpXpKqJIz"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720141520790,
-    "modifiedTime": 1720141580381,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!agVGDekKKDUeOBl1"
+  ]
 }

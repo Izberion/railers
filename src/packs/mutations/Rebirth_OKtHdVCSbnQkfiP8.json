@@ -4,23 +4,6 @@
   "_id": "OKtHdVCSbnQkfiP8",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character gains the Undead&nbsp;ability of a Ghoul, as described on page 99. Wounds recover as normal if he does not drop to 0 Hitpoints.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144752183,
-    "modifiedTime": 1720144767286,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!OKtHdVCSbnQkfiP8"
+    "description": "<p>The corrupted character gains the Undead ability of a Ghoul, as described on page 99. Wounds recover as normal if he does not drop to 0 Hitpoints.</p>"
+  }
 }

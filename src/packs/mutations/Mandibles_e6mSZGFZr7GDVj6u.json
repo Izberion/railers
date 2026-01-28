@@ -4,23 +4,6 @@
   "_id": "e6mSZGFZr7GDVj6u",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character grows crushing mandibles on either side of his mouth. The character&nbsp;gains a natural weapon that deals 5/W4.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144099881,
-    "modifiedTime": 1720144108480,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!e6mSZGFZr7GDVj6u"
+    "description": "<p>The corrupted character grows crushing mandibles on either side of his mouth. The character gains a natural weapon that deals 5/W4.</p>"
+  }
 }

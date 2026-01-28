@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": null,
       "intellect": null,
       "endurance": null,
-      "fear": 5,
+      "fear": 6,
       "attack": {
         "damage": null,
         "severity": 3
@@ -122,103 +122,31 @@
       "name": "Winged",
       "type": "ability",
       "system": {
-        "description": "<p>The demon can fly. It cannot move faster than it normally would on the&nbsp;ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
+        "description": "<p>This demon can fly. It cannot move faster than it normally would on the ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
         "action": "passive"
       },
       "_id": "0Sbe1bcTFAfyMlHM",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.vJ7lG4Nkm5xtyXMN.Item.887Bd10VUTjC1Bap"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720137970625,
-        "modifiedTime": 1720141123858,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!1Av6FkyusN4P4keb.0Sbe1bcTFAfyMlHM"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Swarm",
       "type": "ability",
       "system": {
-        "description": "<p>When these demons are disturbed, they swarm. Roll 2d to determine the&nbsp;amount of Hitpoints the swarm has. Its Strength, Agility, Intellect, and Endurance are equal to half&nbsp;its current Hitpoints, rounded up. As the swarm is damaged, these stats decrease. All attacks deal&nbsp;damage equal to 1 + the swarm's Strength.</p>",
+        "description": "<p>When these demons are disturbed, they swarm. Roll 2d to determine the amount of Hitpoints the swarm has. Its Strength, Agility, Intellect, and Endurance are equal to half its current Hitpoints, rounded up. As the swarm is damaged, these stats decrease. All attacks deal damage equal to 1 plus the swarm's Strength.</p>",
         "action": "passive"
       },
       "_id": "bH12EzMRbUMLFKxM",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141131182,
-        "modifiedTime": 1720141156978,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!1Av6FkyusN4P4keb.bH12EzMRbUMLFKxM"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Boring",
       "type": "ability",
       "system": {
-        "description": "<p>The demons burrow straight through solid walls, floors, or barriers, as long as&nbsp;they are not made from metal.</p>",
+        "description": "<p>The demons burrow straight through solid walls, floors, or barriers, as long as they are not made from metal.</p>",
         "action": "major"
       },
       "_id": "TvDLDtrlqPjg6MZm",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141160420,
-        "modifiedTime": 1720141171422,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!1Av6FkyusN4P4keb.TvDLDtrlqPjg6MZm"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720141061794,
-    "modifiedTime": 1720141171422,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!1Av6FkyusN4P4keb"
+  ]
 }

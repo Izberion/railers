@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,45 +122,11 @@
       "name": "Glue",
       "type": "ability",
       "system": {
-        "description": "<p>The demon makes a ranged attack, spitting an adhesive fluid at a target. This attack deals no damage. If it is successful, the target is Restrained. The restraint can be broken with a&nbsp;TN 6 Exertion check.</p>",
+        "description": "<p>The demon makes a ranged attack, spitting an adhesive fluid at a target. This attack deals no damage. If it is successful, the target is Restrained. The restraint can be broken with a TN 6 Exertion check.</p>",
         "action": "major"
       },
       "_id": "qXvZxVAbm2ooKz8r",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141864884,
-        "modifiedTime": 1720141877094,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!Vqw4DWIpyOzfg19Y.qXvZxVAbm2ooKz8r"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720141845471,
-    "modifiedTime": 1720141877094,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!Vqw4DWIpyOzfg19Y"
+  ]
 }

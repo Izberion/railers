@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 5,
       "intellect": 3,
       "endurance": 3,
-      "fear": 6,
+      "fear": 7,
       "attack": {
         "damage": 6,
         "severity": 6
@@ -122,76 +122,21 @@
       "name": "Winged",
       "type": "ability",
       "system": {
-        "description": "<p>The demon can fly. It cannot move faster than it normally would on the&nbsp;ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
+        "description": "<p>The demon can fly. It cannot move faster than it normally would on the ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
         "action": "passive"
       },
       "_id": "oEfwpM3RzxbQIIT1",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.vJ7lG4Nkm5xtyXMN.Item.887Bd10VUTjC1Bap"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720137970625,
-        "modifiedTime": 1720141614460,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!Ya8qutzuRusOvi7s.oEfwpM3RzxbQIIT1"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Kidnap",
       "type": "ability",
       "system": {
-        "description": "<p>The demon makes an attack against a target of its size or smaller that shares its&nbsp;zone. If successful, instead of dealing damage, the demon grabs the target and lifts it into the air.&nbsp;The target is still able to attack the demon on its turn and can attempt to escape with a TN 6 Exertion check.</p>",
+        "description": "<p>The demon makes an attack against a target of its size or smaller that shares its zone. If successful, instead of dealing damage, the demon grabs the target and lifts it into the air. The target is still able to attack the demon on its turn and can attempt to escape with a TN 6 Exertion check.</p>",
         "action": "full"
       },
       "_id": "xeGptDUCYBCSe1T8",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141616575,
-        "modifiedTime": 1720141635303,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!Ya8qutzuRusOvi7s.xeGptDUCYBCSe1T8"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720141589110,
-    "modifiedTime": 1720141635303,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!Ya8qutzuRusOvi7s"
+  ]
 }

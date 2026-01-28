@@ -4,23 +4,6 @@
   "_id": "ZtzBqp4FwIHgUFaM",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character is&nbsp;able to release an electrical current in at a very limited&nbsp;range at will. Whenever the target of a melee attack, hit&nbsp;or miss, the attacker must make a Endurance save or&nbsp;take 6/W2. The same applies to anyone that attempts to&nbsp;grab, grapple, restrain, or otherwise manhandle him.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143483059,
-    "modifiedTime": 1720143492713,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!ZtzBqp4FwIHgUFaM"
+    "description": "<p>The corrupted character is able to release an electrical current in at a very limited range at will. Whenever the target of a melee attack, hit or miss, the attacker must make an Endurance save or take 6/W2. The same applies to anyone that attempts to grab, grapple, restrain, or otherwise manhandle him.</p>"
+  }
 }

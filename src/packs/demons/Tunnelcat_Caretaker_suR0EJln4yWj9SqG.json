@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,45 +122,11 @@
       "name": "One Mind",
       "type": "ability",
       "system": {
-        "description": "<p>The demon is seemingly mentally linked with all other caretakers in its&nbsp;colony. An action taken against one of them is an action taken against all. All will become alerted if&nbsp;one spots an intruder, is attacked, or similar danger to the colony resolves. With all this, it is able to&nbsp;act independently of the other caretakers.</p>",
+        "description": "<p>The demon is seemingly mentally linked with all other caretakers in its colony. An action taken against one of them is an action taken against all. All will become alerted if one spots an intruder, is attacked, or similar danger to the colony resolves. With all this, it is able to act independently of the other caretakers.</p>",
         "action": "passive"
       },
       "_id": "yvqlzpratZCqyroq",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141667077,
-        "modifiedTime": 1720141684759,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!suR0EJln4yWj9SqG.yvqlzpratZCqyroq"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720141646379,
-    "modifiedTime": 1720141684759,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!suR0EJln4yWj9SqG"
+  ]
 }

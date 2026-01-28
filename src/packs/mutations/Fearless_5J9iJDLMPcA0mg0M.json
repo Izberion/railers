@@ -4,23 +4,6 @@
   "_id": "5J9iJDLMPcA0mg0M",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character feels very little&nbsp;effect from Fear. Whenever he must roll to resist the effects of Fear, the target number is always 4. If he does&nbsp;fail, he only loses half the normal amount of Nerve,&nbsp;rounded up. He is also much more likely to take unnecessary risks.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143568099,
-    "modifiedTime": 1720143577742,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!5J9iJDLMPcA0mg0M"
+    "description": "<p>The corrupted character feels very little effect from Fear. Whenever he must roll to resist the effects of Fear, the difficulty is always TN 5 and his dice pool is doubled. If he does fail, he only loses half the normal amount of Nerve, rounded up. He is also much more likely to take unnecessary risks. If he has any Fear immunity, the immunity uses the actual Fear rank and is unchanged by this mutation.</p>"
+  }
 }

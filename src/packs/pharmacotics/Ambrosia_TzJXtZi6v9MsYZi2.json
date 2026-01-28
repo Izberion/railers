@@ -4,27 +4,10 @@
   "_id": "TzJXtZi6v9MsYZi2",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Ambrosia makes the character feel great and completely recovers all his missing Nerve. It is also extremely addictive. After even a single dose, the character&nbsp;must make a TN 6 Resolve save or become Addicted.&nbsp;Once Addicted, he will require at least 1 dose every day&nbsp;else begin Withdrawing.</p>",
+    "description": "<p>Ambrosia makes the character feel great and completely recovers all his missing Nerve. It is also extremely addictive. After even a single dose, the character must make a TN 7 Resolve save or become Addicted. Once Addicted, he will require at least 1 dose every day else begin Withdrawing.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136067990,
-    "modifiedTime": 1720136083603,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!TzJXtZi6v9MsYZi2"
+  } 
 }

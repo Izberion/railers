@@ -4,23 +4,6 @@
   "_id": "bE4Slx2wtx3V2Hvy",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character can carry&nbsp;many times his own weight. His Load Limit is doubled.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720145006204,
-    "modifiedTime": 1720145012834,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!bE4Slx2wtx3V2Hvy"
+    "description": "<p>The corrupted character can carry many times his own weight. His Load Limit is doubled.</p>"
+  }
 }

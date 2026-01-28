@@ -4,27 +4,10 @@
   "_id": "aJn1i64a2nOtSiY8",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Hemlock causes the character to become Poisoned.&nbsp;The poison deals 8/W10. The character taking the dose&nbsp;can roll an Endurance save to resist the effects. The poison is fast acting and only inflicts a single Wound. Additional doses reduce the Wound inflicted by 2 damage and&nbsp;severity for as long as any other Wounds remain.</p>",
+    "description": "<p>Hemlock causes the character to become Poisoned. The poison deals 10/W12. The character taking the dose can roll an Endurance save to resist the effects. The poison is fast acting and only inflicts a single Wound. Additional doses reduce the Wound inflicted by 2 damage and severity for as long as any other Wounds remain.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136219775,
-    "modifiedTime": 1720136231133,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!aJn1i64a2nOtSiY8"
+  }
 }

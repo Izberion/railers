@@ -4,23 +4,6 @@
   "_id": "gsszzJHdDyRF0C7a",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character receives&nbsp;barely any positive or negative effects from taking pharmacotics. He must take 3 doses for any effects to be produced. He has a +2d bonus to resisting becoming addicted to any pharmacotic or other substance.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143382450,
-    "modifiedTime": 1720143392143,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!gsszzJHdDyRF0C7a"
+    "description": "<p>The corrupted character receives barely any positive or negative effects from taking pharmacotics. He must take 3 doses for any effects to be produced. He has a +2d bonus to resisting becoming addicted to any pharmacotic or other substance.</p>"
+  }
 }

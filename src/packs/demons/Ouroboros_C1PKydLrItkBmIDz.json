@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -129,176 +129,57 @@
         "action": "passive"
       },
       "_id": "TTRilnCS47AKr9vb",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140698086,
-        "modifiedTime": 1720140725915,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!C1PKydLrItkBmIDz.TTRilnCS47AKr9vb"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Maw",
       "type": "ability",
       "system": {
-        "description": "<p>The demon attacks a target within melee range, aiming to deal 10/W8 and hitting&nbsp;everyone nearby to the target. Only one attack roll needs to be made, but all targets must roll to defend. Those hit must succeed at a TN 6 Prowess saving throw or be swallowed whole. Those that are&nbsp;swallowed take a 7/W6 Wound. Inside the demon, they will take a 4/W4 Wound at the beginning of&nbsp;their respective turns as they are digested. They can cut their way out by dealing at least 8 points of&nbsp;damage in a single attack with a bladed weapon. The demon cannot defend against attacks made&nbsp;from within it, treating it as if it rolled 0 hits to defend.</p>",
+        "description": "<p>The demon attacks a target within melee range, aiming to deal 10/W8 and hitting everyone nearby to the target. Only one attack roll needs to be made, but all targets must roll to defend. Those hit must succeed at a TN 6 Prowess saving throw or be swallowed whole. Those that are swallowed take a 7/W6 Wound. Inside the demon, they will take a 4/W4 Wound at the beginning of their respective turns as they are digested. They can cut their way out by dealing at least 8 points of damage in a single attack with a bladed weapon. The demon cannot defend against attacks made from within it, treating it as if it rolled 0 hits to defend.</p>",
         "action": "major"
       },
       "_id": "ydQiJ5K8ei5aTGmP",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140727926,
-        "modifiedTime": 1720140833945,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!C1PKydLrItkBmIDz.ydQiJ5K8ei5aTGmP"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Flail",
       "type": "ability",
       "system": {
-        "description": "<p>The demon attacks every nearby target within the zone, aiming to deal 7/W6. Only&nbsp;one attack roll needs to be made but all targets must roll to defend. Any hit must succeed at a TN 7&nbsp;Prowess saving throw or be knocked Prone.</p>",
+        "description": "<p>The demon attacks every nearby target within the zone, aiming to deal 7/W6. Only one attack roll needs to be made but all targets must roll to defend. Any hit must succeed at a TN 7 Prowess saving throw or be knocked Prone.</p>",
         "action": "major"
       },
       "_id": "ZVqSb66OQ408FXus",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140834941,
-        "modifiedTime": 1720140886922,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!C1PKydLrItkBmIDz.ZVqSb66OQ408FXus"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Burrow",
       "type": "ability",
       "system": {
-        "description": "<p>The demon burrows underground, leaving an enormous opening in the snow&nbsp;and earth. Using the Move action underground requires a Minor action. The demon can use this action again to resurface. Every character nearby to where it surfaces within the zone must make a TN&nbsp;6 Prowess saving throw or be knocked Prone.</p>",
+        "description": "<p>The demon burrows underground, leaving an enormous opening in the snow and earth. Using the Move action underground requires a Minor action. The demon can use this action again to resurface. Every character nearby to where it surfaces within the zone must make a TN 6 Prowess saving throw or be knocked Prone.</p>",
         "action": "full"
       },
       "_id": "Hdj3JOm5ChpcR2Gu",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140895145,
-        "modifiedTime": 1720140913099,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!C1PKydLrItkBmIDz.Hdj3JOm5ChpcR2Gu"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "King of the Snowlands",
       "type": "ability",
       "system": {
-        "description": "<p>While surfaced, the demon can move up to 2 zones per Move&nbsp;action. Any character or demon in the zone it enters must make a Prowess save or be knocked&nbsp;Prone. Characters in its path of travel must roll against TN 6. Failure will result in taking a 9/W9&nbsp;Wound as the demon rolls over them.</p>",
+        "description": "<p>While surfaced, the demon can move up to 2 zones per Move action. Any character or demon in the zone it enters must make a Prowess save or be knocked Prone. Characters in its path of travel must roll against TN 6. Failure will result in taking a 9/W9 Wound as the demon rolls over them.</p>",
         "action": "passive"
       },
       "_id": "coBPgz1zDbRpUKko",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140895659,
-        "modifiedTime": 1720140932469,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!C1PKydLrItkBmIDz.coBPgz1zDbRpUKko"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Regurgitate",
       "type": "ability",
       "system": {
-        "description": "<p>The demon empties its stomach, throwing stomach acid and the bodies of&nbsp;anything recently eaten across the zone it occupies. All within the zone must make a TN 6 Prowess&nbsp;saving throw or be covered in acid. The acid inflicts a 4/W4 Wound immediately and at the beginning&nbsp;of their respective turns. They spend a Full action to clear the acid from themselves.</p>",
+        "description": "<p>The demon empties its stomach, throwing stomach acid and the bodies of anything recently eaten across the zone it occupies. All within the zone must make a TN 6 Prowess saving throw or be covered in acid. The acid inflicts a 4/W4 Wound immediately and at the beginning of their respective turns. They spend a Full action to clear the acid from themselves.</p>",
         "action": "major"
       },
       "_id": "ZLMy4625gvCTS49B",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140896149,
-        "modifiedTime": 1720140965483,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!C1PKydLrItkBmIDz.ZLMy4625gvCTS49B"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720140652377,
-    "modifiedTime": 1720140965483,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!C1PKydLrItkBmIDz"
+  ]
 }

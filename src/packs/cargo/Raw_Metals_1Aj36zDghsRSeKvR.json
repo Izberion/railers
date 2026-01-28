@@ -4,25 +4,8 @@
   "_id": "1Aj36zDghsRSeKvR",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Copper, brass, iron, steel, and other&nbsp;metals or alloys still have plenty of uses to the various&nbsp;communities of the Snowlands that can work them.</p>",
+    "description": "<p>Copper, brass, iron, steel, and other metals or alloys still have plenty of uses to the various communities of the Snowlands that can work them.</p>",
     "price": 1000,
     "weight": 1
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720117353261,
-    "modifiedTime": 1720117378520,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!1Aj36zDghsRSeKvR"
+  }
 }

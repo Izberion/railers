@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 4,
       "intellect": 3,
       "endurance": 6,
-      "fear": 6,
+      "fear": 7,
       "attack": {
         "damage": 7,
         "severity": 7
@@ -122,72 +122,21 @@
       "name": "Armored",
       "type": "ability",
       "system": {
-        "description": "<p>The demon is covered in ridges of bone protecting it from attacks, reducing&nbsp;the damage and severity of any Wounds it takes by 2.</p>",
+        "description": "<p>The demon is covered in ridges of bone protecting it from attacks, reducing the damage and severity of any Wounds it takes by 2.</p>",
         "action": "major"
       },
       "_id": "kaKV1CHLOJ3m7oTa",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139135030,
-        "modifiedTime": 1720139151299,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!K0NUNWk4ICXQJt6E.kaKV1CHLOJ3m7oTa"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Bone Shards",
       "type": "ability",
       "system": {
-        "description": "<p>The demon throws splinters of bone from its back, attacking everything&nbsp;in the zone not completely behind cover, dealing 4/W5 Wounds to all targets hit. Every use of this&nbsp;ability reduces its protection from its Armored ability by 1. It will completely regenerate its bone&nbsp;armor after a week.</p>",
+        "description": "<p>The demon throws splinters of bone from its back, attacking everything in the zone not completely behind cover, dealing 4/W5 Wounds to all targets hit. Every use of this ability reduces the protection from its Armored ability by 1. It will completely regenerate its bone armor after a week.</p>",
         "action": "minor"
       },
       "_id": "PucQmGp54F9VHY3N",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139159201,
-        "modifiedTime": 1720139177983,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!K0NUNWk4ICXQJt6E.PucQmGp54F9VHY3N"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139112368,
-    "modifiedTime": 1720139177983,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!K0NUNWk4ICXQJt6E"
+  ]
 }

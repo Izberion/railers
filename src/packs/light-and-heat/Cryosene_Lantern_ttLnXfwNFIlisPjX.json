@@ -1,0 +1,13 @@
+{
+  "name": "Cryosene Lantern",
+  "type": "gear",
+  "_id": "ttLnXfwNFIlisPjX",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Cryosene lanterns are an expensive use of a precious resource but provide enough light to illuminate most interior spaces as well as a decent radius around the source.</p>",
+    "quantity": 1,
+    "load": 1,
+    "stowage": "other",
+    "formula": ""
+  }
+}

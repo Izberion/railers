@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 4,
       "intellect": 2,
       "endurance": 10,
-      "fear": 7,
+      "fear": 8,
       "attack": {
         "damage": 9,
         "severity": 9
@@ -122,72 +122,21 @@
       "name": "Pinch",
       "type": "ability",
       "system": {
-        "description": "<p>The demon attacks a target nearby. If successful, the attack inflicts a 7/W8&nbsp;Wound. The target is also Restrained. The Restrained character can attempt to break free on his&nbsp;turn with a contested Exertion check, but the character will roll against TN 7, while the demon will&nbsp;roll against the usual TN 5.</p>",
+        "description": "<p>The demon attacks a target nearby. If successful, the attack inflicts a 7/W8 Wound and the target is Restrained. The Restrained target can attempt to break free on his turn with a contested Exertion check, but the character will roll against TN 7, while the demon will roll against the usual TN 6.</p>",
         "action": "major"
       },
       "_id": "cePUfIPV1mODjiXA",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140254650,
-        "modifiedTime": 1720140269251,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!l0ar2QpNViDFewbW.cePUfIPV1mODjiXA"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Drown",
       "type": "ability",
       "system": {
-        "description": "<p>The demon holds a character it has Restrained underwater. The character&nbsp;will soon begin Suffocating.</p>",
+        "description": "<p>The demon holds a character it has Restrained underwater. The character will soon begin Suffocating.</p>",
         "action": "maneuver"
       },
       "_id": "05FpvTHJNWwYvCOj",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140273121,
-        "modifiedTime": 1720140293128,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!l0ar2QpNViDFewbW.05FpvTHJNWwYvCOj"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720140217821,
-    "modifiedTime": 1720140293128,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!l0ar2QpNViDFewbW"
+  ]
 }

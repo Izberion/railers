@@ -4,27 +4,10 @@
   "_id": "Ghp28a3VJBJ2J5HI",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Firewood comes in small bundles that can burn for&nbsp;up to a single Quarter. Unfortunately most wood is&nbsp;tainted by Corruption and burning it releases a lot of&nbsp;Corruption very quickly. Being around burning wood&nbsp;without a gas mask will add 1 Corruption per hour. This&nbsp;is on top of any Corruption from being exposed outside.</p>",
+    "description": "<p>Firewood comes in small bundles that can burn for up to a single Quarter. Unfortunately most wood is tainted by Corruption and burning it releases a lot of Corruption very quickly. Being around burning wood without a gas mask will add 1 Corruption per hour. This is on top of any Corruption from being exposed outside.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118702224,
-    "modifiedTime": 1720118741897,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!Ghp28a3VJBJ2J5HI"
+  } 
 }

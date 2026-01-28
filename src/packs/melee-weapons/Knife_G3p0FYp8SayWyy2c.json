@@ -4,7 +4,7 @@
   "_id": "G3p0FYp8SayWyy2c",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Knifes are the utilitarian&rsquo;s weapon of choice and can&nbsp;be used as a weapon or tool. They're small and easy to&nbsp;hide. Whenever making a Concealment check to hide a&nbsp;knife, take a +1d bonus to the roll.</p>",
+    "description": "<p>Knives are the utilitarian’s weapon of choice and can be used as a weapon or tool. They're small and easy to hide. Whenever making a Concealment check to hide a knife, take a +1d bonus to the roll.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
@@ -20,22 +20,5 @@
     "skill": "melee",
     "attribute": "",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118994412,
-    "modifiedTime": 1720119057882,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!G3p0FYp8SayWyy2c"
+  } 
 }

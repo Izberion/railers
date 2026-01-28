@@ -4,7 +4,7 @@
   "_id": "3KM5KytufuVRQHHh",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Unarmed attacks are for when all else fails. You can&nbsp;always try to punch, kick, headbutt, or bite your way to&nbsp;victory.</p>",
+    "description": "<p>Unarmed attacks are for when all else fails. You can always try to punch, kick, headbutt, or bite your way to victory.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
@@ -20,22 +20,5 @@
     "skill": "melee",
     "attribute": "",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720119474305,
-    "modifiedTime": 1720119493344,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!3KM5KytufuVRQHHh"
+  } 
 }

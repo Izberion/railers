@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,45 +122,11 @@
       "name": "Venomous Barb",
       "type": "ability",
       "system": {
-        "description": "<p>With each successful attack, the demon has a chance to inject its&nbsp;venom into its target. The target must make a TN 6 Endurance saving throw. On a Failure, if the target is the same size or smaller than the demon, it becomes Paralyzed for 2d Rounds. If the target is&nbsp;larger than the demon, a Failure means the target becomes completely Numb for 1d Rounds. If the&nbsp;Numb character is hit again and fails the Endurance saving throw while Numb, he will become Paralyzed for 1d Rounds.</p>",
+        "description": "<p>With each successful attack, the demon has a chance to inject its venom into its target. The target must make a TN 6 Endurance saving throw. On a Failure, if the target is the same size or smaller than the demon, it becomes Paralyzed for 2d Rounds. If the target is larger than the demon, a Failure means the target becomes completely Numb for 1d Rounds. If the Numb character is hit again and fails the Endurance saving throw while Numb, he will become Paralyzed for 1d Rounds.</p>",
         "action": "passive"
       },
       "_id": "GRcNxAtKzc9Xgjli",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720142123450,
-        "modifiedTime": 1720142142615,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!QnPXPSfdlzaqFajp.GRcNxAtKzc9Xgjli"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720142104329,
-    "modifiedTime": 1720142142615,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!QnPXPSfdlzaqFajp"
+  ]
 }

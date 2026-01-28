@@ -4,27 +4,10 @@
   "_id": "bc6aFIXwefexRDpb",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Rope comes in coils of 20 yards. It has enough&nbsp;strength to effectively hold up to 2 people at a time plus&nbsp;all the gear they normally lug around. Anything more has&nbsp;a chance to snap the rope, requiring a Prowess saving&nbsp;throw from anyone using the rope past its weight limit.</p>",
+    "description": "<p>Rope comes in coils of 20 yards. It has enough strength to effectively hold up to 2 people at a time plus all the gear they normally lug around. Anything more has a chance to snap the rope, requiring a Prowess saving throw from anyone using the rope past its weight limit.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137294822,
-    "modifiedTime": 1720137305464,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!bc6aFIXwefexRDpb"
+  }
 }

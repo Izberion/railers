@@ -4,27 +4,10 @@
   "_id": "S7GmzaupMY8wRtOF",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Truce greatly increases the amount of time the&nbsp;character has to receive medical attention while Dying.&nbsp;While under its effects, the Dying character does not&nbsp;have to roll to stay alive for 2 Rounds after administration. Once its effects expire, the character must resume&nbsp;his rolls, though they will now have a -2d penalty. It can&nbsp;be readministered if required, but becomes toxic after 6&nbsp;doses. Any further doses will kill the character.</p>",
+    "description": "<p>Truce greatly increases the amount of time the character has to receive medical attention while Dying. While under its effects, the Dying character does not have to roll to stay alive for 2 Rounds after administration. Once its effects expire, the character must resume his rolls, though they will now have a -2d penalty. It can be re-administered if required, but becomes toxic after 6 doses. Any further doses will kill the character.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136416410,
-    "modifiedTime": 1720136425857,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!S7GmzaupMY8wRtOF"
+  }
 }

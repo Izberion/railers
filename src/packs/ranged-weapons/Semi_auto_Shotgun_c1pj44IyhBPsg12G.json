@@ -4,7 +4,7 @@
   "_id": "c1pj44IyhBPsg12G",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Semi-automatic shotguns are most effective when&nbsp;used at short to medium ranges. They have a 4 round internal magazine. Rounds must be fed into the magazine&nbsp;by hand, one at a time. A single round can be loaded for a&nbsp;Maneuver, in place of reloading the entire magazine.</p>",
+    "description": "<p>Semi-automatic shotguns are most effective when used at short to medium ranges. They have a 4 round internal magazine. Rounds must be fed into the magazine by hand, one at a time. A single round can be loaded for a Maneuver, in place of reloading the entire magazine.</p>",
     "quantity": 1,
     "load": 2,
     "stowage": "other",
@@ -20,22 +20,5 @@
     "skill": "smallarms",
     "attribute": "",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720135566121,
-    "modifiedTime": 1720135628824,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!c1pj44IyhBPsg12G"
+  }
 }

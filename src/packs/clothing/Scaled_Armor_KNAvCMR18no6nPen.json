@@ -4,29 +4,12 @@
   "_id": "KNAvCMR18no6nPen",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Scaled armor consists of dozens of steel squares&nbsp;sewn into a set of clothing. It offers decent Protection&nbsp;while not being too cumbersome. The severity of Wounds&nbsp;inflicted by melee weapons are reduced by 1.</p>",
+    "description": "<p>Scaled armor consists of dozens of steel squares sewn into a set of clothing. It offers decent Protection while not being too cumbersome. The severity of Wounds inflicted by melee attacks are reduced by 1, to a minimum of 1.</p>",
     "quantity": 1,
     "load": 2,
     "stowage": "other",
     "protection": 2,
     "insulation": 2,
     "clothingType": "armor"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720117834212,
-    "modifiedTime": 1720117870109,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!KNAvCMR18no6nPen"
+  }
 }

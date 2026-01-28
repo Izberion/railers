@@ -4,27 +4,10 @@
   "_id": "TZ9T8xLch87Jwkmy",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Field radios are portable radio transceivers, allowing you to receive and transmit on any available bandwidth. They aren&rsquo;t small but can be carried easily on&nbsp;your back, replacing your backpack. They have a range of&nbsp;3 hexes and require 2 lead-acid batteries. From full they&nbsp;are able to run for 1 Quarter of constant operation.</p>",
+    "description": "<p>Field radios are portable radio transceivers, allowing you to receive and transmit on any available bandwidth. They aren’t small but can be carried easily on your back, replacing your backpack. They have a range of 3 hexes and require 2 lead-acid batteries. From full they are able to run for 1 Quarter of constant operation.</p>",
     "quantity": 1,
     "load": 2,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137103305,
-    "modifiedTime": 1720137114651,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!TZ9T8xLch87Jwkmy"
+  }
 }

@@ -4,7 +4,7 @@
   "_id": "5XIM5Io0SamrGmAW",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Prisoner cars are split into several small compartments which function as cells. Each cell is large enough&nbsp;to fit a bed and toilet, but that&rsquo;s it. They are meant to&nbsp;hold a single prisoner. The windows are barred and&nbsp;opaqued, allowing light in but not allowing the prisoner&nbsp;to see out. There is also a separate compartment for a&nbsp;guard at the front, which occupies the entire width of&nbsp;the car. It features barred glass windows, allowing the&nbsp;guard to see the length of the car. The guard&rsquo;s compartment has no door to access the rest of the car, but does&nbsp;have a door at the front end, allowing access to any cars&nbsp;forward. There is no door at the rear of the car, effectively isolating it from the rest of the train. As such it&nbsp;should be positioned near the end of the train. The prisoner&rsquo;s section can be accessed from a sliding door on the&nbsp;side of the car.</p>",
+    "description": "<p>Prisoner cars are split into several small compartments which function as cells. Each cell is large enough to fit a bed and toilet, but that’s about it, meant to hold a single prisoner. The windows are barred and opaqued, allowing light in but not allowing the prisoner to see out. There is also a separate compartment for a guard at the front, which occupies the entire width of the car. It features barred glass windows, allowing the guard to see the length of the car. The guard’s compartment has no door to access the rest of the car, but does have a door at the front end, allowing access to any cars forward. There is no door at the rear of the car, effectively isolating it from the rest of the train. As such it should be positioned near the end of the train. The prisoner’s section can be accessed from a sliding door on the side of the car.</p>",
     "type": "",
     "weight": 130,
     "power": 2,
@@ -12,22 +12,5 @@
     "armor": 3,
     "damaged": "",
     "destroyed": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720142584105,
-    "modifiedTime": 1720142616458,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!5XIM5Io0SamrGmAW"
+  }
 }

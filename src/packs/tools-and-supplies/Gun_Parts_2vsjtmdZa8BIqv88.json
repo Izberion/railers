@@ -4,27 +4,10 @@
   "_id": "2vsjtmdZa8BIqv88",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Gun parts are generic firearm components that allow you to make repairs or modifications to any gun.&nbsp;With the right know-how, you can also use them to create your own weapon. Guns can be scrapped to get a&nbsp;number of gun parts, 6 for machine guns, 2 for handguns, and 4 for everything else.</p>",
+    "description": "<p>Gun parts are generic firearm components that allow you to make repairs or modifications to any gun. With the right know-how, you can also use them to create your own weapon. Guns can be broken down with a Gunsmithing check to get a number of gun parts, 6 for machine guns, 2 for handguns, and 4 for everything else. Failure will result in a number of scrap equal to the Load of the firearm.</p>",
     "quantity": 1,
     "load": 0.5,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137126740,
-    "modifiedTime": 1720137141610,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!2vsjtmdZa8BIqv88"
+  }
 }

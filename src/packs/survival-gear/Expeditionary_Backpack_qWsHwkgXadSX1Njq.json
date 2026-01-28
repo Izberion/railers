@@ -4,27 +4,10 @@
   "_id": "qWsHwkgXadSX1Njq",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Expeditionary backpacks are massive things that&nbsp;hold lots of equipment, though at the cost of a good&nbsp;chunk of Load Limit. They can fit 12 Load worth of gear.</p>",
+    "description": "<p>Expeditionary backpacks are massive things that hold lots of equipment, though at the cost of a good chunk of Load Limit. They can fit 12 Load worth of gear.</p>",
     "quantity": 1,
     "load": 2,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136596033,
-    "modifiedTime": 1720136608370,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!qWsHwkgXadSX1Njq"
+  }
 }

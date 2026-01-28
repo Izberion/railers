@@ -4,27 +4,10 @@
   "_id": "TILBmzCZo7yfDVnB",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Electric heaters provide heat without the need for&nbsp;flammable materials. They provide enough heat to warm&nbsp;a small area such as a tent to above freezing. They don&rsquo;t&nbsp;put off enough heat to be used outside. They require 4&nbsp;D-cell batteries and can run for 1 Quarter from full.</p>",
+    "description": "<p>Electric heaters provide heat without the need for flammable materials. They provide enough heat to warm a small area such as a tent to above freezing. They don’t put off enough heat to be used outside. They require 4 D-cell batteries and can run for 1 Quarter from full.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118661100,
-    "modifiedTime": 1720118675257,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!TILBmzCZo7yfDVnB"
+  } 
 }

@@ -4,27 +4,10 @@
   "_id": "nnS7mUbMz31dkNCy",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Shovels are the quickest way to move dirt or snow&nbsp;without actual machinery.</p>",
+    "description": "<p>Shovels are the quickest way to move dirt or snow without actual machinery.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137363743,
-    "modifiedTime": 1720137374240,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!nnS7mUbMz31dkNCy"
+  }
 }

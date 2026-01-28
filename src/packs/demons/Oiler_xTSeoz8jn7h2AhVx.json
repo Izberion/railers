@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,153 +122,51 @@
       "name": "Size Matters",
       "type": "ability",
       "system": {
-        "description": "<p>The size of this demon determines its stats. The numbers listed are for&nbsp;its minimum size: Small. For each size above that, all its stats and damage increase by 2 and Wound&nbsp;severity increases by 1.</p>",
+        "description": "<p>The size of this demon determines its stats. The numbers listed are for its minimum size: Small. For each size above that, all its stats and damage increase by 2 and Wound severity increases by 1. Fear does not change.</p>",
         "action": "passive"
       },
       "_id": "OU52UA37cFcqCzYN",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140007291,
-        "modifiedTime": 1720140022461,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!xTSeoz8jn7h2AhVx.OU52UA37cFcqCzYN"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Divide",
       "type": "ability",
       "system": {
-        "description": "<p>&nbsp;If the demon is at least Large, it can split itself in half. Each division creates two demons of one size smaller.</p>",
+        "description": "<p>If the demon is at least Large, it can split itself in half. Each division creates two demons of one size smaller.</p>",
         "action": "minor"
       },
       "_id": "xoyzynNUB3G0V64A",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140032831,
-        "modifiedTime": 1720140068700,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!xTSeoz8jn7h2AhVx.xoyzynNUB3G0V64A"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Fluid",
       "type": "ability",
       "system": {
-        "description": "<p>This demon can push itself through any opening as long as it isn&rsquo;t watertight. If&nbsp;moving from one zone to another in this manner, it will require a Major action.</p>",
+        "description": "<p>This demon can push itself through any opening as long as it isn’t watertight. If moving from one zone to another in this manner, it will require a Major action.</p>",
         "action": "passive"
       },
       "_id": "mD4uCv4f8MBaO74J",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140130382,
-        "modifiedTime": 1720140153474,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!xTSeoz8jn7h2AhVx.mD4uCv4f8MBaO74J"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Jelly",
       "type": "ability",
       "system": {
-        "description": "<p>Wounds from bullets and blades are reduced by 1 severity and 2 damage, for a&nbsp;minimum of 1/W1.</p>",
+        "description": "<p>Wounds from bullets and blades are reduced by 1 severity and 2 damage, for a minimum of 1/W1.</p>",
         "action": "passive"
       },
       "_id": "0jnmSExNgnWdlpRr",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140156333,
-        "modifiedTime": 1720140170690,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!xTSeoz8jn7h2AhVx.0jnmSExNgnWdlpRr"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Envelope",
       "type": "ability",
       "system": {
-        "description": "<p>The demon makes an attack against a target, attempting to wrap itself<br>around its prey. If successful, instead of dealing damage the target is Restrained and will begin to&nbsp;suffocate soon. The target can attempt a TN 6 Exertion roll to break free on his turn. The demon can&nbsp;envelope a single target of one size greater than itself, two of equal size, four of one size less, or&nbsp;eight of two sizes less. In cases where the demon has enveloped several targets of various sizes, two&nbsp;Tiny targets count as one Small, two Small count as one Medium, two Medium as one Large, two&nbsp;Large as one Huge, and two Huge count as one Massive.</p>",
+        "description": "<p>The demon makes an attack against a target, attempting to wrap itself around its prey. If successful, instead of dealing damage the target is Restrained and will begin to suffocate soon. The target can attempt a TN 6 Exertion roll to break free on his turn. The demon can envelope a single target of one size greater than itself, two of equal size, four of one size less, or eight of two sizes less. In cases where the demon has enveloped several targets of various sizes, two Tiny targets count as one Small, two Small count as one Medium, two Medium as one Large, two Large as one Huge, and two Huge count as one Massive.</p>",
         "action": "major"
       },
       "_id": "dexXX6dUSrXQE2yl",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720140173264,
-        "modifiedTime": 1720140205912,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!xTSeoz8jn7h2AhVx.dexXX6dUSrXQE2yl"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139985635,
-    "modifiedTime": 1720140205912,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!xTSeoz8jn7h2AhVx"
+  ]
 }

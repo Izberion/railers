@@ -4,27 +4,10 @@
   "_id": "P5xsqFQeE5e5R6XK",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Musical instruments come in a myriad of shapes,&nbsp;sizes, and sounds, though this is one that is easily portable. It might be a stringed instrument, some kind of&nbsp;horn, an accordion, or some other instrument. If the instrument is particularly small, like a tambourine, it&rsquo;s&nbsp;only 1 Load.</p>",
+    "description": "<p>Musical instruments come in a myriad of shapes, sizes, and sounds, though this is one that is easily portable. It might be a stringed instrument, some kind of horn, an accordion, or some other instrument. If the instrument is particularly small, like a tambourine, it’s only 1 Load. Particularly large instruments, like a piano, don’t have a Load because they aren’t easily portable.</p>",
     "quantity": 1,
     "load": 2,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137231773,
-    "modifiedTime": 1720137251392,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!P5xsqFQeE5e5R6XK"
+  }
 }

@@ -4,23 +4,6 @@
   "_id": "K36oIw0VGwbraPUt",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character can easily&nbsp;detach any of his limbs. The limbs will regrow within a&nbsp;week unless he is Starving, then they will not regrow. He&nbsp;has a -1d penalty to Exertion checks and loses 2 Load&nbsp;Limit.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144215183,
-    "modifiedTime": 1720144224854,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!K36oIw0VGwbraPUt"
+    "description": "<p>The corrupted character can easily detach any of his limbs. The limbs will regrow within a week unless he is Starving, then they will not regrow. He has a -1d penalty to Exertion checks and loses 2 Load Limit.</p>"
+  }
 }

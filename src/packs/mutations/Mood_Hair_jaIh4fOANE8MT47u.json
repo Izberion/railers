@@ -4,23 +4,6 @@
   "_id": "jaIh4fOANE8MT47u",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character&rsquo;s mood is&nbsp;clearly displayed by his hair color. He has a -2d penalty&nbsp;to Deception rolls when attempting to hide his emotions.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144134568,
-    "modifiedTime": 1720144142830,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!jaIh4fOANE8MT47u"
+    "description": "<p>The corrupted character’s mood is clearly displayed by his hair color. He has a -2d penalty to Deception rolls when attempting to hide his emotions.</p>"
+  }
 }

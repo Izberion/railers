@@ -4,23 +4,6 @@
   "_id": "S3FdUgraRPr6pCMv",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character can&nbsp;remove and reattach any of his limbs. The limbs can be&nbsp;swapped with any other limb, no matter if they are arms,&nbsp;legs, tentacles, or something else.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143362399,
-    "modifiedTime": 1720143371596,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!S3FdUgraRPr6pCMv"
+    "description": "<p>The corrupted character can remove and reattach any of his limbs. The limbs can be swapped with any other limb, no matter if they are arms, legs, tentacles, or something else.</p>"
+  }
 }

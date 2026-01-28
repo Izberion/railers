@@ -4,27 +4,10 @@
   "_id": "cseNGxpwiEDFe7FQ",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Lighters are small, enclosed sources of fire and can&nbsp;be used to ignite anything that needs a flame. They have&nbsp;a built-in striker that will ignite the contained gas. If&nbsp;used as a light source, they only provide dim light, illuminating up to a foot.</p>",
+    "description": "<p>Lighters are small, enclosed sources of fire and can be used to ignite anything that needs a flame. They have a built-in striker that will ignite the contained gas. If used as a light source, they only provide dim light, illuminating up to a few feet.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118909028,
-    "modifiedTime": 1720118920269,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!cseNGxpwiEDFe7FQ"
+  } 
 }

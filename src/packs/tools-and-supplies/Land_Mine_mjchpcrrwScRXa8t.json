@@ -4,27 +4,10 @@
   "_id": "mjchpcrrwScRXa8t",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Land mines are intended as an anti-personnel security measure. Distributing land mines throughout a zone&nbsp;will give that zone the Mined tag. Assuming no knowledge of the mines, anyone moving through a Mined zone&nbsp;must make a Prowess save to avoid stepping on a mine.&nbsp;Failure will result in a character triggering a mine. Land&nbsp;mines function like grenades and dynamite, dealing 12/W8. With knowledge or suspicion of the mines, characters can attempt to roll a Perception check to spot them.&nbsp;If successful, they can choose to disarm them with an&nbsp;Explosives check or make an Acrobatics check to navigate the zone.</p>",
+    "description": "<p>Land mines are intended as an anti-personnel security measure. Distributing land mines throughout a zone will give that zone the Mined tag. Assuming no knowledge of the mines, anyone moving through a Mined zone must make a Prowess save to avoid stepping on a mine. Failure will result in a character triggering a mine. Land mines function like grenades and dynamite, dealing 12/W8. With knowledge or suspicion of the mines, characters can attempt to roll a Perception check to spot them. If successful, they can choose to disarm them with an Explosives check or make an Acrobatics check to navigate the zone.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137177968,
-    "modifiedTime": 1720137197942,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!mjchpcrrwScRXa8t"
+  }
 }

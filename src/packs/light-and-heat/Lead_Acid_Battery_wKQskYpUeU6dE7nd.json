@@ -4,27 +4,10 @@
   "_id": "wKQskYpUeU6dE7nd",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Lead-Acid batteries are for applications where D-cells don&rsquo;t provide enough power. They are recharged in&nbsp;an hour by connecting them to the train&rsquo;s generator.&nbsp;Their duration depends on the application and do not&nbsp;take up Load when installed in a piece of gear.</p>",
+    "description": "<p>Lead-Acid batteries are for applications where D-cells don’t provide enough power. They are recharged in an hour by connecting them to the train’s generator. Their duration depends on the application. They do not take up Load when installed in a piece of gear.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118404297,
-    "modifiedTime": 1720118418343,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!wKQskYpUeU6dE7nd"
+  } 
 }

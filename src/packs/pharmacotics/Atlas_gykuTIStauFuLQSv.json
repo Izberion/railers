@@ -4,27 +4,10 @@
   "_id": "gykuTIStauFuLQSv",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Atlas greatly increases the character&rsquo;s strength and&nbsp;endurance. The severity of any Wounds he inflicts with&nbsp;melee weapons are increased by 1. He gains +2d on Exertion checks and Fortitude and Prowess saving throws.&nbsp;The effects last for 1 hour.</p>",
+    "description": "<p>Atlas greatly increases the character’s strength and endurance. The severity of any Wounds he inflicts with melee attacks are increased by 2. He gains +2d on Exertion checks and Endurance and Prowess saving throws. The effects last for 1 hour, leaving the character Exhausted once they wear off.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136090277,
-    "modifiedTime": 1720136102366,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!gykuTIStauFuLQSv"
+  } 
 }

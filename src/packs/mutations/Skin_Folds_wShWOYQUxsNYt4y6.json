@@ -4,23 +4,6 @@
   "_id": "wShWOYQUxsNYt4y6",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character has large folds&nbsp;of skin that hang loosely all over his body. He gains +1d&nbsp;when defending against melee attacks.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144840622,
-    "modifiedTime": 1720144848144,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!wShWOYQUxsNYt4y6"
+    "description": "<p>The corrupted character has large folds of skin that hang loosely all over his body. He gains +1d when defending against melee attacks.</p>"
+  }
 }

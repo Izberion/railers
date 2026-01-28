@@ -4,23 +4,6 @@
   "_id": "fgmuh1gfwwjHyWMK",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character is extremely susceptible to mutation. Whenever he rolls for&nbsp;mutations, beginning right now, roll for an additional&nbsp;mutation.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143901913,
-    "modifiedTime": 1720143909994,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!fgmuh1gfwwjHyWMK"
+    "description": "<p>The corrupted character is extremely susceptible to mutation. Whenever he rolls for mutations, beginning right now, roll for an additional mutation.</p>"
+  }
 }

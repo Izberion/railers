@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -52,7 +52,7 @@
         "severity": 2
       }
     },
-    "tags": "Quadrupedal, Small, Odorous"
+    "tags": "Quadrupedal, Small, Odorous, Territorial"
   },
   "prototypeToken": {
     "name": "Drubbit",
@@ -122,45 +122,11 @@
       "name": "Acid Spray",
       "type": "ability",
       "system": {
-        "description": "<p>The demon makes a ranged attack against a target within Short range,&nbsp;spraying the target with acid. If hit, the target takes a 4/W3 Wound and must make a TN 5 Prowess&nbsp;saving throw. If they fail, they are covered in the acid and will take a 4/W3 Wound at the beginning of&nbsp;each of their following turns until they can remove it with a Full action. The acid is corrosive to&nbsp;equipment. The acid will slowly eat through layers of clothing and any equipment they were holding&nbsp;when sprayed. Any gear covered in acid will become Damaged after 2 Rounds and be destroyed after&nbsp;6 Rounds.</p>",
+        "description": "<p>The demon makes a ranged attack against a target within Short range, spraying the target with acid. If hit, the target takes a 4/W3 Wound and must make a TN 6 Prowess saving throw. If they fail, they are covered in the acid and will take a 4/W3 Wound at the beginning of each of their following turns until they can remove it with a Full action. The acid is corrosive to equipment. The acid will slowly eat through layers of clothing and any equipment they were holding when sprayed. Any gear covered in acid will become Damaged after 2 Rounds and be destroyed after 6 Rounds.</p>",
         "action": "major"
       },
       "_id": "zgPCZVUClzquFoZT",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138786582,
-        "modifiedTime": 1720138804405,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!D0KBYNLcTqtkB4lj.zgPCZVUClzquFoZT"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720138783010,
-    "modifiedTime": 1720138878487,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!D0KBYNLcTqtkB4lj"
+  ]
 }

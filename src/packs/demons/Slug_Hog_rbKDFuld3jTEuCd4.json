@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,28 +122,11 @@
       "name": "Slow",
       "type": "ability",
       "system": {
-        "description": "<p>This demon is more fat than muscle. Using the Move action requires a Major&nbsp;action.</p>",
+        "description": "<p>This demon is more fat than muscle. Using the Move action requires a Major action.</p>",
         "action": "passive"
       },
       "_id": "ZhMGqgvVlXvBFizC",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141287265,
-        "modifiedTime": 1720141302896,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!rbKDFuld3jTEuCd4.ZhMGqgvVlXvBFizC"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Mind Games",
@@ -153,41 +136,7 @@
         "action": "full"
       },
       "_id": "Knbgx7tnQKZwksVh",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141304711,
-        "modifiedTime": 1720141332802,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!rbKDFuld3jTEuCd4.Knbgx7tnQKZwksVh"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720141262072,
-    "modifiedTime": 1720141332802,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!rbKDFuld3jTEuCd4"
+  ]
 }

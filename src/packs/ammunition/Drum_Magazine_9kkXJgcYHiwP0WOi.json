@@ -4,27 +4,10 @@
   "_id": "9kkXJgcYHiwP0WOi",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Drum magazines hold much more ammunition than&nbsp;any other magazine can fit. Reloading a drum magazine&nbsp;is slower than box magazines, and will require a Major&nbsp;action instead of the typical Minor action to reload a&nbsp;prepared magazine. A given magazine will work on any&nbsp;weapon that can use them, no matter the actual dimensions or magazine size required. The magazine&rsquo;s capacity is equal to 3 times the ammo capacity of the gun it is&nbsp;being used with. Magazines do not take up Load when&nbsp;loaded into a firearm.</p>",
+    "description": "<p>Drum magazines hold much more ammunition than any other magazine can fit. Reloading a drum magazine is slower than box magazines, and will require a Major action instead of the typical Minor action to reload a prepared magazine. A given magazine will work on any weapon that can use them, no matter the actual dimensions or magazine size required. The magazine’s capacity is equal to 3 times the base ammo capacity of the gun it is being used with. Magazines do not take up Load when loaded into a firearm.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720116638269,
-    "modifiedTime": 1720116658800,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!9kkXJgcYHiwP0WOi"
+  }
 }

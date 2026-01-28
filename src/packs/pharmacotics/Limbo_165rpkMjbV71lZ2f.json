@@ -4,27 +4,10 @@
   "_id": "165rpkMjbV71lZ2f",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Limbo causes the character to become Paralyzed for&nbsp;1 hour after a few minutes. He can resist with a TN 7 Endurance saving throw.</p>",
+    "description": "<p>Limbo causes the character to become Paralyzed for 1 hour after a few minutes. He can resist with a TN 7 Endurance saving throw.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136267289,
-    "modifiedTime": 1720136277943,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!165rpkMjbV71lZ2f"
+  }
 }

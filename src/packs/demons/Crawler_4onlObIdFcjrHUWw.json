@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,55 +122,21 @@
       "name": "Restrain",
       "type": "ability",
       "system": {
-        "description": "<p>The demon attacks a target that is as large or smaller than it with one of its&nbsp;pincers, aiming to deal 4/W3. If the attack is successful, the target becomes Restrained. Breaking&nbsp;the restraint requires a successful TN 6 Exertion check on the target&rsquo;s turn.</p>",
+        "description": "<p>The demon attacks a target that is as large or smaller than it with one of its pincers, aiming to deal 4/W3. If the attack is successful, the target becomes Restrained. Breaking the restraint requires a successful TN 7 Exertion check on the target’s turn.</p>",
         "action": "major"
       },
       "_id": "Zqg4eE6WqLFPCN27",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138306323,
-        "modifiedTime": 1720138329159,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!4onlObIdFcjrHUWw.Zqg4eE6WqLFPCN27"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Snack",
       "type": "ability",
       "system": {
-        "description": "<p>The demon attacks a target it has Restrained, attempting to take a bite and dealing 8/W7 on a successful attack. If the target is hit twice with this attack before he is able to get free,&nbsp;he must make a TN 5 Endurance save. Failure will result in the loss of a body part.</p>",
+        "description": "<p>The demon attacks a target it has Restrained, attempting to take a bite and dealing 8/W7 on a successful attack.</p>",
         "action": "full"
       },
       "_id": "pxs6zaY3wfZDkIdm",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138334263,
-        "modifiedTime": 1720138353951,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!4onlObIdFcjrHUWw.pxs6zaY3wfZDkIdm"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Leap",
@@ -180,41 +146,7 @@
         "action": "minor"
       },
       "_id": "1Ak340jcRoiIGVsQ",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138357112,
-        "modifiedTime": 1720138376133,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!4onlObIdFcjrHUWw.1Ak340jcRoiIGVsQ"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720138254540,
-    "modifiedTime": 1720138376133,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!4onlObIdFcjrHUWw"
+  ]
 }

@@ -4,27 +4,10 @@
   "_id": "m23Be0KlD22vDjUq",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Hellfire will induce intense, whole body pain for&nbsp;short periods of time, typically a couple of minutes,&nbsp;without causing actual physical harm. Anyone under the&nbsp;effects of Hellfire will have a -3d penalty to all rolls.</p>",
+    "description": "<p>Hellfire will induce intense, whole body pain for short periods of time, typically a couple of minutes, without causing actual physical harm. Anyone under the effects of Hellfire will have a -3d penalty to all rolls.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136205129,
-    "modifiedTime": 1720136213231,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!m23Be0KlD22vDjUq"
+  }
 }

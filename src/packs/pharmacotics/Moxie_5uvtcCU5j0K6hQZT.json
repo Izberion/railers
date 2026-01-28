@@ -4,27 +4,10 @@
   "_id": "5uvtcCU5j0K6hQZT",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Moxie fills the character with confidence and recovers half his missing Nerve, rounded down. He is also&nbsp;much more willing to take risks, recklessly so.</p>",
+    "description": "<p>Moxie fills the character with confidence and recovers half his missing Nerve, rounded down. He is also much more willing to take risks, recklessly so.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136285085,
-    "modifiedTime": 1720136294335,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!5uvtcCU5j0K6hQZT"
+  }
 }

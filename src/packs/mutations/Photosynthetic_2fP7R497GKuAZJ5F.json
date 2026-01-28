@@ -4,23 +4,6 @@
   "_id": "2fP7R497GKuAZJ5F",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character&rsquo;s skin&nbsp;generates energy when exposed to direct sunlight like a&nbsp;plant. It works slowly, especially given the need to wear&nbsp;heavy clothing to protect from the cold of the Snowlands. When wearing clothing, the character doesn&rsquo;t&nbsp;need any rations, as long as he is exposed to direct sunlight for 2 Quarters in a day. Without any clothing, he&nbsp;will be good in just an hour in direct sunlight.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144417440,
-    "modifiedTime": 1720144431308,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!2fP7R497GKuAZJ5F"
+    "description": "<p>The corrupted character’s skin generates energy when exposed to sunlight like a plant. It works slowly, especially given the need to wear heavy clothing to protect from the cold of the Snowlands. When wearing clothing, the character doesn’t need any rations, as long as he is exposed to sunlight for 1 Quarter in a day. Without any clothing, he will be good in just an hour in direct sunlight.</p>"
+  }
 }

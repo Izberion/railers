@@ -4,23 +4,6 @@
   "_id": "DNW1KFYIk0M0NHq5",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character cannot feel pain.&nbsp;His hitpoint maximum doubles, his current hitpoint total&nbsp;increasing by the same amount. When increasing HP&nbsp;through advancement, he gains 4 instead of 2.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144309945,
-    "modifiedTime": 1720144318812,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!DNW1KFYIk0M0NHq5"
+    "description": "<p>The corrupted character cannot feel pain. His Hitpoint maximum doubles, his current Hitpoint total increasing by the same amount. When rolling Hitpoints, the number of dice rolled is doubled from normal.</p>"
+  }
 }

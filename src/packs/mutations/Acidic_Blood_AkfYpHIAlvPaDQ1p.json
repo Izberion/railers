@@ -4,23 +4,6 @@
   "_id": "AkfYpHIAlvPaDQ1p",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character&rsquo;s blood has&nbsp;become acidic. If he has a W3 or greater Wound that has&nbsp;yet to be tended, any character that makes a melee attack&nbsp;against him or otherwise comes in contact with him&nbsp;must make a Endurance save or take a 3/W2 Wound. He&nbsp;can also inflict a W4 Wound upon himself to spray a valid&nbsp;target within melee range with blood. The damage of the&nbsp;attack is equal to the damage taken. This is a Major action and requires something sharp.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720142993708,
-    "modifiedTime": 1720143005798,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!AkfYpHIAlvPaDQ1p"
+    "description": "<p>The corrupted character’s blood has become acidic. If he has a W4 or greater Wound that has yet to be tended, any character that makes a melee attack against him or otherwise comes in contact with him must make an Endurance save or take a 3/W2 Wound. He can also inflict a W4 Wound upon himself to spray a valid target within melee range with blood. The damage of the attack is equal to the damage taken. This is a Major action and requires something sharp. If the corrupted character has the Lots of Blood mutation, anyone in melee range will need to make defense rolls, not just the target.</p>"
+  }
 }

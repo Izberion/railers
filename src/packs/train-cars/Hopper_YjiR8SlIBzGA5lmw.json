@@ -4,7 +4,7 @@
   "_id": "YjiR8SlIBzGA5lmw",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Hopper cars are like box cars but with an open top.&nbsp;Because it is only for moving freight, it has no heating or&nbsp;lighting. They allow for the transportation of up to 100&nbsp;tons of loose freight. The freight on these cars will contribute to the train&rsquo;s total weight. They can only carry&nbsp;coal, food, or raw metals.</p>",
+    "description": "<p>Hopper cars are like box cars but with an open top. Because it is only for moving freight, it has no heating or lighting. They allow for the transportation of up to 100 tons of loose freight. The freight on these cars will contribute to the train’s total weight. They can only carry coal, food, or raw metals.</p>",
     "type": "",
     "weight": 25,
     "power": 0,
@@ -12,22 +12,5 @@
     "armor": 1,
     "damaged": "",
     "destroyed": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720142776271,
-    "modifiedTime": 1720142866045,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!YjiR8SlIBzGA5lmw"
+  }
 }

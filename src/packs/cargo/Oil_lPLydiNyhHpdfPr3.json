@@ -4,25 +4,8 @@
   "_id": "lPLydiNyhHpdfPr3",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Unprocessed crude, machine and gun oils, and&nbsp;even demon oil. Anywhere that has any form of functional industry will have use for oil.</p>",
+    "description": "<p>Unprocessed crude, machine and gun oils, and even demon oil. Anywhere that has any form of functional industry will have use for oil.</p>",
     "price": 600,
     "weight": 1
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720117326482,
-    "modifiedTime": 1720117344217,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!lPLydiNyhHpdfPr3"
+  }
 }

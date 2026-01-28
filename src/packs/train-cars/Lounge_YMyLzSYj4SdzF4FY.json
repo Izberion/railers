@@ -4,30 +4,13 @@
   "_id": "YMyLzSYj4SdzF4FY",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Lounge cars are for those occasions when the crew&nbsp;has finer guests along for the ride and want or need to&nbsp;keep them happy, hopefully for some kind of compensation. It features a bar and small cafe. Any passenger utilizing the lounge car will consume double rations each&nbsp;day. There is a small kitchen onboard for the cafe. It&nbsp;shares its ration supply with the train&rsquo;s primary supply.</p>",
+    "description": "<p>Lounge cars are for those occasions when the crew has finer guests along for the ride and want or need to keep them happy, hopefully for some kind of compensation. It features a bar and small cafe. Any passenger utilizing the lounge car will consume double rations each day. There is a small kitchen onboard for the cafe. It shares its ration supply with the train’s primary supply.</p>",
     "type": "",
     "weight": 140,
-    "power": 2,
+    "power": 3,
     "capacity": 24,
     "armor": 2,
     "damaged": "",
     "destroyed": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720142541756,
-    "modifiedTime": 1720142570114,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!YMyLzSYj4SdzF4FY"
+  }
 }

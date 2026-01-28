@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 3,
       "intellect": 2,
       "endurance": 6,
-      "fear": 6,
+      "fear": 7,
       "attack": {
         "damage": 5,
         "severity": 5
@@ -122,72 +122,21 @@
       "name": "Constrict",
       "type": "ability",
       "system": {
-        "description": "<p>The demon attacks a target with its tail that is Medium or smaller, aiming to&nbsp;deal 4/W3. If hit, the target must make a TN 5 Prowess saving throw. If they fail, they become fully&nbsp;Restrained by the demon&rsquo;s tail. The Restrained target will take a 4/W3 Wound at the beginning of its&nbsp;turn. For each subsequent turn Restrained, the damage increases by 2. The restraint can be broken&nbsp;by succeeding on a contested Exertion check. If the demon decides it doesn't want to restrain them&nbsp;any longer, it can release them at any time on its turn for free. Killing the demon will also release&nbsp;the hold.</p>",
+        "description": "<p>The demon attacks a target with its tail that is Medium or smaller, aiming to deal 4/W3. If hit, the target must make a TN 6 Prowess saving throw. If they fail, they become fully Restrained by the demon’s tail. The Restrained target will take a 4/W3 Wound at the beginning of its turn. For each subsequent turn Restrained, the damage increases by 2. The restraint can be broken by succeeding on a contested Exertion check. If the demon decides it doesn't want to restrain them any longer, it can release them at any time on its turn for free. Killing the demon will also release the hold.</p>",
         "action": "major"
       },
       "_id": "kTcA1f9u4l8cQfuG",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138912767,
-        "modifiedTime": 1720138932774,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!tMWiwLcYHRtAKMgV.kTcA1f9u4l8cQfuG"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Undead",
       "type": "ability",
       "system": {
-        "description": "<p>The demon is extremely hard to kill. Calculate what it&rsquo;s Wound Threshold&nbsp;should be according to the rules on page 37, and multiply that number by 3. That is this demon&rsquo;s&nbsp;Wound Threshold. When it is dropped to 0 Hitpoints while at or below its Wound Threshold, it will&nbsp;appear dead to anything less than thorough inspection. It will revive in minutes, clearing enough&nbsp;Wounds to recover to half HP, starting with the least severe. It will continue this until actually killed.</p>",
+        "description": "<p>The demon is extremely hard to kill. Calculate what it’s Wound Threshold should be according to the rules on page 37, and multiply that number by 3. That is this demon’s Wound Threshold. When it is dropped to 0 Hitpoints while at or below its Wound Threshold, it will appear dead to anything less than thorough inspection. It will revive in minutes, clearing enough Wounds to recover to half its Hitpoints, starting with the least severe. It will continue this until actually killed.</p>",
         "action": "passive"
       },
       "_id": "9M2vihuyV3EwHWFO",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138943061,
-        "modifiedTime": 1720138964155,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!tMWiwLcYHRtAKMgV.9M2vihuyV3EwHWFO"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720138889573,
-    "modifiedTime": 1720138964155,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!tMWiwLcYHRtAKMgV"
+  ]
 }

@@ -4,23 +4,6 @@
   "_id": "wlbetoSTTw4KoY3q",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character is constantly&nbsp;ravenously hungry, requiring more food to satisfy him.&nbsp;He must consume 3 food rations per day or else begin&nbsp;Starving.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143931402,
-    "modifiedTime": 1720143939195,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!wlbetoSTTw4KoY3q"
+    "description": "<p>The corrupted character is constantly ravenously hungry, requiring more food to satisfy him. He must consume 3 food rations per day or else begin Starving.</p>"
+  }
 }

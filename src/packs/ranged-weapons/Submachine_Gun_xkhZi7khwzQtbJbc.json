@@ -4,7 +4,7 @@
   "_id": "xkhZi7khwzQtbJbc",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Submachine guns are light, easy to control, and&nbsp;have a great rate of fire. They are automatic firearms and&nbsp;have 20 round detachable magazines.</p>",
+    "description": "<p>Submachine guns are light, easy to control, and have a great rate of fire. They are automatic firearms and have 20 round detachable magazines.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
@@ -20,22 +20,5 @@
     "skill": "smallarms",
     "attribute": "",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720120465561,
-    "modifiedTime": 1720120509418,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!xkhZi7khwzQtbJbc"
+  }
 }

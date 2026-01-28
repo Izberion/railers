@@ -4,27 +4,10 @@
   "_id": "J9XGYTKG1csfW8J6",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Hand radios are portable radio transceivers that are&nbsp;easy to carry around. They lack the power that a field radio or the train&rsquo;s radio possesses, but are effective&nbsp;within a single hex. They run on 2 D-cell batteries and&nbsp;can run for 1 Quarter from full of constant use.</p>",
+    "description": "<p>Hand radios are portable radio transceivers that are easy to carry around. They lack the power that a field radio or the train’s radio possess, but are effective within a single hex. They run on 2 D-cell batteries and can run for 1 Quarter from full of constant use.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137081489,
-    "modifiedTime": 1720137097048,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!J9XGYTKG1csfW8J6"
+  }
 }

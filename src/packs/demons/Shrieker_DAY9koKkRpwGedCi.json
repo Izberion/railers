@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 3,
       "intellect": 1,
       "endurance": 1,
-      "fear": 4,
+      "fear": 5,
       "attack": {
         "damage": 2,
         "severity": 1
@@ -122,76 +122,21 @@
       "name": "Winged",
       "type": "ability",
       "system": {
-        "description": "<p>The demon can fly. It cannot move faster than it normally would on the&nbsp;ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
+        "description": "<p>The demon can fly. It cannot move faster than it normally would on the ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
         "action": "passive"
       },
       "_id": "IMwrzpAJqQchD7oL",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.vJ7lG4Nkm5xtyXMN.Item.887Bd10VUTjC1Bap"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720137970625,
-        "modifiedTime": 1720141229837,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!DAY9koKkRpwGedCi.IMwrzpAJqQchD7oL"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Birdsong",
       "type": "ability",
       "system": {
-        "description": "<p>The demon cries out, making an incredibly loud burst of noise. All within&nbsp;earshot, excluding others of this demon, must make a TN 6 Endurance saving throw or take a 6/W1&nbsp;Wound.</p>",
+        "description": "<p>The demon cries out, making an incredibly loud burst of noise. All within earshot, excluding others of this demon, must make a TN 6 Endurance saving throw or take a 6/W1 Wound.</p>",
         "action": "major"
       },
       "_id": "ckJNU3SBLCr47Cnn",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141237234,
-        "modifiedTime": 1720141251702,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!DAY9koKkRpwGedCi.ckJNU3SBLCr47Cnn"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720141182229,
-    "modifiedTime": 1720141251702,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!DAY9koKkRpwGedCi"
+  ]
 }

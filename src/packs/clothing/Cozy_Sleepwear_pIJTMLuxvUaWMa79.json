@@ -4,29 +4,12 @@
   "_id": "pIJTMLuxvUaWMa79",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Cozy sleepwear is just the thing to get a restful&nbsp;night&rsquo;s sleep. While providing decent Insulation, it also&nbsp;has the added benefit of being exceptionally comfortable. This added comfort means the character wearing it&nbsp;will recover an additional Nerve each night.</p>",
+    "description": "<p>Cozy sleepwear is just the thing to get a restful night’s sleep. While providing decent Insulation, it also has the added benefit of being exceptionally comfortable. This added comfort means the character wearing it will recover an additional Nerve each night.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "protection": 0,
     "insulation": 8,
     "clothingType": "innerwear"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720117507766,
-    "modifiedTime": 1720117540305,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!pIJTMLuxvUaWMa79"
+  }
 }

@@ -4,27 +4,10 @@
   "_id": "PiBX7zqBavBO6iHI",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Sledgehammers can be used to smash or destroy&nbsp;most obstacles in your way. When used as a weapon, they&nbsp;deal 6/W4.</p>",
+    "description": "<p>Sledgehammers can be used to smash or destroy most obstacles in your way. When used as a weapon, they deal 6/W4.</p>",
     "quantity": 1,
     "load": 2,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137387733,
-    "modifiedTime": 1720137406048,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!PiBX7zqBavBO6iHI"
+  }
 }

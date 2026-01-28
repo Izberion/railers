@@ -4,7 +4,7 @@
   "_id": "Qp3LadR82WhrDaQK",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Knuckles are easy to hide and put a little more&nbsp;oomph in your fists. Whenever making a Concealment&nbsp;check to hide knuckles, take a +1d bonus to the roll.</p>",
+    "description": "<p>Knuckles are easy to hide and put a little more oomph in your fists. Whenever making a Concealment check to hide knuckles, take a +1d bonus to the roll.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
@@ -20,22 +20,5 @@
     "skill": "melee",
     "attribute": "",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720119175446,
-    "modifiedTime": 1720119288190,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!Qp3LadR82WhrDaQK"
+  } 
 }

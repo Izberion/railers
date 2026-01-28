@@ -4,27 +4,10 @@
   "_id": "akNxNs3ii3RlQfFN",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Mess kits contain a small steel pot, a fork, a spoon, a&nbsp;can opener, and a steel mug. They have everything you&nbsp;need to heat and eat your brown slop field ration like a civilized human. If stowed with your backpack, the&nbsp;clanging will make sneaking difficult, resulting in a -2d&nbsp;penalty to Sneaking checks, assuming you have the&nbsp;backpack equipped at the time.</p>",
+    "description": "<p>Mess kits contain a small steel pot, a fork, a spoon, a can opener, and a steel mug. They have everything you need to heat and eat your brown slop field ration like a civilized human. If stowed with your backpack, the clanging will make sneaking difficult, resulting in a -2d penalty to Sneaking checks, assuming you have the backpack equipped at the time.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136807453,
-    "modifiedTime": 1720136833606,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!akNxNs3ii3RlQfFN"
+  }
 }

@@ -6,17 +6,5 @@
   "_id": "fPWaJS6UwaUalU6f",
   "description": "",
   "sort": 100000,
-  "color": null,
-  "flags": {},
-  "_stats": {
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "coreVersion": "12.331",
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "createdTime": 1744695728680,
-    "modifiedTime": 1744695728791,
-    "lastModifiedBy": "Rkv9Xf9nMjw1REva"
-  },
-  "_key": "!folders!fPWaJS6UwaUalU6f"
+  "color": null
 }

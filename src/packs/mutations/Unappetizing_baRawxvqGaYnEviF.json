@@ -4,23 +4,6 @@
   "_id": "baRawxvqGaYnEviF",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character leaves a bad&nbsp;taste in demons&rsquo; mouths. Demons will prioritize attacking other characters when hungry unless he is the primary threat.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720145175370,
-    "modifiedTime": 1720145185652,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!baRawxvqGaYnEviF"
+    "description": "<p>The corrupted character leaves a bad taste in demons’ mouths. Demons will prioritize attacking other characters when hungry unless he is the primary threat.</p>"
+  }
 }

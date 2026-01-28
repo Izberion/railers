@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 8,
       "intellect": 5,
       "endurance": 6,
-      "fear": 4,
+      "fear": 5,
       "attack": {
         "damage": 7,
         "severity": 6
@@ -122,72 +122,21 @@
       "name": "Cute",
       "type": "ability",
       "system": {
-        "description": "<p>If you can get passed the alien nature inherent to all demons, this demon is actually pretty cute and fluffy. Three consecutive successful Resolve saves will immunize the rolling&nbsp;character to its Fear effects. It may still give the character the willies, but it&rsquo;ll be tolerable enough to&nbsp;be around.</p>",
+        "description": "<p>If you can get passed the alien nature inherent to all demons, this demon is actually pretty cute and fluffy. Three consecutive successful Resolve saves will immunize the rolling character to its Fear effects. It may still give the character the willies on occasion, but it’ll be tolerable enough to be around. The character may even have the desire to pet it.</p>",
         "action": "passive"
       },
       "_id": "2WsJ4gRPO5ja9ahM",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139440635,
-        "modifiedTime": 1720139460522,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!duoM8FhxEmzFRjqd.2WsJ4gRPO5ja9ahM"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "It's Fast",
       "type": "ability",
       "system": {
-        "description": "<p>The demon is very fast. Don&rsquo;t bother rolling initiative for it. Give it its own&nbsp;initiative slot at the top of the order. This slot is individualized and not part of any group. Additionally, the demon can use Maneuvers to attack, as well as Minor Actions.</p>",
+        "description": "<p>The demon is very fast. Don’t bother rolling initiative for it. Give it its own initiative slot at the top of the order, and another slot in the middle of the order. These slots are individualized and not part of any group. Additionally, the demon can use Maneuvers to attack, as well as Minor Actions.</p>",
         "action": "passive"
       },
       "_id": "hSWnujco4Yc7kPZO",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139464063,
-        "modifiedTime": 1720139483173,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!duoM8FhxEmzFRjqd.hSWnujco4Yc7kPZO"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139410037,
-    "modifiedTime": 1720139483173,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!duoM8FhxEmzFRjqd"
+  ]
 }

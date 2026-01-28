@@ -4,27 +4,10 @@
   "_id": "EmZ4CJGRtFf8AZwn",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Flint Strikers are an alternative to matches or&nbsp;lighters. Lighting a fire with a chunk of flint is simple&nbsp;enough and it can be reused, unlike a match. Unfortunately, striking flint just clumsily throws sparks. If&nbsp;whatever you're trying to light is small and time is limited, you'll need to roll a Survival check with a -2d&nbsp;penalty to get it burning.</p>",
+    "description": "<p>Flint Strikers are an alternative to matches or lighters. Lighting a fire with a chunk of flint is simple enough and it can be reused, unlike a match. Unfortunately, striking flint just clumsily throws sparks. If whatever you're trying to light is small and time is limited, you'll need to roll a Survival check to get it burning.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118839545,
-    "modifiedTime": 1720118850953,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!EmZ4CJGRtFf8AZwn"
+  } 
 }

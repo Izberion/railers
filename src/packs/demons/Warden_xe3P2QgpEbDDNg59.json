@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -46,7 +46,7 @@
       "agility": 2,
       "intellect": 6,
       "endurance": 4,
-      "fear": 6,
+      "fear": 7,
       "attack": {
         "damage": 5,
         "severity": 6
@@ -126,99 +126,27 @@
         "action": "passive"
       },
       "_id": "82ts4yuoIk0Pa51S",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720142048003,
-        "modifiedTime": 1720142067809,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!xe3P2QgpEbDDNg59.82ts4yuoIk0Pa51S"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Light Blind",
       "type": "ability",
       "system": {
-        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action&nbsp;taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
+        "description": "<p>The demon has poor vision in light, applying a -2d penalty to any action taken in bright light. They have no penalties when performing actions in complete darkness.</p>",
         "action": "passive"
       },
       "_id": "039f30NLG7gleRY4",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.meU1dN5YfEjV0XAw.Item.gV1tq8hs5m4kWefT"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720138049115,
-        "modifiedTime": 1720142077684,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!xe3P2QgpEbDDNg59.039f30NLG7gleRY4"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Sound Hound",
       "type": "ability",
       "system": {
-        "description": "<p>The demon is most attracted to sound, having excellent hearing. It will&nbsp;attempt to locate any unknown sound in its vicinity and deal with it appropriately.</p>",
+        "description": "<p>The demon is most attracted to sound, having excellent hearing. It will attempt to locate any unknown sound in its vicinity and deal with it appropriately.</p>",
         "action": "passive"
       },
       "_id": "8q5mgkp6s1SfksDm",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720142080039,
-        "modifiedTime": 1720142095390,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!xe3P2QgpEbDDNg59.8q5mgkp6s1SfksDm"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720142018702,
-    "modifiedTime": 1720142095390,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!xe3P2QgpEbDDNg59"
+  ]
 }

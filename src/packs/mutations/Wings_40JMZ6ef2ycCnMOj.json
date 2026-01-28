@@ -4,23 +4,6 @@
   "_id": "40JMZ6ef2ycCnMOj",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character has grown wings&nbsp;and all they entail. The wings may look however you&nbsp;choose. He can now fly. It still takes a Maneuver to move&nbsp;from zone to zone, but he will be able to fly over most&nbsp;obstacles.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720145282613,
-    "modifiedTime": 1720145290044,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!40JMZ6ef2ycCnMOj"
+    "description": "<p>The corrupted character has grown wings and all they entail. The wings may look however you choose. He can now fly. It still takes a Maneuver to move from zone to zone, but he will be able to fly over most obstacles.</p>"
+  }
 }

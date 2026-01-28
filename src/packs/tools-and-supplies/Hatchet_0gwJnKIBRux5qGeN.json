@@ -4,27 +4,10 @@
   "_id": "0gwJnKIBRux5qGeN",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Hatchets are versatile tools that can be used in all&nbsp;sorts of cases. It will cut, chop, slice, carve, and makes a&nbsp;relatively decent weapon. When used as a weapon it&nbsp;deals 3/W3 Wounds. It can be thrown at Short range.</p>",
+    "description": "<p>Hatchets are versatile tools that can be used in all sorts of cases. It will cut, chop, slice, carve, and makes a relatively decent weapon. When used as a weapon it deals 3/W3 Wounds. It can be thrown at Short range.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137147451,
-    "modifiedTime": 1720137167248,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!0gwJnKIBRux5qGeN"
+  }
 }

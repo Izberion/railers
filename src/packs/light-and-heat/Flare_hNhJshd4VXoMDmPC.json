@@ -4,27 +4,10 @@
   "_id": "hNhJshd4VXoMDmPC",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Flares are tubes that hold a small load of flammable&nbsp;metal that burns very bright. Flares can be either lit anddropped to illuminate a space or shot from a flare gun to&nbsp;act as a signal. When shot, they shine bright enough and&nbsp;fly high enough to be seen from anywhere within a hex,&nbsp;though they are much easier to notice in the dark and&nbsp;may be seen from adjacent hexes in such a case.</p>",
+    "description": "<p>Flares are tubes that hold a small load of flammable metal that burns very bright. Flares can be either lit and dropped to illuminate a space or shot from a flare gun to act as a signal. When shot, they shine bright enough and fly high enough to be seen from anywhere within a hex, though they are much easier to notice in the dark and may be seen from adjacent hexes in such a case.</p>",
     "quantity": 1,
     "load": 0.33,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118749902,
-    "modifiedTime": 1720118765065,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!hNhJshd4VXoMDmPC"
+  } 
 }

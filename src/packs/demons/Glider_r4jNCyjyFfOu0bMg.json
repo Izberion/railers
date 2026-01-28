@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -126,68 +126,17 @@
         "action": "passive"
       },
       "_id": "XPrHGHlgWeZaQap8",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139050742,
-        "modifiedTime": 1720139074731,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!r4jNCyjyFfOu0bMg.XPrHGHlgWeZaQap8"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Howl",
       "type": "ability",
       "system": {
-        "description": "<p>The demon lets out a long howl. Something about it turns your guts to water. All&nbsp;characters that can hear it must roll against the demon&rsquo;s Fear, even if immune. Subsequent uses of&nbsp;this ability in the same combat will only reduce Nerve by 1 instead of the normal 6, including if used&nbsp;by other demons of the same type.</p>",
+        "description": "<p>The demon lets out a long howl. Something about it turns your guts to water. All  characters that can hear it must roll against the demon’s Fear, even if immune. Subsequent uses of this ability in the same combat will only reduce Nerve by 1 instead of the normal 6, including if used by other demons of the same type.</p>",
         "action": "minor"
       },
       "_id": "aTEVg58QzUrpMQle",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139081616,
-        "modifiedTime": 1720139097929,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!r4jNCyjyFfOu0bMg.aTEVg58QzUrpMQle"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139031460,
-    "modifiedTime": 1720139104277,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!r4jNCyjyFfOu0bMg"
+  ]
 }

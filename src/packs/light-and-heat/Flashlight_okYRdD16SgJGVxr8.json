@@ -4,27 +4,10 @@
   "_id": "okYRdD16SgJGVxr8",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Flashlights provide flameless, low heat light in an&nbsp;instant. The light from a flashlight is directional, casting&nbsp;a cone of light in the direction your character is holding&nbsp;the flashlight, so are better for illuminating subjects&nbsp;rather than spaces. They provide bright light in a wide&nbsp;cone, which dims after several yards. They require 2 D-cell and will work for 1 Quarter from a full charge.&nbsp;Flashlights deal 3/2W when used as an improvised&nbsp;weapon due to their weight and size.</p>",
+    "description": "<p>Flares are tubes that hold a small load of flammable metal that burns very bright. Flares can be either lit and dropped to illuminate a space or shot from a flare gun to act as a signal. When shot, they shine bright enough and fly high enough to be seen from anywhere within a hex, though they are much easier to notice in the dark and may be seen from adjacent hexes in such a case.</p>",
     "quantity": 1,
     "load": 1,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720118816594,
-    "modifiedTime": 1720118831747,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!okYRdD16SgJGVxr8"
+  } 
 }

@@ -4,27 +4,10 @@
   "_id": "UaaHQsBKjwBi8wKq",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Repair Parts are generic components that can be&nbsp;used to repair any non-firearm piece of gear.</p>",
+    "description": "<p>Repair Parts are generic components that can be used to repair any non-firearm piece of gear. Gear can be broken down into repair parts with a Mechanics check for 1 part per Load. Failure yields scrap instead.</p>",
     "quantity": 1,
     "load": 0.5,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720137271359,
-    "modifiedTime": 1720137286038,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!UaaHQsBKjwBi8wKq"
+  }
 }

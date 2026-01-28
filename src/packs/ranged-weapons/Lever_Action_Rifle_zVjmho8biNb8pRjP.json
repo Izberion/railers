@@ -4,7 +4,7 @@
   "_id": "zVjmho8biNb8pRjP",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Lever-action rifles have decent range, accuracy, and&nbsp;fire rate, even with a manual action. Due to the manual&nbsp;action, a second attack in a Round will suffer a -1d&nbsp;penalty. They have an 8 round internal tube magazine&nbsp;that must be loaded one bullet at a time. A single round&nbsp;can be loaded for a Maneuver, in place of reloading the&nbsp;entire magazine.</p>",
+    "description": "<p>Lever-action rifles have decent range, accuracy, and fire rate, even with a manual action. They have an 8 round internal tube magazine that must be loaded one bullet at a time. A single round can be loaded for a Maneuver, in place of reloading the entire magazine.</p>",
     "quantity": 1,
     "load": 2,
     "stowage": "other",
@@ -20,22 +20,5 @@
     "skill": "smallarms",
     "attribute": "",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720120166237,
-    "modifiedTime": 1720120256653,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!zVjmho8biNb8pRjP"
+  }
 }

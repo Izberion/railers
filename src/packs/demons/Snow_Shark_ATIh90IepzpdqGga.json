@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,45 +122,11 @@
       "name": "Snow Dive",
       "type": "ability",
       "system": {
-        "description": "<p>The demon quickly digs down into the snowpack, hiding itself from view. It&nbsp;can Move within the snow, but it must spend a Minor action to do so. It can use this action again to&nbsp;resurface. When it does so, the demon can make an attack against any valid target, as long as it surfaces within melee range of the target.</p>",
+        "description": "<p>The demon quickly digs down into the snowpack, hiding itself from view. It can Move within the snow, but it must spend a Minor action to do so. It can use this action again to resurface. When it does so, the demon can make an attack against any valid target, as long as it surfaces within melee range of the target.</p>",
         "action": "full"
       },
       "_id": "LniObTXOmQEtvidQ",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720141485569,
-        "modifiedTime": 1720141500966,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!ATIh90IepzpdqGga.LniObTXOmQEtvidQ"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720141460225,
-    "modifiedTime": 1720141500966,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!ATIh90IepzpdqGga"
+  ]
 }

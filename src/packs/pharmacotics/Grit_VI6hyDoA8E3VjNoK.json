@@ -4,27 +4,10 @@
   "_id": "VI6hyDoA8E3VjNoK",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Grit will block the character from experiencing pain.&nbsp;The character gains his maximum hitpoint total as temporary Hitpoints. After 10 minutes the effects wear off&nbsp;and the temporary Hitpoints are removed. Any wounds&nbsp;will remain, causing the character to begin Dying if over&nbsp;his Wound threshold and below 0 HP. Any attempts to&nbsp;stabilize him will be at a -3d penalty.</p>",
+    "description": "<p>Grit will block the character from experiencing pain. The character gains his maximum Hitpoint total as temporary Hitpoints. After 10 minutes the effects wear off and the temporary Hitpoints are removed. Any Wounds will remain, causing the character to begin Dying if over his Wound threshold and below 0 Hitpoints. Any attempts to stabilize him will be at a -2d penalty.</p>",
     "quantity": 1,
     "load": 0,
     "stowage": "other",
     "formula": ""
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720136169819,
-    "modifiedTime": 1720136180694,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!VI6hyDoA8E3VjNoK"
+  }
 }

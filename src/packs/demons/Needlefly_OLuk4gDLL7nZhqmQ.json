@@ -6,9 +6,9 @@
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
-      "value": 12,
+      "value": 0,
       "min": 0,
-      "max": 12
+      "max": 0
     },
     "wounds": {
       "label": "RAILERS.Wounds",
@@ -122,130 +122,41 @@
       "name": "Winged",
       "type": "ability",
       "system": {
-        "description": "<p>The demon can fly. It cannot move faster than it normally would on the&nbsp;ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
+        "description": "<p>The demon can fly. It cannot move faster than it normally would on the ground but can ignore terrain and is considered to be on higher ground when in flight.</p>",
         "action": "passive"
       },
       "_id": "cKIUFU3oIRqArc0Z",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.world.demons.Actor.vJ7lG4Nkm5xtyXMN.Item.887Bd10VUTjC1Bap"
-        }
-      },
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720137970625,
-        "modifiedTime": 1720139866174,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!OLuk4gDLL7nZhqmQ.cKIUFU3oIRqArc0Z"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Vampire",
       "type": "ability",
       "system": {
-        "description": "<p>When this monster makes a normal attack, it has a chance to draw some&nbsp;blood from the target. On a successful attack, the target must make a TN 5 Endurance saving throw.&nbsp;If they fail, they take an extra 6/W2 Wound. If the demon manages to do this 3 times in a single battle, it will become gorged with blood and attempt to leave the fight, belly full.</p>",
+        "description": "<p>When this monster makes a normal attack, it has a chance to draw some blood from the target. On a successful attack, the target must make a TN 6 Endurance saving throw. If they fail, they take an extra 6/W2 Wound. If the demon manages to do this 3 times in a single battle, it will become gorged with blood and attempt to leave the fight, belly full.</p>",
         "action": "passive"
       },
       "_id": "a7XPOUjyCm4cnHEo",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139869221,
-        "modifiedTime": 1720139892848,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!OLuk4gDLL7nZhqmQ.a7XPOUjyCm4cnHEo"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Latch On",
       "type": "ability",
       "system": {
-        "description": "<p>&nbsp;The demon attempts to grab onto a target. Make an attack roll against the<br>target. On a success, instead of dealing damage, the demon gains a special condition, Latched.&nbsp;While Latched, the demon has access to the Seed special ability, but also has -2d to defense rolls.</p>",
+        "description": "<p>The demon attempts to grab onto a target. Make an attack roll against the target. On a success, instead of dealing damage, the demon gains a special condition, Latched. While Latched, the demon has access to the Seed special ability, but also has -2d to defense rolls.</p>",
         "action": "major"
       },
       "_id": "jd1RPYb05BByuoHJ",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139894596,
-        "modifiedTime": 1720139913240,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!OLuk4gDLL7nZhqmQ.jd1RPYb05BByuoHJ"
+      "img": "icons/svg/item-bag.svg"
     },
     {
       "name": "Seed",
       "type": "ability",
       "system": {
-        "description": "<p>The demon attacks a target it is Latched onto, attempting to make the target a host&nbsp;for its young. If successful, the target takes the normal Wound and is injected with eggs. The eggs&nbsp;can be removed surgically or allowed to hatch. The surgery to remove them requires a TN 6 Medical&nbsp;check by someone with 1 rank in Medical. If the target is attempting to perform it on himself, he will&nbsp;have a -2d penalty. The eggs will hatch in 3 days and will inflict 1d 5/W5 Wounds on the host as the&nbsp;larva eat their way out. Anyone that witnesses this must make a Resolve save as if resisting Fear 6.</p>",
+        "description": "<p>The demon attacks a target it is Latched onto, attempting to make the target a host for its young. If successful, the target takes the normal Wound and is injected with eggs. The eggs can be removed surgically or allowed to hatch. The surgery to remove them requires a TN 6 Medical check by someone with 1 rank in Medical. If the target is attempting to perform it on himself, he will have a -2d penalty. The eggs will hatch in 3 days and will inflict 1d 5/W5 Wounds on the host as the larva eat their way out. Anyone that witnesses this must make a Resolve save as if resisting Fear 6.</p>",
         "action": "full"
       },
       "_id": "R1kAXE3fwLEMnxyS",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "3ea5GTLITViAGJ4q": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "railers",
-        "systemVersion": "1.0",
-        "coreVersion": "11.315",
-        "createdTime": 1720139916765,
-        "modifiedTime": 1720139943159,
-        "lastModifiedBy": "3ea5GTLITViAGJ4q"
-      },
-      "_key": "!actors.items!OLuk4gDLL7nZhqmQ.R1kAXE3fwLEMnxyS"
+      "img": "icons/svg/item-bag.svg"
     }
-  ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720139844897,
-    "modifiedTime": 1720139965870,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!actors!OLuk4gDLL7nZhqmQ"
+  ]
 }

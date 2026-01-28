@@ -4,23 +4,6 @@
   "_id": "rxNlsoFOlQyNGHj2",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character has developed a strange ability. This ability can be anything&nbsp;from superhuman to supernatural. Work with the GM to&nbsp;figure out what the ability is and how it works. The&nbsp;strangeness is up to you as a group, deciding what will fit&nbsp;within the game. It may make sense to be able to spawn&nbsp;inky black tentacles from the shadows that can be used&nbsp;to attack enemies. Maybe some form of ESP or psychic&nbsp;abilities are more fitting. Maybe it is shapeshifting,&nbsp;whether on demand or as a regular occurrence. Maybe&nbsp;your group would prefer to stay more grounded. In such&nbsp;a case, the special abilities of existing demons should be&nbsp;good examples.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720144956340,
-    "modifiedTime": 1720144970948,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!rxNlsoFOlQyNGHj2"
+    "description": "<p>The corrupted character has developed a strange ability. This ability can be anything from superhuman to supernatural. Work with the GM to figure out what the ability is and how it works. The strangeness is up to you as a group, deciding what will fit within the game. It may make sense to be able to spawn inky black tentacles from the shadows that can be used to attack enemies. Maybe some form of ESP or psychic abilities are more fitting. Maybe it is shapeshifting, whether on demand or as a regular occurrence. Maybe your group would prefer to stay more grounded. In such a case, the special abilities of existing demons should be good examples.</p>"
+  }
 }

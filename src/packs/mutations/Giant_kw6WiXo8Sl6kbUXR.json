@@ -4,23 +4,6 @@
   "_id": "kw6WiXo8Sl6kbUXR",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>The corrupted character grows in size, scaling up to stand about 10 feet tall with an equivalent&nbsp;wingspan. He is now considered Large, whereas a normal person is Medium, according to demon sizing on&nbsp;page 94. If the character has the Dwarf mutation, he returns to normal size.</p>"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0,
-    "3ea5GTLITViAGJ4q": 3
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "railers",
-    "systemVersion": "1.0",
-    "coreVersion": "11.315",
-    "createdTime": 1720143683764,
-    "modifiedTime": 1720143698635,
-    "lastModifiedBy": "3ea5GTLITViAGJ4q"
-  },
-  "_key": "!items!kw6WiXo8Sl6kbUXR"
+    "description": "<p>The corrupted character grows in size, scaling up to stand about 10 feet tall with an equivalent wingspan. He is now considered Large, whereas a normal person is Medium, according to demon sizing on page 94. If the character has the Dwarf mutation, he returns to normal size.</p>"
+  }
 }
