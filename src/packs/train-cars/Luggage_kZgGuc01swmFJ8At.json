@@ -3,6 +3,7 @@
   "type": "car",
   "_id": "kZgGuc01swmFJ8At",
   "img": "systems/railers/assets/icons/car-icon.svg",
+  "folder": "jDK3RF52kSilZP2F",
   "system": {
     "description": "<p>Luggage cars allow storage which is accessible from other cars, front or back. Unlike other storage cars, they have heat and electric lights, requiring them to use a small amount of power. Luggage cars are not large enough to hold freight, and are typically best used to store the crew’s equipment, as extra livable space, or for whatever other uses can be found. Because luggage cars cannot store freight, anything stored in them does not contribute to the train’s total weight.</p>",
     "type": "",

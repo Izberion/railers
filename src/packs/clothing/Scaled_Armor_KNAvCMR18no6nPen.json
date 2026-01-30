@@ -3,6 +3,7 @@
   "type": "clothing",
   "_id": "KNAvCMR18no6nPen",
   "img": "systems/railers/assets/icons/armor-icon.svg",
+  "folder": "pI6gRUD8Cqqyr6bi",
   "system": {
     "description": "<p>Scaled armor consists of dozens of steel squares sewn into a set of clothing. It offers decent Protection while not being too cumbersome. The severity of Wounds inflicted by melee attacks are reduced by 1, to a minimum of 1.</p>",
     "quantity": 1,

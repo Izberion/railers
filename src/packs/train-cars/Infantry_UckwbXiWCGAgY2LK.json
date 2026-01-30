@@ -1,0 +1,22 @@
+{
+  "folder": "W5h6eFHbGZL88DE5",
+  "name": "Infantry",
+  "type": "car",
+  "_id": "UckwbXiWCGAgY2LK",
+  "img": "systems/railers/assets/icons/car-icon.svg",
+  "system": {
+    "description": "<p>Infantry cars are armored and typically have two mounted machine guns, one to a side, and several firing ports for small arms. The machine guns can be replaced with any mountable weapon, such as a flamethrower. Because the interior is exposed to the Snowlands, heating the car useless, though it does have electric lighting.</p>",
+    "name": "",
+    "rollFormula": null,
+    "numDice": null,
+    "therms": null,
+    "load": 0,
+    "quantity": 0,
+    "stowage": "other",
+    "power": 1,
+    "weight": 160,
+    "capacity": 0,
+    "armor": 4
+  },
+  "_key": "!items!UckwbXiWCGAgY2LK"
+}

@@ -3,6 +3,7 @@
   "type": "car",
   "_id": "wDJBNqBOqa3zAaQQ",
   "img": "systems/railers/assets/icons/car-icon.svg",
+  "folder": "jDK3RF52kSilZP2F",
   "system": {
     "description": "<p>Combination cars are any two cars from this list, excluding freight cars, combined into a single car. The statistics will be the average of the two cars. Utility and weapon cars can be combined if desired, but weapon cars cannot be combined with one another.</p>",
     "type": "",

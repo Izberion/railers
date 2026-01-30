@@ -1,0 +1,22 @@
+{
+  "folder": "W5h6eFHbGZL88DE5",
+  "name": "Artillery",
+  "type": "car",
+  "_id": "eSS9ZDKGIp0zUyLk",
+  "img": "systems/railers/assets/icons/car-icon.svg",
+  "system": {
+    "description": "<p>Artillery cars are modified flatbeds that hold a single large artillery piece. The gun is large-bore and fires artillery shells. The gun cannot be fired if the train is in motion, as the recoil will almost certainly derail the car. The gun can rotate and angle as required. It can fire at a target up to 2 hexes away, though the target should be at least out of small arms range to hit effectively.</p><p>Aiming and firing the gun is a very involved process and does not use the normal combat rules. A team of up to 3 people can work the gun, spending Full actions until a total 6 Full actions have been contributed. The final Full action will fire the gun. Anyone involved can use their Full action to calculate the gun’s aim. A Heavy Weapons check must be made, the distance setting the target number. If the target is in the same hex as the gun, it is TN 6. For each hex further out, the target number increases by 1, up to the gun’s 2 hex maximum range. If the Heavy Weapons check fails, anyone else can use a Full action to make a Combat save with the same target number as the check. Success here will spot the errors in the calculations and the check can be rerolled on any following turn. Any target hit by the gun will be destroyed, as well as most of its immediate surroundings. Misses will hit some unintended target within several hundred feet.</p>",
+    "name": "",
+    "rollFormula": null,
+    "numDice": null,
+    "therms": null,
+    "load": 0,
+    "quantity": 0,
+    "stowage": "other",
+    "power": 0,
+    "weight": 200,
+    "capacity": 0,
+    "armor": 2
+  },
+  "_key": "!items!eSS9ZDKGIp0zUyLk"
+}
