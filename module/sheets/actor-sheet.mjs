@@ -1,4 +1,4 @@
-import { onManageActiveEffect, prepareActiveEffectCategories } from "../helpers/effects.mjs";
+import { prepareActiveEffectCategories } from "../helpers/effects.mjs";
 import { rollDialog } from "../dialogs/roll-dialog.mjs";
 import { attackDialog } from "../dialogs/attack-dialog.mjs";
 import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
