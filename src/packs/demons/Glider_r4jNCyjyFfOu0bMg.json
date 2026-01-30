@@ -2,7 +2,7 @@
   "name": "Glider",
   "type": "demon",
   "_id": "r4jNCyjyFfOu0bMg",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",

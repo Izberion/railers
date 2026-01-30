@@ -2,7 +2,7 @@
   "name": "Horder",
   "type": "demon",
   "_id": "JCQSS7r4vKSNAODo",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",

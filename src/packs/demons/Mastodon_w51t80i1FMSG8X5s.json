@@ -2,7 +2,7 @@
   "name": "Mastodon",
   "type": "demon",
   "_id": "w51t80i1FMSG8X5s",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",

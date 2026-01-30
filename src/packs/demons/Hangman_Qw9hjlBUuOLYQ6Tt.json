@@ -2,7 +2,7 @@
   "name": "Hangman",
   "type": "demon",
   "_id": "Qw9hjlBUuOLYQ6Tt",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",

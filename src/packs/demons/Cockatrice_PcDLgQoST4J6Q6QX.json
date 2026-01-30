@@ -2,7 +2,7 @@
   "name": "Cockatrice",
   "type": "demon",
   "_id": "PcDLgQoST4J6Q6QX",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",

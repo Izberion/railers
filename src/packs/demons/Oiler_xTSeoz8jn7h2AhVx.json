@@ -2,7 +2,7 @@
   "name": "Oiler",
   "type": "demon",
   "_id": "xTSeoz8jn7h2AhVx",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",

@@ -2,7 +2,7 @@
   "name": "Mushroom Man",
   "type": "demon",
   "_id": "ukk8R6NceJgPv5QC",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",

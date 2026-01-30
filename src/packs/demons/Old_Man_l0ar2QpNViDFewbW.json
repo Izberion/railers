@@ -2,7 +2,7 @@
   "name": "Old Man",
   "type": "demon",
   "_id": "l0ar2QpNViDFewbW",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",

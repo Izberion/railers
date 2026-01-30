@@ -2,7 +2,7 @@
   "name": "Minotaur",
   "type": "demon",
   "_id": "5abHQjR1GGznBp6H",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",

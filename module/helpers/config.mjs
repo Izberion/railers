@@ -81,8 +81,8 @@ export const RAILERS = {};
         texture: { src: 'icons/svg/mystery-man.svg' },
       },
       demon: {
-        img: 'icons/svg/mystery-man.svg',
-        texture: { src: 'icons/svg/mystery-man.svg' },
+        img: 'systems/railers/assets/icons/demon-icon.svg',
+        texture: { src: 'systems/railers/assets/icons/demon-icon.svg' },
       },
       train: {
         img: 'systems/railers/assets/icons/train-icon-white.svg',

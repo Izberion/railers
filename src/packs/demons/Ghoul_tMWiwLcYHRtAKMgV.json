@@ -2,7 +2,7 @@
   "name": "Ghoul",
   "type": "demon",
   "_id": "tMWiwLcYHRtAKMgV",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",

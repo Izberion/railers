@@ -2,7 +2,7 @@
   "name": "Demon Dog",
   "type": "demon",
   "_id": "I3S3sQG1ku3mU5zN",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",

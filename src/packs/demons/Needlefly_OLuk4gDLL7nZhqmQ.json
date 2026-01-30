@@ -2,7 +2,7 @@
   "name": "Needlefly",
   "type": "demon",
   "_id": "OLuk4gDLL7nZhqmQ",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "systems/railers/assets/icons/demon-icon.svg",
   "system": {
     "hitpoints": {
       "label": "RAILERS.Hitpoints",
