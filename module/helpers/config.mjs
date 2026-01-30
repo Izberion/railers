@@ -85,8 +85,8 @@ export const RAILERS = {};
         texture: { src: 'icons/svg/mystery-man.svg' },
       },
       train: {
-        img: 'systems/railers/assets/icons/train-icon.svg',
-        texture: { src: 'systems/railers/assets/icons/train-icon.svg' },
+        img: 'systems/railers/assets/icons/train-icon-white.svg',
+        texture: { src: 'systems/railers/assets/icons/train-icon-black.svg' },
       },
       default: {
         img: 'icons/svg/mystery-man.svg',
