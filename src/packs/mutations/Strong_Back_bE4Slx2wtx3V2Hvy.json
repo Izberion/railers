@@ -6,5 +6,39 @@
   "system": {
     "description": "<p>The corrupted character can carry many times his own weight. His Load Limit is doubled.</p>"
   },
+  "effects": [
+    {
+      "name": "Strong Back",
+      "_id": "gxQmAXB2hYROCiRT",
+      "img": "icons/svg/aura.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.load.onHand.max",
+          "mode": 1,
+          "value": "2",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": 0,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>Load Limit is doubled.</p>",
+      "origin": "Mutation",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!bE4Slx2wtx3V2Hvy.gxQmAXB2hYROCiRT"
+    }
+  ],
   "_key": "!items!bE4Slx2wtx3V2Hvy"
 }
