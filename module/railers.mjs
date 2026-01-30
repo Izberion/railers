@@ -35,17 +35,6 @@ globalThis.railers = {
 Hooks.once('init', async function() {
 
   CONFIG.RAILERS = RAILERS;
-
-  /**
-   * Set an initiative formula for the system
-   * @type {String}
-   */
-  
-  /*CONFIG.Combat.initiative = {
-    formula: "(@initiativePool)d8x8cs>=6df=1",
-    decimals: 2
-  };*/
-
  
   CONFIG.Actor.documentClass = RailersActor;
 
