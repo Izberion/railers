@@ -98,28 +98,28 @@ export const RAILERS = {};
         img: 'icons/svg/item-bag.svg',
       },
       wound: {
-        img: 'systems/railers/assets/icons/wound-icon.svg',
+        img: 'icons/svg/blood.svg',
       },
       weapon: {
         img: 'systems/railers/assets/icons/weapon-icon.svg',
       },
       clothing: {
-        img: 'icons/svg/item-bag.svg',
+        img: 'systems/railers/assets/icons/coat-icon.svg',
       },
       condition: {
-        img: 'icons/svg/item-bag.svg',
+        img: 'icons/svg/aura.svg',
       },
       mutation: {
         img: 'systems/railers/assets/icons/mutation-icon.svg',
       },
       car: {
-        img: 'icons/svg/item-bag.svg',
+        img: 'systems/railers/assets/icons/car-icon.svg',
       },
       cargo: {
-        img: 'icons/svg/item-bag.svg',
+        img: 'systems/railers/assets/icons/cargo-icon.svg',
       },
       ability: {
-        img: 'icons/svg/item-bag.svg',
+        img: 'icons/svg/aura.svg',
       },
       default: {
         img: 'icons/svg/item-bag.svg',
