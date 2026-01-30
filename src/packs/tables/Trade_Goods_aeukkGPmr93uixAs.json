@@ -86,6 +86,21 @@
         6
       ],
       "drawn": false,
+      "_id": "mxedjd6qGBhCjK9b",
+      "text": "Industry",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!aeukkGPmr93uixAs.mxedjd6qGBhCjK9b"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
       "_id": "jCZwLuZ3hGGlyeBu",
       "text": "Luxury",
       "img": "icons/svg/d20-black.svg",
@@ -97,8 +112,8 @@
       "type": "text",
       "weight": 1,
       "range": [
-        7,
-        7
+        8,
+        8
       ],
       "drawn": false,
       "_id": "Jmemc8AtY1FuGTtt",
@@ -107,21 +122,6 @@
       "documentId": null,
       "flags": {},
       "_key": "!tables.results!aeukkGPmr93uixAs.Jmemc8AtY1FuGTtt"
-    },
-    {
-      "type": "text",
-      "weight": 1,
-      "range": [
-        8,
-        8
-      ],
-      "drawn": false,
-      "_id": "mxedjd6qGBhCjK9b",
-      "text": "Industry",
-      "img": "icons/svg/d20-black.svg",
-      "documentId": null,
-      "flags": {},
-      "_key": "!tables.results!aeukkGPmr93uixAs.mxedjd6qGBhCjK9b"
     },
     {
       "type": "text",
