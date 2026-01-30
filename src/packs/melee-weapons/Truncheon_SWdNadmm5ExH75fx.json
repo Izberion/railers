@@ -2,7 +2,7 @@
   "name": "Truncheon",
   "type": "weapon",
   "_id": "SWdNadmm5ExH75fx",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Truncheons are maybe the oldest type of weapon in existence outside of the classic “heavy rock.” They can be any of several things, from blackjacks to batons to baseball bats to a caveman’s club.</p>",
     "quantity": 1,

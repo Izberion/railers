@@ -2,7 +2,7 @@
   "name": "Pocket Pistol",
   "type": "weapon",
   "_id": "su3kp5QnPFqopq44",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Pocket pistols are just small semi-automatic pistols. Their size makes them easy to hide, though they lack the stopping power of other handguns. They have a 5 round detachable magazine. When attempting to hide them on your person, take a +1d to your Concealment check.</p>",
     "quantity": 1,

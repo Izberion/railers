@@ -2,7 +2,7 @@
   "name": "Normalization",
   "type": "mutation",
   "_id": "wBRcPJe8LjZ6DaU2",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character drops to the previous stage of demonization, losing a number of random mutations equal to the amount gained at his now previous demonization stage.</p>"
   },

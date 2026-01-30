@@ -2,7 +2,7 @@
   "name": "Photosynthetic",
   "type": "mutation",
   "_id": "2fP7R497GKuAZJ5F",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s skin generates energy when exposed to sunlight like a plant. It works slowly, especially given the need to wear heavy clothing to protect from the cold of the Snowlands. When wearing clothing, the character doesn’t need any rations, as long as he is exposed to sunlight for 1 Quarter in a day. Without any clothing, he will be good in just an hour in direct sunlight.</p>"
   },

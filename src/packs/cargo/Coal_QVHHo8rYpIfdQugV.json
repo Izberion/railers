@@ -2,7 +2,7 @@
   "name": "Coal",
   "type": "cargo",
   "_id": "QVHHo8rYpIfdQugV",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/cargo-icon.svg",
   "system": {
     "description": "<p>An important source of fuel for the Snowlands, most communities rely on coal to keep warm.</p>",
     "price": 200,

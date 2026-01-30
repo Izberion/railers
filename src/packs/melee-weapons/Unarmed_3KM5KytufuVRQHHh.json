@@ -2,7 +2,7 @@
   "name": "Unarmed",
   "type": "weapon",
   "_id": "3KM5KytufuVRQHHh",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Unarmed attacks are for when all else fails. You can always try to punch, kick, headbutt, or bite your way to victory.</p>",
     "quantity": 1,

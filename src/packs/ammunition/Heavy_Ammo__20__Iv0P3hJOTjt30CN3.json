@@ -2,7 +2,7 @@
   "name": "Heavy Ammo (20)",
   "type": "gear",
   "_id": "Iv0P3hJOTjt30CN3",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Heavy ammo is usable in big guns like machine guns or autocannons. Heavy ammo comes in boxes of 20.</p>",
     "quantity": 1,

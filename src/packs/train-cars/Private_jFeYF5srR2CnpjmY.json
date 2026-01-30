@@ -2,7 +2,7 @@
   "name": "Private",
   "type": "car",
   "_id": "jFeYF5srR2CnpjmY",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/car-icon.svg",
   "system": {
     "description": "<p>Private cars are entire cars dedicated solely to a single person or group. It features two staterooms, a sleeping compartment for up to 4 servants or attendants, a full galley, an observation deck, and plenty of luxury seating, with and without tables. Each stateroom has a single bed that can sleep two people comfortably and plenty of storage for clothing and luggage, as well as a writing desk and extra seating. The staterooms share a restroom, positioned between them. The servant’s compartment has two sets of bunks, two high, which can fold to convert into seating. The galley and dining room are laid out similarly to the diner car, but the seating is much more comfortable. Any rations stored for use in the private car should be tracked separately. The observation deck is a second level at the center of the car that provides 360° views of the Snowlands through windows raised a few feet above the roof of the car.</p>",
     "type": "",

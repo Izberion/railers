@@ -2,7 +2,7 @@
   "name": "Plain Clothing",
   "type": "clothing",
   "_id": "HkSvuJuGjcZIUkVN",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/shirt-icon.svg",
   "system": {
     "description": "<p>Plain clothing consists of a shirt, pants, socks and undergarments, those things typically required in a modesty society. You can safely assume your character owns these, no need to buy them unless they are somehow lost.</p>",
     "quantity": 1,

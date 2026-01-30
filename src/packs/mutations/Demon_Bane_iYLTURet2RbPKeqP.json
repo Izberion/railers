@@ -2,7 +2,7 @@
   "name": "Demon Bane",
   "type": "mutation",
   "_id": "iYLTURet2RbPKeqP",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character has something about him that makes demons hate him, no matter their disposition. When spotted by a demon, the demon will attempt to kill him. If the character has both Demon Bane and Demon Friend, neither will have any effect.</p>"
   },

@@ -2,7 +2,7 @@
   "name": "Machete",
   "type": "weapon",
   "_id": "lZCZwEeBsesselda",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Machetes are medium length bladed weapons, about as long as your forearm. While there aren't many jungles to cut through in the Snowlands, it can cut its way through flesh just as well as underbrush.</p>",
     "quantity": 1,

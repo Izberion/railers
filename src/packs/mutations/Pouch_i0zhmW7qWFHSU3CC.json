@@ -2,7 +2,7 @@
   "name": "Pouch",
   "type": "mutation",
   "_id": "i0zhmW7qWFHSU3CC",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character gains a natural pocket, like a marsupial. The pouch can hold up to 4 individual pieces of gear, none of which can exceed 1 Load. When concealing an item in the pouch, gain a +1d bonus. Otherwise, it functions similarly to a satchel.</p>"
   },

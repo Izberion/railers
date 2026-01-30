@@ -2,7 +2,7 @@
   "name": "Box Magazine",
   "type": "gear",
   "_id": "huk9yX92qVWrlIlv",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Box magazines allow for quick reloading. A given magazine will work on any weapon that can use them, no matter the actual dimensions or magazine size required. The magazine’s capacity is equal to the ammo capacity of the gun it is being used with. Magazines do not take up Load when loaded into a firearm.</p>",
     "quantity": 1,

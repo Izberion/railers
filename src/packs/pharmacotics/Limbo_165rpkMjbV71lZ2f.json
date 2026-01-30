@@ -2,7 +2,7 @@
   "name": "Limbo",
   "type": "gear",
   "_id": "165rpkMjbV71lZ2f",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Limbo causes the character to become Paralyzed for 1 hour after a few minutes. He can resist with a TN 7 Endurance saving throw.</p>",
     "quantity": 1,

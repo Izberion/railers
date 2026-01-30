@@ -2,7 +2,7 @@
   "name": "Weapons",
   "type": "cargo",
   "_id": "8Yu2pfaEwpIqoQey",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/cargo-icon.svg",
   "system": {
     "description": "<p>Any non-firearm weapons, including melee weapons, explosives, and bows.</p>",
     "price": 1500,

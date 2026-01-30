@@ -2,7 +2,7 @@
   "name": "Mood Hair",
   "type": "mutation",
   "_id": "jaIh4fOANE8MT47u",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s mood is clearly displayed by his hair color. He has a -2d penalty to Deception rolls when attempting to hide his emotions.</p>"
   },

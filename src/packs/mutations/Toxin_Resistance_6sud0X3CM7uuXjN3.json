@@ -2,7 +2,7 @@
   "name": "Toxin Resistance",
   "type": "mutation",
   "_id": "6sud0X3CM7uuXjN3",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character is resistant to all types of poisons, venom, and toxins. Gain a +2d bonus to Endurance saves when resisting their effects.</p>"
   },

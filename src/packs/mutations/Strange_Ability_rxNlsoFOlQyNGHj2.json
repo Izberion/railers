@@ -2,7 +2,7 @@
   "name": "Strange Ability",
   "type": "mutation",
   "_id": "rxNlsoFOlQyNGHj2",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character has developed a strange ability. This ability can be anything from superhuman to supernatural. Work with the GM to figure out what the ability is and how it works. The strangeness is up to you as a group, deciding what will fit within the game. It may make sense to be able to spawn inky black tentacles from the shadows that can be used to attack enemies. Maybe some form of ESP or psychic abilities are more fitting. Maybe it is shapeshifting, whether on demand or as a regular occurrence. Maybe your group would prefer to stay more grounded. In such a case, the special abilities of existing demons should be good examples.</p>"
   },

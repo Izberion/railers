@@ -2,7 +2,7 @@
   "name": "Quiver",
   "type": "gear",
   "_id": "AKIGMiBWqwVuLD3e",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Quivers allow you to store your arrows and reach them quickly when needed. A quiver can hold 20 arrows. If a quiver is filled with 10 or less arrows, they will rattle around inside the quiver. If you have a noisy quiver, Sneaking checks that require you to move silently will have a -1d penalty.</p>",
     "quantity": 1,

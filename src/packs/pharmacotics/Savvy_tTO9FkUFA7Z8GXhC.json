@@ -2,7 +2,7 @@
   "name": "Savvy",
   "type": "gear",
   "_id": "tTO9FkUFA7Z8GXhC",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Savvy greatly increase the character’s mental acuity and capacity for 1 hour. He gains a +2d bonus on any Engineering, Intuition, Knowledge, or Speech skill check. When it wears off, it will leave him dumber than he was before, resulting in a -2d penalty to the same skills for 1 Quarter.</p>",
     "quantity": 1,

@@ -2,7 +2,7 @@
   "name": "Oil",
   "type": "cargo",
   "_id": "lPLydiNyhHpdfPr3",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/cargo-icon.svg",
   "system": {
     "description": "<p>Unprocessed crude, machine and gun oils, and even demon oil. Anywhere that has any form of functional industry will have use for oil.</p>",
     "price": 600,

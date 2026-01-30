@@ -2,7 +2,7 @@
   "name": "Semi-auto Shotgun",
   "type": "weapon",
   "_id": "c1pj44IyhBPsg12G",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Semi-automatic shotguns are most effective when used at short to medium ranges. They have a 4 round internal magazine. Rounds must be fed into the magazine by hand, one at a time. A single round can be loaded for a Maneuver, in place of reloading the entire magazine.</p>",
     "quantity": 1,

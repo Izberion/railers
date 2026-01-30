@@ -2,7 +2,7 @@
   "name": "Goat's Eyes",
   "type": "mutation",
   "_id": "Xwcl13mApovWwk2L",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s eyes have changed to resemble those of a goat. The pupils have turned horizontally. He gains 1 rank in Perception.</p>"
   },

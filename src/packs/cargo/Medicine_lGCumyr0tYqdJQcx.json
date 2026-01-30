@@ -2,7 +2,7 @@
   "name": "Medicine",
   "type": "cargo",
   "_id": "lGCumyr0tYqdJQcx",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/cargo-icon.svg",
   "system": {
     "description": "<p>This mostly consists of general medical supplies, tools, and painkillers. Actual medications and pharmacotics are unlikely to be available in large quantities suitable as freight.</p>",
     "price": 1200,

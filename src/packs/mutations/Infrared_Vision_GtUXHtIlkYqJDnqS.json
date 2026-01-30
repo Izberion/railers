@@ -2,7 +2,7 @@
   "name": "Infrared Vision",
   "type": "mutation",
   "_id": "GtUXHtIlkYqJDnqS",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character can see infrared radiation, allowing him to see in the dark well enough to eliminate any penalties.</p>"
   },

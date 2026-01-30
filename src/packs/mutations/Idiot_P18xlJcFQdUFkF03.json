@@ -2,7 +2,7 @@
   "name": "Idiot",
   "type": "mutation",
   "_id": "P18xlJcFQdUFkF03",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character isn’t the sharpest tool in the shed. His Education and Engineering ranks permanently drop to 1. All Education and Engineering skills permanently drop to 1. He no longer gains XP from negative rolls for these skills or attributes.</p>"
   },

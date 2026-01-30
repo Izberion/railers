@@ -2,7 +2,7 @@
   "name": "Bayonet",
   "type": "weapon",
   "_id": "CAFnvFF7oCJdgbAT",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Bayonets attach to the end of any long gun barrel, allowing you the choice of skewering or shooting your target. You can use a Maneuver to fix a bayonet to your long gun, which will give you access to the Bayonet Charge action.</p>",
     "quantity": 1,

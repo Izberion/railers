@@ -2,7 +2,7 @@
   "name": "Firearms",
   "type": "cargo",
   "_id": "4OGpardaN35Gbukh",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/cargo-icon.svg",
   "system": {
     "description": "<p>Simply, guns. As dangerous as the Snowlands can be, even makeshift firearms are better than nothing.</p>",
     "price": 2500,

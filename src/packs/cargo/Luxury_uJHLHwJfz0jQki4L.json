@@ -2,7 +2,7 @@
   "name": "Luxury",
   "type": "cargo",
   "_id": "uJHLHwJfz0jQki4L",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/cargo-icon.svg",
   "system": {
     "description": "<p>The train isn’t the only thing that uses cryosene in the Snowlands. Any machine or piece of equipment that burns liquid fuel will be able to burn cryosene with minor tweaks, if any at all.</p>",
     "price": 3000,

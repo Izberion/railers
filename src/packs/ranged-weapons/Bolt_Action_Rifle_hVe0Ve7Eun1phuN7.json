@@ -2,7 +2,7 @@
   "name": "Bolt-Action Rifle",
   "type": "weapon",
   "_id": "hVe0Ve7Eun1phuN7",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Automatic rifles aren’t as powerful as other rifles, but have a high rate of fire. They are automatic firearms and come with a 20 round detachable magazine.</p>",
     "quantity": 1,

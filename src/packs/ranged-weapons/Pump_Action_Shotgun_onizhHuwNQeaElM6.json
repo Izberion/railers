@@ -2,7 +2,7 @@
   "name": "Pump-Action Shotgun",
   "type": "weapon",
   "_id": "onizhHuwNQeaElM6",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Pump-action shotguns are the classic shotgun.  These have a 6 round internal magazine. Rounds must be fed into the magazine by hand, one at a time. A single round can be loaded for a Maneuver, in place of reloading the entire magazine.</p>",
     "quantity": 1,

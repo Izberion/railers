@@ -2,7 +2,7 @@
   "name": "Truce",
   "type": "gear",
   "_id": "S7GmzaupMY8wRtOF",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Truce greatly increases the amount of time the character has to receive medical attention while Dying. While under its effects, the Dying character does not have to roll to stay alive for 2 Rounds after administration. Once its effects expire, the character must resume his rolls, though they will now have a -2d penalty. It can be re-administered if required, but becomes toxic after 6 doses. Any further doses will kill the character.</p>",
     "quantity": 1,

@@ -2,7 +2,7 @@
   "name": "Trench Gun",
   "type": "weapon",
   "_id": "wokrrsmQvb2KY9ZB",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Trench guns are short-barreled shotguns that can be slam fired. They are exceptionally deadly in close quarters and can be fired in melee range with a -2d penalty. They have a 6 round internal magazine that must be fed by hand, one at a time. A single round can be loaded for a Maneuver, in place of reloading the entire magazine.</p>",
     "quantity": 1,

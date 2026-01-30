@@ -2,7 +2,7 @@
   "name": "Fine Clothing",
   "type": "clothing",
   "_id": "wJ0cWlqbl47KfuCB",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/shirt-icon.svg",
   "system": {
     "description": "<p>Fine clothing allows you to fit in with those “high society” type crowds, as well as giving you a +1d bonus to all Speech skill checks when interacting with people who respect wealth or finery. You can only get the bonus if you have taken off any other layers.</p>",
     "quantity": 1,

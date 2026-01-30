@@ -2,7 +2,7 @@
   "name": "Bioluminescence",
   "type": "mutation",
   "_id": "gBr3JrKhh7iSeHGj",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character glows faintly. The source can be his entire skin or from new external organs that generate the light. He does not have increased difficulty for actions taken in dark spaces as long as the action is not performed at a distance. When defending against attacks in a dark zone, he does not get any bonus and those attacking him only have a -1d penalty.</p>"
   },

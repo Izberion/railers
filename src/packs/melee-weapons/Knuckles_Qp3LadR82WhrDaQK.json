@@ -2,7 +2,7 @@
   "name": "Knuckles",
   "type": "weapon",
   "_id": "Qp3LadR82WhrDaQK",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Knuckles are easy to hide and put a little more oomph in your fists. Whenever making a Concealment check to hide knuckles, take a +1d bonus to the roll.</p>",
     "quantity": 1,

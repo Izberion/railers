@@ -2,7 +2,7 @@
   "name": "Cold Resistance",
   "type": "mutation",
   "_id": "Ir6ZQJbkXe8sGDN2",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character has become naturally resistant to the cold. He now has a base Thermal Threshold of -10°F, even while naked. He is able to swim in frigid water without developing hypothermia.</p>"
   },

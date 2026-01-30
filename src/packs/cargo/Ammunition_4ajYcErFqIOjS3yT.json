@@ -2,7 +2,7 @@
   "name": "Ammunition",
   "type": "cargo",
   "_id": "4ajYcErFqIOjS3yT",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/cargo-icon.svg",
   "system": {
     "description": "<p>Any form of ammo, whether it be bullets, slugs, shells, or anything else someone can propel at speed.</p>",
     "price": 400,

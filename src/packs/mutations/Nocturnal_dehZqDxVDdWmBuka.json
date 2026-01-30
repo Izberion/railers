@@ -2,7 +2,7 @@
   "name": "Nocturnal",
   "type": "mutation",
   "_id": "dehZqDxVDdWmBuka",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character is nocturnal, sleeping during the daylight hours and active most during the night.</p>"
   },

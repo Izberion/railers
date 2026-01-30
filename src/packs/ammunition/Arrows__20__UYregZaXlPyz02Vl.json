@@ -2,7 +2,7 @@
   "name": "Arrows (20)",
   "type": "gear",
   "_id": "UYregZaXlPyz02Vl",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Arrows can only be used with a bow and can be tipped with either sharp or blunt heads. The listed range and damage assume sharp arrows are being used. Blunt heads inflict W1 Wounds and reduce range to Medium. Any attack is made using a sharp arrow unless stated otherwise prior to attacking. You don't need to track how many sharp versus blunt arrows you have, they're the same item. Arrows come in bundles of 20.</p>",
     "quantity": 1,

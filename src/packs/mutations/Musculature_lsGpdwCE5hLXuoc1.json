@@ -2,7 +2,7 @@
   "name": "Musculature",
   "type": "mutation",
   "_id": "lsGpdwCE5hLXuoc1",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s muscle mass has grown massively, making him look like a professional bodybuilder. His Prowess modifier permanently increases by +1 and his Melee rank permanently increase by 2.</p>"
   },

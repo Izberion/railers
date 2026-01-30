@@ -2,7 +2,7 @@
   "name": "Snout",
   "type": "mutation",
   "_id": "UbDMSSlf2eM1pPjB",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character has grown a snout, whether it be canine, feline, porcine, or otherwise in nature.</p>"
   },

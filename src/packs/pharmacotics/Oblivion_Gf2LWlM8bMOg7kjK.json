@@ -2,7 +2,7 @@
   "name": "Oblivion",
   "type": "gear",
   "_id": "Gf2LWlM8bMOg7kjK",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Oblivion will cause the character to fall Unconscious after a few moments. The effects last for 1 Quarter and the character cannot be awoken until the pharmacotic runs its course or Red Eye is administered.</p>",
     "quantity": 1,

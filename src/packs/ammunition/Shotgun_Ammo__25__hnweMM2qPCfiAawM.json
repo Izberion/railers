@@ -2,7 +2,7 @@
   "name": "Shotgun Ammo (25)",
   "type": "gear",
   "_id": "hnweMM2qPCfiAawM",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Shotgun ammo is usable in any shotgun. It’s divided up between slugs and shot. The listed range and damage for a particular shotgun assumes slugs are being used. Shot does 2 less damage than listed and reduces weapon range to Short. Shot also has spread, potentially hitting multiple targets. Anyone adjacent to the intended target must make a defense roll with a +2d bonus vs the initial attack roll. These extra attacks cannot Critically Succeed or Critically Fail. Any attack is made using slugs unless stated otherwise prior to attacking. You don’t need to track how many slugs versus shot you have, they’re the same item. Shotgun ammo comes in boxes of 25.</p>",
     "quantity": 1,

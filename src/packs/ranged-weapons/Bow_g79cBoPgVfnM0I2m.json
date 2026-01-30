@@ -2,7 +2,7 @@
   "name": "Bow",
   "type": "weapon",
   "_id": "g79cBoPgVfnM0I2m",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Bows, while primitive, remain effective. If you make an attack with a bow while Hidden, you will not be revealed immediately, as long as you aren't standing out in the open. Enemies that saw the arrow hit will get to make an immediate contested Perception check to locate you.</p>",
     "quantity": 1,

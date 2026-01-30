@@ -2,7 +2,7 @@
   "name": "Strong Back",
   "type": "mutation",
   "_id": "bE4Slx2wtx3V2Hvy",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character can carry many times his own weight. His Load Limit is doubled.</p>"
   },

@@ -2,7 +2,7 @@
   "name": "Semi-auto Rifle",
   "type": "weapon",
   "_id": "tYmyzj35lqfCvpkx",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Semi-automatic rifles have all around decent range, fire-rate, and stopping power, all while being quick to reload. They come with a 10 round detachable magazine.</p>",
     "quantity": 1,

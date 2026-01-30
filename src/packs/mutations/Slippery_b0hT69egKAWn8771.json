@@ -2,7 +2,7 @@
   "name": "Slippery",
   "type": "mutation",
   "_id": "b0hT69egKAWn8771",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s skin is covered in an oily substance. The difficulty to grab, grapple, restrain, or otherwise manhandle him is increased by 1, to a maximum of TN 8. He gains a +2d bonus when attempting to escape any restraint.</p>"
   },

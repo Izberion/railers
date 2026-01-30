@@ -2,7 +2,7 @@
   "name": "Crossbow Bolts (20)",
   "type": "gear",
   "_id": "3jFoo4uf3wBfQ1O9",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Crossbow bolts are similar to arrows, but can only be fired from a crossbow. Bolts can be tipped with either sharp or blunt heads. The listed range and damage assume sharp bolts are being used. Blunt heads inflict W1 Wounds and reduce rance to Medium. Any attack is made using a sharp bolts unless stated otherwise prior to attacking. You don't need to track how many sharp versus blunt bolts you have, they're the same item. Bolts come in bundles of 20.</p>",
     "quantity": 1,

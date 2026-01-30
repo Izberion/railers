@@ -2,7 +2,7 @@
   "name": "Lounge",
   "type": "car",
   "_id": "YMyLzSYj4SdzF4FY",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/car-icon.svg",
   "system": {
     "description": "<p>Lounge cars are for those occasions when the crew has finer guests along for the ride and want or need to keep them happy, hopefully for some kind of compensation. It features a bar and small cafe. Any passenger utilizing the lounge car will consume double rations each day. There is a small kitchen onboard for the cafe. It shares its ration supply with the train’s primary supply.</p>",
     "type": "",

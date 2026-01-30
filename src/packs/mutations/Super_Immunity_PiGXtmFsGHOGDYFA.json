@@ -2,7 +2,7 @@
   "name": "Super Immunity",
   "type": "mutation",
   "_id": "PiGXtmFsGHOGDYFA",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character has developed an immune system powerful enough to keep him safe from any disease.</p>"
   },

@@ -2,7 +2,7 @@
   "name": "Feathers",
   "type": "mutation",
   "_id": "WffafTAICO9HwVxt",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character has grown plumage all over his body. It may come in a variety of colors and types.</p>"
   },

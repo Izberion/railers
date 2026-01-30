@@ -2,7 +2,7 @@
   "name": "Moxie",
   "type": "gear",
   "_id": "5uvtcCU5j0K6hQZT",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Moxie fills the character with confidence and recovers half his missing Nerve, rounded down. He is also much more willing to take risks, recklessly so.</p>",
     "quantity": 1,

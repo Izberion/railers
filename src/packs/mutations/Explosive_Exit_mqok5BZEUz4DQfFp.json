@@ -2,7 +2,7 @@
   "name": "Explosive Exit",
   "type": "mutation",
   "_id": "mqok5BZEUz4DQfFp",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character is a time bomb waiting to go off. Treat his body as dynamite or grenade (pg. 72). Acid is thrown across the zone he was occupying, coating everyone who was hit by the explosion. Anyone outside of the initial burst radius but within the zone must make a Prowess saving throw or be coated. The acid inflicts 5/W3 at the beginning of each of the affected characters’ turns until a Full action can be spent removing the acid. If the corrupted character also has the Acidic Blood mutation, the Wound increases to 7/W5. If he has the Lots of Blood mutation, the range is increased to include all adjacent zones, assuming there is no physical obstruction that would block the acid.</p>"
   },

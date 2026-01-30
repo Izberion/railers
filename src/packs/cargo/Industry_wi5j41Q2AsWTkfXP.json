@@ -2,7 +2,7 @@
   "name": "Industry",
   "type": "cargo",
   "_id": "wi5j41Q2AsWTkfXP",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/cargo-icon.svg",
   "system": {
     "description": "<p>Spare parts, industrial components, building materials, and any number of bits and pieces used in machinery or electrical devices.</p>",
     "price": 1500,

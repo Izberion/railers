@@ -2,7 +2,7 @@
   "name": "Newt Limbs",
   "type": "mutation",
   "_id": "K36oIw0VGwbraPUt",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character can easily detach any of his limbs. The limbs will regrow within a week unless he is Starving, then they will not regrow. He has a -1d penalty to Exertion checks and loses 2 Load Limit.</p>"
   },

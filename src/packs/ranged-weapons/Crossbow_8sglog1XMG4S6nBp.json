@@ -2,7 +2,7 @@
   "name": "Crossbow",
   "type": "weapon",
   "_id": "8sglog1XMG4S6nBp",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Crossbows, though dated, are very lethal. If you make an attack with a crossbow while Hidden, you will not be revealed immediately, as long as you aren't standing out in the open. Enemies that saw the bolt hit will get to make an immediate contested Perception check to locate you. Crossbows have a small horizontal quiver attached to the bottom that can hold 10 bolts.</p>",
     "quantity": 1,

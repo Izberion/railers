@@ -2,7 +2,7 @@
   "name": "Compromised",
   "type": "mutation",
   "_id": "BDL4akYtjCz5PWYA",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s immune system functions poorly. Any time he must make a roll to resist a disease or its effects, apply a -2d penalty.</p>"
   },

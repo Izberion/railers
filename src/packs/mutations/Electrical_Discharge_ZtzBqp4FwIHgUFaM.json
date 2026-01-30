@@ -2,7 +2,7 @@
   "name": "Electrical Discharge",
   "type": "mutation",
   "_id": "ZtzBqp4FwIHgUFaM",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character is able to release an electrical current in at a very limited range at will. Whenever the target of a melee attack, hit or miss, the attacker must make an Endurance save or take 6/W2. The same applies to anyone that attempts to grab, grapple, restrain, or otherwise manhandle him.</p>"
   },

@@ -2,7 +2,7 @@
   "name": "Atlas",
   "type": "gear",
   "_id": "gykuTIStauFuLQSv",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Atlas greatly increases the character’s strength and endurance. The severity of any Wounds he inflicts with melee attacks are increased by 2. He gains +2d on Exertion checks and Endurance and Prowess saving throws. The effects last for 1 hour, leaving the character Exhausted once they wear off.</p>",
     "quantity": 1,

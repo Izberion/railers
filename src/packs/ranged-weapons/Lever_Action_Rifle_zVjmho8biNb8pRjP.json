@@ -2,7 +2,7 @@
   "name": "Lever-Action Rifle",
   "type": "weapon",
   "_id": "zVjmho8biNb8pRjP",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Lever-action rifles have decent range, accuracy, and fire rate, even with a manual action. They have an 8 round internal tube magazine that must be loaded one bullet at a time. A single round can be loaded for a Maneuver, in place of reloading the entire magazine.</p>",
     "quantity": 1,

@@ -2,7 +2,7 @@
   "name": "Handgun Ammo (50)",
   "type": "gear",
   "_id": "KoWMmpc3uKmIvmTc",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Handgun ammo is usable in any handgun, as well as submachine guns. Handgun ammo comes in boxes of 50.</p>",
     "quantity": 1,

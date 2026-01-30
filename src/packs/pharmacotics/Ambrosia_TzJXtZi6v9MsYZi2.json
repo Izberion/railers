@@ -2,7 +2,7 @@
   "name": "Ambrosia",
   "type": "gear",
   "_id": "TzJXtZi6v9MsYZi2",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Ambrosia makes the character feel great and completely recovers all his missing Nerve. It is also extremely addictive. After even a single dose, the character must make a TN 7 Resolve save or become Addicted. Once Addicted, he will require at least 1 dose every day else begin Withdrawing.</p>",
     "quantity": 1,

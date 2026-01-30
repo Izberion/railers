@@ -2,7 +2,7 @@
   "name": "Cyclopean",
   "type": "mutation",
   "_id": "HixKT6vDwngyk2fS",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s eyes merge into a large, singular eye. The character takes a -1d penalty to all perception checks requiring sight, but actions performed in the dark only have a -1d penalty.</p>"
   },

@@ -2,7 +2,7 @@
   "name": "Gills",
   "type": "mutation",
   "_id": "SwE504ZMtoivNZIj",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character develops gills on his torso or neck. They do not replace his lungs, making the character amphibious.</p>"
   },

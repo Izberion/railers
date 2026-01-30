@@ -2,7 +2,7 @@
   "name": "Coach Passenger",
   "type": "car",
   "_id": "chkkuAABNtlH9lhP",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/car-icon.svg",
   "system": {
     "description": "<p>Coach passenger cars feature two by two rows of seating with a center passageway dividing them. They can seat much more than a sleeper, and while they can be used to sleep in, upright is not a terribly comfortable position for long periods of time. If push comes to shove, you can sleep 72 souls in this car.</p>",
     "type": "",

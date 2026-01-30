@@ -2,7 +2,7 @@
   "name": "Fur Coat",
   "type": "clothing",
   "_id": "A8WjX3w5PiR8Y3s8",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/coat-icon.svg",
   "system": {
     "description": "<p>Fur coats, while likely not the best for exploring the Snowlands, will still keep you warm. They’re also long and bulky enough to make hiding weapons a little easier. While wearing a fur coat, whenever attempting to conceal something load 1 or less inside the coat that would be plausible to conceal, add +1d to the Concealment check.</p>",
     "quantity": 1,

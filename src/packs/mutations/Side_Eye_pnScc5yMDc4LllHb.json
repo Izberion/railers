@@ -2,7 +2,7 @@
   "name": "Side Eye",
   "type": "mutation",
   "_id": "pnScc5yMDc4LllHb",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s eyes move to the side of his head. Both eyes can move independently, like a chameleon’s. Gain a +1d bonus on Perception checks when sight is the primary factor.</p>"
   },

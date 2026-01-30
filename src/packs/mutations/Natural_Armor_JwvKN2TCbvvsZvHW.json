@@ -2,7 +2,7 @@
   "name": "Natural Armor",
   "type": "mutation",
   "_id": "JwvKN2TCbvvsZvHW",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character has developed some form of natural armor, whether it be external or subdermal. The armor provides 2 Protection.</p>"
   },

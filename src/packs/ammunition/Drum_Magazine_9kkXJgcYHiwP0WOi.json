@@ -2,7 +2,7 @@
   "name": "Drum Magazine",
   "type": "gear",
   "_id": "9kkXJgcYHiwP0WOi",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Drum magazines hold much more ammunition than any other magazine can fit. Reloading a drum magazine is slower than box magazines, and will require a Major action instead of the typical Minor action to reload a prepared magazine. A given magazine will work on any weapon that can use them, no matter the actual dimensions or magazine size required. The magazine’s capacity is equal to 3 times the base ammo capacity of the gun it is being used with. Magazines do not take up Load when loaded into a firearm.</p>",
     "quantity": 1,

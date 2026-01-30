@@ -2,7 +2,7 @@
   "name": "Hellfire",
   "type": "gear",
   "_id": "m23Be0KlD22vDjUq",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Hellfire will induce intense, whole body pain for short periods of time, typically a couple of minutes, without causing actual physical harm. Anyone under the effects of Hellfire will have a -3d penalty to all rolls.</p>",
     "quantity": 1,

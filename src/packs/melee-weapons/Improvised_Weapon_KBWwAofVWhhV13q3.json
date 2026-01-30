@@ -2,7 +2,7 @@
   "name": "Improvised Weapon",
   "type": "weapon",
   "_id": "KBWwAofVWhhV13q3",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Improvised weapons are any and all things that can be used to slice, stab, or bludgeon someone, though were not designed with that intent in mind. Attack rolls made with improvised weapons have a -2d penalty.</p>",
     "quantity": 1,

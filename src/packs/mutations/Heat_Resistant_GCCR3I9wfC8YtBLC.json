@@ -2,7 +2,7 @@
   "name": "Heat Resistant",
   "type": "mutation",
   "_id": "GCCR3I9wfC8YtBLC",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character can roll an Endurance save each time he would take damage from Burning. On a Success, no Wound is taken. On a Failure, he takes the Wound, but the damage and severity are halved, rounded up.</p>"
   },

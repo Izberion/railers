@@ -2,7 +2,7 @@
   "name": "Armored Jacket",
   "type": "clothing",
   "_id": "3EGOdvJwKhakipZ7",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/coat-icon.svg",
   "system": {
     "description": "<p>Armored jackets are for those people who can’t get enough armor between them and all the dangers of the Snowlands. At the cost of a heavier Load, they provide additional Protection with a moderate sacrifice to Insulation.</p>",
     "quantity": 1,

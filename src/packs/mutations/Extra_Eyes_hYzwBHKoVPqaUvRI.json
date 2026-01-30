@@ -2,7 +2,7 @@
   "name": "Extra Eyes",
   "type": "mutation",
   "_id": "hYzwBHKoVPqaUvRI",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character gains an extra set of eyes somewhere on his face. He has a +1d bonus to Perception checks where sight is the primary factor.</p>"
   },

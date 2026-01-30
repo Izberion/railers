@@ -2,7 +2,7 @@
   "name": "Hunger",
   "type": "mutation",
   "_id": "wlbetoSTTw4KoY3q",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character is constantly ravenously hungry, requiring more food to satisfy him. He must consume 3 food rations per day or else begin Starving.</p>"
   },

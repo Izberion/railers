@@ -2,7 +2,7 @@
   "name": "Prehensile Tongue",
   "type": "mutation",
   "_id": "Q7RIQWAkJbqT4ThL",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s tongue can function as an extra limb, though it lacks the dexterity to perform complex tasks. The tongue can coil up in his mouth, which will not interfere with speech.</p>"
   },

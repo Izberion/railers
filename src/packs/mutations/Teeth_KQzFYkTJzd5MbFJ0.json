@@ -2,7 +2,7 @@
   "name": "Teeth",
   "type": "mutation",
   "_id": "KQzFYkTJzd5MbFJ0",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s teeth have have changed, becoming more animal, or at least less human. They could be anything from fangs to shark’s teeth to a mouth full of metal to anything in between. He gains a natural weapon that deals 5/W4.</p>"
   },

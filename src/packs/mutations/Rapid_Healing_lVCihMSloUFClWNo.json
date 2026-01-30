@@ -2,7 +2,7 @@
   "name": "Rapid Healing",
   "type": "mutation",
   "_id": "lVCihMSloUFClWNo",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s Wounds heal quickly. Whenever he recovers Hitpoints, he gains double the normal amount.</p>"
   },

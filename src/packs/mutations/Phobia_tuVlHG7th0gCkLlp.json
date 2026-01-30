@@ -2,7 +2,7 @@
   "name": "Phobia",
   "type": "mutation",
   "_id": "tuVlHG7th0gCkLlp",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character has developed some type of fear. The source of that fear has an effective Fear rank of 6. When in the presence of his phobia, he must make a Resolve save or lose Nerve.</p>"
   },

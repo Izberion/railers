@@ -2,7 +2,7 @@
   "name": "Rebirth",
   "type": "mutation",
   "_id": "OKtHdVCSbnQkfiP8",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character gains the Undead ability of a Ghoul, as described on page 99. Wounds recover as normal if he does not drop to 0 Hitpoints.</p>"
   },

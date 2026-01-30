@@ -2,7 +2,7 @@
   "name": "Dynamite",
   "type": "weapon",
   "_id": "Gz855fF6XFJ1Lq6I",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Dynamite can be used as a deconstruction tool or a weapon, both with great effect. Dynamite attacks rely on fictional positioning. If there is anyone nearby to a target of an attack, they must also make a defense roll, but with a +1d bonus. The same applies to anyone within melee range of the target, friend or foe. If you only intend to light the fuse, that requires a Maneuver rather than a Minor action to attack.</p>",
     "quantity": 1,

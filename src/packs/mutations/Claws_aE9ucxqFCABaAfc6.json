@@ -2,7 +2,7 @@
   "name": "Claws",
   "type": "mutation",
   "_id": "aE9ucxqFCABaAfc6",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s finger and toenails have been hardening, developing into claws. He gains a natural weapon that deals 6/W4.</p>"
   },

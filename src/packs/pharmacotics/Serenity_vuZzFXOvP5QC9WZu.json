@@ -2,7 +2,7 @@
   "name": "Serenity",
   "type": "gear",
   "_id": "vuZzFXOvP5QC9WZu",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Serenity eases the character’s sense of fear. Under its effects, he cannot lose Nerve. This also slows his reaction time. Any physical action has a -2d penalty on the check. They are highly addictive and tend to be psychoactive. After taking a dose, the character must make a TN 6 Resolve save or become Addicted. Once Addicted, he will require at least 1 dose every week else begin Withdrawing.</p>",
     "quantity": 1,

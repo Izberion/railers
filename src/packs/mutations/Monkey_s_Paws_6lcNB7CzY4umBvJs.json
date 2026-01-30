@@ -2,7 +2,7 @@
   "name": "Monkey's Paws",
   "type": "mutation",
   "_id": "6lcNB7CzY4umBvJs",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s feet become something similar to a monkey’s and can be used as an extra pair of hands.</p>"
   },

@@ -2,7 +2,7 @@
   "name": "Scrap Armor",
   "type": "clothing",
   "_id": "FB7womxM8FJz04mw",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/armor-icon.svg",
   "system": {
     "description": "<p>Scrap armor consists of a bunch of scrap wood and metal attached to a set of cheap clothing. While it doesn't provide much defense from the elements or attacks, it's definitely the cheapest solution and better than nothing.</p>",
     "quantity": 1,

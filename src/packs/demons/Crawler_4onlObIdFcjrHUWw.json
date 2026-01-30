@@ -126,7 +126,7 @@
         "action": "major"
       },
       "_id": "Zqg4eE6WqLFPCN27",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!4onlObIdFcjrHUWw.Zqg4eE6WqLFPCN27"
     },
     {
@@ -137,7 +137,7 @@
         "action": "full"
       },
       "_id": "pxs6zaY3wfZDkIdm",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!4onlObIdFcjrHUWw.pxs6zaY3wfZDkIdm"
     },
     {
@@ -148,7 +148,7 @@
         "action": "minor"
       },
       "_id": "1Ak340jcRoiIGVsQ",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!4onlObIdFcjrHUWw.1Ak340jcRoiIGVsQ"
     }
   ],

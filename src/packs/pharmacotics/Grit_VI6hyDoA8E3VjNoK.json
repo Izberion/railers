@@ -2,7 +2,7 @@
   "name": "Grit",
   "type": "gear",
   "_id": "VI6hyDoA8E3VjNoK",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Grit will block the character from experiencing pain. The character gains his maximum Hitpoint total as temporary Hitpoints. After 10 minutes the effects wear off and the temporary Hitpoints are removed. Any Wounds will remain, causing the character to begin Dying if over his Wound threshold and below 0 Hitpoints. Any attempts to stabilize him will be at a -2d penalty.</p>",
     "quantity": 1,

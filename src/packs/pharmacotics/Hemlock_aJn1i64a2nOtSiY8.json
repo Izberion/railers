@@ -2,7 +2,7 @@
   "name": "Hemlock",
   "type": "gear",
   "_id": "aJn1i64a2nOtSiY8",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Hemlock causes the character to become Poisoned. The poison deals 10/W12. The character taking the dose can roll an Endurance save to resist the effects. The poison is fast acting and only inflicts a single Wound. Additional doses reduce the Wound inflicted by 2 damage and severity for as long as any other Wounds remain.</p>",
     "quantity": 1,

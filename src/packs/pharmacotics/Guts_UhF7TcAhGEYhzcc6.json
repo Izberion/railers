@@ -2,7 +2,7 @@
   "name": "Guts",
   "type": "gear",
   "_id": "UhF7TcAhGEYhzcc6",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Guts removes the character’s sense of fear entirely, filling him with a confidence bordering on rage. He will be unaffected by any demon’s Fear effects but may have difficulty telling friend from foe. In combat, the character must succeed on a TN 5 Resolve save to choose his target and not just attack the closest one.</p>",
     "quantity": 1,

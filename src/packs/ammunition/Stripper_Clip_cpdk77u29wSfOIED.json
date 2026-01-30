@@ -2,7 +2,7 @@
   "name": "Stripper Clip",
   "type": "gear",
   "_id": "cpdk77u29wSfOIED",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Stripper clips, or just clips, are used exclusively by bolt-action rifles. They can hold a full magazine worth of ammunition. The clip fills the magazine all at once, allowing for much faster reloading compared to other weapons with internal magazines. When the gun fires the last bullet, the clip is ejected, allowing you to add a fresh clip without having to remove the previous one. Clips do not take up Load when loaded into a firearm.</p>",
     "quantity": 1,

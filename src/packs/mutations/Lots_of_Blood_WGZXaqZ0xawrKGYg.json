@@ -2,7 +2,7 @@
   "name": "Lots of Blood",
   "type": "mutation",
   "_id": "WGZXaqZ0xawrKGYg",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character generates much more blood than normal. When the character takes a W4 or greater Wound, he bleeds an almost comical amount.</p>"
   },

@@ -2,7 +2,7 @@
   "name": "Grenade",
   "type": "weapon",
   "_id": "Kpvfs1JBoJXbXqQq",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Grenades are a highly destructive force in a tiny package, able to shred apart anyone it lands near. Grenade attacks function just like dynamite attacks. If you only intend to pull the pin, that requires a Maneuver rather than a Minor action to attack.</p>",
     "quantity": 1,

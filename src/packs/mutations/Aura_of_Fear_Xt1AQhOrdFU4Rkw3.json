@@ -2,7 +2,7 @@
   "name": "Aura of Fear",
   "type": "mutation",
   "_id": "Xt1AQhOrdFU4Rkw3",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character now has a Fear stat. It begins at 5 but can be increased by spending XP on it. Like skills, it costs the new rank + 2. Characters can become permanently immune to this Fear effect after 3 consecutive successful Resolve saving throws.</p>"
   },

@@ -2,7 +2,7 @@
   "name": "Mandibles",
   "type": "mutation",
   "_id": "e6mSZGFZr7GDVj6u",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character grows crushing mandibles on either side of his mouth. The character gains a natural weapon that deals 5/W4.</p>"
   },

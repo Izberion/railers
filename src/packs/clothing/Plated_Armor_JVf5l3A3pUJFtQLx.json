@@ -2,7 +2,7 @@
   "name": "Plated Armor",
   "type": "clothing",
   "_id": "JVf5l3A3pUJFtQLx",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/armor-icon.svg",
   "system": {
     "description": "<p>Plated armor consists of overlapping metal plates worn as a vest. While pretty heavy and not warm at all, it provides plenty of Protection, potentially stopping bullets and blades alike. The severity of Wounds inflicted by firearms and piercing projectiles are reduced by 1, to a minimum of 1.</p>",
     "quantity": 1,

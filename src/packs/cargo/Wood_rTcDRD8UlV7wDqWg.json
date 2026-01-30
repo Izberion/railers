@@ -2,7 +2,7 @@
   "name": "Wood",
   "type": "cargo",
   "_id": "rTcDRD8UlV7wDqWg",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/cargo-icon.svg",
   "system": {
     "description": "<p>Wood that isn’t made useless by Corruption, weather, or time can be difficult to find, making it more precious than its previous abundance had it.</p>",
     "price": 100,

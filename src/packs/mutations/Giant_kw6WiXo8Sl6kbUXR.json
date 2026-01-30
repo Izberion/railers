@@ -2,7 +2,7 @@
   "name": "Giant",
   "type": "mutation",
   "_id": "kw6WiXo8Sl6kbUXR",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character grows in size, scaling up to stand about 10 feet tall with an equivalent wingspan. He is now considered Large, whereas a normal person is Medium, according to demon sizing on page 94. If the character has the Dwarf mutation, he returns to normal size.</p>"
   },

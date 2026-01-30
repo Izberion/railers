@@ -2,7 +2,7 @@
   "name": "Photosensitivity",
   "type": "mutation",
   "_id": "2xtlLU3Ba1kjEnbN",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character is particularly sensitive to bright lights. Actions requiring sight have a -2d penalty when in bright light or full sun.</p>"
   },

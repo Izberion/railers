@@ -126,7 +126,7 @@
         "action": "passive"
       },
       "_id": "KTBqpndKmsMFr7VP",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!G8HxU4OwxXhagwZg.KTBqpndKmsMFr7VP"
     },
     {
@@ -137,7 +137,7 @@
         "action": "major"
       },
       "_id": "PO9t4fcBkQ6YafPD",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!G8HxU4OwxXhagwZg.PO9t4fcBkQ6YafPD"
     },
     {
@@ -148,7 +148,7 @@
         "action": "maneuver"
       },
       "_id": "ccfHxxoJZUa4DmtG",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!G8HxU4OwxXhagwZg.ccfHxxoJZUa4DmtG"
     },
     {
@@ -159,7 +159,7 @@
         "action": "full"
       },
       "_id": "VOzRuGKr64pIoaj3",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!G8HxU4OwxXhagwZg.VOzRuGKr64pIoaj3"
     }
   ],

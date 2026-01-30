@@ -2,7 +2,7 @@
   "name": "Ears",
   "type": "mutation",
   "_id": "t5F3HT9bmpDL9Hul",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s ears have changed in some way. They may be animal-like, changed in size, gone entirely, or otherwise.</p>"
   },

@@ -2,7 +2,7 @@
   "name": "Gorilla Arms",
   "type": "mutation",
   "_id": "rpxue7Qt1g3oNOQv",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s arms become huge. His knuckles now reach the ground. He gains +2d on Exertion rolls when upper body strength is the primary factor. When the character connects with a melee attack, the severity and damage of the inflicted Wound are increased by 2.</p>"
   },

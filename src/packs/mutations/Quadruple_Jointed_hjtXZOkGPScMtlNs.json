@@ -2,7 +2,7 @@
   "name": "Quadruple Jointed",
   "type": "mutation",
   "_id": "hjtXZOkGPScMtlNs",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character can bend his joints in any direction. He has a +2d bonus to escaping restraints or any other situation this may be handy.</p>"
   },

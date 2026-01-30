@@ -2,7 +2,7 @@
   "name": "Gorgeous",
   "type": "mutation",
   "_id": "mySJpjtd5MUM3Sgw",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character is beautiful in all the right ways and none of the wrong ones. He has +2d to any Speech skill checks.</p>"
   },

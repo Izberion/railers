@@ -2,7 +2,7 @@
   "name": "Uncanny Valley",
   "type": "mutation",
   "_id": "4MDGTTrcuCaSi4o9",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character has something about him that unnerves people when they look at his face. People tend to avoid him. If forced to interact, they will try to look at anything but his face.</p>"
   },

@@ -2,7 +2,7 @@
   "name": "Vigil",
   "type": "gear",
   "_id": "oE52EGxpfM62I7nO",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Vigil greatly increases the character’s reaction time, perception, and coordination for 1 hour. The character can take a free Major or Minor action every turn. He will gain a +2d bonus on any Combat, Prowess, or Stealth skill check. Due to the strain on the body, only a single dose is effective per day, assuming the character gets a good night’s sleep between doses.</p>",
     "quantity": 1,

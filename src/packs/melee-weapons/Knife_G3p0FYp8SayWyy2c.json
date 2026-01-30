@@ -2,7 +2,7 @@
   "name": "Knife",
   "type": "weapon",
   "_id": "G3p0FYp8SayWyy2c",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Knives are the utilitarian’s weapon of choice and can be used as a weapon or tool. They're small and easy to hide. Whenever making a Concealment check to hide a knife, take a +1d bonus to the roll.</p>",
     "quantity": 1,

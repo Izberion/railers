@@ -2,7 +2,7 @@
   "name": "Irregular Walk",
   "type": "mutation",
   "_id": "lz1d76cm8OzVLGdp",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s walk might be described as silly. The character gains a +2d bonus to defense rolls against Attacks of Opportunity. The character must spend a Minor action to use the Move action. Whenever making a check to navigate rough or difficult terrain, or making any Acrobatics check, the character has a -2d penalty.</p>"
   },

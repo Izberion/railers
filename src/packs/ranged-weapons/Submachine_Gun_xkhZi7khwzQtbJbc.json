@@ -2,7 +2,7 @@
   "name": "Submachine Gun",
   "type": "weapon",
   "_id": "xkhZi7khwzQtbJbc",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Submachine guns are light, easy to control, and have a great rate of fire. They are automatic firearms and have 20 round detachable magazines.</p>",
     "quantity": 1,

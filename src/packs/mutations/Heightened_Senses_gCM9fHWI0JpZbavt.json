@@ -2,7 +2,7 @@
   "name": "Heightened Senses",
   "type": "mutation",
   "_id": "gCM9fHWI0JpZbavt",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s senses have become exceptionally sharp. His Intuition modifier permanently increases by +2.</p>"
   },

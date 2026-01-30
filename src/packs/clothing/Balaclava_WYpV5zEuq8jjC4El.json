@@ -2,7 +2,7 @@
   "name": "Balaclava",
   "type": "clothing",
   "_id": "WYpV5zEuq8jjC4El",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/hat-icon.svg",
   "system": {
     "description": "<p>Balaclavas cover the entire head and face, providing decent Insulation. While they do obscure the identity of the people wearing them, they cannot be used with gas masks, unlike other headgear.</p>",
     "quantity": 1,

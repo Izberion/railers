@@ -2,7 +2,7 @@
   "name": "Wool Peacoat",
   "type": "clothing",
   "_id": "SektB9ksM5rRJJ5P",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/coat-icon.svg",
   "system": {
     "description": "<p>Wool peacoats are for the fashionable that require Insulation. Not everyone can be seen going about their daily business in bulky coats or parkas. And if one is ever invited to an outdoor party? Forget it. Similar to fine clothing, this provides a +1d bonus to all Speech skills when interacting with people who respect wealth or finery. This does not stack with fine clothing’s bonus.</p>",
     "quantity": 1,

@@ -2,7 +2,7 @@
   "name": "Sex Change",
   "type": "mutation",
   "_id": "0qEASGED75isAQiu",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s body swaps to the opposite gender.</p>"
   },

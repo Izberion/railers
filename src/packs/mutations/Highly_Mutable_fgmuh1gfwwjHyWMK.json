@@ -2,7 +2,7 @@
   "name": "Highly Mutable",
   "type": "mutation",
   "_id": "fgmuh1gfwwjHyWMK",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character is extremely susceptible to mutation. Whenever he rolls for mutations, beginning right now, roll for an additional mutation.</p>"
   },

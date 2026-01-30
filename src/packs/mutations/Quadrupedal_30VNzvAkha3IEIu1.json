@@ -2,7 +2,7 @@
   "name": "Quadrupedal",
   "type": "mutation",
   "_id": "30VNzvAkha3IEIu1",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s body has changed to allow him to walk on four limbs. He may still walk upright, but doing so is complicated and requires an occasional Acrobatics check to remain upright.</p>"
   },

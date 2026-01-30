@@ -126,7 +126,7 @@
         "action": "passive"
       },
       "_id": "FjYBhtLXNq8RuOxu",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!w51t80i1FMSG8X5s.FjYBhtLXNq8RuOxu"
     },
     {
@@ -137,7 +137,7 @@
         "action": "full"
       },
       "_id": "BiKB6CnSv53bhwzP",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!w51t80i1FMSG8X5s.BiKB6CnSv53bhwzP"
     }
   ],

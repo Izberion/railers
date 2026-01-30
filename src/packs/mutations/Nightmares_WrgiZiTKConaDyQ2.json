@@ -2,7 +2,7 @@
   "name": "Nightmares",
   "type": "mutation",
   "_id": "WrgiZiTKConaDyQ2",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character’s nights are full of terror. He no longer recovers Nerve from sleep.</p>"
   },

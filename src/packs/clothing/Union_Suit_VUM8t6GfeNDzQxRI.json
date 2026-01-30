@@ -2,7 +2,7 @@
   "name": "Union Suit",
   "type": "clothing",
   "_id": "VUM8t6GfeNDzQxRI",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/shirt-icon.svg",
   "system": {
     "description": "<p>Union suits are single-piece long underwear that cover the entire body. While good Insulation for cheap, it probably isn’t wise to wear just your union suit in polite society.</p>",
     "quantity": 1,

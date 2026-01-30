@@ -2,7 +2,7 @@
   "name": "Machine Gun",
   "type": "weapon",
   "_id": "Ai8Nf84JhIqHMbgJ",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Machine guns are the best way to throw tons of lead towards the enemy. They are very heavy and are simply too unwieldy to fire without deploying the tripod or firing from a mounted position. They are automatic firearms and use belts of heavy ammunition which can hold up to 250 rounds each.</p>",
     "quantity": 1,

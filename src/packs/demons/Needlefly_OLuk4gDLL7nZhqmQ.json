@@ -126,7 +126,7 @@
         "action": "passive"
       },
       "_id": "cKIUFU3oIRqArc0Z",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!OLuk4gDLL7nZhqmQ.cKIUFU3oIRqArc0Z"
     },
     {
@@ -137,7 +137,7 @@
         "action": "passive"
       },
       "_id": "a7XPOUjyCm4cnHEo",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!OLuk4gDLL7nZhqmQ.a7XPOUjyCm4cnHEo"
     },
     {
@@ -148,7 +148,7 @@
         "action": "major"
       },
       "_id": "jd1RPYb05BByuoHJ",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!OLuk4gDLL7nZhqmQ.jd1RPYb05BByuoHJ"
     },
     {
@@ -159,7 +159,7 @@
         "action": "full"
       },
       "_id": "R1kAXE3fwLEMnxyS",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!OLuk4gDLL7nZhqmQ.R1kAXE3fwLEMnxyS"
     }
   ],

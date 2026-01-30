@@ -2,7 +2,7 @@
   "name": "Elysium",
   "type": "gear",
   "_id": "IaE3sm5ybUwzNTfU",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/svg/pill.svg",
   "system": {
     "description": "<p>Elysium will remove the character’s inhibitions nearly completely. They are also mild sedatives, so they are typically used to aid in interrogation. A character under the effects of Elysium recovers 10 Nerve but must make a TN 6 Resolve check to refuse to perform an action or answer a question requested of him. This only applies to actions that are not obviously dangerous or against the character’s core beliefs. The effects last for 1 Quarter.</p>",
     "quantity": 1,

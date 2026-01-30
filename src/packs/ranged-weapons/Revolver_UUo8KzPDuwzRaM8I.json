@@ -2,7 +2,7 @@
   "name": "Revolver",
   "type": "weapon",
   "_id": "UUo8KzPDuwzRaM8I",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Revolvers have good damage but are limited by their slow reload speed and 6 round cylinder. Each round must be loaded by hand, one at a time.</p>",
     "quantity": 1,

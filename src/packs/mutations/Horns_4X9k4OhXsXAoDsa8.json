@@ -2,7 +2,7 @@
   "name": "Horns",
   "type": "mutation",
   "_id": "4X9k4OhXsXAoDsa8",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character has sprouted horns. They can be any conceivable form, natural or unnatural. He gains a natural melee weapon that deals 4/W3. Headgear must be modified to fit the horns.</p>"
   },

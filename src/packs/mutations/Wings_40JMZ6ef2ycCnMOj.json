@@ -2,7 +2,7 @@
   "name": "Wings",
   "type": "mutation",
   "_id": "40JMZ6ef2ycCnMOj",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character has grown wings and all they entail. The wings may look however you choose. He can now fly. It still takes a Maneuver to move from zone to zone, but he will be able to fly over most obstacles.</p>"
   },

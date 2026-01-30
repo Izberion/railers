@@ -2,7 +2,7 @@
   "name": "Cravings",
   "type": "mutation",
   "_id": "pKaCnO6XlCP1inM2",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character gets desperate cravings for flesh. The source doesn’t matter. When he smells or sees blood, he must make a TN 5 Resolve save or be forced to give in to the urge. Success deadens the cravings for a day.</p>"
   },

@@ -2,7 +2,7 @@
   "name": "Padded Armor",
   "type": "clothing",
   "_id": "weXQbLvUivJ5kATT",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/armor-icon.svg",
   "system": {
     "description": "<p>Padded armor consists of several layers of natural fabric and that's it. It offers some amount of Protection, while helping to keep your body warm at the same time.</p>",
     "quantity": 1,

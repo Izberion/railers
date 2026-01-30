@@ -126,7 +126,7 @@
         "action": "major"
       },
       "_id": "cePUfIPV1mODjiXA",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!l0ar2QpNViDFewbW.cePUfIPV1mODjiXA"
     },
     {
@@ -137,7 +137,7 @@
         "action": "maneuver"
       },
       "_id": "05FpvTHJNWwYvCOj",
-      "img": "icons/svg/item-bag.svg",
+      "img": "icons/svg/aura.svg",
       "_key": "!actors.items!l0ar2QpNViDFewbW.05FpvTHJNWwYvCOj"
     }
   ],

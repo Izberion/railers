@@ -2,7 +2,7 @@
   "name": "Raw Metals",
   "type": "cargo",
   "_id": "1Aj36zDghsRSeKvR",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/cargo-icon.svg",
   "system": {
     "description": "<p>Copper, brass, iron, steel, and other metals or alloys still have plenty of uses to the various communities of the Snowlands that can work them.</p>",
     "price": 1000,

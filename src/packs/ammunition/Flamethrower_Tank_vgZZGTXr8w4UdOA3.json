@@ -2,7 +2,7 @@
   "name": "Flamethrower Tank",
   "type": "gear",
   "_id": "vgZZGTXr8w4UdOA3",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Flamethrower tanks are usable only by flamethrowers. These tanks hold a liquid fuel and a gas propellant. The gas is what forces the liquid out of the flamethrower nozzle at high speed, allowing it to project a long stream. One tank holds 9 bursts worth of fuel. The tanks remain a separate item when connected to a flamethrower. They can be worn in place of a backpack, reducing Load to 1. Alternatively, you can set them down nearby if you don't intend to move.</p>",
     "quantity": 1,

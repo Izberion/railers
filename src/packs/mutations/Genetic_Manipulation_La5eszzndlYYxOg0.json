@@ -2,7 +2,7 @@
   "name": "Genetic Manipulation",
   "type": "mutation",
   "_id": "La5eszzndlYYxOg0",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character can take any mutation of his choice.</p>"
   },

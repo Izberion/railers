@@ -2,7 +2,7 @@
   "name": "Flamethrower",
   "type": "weapon",
   "_id": "fiZktuDY6JtKak8q",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Flamethrowers consist of three parts: a tank filled with a liquid fuel and a gas propellant, a long nozzle with an ignition source at the end, and someone willing to set other people on fire. Flamethrowers apply the Burning condition on a successful attack instead of a Wound. Ammunition is measured in bursts. Each tank has 9 bursts worth of fuel. Flamethrowers cannot use the normal attack action, only the Burst Fire, Sustained Fire, and Field of Fire actions.</p>",
     "quantity": 1,

@@ -2,7 +2,7 @@
   "name": "Anti-Materiel Rifle",
   "type": "weapon",
   "_id": "hW5ff7oFGHTCoe8s",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/weapon-icon.svg",
   "system": {
     "description": "<p>Anti-materiel rifles are large bolt-action rifles designed to punch through heavy armor or structures. They feature an integral bipod and a single round internal magazine. When attacking, the target’s Armor or Protection is treated as if it were 4 points lower. Due to the massive recoil, the gun should be fired from a prone position or mounted. Firing without a fixed position will inflict a -3d penalty on the attack roll and require the shooter to make a Combat save or take a 1/W1 Wound from the blunt force of the recoil. Defenders get no cover bonus when defending against this weapon.</p>",
     "quantity": 1,

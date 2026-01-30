@@ -2,7 +2,7 @@
   "name": "Antennae",
   "type": "mutation",
   "_id": "DTfcsBhjWmQ2mk3a",
-  "img": "icons/svg/item-bag.svg",
+  "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
     "description": "<p>The corrupted character sprouts a pair of antennae from his head. Gain +1d when making a Perception check to locate anything not made of metal, stone, or another inert material.</p>"
   },
