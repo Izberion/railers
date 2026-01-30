@@ -126,7 +126,9 @@
         "action": "major"
       },
       "_id": "zgPCZVUClzquFoZT",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!D0KBYNLcTqtkB4lj.zgPCZVUClzquFoZT"
     }
-  ]
+  ],
+  "_key": "!actors!D0KBYNLcTqtkB4lj"
 }

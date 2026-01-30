@@ -126,7 +126,9 @@
         "action": "full"
       },
       "_id": "DKENJyxrEtcSKOBY",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!5abHQjR1GGznBp6H.DKENJyxrEtcSKOBY"
     }
-  ]
+  ],
+  "_key": "!actors!5abHQjR1GGznBp6H"
 }

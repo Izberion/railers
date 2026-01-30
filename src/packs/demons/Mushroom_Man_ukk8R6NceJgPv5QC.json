@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "o0agsLvzjgYzvwTZ",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!ukk8R6NceJgPv5QC.o0agsLvzjgYzvwTZ"
     },
     {
       "name": "Human-ish",
@@ -136,7 +137,8 @@
         "action": "passive"
       },
       "_id": "Ma88zWf2gp01UD63",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!ukk8R6NceJgPv5QC.Ma88zWf2gp01UD63"
     },
     {
       "name": "Tolerable",
@@ -146,7 +148,9 @@
         "action": "passive"
       },
       "_id": "E7KnXSLwXm5qsyFL",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!ukk8R6NceJgPv5QC.E7KnXSLwXm5qsyFL"
     }
-  ]
+  ],
+  "_key": "!actors!ukk8R6NceJgPv5QC"
 }

@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "cKIUFU3oIRqArc0Z",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!OLuk4gDLL7nZhqmQ.cKIUFU3oIRqArc0Z"
     },
     {
       "name": "Vampire",
@@ -136,7 +137,8 @@
         "action": "passive"
       },
       "_id": "a7XPOUjyCm4cnHEo",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!OLuk4gDLL7nZhqmQ.a7XPOUjyCm4cnHEo"
     },
     {
       "name": "Latch On",
@@ -146,7 +148,8 @@
         "action": "major"
       },
       "_id": "jd1RPYb05BByuoHJ",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!OLuk4gDLL7nZhqmQ.jd1RPYb05BByuoHJ"
     },
     {
       "name": "Seed",
@@ -156,7 +159,9 @@
         "action": "full"
       },
       "_id": "R1kAXE3fwLEMnxyS",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!OLuk4gDLL7nZhqmQ.R1kAXE3fwLEMnxyS"
     }
-  ]
+  ],
+  "_key": "!actors!OLuk4gDLL7nZhqmQ"
 }

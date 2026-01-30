@@ -5,5 +5,6 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": "<p>The corrupted character has a special organ that funnels any poison, venom, or other toxin to it, making him immune to their effects. The organ grows as a cyst under his chin or on the back of his neck. If stuck directly with a sharp object, the cyst will burst, covering anyone nearby in dangerous poison. All affected characters must make a TN 5 Endurance saving throw or else become Poisoned. The poison deals 5/W4. Because the cyst contains a deadly cocktail of toxins, any effects from any absorbed toxins will apply to those characters who fail the save. The toxins only include those absorbed within the last month, as any older are already processed out by the organ.</p>"
-  }
+  },
+  "_key": "!items!EUcEoeVH2hSb7JLM"
 }

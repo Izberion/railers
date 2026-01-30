@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "XPrHGHlgWeZaQap8",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!r4jNCyjyFfOu0bMg.XPrHGHlgWeZaQap8"
     },
     {
       "name": "Howl",
@@ -136,7 +137,9 @@
         "action": "minor"
       },
       "_id": "aTEVg58QzUrpMQle",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!r4jNCyjyFfOu0bMg.aTEVg58QzUrpMQle"
     }
-  ]
+  ],
+  "_key": "!actors!r4jNCyjyFfOu0bMg"
 }

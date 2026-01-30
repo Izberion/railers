@@ -1,6 +1,7 @@
 {
   "name": "Chemicals",
   "type": "gear",
+  "_id": "C1mXoJt2bU6YfHqV",
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": "<p>Chemicals can be used to synthesize pharmacotics. They are exceptionally rare, so much so that they may not be available for purchase most places, including the starting settlement. Most chemicals available will have been scavenged or extracted from demons. Extraction requires a Chemistry check, gaining an amount equal to the number of hits rolled.</p>",
@@ -8,5 +9,6 @@
     "load": 0,
     "stowage": "other",
     "formula": ""
-  }
+  },
+  "_key": "!items!C1mXoJt2bU6YfHqV"
 }

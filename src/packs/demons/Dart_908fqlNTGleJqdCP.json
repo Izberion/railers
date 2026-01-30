@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "sTHvYRidV1qxmjm7",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!908fqlNTGleJqdCP.sTHvYRidV1qxmjm7"
     },
     {
       "name": "Fast",
@@ -136,7 +137,8 @@
         "action": "passive"
       },
       "_id": "yH4JC5yuyEVXDLME",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!908fqlNTGleJqdCP.yH4JC5yuyEVXDLME"
     },
     {
       "name": "Venomous Barb",
@@ -146,7 +148,9 @@
         "action": "passive"
       },
       "_id": "ctuyeW51t6WS4RDv",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!908fqlNTGleJqdCP.ctuyeW51t6WS4RDv"
     }
-  ]
+  ],
+  "_key": "!actors!908fqlNTGleJqdCP"
 }

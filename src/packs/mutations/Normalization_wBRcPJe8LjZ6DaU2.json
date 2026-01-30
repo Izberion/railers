@@ -5,5 +5,6 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": "<p>The corrupted character drops to the previous stage of demonization, losing a number of random mutations equal to the amount gained at his now previous demonization stage.</p>"
-  }
+  },
+  "_key": "!items!wBRcPJe8LjZ6DaU2"
 }

@@ -5,5 +5,6 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": "<p>The corrupted character gains a natural pocket, like a marsupial. The pouch can hold up to 4 individual pieces of gear, none of which can exceed 1 Load. When concealing an item in the pouch, gain a +1d bonus. Otherwise, it functions similarly to a satchel.</p>"
-  }
+  },
+  "_key": "!items!i0zhmW7qWFHSU3CC"
 }

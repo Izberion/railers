@@ -5,5 +5,6 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": "<p>The corrupted character has become magnetic. Steel, iron, and other magnetic metals will stick to the character, as long as they are 1 Load or less. The magnetism is not strong enough to attract items from any measurable distance and is unlikely to interfere with movement. He gains a +2d bonus to resist being disarmed, assuming the held item is magnetic.</p>"
-  }
+  },
+  "_key": "!items!8QvkNQEcV5hhfGZ3"
 }

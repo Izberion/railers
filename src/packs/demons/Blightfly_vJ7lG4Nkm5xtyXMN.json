@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "887Bd10VUTjC1Bap",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!vJ7lG4Nkm5xtyXMN.887Bd10VUTjC1Bap"
     },
     {
       "name": "Pestilence",
@@ -136,7 +137,9 @@
         "action": "passive"
       },
       "_id": "zM8EE7bKOC4ajEty",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!vJ7lG4Nkm5xtyXMN.zM8EE7bKOC4ajEty"
     }
-  ]
+  ],
+  "_key": "!actors!vJ7lG4Nkm5xtyXMN"
 }

@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "7otr1UIzM8YXFRE5",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!jWbh8T97w1wBSGz9.7otr1UIzM8YXFRE5"
     },
     {
       "name": "Stupefy",
@@ -136,7 +137,9 @@
         "action": "major"
       },
       "_id": "tHCIm25fC5RpmkE3",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!jWbh8T97w1wBSGz9.tHCIm25fC5RpmkE3"
     }
-  ]
+  ],
+  "_key": "!actors!jWbh8T97w1wBSGz9"
 }

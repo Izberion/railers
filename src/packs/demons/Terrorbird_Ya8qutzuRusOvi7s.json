@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "oEfwpM3RzxbQIIT1",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!Ya8qutzuRusOvi7s.oEfwpM3RzxbQIIT1"
     },
     {
       "name": "Kidnap",
@@ -136,7 +137,9 @@
         "action": "full"
       },
       "_id": "xeGptDUCYBCSe1T8",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!Ya8qutzuRusOvi7s.xeGptDUCYBCSe1T8"
     }
-  ]
+  ],
+  "_key": "!actors!Ya8qutzuRusOvi7s"
 }

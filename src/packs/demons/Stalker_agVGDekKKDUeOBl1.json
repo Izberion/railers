@@ -126,7 +126,8 @@
         "action": "major"
       },
       "_id": "IH7x5wxR0NenPDBV",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!agVGDekKKDUeOBl1.IH7x5wxR0NenPDBV"
     },
     {
       "name": "Stealthy",
@@ -136,7 +137,9 @@
         "action": "passive"
       },
       "_id": "OEcwPSbBpXpKqJIz",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!agVGDekKKDUeOBl1.OEcwPSbBpXpKqJIz"
     }
-  ]
+  ],
+  "_key": "!actors!agVGDekKKDUeOBl1"
 }

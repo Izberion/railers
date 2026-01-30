@@ -126,7 +126,8 @@
         "action": "major"
       },
       "_id": "3CGa7gCeIHYkwQ65",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!I3S3sQG1ku3mU5zN.3CGa7gCeIHYkwQ65"
     },
     {
       "name": "Tracker",
@@ -136,7 +137,9 @@
         "action": "passive"
       },
       "_id": "vS6wFjDqIuU7BHJh",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!I3S3sQG1ku3mU5zN.vS6wFjDqIuU7BHJh"
     }
-  ]
+  ],
+  "_key": "!actors!I3S3sQG1ku3mU5zN"
 }

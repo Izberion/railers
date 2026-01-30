@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "82ts4yuoIk0Pa51S",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!xe3P2QgpEbDDNg59.82ts4yuoIk0Pa51S"
     },
     {
       "name": "Light Blind",
@@ -136,7 +137,8 @@
         "action": "passive"
       },
       "_id": "039f30NLG7gleRY4",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!xe3P2QgpEbDDNg59.039f30NLG7gleRY4"
     },
     {
       "name": "Sound Hound",
@@ -146,7 +148,9 @@
         "action": "passive"
       },
       "_id": "8q5mgkp6s1SfksDm",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!xe3P2QgpEbDDNg59.8q5mgkp6s1SfksDm"
     }
-  ]
+  ],
+  "_key": "!actors!xe3P2QgpEbDDNg59"
 }

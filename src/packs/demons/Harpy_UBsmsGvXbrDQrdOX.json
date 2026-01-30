@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "J7QloZwAvFUKDhgU",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!UBsmsGvXbrDQrdOX.J7QloZwAvFUKDhgU"
     },
     {
       "name": "Siren",
@@ -136,7 +137,9 @@
         "action": "full"
       },
       "_id": "5sXxhOtWQ7j9iAF7",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!UBsmsGvXbrDQrdOX.5sXxhOtWQ7j9iAF7"
     }
-  ]
+  ],
+  "_key": "!actors!UBsmsGvXbrDQrdOX"
 }

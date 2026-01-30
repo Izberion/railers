@@ -844,7 +844,7 @@
         54
       ],
       "drawn": false,
-      "text": "Monkey's Paw",
+      "text": "Monkey's Paws",
       "documentId": "6lcNB7CzY4umBvJs",
       "img": "icons/svg/item-bag.svg",
       "_id": "q382VlFgmzAglEmO",
@@ -1609,5 +1609,6 @@
   "folder": null,
   "formula": "1d100",
   "_id": "L1QATyWjSSJBKg0u",
-  "sort": 600000
+  "sort": 600000,
+  "_key": "!tables!L1QATyWjSSJBKg0u"
 }

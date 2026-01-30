@@ -5,5 +5,6 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": "<p>The corrupted character feels very little effect from Fear. Whenever he must roll to resist the effects of Fear, the difficulty is always TN 5 and his dice pool is doubled. If he does fail, he only loses half the normal amount of Nerve, rounded up. He is also much more likely to take unnecessary risks. If he has any Fear immunity, the immunity uses the actual Fear rank and is unchanged by this mutation.</p>"
-  }
+  },
+  "_key": "!items!5J9iJDLMPcA0mg0M"
 }

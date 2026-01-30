@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "ZhMGqgvVlXvBFizC",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!rbKDFuld3jTEuCd4.ZhMGqgvVlXvBFizC"
     },
     {
       "name": "Mind Games",
@@ -136,7 +137,9 @@
         "action": "full"
       },
       "_id": "Knbgx7tnQKZwksVh",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!rbKDFuld3jTEuCd4.Knbgx7tnQKZwksVh"
     }
-  ]
+  ],
+  "_key": "!actors!rbKDFuld3jTEuCd4"
 }

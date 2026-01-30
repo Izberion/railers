@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "OcGNnepexJkPhR34",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!cxV5INtioqdaoR03.OcGNnepexJkPhR34"
     },
     {
       "name": "Whispers",
@@ -136,7 +137,9 @@
         "action": "major"
       },
       "_id": "LdoQa4ogP5VUehJU",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!cxV5INtioqdaoR03.LdoQa4ogP5VUehJU"
     }
-  ]
+  ],
+  "_key": "!actors!cxV5INtioqdaoR03"
 }

@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "FjYBhtLXNq8RuOxu",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!w51t80i1FMSG8X5s.FjYBhtLXNq8RuOxu"
     },
     {
       "name": "Trample",
@@ -136,7 +137,9 @@
         "action": "full"
       },
       "_id": "BiKB6CnSv53bhwzP",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!w51t80i1FMSG8X5s.BiKB6CnSv53bhwzP"
     }
-  ]
+  ],
+  "_key": "!actors!w51t80i1FMSG8X5s"
 }

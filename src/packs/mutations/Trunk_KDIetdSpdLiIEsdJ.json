@@ -5,5 +5,6 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": "<p>The corrupted character’s nose is replaced by a prehensile trunk. It functions as a extra limb but cannot perform tasks that require complex dexterity. The trunk can hold a single object of up to 2 Load.</p>"
-  }
+  },
+  "_key": "!items!KDIetdSpdLiIEsdJ"
 }

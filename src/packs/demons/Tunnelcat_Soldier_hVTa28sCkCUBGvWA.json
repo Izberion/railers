@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "PkGJ5e9eS4b0mTLH",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!hVTa28sCkCUBGvWA.PkGJ5e9eS4b0mTLH"
     },
     {
       "name": "Part of the Pack",
@@ -136,7 +137,8 @@
         "action": "passive"
       },
       "_id": "yEt3rXCYLfP07zW3",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!hVTa28sCkCUBGvWA.yEt3rXCYLfP07zW3"
     },
     {
       "name": "Battle Song",
@@ -146,7 +148,8 @@
         "action": "major"
       },
       "_id": "77o6eP2NItYDOQtx",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!hVTa28sCkCUBGvWA.77o6eP2NItYDOQtx"
     },
     {
       "name": "Tunnelcat King",
@@ -156,7 +159,9 @@
         "action": "full"
       },
       "_id": "1FHDwY1KiEhJpuoJ",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!hVTa28sCkCUBGvWA.1FHDwY1KiEhJpuoJ"
     }
-  ]
+  ],
+  "_key": "!actors!hVTa28sCkCUBGvWA"
 }

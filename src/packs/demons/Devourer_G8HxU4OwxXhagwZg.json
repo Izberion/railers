@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "KTBqpndKmsMFr7VP",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!G8HxU4OwxXhagwZg.KTBqpndKmsMFr7VP"
     },
     {
       "name": "Restrain",
@@ -136,7 +137,8 @@
         "action": "major"
       },
       "_id": "PO9t4fcBkQ6YafPD",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!G8HxU4OwxXhagwZg.PO9t4fcBkQ6YafPD"
     },
     {
       "name": "Crush",
@@ -146,7 +148,8 @@
         "action": "maneuver"
       },
       "_id": "ccfHxxoJZUa4DmtG",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!G8HxU4OwxXhagwZg.ccfHxxoJZUa4DmtG"
     },
     {
       "name": "Feast",
@@ -156,7 +159,9 @@
         "action": "full"
       },
       "_id": "VOzRuGKr64pIoaj3",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!G8HxU4OwxXhagwZg.VOzRuGKr64pIoaj3"
     }
-  ]
+  ],
+  "_key": "!actors!G8HxU4OwxXhagwZg"
 }

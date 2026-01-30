@@ -5,5 +5,6 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": "<p>The corrupted character’s immune system functions poorly. Any time he must make a roll to resist a disease or its effects, apply a -2d penalty.</p>"
-  }
+  },
+  "_key": "!items!BDL4akYtjCz5PWYA"
 }

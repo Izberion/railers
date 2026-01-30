@@ -126,7 +126,9 @@
         "action": "passive"
       },
       "_id": "bsiXHLnZKxkJBUfh",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!zpMh8j8iqdD7FWTE.bsiXHLnZKxkJBUfh"
     }
-  ]
+  ],
+  "_key": "!actors!zpMh8j8iqdD7FWTE"
 }

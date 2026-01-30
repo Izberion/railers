@@ -129,7 +129,8 @@
         "action": "passive"
       },
       "_id": "TTRilnCS47AKr9vb",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!C1PKydLrItkBmIDz.TTRilnCS47AKr9vb"
     },
     {
       "name": "Maw",
@@ -139,7 +140,8 @@
         "action": "major"
       },
       "_id": "ydQiJ5K8ei5aTGmP",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!C1PKydLrItkBmIDz.ydQiJ5K8ei5aTGmP"
     },
     {
       "name": "Flail",
@@ -149,7 +151,8 @@
         "action": "major"
       },
       "_id": "ZVqSb66OQ408FXus",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!C1PKydLrItkBmIDz.ZVqSb66OQ408FXus"
     },
     {
       "name": "Burrow",
@@ -159,7 +162,8 @@
         "action": "full"
       },
       "_id": "Hdj3JOm5ChpcR2Gu",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!C1PKydLrItkBmIDz.Hdj3JOm5ChpcR2Gu"
     },
     {
       "name": "King of the Snowlands",
@@ -169,7 +173,8 @@
         "action": "passive"
       },
       "_id": "coBPgz1zDbRpUKko",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!C1PKydLrItkBmIDz.coBPgz1zDbRpUKko"
     },
     {
       "name": "Regurgitate",
@@ -179,7 +184,9 @@
         "action": "major"
       },
       "_id": "ZLMy4625gvCTS49B",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!C1PKydLrItkBmIDz.ZLMy4625gvCTS49B"
     }
-  ]
+  ],
+  "_key": "!actors!C1PKydLrItkBmIDz"
 }

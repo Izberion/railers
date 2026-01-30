@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "gV1tq8hs5m4kWefT",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!meU1dN5YfEjV0XAw.gV1tq8hs5m4kWefT"
     },
     {
       "name": "Clingy",
@@ -136,7 +137,9 @@
         "action": "passive"
       },
       "_id": "DTSRkDNTgtz4tpD9",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!meU1dN5YfEjV0XAw.DTSRkDNTgtz4tpD9"
     }
-  ]
+  ],
+  "_key": "!actors!meU1dN5YfEjV0XAw"
 }

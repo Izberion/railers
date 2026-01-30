@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "CFerP7ix5rcSHzW1",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!o6bZ6e8q1iQ8XhTM.CFerP7ix5rcSHzW1"
     },
     {
       "name": "Forgettable",
@@ -136,7 +137,9 @@
         "action": "passive"
       },
       "_id": "DF4GwXovEhWdreZ5",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!o6bZ6e8q1iQ8XhTM.DF4GwXovEhWdreZ5"
     }
-  ]
+  ],
+  "_key": "!actors!o6bZ6e8q1iQ8XhTM"
 }

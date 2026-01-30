@@ -1,6 +1,7 @@
 {
   "name": "Backtrack",
   "type": "gear",
+  "_id": "BaXhJvY3oOaZbXrK",
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": "<p>Backtrack is a chemical cure-all that will stop the effects of any pharmacotic, poison, or toxin immediately. It is extremely harsh on the body, forcing it to purge whatever foreign substances are at work. After taking a dose, make a TN 7 Endurance save. On a failure, take a 8/W1 Wound. On a success, the Wound is only 4/W1.</p>",
@@ -8,5 +9,6 @@
     "load": 0,
     "stowage": "other",
     "formula": ""
-  }
+  },
+  "_key": "!items!BaXhJvY3oOaZbXrK"
 }

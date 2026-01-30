@@ -126,7 +126,8 @@
         "action": "major"
       },
       "_id": "cePUfIPV1mODjiXA",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!l0ar2QpNViDFewbW.cePUfIPV1mODjiXA"
     },
     {
       "name": "Drown",
@@ -136,7 +137,9 @@
         "action": "maneuver"
       },
       "_id": "05FpvTHJNWwYvCOj",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!l0ar2QpNViDFewbW.05FpvTHJNWwYvCOj"
     }
-  ]
+  ],
+  "_key": "!actors!l0ar2QpNViDFewbW"
 }

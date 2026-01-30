@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "MAR5pRXiRlHV770k",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!9HbFWQNetdNsaNcQ.MAR5pRXiRlHV770k"
     },
     {
       "name": "Harmful to Touch",
@@ -136,7 +137,9 @@
         "action": "passive"
       },
       "_id": "c68tClLSyv16LdND",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!9HbFWQNetdNsaNcQ.c68tClLSyv16LdND"
     }
-  ]
+  ],
+  "_key": "!actors!9HbFWQNetdNsaNcQ"
 }

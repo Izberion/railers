@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "0Sbe1bcTFAfyMlHM",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!1Av6FkyusN4P4keb.0Sbe1bcTFAfyMlHM"
     },
     {
       "name": "Swarm",
@@ -136,7 +137,8 @@
         "action": "passive"
       },
       "_id": "bH12EzMRbUMLFKxM",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!1Av6FkyusN4P4keb.bH12EzMRbUMLFKxM"
     },
     {
       "name": "Boring",
@@ -146,7 +148,9 @@
         "action": "major"
       },
       "_id": "TvDLDtrlqPjg6MZm",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!1Av6FkyusN4P4keb.TvDLDtrlqPjg6MZm"
     }
-  ]
+  ],
+  "_key": "!actors!1Av6FkyusN4P4keb"
 }

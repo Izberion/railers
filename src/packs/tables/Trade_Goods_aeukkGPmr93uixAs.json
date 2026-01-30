@@ -101,12 +101,12 @@
         7
       ],
       "drawn": false,
-      "_id": "mxedjd6qGBhCjK9b",
-      "text": "Machinery",
+      "_id": "Jmemc8AtY1FuGTtt",
+      "text": "Medicine",
       "img": "icons/svg/d20-black.svg",
       "documentId": null,
       "flags": {},
-      "_key": "!tables.results!aeukkGPmr93uixAs.mxedjd6qGBhCjK9b"
+      "_key": "!tables.results!aeukkGPmr93uixAs.Jmemc8AtY1FuGTtt"
     },
     {
       "type": "text",
@@ -116,12 +116,12 @@
         8
       ],
       "drawn": false,
-      "_id": "Jmemc8AtY1FuGTtt",
-      "text": "Medicine",
+      "_id": "mxedjd6qGBhCjK9b",
+      "text": "Industry",
       "img": "icons/svg/d20-black.svg",
       "documentId": null,
       "flags": {},
-      "_key": "!tables.results!aeukkGPmr93uixAs.Jmemc8AtY1FuGTtt"
+      "_key": "!tables.results!aeukkGPmr93uixAs.mxedjd6qGBhCjK9b"
     },
     {
       "type": "text",
@@ -204,5 +204,6 @@
   "folder": null,
   "formula": "",
   "_id": "aeukkGPmr93uixAs",
-  "sort": 300000
+  "sort": 300000,
+  "_key": "!tables!aeukkGPmr93uixAs"
 }

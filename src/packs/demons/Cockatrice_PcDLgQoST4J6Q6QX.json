@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "MsdRdzvfN76jj4d1",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!PcDLgQoST4J6Q6QX.MsdRdzvfN76jj4d1"
     },
     {
       "name": "Resourceful",
@@ -136,7 +137,8 @@
         "action": "passive"
       },
       "_id": "H0f0n7ZiVvqw8ZlA",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!PcDLgQoST4J6Q6QX.H0f0n7ZiVvqw8ZlA"
     }
   ]
 }

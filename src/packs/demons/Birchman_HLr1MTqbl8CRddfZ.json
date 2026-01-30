@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "aXlOas6BausA5xNO",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!HLr1MTqbl8CRddfZ.aXlOas6BausA5xNO"
     },
     {
       "name": "Tolerable",
@@ -136,7 +137,9 @@
         "action": "passive"
       },
       "_id": "fia1g9LE44HRLZjB",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!HLr1MTqbl8CRddfZ.fia1g9LE44HRLZjB"
     }
-  ]
+  ],
+  "_key": "!actors!HLr1MTqbl8CRddfZ"
 }

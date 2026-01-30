@@ -126,7 +126,8 @@
         "action": "passive"
       },
       "_id": "WYHyoWOvHV7xXTiG",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!Qw9hjlBUuOLYQ6Tt.WYHyoWOvHV7xXTiG"
     },
     {
       "name": "Paralytic Venom",
@@ -136,7 +137,8 @@
         "action": "passive"
       },
       "_id": "JS5i5yTYPrmCTq6r",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!Qw9hjlBUuOLYQ6Tt.JS5i5yTYPrmCTq6r"
     },
     {
       "name": "Steel Web",
@@ -146,7 +148,9 @@
         "action": "full"
       },
       "_id": "a2EHHTV1kFvjwSqw",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!Qw9hjlBUuOLYQ6Tt.a2EHHTV1kFvjwSqw"
     }
-  ]
+  ],
+  "_key": "!actors!Qw9hjlBUuOLYQ6Tt"
 }

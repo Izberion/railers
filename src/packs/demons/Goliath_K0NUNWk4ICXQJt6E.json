@@ -126,7 +126,8 @@
         "action": "major"
       },
       "_id": "kaKV1CHLOJ3m7oTa",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!K0NUNWk4ICXQJt6E.kaKV1CHLOJ3m7oTa"
     },
     {
       "name": "Bone Shards",
@@ -136,7 +137,9 @@
         "action": "minor"
       },
       "_id": "PucQmGp54F9VHY3N",
-      "img": "icons/svg/item-bag.svg"
+      "img": "icons/svg/item-bag.svg",
+      "_key": "!actors.items!K0NUNWk4ICXQJt6E.PucQmGp54F9VHY3N"
     }
-  ]
+  ],
+  "_key": "!actors!K0NUNWk4ICXQJt6E"
 }
