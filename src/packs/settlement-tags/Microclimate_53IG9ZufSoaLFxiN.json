@@ -1,0 +1,33 @@
+{
+  "name": "Microclimate",
+  "_id": "53IG9ZufSoaLFxiN",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "XdyW11ZOfYZXbpYL",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is experiencing a microclimate completely different from the rest of the Snowlands. It may be lush and green and warm here. The weather may be even worse than the Snowlands. The microclimate may have a completely natural origin.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!53IG9ZufSoaLFxiN.XdyW11ZOfYZXbpYL"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!53IG9ZufSoaLFxiN"
+}

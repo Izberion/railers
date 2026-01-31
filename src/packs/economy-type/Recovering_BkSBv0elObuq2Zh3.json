@@ -1,0 +1,33 @@
+{
+  "name": "Recovering",
+  "_id": "BkSBv0elObuq2Zh3",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "8A5cBp8wK0QeLBsH",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The economy is building back up from scraping and rationing, though there is a long road ahead and the balance between prosperity and decline is thin. The settlement likely has stockpiles of resources, though there will be holes that still need to be filled.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!BkSBv0elObuq2Zh3.8A5cBp8wK0QeLBsH"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 100000,
+  "_key": "!journal!BkSBv0elObuq2Zh3"
+}

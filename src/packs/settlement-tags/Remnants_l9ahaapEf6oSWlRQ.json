@@ -1,0 +1,33 @@
+{
+  "name": "Remnants",
+  "_id": "l9ahaapEf6oSWlRQ",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "MFOZVXODmOA8Sx9n",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement contains a link to a forgotten past. There may be intact ruins of a past civilization. There may be mysterious statues lining the hillside. There may be a massive structure of unknown purpose.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!l9ahaapEf6oSWlRQ.MFOZVXODmOA8Sx9n"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!l9ahaapEf6oSWlRQ"
+}

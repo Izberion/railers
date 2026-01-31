@@ -1,0 +1,33 @@
+{
+  "name": "Democratic",
+  "_id": "5xeNAPDPGnb2lTMD",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "DL0O4cJRIRqhGpz7",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The law is determined by the will of the majority, whether that be pure mob-rule or a more structured system. Leaders are likely elected and there are likely some restrictions on who has a vote. Individual survivors are likely expected to obey the will of the majority, though they may disagree, loudly.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!5xeNAPDPGnb2lTMD.DL0O4cJRIRqhGpz7"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 300000,
+  "_key": "!journal!5xeNAPDPGnb2lTMD"
+}

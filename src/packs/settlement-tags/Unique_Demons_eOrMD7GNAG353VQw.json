@@ -1,0 +1,33 @@
+{
+  "name": "Unique Demons",
+  "_id": "eOrMD7GNAG353VQw",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "vXHw5jQ3UWrdfvIc",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The demon or demons in this settlement are not found anywhere else in the Snowlands. They likely have a large impact on the settlement. They may be demons from the bestiary or demons of the GM’s design.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!eOrMD7GNAG353VQw.vXHw5jQ3UWrdfvIc"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!eOrMD7GNAG353VQw"
+}

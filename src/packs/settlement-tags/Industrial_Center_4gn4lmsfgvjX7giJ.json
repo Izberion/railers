@@ -1,0 +1,33 @@
+{
+  "name": "Industrial Center",
+  "_id": "4gn4lmsfgvjX7giJ",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "0vcLlWXeDwNzyLVI",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is experiencing an industrial boom. Foundries, mills, and and all sorts of other manufacturing buildings are being worked. Other settlements nearby may rely on the goods produced here. They may specialize in one type of product or may manufacture several.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!4gn4lmsfgvjX7giJ.0vcLlWXeDwNzyLVI"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!4gn4lmsfgvjX7giJ"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Controlled",
+  "_id": "VKIZjl2KAq6U1Kb0",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "mZGRb8GYzTXuNvaP",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The economy is tightly controlled by some central authority. Resources are likely distributed out as needed, favoring either none or a very specific and privileged few. Trading will likely be highly restricted, limited to certain goods or traders.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!VKIZjl2KAq6U1Kb0.mZGRb8GYzTXuNvaP"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 400000,
+  "_key": "!journal!VKIZjl2KAq6U1Kb0"
+}

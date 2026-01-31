@@ -1,0 +1,33 @@
+{
+  "name": "Declining",
+  "_id": "ujuYJonGfm3n2SoL",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "zZU8siLKEsQSnlpR",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The population is trending downward, whether from attrition, relocation, or some other source. This decline may relieve pressure off of dwindling resources or it may bring about a population crisis.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!ujuYJonGfm3n2SoL.zZU8siLKEsQSnlpR"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 3125,
+  "_key": "!journal!ujuYJonGfm3n2SoL"
+}

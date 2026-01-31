@@ -1,0 +1,33 @@
+{
+  "name": "Abandoned",
+  "_id": "5GTstyQbCjkd82c5",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "Pwo82GkusYTFcCKP",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The settlement has been abandoned. Not a single man, woman, or child remains. The only things left behind are signs of previous habitation, whether they be fresh or long passed.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!5GTstyQbCjkd82c5.Pwo82GkusYTFcCKP"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!5GTstyQbCjkd82c5"
+}

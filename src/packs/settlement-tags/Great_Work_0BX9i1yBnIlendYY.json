@@ -1,0 +1,33 @@
+{
+  "name": "Great Work",
+  "_id": "0BX9i1yBnIlendYY",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "EVsUrJdb987B2G5J",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors here have begun a massive undertaking. They are creating something that will take years to complete. They may have just begun, be well into construction, or be nearly finished.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!0BX9i1yBnIlendYY.EVsUrJdb987B2G5J"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!0BX9i1yBnIlendYY"
+}

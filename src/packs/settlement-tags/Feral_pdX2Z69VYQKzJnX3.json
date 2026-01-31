@@ -1,0 +1,33 @@
+{
+  "name": "Feral",
+  "_id": "pdX2Z69VYQKzJnX3",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "BFVIhGZ3rQJQgFwJ",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Rule of law and morality have completely broken down in this settlement. The survivors may like it that way.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!pdX2Z69VYQKzJnX3.BFVIhGZ3rQJQgFwJ"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!pdX2Z69VYQKzJnX3"
+}

@@ -148,6 +148,53 @@
       "name": "tables",
       "path": "packs/tables",
       "system": "railers"
+    },
+    {
+      "label": "Settlement Tags",
+      "type": "JournalEntry",
+      "name": "settlement-tags",
+      "path": "packs/settlement-tags",
+      "system": "railers"
+    },
+    {
+      "label": "Economy Type",
+      "type": "JournalEntry",
+      "name": "economy-type",
+      "path": "packs/economy-type",
+      "system": "railers"
+    },
+    {
+      "label": "Population Size",
+      "type": "JournalEntry",
+      "name": "population-size",
+      "path": "packs/population-size",
+      "system": "railers"
+    },
+    {
+      "label": "Law",
+      "type": "JournalEntry",
+      "name": "law",
+      "path": "packs/law",
+      "system": "railers"
+    },
+    {
+      "label": "Demon Presence",
+      "type": "JournalEntry",
+      "name": "demon-presence",
+      "path": "packs/demon-presence",
+      "system": "railers"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Settlement Generation",
+      "packs": [
+        "settlement-tags",
+        "population-size",
+        "economy-type",
+        "law",
+        "demon-presence"
+      ]
     }
   ],
   "languages": [

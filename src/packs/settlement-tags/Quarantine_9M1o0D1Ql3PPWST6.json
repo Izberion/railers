@@ -1,0 +1,33 @@
+{
+  "name": "Quarantine",
+  "_id": "9M1o0D1Ql3PPWST6",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "mOoxxQgWKHiuNTRa",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is under a strict quarantine. There may be disease, demons, or some other dangerous threat in the quarantine that someone doesn’t want to get out. Those inside may or may not appreciate the quarantine.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!9M1o0D1Ql3PPWST6.mOoxxQgWKHiuNTRa"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!9M1o0D1Ql3PPWST6"
+}

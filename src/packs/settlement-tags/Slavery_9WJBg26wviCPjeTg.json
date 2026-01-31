@@ -1,0 +1,33 @@
+{
+  "name": "Slavery",
+  "_id": "9WJBg26wviCPjeTg",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "xl3EmAHBtbEeZJ5K",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement practices slavery. It may be that anyone can end up a slave if their fortune turns. It may be that only specific groups are slaves. The settlement may rely on slavery and cannot function without it. The crew may be able to buy or sell people here.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!9WJBg26wviCPjeTg.xl3EmAHBtbEeZJ5K"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!9WJBg26wviCPjeTg"
+}

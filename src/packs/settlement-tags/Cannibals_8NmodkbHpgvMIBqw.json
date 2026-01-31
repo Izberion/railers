@@ -1,0 +1,33 @@
+{
+  "name": "Cannibals",
+  "_id": "8NmodkbHpgvMIBqw",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "Sqbm3s9t7giqdTOT",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors in this settlement eat human flesh. They may eat it occasionally as a ritual. It may be a staple of their diet. They may feed upon themselves or raid other settlements for food.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!8NmodkbHpgvMIBqw.Sqbm3s9t7giqdTOT"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!8NmodkbHpgvMIBqw"
+}

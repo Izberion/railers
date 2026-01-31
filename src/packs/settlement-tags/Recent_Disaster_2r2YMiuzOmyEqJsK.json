@@ -1,0 +1,33 @@
+{
+  "name": "Recent Disaster",
+  "_id": "2r2YMiuzOmyEqJsK",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "EUsAcDk819D7M2Mb",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement recently underwent some disaster. Much of the settlement is likely destroyed. The residents were unlikely to have been left unharmed. They are likely to be in great need. The disaster may strike again.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!2r2YMiuzOmyEqJsK.EUsAcDk819D7M2Mb"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!2r2YMiuzOmyEqJsK"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Common",
+  "_id": "Eqxb4q9XvZ3KxCWA",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "59urxWG1JrORprET",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The law is determined by tradition, with a focus on freedoms of the individual. Any laws likely have a deference to how things were done in the past. Individual survivors can likely do as they please as long as it doesn’t impede on the rights of other survivors.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!Eqxb4q9XvZ3KxCWA.59urxWG1JrORprET"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 600000,
+  "_key": "!journal!Eqxb4q9XvZ3KxCWA"
+}

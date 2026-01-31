@@ -1,0 +1,33 @@
+{
+  "name": "Underground",
+  "_id": "mj2bMzviFZz7WV2s",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "5meYwIPrqOvwLqM1",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is underground. The survivors may have moved into natural caves or excavated it themselves. The survivors may have found themselves suddenly underground one morning. The settlement may be difficult to reach.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!mj2bMzviFZz7WV2s.5meYwIPrqOvwLqM1"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!mj2bMzviFZz7WV2s"
+}

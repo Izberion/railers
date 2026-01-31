@@ -1,0 +1,33 @@
+{
+  "name": "Doppelgangers",
+  "_id": "UXoWdlG8ehusgGjI",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "4fgFf4Z4Ptg34lrB",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Something about this settlement evokes a sense of deja vu in the crew. Maybe it’s the people, the buildings, or the goings on there.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!UXoWdlG8ehusgGjI.4fgFf4Z4Ptg34lrB"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!UXoWdlG8ehusgGjI"
+}

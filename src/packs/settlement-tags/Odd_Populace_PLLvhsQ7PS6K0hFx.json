@@ -1,0 +1,33 @@
+{
+  "name": "Odd Populace",
+  "_id": "PLLvhsQ7PS6K0hFx",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "fMdvUEFweniwOxi9",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors here are strange, to put it nicely. Whatever the reason for their oddity, whether it be the way they act, look, or think, it seems to play a major part in their lives.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!PLLvhsQ7PS6K0hFx.fMdvUEFweniwOxi9"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!PLLvhsQ7PS6K0hFx"
+}

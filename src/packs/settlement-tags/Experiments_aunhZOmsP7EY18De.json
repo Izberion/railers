@@ -1,0 +1,33 @@
+{
+  "name": "Experiments",
+  "_id": "aunhZOmsP7EY18De",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "3RWSXpgsGNA7sLcT",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Someone or some group is performing dangerous experiments in this settlement. The experiments may be chemical, social, or take some other form. Demons may be the test subjects. The survivors may not know the experiments are taking place.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!aunhZOmsP7EY18De.3RWSXpgsGNA7sLcT"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!aunhZOmsP7EY18De"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Powerplant",
+  "_id": "UPf6uZAJj2F4k7vQ",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "RCm81PVYAEEJJmta",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement once fed electricity to the region, though it has likely fallen dormant. It may still be operable, just waiting for someone with the right skills and parts. It may be partially functional and extremely dangerous to enter.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!UPf6uZAJj2F4k7vQ.RCm81PVYAEEJJmta"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!UPf6uZAJj2F4k7vQ"
+}

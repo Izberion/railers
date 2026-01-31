@@ -1,0 +1,33 @@
+{
+  "name": "Rebuilding",
+  "_id": "SaGCXJIw7KU4yXkM",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "eepQporZV5WW8330",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Whether this settlement was recently destroyed or recently repopulated, it’s undergoing heavy reconstruction. Chances are good they are in need of raw materials and labor.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!SaGCXJIw7KU4yXkM.eepQporZV5WW8330"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!SaGCXJIw7KU4yXkM"
+}

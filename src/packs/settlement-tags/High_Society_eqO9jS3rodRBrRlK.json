@@ -1,0 +1,33 @@
+{
+  "name": "High Society",
+  "_id": "eqO9jS3rodRBrRlK",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "qDLSGdkLROxOmTtS",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors of this settlement are of an elite class. They may have higher expectations than most Snowlands survivors. They may treat others as beneath them. They may be genuine blue-blooded nobility.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!eqO9jS3rodRBrRlK.qDLSGdkLROxOmTtS"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!eqO9jS3rodRBrRlK"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Absent",
+  "_id": "G9mUcPyBmkniZPX9",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "YqTDGY0EUkrJ7H6X",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The settlement is free from hostile demons, whether due to some unique factor of the settlement itself or its location, or simply due to luck. This settlement is a safe haven from demons.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!G9mUcPyBmkniZPX9.YqTDGY0EUkrJ7H6X"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!G9mUcPyBmkniZPX9"
+}

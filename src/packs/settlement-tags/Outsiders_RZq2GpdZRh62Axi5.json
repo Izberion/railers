@@ -1,0 +1,33 @@
+{
+  "name": "Outsiders",
+  "_id": "RZq2GpdZRh62Axi5",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "zf7Zebz765SQdRGK",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is full of outsiders. They may be refugees from a nearby settlement. The outsiders may all be attempting to take over the settlement. The outsiders may not be human at all.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!RZq2GpdZRh62Axi5.zf7Zebz765SQdRGK"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!RZq2GpdZRh62Axi5"
+}

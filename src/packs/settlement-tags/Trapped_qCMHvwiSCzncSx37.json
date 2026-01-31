@@ -1,0 +1,33 @@
+{
+  "name": "Trapped",
+  "_id": "qCMHvwiSCzncSx37",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "cOkwNfwgF9aCCAD6",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors in this settlement are trapped and cannot or will not leave for whatever reason. They may be physically stuck, unable to leave without an immense amount of work. They may be surrounded by demons that only notice the survivors when they try to escape. The settlement may be a prison, the survivors prisoners.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!qCMHvwiSCzncSx37.cOkwNfwgF9aCCAD6"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!qCMHvwiSCzncSx37"
+}

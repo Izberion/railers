@@ -1,0 +1,33 @@
+{
+  "name": "Hub",
+  "_id": "Gd4CiOwLxTNf4Qat",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "IYGNlP9zdHNBkfQv",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement acts as a hub for some aspect. It may be a trade hub, attracting caravans from nearby settlements. It may be a cultural hub, somehow able to disperse music, art, or literature through the surrounding Snowlands. It may be a hub of industry, a source of raw resources, cryosene, or manufactured goods.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!Gd4CiOwLxTNf4Qat.IYGNlP9zdHNBkfQv"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!Gd4CiOwLxTNf4Qat"
+}

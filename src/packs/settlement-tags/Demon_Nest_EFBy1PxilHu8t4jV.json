@@ -1,0 +1,33 @@
+{
+  "name": "Demon Nest",
+  "_id": "EFBy1PxilHu8t4jV",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "kPxKFNMlePLG2CAw",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is home to a demon breeding ground. The demons are likely very protective of their nests. The survivors may not know about the nest. The survivors may have attempted to seal off the demon nest.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!EFBy1PxilHu8t4jV.kPxKFNMlePLG2CAw"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!EFBy1PxilHu8t4jV"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Growth",
+  "_id": "ZB6zHawwO7wlxo9W",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "fvP4pdmck1V3LC8T",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement has undergone massive growth, gaining new buildings and new faces, but with an increase in size and population come new problems. The settlement may not be able to keep up with the amount of development needed. There may not be enough food to go around. The settlement may simply be prospering.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!ZB6zHawwO7wlxo9W.fvP4pdmck1V3LC8T"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!ZB6zHawwO7wlxo9W"
+}

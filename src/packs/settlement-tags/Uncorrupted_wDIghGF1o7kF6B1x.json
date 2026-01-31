@@ -1,0 +1,33 @@
+{
+  "name": "Uncorrupted",
+  "_id": "wDIghGF1o7kF6B1x",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "cfpaLosMSAMGRdIY",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Somehow, there are animals or people completely untouched by Corruption here. It may be there is no Corruption in the air, snow, or water at all in this settlement. There may be something blocking the Corruption from entering this settlement. The protection against the Corruption may be weakening.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!wDIghGF1o7kF6B1x.cfpaLosMSAMGRdIY"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!wDIghGF1o7kF6B1x"
+}

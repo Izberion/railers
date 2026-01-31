@@ -1,0 +1,33 @@
+{
+  "name": "Barren",
+  "_id": "qphIgwEIWYK9FjqO",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "piRqOpLlVxRH5Tfr",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement has been stripped bare of all useful resources and materials. Anyone living there likely struggles with the absolute bare minimum they can use to stay alive. Survivors will likely be desperate to get what they can from the crew but will have little to give in return.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!qphIgwEIWYK9FjqO.piRqOpLlVxRH5Tfr"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!qphIgwEIWYK9FjqO"
+}

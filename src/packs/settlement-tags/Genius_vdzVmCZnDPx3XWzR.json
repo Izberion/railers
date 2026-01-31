@@ -1,0 +1,33 @@
+{
+  "name": "Genius",
+  "_id": "vdzVmCZnDPx3XWzR",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "H1m6OPpsemtecaoh",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is home to a brilliant mind. This person is a savant in one field or another. The settlement may rely on their intellect. They may live alone to work on their personal projects. Their talent may be totally squandered. There many be multiple geniuses.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!vdzVmCZnDPx3XWzR.H1m6OPpsemtecaoh"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!vdzVmCZnDPx3XWzR"
+}

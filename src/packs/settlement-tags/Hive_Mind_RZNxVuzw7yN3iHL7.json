@@ -1,0 +1,33 @@
+{
+  "name": "Hive Mind",
+  "_id": "RZNxVuzw7yN3iHL7",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "dam5VpJdfPEsDDrQ",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors of this settlement are all interconnected mentally. The survivors may retain their individuality, but recognize they are a part of a greater whole. The hive mind may be completely natural. The survivors may die when separated from the collective.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!RZNxVuzw7yN3iHL7.dam5VpJdfPEsDDrQ"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!RZNxVuzw7yN3iHL7"
+}

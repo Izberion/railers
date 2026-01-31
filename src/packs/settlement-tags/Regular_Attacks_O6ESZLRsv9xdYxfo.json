@@ -1,0 +1,33 @@
+{
+  "name": "Regular Attacks",
+  "_id": "O6ESZLRsv9xdYxfo",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "TuccP2WokyckQtEV",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement experiences regular attacks, whether by demons, bandits, or some other source. The survivors  are likely holding on by the skin of their teeth. The attacks may come only at night. The attacks may be to eliminate some threat within the settlement, known or unknown to the residents.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!O6ESZLRsv9xdYxfo.TuccP2WokyckQtEV"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!O6ESZLRsv9xdYxfo"
+}

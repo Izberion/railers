@@ -4,125 +4,220 @@
   "description": "",
   "results": [
     {
-      "type": "text",
+      "type": "document",
       "weight": 5,
       "range": [
         1,
         5
       ],
-      "drawn": false,
-      "_id": "OFPJI1ijFFmzEIlY",
-      "text": "Absent",
+      "name": "Absent",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
+      "documentUuid": "Compendium.railers.demon-presence.JournalEntry.G9mUcPyBmkniZPX9",
+      "_id": "uZwv2bRyfAwd3NKu",
+      "description": "",
+      "drawn": false,
       "flags": {},
-      "documentCollection": "",
-      "_key": "!tables.results!0ab4IU398LbVfQpT.OFPJI1ijFFmzEIlY"
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "createdTime": 1769804770122,
+        "modifiedTime": 1769804770122,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+      },
+      "_key": "!tables.results!0ab4IU398LbVfQpT.uZwv2bRyfAwd3NKu"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 10,
       "range": [
         6,
         15
       ],
-      "drawn": false,
-      "_id": "rsEEbuVbtswm6D4i",
-      "text": "Minimal",
+      "name": "Minimal",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
+      "documentUuid": "Compendium.railers.demon-presence.JournalEntry.YlkY4q8kcUPPqHeF",
+      "_id": "AMxi2rhoOp9W1LeY",
+      "description": "",
+      "drawn": false,
       "flags": {},
-      "_key": "!tables.results!0ab4IU398LbVfQpT.rsEEbuVbtswm6D4i"
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "createdTime": 1769804792533,
+        "modifiedTime": 1769804792533,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+      },
+      "_key": "!tables.results!0ab4IU398LbVfQpT.AMxi2rhoOp9W1LeY"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 15,
       "range": [
         16,
         30
       ],
-      "drawn": false,
-      "_id": "CUqpct5saoDcCzu9",
-      "text": "Managed",
+      "name": "Managed",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
+      "documentUuid": "Compendium.railers.demon-presence.JournalEntry.j2FdZrdycobMnApq",
+      "_id": "PVoPr2ZM9PD6eO7o",
+      "description": "",
+      "drawn": false,
       "flags": {},
-      "_key": "!tables.results!0ab4IU398LbVfQpT.CUqpct5saoDcCzu9"
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "createdTime": 1769804803790,
+        "modifiedTime": 1769804803790,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+      },
+      "_key": "!tables.results!0ab4IU398LbVfQpT.PVoPr2ZM9PD6eO7o"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 20,
       "range": [
         31,
         50
       ],
-      "drawn": false,
-      "_id": "JwBQglvbSh9VLXAI",
-      "text": "Moderate",
+      "name": "Moderate",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
+      "documentUuid": "Compendium.railers.demon-presence.JournalEntry.EshlLMD3xnYl4AjX",
+      "_id": "AY5fzkyAjccCw3Ty",
+      "description": "",
+      "drawn": false,
       "flags": {},
-      "_key": "!tables.results!0ab4IU398LbVfQpT.JwBQglvbSh9VLXAI"
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "createdTime": 1769804817216,
+        "modifiedTime": 1769804817216,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+      },
+      "_key": "!tables.results!0ab4IU398LbVfQpT.AY5fzkyAjccCw3Ty"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 20,
       "range": [
         51,
         70
       ],
-      "drawn": false,
-      "_id": "9zy62U5kdrQHAJar",
-      "text": "Significant",
+      "name": "Significant",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
+      "documentUuid": "Compendium.railers.demon-presence.JournalEntry.ynzMzmCtnmEe0x4h",
+      "_id": "80u8TuTozkUF42Jb",
+      "description": "",
+      "drawn": false,
       "flags": {},
-      "_key": "!tables.results!0ab4IU398LbVfQpT.9zy62U5kdrQHAJar"
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "createdTime": 1769804837884,
+        "modifiedTime": 1769804837884,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+      },
+      "_key": "!tables.results!0ab4IU398LbVfQpT.80u8TuTozkUF42Jb"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 15,
       "range": [
         71,
         85
       ],
-      "drawn": false,
-      "_id": "FPFMAEL4wTX6s9Lp",
-      "text": "Persistant",
+      "name": "Persistent",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
+      "documentUuid": "Compendium.railers.demon-presence.JournalEntry.Ru3plGGMRROUo7T7",
+      "_id": "S5W3ABybp7Qq1fzd",
+      "description": "",
+      "drawn": false,
       "flags": {},
-      "_key": "!tables.results!0ab4IU398LbVfQpT.FPFMAEL4wTX6s9Lp"
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "createdTime": 1769804858187,
+        "modifiedTime": 1769804858187,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+      },
+      "_key": "!tables.results!0ab4IU398LbVfQpT.S5W3ABybp7Qq1fzd"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 10,
       "range": [
         86,
         95
       ],
-      "drawn": false,
-      "_id": "tgywYJORS10P36EB",
-      "text": "Surrounded",
+      "name": "Surrounded",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
+      "documentUuid": "Compendium.railers.demon-presence.JournalEntry.md7TLVYJ3DbtqqQx",
+      "_id": "Q4Sohog6UlqfuhPQ",
+      "description": "",
+      "drawn": false,
       "flags": {},
-      "_key": "!tables.results!0ab4IU398LbVfQpT.tgywYJORS10P36EB"
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "createdTime": 1769804872014,
+        "modifiedTime": 1769804872014,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+      },
+      "_key": "!tables.results!0ab4IU398LbVfQpT.Q4Sohog6UlqfuhPQ"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 5,
       "range": [
         96,
         100
       ],
-      "drawn": false,
-      "_id": "V77Qg1T2ZQRqA5wg",
-      "text": "Overrun",
+      "name": "Overrun",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
+      "documentUuid": "Compendium.railers.demon-presence.JournalEntry.TRAYxEN47H6r9dXk",
+      "_id": "rwYrs3M2RuNKdIr4",
+      "description": "",
+      "drawn": false,
       "flags": {},
-      "_key": "!tables.results!0ab4IU398LbVfQpT.V77Qg1T2ZQRqA5wg"
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "railers",
+        "systemVersion": "1.0",
+        "createdTime": 1769804887988,
+        "modifiedTime": 1769804887988,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+      },
+      "_key": "!tables.results!0ab4IU398LbVfQpT.rwYrs3M2RuNKdIr4"
     }
   ],
   "replacement": true,
@@ -131,5 +226,20 @@
   "sort": 200000,
   "formula": "1d100",
   "_id": "0ab4IU398LbVfQpT",
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": 1769804897257,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!0ab4IU398LbVfQpT"
 }

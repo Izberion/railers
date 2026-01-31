@@ -5,98 +5,164 @@
   "results": [
     {
       "type": "document",
-      "documentCollection": "RollTable",
       "weight": 1,
       "range": [
         1,
         1
       ],
       "drawn": false,
-      "text": "Settlement Tags",
-      "documentId": "yJ5XIglinpgbW1PN",
       "img": "icons/svg/d20-grey.svg",
       "_id": "WR36bMftYZnEbIlt",
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832662727,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "Settlement Tags",
+      "documentUuid": "Compendium.railers.tables.RollTable.yJ5XIglinpgbW1PN",
+      "description": "",
       "_key": "!tables.results!Ia07TyWXf5biQp6R.WR36bMftYZnEbIlt"
     },
     {
       "type": "document",
-      "documentCollection": "RollTable",
       "weight": 1,
       "range": [
         1,
         1
       ],
       "drawn": false,
-      "text": "Settlement Tags",
-      "documentId": "yJ5XIglinpgbW1PN",
       "img": "icons/svg/d20-grey.svg",
       "_id": "gISlilEacqRxyiF4",
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832665348,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "Settlement Tags",
+      "documentUuid": "Compendium.railers.tables.RollTable.yJ5XIglinpgbW1PN",
+      "description": "",
       "_key": "!tables.results!Ia07TyWXf5biQp6R.gISlilEacqRxyiF4"
     },
     {
       "type": "document",
-      "documentCollection": "RollTable",
       "weight": 1,
       "range": [
         1,
         1
       ],
       "drawn": false,
-      "text": "Population Size",
-      "documentId": "P2pUymFglypeiyKE",
       "img": "icons/svg/d20-grey.svg",
       "_id": "QpYt6YrFiDID7CAf",
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832668013,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "Population Size",
+      "documentUuid": "Compendium.railers.tables.RollTable.P2pUymFglypeiyKE",
+      "description": "",
       "_key": "!tables.results!Ia07TyWXf5biQp6R.QpYt6YrFiDID7CAf"
     },
     {
       "type": "document",
-      "documentCollection": "RollTable",
       "weight": 1,
       "range": [
         1,
         1
       ],
       "drawn": false,
-      "text": "Economy Type",
-      "documentId": "x4QWmtCTjjv47bEj",
       "img": "icons/svg/d20-grey.svg",
       "_id": "31MGGAWVW6KXuHQZ",
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832670435,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "Economy Type",
+      "documentUuid": "Compendium.railers.tables.RollTable.x4QWmtCTjjv47bEj",
+      "description": "",
       "_key": "!tables.results!Ia07TyWXf5biQp6R.31MGGAWVW6KXuHQZ"
     },
     {
       "type": "document",
-      "documentCollection": "RollTable",
       "weight": 1,
       "range": [
         1,
         1
       ],
       "drawn": false,
-      "text": "Law",
-      "documentId": "puG15ViRcM6DmiNw",
       "img": "icons/svg/d20-grey.svg",
       "_id": "GSPQ6IHXPVqH3hhd",
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832673342,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "Law",
+      "documentUuid": "Compendium.railers.tables.RollTable.puG15ViRcM6DmiNw",
+      "description": "",
       "_key": "!tables.results!Ia07TyWXf5biQp6R.GSPQ6IHXPVqH3hhd"
     },
     {
       "type": "document",
-      "documentCollection": "RollTable",
       "weight": 1,
       "range": [
         1,
         1
       ],
       "drawn": false,
-      "text": "Demon Presence",
-      "documentId": "0ab4IU398LbVfQpT",
       "img": "icons/svg/d20-grey.svg",
       "_id": "m3nIy8XEXNPxcYwV",
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832675345,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "Demon Presence",
+      "documentUuid": "Compendium.railers.tables.RollTable.0ab4IU398LbVfQpT",
+      "description": "",
       "_key": "!tables.results!Ia07TyWXf5biQp6R.m3nIy8XEXNPxcYwV"
     }
   ],
@@ -106,5 +172,20 @@
   "formula": "1d1",
   "_id": "Ia07TyWXf5biQp6R",
   "sort": 500000,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": 1769832746246,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!Ia07TyWXf5biQp6R"
 }

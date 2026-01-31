@@ -1,0 +1,33 @@
+{
+  "name": "War Zone",
+  "_id": "UgX7RemmtIMCKhxi",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "7oFiPswipFvItgrK",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is an active war zone. The battle may be between people, demons, or a combination. There may be some kind of No Man’s Land where the bulk of the fighting takes place. Skirmishes may break out all over the settlement. The survivors may not be involved in the war, their home just a place for the belligerents to fight.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!UgX7RemmtIMCKhxi.7oFiPswipFvItgrK"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!UgX7RemmtIMCKhxi"
+}

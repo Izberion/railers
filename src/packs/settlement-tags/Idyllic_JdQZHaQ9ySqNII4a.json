@@ -1,0 +1,33 @@
+{
+  "name": "Idyllic",
+  "_id": "JdQZHaQ9ySqNII4a",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "sJmANjJUHVqXgMR1",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is seemingly peaceful, prosperous, and just a pleasant place to live. The survivors may not know how well they have it. Demons may avoid this settlement for some reason. First impressions may be deceiving.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!JdQZHaQ9ySqNII4a.sJmANjJUHVqXgMR1"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!JdQZHaQ9ySqNII4a"
+}

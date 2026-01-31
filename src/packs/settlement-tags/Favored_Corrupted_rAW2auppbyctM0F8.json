@@ -1,0 +1,33 @@
+{
+  "name": "Favored Corrupted",
+  "_id": "rAW2auppbyctM0F8",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "RLt8zS8va3BepIXl",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors of this settlement have a bias for corrupted individuals. They may simply be favored or nearly worshiped. People may seek out Corruption to gain an elevated status. Corruption may be worse here than elsewhere in the Snowlands.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!rAW2auppbyctM0F8.RLt8zS8va3BepIXl"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!rAW2auppbyctM0F8"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Anonymity",
+  "_id": "A8mIPLKE47wd9evA",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "DBDlKEW6K1VQCoSD",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors of this settlement prefer to live in anonymity. They likely do not use names or show their faces. The anonymity may be required for survival. They may shun anyone whose identity is revealed. The anonymity may only come down during special events.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!A8mIPLKE47wd9evA.DBDlKEW6K1VQCoSD"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!A8mIPLKE47wd9evA"
+}

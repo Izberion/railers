@@ -1,0 +1,33 @@
+{
+  "name": "Atmosphere",
+  "_id": "qtGDUcXFRpK9XoeJ",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "TDb4yGwWHYvR6D9Q",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The atmosphere in this settlement is different from the rest of the Snowlands. The sky may be a different color. It may be that the sun never reaches this place. The air may be too thick and uncomfortable to breathe. The air may be deadly, requiring the use of gas masks outside to simply survive.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!qtGDUcXFRpK9XoeJ.TDb4yGwWHYvR6D9Q"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!qtGDUcXFRpK9XoeJ"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Prophet",
+  "_id": "xOgfce5en4YTR3QY",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "pNWdr2rULal3BICK",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>One of the survivors of this settlement claims to be the mouthpiece of the Divine. The people may be divided on whether or not the prophet is genuine. The prophet’s followers may be fanatical, to the detriment of the community.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!xOgfce5en4YTR3QY.pNWdr2rULal3BICK"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!xOgfce5en4YTR3QY"
+}

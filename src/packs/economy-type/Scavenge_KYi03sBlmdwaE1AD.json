@@ -1,0 +1,33 @@
+{
+  "name": "Scavenge",
+  "_id": "KYi03sBlmdwaE1AD",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "wJCjl2kItfXkoe08",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The economy revolves around whatever resources the survivors are able to scavenge from sites nearby. They likely lack many other exploitable resources. Much of their infrastructure is likely makeshift, put together with whatever was available at the time.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!KYi03sBlmdwaE1AD.wJCjl2kItfXkoe08"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!KYi03sBlmdwaE1AD"
+}

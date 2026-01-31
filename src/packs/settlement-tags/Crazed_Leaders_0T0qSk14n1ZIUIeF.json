@@ -1,0 +1,33 @@
+{
+  "name": "Crazed Leaders",
+  "_id": "0T0qSk14n1ZIUIeF",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "SeykA5LtZlF8z1EC",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The leadership of this settlement is made up of one or more lunatics. The survivors may be unable to depose them. It may be that taking a leadership role is what drives the people insane.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!0T0qSk14n1ZIUIeF.SeykA5LtZlF8z1EC"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!0T0qSk14n1ZIUIeF"
+}

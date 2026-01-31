@@ -1,0 +1,33 @@
+{
+  "name": "Hidden Populace",
+  "_id": "uQF9T5KgfqAdBvLW",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "OceD0QzgMHLAB0vB",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors living in this settlement are nowhere to be found, but they’re there. Whether underground or otherwise, they’ve hidden themselves from the outside world for some reason.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!uQF9T5KgfqAdBvLW.OceD0QzgMHLAB0vB"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!uQF9T5KgfqAdBvLW"
+}

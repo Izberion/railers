@@ -1,0 +1,33 @@
+{
+  "name": "Authoritarian",
+  "_id": "usEKIi5A5qyHIUsI",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "fyamCn5KiX5IHVG0",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The law is determined by a single individual or group, likely backed by force or might. Laws may be restrictive or designed to favor those in charge. Individual survivors likely have little say in how the settlement is run or many aspects of their daily lives.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!usEKIi5A5qyHIUsI.fyamCn5KiX5IHVG0"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 700000,
+  "_key": "!journal!usEKIi5A5qyHIUsI"
+}

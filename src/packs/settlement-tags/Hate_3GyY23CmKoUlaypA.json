@@ -1,0 +1,33 @@
+{
+  "name": "Hate",
+  "_id": "3GyY23CmKoUlaypA",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "rS5eXNMox4xYgx9b",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The people in this settlement have hate in their hearts for some group. It may be narrow or wide, encompassing very few or very many, respectively. The hate may or may not be justified.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!3GyY23CmKoUlaypA.rS5eXNMox4xYgx9b"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!3GyY23CmKoUlaypA"
+}

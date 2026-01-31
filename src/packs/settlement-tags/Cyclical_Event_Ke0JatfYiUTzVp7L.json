@@ -1,0 +1,33 @@
+{
+  "name": "Cyclical Event",
+  "_id": "Ke0JatfYiUTzVp7L",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "83GCXWxcXBUkfSEj",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is able to set their calendars by a specific event that occurs regularly. This event may be innocuous, such as interesting weather patterns, or deadly, such as migrating demons.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!Ke0JatfYiUTzVp7L.83GCXWxcXBUkfSEj"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!Ke0JatfYiUTzVp7L"
+}

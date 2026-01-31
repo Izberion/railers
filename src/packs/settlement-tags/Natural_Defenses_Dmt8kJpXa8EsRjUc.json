@@ -1,0 +1,33 @@
+{
+  "name": "Natural Defenses",
+  "_id": "Dmt8kJpXa8EsRjUc",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "KmeLuwKEvP8X3BLa",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is in an ideal location for defense. It may be nearly inaccessible. The location may simply make it easy to defend. Reaching this settlement may prove difficult.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!Dmt8kJpXa8EsRjUc.KmeLuwKEvP8X3BLa"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!Dmt8kJpXa8EsRjUc"
+}

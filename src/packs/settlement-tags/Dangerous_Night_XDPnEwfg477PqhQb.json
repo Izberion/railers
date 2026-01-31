@@ -1,0 +1,33 @@
+{
+  "name": "Dangerous Night",
+  "_id": "XDPnEwfg477PqhQb",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "fx7MheRpbuJQOYNZ",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is deadly to anyone out after dark. Demons may wander the streets once the sun sets. It may be the murder capital of the Snowlands. The source of the danger may lack explanation or reason.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!XDPnEwfg477PqhQb.fx7MheRpbuJQOYNZ"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!XDPnEwfg477PqhQb"
+}

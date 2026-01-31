@@ -1,0 +1,33 @@
+{
+  "name": "Bursting",
+  "_id": "6v2t3mvwU0h1PK3F",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "1NWcJkqykiCE99LA",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The population is too large for the amount of space available, leading to overcrowding. Disease and high tempers likely follow such conditions.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!6v2t3mvwU0h1PK3F.1NWcJkqykiCE99LA"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 100000,
+  "_key": "!journal!6v2t3mvwU0h1PK3F"
+}

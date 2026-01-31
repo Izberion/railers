@@ -1,0 +1,33 @@
+{
+  "name": "Balanced",
+  "_id": "zmtgzjExWwFKFsjD",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "8VUhBP44gbasQvhi",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The economy has managed to balance extraction and production, leading to a system with few holes and likely generous stockpiles. Though some resources, and people, may slip through the cracks, this is the best of a bad situation. Trade here is likely open, if not free.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!zmtgzjExWwFKFsjD.8VUhBP44gbasQvhi"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 800000,
+  "_key": "!journal!zmtgzjExWwFKFsjD"
+}

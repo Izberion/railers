@@ -1,0 +1,33 @@
+{
+  "name": "Radio Station",
+  "_id": "PSt21dX1DGSUBuph",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "QbuWE67XVVVl7p4Y",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is home to a radio station. The station may or may not be functional, or may be able to be made so. The survivors may make regular broadcasts. The radio station may be hidden from the survivors.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!PSt21dX1DGSUBuph.QbuWE67XVVVl7p4Y"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!PSt21dX1DGSUBuph"
+}

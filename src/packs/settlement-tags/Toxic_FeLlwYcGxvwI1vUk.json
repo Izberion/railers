@@ -1,0 +1,33 @@
+{
+  "name": "Toxic",
+  "_id": "FeLlwYcGxvwI1vUk",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "JKQdn7RsW7cyKDXf",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The land, air, water, or some combination of the three in this settlement are poisonous. The survivors may be unable to go outside without feeling sick for days. They may live in constant sickness. The source of the toxicity may or may not be natural. The toxins may spread to other settlements with the PCs.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!FeLlwYcGxvwI1vUk.JKQdn7RsW7cyKDXf"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!FeLlwYcGxvwI1vUk"
+}

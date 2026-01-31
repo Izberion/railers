@@ -1,0 +1,33 @@
+{
+  "name": "Bandits",
+  "_id": "8rapCubEE9vc6y9Z",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "DkDk6UmVfN8npALI",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is a headquarters for a group of outlaws that prey upon other nearby settlements.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!8rapCubEE9vc6y9Z.DkDk6UmVfN8npALI"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!8rapCubEE9vc6y9Z"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Missing Populace",
+  "_id": "unmSXochSkQ2Ptus",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "CPNsAAV3VRoAFYGg",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The residents of this settlement have gone completely missing. There may or may not be signs of struggle. There may be no clue to where they all disappeared to. The reason may be obvious enough that the PCs will want to leave quickly too.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!unmSXochSkQ2Ptus.CPNsAAV3VRoAFYGg"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!unmSXochSkQ2Ptus"
+}

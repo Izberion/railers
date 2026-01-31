@@ -1,0 +1,33 @@
+{
+  "name": "Flora",
+  "_id": "PdKoTcOqRLV9E1wz",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "5tbY3HkyK8pj4dFX",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is flush with plant life. It may be green and lush, the plants adapted to survive the cold. It may be covered in corrupted plants that hunger for flesh.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!PdKoTcOqRLV9E1wz.5tbY3HkyK8pj4dFX"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!PdKoTcOqRLV9E1wz"
+}

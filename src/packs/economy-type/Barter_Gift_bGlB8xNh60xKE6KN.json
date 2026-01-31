@@ -1,0 +1,33 @@
+{
+  "name": "Barter/Gift",
+  "_id": "bGlB8xNh60xKE6KN",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "QGMRYFdDPkxAkNwW",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The economy relies on the exchange of goods, services, gifts, and favors. It may fall under a strict barter economy, trading things of value for value. It may be a true gift economy, relying on the compassion of your neighbor to offer something of value for nothing in return. It may fall in between, a web of trades and favors, of which may be complex or relatively simple.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!bGlB8xNh60xKE6KN.QGMRYFdDPkxAkNwW"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": -100000,
+  "_key": "!journal!bGlB8xNh60xKE6KN"
+}

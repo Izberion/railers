@@ -1,0 +1,33 @@
+{
+  "name": "Airfield",
+  "_id": "7uxv4no9SBtSkNwT",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "caBv2vl2yDEtxsGq",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement has an airstrip at the least, an entire airport at the most. The airfield may be completely intact, once cleared of snow. There may be hangers with functioning aircraft. The aircraft may all be experimental. The survivors may be trying to repair the one remaining aircraft to take to the skies.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!7uxv4no9SBtSkNwT.caBv2vl2yDEtxsGq"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!7uxv4no9SBtSkNwT"
+}

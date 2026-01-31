@@ -1,0 +1,33 @@
+{
+  "name": "Hunted",
+  "_id": "2qjiGYTzc83Unynb",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "B6Hrk5DHQAYHGVAM",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors in this settlement are hunted by some force, whether that be human, demon, or something else. The survivors may be able to fight back. The hunters may be some force that cannot be removed.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!2qjiGYTzc83Unynb.B6Hrk5DHQAYHGVAM"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!2qjiGYTzc83Unynb"
+}

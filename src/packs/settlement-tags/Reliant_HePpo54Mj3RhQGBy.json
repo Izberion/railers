@@ -1,0 +1,33 @@
+{
+  "name": "Reliant",
+  "_id": "HePpo54Mj3RhQGBy",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "MM62UmRGFaDlquaN",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is entirely reliant on another settlement nearby. They may need food, protection, raw materials, or something else that can’t acquire on their own.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!HePpo54Mj3RhQGBy.MM62UmRGFaDlquaN"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!HePpo54Mj3RhQGBy"
+}

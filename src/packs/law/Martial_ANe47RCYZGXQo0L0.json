@@ -1,0 +1,33 @@
+{
+  "name": "Martial",
+  "_id": "ANe47RCYZGXQo0L0",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "4V0bIcsYCWA5SKRl",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The law is determined by military might, with a focus on order, discipline, and hierarchy. Laws are likely restrictive, limiting movement and the actions one can take. Individual survivors are likely required to participate in military service, at least for a time.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!ANe47RCYZGXQo0L0.4V0bIcsYCWA5SKRl"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 200000,
+  "_key": "!journal!ANe47RCYZGXQo0L0"
+}

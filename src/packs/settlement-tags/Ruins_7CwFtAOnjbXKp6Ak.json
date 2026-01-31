@@ -1,0 +1,33 @@
+{
+  "name": "Ruins",
+  "_id": "7CwFtAOnjbXKp6Ak",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "fm4AaMIgfDXf0hrw",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is in total ruin. Whatever it was before, only the skeletons of building remain. Any survivors are likely to be either independent of one another or loosely connected. There may be no survivors in the ruins at all.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!7CwFtAOnjbXKp6Ak.fm4AaMIgfDXf0hrw"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!7CwFtAOnjbXKp6Ak"
+}

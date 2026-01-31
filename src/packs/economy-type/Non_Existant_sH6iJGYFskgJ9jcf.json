@@ -1,0 +1,33 @@
+{
+  "name": "Non-Existant",
+  "_id": "sH6iJGYFskgJ9jcf",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "nybPqdgGIFfzXag0",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>There is no economy to speak of in this settlement, whether from the survivors being too poor, resources being spread too thinly, or there being nothing of worth remaining.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!sH6iJGYFskgJ9jcf.nybPqdgGIFfzXag0"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": -200000,
+  "_key": "!journal!sH6iJGYFskgJ9jcf"
+}

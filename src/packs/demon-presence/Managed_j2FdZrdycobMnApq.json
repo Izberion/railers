@@ -1,0 +1,49 @@
+{
+  "name": "Managed",
+  "_id": "j2FdZrdycobMnApq",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "cFlWQBxTXqgt7cEw",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The demons nearby are effectively managed by the survivors. Whether due to regular cullings, physical barriers, or some kind of mutual understanding, demons are not a major concern.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!j2FdZrdycobMnApq.cFlWQBxTXqgt7cEw"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 75000,
+  "ownership": {
+    "default": 0,
+    "Rkv9Xf9nMjw1REva": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "railers",
+    "systemVersion": "1.0",
+    "createdTime": 1769804587168,
+    "modifiedTime": 1769805140768,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva"
+  },
+  "_key": "!journal!j2FdZrdycobMnApq"
+}

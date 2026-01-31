@@ -1,0 +1,33 @@
+{
+  "name": "Modest",
+  "_id": "lSa7zhjdczoKGEBT",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "7ya9ux07qMWE8eZy",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The population is a moderate size, large enough to produce essential amenities but small enough to be tightly-knit.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!lSa7zhjdczoKGEBT.7ya9ux07qMWE8eZy"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 6250,
+  "_key": "!journal!lSa7zhjdczoKGEBT"
+}

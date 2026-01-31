@@ -1,0 +1,33 @@
+{
+  "name": "Dueling Leaders",
+  "_id": "vC9wqyEyQPvMdg86",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "nANijSldUs8uUR3Y",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is split between multiple competing leaders. They may be orderly, taking their turns at rule while trying to undermine their opponents in their off-time. They may be vicious, actively attacking their opponents with violence.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!vC9wqyEyQPvMdg86.nANijSldUs8uUR3Y"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!vC9wqyEyQPvMdg86"
+}

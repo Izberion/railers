@@ -1,0 +1,33 @@
+{
+  "name": "Overrun",
+  "_id": "TRAYxEN47H6r9dXk",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "C4f5G7ubGz9drfXW",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Demons have taken the settlement. Any survivors remaining do so in hiding, moving when they can, dying when they can’t.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!TRAYxEN47H6r9dXk.C4f5G7ubGz9drfXW"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 400000,
+  "_key": "!journal!TRAYxEN47H6r9dXk"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Paranormal",
+  "_id": "jyAsP8HpnTpDNNuM",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "JcSTb5x2UzqtVKq7",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is seemingly haunted. Ghosts, ghouls, poltergeists, and other rogue spirits may terrorize the survivors. The residents may all be ghosts themselves. There may be no ghosts at all, the haunting explainable with mundane methods. The spirits may protect the settlement.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!jyAsP8HpnTpDNNuM.JcSTb5x2UzqtVKq7"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!jyAsP8HpnTpDNNuM"
+}

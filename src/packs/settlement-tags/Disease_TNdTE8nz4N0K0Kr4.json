@@ -1,0 +1,33 @@
+{
+  "name": "Disease",
+  "_id": "TNdTE8nz4N0K0Kr4",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "LdMv0keS59KTbBQx",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>An illness is present in this settlement. The survivors may all be unaffected carriers. The disease may be absolutely survivable but extremely inconvenient. Many of the infected may be on the edge of death.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!TNdTE8nz4N0K0Kr4.LdMv0keS59KTbBQx"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!TNdTE8nz4N0K0Kr4"
+}

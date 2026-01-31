@@ -1,0 +1,33 @@
+{
+  "name": "Surrounded",
+  "_id": "md7TLVYJ3DbtqqQx",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "KZ68sE1FOXunt4Pr",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The area around the settlement is awash in demons, effectively trapping the survivors inside. Whether the demons attack the settlement directly or not, traveling outside is likely a death sentence.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!md7TLVYJ3DbtqqQx.KZ68sE1FOXunt4Pr"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 350000,
+  "_key": "!journal!md7TLVYJ3DbtqqQx"
+}

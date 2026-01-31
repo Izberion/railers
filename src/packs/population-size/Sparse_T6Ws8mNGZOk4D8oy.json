@@ -1,0 +1,33 @@
+{
+  "name": "Sparse",
+  "_id": "T6Ws8mNGZOk4D8oy",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "TIGH1pGDmPcUsdRf",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The population is small and widely distributed. Survivors have to be willing to endure the elements for a good distance before reaching a neighbor.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!T6Ws8mNGZOk4D8oy.TIGH1pGDmPcUsdRf"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 4688,
+  "_key": "!journal!T6Ws8mNGZOk4D8oy"
+}

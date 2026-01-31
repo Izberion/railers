@@ -1,0 +1,33 @@
+{
+  "name": "Language Barrier",
+  "_id": "6Wq5A7HvoB0Kv6Ps",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "eaxuqAFXo0k2s48E",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors of this settlement don’t speak the language of the land. They may have developed their own language. They may all be deaf mutes. There may be someone who can translate. They may simply refuse to speak to any outsider, or anyone at all.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!6Wq5A7HvoB0Kv6Ps.eaxuqAFXo0k2s48E"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!6Wq5A7HvoB0Kv6Ps"
+}

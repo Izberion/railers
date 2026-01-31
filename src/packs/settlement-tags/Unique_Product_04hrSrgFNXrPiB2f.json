@@ -1,0 +1,33 @@
+{
+  "name": "Unique Product",
+  "_id": "04hrSrgFNXrPiB2f",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "sZD2CiUShuJd1TPt",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Some good made in this settlement can’t be found anywhere else in the Snowlands. It likely won’t be necessary to manufacture common technology, but it may be needed for more uncommon things, or those previously undeveloped. It may be something entirely new on its own.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!04hrSrgFNXrPiB2f.sZD2CiUShuJd1TPt"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!04hrSrgFNXrPiB2f"
+}

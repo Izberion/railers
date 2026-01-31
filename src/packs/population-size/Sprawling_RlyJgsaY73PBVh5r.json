@@ -1,0 +1,33 @@
+{
+  "name": "Sprawling",
+  "_id": "RlyJgsaY73PBVh5r",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "pz3U163fsrrAWV1w",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The population is large enough to have spilled out over a wide area, but remains densely populated.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!RlyJgsaY73PBVh5r.pz3U163fsrrAWV1w"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 25000,
+  "_key": "!journal!RlyJgsaY73PBVh5r"
+}

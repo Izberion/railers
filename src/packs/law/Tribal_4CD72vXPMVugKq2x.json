@@ -1,0 +1,33 @@
+{
+  "name": "Tribal",
+  "_id": "4CD72vXPMVugKq2x",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "admn3HvNzO9OHYxN",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The law, though informal, is determined by ancestral tradition, with the good of the group the most important element. Decisions may come down to the consensus of the group, with the leadership making the final decision. Individual survivors are likely expected to act for the good of the group.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!4CD72vXPMVugKq2x.admn3HvNzO9OHYxN"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 100000,
+  "_key": "!journal!4CD72vXPMVugKq2x"
+}

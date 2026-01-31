@@ -1,0 +1,33 @@
+{
+  "name": "Significant",
+  "_id": "ynzMzmCtnmEe0x4h",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "2D1lNeLyAh8XXcxX",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The demons are a clear and present danger. Frequent attacks plague the survivors, requiring a standing force to defend the settlement when the need arises.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!ynzMzmCtnmEe0x4h.2D1lNeLyAh8XXcxX"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 200000,
+  "_key": "!journal!ynzMzmCtnmEe0x4h"
+}

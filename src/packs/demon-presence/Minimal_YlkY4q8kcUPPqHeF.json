@@ -1,0 +1,33 @@
+{
+  "name": "Minimal",
+  "_id": "YlkY4q8kcUPPqHeF",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "dXHSbgWkYU9oHkrO",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Demons are spotted on occasion in the Snowlands outside the settlement. Rarely do they ever come near enough to cause problems. They are unlikely to be exceptionally aggressive demons.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!YlkY4q8kcUPPqHeF.dXHSbgWkYU9oHkrO"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 50000,
+  "_key": "!journal!YlkY4q8kcUPPqHeF"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Tyranny",
+  "_id": "xVP1nqN9HoYklmth",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "4AyUr8WNMdCOEDXL",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors of this settlement live under the boot of one of more tyrants. They may be resigned to the fact. The harsh treatment may be what has kept them all alive. The survivors may be in open rebellion.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!xVP1nqN9HoYklmth.4AyUr8WNMdCOEDXL"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!xVP1nqN9HoYklmth"
+}

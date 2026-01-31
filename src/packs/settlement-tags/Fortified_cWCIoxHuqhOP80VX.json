@@ -1,0 +1,33 @@
+{
+  "name": "Fortified",
+  "_id": "cWCIoxHuqhOP80VX",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "n7Ca1PVBfV3jMqvb",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Walls, trenches, barbed wire, or anything the survivors could get a hold of surround this settlement. Whether concerned about threats from outside getting in or inside getting out, they probably don’t take kindly to outsiders.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!cWCIoxHuqhOP80VX.n7Ca1PVBfV3jMqvb"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!cWCIoxHuqhOP80VX"
+}

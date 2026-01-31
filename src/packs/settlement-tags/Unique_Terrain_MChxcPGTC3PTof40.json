@@ -1,0 +1,33 @@
+{
+  "name": "Unique Terrain",
+  "_id": "MChxcPGTC3PTof40",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "8davyqJIgFJEoTcr",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement has terrain not seen anywhere else in the Snowlands. It may be hot springs that keep the settlement warm, ice structures that produce tones in the wind, or something else entirely.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!MChxcPGTC3PTof40.8davyqJIgFJEoTcr"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!MChxcPGTC3PTof40"
+}

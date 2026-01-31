@@ -1,0 +1,33 @@
+{
+  "name": "Invasion",
+  "_id": "801R8nsG1Emrszzb",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "0BfTo2C4ImXklaLT",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement has been invaded by some outside force, whether human, demon, or otherwise. The invaders may be committing terrible atrocities. The invaders may be there to quell some greater danger. The survivors may welcome the invaders.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!801R8nsG1Emrszzb.0BfTo2C4ImXklaLT"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!801R8nsG1Emrszzb"
+}

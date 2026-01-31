@@ -1,0 +1,33 @@
+{
+  "name": "Machines",
+  "_id": "rzn0e2OETPwunlFl",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "HjjySd9iLOefLRUE",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors in this settlement have developed machines or automatons never seen before. They may rely on the machines. The machines may have completely taken over without a single human left.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!rzn0e2OETPwunlFl.HjjySd9iLOefLRUE"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!rzn0e2OETPwunlFl"
+}

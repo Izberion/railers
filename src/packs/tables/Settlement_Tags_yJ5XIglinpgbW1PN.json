@@ -5,7 +5,7 @@
   "description": "",
   "results": [
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         1,
@@ -13,14 +13,26 @@
       ],
       "drawn": false,
       "_id": "NS6ObES5EKIW0xmn",
-      "text": "Airfield",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769828484643,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Airfield",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.7uxv4no9SBtSkNwT",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.NS6ObES5EKIW0xmn"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         2,
@@ -28,14 +40,26 @@
       ],
       "drawn": false,
       "_id": "P1bcNgOJrZgIPYGw",
-      "text": "Anonymity",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769828499470,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Anonymity",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.A8mIPLKE47wd9evA",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.P1bcNgOJrZgIPYGw"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         3,
@@ -43,14 +67,26 @@
       ],
       "drawn": false,
       "_id": "UnZv7sqp55MpXUuG",
-      "text": "Atmosphere",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769828995037,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Atmosphere",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.qtGDUcXFRpK9XoeJ",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.UnZv7sqp55MpXUuG"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         4,
@@ -58,14 +94,26 @@
       ],
       "drawn": false,
       "_id": "YOWZacGFoSrQkA3S",
-      "text": "Bandits",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829003987,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Bandits",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.8rapCubEE9vc6y9Z",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.YOWZacGFoSrQkA3S"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         5,
@@ -73,14 +121,26 @@
       ],
       "drawn": false,
       "_id": "spjppN0ZQFnUnMx8",
-      "text": "Barren",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829018705,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Barren",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.qphIgwEIWYK9FjqO",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.spjppN0ZQFnUnMx8"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         6,
@@ -88,14 +148,26 @@
       ],
       "drawn": false,
       "_id": "hsLR20ZsSMrqLhOb",
-      "text": "Bunker",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829029664,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Bunker",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.rjyLAtfs3zgrx6LL",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.hsLR20ZsSMrqLhOb"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         7,
@@ -103,14 +175,26 @@
       ],
       "drawn": false,
       "_id": "ee05xpGhSu4aIOLb",
-      "text": "Cannibals",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829039693,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Cannibals",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.8NmodkbHpgvMIBqw",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.ee05xpGhSu4aIOLb"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         8,
@@ -118,14 +202,26 @@
       ],
       "drawn": false,
       "_id": "476aP48GBoTMIGrZ",
-      "text": "Castes",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829047055,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Castes",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.MDJSbRzTyzDq4HqG",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.476aP48GBoTMIGrZ"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         9,
@@ -133,14 +229,26 @@
       ],
       "drawn": false,
       "_id": "BGolXJW0d8zGx7xg",
-      "text": "Crazed Leader",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829103626,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Crazed Leaders",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.0T0qSk14n1ZIUIeF",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.BGolXJW0d8zGx7xg"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         10,
@@ -148,14 +256,26 @@
       ],
       "drawn": false,
       "_id": "9G48iQIaQXBxw3KN",
-      "text": "Cyclical Event",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829205392,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Cyclical Event",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.Ke0JatfYiUTzVp7L",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.9G48iQIaQXBxw3KN"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         11,
@@ -163,14 +283,26 @@
       ],
       "drawn": false,
       "_id": "PW4KHdi9rXFWQNrQ",
-      "text": "Dangerous Night",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829214175,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Dangerous Night",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.XDPnEwfg477PqhQb",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.PW4KHdi9rXFWQNrQ"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         12,
@@ -178,14 +310,26 @@
       ],
       "drawn": false,
       "_id": "xhqBuBHN7L7w5bPi",
-      "text": "Demon Cultists",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829223185,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Demon Cultists",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.xJUvGyk9x3k3tod0",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.xhqBuBHN7L7w5bPi"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         13,
@@ -193,14 +337,26 @@
       ],
       "drawn": false,
       "_id": "HIfV8zdyRSKZo6q8",
-      "text": "Demon Nest",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829231207,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Demon Nest",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.EFBy1PxilHu8t4jV",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.HIfV8zdyRSKZo6q8"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         14,
@@ -208,14 +364,26 @@
       ],
       "drawn": false,
       "_id": "tLCvGuaeqWFVamen",
-      "text": "Despair",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829238715,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Despair",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.jVc1AIxupWd01GDX",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.tLCvGuaeqWFVamen"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         15,
@@ -223,14 +391,26 @@
       ],
       "drawn": false,
       "_id": "GJcWjukqwcqC2gyl",
-      "text": "Disease",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829247891,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Disease",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.TNdTE8nz4N0K0Kr4",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.GJcWjukqwcqC2gyl"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         16,
@@ -238,14 +418,26 @@
       ],
       "drawn": false,
       "_id": "YI0lLRHIfxhi9fSe",
-      "text": "Domestication",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829260503,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Domestication",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.RobDLSVb93h2xWXD",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.YI0lLRHIfxhi9fSe"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         17,
@@ -253,14 +445,26 @@
       ],
       "drawn": false,
       "_id": "Kxjv9rC4gkuacCv5",
-      "text": "Doomed",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829269989,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Doomed",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.8GvcOBxXzZgbdVuS",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.Kxjv9rC4gkuacCv5"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         18,
@@ -268,14 +472,26 @@
       ],
       "drawn": false,
       "_id": "qQcbZPBrQouzLkgt",
-      "text": "Doppelgangers",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829276630,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Doppelgangers",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.UXoWdlG8ehusgGjI",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.qQcbZPBrQouzLkgt"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         19,
@@ -283,14 +499,26 @@
       ],
       "drawn": false,
       "_id": "stAIrxQJ0cG5KkpW",
-      "text": "Dueling Leaders",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829282575,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Dueling Leaders",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.vC9wqyEyQPvMdg86",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.stAIrxQJ0cG5KkpW"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         20,
@@ -298,14 +526,26 @@
       ],
       "drawn": false,
       "_id": "3diAmd0aEGhNUFU8",
-      "text": "Eugenics",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829291422,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Eugenics",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.qqRPl1I4bh0Y59hQ",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.3diAmd0aEGhNUFU8"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         21,
@@ -313,14 +553,26 @@
       ],
       "drawn": false,
       "_id": "XxxI0P7ECgoXnhu9",
-      "text": "Experiments",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829299143,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Experiments",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.aunhZOmsP7EY18De",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.XxxI0P7ECgoXnhu9"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         22,
@@ -328,14 +580,26 @@
       ],
       "drawn": false,
       "_id": "TMD4JlWydgG8OFmH",
-      "text": "Expertise",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829305312,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Expertise",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.etXI6SftDQeKcMuH",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.TMD4JlWydgG8OFmH"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         23,
@@ -343,14 +607,26 @@
       ],
       "drawn": false,
       "_id": "SifYqi8elxgP30x8",
-      "text": "Fanatics",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829314684,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Fanatics",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.P9H4BwwhiFIQzyzV",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.SifYqi8elxgP30x8"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         24,
@@ -358,14 +634,26 @@
       ],
       "drawn": false,
       "_id": "srgpbVjEyS7xLjli",
-      "text": "Favored Corrupted",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829325688,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Favored Corrupted",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.rAW2auppbyctM0F8",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.srgpbVjEyS7xLjli"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         25,
@@ -373,14 +661,26 @@
       ],
       "drawn": false,
       "_id": "kTFP8AevmKNvfI7O",
-      "text": "Feral",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829332507,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Feral",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.pdX2Z69VYQKzJnX3",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.kTFP8AevmKNvfI7O"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         26,
@@ -388,14 +688,26 @@
       ],
       "drawn": false,
       "_id": "OY6lzLrJv9IX2hzH",
-      "text": "Flora",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829339547,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Flora",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.PdKoTcOqRLV9E1wz",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.OY6lzLrJv9IX2hzH"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         27,
@@ -403,14 +715,26 @@
       ],
       "drawn": false,
       "_id": "b2mgGdiQofQsys0L",
-      "text": "Fortified",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829348275,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Fortified",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.cWCIoxHuqhOP80VX",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.b2mgGdiQofQsys0L"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         28,
@@ -418,14 +742,26 @@
       ],
       "drawn": false,
       "_id": "1ZrZtl8GSYOwNqOp",
-      "text": "Fractured",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829364546,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Fractured",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.o1vfhe7WnBrBWWF6",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.1ZrZtl8GSYOwNqOp"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         29,
@@ -433,14 +769,26 @@
       ],
       "drawn": false,
       "_id": "dWGMD8VBcI7MNaRj",
-      "text": "Genius",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829370529,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Genius",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.vdzVmCZnDPx3XWzR",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.dWGMD8VBcI7MNaRj"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         30,
@@ -448,14 +796,26 @@
       ],
       "drawn": false,
       "_id": "HuXT0WMROQ9VhvKi",
-      "text": "Great Work",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829376567,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Great Work",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.0BX9i1yBnIlendYY",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.HuXT0WMROQ9VhvKi"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         31,
@@ -463,14 +823,26 @@
       ],
       "drawn": false,
       "_id": "B976ASJKdnLnpCK2",
-      "text": "Gremlins",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829382935,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Gremlins",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.JzRR7aNqt1jfjT67",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.B976ASJKdnLnpCK2"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         32,
@@ -478,14 +850,26 @@
       ],
       "drawn": false,
       "_id": "QazTEDXUjtgaivus",
-      "text": "Growth",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829394848,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Growth",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.ZB6zHawwO7wlxo9W",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.QazTEDXUjtgaivus"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         33,
@@ -493,14 +877,26 @@
       ],
       "drawn": false,
       "_id": "DVzlVk7DcnlDxv7R",
-      "text": "Happenings",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829630599,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Happenings",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.ZlBeOaLoitrMrMp7",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.DVzlVk7DcnlDxv7R"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         34,
@@ -508,14 +904,26 @@
       ],
       "drawn": false,
       "_id": "MEJa6rSZSVcRDrYV",
-      "text": "Hate",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829638205,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Hate",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.3GyY23CmKoUlaypA",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.MEJa6rSZSVcRDrYV"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         35,
@@ -523,14 +931,26 @@
       ],
       "drawn": false,
       "_id": "NXAa1uGNXEoHv61y",
-      "text": "Hated Corrupted",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829646036,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Hated Corrupted",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.fb3pOkKJqew81G3f",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.NXAa1uGNXEoHv61y"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         36,
@@ -538,14 +958,26 @@
       ],
       "drawn": false,
       "_id": "l2BAzUDfXnkawCCf",
-      "text": "Heavy Corruption",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829652163,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Heavy Corruption",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.XKZkwcpqUgMblvKL",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.l2BAzUDfXnkawCCf"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         37,
@@ -553,14 +985,26 @@
       ],
       "drawn": false,
       "_id": "oJB9sswxf9tiNFBg",
-      "text": "Hermit",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829664823,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Hermit",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.mf9Y1G9fW4D77yiC",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.oJB9sswxf9tiNFBg"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         38,
@@ -568,14 +1012,26 @@
       ],
       "drawn": false,
       "_id": "IMRuys2hbsbGf58a",
-      "text": "Hidden Leaders",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829670613,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Hidden Leaders",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.inWK9TaFlrXCnKP9",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.IMRuys2hbsbGf58a"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         39,
@@ -583,14 +1039,26 @@
       ],
       "drawn": false,
       "_id": "tNYECCHFnt31bnl7",
-      "text": "Hidden Populace",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829677214,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Hidden Populace",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.uQF9T5KgfqAdBvLW",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.tNYECCHFnt31bnl7"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         40,
@@ -598,14 +1066,26 @@
       ],
       "drawn": false,
       "_id": "cr3epOigwaUKKBRq",
-      "text": "High Society",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829685608,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "High Society",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.eqO9jS3rodRBrRlK",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.cr3epOigwaUKKBRq"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         41,
@@ -613,14 +1093,26 @@
       ],
       "drawn": false,
       "_id": "FI41I9365CxqoKUO",
-      "text": "Hive Mind",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829693690,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Hive Mind",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.RZNxVuzw7yN3iHL7",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.FI41I9365CxqoKUO"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         42,
@@ -628,14 +1120,26 @@
       ],
       "drawn": false,
       "_id": "ZnDI4oLwK8wyEnnb",
-      "text": "Homogeneous",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829701300,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Homogeneous",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.2fgABy8lOIVIq1oD",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.ZnDI4oLwK8wyEnnb"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         43,
@@ -643,14 +1147,26 @@
       ],
       "drawn": false,
       "_id": "ryyjNtoT7ZpzunTZ",
-      "text": "Hub",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829707051,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Hub",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.Gd4CiOwLxTNf4Qat",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.ryyjNtoT7ZpzunTZ"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         44,
@@ -658,14 +1174,26 @@
       ],
       "drawn": false,
       "_id": "fws4oJwVhJK18u6F",
-      "text": "Hunted",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829712585,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Hunted",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.2qjiGYTzc83Unynb",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.fws4oJwVhJK18u6F"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         45,
@@ -673,14 +1201,26 @@
       ],
       "drawn": false,
       "_id": "ew5KYOdWkkncchJA",
-      "text": "Idyllic",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829718827,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Idyllic",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.JdQZHaQ9ySqNII4a",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.ew5KYOdWkkncchJA"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         46,
@@ -688,14 +1228,26 @@
       ],
       "drawn": false,
       "_id": "sfcUvf9AQSVuGJDl",
-      "text": "Industrial Center",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829728668,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Industrial Center",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.4gn4lmsfgvjX7giJ",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.sfcUvf9AQSVuGJDl"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         47,
@@ -703,14 +1255,26 @@
       ],
       "drawn": false,
       "_id": "Et4rNIXw0VFYZDRX",
-      "text": "Innovation",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830218249,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Innovation",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.ajsUto1dacLtpEyN",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.Et4rNIXw0VFYZDRX"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         48,
@@ -718,14 +1282,26 @@
       ],
       "drawn": false,
       "_id": "Oc0vrwENzRKkCicL",
-      "text": "Internal Conflict",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830396971,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Internal Conflict",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.RedwPfJEzpLiNdJ0",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.Oc0vrwENzRKkCicL"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         49,
@@ -733,14 +1309,26 @@
       ],
       "drawn": false,
       "_id": "OgaHiF1nZ5dXVN1S",
-      "text": "Invasion",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830404693,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Invasion",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.801R8nsG1Emrszzb",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.OgaHiF1nZ5dXVN1S"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         50,
@@ -748,14 +1336,26 @@
       ],
       "drawn": false,
       "_id": "tP12WWb0raaODk86",
-      "text": "Isolation",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830413567,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Isolation",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.rOWkSkZKt0tbBYoF",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.tP12WWb0raaODk86"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         51,
@@ -763,14 +1363,26 @@
       ],
       "drawn": false,
       "_id": "ReePtgmrawVYy5OK",
-      "text": "Kidnappers",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830422077,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Kidnappers",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.2q1YlqZmf5WAotte",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.ReePtgmrawVYy5OK"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         52,
@@ -778,14 +1390,26 @@
       ],
       "drawn": false,
       "_id": "hWevGQxa2Wz5l45h",
-      "text": "Language Barrier",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830475260,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Language Barrier",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.6Wq5A7HvoB0Kv6Ps",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.hWevGQxa2Wz5l45h"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         53,
@@ -793,14 +1417,26 @@
       ],
       "drawn": false,
       "_id": "4haKOWo6GRFUzBad",
-      "text": "Machines",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830819783,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Machines",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.rzn0e2OETPwunlFl",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.4haKOWo6GRFUzBad"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         54,
@@ -808,14 +1444,26 @@
       ],
       "drawn": false,
       "_id": "eVxKWctokIhIfD2H",
-      "text": "Madness",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830832872,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Madness",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.XtnXafgW4iGylQIy",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.eVxKWctokIhIfD2H"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         55,
@@ -823,14 +1471,26 @@
       ],
       "drawn": false,
       "_id": "9Wytqea99e9MD8NK",
-      "text": "Martial Society",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830842355,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Martial Society",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.6a4UXTfeWzFJ0sGO",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.9Wytqea99e9MD8NK"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         56,
@@ -838,89 +1498,161 @@
       ],
       "drawn": false,
       "_id": "0MEv5UH9B51iKujh",
-      "text": "Medical Facility",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830849171,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Medical Facility",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.cvTNLYhFCXGZqC96",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.0MEv5UH9B51iKujh"
     },
     {
-      "type": "text",
-      "weight": 1,
-      "range": [
-        57,
-        57
-      ],
-      "drawn": false,
-      "_id": "NsokJj9UY6J8I0Si",
-      "text": "Microclimate",
-      "img": "icons/svg/d20-black.svg",
-      "documentId": null,
-      "flags": {},
-      "_key": "!tables.results!yJ5XIglinpgbW1PN.NsokJj9UY6J8I0Si"
-    },
-    {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         58,
         58
       ],
       "drawn": false,
-      "_id": "9euGO1Ih1Gf0qLTn",
-      "text": "Military Facility",
+      "_id": "NsokJj9UY6J8I0Si",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
-      "_key": "!tables.results!yJ5XIglinpgbW1PN.9euGO1Ih1Gf0qLTn"
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830858615,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Microclimate",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.53IG9ZufSoaLFxiN",
+      "_key": "!tables.results!yJ5XIglinpgbW1PN.NsokJj9UY6J8I0Si"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         59,
         59
       ],
       "drawn": false,
-      "_id": "v5qJrybxrpQI6y4U",
-      "text": "Mine",
+      "_id": "9euGO1Ih1Gf0qLTn",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
-      "_key": "!tables.results!yJ5XIglinpgbW1PN.v5qJrybxrpQI6y4U"
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830950134,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Military Facility",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.fbFzKlu5jLHamBKD",
+      "_key": "!tables.results!yJ5XIglinpgbW1PN.9euGO1Ih1Gf0qLTn"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         60,
         60
       ],
       "drawn": false,
-      "_id": "FqCYbKinBCV3NCO8",
-      "text": "Missing Populace",
+      "_id": "v5qJrybxrpQI6y4U",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
-      "_key": "!tables.results!yJ5XIglinpgbW1PN.FqCYbKinBCV3NCO8"
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830959664,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Mine",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.bH3d5C0MX1Bj7Eoa",
+      "_key": "!tables.results!yJ5XIglinpgbW1PN.v5qJrybxrpQI6y4U"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         61,
         61
       ],
       "drawn": false,
-      "_id": "MBDPZW6ixOOUbZy1",
-      "text": "Messages",
+      "_id": "FqCYbKinBCV3NCO8",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830967189,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Missing Populace",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.unmSXochSkQ2Ptus",
+      "_key": "!tables.results!yJ5XIglinpgbW1PN.FqCYbKinBCV3NCO8"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        57,
+        57
+      ],
+      "drawn": false,
+      "_id": "MBDPZW6ixOOUbZy1",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830995625,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Messages",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.SwQYbodvMMGdKKx5",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.MBDPZW6ixOOUbZy1"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         62,
@@ -928,14 +1660,26 @@
       ],
       "drawn": false,
       "_id": "uAG1g4IpTCghwMVS",
-      "text": "Mutants",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831060058,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Mutants",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.I4JJErTntHjUfZa2",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.uAG1g4IpTCghwMVS"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         63,
@@ -943,14 +1687,26 @@
       ],
       "drawn": false,
       "_id": "GozqThKf6sdZC9L6",
-      "text": "Natural Defenses",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831084423,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Natural Defenses",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.Dmt8kJpXa8EsRjUc",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.GozqThKf6sdZC9L6"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         64,
@@ -958,14 +1714,26 @@
       ],
       "drawn": false,
       "_id": "sC7fj9vY1ejWnlcB",
-      "text": "Odd Populace",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831091849,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Odd Populace",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.PLLvhsQ7PS6K0hFx",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.sC7fj9vY1ejWnlcB"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         65,
@@ -973,14 +1741,26 @@
       ],
       "drawn": false,
       "_id": "aDVKm37lV9crUQHm",
-      "text": "Outsiders",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831099847,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Outsiders",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.RZq2GpdZRh62Axi5",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.aDVKm37lV9crUQHm"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         66,
@@ -988,14 +1768,26 @@
       ],
       "drawn": false,
       "_id": "MhxsoZIt1AbwhXzf",
-      "text": "Nomads",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831105842,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Nomads",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.gbGsPAJZxm9IAcnC",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.MhxsoZIt1AbwhXzf"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         67,
@@ -1003,14 +1795,26 @@
       ],
       "drawn": false,
       "_id": "YeUsQzCQuWhZXXw7",
-      "text": "Pacifists",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831464114,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Pacifists",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.bkPRZohTlTbKcsqP",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.YeUsQzCQuWhZXXw7"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         68,
@@ -1018,14 +1822,26 @@
       ],
       "drawn": false,
       "_id": "1LjKNv1FlN2x4O3m",
-      "text": "Paranormal",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831470566,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Paranormal",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.jyAsP8HpnTpDNNuM",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.1LjKNv1FlN2x4O3m"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         69,
@@ -1033,14 +1849,26 @@
       ],
       "drawn": false,
       "_id": "5YS8eTJXQ7IZ5ujX",
-      "text": "Partiers",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831480952,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Partiers",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.f0PpziYYwRHKMwLR",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.5YS8eTJXQ7IZ5ujX"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         70,
@@ -1048,14 +1876,26 @@
       ],
       "drawn": false,
       "_id": "SpKga2ZOVNGhrOhD",
-      "text": "Plentiful Resource",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831495572,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Plentiful Resource",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.Ze0mxVDeTAHnFb61",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.SpKga2ZOVNGhrOhD"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         71,
@@ -1063,14 +1903,26 @@
       ],
       "drawn": false,
       "_id": "qfxr4oRyCyRWa2E2",
-      "text": "Powerplant",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831501908,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Powerplant",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.UPf6uZAJj2F4k7vQ",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.qfxr4oRyCyRWa2E2"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         72,
@@ -1078,14 +1930,26 @@
       ],
       "drawn": false,
       "_id": "NUbnWiRrgFPj6gWD",
-      "text": "Prophet",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831507592,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Prophet",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.xOgfce5en4YTR3QY",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.NUbnWiRrgFPj6gWD"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         73,
@@ -1093,14 +1957,26 @@
       ],
       "drawn": false,
       "_id": "8P3YwoTMuBokWQxX",
-      "text": "Puritanical",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831513466,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Puritanical",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.wdZ8Yq5QFtTFiIkq",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.8P3YwoTMuBokWQxX"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         74,
@@ -1108,14 +1984,26 @@
       ],
       "drawn": false,
       "_id": "V06JyETYIQE5wSML",
-      "text": "Quarantine",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831518904,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Quarantine",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.9M1o0D1Ql3PPWST6",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.V06JyETYIQE5wSML"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         75,
@@ -1123,14 +2011,26 @@
       ],
       "drawn": false,
       "_id": "N6kETv3NXPFbZMp8",
-      "text": "Radio Station",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831525172,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Radio Station",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.PSt21dX1DGSUBuph",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.N6kETv3NXPFbZMp8"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         76,
@@ -1138,14 +2038,26 @@
       ],
       "drawn": false,
       "_id": "RoKE2DklgKXOkqrN",
-      "text": "Rebuilding",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831531021,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Rebuilding",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.SaGCXJIw7KU4yXkM",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.RoKE2DklgKXOkqrN"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         77,
@@ -1153,14 +2065,26 @@
       ],
       "drawn": false,
       "_id": "QInW1lN4tvvEtHc9",
-      "text": "Recent Disaster",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831536815,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Recent Disaster",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.2r2YMiuzOmyEqJsK",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.QInW1lN4tvvEtHc9"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         78,
@@ -1168,14 +2092,26 @@
       ],
       "drawn": false,
       "_id": "fLnJv0cofnJqWJzX",
-      "text": "Recent Attacks",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831561574,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Regular Attacks",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.O6ESZLRsv9xdYxfo",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.fLnJv0cofnJqWJzX"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         79,
@@ -1183,14 +2119,26 @@
       ],
       "drawn": false,
       "_id": "ErC7YU2cmGSGYCLf",
-      "text": "Reliant",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831587533,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Reliant",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.HePpo54Mj3RhQGBy",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.ErC7YU2cmGSGYCLf"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         80,
@@ -1198,14 +2146,26 @@
       ],
       "drawn": false,
       "_id": "EB8YHPGrL9tJ0ZfY",
-      "text": "Remnants",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831595080,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Remnants",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.l9ahaapEf6oSWlRQ",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.EB8YHPGrL9tJ0ZfY"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         81,
@@ -1213,14 +2173,26 @@
       ],
       "drawn": false,
       "_id": "MZAo5akB1JdC58kW",
-      "text": "Restriction",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831602432,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Restriction",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.OvgDQIgo4yhNWijp",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.MZAo5akB1JdC58kW"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         82,
@@ -1228,14 +2200,26 @@
       ],
       "drawn": false,
       "_id": "niAUWDIQtVZ2mb7z",
-      "text": "Ruin",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831617918,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Ruins",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.7CwFtAOnjbXKp6Ak",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.niAUWDIQtVZ2mb7z"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         83,
@@ -1243,14 +2227,26 @@
       ],
       "drawn": false,
       "_id": "JY9cfWCx93AnOt5S",
-      "text": "Siege",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831630228,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Siege",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.1zjf41OsAdROEokv",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.JY9cfWCx93AnOt5S"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         84,
@@ -1258,14 +2254,26 @@
       ],
       "drawn": false,
       "_id": "Ct4QT81QNl0pAiGb",
-      "text": "Slavery",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831636196,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Slavery",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.9WJBg26wviCPjeTg",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.Ct4QT81QNl0pAiGb"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         85,
@@ -1273,14 +2281,26 @@
       ],
       "drawn": false,
       "_id": "aXy4sFhUSf1F4nmu",
-      "text": "Supernatural",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831650864,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Supernatural",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.NTbNI866nhtACQvE",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.aXy4sFhUSf1F4nmu"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         86,
@@ -1288,14 +2308,26 @@
       ],
       "drawn": false,
       "_id": "PMSdqNDQzvervNBI",
-      "text": "Suspicious",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831686408,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Suspicious",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.lsdmcwQOv4UqeVJh",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.PMSdqNDQzvervNBI"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         87,
@@ -1303,14 +2335,26 @@
       ],
       "drawn": false,
       "_id": "L8P25Zpj5xOgQOvb",
-      "text": "Terror",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769831735736,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Terror",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.BqiX5u5S0i45ugos",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.L8P25Zpj5xOgQOvb"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         88,
@@ -1318,14 +2362,26 @@
       ],
       "drawn": false,
       "_id": "rWb3iLNt2EF8YcyJ",
-      "text": "Toxic",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832176425,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Toxic",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.FeLlwYcGxvwI1vUk",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.rWb3iLNt2EF8YcyJ"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         89,
@@ -1333,14 +2389,26 @@
       ],
       "drawn": false,
       "_id": "PG1ujlLolIcE5yxe",
-      "text": "Train Yard",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832183139,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Train Yard",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.2MuSrxZ5WFIEtBz2",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.PG1ujlLolIcE5yxe"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         90,
@@ -1348,14 +2416,26 @@
       ],
       "drawn": false,
       "_id": "zZr3sUu1OfJ6Gj9S",
-      "text": "Trapped",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832188914,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Trapped",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.qCMHvwiSCzncSx37",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.zZr3sUu1OfJ6Gj9S"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         91,
@@ -1363,14 +2443,26 @@
       ],
       "drawn": false,
       "_id": "k1H5XXCcjsQir6Rl",
-      "text": "Tyranny",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832196169,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Tyranny",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.xVP1nqN9HoYklmth",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.k1H5XXCcjsQir6Rl"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         92,
@@ -1378,14 +2470,26 @@
       ],
       "drawn": false,
       "_id": "xK60iWtmNsUlxh7c",
-      "text": "Uncorrupted",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832205450,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Uncorrupted",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.wDIghGF1o7kF6B1x",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.xK60iWtmNsUlxh7c"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         93,
@@ -1393,14 +2497,26 @@
       ],
       "drawn": false,
       "_id": "OSuPUGQ4KO9uQoVs",
-      "text": "Underground",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832212268,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Underground",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.mj2bMzviFZz7WV2s",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.OSuPUGQ4KO9uQoVs"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         94,
@@ -1408,14 +2524,26 @@
       ],
       "drawn": false,
       "_id": "wt3CdLCPHabEKhpL",
-      "text": "Unique Demon",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832220118,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Unique Demons",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.eOrMD7GNAG353VQw",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.wt3CdLCPHabEKhpL"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         95,
@@ -1423,14 +2551,26 @@
       ],
       "drawn": false,
       "_id": "FqGWZ5SiFL26x1o8",
-      "text": "Unique Product",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832227158,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Unique Product",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.04hrSrgFNXrPiB2f",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.FqGWZ5SiFL26x1o8"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         96,
@@ -1438,14 +2578,26 @@
       ],
       "drawn": false,
       "_id": "KnVoeaCz0fjyPpV1",
-      "text": "Unique Terrain",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832233711,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Unique Terrain",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.MChxcPGTC3PTof40",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.KnVoeaCz0fjyPpV1"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         97,
@@ -1453,14 +2605,26 @@
       ],
       "drawn": false,
       "_id": "j0REUnR2njKiKvzN",
-      "text": "Unrest",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832241852,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Unrest",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.WRq0EHGbAsf7Y7yT",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.j0REUnR2njKiKvzN"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         98,
@@ -1468,14 +2632,26 @@
       ],
       "drawn": false,
       "_id": "Nt0VTyiigpFKmLzZ",
-      "text": "Vice Den",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832249473,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Vice Den",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.fQcjFzKFBIXNrxAx",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.Nt0VTyiigpFKmLzZ"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         99,
@@ -1483,14 +2659,26 @@
       ],
       "drawn": false,
       "_id": "5LBRhwHzIU4qfA9w",
-      "text": "War Zone",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832255597,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "War Zone",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.UgX7RemmtIMCKhxi",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.5LBRhwHzIU4qfA9w"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 1,
       "range": [
         100,
@@ -1498,10 +2686,22 @@
       ],
       "drawn": false,
       "_id": "ytOM56dqY5Y5PETa",
-      "text": "Well Stocked",
-      "img": "icons/svg/d20-black.svg",
-      "documentId": null,
+      "img": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769832261162,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Well Stocked",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.gh95kvfEv9ATkGMp",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.ytOM56dqY5Y5PETa"
     }
   ],
@@ -1510,5 +2710,20 @@
   "folder": "fPWaJS6UwaUalU6f",
   "sort": 100000,
   "formula": "1d100",
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": 1769832256871,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!yJ5XIglinpgbW1PN"
 }

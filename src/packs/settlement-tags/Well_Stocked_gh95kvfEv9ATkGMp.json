@@ -1,0 +1,33 @@
+{
+  "name": "Well Stocked",
+  "_id": "gh95kvfEv9ATkGMp",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "Mq8LmkkvRjGodH3C",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement has stores of all sorts of raw materials and manufactured goods. They may make it all on their own. The stores may be unguarded, unconcerned about theft because of the large amount. The stores may be a lie told to the residents to keep them happy. The stores may be unknown, hidden from the survivors.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!gh95kvfEv9ATkGMp.Mq8LmkkvRjGodH3C"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!gh95kvfEv9ATkGMp"
+}

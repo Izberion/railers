@@ -1,0 +1,33 @@
+{
+  "name": "Heavy Corruption",
+  "_id": "XKZkwcpqUgMblvKL",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "x1P3DyqI7sJ5H6xS",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is incredibly susceptible to Corruption. Survivors here likely have a large amount of mutations. It may be due to some atmospheric effect that increases the Corruption in the air, some environmental factor, or something else entirely. Gas mask may or may not function at all here.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!XKZkwcpqUgMblvKL.x1P3DyqI7sJ5H6xS"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!XKZkwcpqUgMblvKL"
+}

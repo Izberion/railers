@@ -1,0 +1,33 @@
+{
+  "name": "Bunker",
+  "_id": "rjyLAtfs3zgrx6LL",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "Bh1Rdt4315cCWlbT",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement contains a bunker, or series of bunkers. The bunker may still be sealed. The residents may rely on the bunkers. The bunkers may be failing.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!rjyLAtfs3zgrx6LL.Bh1Rdt4315cCWlbT"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!rjyLAtfs3zgrx6LL"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Hermit",
+  "_id": "mf9Y1G9fW4D77yiC",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "aiGLqFkcElppAbD4",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is home to an individual living in extreme isolation. He may be alone by choice, separated from the other survivors. He may be the last survivor of his settlement. He may have gone mad from the isolation.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!mf9Y1G9fW4D77yiC.aiGLqFkcElppAbD4"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!mf9Y1G9fW4D77yiC"
+}

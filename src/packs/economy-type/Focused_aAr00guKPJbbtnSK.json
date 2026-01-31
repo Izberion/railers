@@ -1,0 +1,33 @@
+{
+  "name": "Focused",
+  "_id": "aAr00guKPJbbtnSK",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "E4sHwYRwMtrdGbgA",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The economy centers around some good or group of goods, whether that be the extraction of natural resources or the production of finished goods. This resource is likely important to the survival of the settlement.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!aAr00guKPJbbtnSK.E4sHwYRwMtrdGbgA"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 50000,
+  "_key": "!journal!aAr00guKPJbbtnSK"
+}

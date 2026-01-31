@@ -1,0 +1,33 @@
+{
+  "name": "Expertise",
+  "_id": "etXI6SftDQeKcMuH",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "O5ux1yKrXovtaG1h",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors of this settlement are experts in one field or another. It may be they make masterwork firearms. They may enter a fugue to create their incredible works but cannot repeat them normally. The works may only function in this settlement.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!etXI6SftDQeKcMuH.O5ux1yKrXovtaG1h"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!etXI6SftDQeKcMuH"
+}

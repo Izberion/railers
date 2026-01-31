@@ -1,0 +1,33 @@
+{
+  "name": "Kidnappers",
+  "_id": "2q1YlqZmf5WAotte",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "8R7oV40OeZCe3f7l",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is home to raiders who specialize in attacking other settlements and kidnapping whomever they can. The raiders may be completely hospitable to visitors. The slaves may outnumber the raiders. They may have strange reasons for their actions.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!2q1YlqZmf5WAotte.8R7oV40OeZCe3f7l"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!2q1YlqZmf5WAotte"
+}

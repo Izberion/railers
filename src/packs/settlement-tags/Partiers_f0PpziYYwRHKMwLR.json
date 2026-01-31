@@ -1,0 +1,33 @@
+{
+  "name": "Partiers",
+  "_id": "f0PpziYYwRHKMwLR",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "3lVAAh7wjYRkECZ4",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors here love to party. The party may go on non-stop. The parties may be rituals, used for other means besides social entertainment. The parties may attract unwanted attention.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!f0PpziYYwRHKMwLR.3lVAAh7wjYRkECZ4"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!f0PpziYYwRHKMwLR"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Internal Conflict",
+  "_id": "RedwPfJEzpLiNdJ0",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "JCJFLIoBAal4jVfV",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors of this settlement are at odds with one another for some reason. The conflict may be entirely civil, or it may devolve into violence regularly. The conflict may the incomprehensible to outsiders.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!RedwPfJEzpLiNdJ0.JCJFLIoBAal4jVfV"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!RedwPfJEzpLiNdJ0"
+}

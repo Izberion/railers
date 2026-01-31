@@ -1,0 +1,33 @@
+{
+  "name": "Military Facility",
+  "_id": "fbFzKlu5jLHamBKD",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "hqw2XwsEsLbhp4dk",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement either is or was some form of military installation. There may be military-grade weaponry available for the taking. The survivors may treat the facility as if it were still in operation.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!fbFzKlu5jLHamBKD.hqw2XwsEsLbhp4dk"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!fbFzKlu5jLHamBKD"
+}

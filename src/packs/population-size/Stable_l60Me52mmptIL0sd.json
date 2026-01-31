@@ -1,0 +1,33 @@
+{
+  "name": "Stable",
+  "_id": "l60Me52mmptIL0sd",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "uqbnR1osZ6tBcRbZ",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The population size has leveled out, having found a happy medium, with no large swings up or down in recent times.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!l60Me52mmptIL0sd.uqbnR1osZ6tBcRbZ"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 12500,
+  "_key": "!journal!l60Me52mmptIL0sd"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Puritanical",
+  "_id": "wdZ8Yq5QFtTFiIkq",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "crUn0dZVLetIWCco",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors of this settlement have a rigid morality they adhere to. It may follow religious, cultural, or other lines. Their sense of morality may be strange rather than strict. Their rigidity may be what keeps them safe.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!wdZ8Yq5QFtTFiIkq.crUn0dZVLetIWCco"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!wdZ8Yq5QFtTFiIkq"
+}

@@ -4,7 +4,7 @@
   "description": "",
   "results": [
     {
-      "type": "text",
+      "type": "document",
       "weight": 5,
       "range": [
         1,
@@ -12,14 +12,26 @@
       ],
       "drawn": false,
       "_id": "OFPJI1ijFFmzEIlY",
-      "text": "Anarchic",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805420303,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Anarchic",
+      "documentUuid": "Compendium.railers.law.JournalEntry.fb4LKpQNyZhGuX3j",
       "_key": "!tables.results!puG15ViRcM6DmiNw.OFPJI1ijFFmzEIlY"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 10,
       "range": [
         6,
@@ -27,14 +39,26 @@
       ],
       "drawn": false,
       "_id": "rsEEbuVbtswm6D4i",
-      "text": "Tribal",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805414171,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Tribal",
+      "documentUuid": "Compendium.railers.law.JournalEntry.4CD72vXPMVugKq2x",
       "_key": "!tables.results!puG15ViRcM6DmiNw.rsEEbuVbtswm6D4i"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 15,
       "range": [
         16,
@@ -42,14 +66,26 @@
       ],
       "drawn": false,
       "_id": "CUqpct5saoDcCzu9",
-      "text": "Martial",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805407566,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Martial",
+      "documentUuid": "Compendium.railers.law.JournalEntry.ANe47RCYZGXQo0L0",
       "_key": "!tables.results!puG15ViRcM6DmiNw.CUqpct5saoDcCzu9"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 20,
       "range": [
         31,
@@ -57,14 +93,26 @@
       ],
       "drawn": false,
       "_id": "JwBQglvbSh9VLXAI",
-      "text": "Religious",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805400350,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Religious",
+      "documentUuid": "Compendium.railers.law.JournalEntry.8ibWe1cwSglfiKuD",
       "_key": "!tables.results!puG15ViRcM6DmiNw.JwBQglvbSh9VLXAI"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 20,
       "range": [
         51,
@@ -72,14 +120,26 @@
       ],
       "drawn": false,
       "_id": "9zy62U5kdrQHAJar",
-      "text": "Democratic",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805392423,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Democratic",
+      "documentUuid": "Compendium.railers.law.JournalEntry.5xeNAPDPGnb2lTMD",
       "_key": "!tables.results!puG15ViRcM6DmiNw.9zy62U5kdrQHAJar"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 15,
       "range": [
         71,
@@ -87,14 +147,26 @@
       ],
       "drawn": false,
       "_id": "FPFMAEL4wTX6s9Lp",
-      "text": "Common",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805368917,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Common",
+      "documentUuid": "Compendium.railers.law.JournalEntry.Eqxb4q9XvZ3KxCWA",
       "_key": "!tables.results!puG15ViRcM6DmiNw.FPFMAEL4wTX6s9Lp"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 10,
       "range": [
         86,
@@ -102,14 +174,26 @@
       ],
       "drawn": false,
       "_id": "tgywYJORS10P36EB",
-      "text": "Authoritarian",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805344245,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Authoritarian",
+      "documentUuid": "Compendium.railers.law.JournalEntry.usEKIi5A5qyHIUsI",
       "_key": "!tables.results!puG15ViRcM6DmiNw.tgywYJORS10P36EB"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 5,
       "range": [
         96,
@@ -117,10 +201,22 @@
       ],
       "drawn": false,
       "_id": "V77Qg1T2ZQRqA5wg",
-      "text": "Feudal",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805326197,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Feudal",
+      "documentUuid": "Compendium.railers.law.JournalEntry.BOF9Y7L77dMklpeK",
       "_key": "!tables.results!puG15ViRcM6DmiNw.V77Qg1T2ZQRqA5wg"
     }
   ],
@@ -130,5 +226,20 @@
   "sort": 112500,
   "formula": "1d100",
   "_id": "puG15ViRcM6DmiNw",
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": 1769805426396,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!puG15ViRcM6DmiNw"
 }

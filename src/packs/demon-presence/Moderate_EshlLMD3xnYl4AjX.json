@@ -1,0 +1,33 @@
+{
+  "name": "Moderate",
+  "_id": "EshlLMD3xnYl4AjX",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "Fl2Unm4cUU8z6Hv8",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The demons nearby are a threat, and there is the occasional skirmish, but overall the dangers can be mitigated with proper vigilance and defense.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!EshlLMD3xnYl4AjX.Fl2Unm4cUU8z6Hv8"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 100000,
+  "_key": "!journal!EshlLMD3xnYl4AjX"
+}

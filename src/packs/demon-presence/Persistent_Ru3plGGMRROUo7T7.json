@@ -1,0 +1,33 @@
+{
+  "name": "Persistent",
+  "_id": "Ru3plGGMRROUo7T7",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "Cn4y3xQ8dCqKCAfN",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The demons are a constant threat. A day likely doesn’t pass without some kind of attack. Some demons may even squeeze through any outer defenses unnoticed.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!Ru3plGGMRROUo7T7.Cn4y3xQ8dCqKCAfN"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 300000,
+  "_key": "!journal!Ru3plGGMRROUo7T7"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Feudal",
+  "_id": "BOF9Y7L77dMklpeK",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "lnTUyUqNMiv0uMfn",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The law is determined by a strict hierarchy, with the ruling class enforcing their rule through manpower, wealth, or nobility. Individual survivors are likely left to their own devices as long as they are able to produce the tribute due to their liege and follow the law.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!BOF9Y7L77dMklpeK.lnTUyUqNMiv0uMfn"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 800000,
+  "_key": "!journal!BOF9Y7L77dMklpeK"
+}

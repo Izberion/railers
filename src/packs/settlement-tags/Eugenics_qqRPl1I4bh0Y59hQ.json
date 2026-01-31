@@ -1,0 +1,33 @@
+{
+  "name": "Eugenics",
+  "_id": "qqRPl1I4bh0Y59hQ",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "dC8oXEbLiHvWBDbI",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement practices eugenics. The reasons may be entirely based on survival. They may seek to perfect humanity.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!qqRPl1I4bh0Y59hQ.dC8oXEbLiHvWBDbI"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!qqRPl1I4bh0Y59hQ"
+}

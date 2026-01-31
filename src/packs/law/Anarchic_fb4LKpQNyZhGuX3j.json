@@ -1,0 +1,33 @@
+{
+  "name": "Anarchic",
+  "_id": "fb4LKpQNyZhGuX3j",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "xcbO8IXsljvciUuS",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The law of man is non-existent. The only order is whatever the free people agree to. The lack of structure may function, though more likely it only leads to chaos.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!fb4LKpQNyZhGuX3j.xcbO8IXsljvciUuS"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!fb4LKpQNyZhGuX3j"
+}

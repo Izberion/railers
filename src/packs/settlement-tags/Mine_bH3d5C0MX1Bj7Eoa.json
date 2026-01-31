@@ -1,0 +1,33 @@
+{
+  "name": "Mine",
+  "_id": "bH3d5C0MX1Bj7Eoa",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "Y2RCVunQv1jW5ybg",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement houses a mine, likely containing important metals. It may still be functional. The survivors may actively work the mine. The mine may be full of demons.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!bH3d5C0MX1Bj7Eoa.Y2RCVunQv1jW5ybg"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!bH3d5C0MX1Bj7Eoa"
+}

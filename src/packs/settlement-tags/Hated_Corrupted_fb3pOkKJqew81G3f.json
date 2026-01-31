@@ -1,0 +1,33 @@
+{
+  "name": "Hated Corrupted",
+  "_id": "fb3pOkKJqew81G3f",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "K4H4dhO7wRVZWPJB",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors of this settlement have a prejudice against the Corrupted. They are likely treated as lower-class citizens if not explicitly outlawed. The prejudice may be ingrained into the Corrupted themselves. The Corrupted may be planning to revolt.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!fb3pOkKJqew81G3f.K4H4dhO7wRVZWPJB"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!fb3pOkKJqew81G3f"
+}

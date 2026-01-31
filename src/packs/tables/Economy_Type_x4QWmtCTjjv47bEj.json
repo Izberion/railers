@@ -4,7 +4,7 @@
   "description": "",
   "results": [
     {
-      "type": "text",
+      "type": "document",
       "weight": 5,
       "range": [
         1,
@@ -12,14 +12,26 @@
       ],
       "drawn": false,
       "_id": "OFPJI1ijFFmzEIlY",
-      "text": "Non-Existant",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805094237,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Non-Existant",
+      "documentUuid": "Compendium.railers.economy-type.JournalEntry.sH6iJGYFskgJ9jcf",
       "_key": "!tables.results!x4QWmtCTjjv47bEj.OFPJI1ijFFmzEIlY"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 10,
       "range": [
         6,
@@ -27,14 +39,26 @@
       ],
       "drawn": false,
       "_id": "rsEEbuVbtswm6D4i",
-      "text": "Barter/Gift",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805182436,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Barter/Gift",
+      "documentUuid": "Compendium.railers.economy-type.JournalEntry.bGlB8xNh60xKE6KN",
       "_key": "!tables.results!x4QWmtCTjjv47bEj.rsEEbuVbtswm6D4i"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 15,
       "range": [
         16,
@@ -42,14 +66,26 @@
       ],
       "drawn": false,
       "_id": "CUqpct5saoDcCzu9",
-      "text": "Scavenge",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805200353,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Scavenge",
+      "documentUuid": "Compendium.railers.economy-type.JournalEntry.KYi03sBlmdwaE1AD",
       "_key": "!tables.results!x4QWmtCTjjv47bEj.CUqpct5saoDcCzu9"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 20,
       "range": [
         31,
@@ -57,14 +93,26 @@
       ],
       "drawn": false,
       "_id": "JwBQglvbSh9VLXAI",
-      "text": "Focused",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805219412,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Focused",
+      "documentUuid": "Compendium.railers.economy-type.JournalEntry.aAr00guKPJbbtnSK",
       "_key": "!tables.results!x4QWmtCTjjv47bEj.JwBQglvbSh9VLXAI"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 20,
       "range": [
         51,
@@ -72,14 +120,26 @@
       ],
       "drawn": false,
       "_id": "9zy62U5kdrQHAJar",
-      "text": "Recovering",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805233672,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Recovering",
+      "documentUuid": "Compendium.railers.economy-type.JournalEntry.BkSBv0elObuq2Zh3",
       "_key": "!tables.results!x4QWmtCTjjv47bEj.9zy62U5kdrQHAJar"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 15,
       "range": [
         71,
@@ -87,14 +147,26 @@
       ],
       "drawn": false,
       "_id": "FPFMAEL4wTX6s9Lp",
-      "text": "Controlled",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805241752,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Controlled",
+      "documentUuid": "Compendium.railers.economy-type.JournalEntry.VKIZjl2KAq6U1Kb0",
       "_key": "!tables.results!x4QWmtCTjjv47bEj.FPFMAEL4wTX6s9Lp"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 10,
       "range": [
         86,
@@ -102,14 +174,26 @@
       ],
       "drawn": false,
       "_id": "tgywYJORS10P36EB",
-      "text": "Subsistence",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805253775,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Subsistence",
+      "documentUuid": "Compendium.railers.economy-type.JournalEntry.Y8BEZhkOKoVEBM9Y",
       "_key": "!tables.results!x4QWmtCTjjv47bEj.tgywYJORS10P36EB"
     },
     {
-      "type": "text",
+      "type": "document",
       "weight": 5,
       "range": [
         96,
@@ -117,10 +201,22 @@
       ],
       "drawn": false,
       "_id": "V77Qg1T2ZQRqA5wg",
-      "text": "Balanced",
       "img": "icons/svg/d20-black.svg",
-      "documentId": null,
       "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769805263582,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Balanced",
+      "documentUuid": "Compendium.railers.economy-type.JournalEntry.zmtgzjExWwFKFsjD",
       "_key": "!tables.results!x4QWmtCTjjv47bEj.V77Qg1T2ZQRqA5wg"
     }
   ],
@@ -130,5 +226,20 @@
   "sort": 150000,
   "formula": "1d100",
   "_id": "x4QWmtCTjjv47bEj",
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": 1769805266888,
+    "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!x4QWmtCTjjv47bEj"
 }

@@ -1,0 +1,33 @@
+{
+  "name": "Train Yard",
+  "_id": "2MuSrxZ5WFIEtBz2",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "TBYFllagA0O9qBVv",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement has a train yard. The yard may have cars free for the taking. The yard may be destroyed, only good for scavenging scrap. The yard may have a special engine or car not available elsewhere. The yard may be protected by someone or something.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!2MuSrxZ5WFIEtBz2.TBYFllagA0O9qBVv"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!2MuSrxZ5WFIEtBz2"
+}

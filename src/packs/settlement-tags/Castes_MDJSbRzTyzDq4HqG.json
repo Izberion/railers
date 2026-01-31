@@ -1,0 +1,33 @@
+{
+  "name": "Castes",
+  "_id": "MDJSbRzTyzDq4HqG",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "H8mcqmx31TWqm19G",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Society in this settlement has a rigid caste structure. The castes may only affect a portion of the survivors or it may cover them all.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!MDJSbRzTyzDq4HqG.H8mcqmx31TWqm19G"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!MDJSbRzTyzDq4HqG"
+}

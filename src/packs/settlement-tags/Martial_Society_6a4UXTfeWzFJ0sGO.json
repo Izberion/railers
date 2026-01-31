@@ -1,0 +1,33 @@
+{
+  "name": "Martial Society",
+  "_id": "6a4UXTfeWzFJ0sGO",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "OBDTuluuKnTwl90M",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The survivors of this settlement have embraced a warrior’s lifestyle. This may be entirely by choice or necessity. It may manifest as blood sport. Military service may be compulsory or a cultural rite of passage.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!6a4UXTfeWzFJ0sGO.OBDTuluuKnTwl90M"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!6a4UXTfeWzFJ0sGO"
+}

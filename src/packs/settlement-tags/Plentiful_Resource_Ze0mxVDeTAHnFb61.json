@@ -1,0 +1,33 @@
+{
+  "name": "Plentiful Resource",
+  "_id": "Ze0mxVDeTAHnFb61",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Description",
+      "type": "text",
+      "_id": "dcyoRFzuywv4vyBz",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>This settlement is without want for a particular good or resource. It may be food, fuel, metal, or anything else. The resource may be difficult to remove from the settlement. The survivors may refuse to export. The settlement may be in desperate want for most other resources. The survivors may not be exploiting the resource for some reason.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "_key": "!journal.pages!Ze0mxVDeTAHnFb61.dcyoRFzuywv4vyBz"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "_key": "!journal!Ze0mxVDeTAHnFb61"
+}
