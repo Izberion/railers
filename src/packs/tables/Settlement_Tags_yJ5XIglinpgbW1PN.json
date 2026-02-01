@@ -930,33 +930,6 @@
         35
       ],
       "drawn": false,
-      "_id": "NXAa1uGNXEoHv61y",
-      "img": "icons/svg/d20-black.svg",
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": 1769829646036,
-        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "description": "",
-      "name": "Hated Corrupted",
-      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.fb3pOkKJqew81G3f",
-      "_key": "!tables.results!yJ5XIglinpgbW1PN.NXAa1uGNXEoHv61y"
-    },
-    {
-      "type": "document",
-      "weight": 1,
-      "range": [
-        36,
-        36
-      ],
-      "drawn": false,
       "_id": "l2BAzUDfXnkawCCf",
       "img": "icons/svg/d20-black.svg",
       "flags": {},
@@ -980,8 +953,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        37,
-        37
+        36,
+        36
       ],
       "drawn": false,
       "_id": "oJB9sswxf9tiNFBg",
@@ -1007,8 +980,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        38,
-        38
+        37,
+        37
       ],
       "drawn": false,
       "_id": "IMRuys2hbsbGf58a",
@@ -1034,8 +1007,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        39,
-        39
+        38,
+        38
       ],
       "drawn": false,
       "_id": "tNYECCHFnt31bnl7",
@@ -1061,8 +1034,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        40,
-        40
+        39,
+        39
       ],
       "drawn": false,
       "_id": "cr3epOigwaUKKBRq",
@@ -1088,8 +1061,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        41,
-        41
+        40,
+        40
       ],
       "drawn": false,
       "_id": "FI41I9365CxqoKUO",
@@ -1115,8 +1088,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        42,
-        42
+        41,
+        41
       ],
       "drawn": false,
       "_id": "ZnDI4oLwK8wyEnnb",
@@ -1142,8 +1115,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        43,
-        43
+        42,
+        42
       ],
       "drawn": false,
       "_id": "ryyjNtoT7ZpzunTZ",
@@ -1169,8 +1142,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        44,
-        44
+        43,
+        43
       ],
       "drawn": false,
       "_id": "fws4oJwVhJK18u6F",
@@ -1196,8 +1169,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        45,
-        45
+        44,
+        44
       ],
       "drawn": false,
       "_id": "ew5KYOdWkkncchJA",
@@ -1223,8 +1196,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        46,
-        46
+        45,
+        45
       ],
       "drawn": false,
       "_id": "sfcUvf9AQSVuGJDl",
@@ -1250,8 +1223,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        47,
-        47
+        46,
+        46
       ],
       "drawn": false,
       "_id": "Et4rNIXw0VFYZDRX",
@@ -1277,8 +1250,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        48,
-        48
+        47,
+        47
       ],
       "drawn": false,
       "_id": "Oc0vrwENzRKkCicL",
@@ -1304,8 +1277,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        49,
-        49
+        48,
+        48
       ],
       "drawn": false,
       "_id": "OgaHiF1nZ5dXVN1S",
@@ -1331,8 +1304,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        50,
-        50
+        49,
+        49
       ],
       "drawn": false,
       "_id": "tP12WWb0raaODk86",
@@ -1358,8 +1331,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        51,
-        51
+        50,
+        50
       ],
       "drawn": false,
       "_id": "ReePtgmrawVYy5OK",
@@ -1385,8 +1358,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        52,
-        52
+        51,
+        51
       ],
       "drawn": false,
       "_id": "hWevGQxa2Wz5l45h",
@@ -1412,8 +1385,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        53,
-        53
+        52,
+        52
       ],
       "drawn": false,
       "_id": "4haKOWo6GRFUzBad",
@@ -1439,8 +1412,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        54,
-        54
+        53,
+        53
       ],
       "drawn": false,
       "_id": "eVxKWctokIhIfD2H",
@@ -1466,8 +1439,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        55,
-        55
+        54,
+        54
       ],
       "drawn": false,
       "_id": "9Wytqea99e9MD8NK",
@@ -1493,8 +1466,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        56,
-        56
+        55,
+        55
       ],
       "drawn": false,
       "_id": "0MEv5UH9B51iKujh",
@@ -1520,116 +1493,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        58,
-        58
-      ],
-      "drawn": false,
-      "_id": "NsokJj9UY6J8I0Si",
-      "img": "icons/svg/d20-black.svg",
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": 1769830858615,
-        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "description": "",
-      "name": "Microclimate",
-      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.53IG9ZufSoaLFxiN",
-      "_key": "!tables.results!yJ5XIglinpgbW1PN.NsokJj9UY6J8I0Si"
-    },
-    {
-      "type": "document",
-      "weight": 1,
-      "range": [
-        59,
-        59
-      ],
-      "drawn": false,
-      "_id": "9euGO1Ih1Gf0qLTn",
-      "img": "icons/svg/d20-black.svg",
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": 1769830950134,
-        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "description": "",
-      "name": "Military Facility",
-      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.fbFzKlu5jLHamBKD",
-      "_key": "!tables.results!yJ5XIglinpgbW1PN.9euGO1Ih1Gf0qLTn"
-    },
-    {
-      "type": "document",
-      "weight": 1,
-      "range": [
-        60,
-        60
-      ],
-      "drawn": false,
-      "_id": "v5qJrybxrpQI6y4U",
-      "img": "icons/svg/d20-black.svg",
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": 1769830959664,
-        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "description": "",
-      "name": "Mine",
-      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.bH3d5C0MX1Bj7Eoa",
-      "_key": "!tables.results!yJ5XIglinpgbW1PN.v5qJrybxrpQI6y4U"
-    },
-    {
-      "type": "document",
-      "weight": 1,
-      "range": [
-        61,
-        61
-      ],
-      "drawn": false,
-      "_id": "FqCYbKinBCV3NCO8",
-      "img": "icons/svg/d20-black.svg",
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": 1769830967189,
-        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "description": "",
-      "name": "Missing Populace",
-      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.unmSXochSkQ2Ptus",
-      "_key": "!tables.results!yJ5XIglinpgbW1PN.FqCYbKinBCV3NCO8"
-    },
-    {
-      "type": "document",
-      "weight": 1,
-      "range": [
-        57,
-        57
+        56,
+        56
       ],
       "drawn": false,
       "_id": "MBDPZW6ixOOUbZy1",
@@ -1655,8 +1520,116 @@
       "type": "document",
       "weight": 1,
       "range": [
-        62,
-        62
+        57,
+        57
+      ],
+      "drawn": false,
+      "_id": "NsokJj9UY6J8I0Si",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830858615,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Microclimate",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.53IG9ZufSoaLFxiN",
+      "_key": "!tables.results!yJ5XIglinpgbW1PN.NsokJj9UY6J8I0Si"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        58,
+        58
+      ],
+      "drawn": false,
+      "_id": "9euGO1Ih1Gf0qLTn",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830950134,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Military Facility",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.fbFzKlu5jLHamBKD",
+      "_key": "!tables.results!yJ5XIglinpgbW1PN.9euGO1Ih1Gf0qLTn"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        59,
+        59
+      ],
+      "drawn": false,
+      "_id": "v5qJrybxrpQI6y4U",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830959664,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Mine",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.bH3d5C0MX1Bj7Eoa",
+      "_key": "!tables.results!yJ5XIglinpgbW1PN.v5qJrybxrpQI6y4U"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        60,
+        60
+      ],
+      "drawn": false,
+      "_id": "FqCYbKinBCV3NCO8",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769830967189,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "Missing Populace",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.unmSXochSkQ2Ptus",
+      "_key": "!tables.results!yJ5XIglinpgbW1PN.FqCYbKinBCV3NCO8"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        61,
+        61
       ],
       "drawn": false,
       "_id": "uAG1g4IpTCghwMVS",
@@ -1682,8 +1655,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        63,
-        63
+        62,
+        62
       ],
       "drawn": false,
       "_id": "GozqThKf6sdZC9L6",
@@ -1709,8 +1682,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        64,
-        64
+        63,
+        63
       ],
       "drawn": false,
       "_id": "sC7fj9vY1ejWnlcB",
@@ -1736,8 +1709,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        65,
-        65
+        64,
+        64
       ],
       "drawn": false,
       "_id": "aDVKm37lV9crUQHm",
@@ -1763,8 +1736,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        66,
-        66
+        65,
+        65
       ],
       "drawn": false,
       "_id": "MhxsoZIt1AbwhXzf",
@@ -1790,8 +1763,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        67,
-        67
+        66,
+        66
       ],
       "drawn": false,
       "_id": "YeUsQzCQuWhZXXw7",
@@ -1817,8 +1790,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        68,
-        68
+        67,
+        67
       ],
       "drawn": false,
       "_id": "1LjKNv1FlN2x4O3m",
@@ -1844,8 +1817,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        69,
-        69
+        68,
+        68
       ],
       "drawn": false,
       "_id": "5YS8eTJXQ7IZ5ujX",
@@ -1871,8 +1844,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        70,
-        70
+        69,
+        69
       ],
       "drawn": false,
       "_id": "SpKga2ZOVNGhrOhD",
@@ -1898,8 +1871,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        71,
-        71
+        70,
+        70
       ],
       "drawn": false,
       "_id": "qfxr4oRyCyRWa2E2",
@@ -1925,8 +1898,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        72,
-        72
+        71,
+        71
       ],
       "drawn": false,
       "_id": "NUbnWiRrgFPj6gWD",
@@ -1952,8 +1925,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        73,
-        73
+        72,
+        72
       ],
       "drawn": false,
       "_id": "8P3YwoTMuBokWQxX",
@@ -1979,8 +1952,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        74,
-        74
+        73,
+        73
       ],
       "drawn": false,
       "_id": "V06JyETYIQE5wSML",
@@ -2006,8 +1979,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        75,
-        75
+        74,
+        74
       ],
       "drawn": false,
       "_id": "N6kETv3NXPFbZMp8",
@@ -2033,8 +2006,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        76,
-        76
+        75,
+        75
       ],
       "drawn": false,
       "_id": "RoKE2DklgKXOkqrN",
@@ -2060,8 +2033,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        77,
-        77
+        76,
+        76
       ],
       "drawn": false,
       "_id": "QInW1lN4tvvEtHc9",
@@ -2087,8 +2060,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        78,
-        78
+        77,
+        77
       ],
       "drawn": false,
       "_id": "fLnJv0cofnJqWJzX",
@@ -2114,8 +2087,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        79,
-        79
+        78,
+        78
       ],
       "drawn": false,
       "_id": "ErC7YU2cmGSGYCLf",
@@ -2141,8 +2114,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        80,
-        80
+        79,
+        79
       ],
       "drawn": false,
       "_id": "EB8YHPGrL9tJ0ZfY",
@@ -2168,8 +2141,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        81,
-        81
+        80,
+        80
       ],
       "drawn": false,
       "_id": "MZAo5akB1JdC58kW",
@@ -2195,8 +2168,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        82,
-        82
+        81,
+        81
       ],
       "drawn": false,
       "_id": "niAUWDIQtVZ2mb7z",
@@ -2214,7 +2187,7 @@
         "exportSource": null
       },
       "description": "",
-      "name": "Ruins",
+      "name": "Ruin",
       "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.7CwFtAOnjbXKp6Ak",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.niAUWDIQtVZ2mb7z"
     },
@@ -2222,8 +2195,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        83,
-        83
+        82,
+        82
       ],
       "drawn": false,
       "_id": "JY9cfWCx93AnOt5S",
@@ -2249,8 +2222,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        84,
-        84
+        83,
+        83
       ],
       "drawn": false,
       "_id": "Ct4QT81QNl0pAiGb",
@@ -2276,8 +2249,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        85,
-        85
+        84,
+        84
       ],
       "drawn": false,
       "_id": "aXy4sFhUSf1F4nmu",
@@ -2303,8 +2276,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        86,
-        86
+        85,
+        85
       ],
       "drawn": false,
       "_id": "PMSdqNDQzvervNBI",
@@ -2330,8 +2303,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        87,
-        87
+        86,
+        86
       ],
       "drawn": false,
       "_id": "L8P25Zpj5xOgQOvb",
@@ -2357,8 +2330,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        88,
-        88
+        87,
+        87
       ],
       "drawn": false,
       "_id": "rWb3iLNt2EF8YcyJ",
@@ -2384,8 +2357,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        89,
-        89
+        88,
+        88
       ],
       "drawn": false,
       "_id": "PG1ujlLolIcE5yxe",
@@ -2411,8 +2384,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        90,
-        90
+        89,
+        89
       ],
       "drawn": false,
       "_id": "zZr3sUu1OfJ6Gj9S",
@@ -2438,8 +2411,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        91,
-        91
+        90,
+        90
       ],
       "drawn": false,
       "_id": "k1H5XXCcjsQir6Rl",
@@ -2465,8 +2438,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        92,
-        92
+        91,
+        91
       ],
       "drawn": false,
       "_id": "xK60iWtmNsUlxh7c",
@@ -2492,8 +2465,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        93,
-        93
+        92,
+        92
       ],
       "drawn": false,
       "_id": "OSuPUGQ4KO9uQoVs",
@@ -2519,8 +2492,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        94,
-        94
+        93,
+        93
       ],
       "drawn": false,
       "_id": "wt3CdLCPHabEKhpL",
@@ -2546,8 +2519,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        95,
-        95
+        94,
+        94
       ],
       "drawn": false,
       "_id": "FqGWZ5SiFL26x1o8",
@@ -2573,8 +2546,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        96,
-        96
+        95,
+        95
       ],
       "drawn": false,
       "_id": "KnVoeaCz0fjyPpV1",
@@ -2595,6 +2568,33 @@
       "name": "Unique Terrain",
       "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.MChxcPGTC3PTof40",
       "_key": "!tables.results!yJ5XIglinpgbW1PN.KnVoeaCz0fjyPpV1"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        96,
+        96
+      ],
+      "drawn": false,
+      "_id": "NXAa1uGNXEoHv61y",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1769829646036,
+        "lastModifiedBy": "Rkv9Xf9nMjw1REva",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "",
+      "name": "University",
+      "documentUuid": "Compendium.railers.settlement-tags.JournalEntry.fb3pOkKJqew81G3f",
+      "_key": "!tables.results!yJ5XIglinpgbW1PN.NXAa1uGNXEoHv61y"
     },
     {
       "type": "document",

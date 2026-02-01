@@ -1,5 +1,5 @@
 {
-  "name": "Hated Corrupted",
+  "name": "University",
   "_id": "fb3pOkKJqew81G3f",
   "pages": [
     {
@@ -15,7 +15,7 @@
       "image": {},
       "text": {
         "format": 1,
-        "content": "<p>The survivors of this settlement have a prejudice against the Corrupted. They are likely treated as lower-class citizens if not explicitly outlawed. The prejudice may be ingrained into the Corrupted themselves. The Corrupted may be planning to revolt.</p>"
+        "content": "<p>This settlement is built on what was once a university campus. The libraries may still be stocked and untouched. The traditions of the university may have taken on a strange or religious form. Class may still be in session.</p>"
       },
       "video": {
         "controls": true,
