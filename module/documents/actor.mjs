@@ -16,6 +16,12 @@ export class RailersActor extends Actor {
   prepareBaseData() {
     // Data modifications in this step occur before processing embedded
     // documents or derived data.
+    super.prepareBaseData();
+  }
+
+  /** @override */
+  prepareEmbeddedDocuments() {
+      super.prepareEmbeddedDocuments();
   }
 
   /**
@@ -180,32 +186,6 @@ export class RailersActor extends Actor {
     };
   }
 
-  /**
-  * Handle custom active effects, especially for item-based formulas
-  */
-  async applyActiveEffects() {
-    const overrides = {};
-
-    for (const effect of this.allApplicableEffects()) {
-      if (effect.disabled) continue;
-      for (const change of effect.changes) {
-        if (change.mode === CONST.ACTIVE_EFFECT_MODES.CUSTOM) {
-          try {
-            const rollData = effect.parent.getRollData();
-            const roll = new Roll(change.value, rollData);
-            const result = roll.evaluateSync();
-            const value = Math.floor(Number(result.total) || 0);
-            const key = change.key.replace(/^system\./, '');
-            foundry.utils.setProperty(overrides, key, value);
-          } catch (err) {}
-        }
-      }
-    }
-
-    foundry.utils.mergeObject(this.system, overrides);
-
-    super.applyActiveEffects();
-  }
 
 
   /**
