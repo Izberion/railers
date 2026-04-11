@@ -48,7 +48,6 @@ export default class RailersWeapon extends RailersItemBase {
       nullable: false,
       blank: false,
       initial: 'melee',
-      choices: Object.keys(CONFIG.RAILERS.rangeOptions)
     });
 
     schema.attribute = new fields.StringField({
@@ -56,7 +55,6 @@ export default class RailersWeapon extends RailersItemBase {
       nullable: false,
       blank: false,
       initial: 'combat',
-      choices: Object.keys(CONFIG.RAILERS.attributes.character)
     });
 
     schema.skill = new fields.StringField({
@@ -64,7 +62,6 @@ export default class RailersWeapon extends RailersItemBase {
       nullable: false,
       blank: false,
       initial: 'melee',
-      choices: Object.keys(CONFIG.RAILERS.weaponSkillOptions)
     });
 
     schema.attack = new fields.StringField({
@@ -72,7 +69,6 @@ export default class RailersWeapon extends RailersItemBase {
       nullable: false,
       blank: false,
       initial: 'major',
-      choices: Object.keys(CONFIG.RAILERS.actionTypeOptions)
     })
 
     schema.reload = new fields.StringField({
@@ -80,7 +76,6 @@ export default class RailersWeapon extends RailersItemBase {
       nullable: false,
       blank: false,
       initial: 'na',
-      choices: Object.keys(CONFIG.RAILERS.actionTypeOptions)
     })
 
     schema.roll = new fields.SchemaField({
@@ -126,13 +121,16 @@ export default class RailersWeapon extends RailersItemBase {
       })
     });
 
-    schema.formula = new fields.StringField({
-      required: false,
-      blank: true,
-      initial: ""
-    });
-
     return schema;
+  }
+
+  prepareDerivedData() {
+    const skill = this.skill;
+    if (skill === "exertion") {
+      this.attribute = "prowess";
+    } else {
+      this.attribute = "combat";
+    }
   }
 
   get localizedAttackAction() {
