@@ -31,20 +31,32 @@ export default class RailersNPC extends RailersActorBase {
   }
 
   prepareDerivedData() {
-    for (const attrKey in this.attributes) {
-      this.attributes[attrKey].label = game.i18n.localize(
-        (CONFIG.RAILERS.attributes.npc)[attrKey]
-      ) ?? attrKey;
-    }
-  }
-  
-  getRollData() {
-    const data = {};
-    if (this.attributes) {
-      for (const [attrKey, attrData] of Object.entries(this.attributes)) {
-        data[attrKey] = foundry.utils.deepClone(attrData);
+    super.prepareDerivedData(); 
+
+    let totalOnHandLoad = 0;
+    let totalStowedLoad = 0;
+    for (let item of this.parent.items) {
+      let totalItemLoad = item.system.load * item.system.quantity;
+      if (item.system.stowage === 'onHand') {
+        totalOnHandLoad += totalItemLoad;
+      } else if (item.system.stowage === 'stowed') {
+        totalStowedLoad += totalItemLoad;
       }
     }
-    return data;
+    this.load.onHand.value = totalOnHandLoad;
+    this.load.stowed.value = totalStowedLoad;
+
+    let totalInsulation = 0;
+    for (let item of this.parent.items) {
+      if (item.type === 'clothing' && item.system.stowage === 'onHand') {
+        totalInsulation += item.system.insulation;
+      }
+    }
+    this.thermalThreshold = -1 * totalInsulation;
+
+    this.wounds.max = this.attributes.primary + this.attributes.secondary;
+    
+    this.initiativePool = this.attributes.combatPool + this.initiativeMod ?? 0;
+
   }
 }
