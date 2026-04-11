@@ -13,7 +13,6 @@ export default class RailersTrain extends RailersActorBase {
       nullable: false,
       blank: false,
       initial: 'ace',
-      choices: Object.keys(CONFIG.RAILERS.locomotiveOptions)
     });
 
     schema.speed = new fields.NumberField({
@@ -88,5 +87,34 @@ export default class RailersTrain extends RailersActorBase {
   }
 
   prepareDerivedData() {
+    if (this.locomotive === "donkey") {
+      let weight = this.weight.value;
+      let speed = 8;
+      let speedReduction = Math.floor(weight / 250);
+      this.speed = speed - speedReduction;
+      this.speed = Math.max(this.speed, 2);
+    }
+  
+    let totalPower = 0;
+    let totalWeight = 0;
+    let totalCapacity = this.capacity;
+  
+    const maxPower = this.power.max;
+    const maxWeight = this.weight.max;
+  
+    for (let item of this.parent.items) {
+      if (item.type === "car") {
+        totalPower += item.system.power || 0;
+        totalWeight += item.system.weight || 0;
+        totalCapacity += item.system.capacity || 0;
+      } else {
+        totalWeight += item.system.weight || 0;
+      }
+    }
+  
+    this.power.value = maxPower - totalPower;
+    this.weight.value = maxWeight - totalWeight;
+    this.capacity = totalCapacity;
   }
+
 }
