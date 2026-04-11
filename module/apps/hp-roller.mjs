@@ -69,6 +69,8 @@ export async function onRollHp(event, actor) {
     await actor.update(updates);
   }
 
+  await actor.setFlag('railers', 'lastHpRollFortitude', actor.system.attributes.fortitude.value);
+
   // Unified chat message for characters only
   const speaker = ChatMessage.getSpeaker({ actor });
   const rollMode = game.settings.get("core", "rollMode");
