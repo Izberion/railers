@@ -15,7 +15,7 @@
       {{/if}}
       {{#if (eq actor.type "train")}}
       <div class="train-select">
-        <select name="system.locomotive" data-action="locomotiveChange">
+        <select class="locomotive-select">
           {{selectOptions config.locomotiveOptions selected=system.locomotive localize=true}}
         </select>
       </div>
