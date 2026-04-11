@@ -3,14 +3,7 @@ export async function onRollHp(event, actor) {
   // Demon HP roll
   if (actor.type === 'demon') {
 
-    let useSwarmRoll = false;
-    const effectName = "Swarm";
-    for (const item of actor.items) {
-      if (item.type === 'ability' && item.name === 'Swarm') {
-        useSwarmRoll = true;
-        break;
-      }
-    }
+    const useSwarmRoll = actor.items.some(i => i.getFlag('railers', 'isSwarmAbility'));
 
     let rollFormula;
     if (useSwarmRoll) {
@@ -25,10 +18,7 @@ export async function onRollHp(event, actor) {
     return;
   }
 
-  const hasPainless = actor.items.some(i =>
-    i.type === 'mutation' && i.name === 'Painless'
-  );
-
+  const hasPainless = actor.items.some(i => i.getFlag('railers', 'isPainless'));
   const diceMult = hasPainless ? 2 : 1;
 
   //NPC HP roll
