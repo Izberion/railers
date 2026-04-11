@@ -7,59 +7,17 @@ export class RailersItem extends Item {
    * Augment the basic Item data model with additional dynamic data.
    */
   prepareData() {
-    // As with the actor class, items are documents that can have their data
-    // preparation methods overridden (such as prepareBaseData()).
     super.prepareData();
   }
 
   /** @override */
   prepareBaseData() {
-    // Data modifications in this step occur before processing embedded
-    // documents or derived data.
+    super.prepareBaseData();
   }
 
   prepareDerivedData() {
-    const systemData = this.system;
-
-    switch (this.type) {
-      case 'ability':
-        this._prepareAbilityData(systemData);
-        break;
-      case 'car':
-        this._prepareCarData(systemData);
-        break;
-      case 'cargo':
-        this._prepareCargoData(systemData);
-        break;
-      case 'clothing':
-        this._prepareClothingData(systemData);
-        break;
-      case 'gear':
-        this._prepareGearData(systemData);
-        break;
-      case 'weapon':
-        this._prepareWeaponData(systemData);
-        break;
-      case 'wound':
-        this._prepareWoundData(systemData);
-        break;
-    }
+    super.prepareDerivedData();
   }
-
-  _prepareAbilityData(systemData){};
-  _prepareCarData(systemData){};
-  _prepareCargoData(systemData){};
-  _prepareClothingData(systemData){};
-  _prepareGearData(systemData){};
-  _prepareWeaponData(systemData){
-    const skill = systemData.skill;
-    if (skill === "exertion") {
-      systemData.attribute = "prowess";
-    } else {
-      systemData.attribute = "combat";
-    }
-  };
-  _prepareWoundData(systemData){};
 
   static getDefaultArtwork(itemData) {
     const type = itemData.type || 'default';
@@ -74,15 +32,9 @@ export class RailersItem extends Item {
    * @override
    */
   getRollData() {
-    // Starts off by populating the roll data with a shallow copy of `this.system`
-    const rollData = { ...this.system };
-
-    // Quit early if there's no parent actor
+    const rollData = foundry.utils.deepClone(this.system);
     if (!this.actor) return rollData;
-
-    // If present, add the actor's roll data
     rollData.actor = this.actor.getRollData();
-
     return rollData;
   }
 
