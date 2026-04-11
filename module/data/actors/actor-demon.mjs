@@ -38,26 +38,39 @@ export default class RailersDemon extends RailersActorBase {
       initial: 0,
       min: 0
     })
-
-
     return schema;
   }
 
   prepareDerivedData() {
-    for (const attrKey in this.attributes) {
-      this.attributes[attrKey].label = game.i18n.localize(
-        (CONFIG.RAILERS.attributes.npc || CONFIG.RAILERS.attributes.character)[attrKey]
-      ) ?? attrKey;
-    }  
+    super.prepareDerivedData();
+
+    this.wounds.max = this.attributes.endurance.value * 3;
+    this.initiativePool = this.attributes.agility.value + this.initiativeMod ?? 0;
+    if (!this.initiativeGroup) {
+      const disposition = this.parent.token?.disposition 
+        ?? this.parent.prototypeToken?.disposition 
+        ?? CONST.TOKEN_DISPOSITIONS.HOSTILE;
+
+      this.initiativeGroup = disposition === CONST.TOKEN_DISPOSITIONS.FRIENDLY
+        ? game.i18n.localize("RAILERS.initiative.factions.tameDemons")
+        : game.i18n.localize("RAILERS.initiative.factions.demons");
+    }
+
+    const hasSwarm = this.parent.items.some(i => 
+      i.getFlag('railers', 'isSwarmAbility')
+    );
+    if (!hasSwarm) return;
+
+    const hp = this.hitpoints?.value;
+    if (hp == null) return;
+
+    const swarmStat = Math.ceil(hp / 2);
+
+    for (const attr of ["strength", "agility", "intellect", "endurance"]) {
+      if (!this.attributes[attr]) continue;
+      this.attributes[attr].value = swarmStat;
+      this.damage = 1 + this.attributes.strength.value;
+    }
   }
   
-  getRollData() {
-    const data = {};
-    if (this.attributes) {
-      for (const [attrKey, attrData] of Object.entries(this.attributes)) {
-        data[attrKey] = foundry.utils.deepClone(attrData);
-      }
-    }
-    return data;
-  }
 }
