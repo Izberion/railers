@@ -6,10 +6,10 @@ import { RailersActorSheet } from "./sheets/actor-sheet.mjs";
 import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { RAILERS } from "./helpers/config.mjs";
-import { DiceFlowerApp, WeatherHUD } from "./apps/hex.mjs";
-import { ActorTweaks } from "./apps/actor-tweaks.mjs";
+import { HEX_DATA, WEATHER_DATA } from "./apps/hex.mjs";
+//import { ActorTweaks } from "./apps/actor-tweaks.mjs";
 import * as models from "./data/_module.mjs"
-import "./helpers/combat.mjs";
+import { RailersCombat } from "./helpers/combat.mjs";
 
 
 /* -------------------------------------------- */
@@ -20,7 +20,8 @@ import "./helpers/combat.mjs";
 globalThis.railers = {
   documents: {
     RailersActor,
-    RailersItem
+    RailersItem,
+    RailersCombat
   },
   applications: {
     RailersActorSheet,
@@ -77,9 +78,8 @@ Hooks.once('init', async function() {
     types: ["gear", "wound", "weapon", "clothing", "condition", "mutation", "car", "cargo", "ability"]
   });
 
-  CONFIG.RAILERS.DiceFlowerApp = DiceFlowerApp;
-  CONFIG.RAILERS.WeatherHUD = WeatherHUD;
-  CONFIG.RAILERS.ActorTweaks = ActorTweaks;
+  CONFIG.Combat.documentClass = RailersCombat;
+
 });
 
 /* -------------------------------------------- */
@@ -113,57 +113,15 @@ Handlebars.registerHelper('ifOr', function (...args) {
 
 Hooks.once("ready", async function() {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
-  Hooks.on("hotbarDrop", (bar, data, slot) => createItemMacro(data, slot));
+  Hooks.on("hotbarDrop", (bar, data, slot) => createDocMacro(data, slot));
 
-  const terrainPaths = [
-    "systems/railers/assets/tiles/snowhex.svg",
-    "systems/railers/assets/tiles/hillhex.svg",
-    "systems/railers/assets/tiles/icehex.svg",
-    "systems/railers/assets/tiles/hillhex.svg",
-    "systems/railers/assets/tiles/flathex.svg",
-    "systems/railers/assets/tiles/flathex.svg",
-    "systems/railers/assets/tiles/mountainhex.svg",
-    "systems/railers/assets/tiles/mountainhex.svg",
-    "systems/railers/assets/tiles/flathex.svg",
-    "systems/railers/assets/tiles/flathex.svg",
-    "systems/railers/assets/tiles/flathex.svg",
-    "systems/railers/assets/tiles/mountainhex.svg",
-    "systems/railers/assets/tiles/hillhex.svg",
-    "systems/railers/assets/tiles/flathex.svg",
-    "systems/railers/assets/tiles/flathex.svg",
-    "systems/railers/assets/tiles/hillhex.svg",
-    "systems/railers/assets/tiles/snowhex.svg",
-    "systems/railers/assets/tiles/hillhex.svg",
-    "systems/railers/assets/tiles/icehex.svg"
-  ];
-  terrainPaths.forEach(src => {
+  HEX_DATA.forEach(({ src }) => {
     const img = new Image();
     img.src = src;
   });
-  const weatherPaths = [
-    "systems/railers/assets/weather/thundersnowhex.svg",
-    "systems/railers/assets/weather/snowstormhex.svg",
-    "systems/railers/assets/weather/blizzardhex.svg",
-    "systems/railers/assets/weather/windhex.svg",
-    "systems/railers/assets/weather/flurryhex.svg",
-    "systems/railers/assets/weather/overcasthex.svg",
-    "systems/railers/assets/weather/polaroutbreakhex.svg",
-    "systems/railers/assets/weather/aurorahex.svg",
-    "systems/railers/assets/weather/clearhex.svg",
-    "systems/railers/assets/weather/clearhex.svg",
-    "systems/railers/assets/weather/clearhex.svg",
-    "systems/railers/assets/weather/icefoghex.svg",
-    "systems/railers/assets/weather/blizzardhex.svg",
-    "systems/railers/assets/weather/overcasthex.svg",
-    "systems/railers/assets/weather/flurryhex.svg",
-    "systems/railers/assets/weather/windhex.svg",
-    "systems/railers/assets/weather/diamonddusthex.svg",
-    "systems/railers/assets/weather/snowstormhex.svg",
-    "systems/railers/assets/weather/whiteouthex.svg"
-  ];
-  weatherPaths.forEach(src => {
+  WEATHER_DATA.forEach(({ image }) => {
     const img = new Image();
-    img.src = src;
+    img.src = image;
   });
 });
 
