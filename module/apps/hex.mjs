@@ -1,3 +1,70 @@
+const TERRAIN_TYPES = {
+  "snowhex.svg": "RAILERS.apps.terrain.snowTerrain",
+  "hillhex.svg": "RAILERS.apps.terrain.hillTerrain",
+  "icehex.svg": "RAILERS.apps.terrain.iceTerrain",
+  "flathex.svg": "RAILERS.apps.terrain.flatTerrain",
+  "mountainhex.svg": "RAILERS.apps.terrain.mountainTerrain"
+};
+
+const WEATHER_TYPES = {
+  "thundersnowhex.svg": "RAILERS.apps.weather.thunderSnow",
+  "snowstormhex.svg": "RAILERS.apps.weather.snowStorm",
+  "blizzardhex.svg": "RAILERS.apps.weather.blizzard",
+  "windhex.svg": "RAILERS.apps.weather.wind",
+  "flurryhex.svg": "RAILERS.apps.weather.flurry",
+  "overcasthex.svg": "RAILERS.apps.weather.overcast",
+  "polaroutbreakhex.svg": "RAILERS.apps.weather.polarOutbreak",
+  "aurorahex.svg": "RAILERS.apps.weather.aurora",
+  "clearhex.svg": "RAILERS.apps.weather.clear",
+  "icefoghex.svg": "RAILERS.apps.weather.iceFog",
+  "diamonddusthex.svg": "RAILERS.apps.weather.diamondDust",
+  "whiteouthex.svg": "RAILERS.apps.weather.whiteout"
+};
+
+export const HEX_DATA = [
+  { coords: "(0,0)", src: "systems/railers/assets/tiles/snowhex.svg" },
+  { coords: "(0,1)", src: "systems/railers/assets/tiles/hillhex.svg" },
+  { coords: "(0,2)", src: "systems/railers/assets/tiles/icehex.svg" },
+  { coords: "(1,0)", src: "systems/railers/assets/tiles/hillhex.svg" },
+  { coords: "(1,1)", src: "systems/railers/assets/tiles/flathex.svg" },
+  { coords: "(1,2)", src: "systems/railers/assets/tiles/flathex.svg" },
+  { coords: "(1,3)", src: "systems/railers/assets/tiles/mountainhex.svg" },
+  { coords: "(2,0)", src: "systems/railers/assets/tiles/mountainhex.svg" },
+  { coords: "(2,1)", src: "systems/railers/assets/tiles/flathex.svg" },
+  { coords: "(2,2)", src: "systems/railers/assets/tiles/flathex.svg" },
+  { coords: "(2,3)", src: "systems/railers/assets/tiles/flathex.svg" },
+  { coords: "(2,4)", src: "systems/railers/assets/tiles/mountainhex.svg" },
+  { coords: "(3,0)", src: "systems/railers/assets/tiles/hillhex.svg" },
+  { coords: "(3,1)", src: "systems/railers/assets/tiles/flathex.svg" },
+  { coords: "(3,2)", src: "systems/railers/assets/tiles/flathex.svg" },
+  { coords: "(3,3)", src: "systems/railers/assets/tiles/hillhex.svg" },
+  { coords: "(4,0)", src: "systems/railers/assets/tiles/snowhex.svg" },
+  { coords: "(4,1)", src: "systems/railers/assets/tiles/hillhex.svg" },
+  { coords: "(4,2)", src: "systems/railers/assets/tiles/icehex.svg" }
+];
+
+export const WEATHER_DATA = [
+  { coords: "(0,0)", image: "systems/railers/assets/weather/thundersnowhex.svg" },
+  { coords: "(0,1)", image: "systems/railers/assets/weather/snowstormhex.svg"},
+  { coords: "(0,2)", image: "systems/railers/assets/weather/blizzardhex.svg" },
+  { coords: "(1,0)", image: "systems/railers/assets/weather/windhex.svg" },
+  { coords: "(1,1)", image: "systems/railers/assets/weather/flurryhex.svg" },
+  { coords: "(1,2)", image: "systems/railers/assets/weather/overcasthex.svg" },
+  { coords: "(1,3)", image: "systems/railers/assets/weather/polaroutbreakhex.svg" },
+  { coords: "(2,0)", image: "systems/railers/assets/weather/aurorahex.svg" },
+  { coords: "(2,1)", image: "systems/railers/assets/weather/clearhex.svg" },
+  { coords: "(2,2)", image: "systems/railers/assets/weather/clearhex.svg" },
+  { coords: "(2,3)", image: "systems/railers/assets/weather/clearhex.svg" },
+  { coords: "(2,4)", image: "systems/railers/assets/weather/icefoghex.svg" },
+  { coords: "(3,0)", image: "systems/railers/assets/weather/blizzardhex.svg" },
+  { coords: "(3,1)", image: "systems/railers/assets/weather/overcasthex.svg" },
+  { coords: "(3,2)", image: "systems/railers/assets/weather/flurryhex.svg" },
+  { coords: "(3,3)", image: "systems/railers/assets/weather/windhex.svg" },
+  { coords: "(4,0)", image: "systems/railers/assets/weather/diamonddusthex.svg" },
+  { coords: "(4,1)", image: "systems/railers/assets/weather/snowstormhex.svg" },
+  { coords: "(4,2)", image: "systems/railers/assets/weather/whiteouthex.svg" }
+];
+
 export const hexes = {
     "(0,0)": ["(1,0)", "(1,1)", "(0,1)", "(2,0)", "(4,2)", "(0,2)"],
     "(0,1)": ["(1,1)", "(1,2)", "(0,2)", "(3,0)", "(3,3)", "(0,0)"],
@@ -19,6 +86,17 @@ export const hexes = {
     "(4,1)": ["(1,3)", "(1,0)", "(4,2)", "(3,2)", "(3,1)", "(4,0)"],
     "(4,2)": ["(2,4)", "(0,0)", "(4,0)", "(3,3)", "(3,2)", "(4,1)"]
 };
+
+function getOrInitHexStates(settingKey) {
+  const stored = game.settings.get("railers", settingKey);
+  if (!stored || stored.length !== 19) {
+    const states = Array(19).fill("inactive");
+    states[9] = "active";
+    return states;
+  }
+  return stored;
+}
+
 
 export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicationMixin(foundry.applications.api.ApplicationV2) {
     static DEFAULT_OPTIONS = {
@@ -46,30 +124,9 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
     };
 
     async _prepareContext(options = {}) {
-        const hexData = [
-            { coords: "(0,0)", src: "systems/railers/assets/tiles/snowhex.svg" },
-            { coords: "(0,1)", src: "systems/railers/assets/tiles/hillhex.svg" },
-            { coords: "(0,2)", src: "systems/railers/assets/tiles/icehex.svg" },
-            { coords: "(1,0)", src: "systems/railers/assets/tiles/hillhex.svg" },
-            { coords: "(1,1)", src: "systems/railers/assets/tiles/flathex.svg" },
-            { coords: "(1,2)", src: "systems/railers/assets/tiles/flathex.svg" },
-            { coords: "(1,3)", src: "systems/railers/assets/tiles/mountainhex.svg" },
-            { coords: "(2,0)", src: "systems/railers/assets/tiles/mountainhex.svg" },
-            { coords: "(2,1)", src: "systems/railers/assets/tiles/flathex.svg" },
-            { coords: "(2,2)", src: "systems/railers/assets/tiles/flathex.svg" },
-            { coords: "(2,3)", src: "systems/railers/assets/tiles/flathex.svg" },
-            { coords: "(2,4)", src: "systems/railers/assets/tiles/mountainhex.svg" },
-            { coords: "(3,0)", src: "systems/railers/assets/tiles/hillhex.svg" },
-            { coords: "(3,1)", src: "systems/railers/assets/tiles/flathex.svg" },
-            { coords: "(3,2)", src: "systems/railers/assets/tiles/flathex.svg" },
-            { coords: "(3,3)", src: "systems/railers/assets/tiles/hillhex.svg" },
-            { coords: "(4,0)", src: "systems/railers/assets/tiles/snowhex.svg" },
-            { coords: "(4,1)", src: "systems/railers/assets/tiles/hillhex.svg" },
-            { coords: "(4,2)", src: "systems/railers/assets/tiles/icehex.svg" }
-        ];
-        const hexStates = this._retrieveHexStates();
-        const hexesWithState = hexData.map((hex, i) => ({ ...hex, state: hexStates[i] || "inactive" }));
-
+        
+        const hexStates = await getOrInitHexStates("terrainHexStates");
+        const hexesWithState = HEX_DATA.map((hex, i) => ({ ...hex, state: hexStates[i] || "inactive" }));
         const columns = [
             { hexes: hexesWithState.slice(0, 3) },  // (0,0) to (0,2)
             { hexes: hexesWithState.slice(3, 7) },  // (1,0) to (1,3)
@@ -95,10 +152,10 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
     async _onRender(context, options) {
         await super._onRender(context, options);
         this.dragDrop.forEach(d => d.bind(this.element));
-        this.activateListeners(this.element);
+        this._bindHexListeners(this.element);
     }
 
-    activateListeners(html) {
+    _bindHexListeners(html) {
         if (game.user.isGM) {
             const d12hex = html.querySelector(".d12hex");
             if (d12hex) {
@@ -156,17 +213,10 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
     async _handleHexClick(event, html) {
         const hexesElements = html.querySelectorAll(".hex");
         let hexStates = [];
-        const terrainTypes = {
-            "snowhex.svg": game.i18n.localize("RAILERS.apps.terrain.snowTerrain"),
-            "hillhex.svg": game.i18n.localize("RAILERS.apps.terrain.hillTerrain"),
-            "icehex.svg": game.i18n.localize("RAILERS.apps.terrain.iceTerrain"),
-            "flathex.svg": game.i18n.localize("RAILERS.apps.terrain.flatTerrain"),
-            "mountainhex.svg": game.i18n.localize("RAILERS.apps.terrain.mountainTerrain")
-        };
 
         const target = event.currentTarget;
         if (target.classList.contains("d12hex")) {
-            const currentStates = this._retrieveHexStates(); // Get current state
+            const currentStates = await getOrInitHexStates("terrainHexStates");
 
             let activeHex = Array.from(hexesElements).find((h, i) => currentStates[i] === "active");
             if (!activeHex) {
@@ -186,7 +236,7 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
             const coordinates = activeHex.dataset.coordinates;
             const img = activeHex.querySelector("img"); // Use activeHex directly
             const fileName = img.src.split("/").pop();
-            const terrainType = terrainTypes[fileName] || "Unknown";
+            const terrainType = game.i18n.localize(TERRAIN_TYPES[fileName] ?? "RAILERS.apps.terrain.unknown");
             const roll = await new Roll("1d12").evaluate();
 
             if (roll.total % 2 === 0) {
@@ -205,7 +255,7 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
                 }
                 const newImg = newHex.querySelector("img");
                 const newFileName = newImg.src.split("/").pop();
-                const newTerrainType = terrainTypes[newFileName] || "Unknown";
+                const newTerrainType = game.i18n.localize(TERRAIN_TYPES[newFileName] ?? "RAILERS.apps.terrain.unknown");
 
                 await roll.toMessage({
                     flavor: game.i18n.localize("RAILERS.apps.terrain.rollTerrainFlower"),
@@ -243,23 +293,7 @@ export class DiceFlowerApp extends foundry.applications.api.HandlebarsApplicatio
 
         await game.settings.set("railers", "terrainHexStates", hexStates); // Ensure saved
     }
-
-    _retrieveHexStates() {
-        let hexStates = game.settings.get("railers", "terrainHexStates");
-        if (!hexStates || hexStates.length !== 19) {
-            hexStates = Array(19).fill("inactive");
-            hexStates[9] = "active"; // Center (2,2)
-            game.settings.set("railers", "terrainHexStates", hexStates);
-        }
-        return hexStates;
-    }
-
-    async _onClose(options) {
-      await super._onClose(options);
-    }
 }
-
-
 
 export class WeatherHUD {
     static async showHUD() {
@@ -318,64 +352,33 @@ export class WeatherHUD {
 
   
     static async rollWeather() {
-      const weatherTypes = {
-        "thundersnowhex.svg": game.i18n.localize("RAILERS.apps.weather.thunderSnow"),
-        "snowstormhex.svg": game.i18n.localize("RAILERS.apps.weather.snowStorm"),
-        "blizzardhex.svg": game.i18n.localize("RAILERS.apps.weather.blizzard"),
-        "windhex.svg": game.i18n.localize("RAILERS.apps.weather.wind"),
-        "flurryhex.svg": game.i18n.localize("RAILERS.apps.weather.flurry"),
-        "overcasthex.svg": game.i18n.localize("RAILERS.apps.weather.overcast"),
-        "polaroutbreakhex.svg": game.i18n.localize("RAILERS.apps.weather.polarOutbreak"),
-        "aurorahex.svg": game.i18n.localize("RAILERS.apps.weather.aurora"),
-        "clearhex.svg": game.i18n.localize("RAILERS.apps.weather.clear"),
-        "icefoghex.svg": game.i18n.localize("RAILERS.apps.weather.iceFog"),
-        "diamonddusthex.svg": game.i18n.localize("RAILERS.apps.weather.diamondDust"),
-        "whiteouthex.svg": game.i18n.localize("RAILERS.apps.weather.whiteout")
-      };
-      const weatherData = [
-        { coords: "(0,0)", image: "systems/railers/assets/weather/thundersnowhex.svg", name: weatherTypes["thundersnowhex.svg"] },
-        { coords: "(0,1)", image: "systems/railers/assets/weather/snowstormhex.svg", name: weatherTypes["snowstormhex.svg"] },
-        { coords: "(0,2)", image: "systems/railers/assets/weather/blizzardhex.svg", name: weatherTypes["blizzardhex.svg"] },
-        { coords: "(1,0)", image: "systems/railers/assets/weather/windhex.svg", name: weatherTypes["windhex.svg"] },
-        { coords: "(1,1)", image: "systems/railers/assets/weather/flurryhex.svg", name: weatherTypes["flurryhex.svg"] },
-        { coords: "(1,2)", image: "systems/railers/assets/weather/overcasthex.svg", name: weatherTypes["overcasthex.svg"] },
-        { coords: "(1,3)", image: "systems/railers/assets/weather/polaroutbreakhex.svg", name: weatherTypes["polaroutbreakhex.svg"] },
-        { coords: "(2,0)", image: "systems/railers/assets/weather/aurorahex.svg", name: weatherTypes["aurorahex.svg"] },
-        { coords: "(2,1)", image: "systems/railers/assets/weather/clearhex.svg", name: weatherTypes["clearhex.svg"] },
-        { coords: "(2,2)", image: "systems/railers/assets/weather/clearhex.svg", name: weatherTypes["clearhex.svg"] },
-        { coords: "(2,3)", image: "systems/railers/assets/weather/clearhex.svg", name: weatherTypes["clearhex.svg"] },
-        { coords: "(2,4)", image: "systems/railers/assets/weather/icefoghex.svg", name: weatherTypes["icefoghex.svg"] },
-        { coords: "(3,0)", image: "systems/railers/assets/weather/blizzardhex.svg", name: weatherTypes["blizzardhex.svg"] },
-        { coords: "(3,1)", image: "systems/railers/assets/weather/overcasthex.svg", name: weatherTypes["overcasthex.svg"] },
-        { coords: "(3,2)", image: "systems/railers/assets/weather/flurryhex.svg", name: weatherTypes["flurryhex.svg"] },
-        { coords: "(3,3)", image: "systems/railers/assets/weather/windhex.svg", name: weatherTypes["windhex.svg"] },
-        { coords: "(4,0)", image: "systems/railers/assets/weather/diamonddusthex.svg", name: weatherTypes["diamonddusthex.svg"] },
-        { coords: "(4,1)", image: "systems/railers/assets/weather/snowstormhex.svg", name: weatherTypes["snowstormhex.svg"] },
-        { coords: "(4,2)", image: "systems/railers/assets/weather/whiteouthex.svg", name: weatherTypes["whiteouthex.svg"] }
-      ];
-
-      const states = this._getHexStates("weatherHexStates");
+      const states = await getOrInitHexStates("weatherHexStates");
       const activeIndex = states.indexOf("active");
-      const coordinates = weatherData[activeIndex].coords;
+      const coordinates = WEATHER_DATA[activeIndex].coords;
       const roll = await new Roll("1d12").evaluate();
-  
-      let newWeather;
+
+      let newWeatherEntry;
       if (roll.total % 2 === 0) {
         const index = Math.floor(roll.total / 2) - 1;
         const adjacent = hexes[coordinates];
         if (index >= 0 && index < adjacent.length) {
           const newCoords = adjacent[index];
-          const newIndex = weatherData.findIndex(w => w.coords === newCoords);
-          newWeather = weatherData[newIndex];
+          const newIndex = WEATHER_DATA.findIndex(w => w.coords === newCoords);
+          newWeatherEntry = WEATHER_DATA[newIndex];
           states.fill("inactive");
           states[newIndex] = "active";
           game.settings.set("railers", "weatherHexStates", states);
         }
       } else {
-        newWeather = weatherData[activeIndex];
+        newWeatherEntry = WEATHER_DATA[activeIndex];
       }
-  
-      if (newWeather) {
+
+      if (newWeatherEntry) {
+        const fileName = newWeatherEntry.image.split("/").pop();
+        const newWeather = {
+          ...newWeatherEntry,
+          name: game.i18n.localize(WEATHER_TYPES[fileName])
+        };
         game.settings.set("railers", "currentWeather", newWeather);
         await roll.toMessage({
           flavor: game.i18n.localize("RAILERS.apps.weather.rollWeather"),
@@ -424,8 +427,6 @@ export class WeatherHUD {
       // Update the HUD (which applies the adjustment)
       await this.updateHUD();
     }
-
-
   
     static async toggleSeason() {
       const currentSeason = game.settings.get("railers", "currentSeason") || "winter";
@@ -434,16 +435,6 @@ export class WeatherHUD {
       await this.updateHUD(); 
     }
   
-    static _getHexStates(settingKey) {
-      const storedStates = game.settings.get("railers", settingKey);
-      if (!storedStates || storedStates.length !== 19) {
-        const states = Array(19).fill("inactive");
-        states[9] = "active"; 
-        game.settings.set("railers", settingKey, states);
-        return states;
-      }
-      return storedStates;
-    }
 }
 
 Hooks.on("canvasReady", () => {
@@ -466,9 +457,10 @@ Hooks.on("getSceneControlButtons", (controls) => {
         icon: "fas fa-mountain",
         button: true,
         onChange: () => {
-          if (diceFlowerApp?.rendered) diceFlowerApp.close();
-          else {
-            diceFlowerApp ??= new DiceFlowerApp();
+          if (diceFlowerApp?.rendered) {
+            diceFlowerApp.close();
+          } else {
+            diceFlowerApp = new DiceFlowerApp();
             diceFlowerApp.render(true);
           }
         }
