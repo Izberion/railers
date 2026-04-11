@@ -1,3 +1,5 @@
+import { buildRollFormula } from "../helpers/roll-formula.mjs";
+
 export async function attackDialog(actor, target) {
 
   const itemId = target.closest(".item")?.dataset.itemId;
@@ -68,19 +70,21 @@ export async function attackDialog(actor, target) {
         poolTotal += mod;
 
         // Check ammo
-        if (isRanged && item.system.magazine?.value < ammoReduction) {
+        if (isRanged && (item.system.magazine?.value ?? Infinity) < ammoReduction) {
           ui.notifications.error(game.i18n.localize("RAILERS.dialogs.attack.notEnoughAmmo"));
           return {};
         }
 
         // Build roll formula
-        let rollFormula;
-        if (poolTotal === 0) {
-          rollFormula = `2d8kl1x8cs>=${tn}df=1`;
-        } else if (poolTotal < 0) {
-          rollFormula = "0";
-        } else {
-          rollFormula = `${poolTotal}d8x8cs>=${tn}df=1`;
+        const rollFormula = buildRollFormula(poolTotal, tn);
+        if (!rollFormula) {
+          await ChatMessage.create({
+            user: game.user.id,
+            speaker: { actor: actor, alias: characterName },
+            flavor: game.i18n.format("RAILERS.chat.roll.rollAttack", { rollName, tn }),
+            content: game.i18n.localize("RAILERS.chat.roll.automaticFailure")
+          });
+          return {};
         }
 
         // Roll and render
@@ -96,19 +100,16 @@ export async function attackDialog(actor, target) {
         // Post to chat
         await r.toMessage({
           user: game.user.id,
-          speaker: {
-            actor: actor,
-            alias: characterName
-          },
+          speaker: { actor: actor, alias: characterName },
           flavor: game.i18n.format("RAILERS.chat.roll.rollAttack", { rollName, tn }),
-          content: `${rollResultHTML}<div class="dice-results">${damage}/W${severity}</div>`
+          content: `${rollResultHTML}<div class="dice-results">${game.i18n.format("RAILERS.chat.roll.damageResult", { damage, severity })}</div>`
         });
 
         return {};
       }
     },
     cancel: {
-      icon: '<i class="fas fa-times"></i>',
+      icon: 'fas fa-times',
       label: game.i18n.localize("RAILERS.dialogs.base.cancel"),
       callback: () => ({})
     }

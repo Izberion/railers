@@ -1,3 +1,5 @@
+import { buildRollFormula } from "../helpers/roll-formula.mjs";
+
 export async function rollDialog(actor, target) {
 
   const dataset = target.dataset;
@@ -41,13 +43,20 @@ export async function rollDialog(actor, target) {
         poolTotal += mod;
 
         // Build roll formula
-        let rollFormula;
-        if (poolTotal === 0) {
-          rollFormula = `2d8kl1x8cs>=${tn}df=1`;
-        } else if (poolTotal < 0) {
-          rollFormula = "0";
-        } else {
-          rollFormula = `${poolTotal}d8x8cs>=${tn}df=1`;
+        const rollFormula = buildRollFormula(poolTotal, tn);
+        if (!rollFormula) {
+          await ChatMessage.create({
+            user: game.user.id,
+            speaker: { actor: actor, alias: characterName },
+            flavor: !isNaN(npcpool)
+            ? game.i18n.format("RAILERS.chat.roll.rollRoll", { tn })
+            : game.i18n.format(
+                isSpecialSkill || isNaN(skillpool) ? "RAILERS.chat.roll.rollSave" : "RAILERS.chat.roll.rollCheck",
+                { rollName, tn }
+              ),
+            content: game.i18n.localize("RAILERS.chat.roll.automaticFailure")
+          });
+          return {};
         }
 
         // Roll and render
@@ -65,10 +74,7 @@ export async function rollDialog(actor, target) {
         // Post to chat
         await r.toMessage({
           user: game.user.id,
-          speaker: {
-            actor: actor,
-            alias: characterName
-          },
+          speaker: { actor: actor, alias: characterName },
           flavor: !isNaN(npcpool)
             ? game.i18n.format("RAILERS.chat.roll.rollRoll", { tn })
             : game.i18n.format(
