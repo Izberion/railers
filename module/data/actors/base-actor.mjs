@@ -12,11 +12,13 @@ export default class RailersActorBase extends foundry.abstract.TypeDataModel {
       value: new fields.NumberField({
         required: false,
         nullable: true,
+        integer: true,
         initial: 0
       }),
       max: new fields.NumberField({ 
         required: false,
         nullable: true,
+        integer: true,
         initial: 0,
         min: 0,
       })
@@ -148,5 +150,50 @@ export default class RailersActorBase extends foundry.abstract.TypeDataModel {
     schema.notes = new fields.HTMLField(); 
 
     return schema;
+  }
+
+
+  prepareDerivedData() {
+    if (!this.attributes) return;
+      const attrConfig = CONFIG.RAILERS.attributes[this.parent.type];
+      if (!attrConfig) return;
+      for (const attrKey in this.attributes) {
+        this.attributes[attrKey].label =
+          game.i18n.localize(attrConfig[attrKey]) ?? attrKey;
+        // Skill labels if present
+        for (const skillKey in this.attributes[attrKey].skills ?? {}) {
+          this.attributes[attrKey].skills[skillKey].label =
+            game.i18n.localize(CONFIG.RAILERS.skills[attrKey]?.[skillKey]) ?? skillKey;
+        }
+      }
+
+
+    if (["character", "npc", "demon"].includes(this.parent.type)) {
+      let totalWounds = 0;
+      let totalDamage = 0;
+      const maxHitpoints = this.hitpoints.max;
+
+      this.parent.items.forEach(item => {
+        if (item.type === "wound") {
+          totalWounds += item.system.severity;
+          totalDamage += item.system.damage;
+        }
+      });
+
+      this.wounds.value = totalWounds;
+      this.hitpoints.value = maxHitpoints - totalDamage;
+    }
+  }  
+
+  getRollData() {
+    const data = {};
+    if (!this.attributes) return data;
+    for (const [attrKey, attrData] of Object.entries(this.attributes)) {
+      data[attrKey] = foundry.utils.deepClone(attrData);
+      for (const [skillKey, skillData] of Object.entries(attrData.skills ?? {})) {
+        data[skillKey] = foundry.utils.deepClone(skillData);
+      }
+    }
+    return data;
   }
 }
