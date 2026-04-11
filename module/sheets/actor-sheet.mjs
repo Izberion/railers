@@ -5,6 +5,7 @@ import { addWoundDialog } from "../dialogs/wound-dialog.mjs";
 import { onRollHp } from "../apps/hp-roller.mjs";
 import { defenseDialog } from "../dialogs/defense-dialog.mjs";
 import { ActorTweaks } from "../apps/actor-tweaks.mjs";
+import { locomotiveChange } from "../dialogs/locomotive-change.mjs";
 
 
 const { api, sheets } = foundry.applications;
@@ -18,6 +19,8 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
   constructor(options = {}) {
     super(options);
     this.#dragDrop = this.#createDragDropHandlers();
+    this._onLocomotiveChange = this._handleLocomotiveChange.bind(this);
+    this._locomotivePending = null;
    }
 
    /** @override */
@@ -135,6 +138,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
 
     // Offloading context prep to a helper function
     this._prepareItems(context);
+    context.locomotiveOptions = CONFIG.RAILERS.locomotiveOptions;
 
     return context;
   }
@@ -236,7 +240,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
           break;
         case 'conditions':
           tab.id = 'conditions';
-          tab.label = 'Conditions';
+          tab.label += 'Conditions';
           break;
         case 'effects':
           tab.id = 'effects';
@@ -275,60 +279,22 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    * @param {object} context The context object to mutate
    */
   _prepareItems(context) {
-    // Initialize containers.
-    const gear = [];
-    const wounds = [];
-    const cars = [];
-    const cargo = [];
-    const clothing = [];
-    const weapons = [];
-    const mutations = [];
-    const conditions = [];
-    const abilities = [];
+    const grouped = Object.groupBy(this.document.items, i => i.type);
 
+    const bySort = (a, b) => (a.sort || 0) - (b.sort || 0);
 
-
-    // Iterate through items, allocating to containers
-    for (let i of this.document.items) {
-      if (i.type === 'gear') {
-        gear.push(i);
-      }
-      else if (i.type === 'wound') {
-        wounds.push(i);
-      }
-      else if (i.type === 'car') {
-        cars.push(i);
-      }
-      else if (i.type === 'cargo') {
-        cargo.push(i);
-      }
-      else if (i.type === 'weapon') {
-        weapons.push(i);
-      }
-      else if (i.type === 'ability') {
-        abilities.push(i);
-      }
-      else if (i.type === 'condition') {
-        conditions.push(i);
-      }
-      else if (i.type === 'mutation') {
-        mutations.push(i);
-      }
-      else if (i.type === 'clothing') {
-        clothing.push(i);
-      }
-    }
-
-    // Sort then assign
-    context.gear = gear.sort((a, b) => (a.sort || 0) - (b.sort || 0));
-    context.wounds = wounds.sort((a, b) => (a.system.severity || 0) - (b.system.severity || 0) || (a.system.damage || 0) - (b.system.damage || 0));
-    context.cars = cars.sort((a, b) => (a.sort || 0) - (b.sort || 0));
-    context.cargo = cargo.sort((a, b) => (a.sort || 0) - (b.sort || 0));
-    context.weapons = weapons.sort((a, b) => (a.sort || 0) - (b.sort || 0));
-    context.clothing = clothing.sort((a, b) => (a.sort || 0) - (b.sort || 0));
-    context.mutations = mutations.sort((a, b) => (a.sort || 0) - (b.sort || 0));
-    context.conditions = conditions.sort((a, b) => (a.sort || 0) - (b.sort || 0));
-    context.abilities = abilities.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+    context.gear = (grouped.gear ?? []).sort(bySort);
+    context.weapons = (grouped.weapon ?? []).sort(bySort);
+    context.clothing = (grouped.clothing ?? []).sort(bySort);
+    context.mutations = (grouped.mutation ?? []).sort(bySort);
+    context.conditions = (grouped.condition ?? []).sort(bySort);
+    context.abilities = (grouped.ability ?? []).sort(bySort);
+    context.cars = (grouped.car ?? []).sort(bySort);
+    context.cargo = (grouped.cargo ?? []).sort(bySort);
+    context.wounds = (grouped.wound ?? []).sort((a, b) => 
+      (a.system.severity || 0) - (b.system.severity || 0) || 
+      (a.system.damage || 0) - (b.system.damage || 0)
+    );
   }
 
   /** @override */
@@ -358,11 +324,15 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
   _onRender(context, options) {
     this.#dragDrop.forEach((d) => d.bind(this.element));
     this.#disableOverrides();
-    const html = this.element.querySelector('.window-content');
-    const locomotiveSelect = html.querySelector('select[name="system.locomotive"]');
+
+    const locomotiveSelect = this.element.querySelector('.locomotive-select');
     if (locomotiveSelect) {
-      locomotiveSelect.removeEventListener('change', this._onLocomotiveChange.bind(this));
-      locomotiveSelect.addEventListener('change', this._onLocomotiveChange.bind(this));
+      // Restore pending selection if dialog is open
+      if (this._locomotivePending) {
+        locomotiveSelect.value = this._locomotivePending;
+      }
+      locomotiveSelect.removeEventListener('change', this._onLocomotiveChange);
+      locomotiveSelect.addEventListener('change', this._onLocomotiveChange);
     }
   }
 
@@ -372,8 +342,15 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    *
    **************/
 
-  static async _openTweaks(actor) {
-    new ActorTweaks({ actor: this.actor }).render(true); 
+  _handleLocomotiveChange(event) {
+  this._locomotivePending = event.target.value;
+  locomotiveChange(this.actor, event.target.value).then(() => {
+    this._locomotivePending = null;
+  });
+}
+  
+  static async _openTweaks(event, target) {
+    new ActorTweaks({ actor: this.actor }).render(true);
   }
 
   static async _addWound(actor) {
@@ -397,131 +374,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     const itemId = target.closest('.item').dataset.itemId;
     const item = this.actor.items.get(itemId);
     if (item) item.update({ 'system.magazine.value': item.system.magazine.max });
-  }
-
-  _onLocomotiveChange(event) {
-    event.preventDefault();
-    const originalState = foundry.utils.deepClone(this.actor.system);
-    const selectedType = event.target.value;
-
-    const types = {
-      ace: { 
-        armor: 4, 
-        power: 24, 
-        speed: 7, 
-        fuel: 100, 
-        weight: 1050,
-        capacity: 0
-      },
-      bigBrother: { 
-        armor: 5, 
-        power: 15, 
-        speed: 3, 
-        fuel: 60, 
-        weight: 950,
-        capacity: 0
-      },
-      comet: { 
-        armor: 2, 
-        power: 12, 
-        speed: 9, 
-        fuel: 42, 
-        weight: 650,
-        capacity: 0
-      },
-      compact: { 
-        armor: 3, 
-        power: 0, 
-        speed: 3, 
-        fuel: 48, 
-        weight: 0,
-        capacity: 8
-      },
-      donkey: { 
-        armor: 3, 
-        power: 10, 
-        speed: 8, 
-        fuel: 80, 
-        weight: 1500,
-        capacity: 0
-      },
-      dynamo: { 
-        armor: 4, 
-        power: 25, 
-        speed: 5, 
-        fuel: 56, 
-        weight: 750,
-        capacity: 0
-      },
-      flex: { 
-        armor: 2, 
-        power: 8, 
-        speed: 3, 
-        fuel: 36, 
-        weight: 500,
-        capacity: 0
-      },
-      joes: { 
-        armor: 3, 
-        power: 15, 
-        speed: 5, 
-        fuel: 70, 
-        weight: 800,
-        capacity: 0
-      },
-      littleMan: { 
-        armor: 1, 
-        power: 9, 
-        speed: 3, 
-        fuel: 60, 
-        weight: 550,
-        capacity: 0
-      },
-      marathoner: { 
-        armor: 1, 
-        power: 16, 
-        speed: 4, 
-        fuel: 128, 
-        weight: 700,
-        capacity: 0  
-      }
-    };
-  
-    const stats = types[selectedType];
-    if (!stats) return;
-  
-    new Dialog({
-      title: game.i18n.localize("RAILERS.dialogs.base.warning"),
-      content: game.i18n.localize("RAILERS.dialogs.train.changeLocomotiveWarning"),
-      buttons: {
-        continue: {
-          label: game.i18n.localize("RAILERS.dialogs.base.continue"),
-          callback: async () => {
-            await this.actor.update({
-              'system.speed': stats.speed,
-              'system.fuel.max': stats.fuel,
-              'system.armor': stats.armor,
-              'system.power.max': stats.power,
-              'system.weight.max': stats.weight,
-              'system.capacity': stats.capacity,
-              'system.locomotive': selectedType
-            });
-            this.render();
-          },
-        },
-        cancel: {
-          label: game.i18n.localize("RAILERS.dialogs.base.cancel"),
-          callback: async ()=> {
-            await this.actor.update({ system: originalState }); 
-            const select = this.element.querySelector('select[name="system.locomotive"]');
-            if (select) select.value = originalState.locomotive;
-            this.render();
-          }
-          
-        }
-      },
-      default: 'cancel',
-    }).render(true);
   }
 
   static async _onEditImage(event, target) {
