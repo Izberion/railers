@@ -6,5 +6,10 @@
   "system": {
     "description": "<p>The corrupted character cannot feel pain. His Hitpoint maximum doubles, his current Hitpoint total increasing by the same amount. When rolling Hitpoints, the number of dice rolled is doubled from normal.</p>"
   },
+   "flags": {
+    "railers": {
+      "isPainless": true
+    }
+  },
   "_key": "!items!DNW1KFYIk0M0NHq5"
 }

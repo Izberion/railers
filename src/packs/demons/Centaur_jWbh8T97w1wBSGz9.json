@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 4,
-      "agility": 2,
-      "intellect": 4,
-      "endurance": 3,
-      "fear": 6,
-      "attack": {
-        "damage": 3,
-        "severity": 4
+      "strength": {
+        "value": 4
+      },
+      "agility": {
+        "value": 2
+      },
+      "intellect": {
+        "value": 4
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Centaurian, Medium, Cave Dweller"
+    "tags": "Centaurian, Medium, Cave Dweller",
+    "fear": 6,
+    "damage": 3,
+    "severity": 4
   },
   "prototypeToken": {
     "name": "Centaur",
@@ -133,7 +139,7 @@
       "name": "Stupefy",
       "type": "ability",
       "system": {
-        "description": "<p>The demon can somehow get into the minds’ of its prey. It attempts to daze a target within Short range. The target must make a TN 6 Resolve saving throw or become Dazed for 1d Rounds.</p>",
+        "description": "<p>The demon can somehow get into the minds\u2019 of its prey. It attempts to daze a target within Short range. The target must make a TN 6 Resolve saving throw or become Dazed for 1d Rounds.</p>",
         "action": "major"
       },
       "_id": "tHCIm25fC5RpmkE3",

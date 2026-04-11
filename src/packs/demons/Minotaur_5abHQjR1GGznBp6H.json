@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 6,
-      "agility": 4,
-      "intellect": 2,
-      "endurance": 5,
-      "fear": 6,
-      "attack": {
-        "damage": 6,
-        "severity": 6
+      "strength": {
+        "value": 6
+      },
+      "agility": {
+        "value": 4
+      },
+      "intellect": {
+        "value": 2
+      },
+      "endurance": {
+        "value": 5
       }
     },
-    "tags": "Bipedal, Large, Big Horns"
+    "tags": "Bipedal, Large, Big Horns",
+    "fear": 6,
+    "damage": 6,
+    "severity": 6
   },
   "prototypeToken": {
     "name": "Minotaur",

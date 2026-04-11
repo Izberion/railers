@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 7,
-      "agility": 4,
-      "intellect": 3,
-      "endurance": 6,
-      "fear": 7,
-      "attack": {
-        "damage": 7,
-        "severity": 7
+      "strength": {
+        "value": 7
+      },
+      "agility": {
+        "value": 4
+      },
+      "intellect": {
+        "value": 3
+      },
+      "endurance": {
+        "value": 6
       }
     },
-    "tags": "Quadrupedal, Large, Familial, Territorial"
+    "tags": "Quadrupedal, Large, Familial, Territorial",
+    "fear": 7,
+    "damage": 7,
+    "severity": 7
   },
   "prototypeToken": {
     "name": "Goliath",

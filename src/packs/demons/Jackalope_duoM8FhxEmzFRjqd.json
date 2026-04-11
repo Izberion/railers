@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 5,
-      "agility": 8,
-      "intellect": 5,
-      "endurance": 6,
-      "fear": 5,
-      "attack": {
-        "damage": 7,
-        "severity": 6
+      "strength": {
+        "value": 5
+      },
+      "agility": {
+        "value": 8
+      },
+      "intellect": {
+        "value": 5
+      },
+      "endurance": {
+        "value": 6
       }
     },
-    "tags": "Quadrupedal, Small, Predator, Aggressive, Loner"
+    "tags": "Quadrupedal, Small, Predator, Aggressive, Loner",
+    "fear": 5,
+    "damage": 7,
+    "severity": 6
   },
   "prototypeToken": {
     "name": "Jackalope",
@@ -122,7 +128,7 @@
       "name": "Cute",
       "type": "ability",
       "system": {
-        "description": "<p>If you can get passed the alien nature inherent to all demons, this demon is actually pretty cute and fluffy. Three consecutive successful Resolve saves will immunize the rolling character to its Fear effects. It may still give the character the willies on occasion, but it’ll be tolerable enough to be around. The character may even have the desire to pet it.</p>",
+        "description": "<p>If you can get passed the alien nature inherent to all demons, this demon is actually pretty cute and fluffy. Three consecutive successful Resolve saves will immunize the rolling character to its Fear effects. It may still give the character the willies on occasion, but it\u2019ll be tolerable enough to be around. The character may even have the desire to pet it.</p>",
         "action": "passive"
       },
       "_id": "2WsJ4gRPO5ja9ahM",
@@ -133,7 +139,7 @@
       "name": "It's Fast",
       "type": "ability",
       "system": {
-        "description": "<p>The demon is very fast. Don’t bother rolling initiative for it. Give it its own initiative slot at the top of the order, and another slot in the middle of the order. These slots are individualized and not part of any group. Additionally, the demon can use Maneuvers to attack, as well as Minor Actions.</p>",
+        "description": "<p>The demon is very fast. Don\u2019t bother rolling initiative for it. Give it its own initiative slot at the top of the order, and another slot in the middle of the order. These slots are individualized and not part of any group. Additionally, the demon can use Maneuvers to attack, as well as Minor Actions.</p>",
         "action": "passive"
       },
       "_id": "hSWnujco4Yc7kPZO",

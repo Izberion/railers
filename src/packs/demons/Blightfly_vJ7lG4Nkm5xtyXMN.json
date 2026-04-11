@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 1,
-      "agility": 3,
-      "intellect": 1,
-      "endurance": 1,
-      "fear": 6,
-      "attack": {
-        "damage": 1,
-        "severity": 1
+      "strength": {
+        "value": 1
+      },
+      "agility": {
+        "value": 3
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 1
       }
     },
-    "tags": "Insectile, Small, Scavenger"
+    "tags": "Insectile, Small, Scavenger",
+    "fear": 6,
+    "damage": 1,
+    "severity": 1
   },
   "prototypeToken": {
     "name": "Blightfly",
@@ -133,7 +139,7 @@
       "name": "Pestilence",
       "type": "ability",
       "system": {
-        "description": "<p>Anyone that comes in direct contact with this demon is immediately exposed to disease. The body of anything that dies by this disease will become food for the demon’s larvae, which begin to consume it from within shortly after death.</p>",
+        "description": "<p>Anyone that comes in direct contact with this demon is immediately exposed to disease. The body of anything that dies by this disease will become food for the demon\u2019s larvae, which begin to consume it from within shortly after death.</p>",
         "action": "passive"
       },
       "_id": "zM8EE7bKOC4ajEty",

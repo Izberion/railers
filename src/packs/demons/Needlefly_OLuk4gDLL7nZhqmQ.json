@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 1,
-      "agility": 4,
-      "intellect": 1,
-      "endurance": 1,
-      "fear": 5,
-      "attack": {
-        "damage": 2,
-        "severity": 1
+      "strength": {
+        "value": 1
+      },
+      "agility": {
+        "value": 4
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 1
       }
     },
-    "tags": "Insectile, Tiny, Vampire"
+    "tags": "Insectile, Tiny, Vampire",
+    "fear": 5,
+    "damage": 2,
+    "severity": 1
   },
   "prototypeToken": {
     "name": "Needlefly",

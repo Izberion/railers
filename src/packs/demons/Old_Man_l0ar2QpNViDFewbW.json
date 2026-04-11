@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 8,
-      "agility": 4,
-      "intellect": 2,
-      "endurance": 10,
-      "fear": 8,
-      "attack": {
-        "damage": 9,
-        "severity": 9
+      "strength": {
+        "value": 8
+      },
+      "agility": {
+        "value": 4
+      },
+      "intellect": {
+        "value": 2
+      },
+      "endurance": {
+        "value": 10
       }
     },
-    "tags": "Giant Enemy Crab, Huge, Amphibious, Territorial"
+    "tags": "Giant Enemy Crab, Huge, Amphibious, Territorial",
+    "fear": 8,
+    "damage": 9,
+    "severity": 9
   },
   "prototypeToken": {
     "name": "Old Man",

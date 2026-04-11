@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 10,
-      "agility": 5,
-      "intellect": 1,
-      "endurance": 10,
-      "fear": 8,
-      "attack": {
-        "damage": null,
-        "severity": null
+      "strength": {
+        "value": 10
+      },
+      "agility": {
+        "value": 5
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 10
       }
     },
-    "tags": "Really Big Worm, Massive, Territorial"
+    "tags": "Really Big Worm, Massive, Territorial",
+    "fear": 8,
+    "damage": null,
+    "severity": null
   },
   "prototypeToken": {
     "name": "Ouroboros",

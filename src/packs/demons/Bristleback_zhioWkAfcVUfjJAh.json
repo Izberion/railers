@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 2,
-      "agility": 3,
-      "intellect": 1,
-      "endurance": 2,
-      "fear": 6,
-      "attack": {
-        "damage": 3,
-        "severity": 3
+      "strength": {
+        "value": 2
+      },
+      "agility": {
+        "value": 3
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 2
       }
     },
-    "tags": "Quadrupedal, Small, Scavenger, Familial"
+    "tags": "Quadrupedal, Small, Scavenger, Familial",
+    "fear": 6,
+    "damage": 3,
+    "severity": 3
   },
   "prototypeToken": {
     "name": "Bristleback",

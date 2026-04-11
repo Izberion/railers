@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 2,
-      "agility": 3,
-      "intellect": 2,
-      "endurance": 4,
-      "fear": 5,
-      "attack": {
-        "damage": 3,
-        "severity": 4
+      "strength": {
+        "value": 2
+      },
+      "agility": {
+        "value": 3
+      },
+      "intellect": {
+        "value": 2
+      },
+      "endurance": {
+        "value": 4
       }
     },
-    "tags": "Quadrupedal, Small, Familial, Neutral, Burrower"
+    "tags": "Quadrupedal, Small, Familial, Neutral, Burrower",
+    "fear": 5,
+    "damage": 3,
+    "severity": 4
   },
   "prototypeToken": {
     "name": "Snow Drake",

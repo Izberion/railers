@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 4,
-      "agility": 5,
-      "intellect": 3,
-      "endurance": 3,
-      "fear": 6,
-      "attack": {
-        "damage": 7,
-        "severity": 6
+      "strength": {
+        "value": 4
+      },
+      "agility": {
+        "value": 5
+      },
+      "intellect": {
+        "value": 3
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Quadrupedal, Medium, Loner"
+    "tags": "Quadrupedal, Medium, Loner",
+    "fear": 6,
+    "damage": 7,
+    "severity": 6
   },
   "prototypeToken": {
     "name": "Snow Shark",

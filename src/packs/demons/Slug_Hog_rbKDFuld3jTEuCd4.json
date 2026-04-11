@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 3,
-      "agility": 1,
-      "intellect": 6,
-      "endurance": 5,
-      "fear": 6,
-      "attack": {
-        "damage": 3,
-        "severity": 3
+      "strength": {
+        "value": 3
+      },
+      "agility": {
+        "value": 1
+      },
+      "intellect": {
+        "value": 6
+      },
+      "endurance": {
+        "value": 5
       }
     },
-    "tags": "Technically Quadrupedal, Large, Neutral, Lazy, Gross"
+    "tags": "Technically Quadrupedal, Large, Neutral, Lazy, Gross",
+    "fear": 6,
+    "damage": 3,
+    "severity": 3
   },
   "prototypeToken": {
     "name": "Slug Hog",

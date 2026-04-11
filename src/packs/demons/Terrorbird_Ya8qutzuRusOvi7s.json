@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 5,
-      "agility": 5,
-      "intellect": 3,
-      "endurance": 3,
-      "fear": 7,
-      "attack": {
-        "damage": 6,
-        "severity": 6
+      "strength": {
+        "value": 5
+      },
+      "agility": {
+        "value": 5
+      },
+      "intellect": {
+        "value": 3
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Avian, Huge, Nocturnal, Ambush"
+    "tags": "Avian, Huge, Nocturnal, Ambush",
+    "fear": 7,
+    "damage": 6,
+    "severity": 6
   },
   "prototypeToken": {
     "name": "Terrorbird",

@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 1,
-      "agility": 3,
-      "intellect": 1,
-      "endurance": 2,
-      "fear": 5,
-      "attack": {
-        "damage": 2,
-        "severity": 2
+      "strength": {
+        "value": 1
+      },
+      "agility": {
+        "value": 3
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 2
       }
     },
-    "tags": "Quadrupedal, Small, Avian, Tasty"
+    "tags": "Quadrupedal, Small, Avian, Tasty",
+    "fear": 5,
+    "damage": 2,
+    "severity": 2
   },
   "prototypeToken": {
     "name": "Cockatrice",

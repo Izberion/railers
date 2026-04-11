@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 2,
-      "agility": 5,
-      "intellect": 4,
-      "endurance": 2,
-      "fear": 5,
-      "attack": {
-        "damage": 3,
-        "severity": 2
+      "strength": {
+        "value": 2
+      },
+      "agility": {
+        "value": 5
+      },
+      "intellect": {
+        "value": 4
+      },
+      "endurance": {
+        "value": 2
       }
     },
-    "tags": "Avian, Small, Neutral"
+    "tags": "Avian, Small, Neutral",
+    "fear": 5,
+    "damage": 3,
+    "severity": 2
   },
   "prototypeToken": {
     "name": "Pitchbird",

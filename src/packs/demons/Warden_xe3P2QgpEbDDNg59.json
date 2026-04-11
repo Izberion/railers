@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 5,
-      "agility": 2,
-      "intellect": 6,
-      "endurance": 4,
-      "fear": 7,
-      "attack": {
-        "damage": 5,
-        "severity": 6
+      "strength": {
+        "value": 5
+      },
+      "agility": {
+        "value": 2
+      },
+      "intellect": {
+        "value": 6
+      },
+      "endurance": {
+        "value": 4
       }
     },
-    "tags": "Bipedal, Medium, Hunchback, Nocturnal, Territorial"
+    "tags": "Bipedal, Medium, Hunchback, Nocturnal, Territorial",
+    "fear": 7,
+    "damage": 5,
+    "severity": 6
   },
   "prototypeToken": {
     "name": "Warden",

@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 2,
-      "agility": 4,
-      "intellect": 1,
-      "endurance": 2,
-      "fear": 6,
-      "attack": {
-        "damage": 4,
-        "severity": 3
+      "strength": {
+        "value": 2
+      },
+      "agility": {
+        "value": 4
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 2
       }
     },
-    "tags": "Insectile, Small, Ambush"
+    "tags": "Insectile, Small, Ambush",
+    "fear": 6,
+    "damage": 4,
+    "severity": 3
   },
   "prototypeToken": {
     "name": "Hangman",

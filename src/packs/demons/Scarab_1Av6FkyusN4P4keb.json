@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": null,
-      "agility": null,
-      "intellect": null,
-      "endurance": null,
-      "fear": 6,
-      "attack": {
-        "damage": null,
-        "severity": 3
+      "strength": {
+        "value": null
+      },
+      "agility": {
+        "value": null
+      },
+      "intellect": {
+        "value": null
+      },
+      "endurance": {
+        "value": null
       }
     },
-    "tags": "Insectile, Tiny, Territorial, Colony Builder"
+    "tags": "Insectile, Tiny, Territorial, Colony Builder",
+    "fear": 6,
+    "damage": null,
+    "severity": 3
   },
   "prototypeToken": {
     "name": "Scarab",
@@ -135,6 +141,11 @@
       "system": {
         "description": "<p>When these demons are disturbed, they swarm. Roll 2d to determine the amount of Hitpoints the swarm has. Its Strength, Agility, Intellect, and Endurance are equal to half its current Hitpoints, rounded up. As the swarm is damaged, these stats decrease. All attacks deal damage equal to 1 plus the swarm's Strength.</p>",
         "action": "passive"
+      },
+      "flags": {
+        "railers": {
+          "isSwarmAbility": true
+        }
       },
       "_id": "bH12EzMRbUMLFKxM",
       "img": "icons/svg/aura.svg",

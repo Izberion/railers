@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 2,
-      "agility": 3,
-      "intellect": 3,
-      "endurance": 1,
-      "fear": 6,
-      "attack": {
-        "damage": 4,
-        "severity": 3
+      "strength": {
+        "value": 2
+      },
+      "agility": {
+        "value": 3
+      },
+      "intellect": {
+        "value": 3
+      },
+      "endurance": {
+        "value": 1
       }
     },
-    "tags": "Bipedal, Small, Territorial, Colony Builder"
+    "tags": "Bipedal, Small, Territorial, Colony Builder",
+    "fear": 6,
+    "damage": 4,
+    "severity": 3
   },
   "prototypeToken": {
     "name": "Tunnelcat Caretaker",

@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 5,
-      "agility": 4,
-      "intellect": 1,
-      "endurance": 3,
-      "fear": 6,
-      "attack": {
-        "damage": 5,
-        "severity": 5
+      "strength": {
+        "value": 5
+      },
+      "agility": {
+        "value": 4
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Insectile, Medium, Colony Builder"
+    "tags": "Insectile, Medium, Colony Builder",
+    "fear": 6,
+    "damage": 5,
+    "severity": 5
   },
   "prototypeToken": {
     "name": "Urbanite",

@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 4,
-      "agility": 6,
-      "intellect": 4,
-      "endurance": 3,
-      "fear": 6,
-      "attack": {
-        "damage": 5,
-        "severity": 5
+      "strength": {
+        "value": 4
+      },
+      "agility": {
+        "value": 6
+      },
+      "intellect": {
+        "value": 4
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Quadrupedal, Medium, Ambush"
+    "tags": "Quadrupedal, Medium, Ambush",
+    "fear": 6,
+    "damage": 5,
+    "severity": 5
   },
   "prototypeToken": {
     "name": "Glider",
@@ -133,7 +139,7 @@
       "name": "Howl",
       "type": "ability",
       "system": {
-        "description": "<p>The demon lets out a long howl. Something about it turns your guts to water. All  characters that can hear it must roll against the demon’s Fear, even if immune. Subsequent uses of this ability in the same combat will only reduce Nerve by 1 instead of the normal 6, including if used by other demons of the same type.</p>",
+        "description": "<p>The demon lets out a long howl. Something about it turns your guts to water. All  characters that can hear it must roll against the demon\u2019s Fear, even if immune. Subsequent uses of this ability in the same combat will only reduce Nerve by 1 instead of the normal 6, including if used by other demons of the same type.</p>",
         "action": "minor"
       },
       "_id": "aTEVg58QzUrpMQle",

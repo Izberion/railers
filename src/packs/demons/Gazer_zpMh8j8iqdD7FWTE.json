@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 3,
-      "agility": 3,
-      "intellect": 2,
-      "endurance": 2,
-      "fear": 5,
-      "attack": {
-        "damage": 2,
-        "severity": 1
+      "strength": {
+        "value": 3
+      },
+      "agility": {
+        "value": 3
+      },
+      "intellect": {
+        "value": 2
+      },
+      "endurance": {
+        "value": 2
       }
     },
-    "tags": "Cephalopoid, Small, Communal, Big Eyes, Cave Dweller, Neutral"
+    "tags": "Cephalopoid, Small, Communal, Big Eyes, Cave Dweller, Neutral",
+    "fear": 5,
+    "damage": 2,
+    "severity": 1
   },
   "prototypeToken": {
     "name": "Gazer",

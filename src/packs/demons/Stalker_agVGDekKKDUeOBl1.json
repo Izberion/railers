@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 5,
-      "agility": 6,
-      "intellect": 5,
-      "endurance": 3,
-      "fear": 8,
-      "attack": {
-        "damage": 7,
-        "severity": 7
+      "strength": {
+        "value": 5
+      },
+      "agility": {
+        "value": 6
+      },
+      "intellect": {
+        "value": 5
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Bipedal, Medium, Nocturnal, Ambush"
+    "tags": "Bipedal, Medium, Nocturnal, Ambush",
+    "fear": 8,
+    "damage": 7,
+    "severity": 7
   },
   "prototypeToken": {
     "name": "Stalker",

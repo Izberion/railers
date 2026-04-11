@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 2,
-      "agility": 3,
-      "intellect": 3,
-      "endurance": 1,
-      "fear": 7,
-      "attack": {
-        "damage": 3,
-        "severity": 2
+      "strength": {
+        "value": 2
+      },
+      "agility": {
+        "value": 3
+      },
+      "intellect": {
+        "value": 3
+      },
+      "endurance": {
+        "value": 1
       }
     },
-    "tags": "Bipedal, Small, Scavenger, Territorial, Really Ugly"
+    "tags": "Bipedal, Small, Scavenger, Territorial, Really Ugly",
+    "fear": 7,
+    "damage": 3,
+    "severity": 2
   },
   "prototypeToken": {
     "name": "Horder",

@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 3,
-      "agility": 5,
-      "intellect": 2,
-      "endurance": 3,
-      "fear": 6,
-      "attack": {
-        "damage": 5,
-        "severity": 5
+      "strength": {
+        "value": 3
+      },
+      "agility": {
+        "value": 5
+      },
+      "intellect": {
+        "value": 2
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Avian, Medium"
+    "tags": "Avian, Medium",
+    "fear": 6,
+    "damage": 5,
+    "severity": 5
   },
   "prototypeToken": {
     "name": "Harpy",

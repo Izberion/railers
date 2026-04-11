@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 3,
-      "agility": 3,
-      "intellect": 6,
-      "endurance": 1,
-      "fear": 5,
-      "attack": {
-        "damage": 3,
-        "severity": 3
+      "strength": {
+        "value": 3
+      },
+      "agility": {
+        "value": 3
+      },
+      "intellect": {
+        "value": 6
+      },
+      "endurance": {
+        "value": 1
       }
     },
-    "tags": "Bipedal, Small, Cave Dweller"
+    "tags": "Bipedal, Small, Cave Dweller",
+    "fear": 5,
+    "damage": 3,
+    "severity": 3
   },
   "prototypeToken": {
     "name": "Mushroom Man",
@@ -133,7 +139,7 @@
       "name": "Human-ish",
       "type": "ability",
       "system": {
-        "description": "<p>The demon is able to use tools and speak with its own rudimentary language, though it is entirely mental, not verbal. For all intents and purposes, it’s in its stone age.</p>",
+        "description": "<p>The demon is able to use tools and speak with its own rudimentary language, though it is entirely mental, not verbal. For all intents and purposes, it\u2019s in its stone age.</p>",
         "action": "passive"
       },
       "_id": "Ma88zWf2gp01UD63",
@@ -144,7 +150,7 @@
       "name": "Tolerable",
       "type": "ability",
       "system": {
-        "description": "<p>The demon isn’t as horrifying as most. Three consecutive successful Resolve saves will immunize the rolling character to its Fear effects. It may still give the character the willies, but it’ll be tolerable enough to interact with.</p>",
+        "description": "<p>The demon isn\u2019t as horrifying as most. Three consecutive successful Resolve saves will immunize the rolling character to its Fear effects. It may still give the character the willies, but it\u2019ll be tolerable enough to interact with.</p>",
         "action": "passive"
       },
       "_id": "E7KnXSLwXm5qsyFL",

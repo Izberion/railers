@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 5,
-      "agility": 4,
-      "intellect": 3,
-      "endurance": 3,
-      "fear": 6,
-      "attack": {
-        "damage": 5,
-        "severity": 4
+      "strength": {
+        "value": 5
+      },
+      "agility": {
+        "value": 4
+      },
+      "intellect": {
+        "value": 3
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Bipedal, Small, Territorial, Colony Builder"
+    "tags": "Bipedal, Small, Territorial, Colony Builder",
+    "fear": 6,
+    "damage": 5,
+    "severity": 4
   },
   "prototypeToken": {
     "name": "Tunnelcat Soldier",
@@ -155,7 +161,7 @@
       "name": "Tunnelcat King",
       "type": "ability",
       "system": {
-        "description": "<p>As long as there are at least 6 of these demons in the same zone, they are able to form together into a Medium sized demon called a Tunnelcat King. The demon’s stats become 8/W8 ATK, 9 STR, 6 AGI, 4 INT, 5 END, and 7 FEAR. Anyone that witnesses the transformation must make a Resolve save against the new Fear rank. All 6 demons must use this action in the same round. The transformation happens at the end of the turn of the final demon. If the transformation is stopped before it can finish, whether by moving a demon out of the zone or killing one, demons involved are struck with a 6/W8 Wound.</p>",
+        "description": "<p>As long as there are at least 6 of these demons in the same zone, they are able to form together into a Medium sized demon called a Tunnelcat King. The demon\u2019s stats become 8/W8 ATK, 9 STR, 6 AGI, 4 INT, 5 END, and 7 FEAR. Anyone that witnesses the transformation must make a Resolve save against the new Fear rank. All 6 demons must use this action in the same round. The transformation happens at the end of the turn of the final demon. If the transformation is stopped before it can finish, whether by moving a demon out of the zone or killing one, demons involved are struck with a 6/W8 Wound.</p>",
         "action": "full"
       },
       "_id": "1FHDwY1KiEhJpuoJ",

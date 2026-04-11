@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 4,
-      "agility": 5,
-      "intellect": 3,
-      "endurance": 3,
-      "fear": 7,
-      "attack": {
-        "damage": 7,
-        "severity": 6
+      "strength": {
+        "value": 4
+      },
+      "agility": {
+        "value": 5
+      },
+      "intellect": {
+        "value": 3
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Quadrupedal, Medium, Predator, Loner, Cave Dweller"
+    "tags": "Quadrupedal, Medium, Predator, Loner, Cave Dweller",
+    "fear": 7,
+    "damage": 7,
+    "severity": 6
   },
   "prototypeToken": {
     "name": "Wraith",

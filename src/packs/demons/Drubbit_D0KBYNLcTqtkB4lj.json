@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 2,
-      "agility": 2,
-      "intellect": 2,
-      "endurance": 2,
-      "fear": 5,
-      "attack": {
-        "damage": 3,
-        "severity": 2
+      "strength": {
+        "value": 2
+      },
+      "agility": {
+        "value": 2
+      },
+      "intellect": {
+        "value": 2
+      },
+      "endurance": {
+        "value": 2
       }
     },
-    "tags": "Quadrupedal, Small, Odorous, Territorial"
+    "tags": "Quadrupedal, Small, Odorous, Territorial",
+    "fear": 5,
+    "damage": 3,
+    "severity": 2
   },
   "prototypeToken": {
     "name": "Drubbit",

@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 3,
-      "agility": 7,
-      "intellect": 2,
-      "endurance": 3,
-      "fear": 5,
-      "attack": {
-        "damage": 3,
-        "severity": 4
+      "strength": {
+        "value": 3
+      },
+      "agility": {
+        "value": 7
+      },
+      "intellect": {
+        "value": 2
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Serpentine, Quadrupedal, Medium, Lone Predator, Very Long"
+    "tags": "Serpentine, Quadrupedal, Medium, Lone Predator, Very Long",
+    "fear": 5,
+    "damage": 3,
+    "severity": 4
   },
   "prototypeToken": {
     "name": "Longoose",

@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 2,
-      "agility": 6,
-      "intellect": 1,
-      "endurance": 2,
-      "fear": 6,
-      "attack": {
-        "damage": 3,
-        "severity": 2
+      "strength": {
+        "value": 2
+      },
+      "agility": {
+        "value": 6
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 2
       }
     },
-    "tags": "Insectile, Medium, Evasive"
+    "tags": "Insectile, Medium, Evasive",
+    "fear": 6,
+    "damage": 3,
+    "severity": 2
   },
   "prototypeToken": {
     "name": "Dart",

@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 2,
-      "agility": 4,
-      "intellect": 5,
-      "endurance": 1,
-      "fear": 6,
-      "attack": {
-        "damage": 4,
-        "severity": 3
+      "strength": {
+        "value": 2
+      },
+      "agility": {
+        "value": 4
+      },
+      "intellect": {
+        "value": 5
+      },
+      "endurance": {
+        "value": 1
       }
     },
-    "tags": "Cephalopoid, Medium, Amphibious, Cave Dweller, Neutral, Trickster"
+    "tags": "Cephalopoid, Medium, Amphibious, Cave Dweller, Neutral, Trickster",
+    "fear": 6,
+    "damage": 4,
+    "severity": 3
   },
   "prototypeToken": {
     "name": "Lurk",
@@ -133,7 +139,7 @@
       "name": "Whispers",
       "type": "ability",
       "system": {
-        "description": "<p>The creature triggers a chorus of whispering in the minds of a target it can see. The target must roll against the demon’s Fear, even if normally immune.</p>",
+        "description": "<p>The creature triggers a chorus of whispering in the minds of a target it can see. The target must roll against the demon\u2019s Fear, even if normally immune.</p>",
         "action": "major"
       },
       "_id": "LdoQa4ogP5VUehJU",

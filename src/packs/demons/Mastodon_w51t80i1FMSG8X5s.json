@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 7,
-      "agility": 4,
-      "intellect": 5,
-      "endurance": 6,
-      "fear": 7,
-      "attack": {
-        "damage": 6,
-        "severity": 8
+      "strength": {
+        "value": 7
+      },
+      "agility": {
+        "value": 4
+      },
+      "intellect": {
+        "value": 5
+      },
+      "endurance": {
+        "value": 6
       }
     },
-    "tags": "Quadrupedal, Huge, Familial, Territorial"
+    "tags": "Quadrupedal, Huge, Familial, Territorial",
+    "fear": 7,
+    "damage": 6,
+    "severity": 8
   },
   "prototypeToken": {
     "name": "Mastodon",
@@ -122,7 +128,7 @@
       "name": "Corrupting",
       "type": "ability",
       "system": {
-        "description": "<p>The demon practically oozes Corruption from special organs on its back. Any character sharing a zone with the demon at the end of the character’s turn will gain Corruption points according to his Corruption stage. If the character has a gas mask, he can roll an Endurance save to take half the normal amount of Corruption, rounded down.</p>",
+        "description": "<p>The demon practically oozes Corruption from special organs on its back. Any character sharing a zone with the demon at the end of the character\u2019s turn will gain Corruption points according to his Corruption stage. If the character has a gas mask, he can roll an Endurance save to take half the normal amount of Corruption, rounded down.</p>",
         "action": "passive"
       },
       "_id": "FjYBhtLXNq8RuOxu",

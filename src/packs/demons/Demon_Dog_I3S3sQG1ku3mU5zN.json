@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 3,
-      "agility": 5,
-      "intellect": 3,
-      "endurance": 3,
-      "fear": 5,
-      "attack": {
-        "damage": 6,
-        "severity": 5
+      "strength": {
+        "value": 3
+      },
+      "agility": {
+        "value": 5
+      },
+      "intellect": {
+        "value": 3
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Quadruped, Small, Neutral"
+    "tags": "Quadruped, Small, Neutral",
+    "fear": 5,
+    "damage": 6,
+    "severity": 5
   },
   "prototypeToken": {
     "name": "Demon Dog",
@@ -133,7 +139,7 @@
       "name": "Tracker",
       "type": "ability",
       "system": {
-        "description": "<p>When the demon attempts to find a character or demon, it gains +2d as long as it is able to catch its quarry’s scent.</p>",
+        "description": "<p>When the demon attempts to find a character or demon, it gains +2d as long as it is able to catch its quarry\u2019s scent.</p>",
         "action": "passive"
       },
       "_id": "vS6wFjDqIuU7BHJh",

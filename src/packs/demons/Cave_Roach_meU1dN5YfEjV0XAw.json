@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 2,
-      "agility": 2,
-      "intellect": 1,
-      "endurance": 1,
-      "fear": 6,
-      "attack": {
-        "damage": 2,
-        "severity": 2
+      "strength": {
+        "value": 2
+      },
+      "agility": {
+        "value": 2
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 1
       }
     },
-    "tags": "Insectile, Small, Scavenger, Cave Dweller"
+    "tags": "Insectile, Small, Scavenger, Cave Dweller",
+    "fear": 6,
+    "damage": 2,
+    "severity": 2
   },
   "prototypeToken": {
     "name": "Cave Roach",

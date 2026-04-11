@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 1,
-      "agility": 2,
-      "intellect": 1,
-      "endurance": 3,
-      "fear": 4,
-      "attack": {
-        "damage": 2,
-        "severity": 2
+      "strength": {
+        "value": 1
+      },
+      "agility": {
+        "value": 2
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 3
       }
     },
-    "tags": "Amorphous, Varying Size, Slimy, The Blob"
+    "tags": "Amorphous, Varying Size, Slimy, The Blob",
+    "fear": 4,
+    "damage": 2,
+    "severity": 2
   },
   "prototypeToken": {
     "name": "Oiler",
@@ -144,7 +150,7 @@
       "name": "Fluid",
       "type": "ability",
       "system": {
-        "description": "<p>This demon can push itself through any opening as long as it isn’t watertight. If moving from one zone to another in this manner, it will require a Major action.</p>",
+        "description": "<p>This demon can push itself through any opening as long as it isn\u2019t watertight. If moving from one zone to another in this manner, it will require a Major action.</p>",
         "action": "passive"
       },
       "_id": "mD4uCv4f8MBaO74J",

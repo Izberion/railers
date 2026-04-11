@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 5,
-      "agility": 5,
-      "intellect": 4,
-      "endurance": 4,
-      "fear": 5,
-      "attack": {
-        "damage": 5,
-        "severity": 4
+      "strength": {
+        "value": 5
+      },
+      "agility": {
+        "value": 5
+      },
+      "intellect": {
+        "value": 4
+      },
+      "endurance": {
+        "value": 4
       }
     },
-    "tags": "Quadrupedal, Large, Familial, Territorial"
+    "tags": "Quadrupedal, Large, Familial, Territorial",
+    "fear": 5,
+    "damage": 5,
+    "severity": 4
   },
   "prototypeToken": {
     "name": "Monarch",

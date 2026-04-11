@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 3,
-      "agility": 2,
-      "intellect": 1,
-      "endurance": 4,
-      "fear": 6,
-      "attack": {
-        "damage": 4,
-        "severity": 5
+      "strength": {
+        "value": 3
+      },
+      "agility": {
+        "value": 2
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 4
       }
     },
-    "tags": "Quadrupedal, Large, Neutral"
+    "tags": "Quadrupedal, Large, Neutral",
+    "fear": 6,
+    "damage": 4,
+    "severity": 5
   },
   "prototypeToken": {
     "name": "Aurochs",

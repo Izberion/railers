@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 8,
-      "agility": 5,
-      "intellect": 2,
-      "endurance": 6,
-      "fear": 7,
-      "attack": {
-        "damage": 8,
-        "severity": 7
+      "strength": {
+        "value": 8
+      },
+      "agility": {
+        "value": 5
+      },
+      "intellect": {
+        "value": 2
+      },
+      "endurance": {
+        "value": 6
       }
     },
-    "tags": "Insectile, Huge, Durable"
+    "tags": "Insectile, Huge, Durable",
+    "fear": 7,
+    "damage": 8,
+    "severity": 7
   },
   "prototypeToken": {
     "name": "Devourer",

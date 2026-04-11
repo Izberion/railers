@@ -42,17 +42,23 @@
     "biography": "",
     "notes": "",
     "attributes": {
-      "strength": 3,
-      "agility": 1,
-      "intellect": 1,
-      "endurance": 2,
-      "fear": 5,
-      "attack": {
-        "damage": 3,
-        "severity": 2
+      "strength": {
+        "value": 3
+      },
+      "agility": {
+        "value": 1
+      },
+      "intellect": {
+        "value": 1
+      },
+      "endurance": {
+        "value": 2
       }
     },
-    "tags": "Quadrupedal, Small, Colony Builder"
+    "tags": "Quadrupedal, Small, Colony Builder",
+    "fear": 5,
+    "damage": 3,
+    "severity": 2
   },
   "prototypeToken": {
     "name": "Tunnelcat Worker",
