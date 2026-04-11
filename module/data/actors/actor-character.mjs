@@ -87,7 +87,7 @@ export default class RailersCharacter extends RailersActorBase {
     let totalInsulation = 0;
     let totalProtection = 0;
     for (let item of this.parent.items) {
-      if (item.type === 'clothing' && item.system.stowage === 'onHand') {
+      if (item.type === 'clothing' && item.system.equipped === true) {
         totalInsulation += item.system.insulation;
         totalProtection += item.system.protection;
       }

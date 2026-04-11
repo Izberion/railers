@@ -48,13 +48,13 @@ export default class RailersNPC extends RailersActorBase {
 
     let totalInsulation = 0;
     for (let item of this.parent.items) {
-      if (item.type === 'clothing' && item.system.stowage === 'onHand') {
+      if (item.type === 'clothing' && item.system.equipped === true) {
         totalInsulation += item.system.insulation;
       }
     }
     this.thermalThreshold = -1 * totalInsulation;
 
-    this.wounds.max = this.attributes.primary + this.attributes.secondary;
+    this.wounds.max = this.attributes.primary.value + this.attributes.secondary.value;
     
     this.initiativePool = this.attributes.combatPool + this.initiativeMod ?? 0;
 
