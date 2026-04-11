@@ -19,7 +19,7 @@ export const RAILERS = {};
       strength: 'RAILERS.Attributes.Strength',
       agility: 'RAILERS.Attributes.Agility',
       intellect: 'RAILERS.Attributes.Intellect',
-      endurance: 'RAILERS.Attributes.Endurance'
+      endurance: 'RAILERS.Attributes.Endurance',
     }
   }
   RAILERS.skills = {
@@ -170,6 +170,18 @@ export const RAILERS = {};
     "joes": "RAILERS.Actor.Train.FIELDS.locomotives.joes",
     "littleMan": "RAILERS.Actor.Train.FIELDS.locomotives.littleMan",
     "marathoner": "RAILERS.Actor.Train.FIELDS.locomotives.marathoner"
+  },
+  RAILERS.locomotiveStats = {
+    ace:        { armor: 4, power: 24, speed: 7, fuel: 100, weight: 1050, capacity: 0 },
+    bigBrother: { armor: 5, power: 15, speed: 3, fuel: 60,  weight: 950,  capacity: 0 },
+    comet:      { armor: 2, power: 12, speed: 9, fuel: 42,  weight: 650,  capacity: 0 },
+    compact:    { armor: 3, power: 0,  speed: 3, fuel: 48,  weight: 0,    capacity: 8 },
+    donkey:     { armor: 3, power: 10, speed: 8, fuel: 80,  weight: 1500, capacity: 0 },
+    dynamo:     { armor: 4, power: 25, speed: 5, fuel: 56,  weight: 750,  capacity: 0 },
+    flex:       { armor: 2, power: 8,  speed: 3, fuel: 36,  weight: 500,  capacity: 0 },
+    joes:       { armor: 3, power: 15, speed: 5, fuel: 70,  weight: 800,  capacity: 0 },
+    littleMan:  { armor: 1, power: 9,  speed: 3, fuel: 60,  weight: 550,  capacity: 0 },
+    marathoner: { armor: 1, power: 16, speed: 4, fuel: 128, weight: 700,  capacity: 0 }
   },
   RAILERS.seasons= {
     "summer": "RAILERS.apps.weather.summer",
