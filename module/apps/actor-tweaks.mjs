@@ -6,18 +6,16 @@ export class ActorTweaks extends foundry.applications.api.HandlebarsApplicationM
       title: "RAILERS.apps.actorTweaks.title",
       icon: "fas fa-cog",
       resizable: false,
-      width: 360,
-      height: "auto"
     },
     position: {
       top: 100,
-      left: 140
+      left: 140,
+      width: 360,
+      height: "auto"
     },
     actions: {
       submit: this.#onSubmit
-    },
-    closeOnSubmit: true,
-    handler: this.#onSubmit
+    }
   };
 
   static PARTS = {
@@ -55,9 +53,6 @@ export class ActorTweaks extends foundry.applications.api.HandlebarsApplicationM
       "system.initiativeMod": Number(formData.initiativeMod) || 0,
       "system.initiativeGroup": String(formData.initiativeGroup).trim() || "Unknown"
     });
-
-    const sheet = this.actor.sheet;
-    if (sheet?.rendered) sheet.render();
 
     this.close();
   }
