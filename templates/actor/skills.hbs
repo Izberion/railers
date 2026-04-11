@@ -17,7 +17,7 @@
               data-roll-type="stat"
               data-attpool="{{attribute.mod}}"
               data-label="{{localize attribute.label}}"
-              data-rollable="{{#if (eq (localize attribute.label) (localize 'RAILERS.Attributes.Fortitude'))}}false{{else}}true{{/if}}"
+              data-rollable="{{#if (eq a 'fortitude')}}false{{else}}true{{/if}}"
             >
               {{localize attribute.label}}
             </label>
@@ -26,15 +26,13 @@
                 type="number"
                 name="system.attributes.{{a}}.value"
                 value="{{attribute.value}}"
-                data-dtype="Number"
-                title="Attribute Value"
+                title="{{localize 'RAILERS.Actor.Character.FIELDS.attributeValue'}}"
               />
               <input
                 type="number"
-                name="system.attributes.{{a}}.mod"
                 value="{{attribute.mod}}"
-                data-dtype="Number"
-                title="Attribute Mod"
+                readonly
+                title="{{localize 'RAILERS.Actor.Character.FIELDS.attributeMod'}}"
               />
             </div>
           </div>
@@ -59,7 +57,7 @@
                   data-attpool="{{attribute.mod}}"
                   data-skillpool="{{skill.value}}"
                   data-label="{{localize skill.label}}"
-                  data-special="{{#if (or (eq (localize skill.label) (localize 'RAILERS.Skills.Endurance')) (eq (localize skill.label) (localize 'RAILERS.Skills.Resolve')))}}true{{else}}false{{/if}}"
+                  data-special="{{#if (or (eq s 'endurance') (eq s 'resolve'))}}true{{else}}false{{/if}}"
                 >
                   {{localize skill.label}}
                 </label>
@@ -67,8 +65,7 @@
                   type="number"
                   name="system.attributes.{{a}}.skills.{{s}}.value"
                   value="{{skill.value}}"
-                  data-dtype="Number"
-                  title="Skill Value"
+                  title="{{localize 'RAILERS.Actor.Character.FIELDS.skillValue'}}"
                 />
               </div>
             {{/each}}
