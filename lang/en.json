@@ -336,7 +336,8 @@
         "fieldOfFire": "Field of Fire",
         "reactiveShot": "Reactive Shot",
         "notEnoughAmmo": "Not enough ammo for this attack action",
-        "modifyAttackRoll": "Modify the Attack Roll"
+        "modifyAttackRoll": "Modify the Attack Roll",
+        "damageResult": "{damage}/W{severity}"
       },
       "train": {
         "changeLocomotiveWarning": "Changing the locomotive type will update several stats and any changes to them could be lost. Do you want to continue?"
@@ -361,7 +362,8 @@
         "hillTerrain": "Hill Terrain",
         "iceTerrain": "Ice Terrain",
         "flatTerrain": "Flat Terrain",
-        "mountainTerrain": "Mountain Terrain"
+        "mountainTerrain": "Mountain Terrain",
+        "unknown": "Unknown Terrain"
       },
       "weather": {
         "toggleWeatherHUD": "Toggle Weather HUD",
@@ -403,7 +405,8 @@
         "rollAttack": "Attacking with {rollName} at TN {tn}",
         "rollDefense": "Rolling to defend at TN {tn}",
         "rollInitiative": "Rolling for Initiative (Faction: {group})",
-        "rollHPNerve": "Rolling Hitpoints and Nerve"
+        "rollHPNerve": "Rolling Hitpoints and Nerve",
+        "automaticFailure": "Negative Dice Pool - Automatic Failure"
       },
       "hpNerve": {
         "hpRoll": "HP Roll",
@@ -412,6 +415,17 @@
         "newMaxNerve": "Max Nerve improved from {currentNerveMax}",
         "oldMaxHP": "Max HP remains {currentHpMax}",
         "oldMaxNerve": "Max Nerve remains {currentNerveMax}"
+      }
+    },
+    "initiative": {
+      "factions": {
+        "friendlyNpcs": "Friendly NPCs",
+        "neutralNpcs": "Neutral NPCs",
+        "hostileNpcs": "Hostile NPCs",
+        "pcs": "PCs",
+        "demons": "Demons",
+        "tameDemons": "Mostly Tame Demons",
+        "unknown": "Unknown Faction"
       }
     }
   },
