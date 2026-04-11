@@ -1,0 +1,89 @@
+<header class="sheet-head">
+  <div class="header-top">
+    <div class="header-identity">
+      <img class="profile-img" src="{{actor.img}}" data-edit="img" data-action="editImage" title="{{actor.name}}" height="100" width="100"/>
+      <div class="header-name-vitals">
+        <div class="charname">
+          <h1><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+          <select class="locomotive-select">
+            {{selectOptions config.locomotiveOptions selected=system.locomotive localize=true}}
+          </select>
+        </div>
+        <div class="header-vitals">
+          <div class="resource flex-group-center">
+            <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.crew"}}</label>
+            <div class="resource-content flexrow flex-center flex-between">
+              <input type="number" name="system.crew" value="{{system.crew}}"/>
+            </div>
+          </div>
+
+          <div class="resource flex-group-center">
+            <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.passengers"}}</label>
+            <div class="resource-content flexrow flex-center flex-between">
+              <input type="number" name="system.passengers" value="{{system.passengers}}"/>
+            </div>
+          </div>
+
+          <div class="resource flex-group-center">
+            <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.capacity"}}</label>
+            <div class="resource-content flexrow flex-center flex-between">
+              <input type="number" value="{{system.capacity}}" readonly/>
+            </div>
+          </div>
+
+          <div class="resource flex-group-center">
+            <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.rations.value"}}</label>
+            <div class="resource-content flexrow flex-center flex-between">
+              <input type="number" name="system.rations.value" value="{{system.rations.value}}"/>
+              <span> / </span>
+              <input type="number" name="system.rations.max" value="{{system.rations.max}}"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-secondary">
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.armor"}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.armor" value="{{system.armor}}"/>
+      </div>
+    </div>
+
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.speed"}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.speed" value="{{system.speed}}"/>
+      </div>
+    </div>
+
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.power.label"}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input  type="number" value="{{system.power.value}}" readonly/>
+        <span> / </span>
+        <input type="number" name="system.power.max" value="{{system.power.max}}"/>
+      </div>
+    </div>
+
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.weight.label"}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input class="w50" type="number" value="{{system.weight.value}}" readonly/>
+        <span> / </span>
+        <input class="w50" type="number" name="system.weight.max" value="{{system.weight.max}}"/>
+      </div>
+    </div>
+
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.fuel.value"}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input class="w50" type="number" name="system.fuel.value" value="{{system.fuel.value}}"/>
+        <span> / </span>
+        <input class="w50" type="number" name="system.fuel.max" value="{{system.fuel.max}}"/>
+      </div>
+    </div>
+  </div>
+</header>

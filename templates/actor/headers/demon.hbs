@@ -1,0 +1,92 @@
+<header class="sheet-head">
+  <div class="header-top">
+    <div class="header-identity">
+      <img class="profile-img" src="{{actor.img}}" data-edit="img" data-action="editImage" title="{{actor.name}}" height="100" width="100"/>
+      <div class="header-name-vitals">
+        <div class="charname">
+          <h1><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+          <input type="text" name="system.tags" value="{{system.tags}}" placeholder="{{localize "RAILERS.Actor.Demon.FIELDS.tags"}}"/>
+        </div>
+        <div class="header-vitals">
+          <div class="resource flex-group-center">
+            <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.hitpoints.value"}}</label>
+            <div class="resource-content flexrow flex-center flex-between">
+              <input type="number" value="{{system.hitpoints.value}}" readonly/>
+              <span> / </span>
+              <input type="number" name="system.hitpoints.max" value="{{system.hitpoints.max}}"/>
+            </div>
+          </div>
+
+          <div class="resource flex-group-center">
+            <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.wounds.value"}}</label>
+            <div class="resource-content flexrow flex-center flex-between">
+              <input type="number" value="{{system.wounds.value}}" readonly/>
+              <span> / </span>
+              <input type="number" value="{{system.wounds.max}}" readonly/>
+            </div>
+          </div>
+
+          <div class="hp-button">
+            <button type="button" data-roll-type="hp" data-action="roll" class="roll-hp">
+              {{localize "RAILERS.Actor.base.actions.rollHP"}}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-secondary">
+    <div class="resource flex-group-center">
+      <label class="resource-label roll" data-roll-type="stat" data-action="roll" data-npcpool="{{system.attributes.strength.value}}">
+        {{localize "RAILERS.Attributes.Strength"}}
+      </label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.attributes.strength.value" value="{{system.attributes.strength.value}}"/>
+      </div>
+    </div>
+
+    <div class="resource flex-group-center">
+      <label class="resource-label roll" data-roll-type="stat" data-action="roll" data-npcpool="{{system.attributes.agility.value}}">
+        {{localize "RAILERS.Attributes.Agility"}}
+      </label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.attributes.agility.value" value="{{system.attributes.agility.value}}"/>
+      </div>
+    </div>
+
+    <div class="resource flex-group-center">
+      <label class="resource-label roll" data-roll-type="stat" data-action="roll" data-npcpool="{{system.attributes.intellect.value}}">
+        {{localize "RAILERS.Attributes.Intellect"}}
+      </label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.attributes.intellect.value" value="{{system.attributes.intellect.value}}"/>
+      </div>
+    </div>
+
+    <div class="resource flex-group-center">
+      <label class="resource-label roll" data-roll-type="stat" data-action="roll" data-npcpool="{{system.attributes.endurance.value}}">
+        {{localize "RAILERS.Attributes.Endurance"}}
+      </label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.attributes.endurance.value" value="{{system.attributes.endurance.value}}"/>
+      </div>
+    </div>
+
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.fear"}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.fear" value="{{system.fear}}"/>
+      </div>
+    </div>
+
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Attributes.Attack"}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.damage" value="{{system.damage}}"/>
+        <span>{{localize "RAILERS.Item.Weapon.FIELDS.slashWound"}}</span>
+        <input type="number" name="system.severity" value="{{system.severity}}"/>
+      </div>
+    </div>
+  </div>
+</header>
