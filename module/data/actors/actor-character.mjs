@@ -24,11 +24,6 @@ export default class RailersCharacter extends RailersActorBase {
             initial: 0,
             min: 0 
           }),
-          mod: new fields.NumberField({
-            ...requiredInteger,
-            initial: 0,
-            min: 0 
-          }),
           skills: new fields.SchemaField(
             // Nested skills under this attribute
             Object.keys(CONFIG.RAILERS.skills[attr] || {}).reduce((skillObj, skill) => {
@@ -58,29 +53,55 @@ export default class RailersCharacter extends RailersActorBase {
   }
 
   prepareDerivedData() {
+    super.prepareDerivedData();
+
     for (const attrKey in this.attributes) {
-      this.attributes[attrKey].label = game.i18n.localize(CONFIG.RAILERS.attributes.character[attrKey]) ?? attrKey;
-      for (const skillKey in this.attributes[attrKey].skills) {
-        this.attributes[attrKey].skills[skillKey].label =
-          game.i18n.localize(CONFIG.RAILERS.skills[attrKey]?.[skillKey]) ?? skillKey;
-      }
-    }
-  }
-
-  getRollData() {
-    const data = {};
-
-    // Flatten attributes for roll formulas (e.g., @combat.value, @combat.smallarms.value)
-    if (this.attributes) {
-      for (const [attrKey, attrData] of Object.entries(this.attributes)) {
-        data[attrKey] = foundry.utils.deepClone(attrData);
-        // Optionally flatten skills to top-level for convenience (e.g., @smallarms)
-        for (const [skillKey, skillData] of Object.entries(attrData.skills)) {
-          data[`${attrKey}.${skillKey}`] = foundry.utils.deepClone(skillData);
-        }
-      }
+      const attr = this.attributes[attrKey];
+      if (attr.value <= 1) attr.mod = 0;
+      else if (attr.value <= 8) attr.mod = 1;
+      else if (attr.value <= 16) attr.mod = 2;
+      else if (attr.value <= 24) attr.mod = 3;
+      else attr.mod = 4;
     }
 
-    return data;
+    let totalOnHandLoad = 0;
+    let totalStowedLoad = 0;
+    for (let item of this.parent.items) {
+      let totalItemLoad = item.system.load * item.system.quantity;
+      if (item.system.stowage === 'onHand') {
+        totalOnHandLoad += totalItemLoad;
+      } else if (item.system.stowage === 'stowed') {
+        totalStowedLoad += totalItemLoad;
+      }
+    }
+    this.load.onHand.value = totalOnHandLoad;
+    this.load.stowed.value = totalStowedLoad;
+
+    const baseLoad = 5 + this.attributes.prowess.mod + this.attributes.prowess.skills.exertion.value;
+
+    // Allow load max to be overridden by items or effects
+    if (this.load.onHand.max == null) {
+      this.load.onHand.max = baseLoad;
+    }
+
+    let totalInsulation = 0;
+    let totalProtection = 0;
+    for (let item of this.parent.items) {
+      if (item.type === 'clothing' && item.system.stowage === 'onHand') {
+        totalInsulation += item.system.insulation;
+        totalProtection += item.system.protection;
+      }
+    }
+    this.defensePool = totalProtection + this.attributes.combat.mod;
+    this.thermalThreshold = -1 * totalInsulation;
+
+    this.wounds.max = 6 + this.attributes.fortitude.mod + this.attributes.fortitude.skills.endurance.value;
+
+
+
+
+    this.initiativePool = this.attributes.intuition.mod + this.attributes.prowess.skills.athletics.value + this.initiativeMod ?? 0;
+    if (!this.initiativeGroup) this.initiativeGroup = "PCs";
   }
+
 }
