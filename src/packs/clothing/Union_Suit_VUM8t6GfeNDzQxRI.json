@@ -11,7 +11,7 @@
     "stowage": "other",
     "protection": 0,
     "insulation": 10,
-    "clothingType": "innerwear"
+    "layer": "innerwear"
   },
   "_key": "!items!VUM8t6GfeNDzQxRI"
 }

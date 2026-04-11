@@ -11,7 +11,7 @@
     "stowage": "other",
     "protection": 1,
     "insulation": 9,
-    "clothingType": "armor"
+    "layer": "armor"
   },
   "_key": "!items!weXQbLvUivJ5kATT"
 }
