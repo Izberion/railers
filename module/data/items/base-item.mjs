@@ -11,11 +11,6 @@ export default class RailersItemBase extends foundry.abstract.TypeDataModel {
       blank: true
     });
 
-    schema.name = new fields.StringField({
-      required: true,
-      blank: true,
-    });
-
     schema.rollFormula = new fields.StringField({
       required: false,
       nullable: true,
@@ -60,7 +55,6 @@ export default class RailersItemBase extends foundry.abstract.TypeDataModel {
       nullable: true,
       blank: true,
       initial: "other",
-      choices: Object.keys(CONFIG.RAILERS.stowageOptions)
     });
 
     return schema;
