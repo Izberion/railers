@@ -99,12 +99,6 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
       case 'condition':
         options.parts.push('effects');
         break;
-      case 'weaponMod':
-        options.parts.push('effects');
-        break;
-      case 'trainMod':
-        options.parts.push('effects');
-        break;
       case 'ability':
         options.parts.push('attributesAbility', 'effects');
         break;
@@ -132,6 +126,12 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
       fields: this.document.schema.fields,
       systemFields: this.document.system.schema.fields,
     };
+
+    context.stowageOptions = CONFIG.RAILERS.stowageOptions;
+    context.rangeOptions = CONFIG.RAILERS.rangeOptions;
+    context.actionTypeOptions = CONFIG.RAILERS.actionTypeOptions;
+    context.weaponSkillOptions = CONFIG.RAILERS.weaponSkillOptions;
+    context.clothingTypeOptions = CONFIG.RAILERS.clothingTypeOptions;
 
     return context;
   }
