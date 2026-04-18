@@ -121,6 +121,12 @@ export const RAILERS = {};
       ability: {
         img: 'icons/svg/aura.svg',
       },
+      magazine: {
+        img: 'systems/railers/assets/icons/magazine-icon.svg',
+      },
+      ammo: {
+        img: 'systems/railers/assets/icons/ammo-icon.svg',
+      },
       default: {
         img: 'icons/svg/item-bag.svg',
       }
@@ -186,4 +192,41 @@ export const RAILERS = {};
   RAILERS.seasons= {
     "summer": "RAILERS.apps.weather.summer",
     "winter": "RAILERS.apps.weather.winter"
-  }
+  },
+  RAILERS.ammoTypes = {
+    handgun: 'RAILERS.Item.Ammo.FIELDS.ammoType.handgun',
+    rifle:   'RAILERS.Item.Ammo.FIELDS.ammoType.rifle',
+    shotgun: 'RAILERS.Item.Ammo.FIELDS.ammoType.shotgun',
+    heavy:   'RAILERS.Item.Ammo.FIELDS.ammoType.heavy',
+    arrow:   'RAILERS.Item.Ammo.FIELDS.ammoType.arrow',
+    bolt:    'RAILERS.Item.Ammo.FIELDS.ammoType.bolt',
+    shell:   'RAILERS.Item.Ammo.FIELDS.ammoType.shell',
+    burst:   'RAILERS.Item.Ammo.FIELDS.ammoType.burst'
+  };
+  RAILERS.magTypes = {
+    box:      'RAILERS.Item.Magazine.FIELDS.magType.box',
+    drum:     'RAILERS.Item.Magazine.FIELDS.magType.drum',
+    clip:     'RAILERS.Item.Magazine.FIELDS.magType.clip',
+    belt:     'RAILERS.Item.Magazine.FIELDS.magType.belt',
+    quiver:   'RAILERS.Item.Magazine.FIELDS.magType.quiver',
+    tank:     'RAILERS.Item.Magazine.FIELDS.magType.tank'
+  };
+   RAILERS.weaponMagTypes = {
+    internal: 'RAILERS.Item.Weapon.FIELDS.magType.internal',
+    external: 'RAILERS.Item.Weapon.FIELDS.magType.external',
+    belt:     'RAILERS.Item.Weapon.FIELDS.magType.belt',
+    clip:     'RAILERS.Item.Weapon.FIELDS.magType.clip',
+    tank:     'RAILERS.Item.Weapon.FIELDS.magType.tank',
+    quiver:   'RAILERS.Item.Weapon.FIELDS.magType.quiver',
+  };
+  RAILERS.ammoCapacity = {
+    handgun: 50,
+    rifle:   20,
+    shotgun: 25,
+    heavy:   20,
+    arrow:   20,
+    bolt:    20,
+    shell:   1,
+    burst:   6
+  };
+  RAILERS.drumMultiplier = 3;
