@@ -13,17 +13,19 @@
         </select>
     </div>
     {{#if isRanged}}
+    {{#unless isConsumable}}
     <div class="form-group grid">
-      <label for="actionType">{{localize "RAILERS.dialogs.attack.selectActionType"}}:</label>
-      <select name="actionType">
+        <label for="actionType">{{localize "RAILERS.dialogs.attack.selectActionType"}}:</label>
+        <select name="actionType">
         <option value="singleFire">{{localize "RAILERS.dialogs.attack.singleFire"}}</option>
         <option value="blindFire">{{localize "RAILERS.dialogs.attack.blindFire"}}</option>
         <option value="burstFire">{{localize "RAILERS.dialogs.attack.burstFire"}}</option>
         <option value="sustainedFire">{{localize "RAILERS.dialogs.attack.sustainedFire"}}</option>
         <option value="fieldOfFire">{{localize "RAILERS.dialogs.attack.fieldOfFire"}}</option>
         <option value="reactiveShot">{{localize "RAILERS.dialogs.attack.reactiveShot"}}</option>
-      </select>
+        </select>
     </div>
+    {{/unless}}
     {{/if}}
   
     {{#each activeEffects as |effect|}}
