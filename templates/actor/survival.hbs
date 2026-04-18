@@ -40,7 +40,9 @@
         {{#each mutations as |item id|}}
           <div class="mutation-card" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
             <div class="mutation-card-header">
-              <img src="{{item.img}}" width="32" height="32"/>
+              <a data-roll-type="item" data-action="roll">
+                <img src="{{item.img}}" width="32" height="32"/>
+              </a>
               <span class="mutation-name">{{item.name}}</span>
               <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Mutation'}}" data-action="viewDoc">
                 <i class="fas fa-edit"></i>
