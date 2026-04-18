@@ -39,11 +39,16 @@
                     </div>
                 </div>
                 <div class="hp-button">
-                    {{#if showHpRollButton}}
-                    <button type="button" data-roll-type="hp" data-action="roll" class="roll-hp">
-                        {{localize "RAILERS.Actor.Character.actions.rollHPNerve"}}
+                {{#if showAttributeRollerButton}}
+                    <button type="button" data-action="openAttributeRoller">
+                    <i class="fas fa-dice"></i>
+                    {{localize "RAILERS.Actor.Character.actions.rollAttr"}}
                     </button>
-                    {{/if}}
+                {{else if showHpRollButton}}
+                    <button type="button" data-roll-type="hp" data-action="roll" class="roll-hp">
+                    {{localize "RAILERS.Actor.Character.actions.rollHPNerve"}}
+                    </button>
+                {{/if}}
                 </div>
             </div>
         </div>

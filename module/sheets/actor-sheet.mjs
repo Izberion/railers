@@ -8,6 +8,7 @@ import { ActorTweaks } from "../apps/actor-tweaks.mjs";
 import { locomotiveChange } from "../dialogs/locomotive-change.mjs";
 import { reloadDialog } from "../dialogs/reload-dialog.mjs";
 import { rollMutationsDialog } from "../dialogs/mutation-dialog.mjs";
+import { AttributeRoller } from "../apps/attribute-roller.mjs";
 
 
 const { api, sheets } = foundry.applications;
@@ -45,7 +46,8 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       openTweaks: this._openTweaks,
       toggleEquipClothing: this._toggleEquipClothing,
       toggleMagLoaded: this._toggleMagLoaded,
-      rollMutations: this._onMutationRoll
+      rollMutations: this._onMutationRoll,
+      openAttributeRoller: this._onOpenAttributeRoller
     },
     dragDrop: [{ dragSelector: '[data-drag]', dropSelector: null }],
     form: {
@@ -136,6 +138,12 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
           this.actor.type === 'character' &&
           (this.actor.system.attributes.fortitude.value ?? 0) > 
           (this.actor.getFlag('railers', 'lastHpRollFortitude') ?? 0);
+        
+        context.showAttributeRollerButton =
+          this.actor.type === 'character' &&
+          Object.keys(CONFIG.RAILERS.attributes.character).every(
+            attr => (this.actor.system.attributes[attr].value ?? 0) === 0
+          );
         break;
       case 'wounds':
       case 'gear':
@@ -378,6 +386,9 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    *
    **************/
   
+  static async _onOpenAttributeRoller(event, target) {
+    new AttributeRoller({ actor: this.actor }).render(true);
+  }
 
   static async _onMutationRoll(event, target) {
     await rollMutationsDialog(this.actor);

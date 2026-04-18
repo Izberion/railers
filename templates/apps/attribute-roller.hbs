@@ -1,0 +1,55 @@
+<div class="attribute-roller">
+  <div class="attribute-roll-list">
+    {{#each attributes as |attr|}}
+    {{#with (lookup @root.systemAttributes attr) as |attrData|}}
+        {{#with (lookup @root.rolls attr) as |roll|}}
+        <div class="attribute-row rolled">
+            <span class="attr-name">{{localize attrData.label}}</span>
+            <span class="attr-result">
+            {{roll.total}}
+            {{#if roll.exploded}}
+                <i class="fas fa-fire" data-tooltip="{{localize 'RAILERS.apps.attributeRoller.exploded'}}"></i>
+            {{/if}}
+            </span>
+        </div>
+        {{else}}
+        <div class="attribute-row">
+            <span class="attr-name">{{localize attrData.label}}</span>
+            <span class="attr-result attr-unrolled">—</span>
+        </div>
+        {{/with}}
+    {{/with}}
+    {{/each}}
+  </div>
+
+  {{#if allRolled}}
+    {{#unless anyExploded}}
+    <div class="bonus-attribute">
+      <label>{{localize "RAILERS.apps.attributeRoller.bonusAttribute"}}</label>
+      <select name="bonusAttribute">
+        {{#each attributes as |attr|}}
+          {{#with (lookup @root.systemAttributes attr) as |attrData|}}
+            <option value="{{attr}}">{{localize attrData.label}}</option>
+          {{/with}}
+        {{/each}}
+      </select>
+      <p class="hint">{{localize "RAILERS.apps.attributeRoller.bonusHint"}}</p>
+    </div>
+    {{/unless}}
+  {{/if}}
+
+  <footer class="attribute-footer">
+    {{#unless hasRolled}}
+    <button type="button" data-action="rollAll">
+        <i class="fas fa-dice"></i>
+        {{localize "RAILERS.apps.attributeRoller.rollAll"}}
+    </button>
+    {{/unless}}
+    {{#if allRolled}}
+    <button type="button" data-action="apply">
+        <i class="fas fa-check"></i>
+        {{localize "RAILERS.apps.attributeRoller.apply"}}
+    </button>
+    {{/if}}
+  </footer>
+</div>

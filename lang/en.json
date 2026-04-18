@@ -508,6 +508,14 @@
         "initiativeGroupHint": "This will be used to determine the character's group in initiative.",
         "corruptionOverride": "Override Corruption",
         "corruptionOverrideHint": "Use to bypass Corruption floor."
+      },
+      "attributeRoller": {
+        "title": "Roll Attributes",
+        "exploded": "Exploded",
+        "bonusAttribute": "Select attribute to add 8:",
+        "bonusHint": "No attributes exploded, allowing a bonus 8 to an attribute",
+        "rollAll": "Roll All",
+        "apply": "Apply"
       }
     },
     "chat": {
