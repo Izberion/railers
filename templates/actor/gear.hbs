@@ -12,7 +12,12 @@
     </div>
     <div class="load-group">
       <div class="resource flex-group-center">
-        <label>{{localize "RAILERS.Actor.base.FIELDS.load.onHand.label"}}</label>
+        <label>
+          {{localize "RAILERS.Actor.base.FIELDS.load.onHand.label"}}
+          {{#if (gt system.load.onHand.value system.load.onHand.max)}}
+            <i class="fas fa-exclamation-triangle" data-tooltip="{{localize 'RAILERS.Actor.base.FIELDS.load.overloadTooltip'}}"></i>
+          {{/if}}
+        </label>
         <div class="resource-content flexrow flex-center flex-between">
           <input type="number" value="{{system.load.onHand.value}}" readonly/>
           <span> / </span>
@@ -56,7 +61,9 @@
       <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <img src="{{item.img}}" width="24" height="24"/>
+            <a data-roll-type="item" data-action="roll">
+              <img src="{{item.img}}" width="24" height="24"/>
+            </a>
           </div>
           <div data-tooltip="{{item.system.description}}">{{item.name}}</div>
         </div>
@@ -109,7 +116,7 @@
       <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <a data-roll-type="attack" data-action="roll">
+            <a data-roll-type="item" data-action="roll">
               <img src="{{item.img}}" width="24" height="24"/>
             </a>
           </div>
@@ -168,7 +175,7 @@
       <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <a data-roll-type="attack" data-action="roll">
+            <a data-roll-type="item" data-action="roll">
               <img src="{{item.img}}" width="24" height="24"/>
             </a>
           </div>
@@ -239,7 +246,9 @@
       <li class="item flexrow clothing-headgear" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <img src="{{item.img}}" width="24" height="24"/>
+            <a data-roll-type="item" data-action="roll">
+              <img src="{{item.img}}" width="24" height="24"/>
+            </a>
           </div>
           <div data-tooltip="{{item.system.description}}">{{item.name}}</div>
         </div>
@@ -297,7 +306,9 @@
       <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <img src="{{item.img}}" width="24" height="24"/>
+            <a data-roll-type="item" data-action="roll">
+              <img src="{{item.img}}" width="24" height="24"/>
+            </a>
           </div>
           <div data-tooltip="{{item.system.description}}">{{item.name}}</div>
         </div>
@@ -351,7 +362,9 @@
       <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <img src="{{item.img}}" width="24" height="24"/>
+            <a data-roll-type="item" data-action="roll">
+              <img src="{{item.img}}" width="24" height="24"/>
+            </a>
           </div>
           <div data-tooltip="{{item.system.description}}">{{item.name}}</div>
         </div>
