@@ -1,0 +1,214 @@
+<section
+  class="tab combat {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="combat"
+>
+  {{!-- Defense Roll --}}
+  <div class="combat-head">
+    <div class="resource flex-group-center">
+        <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.initiativePool"}}</label>
+        <div class="resource-content flexrow flex-center flex-between">
+            <input type="number" value="{{system.initiativePool}}" readonly/>
+        </div>
+    </div>
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.defensePool"}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" value="{{system.defensePool}}" readonly/>
+      </div>
+      <button type="button" class="defense-roll rollable" data-roll-type="defense" data-action="roll">
+        <i class="fas fa-shield-alt"></i>
+        {{localize "RAILERS.dialogs.base.rollDefense"}}
+      </button>
+    </div>
+  </div>
+
+  {{!-- Main Combat Layout --}}
+  <div class="combat-body">
+
+    {{!-- Left Column: Weapons --}}
+    <div class="combat-weapons">
+
+      {{!-- Melee --}}
+      <label class="weapon-category-header">{{localize "RAILERS.Item.Weapon.labelMelee"}}</label>
+      <div class="weapon-cards">
+        {{#each onHandMeleeWeapons as |item id|}}
+          <div class="weapon-card" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+            <div class="weapon-card-header">
+              <img src="{{item.img}}" title="{{item.name}}" width="32" height="32"/>
+              <span class="weapon-name">{{item.name}}</span>
+              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Weapon'}}" data-action="viewDoc">
+                <i class="fas fa-edit"></i>
+              </a>
+            </div>
+            <div class="weapon-card-stats">
+              <span class="weapon-stat">
+                <label>{{localize "RAILERS.Item.Weapon.FIELDS.damage"}}</label>
+                {{item.system.damage}}{{localize "RAILERS.Item.Weapon.FIELDS.slashWound"}}{{item.system.severity}}
+              </span>
+              <span class="weapon-stat">
+                <label>{{localize "RAILERS.Item.Weapon.FIELDS.attack"}}</label>
+                {{item.system.localizedAttackAction}}
+              </span>
+            </div>
+            <button type="button" class="weapon-roll-btn" data-roll-type="attack" data-action="roll" data-item-id="{{item._id}}">
+              <i class="fas fa-dice"></i>
+              {{localize "RAILERS.dialogs.attack.rollAttack"}}
+            </button>
+          </div>
+        {{else}}
+          <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noWeapons"}}</p>
+        {{/each}}
+      </div>
+
+      {{!-- Ranged --}}
+      <label class="weapon-category-header">{{localize "RAILERS.Item.Weapon.labelRanged"}}</label>
+      <div class="weapon-cards">
+        {{#each onHandRangedWeapons as |item id|}}
+          <div class="weapon-card" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+            <div class="weapon-card-header">
+              <img src="{{item.img}}" title="{{item.name}}" width="32" height="32"/>
+              <span class="weapon-name">{{item.name}}</span>
+              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Weapon'}}" data-action="viewDoc">
+                <i class="fas fa-edit"></i>
+              </a>
+            </div>
+            <div class="weapon-card-stats">
+              <span class="weapon-stat">
+                <label>{{localize "RAILERS.Item.Weapon.FIELDS.damage"}}</label>
+                {{item.system.damage}}{{localize "RAILERS.Item.Weapon.FIELDS.slashWound"}}{{item.system.severity}}
+              </span>
+              <span class="weapon-stat">
+                <label>{{localize "RAILERS.Item.Weapon.FIELDS.attack"}}</label>
+                {{item.system.localizedAttackAction}}
+              </span>
+              <span class="weapon-stat">
+                <label>{{localize "RAILERS.Item.Weapon.FIELDS.range.label"}}</label>
+                {{item.system.localizedRange}}
+              </span>
+              {{#if system.isConsumable}}
+              <span class="weapon-stat">
+                <label>{{localize "RAILERS.Item.base.FIELDS.quantity"}}</label>
+                {{item.system.quantity}}
+              </span>
+              {{else}}
+              <span class="weapon-stat">
+                <label>{{localize "RAILERS.Item.Weapon.FIELDS.magazine"}}</label>
+                {{item.system.magazine.value}} / {{item.system.magazine.max}}
+              </span>
+              {{/if}}
+            </div>
+            <div class="weapon-card-actions">
+              <button type="button" class="weapon-roll-btn" data-roll-type="attack" data-action="roll" data-item-id="{{item._id}}">
+                <i class="fas fa-dice"></i>
+                {{localize "RAILERS.dialogs.attack.rollAttack"}}
+              </button>
+              {{#if item.system.magazine.max}}
+                <button type="button" class="weapon-reload-btn" data-action="weaponReload" data-item-id="{{item._id}}">
+                  <i class="fas fa-sync-alt"></i>
+                  {{localize "RAILERS.Item.base.actions.reload"}}
+                </button>
+              {{/if}}
+            </div>
+          </div>
+        {{else}}
+          <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noWeapons"}}</p>
+        {{/each}}
+      </div>
+
+    </div>{{!-- end combat-weapons --}}
+
+    {{!-- Right Column: Equipped Clothing --}}
+    <div class="combat-clothing">
+        <div class="equipped-clothing-grid">
+
+            <div class="clothing-card headgear" data-item-id="{{equippedClothing.headgear._id}}" data-document-class="Item">
+            <label class="slot-label">{{localize "RAILERS.Item.Clothing.FIELDS.layer.type.headgear"}}</label>
+            {{#if equippedClothing.headgear}}
+                <div class="clothing-card-header">
+                <img src="{{equippedClothing.headgear.img}}" width="32" height="32"/>
+                <span class="clothing-name">{{equippedClothing.headgear.name}}</span>
+                <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+                    <i class="fas fa-edit"></i>
+                </a>
+                </div>
+                <div class="clothing-card-stats">
+                <span class="clothing-stat">
+                    <label>{{localize "RAILERS.Item.Clothing.FIELDS.protection"}}</label>
+                    {{equippedClothing.headgear.system.protection}}
+                </span>
+                </div>
+            {{else}}
+                <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
+            {{/if}}
+            </div>
+
+            <div class="clothing-card innerwear" data-item-id="{{equippedClothing.innerwear._id}}" data-document-class="Item">
+            <label class="slot-label">{{localize "RAILERS.Item.Clothing.FIELDS.layer.type.innerwear"}}</label>
+            {{#if equippedClothing.innerwear}}
+                <div class="clothing-card-header">
+                <img src="{{equippedClothing.innerwear.img}}" width="32" height="32"/>
+                <span class="clothing-name">{{equippedClothing.innerwear.name}}</span>
+                <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+                    <i class="fas fa-edit"></i>
+                </a>
+                </div>
+                <div class="clothing-card-stats">
+                <span class="clothing-stat">
+                    <label>{{localize "RAILERS.Item.Clothing.FIELDS.protection"}}</label>
+                    {{equippedClothing.innerwear.system.protection}}
+                </span>
+                </div>
+            {{else}}
+                <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
+            {{/if}}
+            </div>
+
+            <div class="clothing-card armor" data-item-id="{{equippedClothing.armor._id}}" data-document-class="Item">
+            <label class="slot-label">{{localize "RAILERS.Item.Clothing.FIELDS.layer.type.armor"}}</label>
+            {{#if equippedClothing.armor}}
+              <div class="clothing-card-header">
+                <img src="{{equippedClothing.armor.img}}" width="32" height="32"/>
+                <span class="clothing-name">{{equippedClothing.armor.name}}</span>
+                <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+                    <i class="fas fa-edit"></i>
+                </a>
+                </div>
+                <div class="clothing-card-stats">
+                <span class="clothing-stat">
+                    <label>{{localize "RAILERS.Item.Clothing.FIELDS.protection"}}</label>
+                    {{equippedClothing.armor.system.protection}}
+                </span>
+              </div>
+            {{else}}
+              <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
+            {{/if}}
+            </div>
+
+            <div class="clothing-card outerwear" data-item-id="{{equippedClothing.outerwear._id}}" data-document-class="Item">
+            <label class="slot-label">{{localize "RAILERS.Item.Clothing.FIELDS.layer.type.outerwear"}}</label>
+            {{#if equippedClothing.outerwear}}
+                <div class="clothing-card-header">
+                <img src="{{equippedClothing.outerwear.img}}" width="32" height="32"/>
+                <span class="clothing-name">{{equippedClothing.outerwear.name}}</span>
+                <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+                    <i class="fas fa-edit"></i>
+                </a>
+                </div>
+                <div class="clothing-card-stats">
+                <span class="clothing-stat">
+                    <label>{{localize "RAILERS.Item.Clothing.FIELDS.protection"}}</label>
+                    {{equippedClothing.outerwear.system.protection}}
+                </span>
+                </div>
+            {{else}}
+                <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
+            {{/if}}
+            </div>
+
+        </div>
+    </div>
+
+  </div>{{!-- end combat-body --}}
+
+</section>
