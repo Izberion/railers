@@ -1,0 +1,30 @@
+<form>
+  <div class="reload-dialog">
+    <div class="reload-info">
+      <p>
+        <strong>{{weaponName}}</strong>: {{currentAmmo}} / {{magazineMax}}
+      </p>
+      <p>
+        {{localize "RAILERS.dialogs.reload.roundsNeeded"}}: {{roundsNeeded}}
+      </p>
+      <p>
+        {{localize "RAILERS.dialogs.reload.ammoAvailable"}}: {{totalAvailable}} {{ammoType}}
+      </p>
+      <p>
+        {{localize "RAILERS.dialogs.reload.willLoad"}}: {{willLoad}}
+      </p>
+    </div>
+    {{#unless canReload}}
+      <p class="reload-error">
+        <i class="fas fa-times"></i>
+        {{localize "RAILERS.dialogs.reload.noAmmo"}}
+      </p>
+    {{/unless}}
+    <div class="reload-warning">
+      <p>
+        <i class="fas fa-exclamation-triangle"></i>
+        {{localize "RAILERS.dialogs.reload.actionCost"}}: <strong>{{reloadAction}}</strong>
+      </p>
+    </div>
+  </div>
+</form>

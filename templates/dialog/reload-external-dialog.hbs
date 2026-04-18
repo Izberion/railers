@@ -1,0 +1,37 @@
+<form>
+  <div class="reload-dialog">
+    <div class="reload-info">
+      <p>
+        <strong>{{weaponName}}</strong>: {{currentAmmo}} / {{magazineMax}}
+      </p>
+    </div>
+
+    {{#if canReload}}
+      <div class="mag-selection">
+        <p>{{localize "RAILERS.dialogs.reload.selectMag"}}</p>
+        {{#each availableMags as |mag id|}}
+          <label class="mag-option">
+            <input type="radio" name="selectedMag" value="{{mag._id}}"
+              {{#if @first}}checked{{/if}}/>
+            <img src="{{mag.img}}" width="24" height="24"/>
+            <span class="mag-name">{{mag.name}}</span>
+            <span class="mag-ammo">{{mag.system.ammo.value}} / {{mag.system.ammo.max}}</span>
+            <span class="mag-ammo-type">{{mag.system.localizedAmmoType}}</span>
+          </label>
+        {{/each}}
+      </div>
+    {{else}}
+      <p class="reload-error">
+        <i class="fas fa-times"></i>
+        {{localize "RAILERS.dialogs.reload.noMags"}}
+      </p>
+    {{/if}}
+
+    <div class="reload-warning">
+      <p>
+        <i class="fas fa-exclamation-triangle"></i>
+        {{localize "RAILERS.dialogs.reload.actionCost"}}: <strong>{{reloadAction}}</strong>
+      </p>
+    </div>
+  </div>
+</form>
