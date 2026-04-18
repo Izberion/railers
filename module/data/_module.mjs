@@ -16,3 +16,5 @@ export { default as RailersMutation } from './items/item-mutation.mjs';
 export { default as RailersCondition } from './items/item-condition.mjs';
 export { default as RailersAbility } from './items/item-ability.mjs';
 export { default as RailersClothing } from './items/item-clothing.mjs';
+export { default as RailersAmmo } from './items/item-ammo.mjs';
+export { default as RailersMagazine } from './items/item-magazine.mjs';
