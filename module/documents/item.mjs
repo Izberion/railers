@@ -49,7 +49,8 @@ export class RailersItem extends Item {
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const messageMode = game.settings.get('core', 'messageMode');
-    const label = `[${item.type}] ${item.name}`;
+    const typeLabel = game.i18n.localize(`TYPES.Item.${item.type}`);
+    const label = `[${typeLabel}] ${item.name}`;
 
     // If there's no roll data, send a chat message.
     if (!this.system.formula) {
