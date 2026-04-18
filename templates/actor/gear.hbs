@@ -56,9 +56,9 @@
       <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+            <img src="{{item.img}}" width="24" height="24"/>
           </div>
-          <div>{{item.name}}</div>
+          <div data-tooltip="{{item.system.description}}">{{item.name}}</div>
         </div>
         <div class="item-quantity">{{item.system.quantity}}</div>
         <div class="item-load">{{item.system.load}}</div>
@@ -110,10 +110,10 @@
         <div class="item-name">
           <div class="item-image">
             <a data-roll-type="attack" data-action="roll">
-              <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+              <img src="{{item.img}}" width="24" height="24"/>
             </a>
           </div>
-          <div>{{item.name}}</div>
+          <div data-tooltip="{{item.system.description}}">{{item.name}}</div>
         </div>
         <div class="item-damage">{{item.system.damage}}{{localize "RAILERS.Item.Weapon.FIELDS.slashWound"}}{{item.system.severity}}</div>
         <div class="item-attack">{{item.system.localizedAttackAction}}</div>
@@ -169,10 +169,10 @@
         <div class="item-name">
           <div class="item-image">
             <a data-roll-type="attack" data-action="roll">
-              <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+              <img src="{{item.img}}" width="24" height="24"/>
             </a>
           </div>
-          <div>{{item.name}}</div>
+          <div data-tooltip="{{item.system.description}}">{{item.name}}</div>
         </div>
         <div class="item-damage">{{item.system.damage}}{{localize "RAILERS.Item.Weapon.FIELDS.slashWound"}}{{item.system.severity}}</div>
         <div class="item-attack">{{item.system.localizedAttackAction}}</div>
@@ -239,9 +239,9 @@
       <li class="item flexrow clothing-headgear" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+            <img src="{{item.img}}" width="24" height="24"/>
           </div>
-          <div>{{item.name}}</div>
+          <div data-tooltip="{{item.system.description}}">{{item.name}}</div>
         </div>
         <div class="item-layer">{{item.system.localizedLayer}}</div>
         <div class="item-protection">{{item.system.protection}}</div>
@@ -297,9 +297,9 @@
       <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+            <img src="{{item.img}}" width="24" height="24"/>
           </div>
-          <div>{{item.name}}</div>
+          <div data-tooltip="{{item.system.description}}">{{item.name}}</div>
         </div>
         <div class="item-ammo-type">{{item.system.localizedAmmoType}}</div>
         <div class="item-rounds">{{item.system.roundsRemaining}}</div>
@@ -351,9 +351,9 @@
       <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
-            <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+            <img src="{{item.img}}" width="24" height="24"/>
           </div>
-          <div>{{item.name}}</div>
+          <div data-tooltip="{{item.system.description}}">{{item.name}}</div>
         </div>
         <div class="item-ammo-type">{{item.system.localizedAmmoType}}</div>
         <div class="item-ammo">{{item.system.ammo.value}} / {{item.system.ammo.max}}</div>
