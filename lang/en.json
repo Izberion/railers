@@ -483,7 +483,21 @@
         "summer": "Summer",
         "winter": "Winter",
         "rollTemperature": "Rolled the temperature",
-        "adjustedTemperature": "{adjustedTemperature} due to Polar Outbreak"
+        "adjustedTemperature": "{adjustedTemperature} due to Polar Outbreak",
+        "description": {
+          "aurora": "The night sky puts on a mystifying display of bright, dancing colors, spilling light out into the dark of night. Any penalties from darkness are reduced by 1d when outside under the light of the aurora.",
+          "blizzard": "Strong winds and thick snowfall brings low visibility, rapid accumulation, and difficult travel. Any rolls relying on distant sight or attempts to navigate have a -3d penalty. Attempts to hide have a +2d bonus. Using the Move action requires a Major action. Traveling by foot is slowed, increasing travel times by 1 Quarter.",
+          "clear": "There isn’t a cloud in the sky and the sun is shining. Though its heat is meager, it’s one of the better days in the Snowlands.",
+          "diamondDust": "A thin cloud of ice crystals, shimmering in the sun like diamonds, float lazily near the ground during a calm. While it doesn’t necessarily reduce visibility enough to impact most actions, it does create a haze that obscures very distant objects.",
+          "iceFog": "A low cloud of ice crystals hangs low in the air against the ground, reducing visibility and creating an atmosphere somewhere between eerie and enchanting. Any rolls relying on distant sight or attempts to navigate have a -1d penalty.",
+          "overcast": "The sky is gray and cloudy, hiding the sun. Whether it heralds better or worse weather is yet to be seen.",
+          "polarOutbreak": "A deep freeze has fallen upon the Snowlands from a place much colder. Temperatures are reduced by 20°F.",
+          "flurry": "Snowflakes fall lightly and individually from the sky, a common occurrence in the Snowlands.",
+          "snowStorm": "A simple snowstorm, adding anywhere from a dusting to several inches of snow, depending on the duration. While sight won’t reach the horizon, visibility isn’t reduced enough to impact most actions.",
+          "thunderSnow": "Thunder, lightning, and heavy snowfall combine to make an interesting but dangerous storm. Any rolls relying on distant sight or attempts to navigate have a -2d penalty. While there is a risk of being hit by lightning, it is extremely unlikely due to the low rate of lightning strikes.",
+          "wind": "Strong and consistent winds threaten to blow away anything not nailed down. Bow, crossbow, and thrown weapon attacks, as well as any ranged attack at Extreme range, must be made at TN 8.  Ranged attacks at Long range must be made at TN 7.",
+          "whiteout": "The sky and earth are both an indistinguishable white thanks to blowing snow, greatly reducing visibility. Any rolls relying on sight or attempts to navigate have a -3d penalty. Attempts to hide have a +1d bonus."
+        }
       },
       "actorTweaks": {
         "title": "Actor Tweaks",

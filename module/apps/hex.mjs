@@ -7,18 +7,18 @@ const TERRAIN_TYPES = {
 };
 
 const WEATHER_TYPES = {
-  "thundersnowhex.svg": "RAILERS.apps.weather.thunderSnow",
-  "snowstormhex.svg": "RAILERS.apps.weather.snowStorm",
-  "blizzardhex.svg": "RAILERS.apps.weather.blizzard",
-  "windhex.svg": "RAILERS.apps.weather.wind",
-  "flurryhex.svg": "RAILERS.apps.weather.flurry",
-  "overcasthex.svg": "RAILERS.apps.weather.overcast",
-  "polaroutbreakhex.svg": "RAILERS.apps.weather.polarOutbreak",
-  "aurorahex.svg": "RAILERS.apps.weather.aurora",
-  "clearhex.svg": "RAILERS.apps.weather.clear",
-  "icefoghex.svg": "RAILERS.apps.weather.iceFog",
-  "diamonddusthex.svg": "RAILERS.apps.weather.diamondDust",
-  "whiteouthex.svg": "RAILERS.apps.weather.whiteout"
+  "thundersnowhex.svg":  { name: "RAILERS.apps.weather.thunderSnow",    desc: "RAILERS.apps.weather.description.thunderSnow" },
+  "snowstormhex.svg":    { name: "RAILERS.apps.weather.snowStorm",      desc: "RAILERS.apps.weather.description.snowStorm" },
+  "blizzardhex.svg":     { name: "RAILERS.apps.weather.blizzard",       desc: "RAILERS.apps.weather.description.blizzard" },
+  "windhex.svg":         { name: "RAILERS.apps.weather.wind",           desc: "RAILERS.apps.weather.description.wind" },
+  "flurryhex.svg":       { name: "RAILERS.apps.weather.flurry",         desc: "RAILERS.apps.weather.description.flurry" },
+  "overcasthex.svg":     { name: "RAILERS.apps.weather.overcast",       desc: "RAILERS.apps.weather.description.overcast" },
+  "polaroutbreakhex.svg":{ name: "RAILERS.apps.weather.polarOutbreak",  desc: "RAILERS.apps.weather.description.polarOutbreak" },
+  "aurorahex.svg":       { name: "RAILERS.apps.weather.aurora",         desc: "RAILERS.apps.weather.description.aurora" },
+  "clearhex.svg":        { name: "RAILERS.apps.weather.clear",          desc: "RAILERS.apps.weather.description.clear" },
+  "icefoghex.svg":       { name: "RAILERS.apps.weather.iceFog",         desc: "RAILERS.apps.weather.description.iceFog" },
+  "diamonddusthex.svg":  { name: "RAILERS.apps.weather.diamondDust",    desc: "RAILERS.apps.weather.description.diamondDust" },
+  "whiteouthex.svg":     { name: "RAILERS.apps.weather.whiteout",       desc: "RAILERS.apps.weather.description.whiteout" }
 };
 
 export const HEX_DATA = [
@@ -317,6 +317,8 @@ export class WeatherHUD {
       if (!hud) return;
 
       const weather = game.settings.get("railers", "currentWeather");
+      const fileName = weather?.image?.split("/").pop();
+      const weatherDesc = fileName ? game.i18n.localize(WEATHER_TYPES[fileName]?.desc) : "";
       let temp = game.settings.get("railers", "currentTemperature") || "N/A";
       const season = game.settings.get("railers", "currentSeason") || "winter";
 
@@ -335,7 +337,9 @@ export class WeatherHUD {
         {
           weather: {
             image: weather?.image,
-            name: weather?.name
+            name: weather?.name,
+            desc: weatherDesc
+
           },
           temperature: temp,
           season: season.charAt(0).toUpperCase() + season.slice(1) // Capitalize
@@ -377,7 +381,7 @@ export class WeatherHUD {
         const fileName = newWeatherEntry.image.split("/").pop();
         const newWeather = {
           ...newWeatherEntry,
-          name: game.i18n.localize(WEATHER_TYPES[fileName])
+          name: game.i18n.localize(WEATHER_TYPES[fileName].name)
         };
         game.settings.set("railers", "currentWeather", newWeather);
         await roll.toMessage({
