@@ -106,7 +106,9 @@
               "value": "Load Stowed",
               "max": "Stowage Limit"
             },
-            "limit": "Load Limit"
+            "limit": "Load Limit",
+            "overload": "Overloaded!",
+            "overloadTooltip": "You have exceeded your Load Limit and will have a penalty to all physical actions equal to the amount of Load over your limit. Using the Move combat action requires a Minor action, rather than the normal Maneuver."
           }
         },
         "actions": {
