@@ -69,14 +69,38 @@ export default class RailersWeapon extends RailersItemBase {
       nullable: false,
       blank: false,
       initial: 'major',
-    })
+    });
 
     schema.reload = new fields.StringField({
       required: true,
       nullable: false,
       blank: false,
       initial: 'na',
-    })
+    });
+
+    schema.magType = new fields.StringField({
+      required: false,
+      nullable: true,
+      blank: true,
+      initial: null
+    });
+
+    schema.ammoType = new fields.StringField({
+      required: false,
+      nullable: true,
+      blank: true,
+      initial: null
+    });
+
+    schema.isConsumable = new fields.BooleanField({ 
+      initial: false 
+    });
+
+    schema.loadedMagId = new fields.StringField({
+      required: false,
+      nullable: true,
+      initial: null
+    });
 
     schema.roll = new fields.SchemaField({
       diceNum: new fields.NumberField({
