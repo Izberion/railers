@@ -59,6 +59,7 @@
       "Tabs": {
         "Biography": "Biography",
         "Skills": "Skills",
+        "Combat": "Combat",
         "Gear": "Gear",
         "Wounds": "Wounds",
         "Effects": "Effects",
@@ -66,7 +67,7 @@
         "Notes": "Notes",
         "Cars": "Cars",
         "Cargo": "Cargo",
-        "Conditions": "Conditions",
+        "Survival": "Survival",
         "Description": "Description"
       },
       "base": {
@@ -86,6 +87,7 @@
             "max": "Maximum Nerve"
           },
           "corruption": "Corruption",
+          "stage": "Demonization Stage",
           "thermalThreshold": "Thermal Threshold",
           "initiativePool": "Initiative Pool",
           "initiativeMod": "Initiative Modifier",
@@ -121,7 +123,14 @@
           "rivals": "Rivals",
           "successes": "Successes",
           "failures": "Failures",
-          "goals": "Goals"
+          "goals": "Goals",
+          "attributeValue": "Attribute Value",
+          "attributeMod": "Attribute Modifier",
+          "skillValue": "Skill Value",
+          "noWeapons": "None On Hand",
+          "noClothing": "Nothing Equipped",
+          "noMutations": "Mutation-Free"
+
         },
         "actions": {
           "rollAttr": "Roll Attributes",
@@ -205,15 +214,26 @@
           "edit": "Edit {type}",
           "delete": "Delete {type}",
           "heal": "Heal {type}",
-          "reload": "Reload {type}"
+          "reload": "Reload"
+        },
+        "header": {
+          "combat": "Combat",
+          "supply": "Supply",
+          "carry": "Carry",
+          "protection": "Protection",
+          "ammunition": "Ammunition",
+          "stats": "Stats",
+          "trade": "Trade"
         }
       },
       "Gear": {
+        "label": "Gear",
         "FIELDS": {
 
         }
       },
       "Wound": {
+        "label": "Wounds",
         "FIELDS": {
           "damage": "Damage",
           "severity": "Severity",
@@ -221,6 +241,7 @@
         }
       },
       "Clothing": {
+        "label": "Clothing",
         "FIELDS": {
           "layer": {
             "label": "Layer",
@@ -232,10 +253,14 @@
             }
           },
           "protection": "Protection",
-          "insulation": "Insulation"
+          "insulation": "Insulation",
+          "equipped": "Equipped"
         }
       },
       "Weapon": {
+        "labelRanged": "Ranged Weapons",
+        "labelMelee": "Melee Weapons",
+        "label": "Weapons",
         "FIELDS": {
           "ammo": {
             "value": "Remaining Ammo",
@@ -257,7 +282,19 @@
           "reload": "Reload",
           "magazine": "Magazine",
           "slashWound": "/W",
-          "skill": "Skill"
+          "skill": "Skill",
+          "magType": {
+            "label": "Magazine Type",
+            "internal": "Internal",
+            "external": "External",
+            "belt": "Belt Fed",
+            "clip": "Stripper Clip",
+            "tank": "Fuel Tank",
+            "quiver": "Quiver",
+            "none": "None"
+          },
+          "ammoType":"Ammo Type",
+          "isConsumable": "Consumable"
         }
       },
       "Car": {
@@ -290,16 +327,54 @@
         }
       },
       "Mutation": {
+        "label": "Mutations",
         "FIELDS": {}
       },
       "Condition": {
+        "label": "Conditions",
         "FIELDS": {}
       },
-      "WeaponMod": {
-        "FIELDS": {}
+      "Ammo": {
+        "label": "Ammo",
+        "FIELDS": {
+          "ammoType": {
+            "label": "Type",
+            "handgun": "Handgun",
+            "rifle": "Rifle",
+            "shotgun": "Shotgun",
+            "heavy": "Heavy",
+            "arrow": "Arrow",
+            "bolt": "Bolt",
+            "shell": "Shell",
+            "burst": "Burst",
+            "none": "None"
+          },
+          "rounds": "Rounds"
+        }
       },
-      "TrainMod": {
-        "FIELDS": {}
+      "Magazine": {
+        "label": "Magazines",
+        "FIELDS": {
+          "empty": "Empty",
+          "loaded": "Loaded",
+          "unloaded": "Unloaded",
+          "loadedIn": "In ",
+          "ammoType": "Ammo Type",
+          "ammo": {
+            "value": "Rounds Loaded",
+            "max": "Magazine Capacity"
+          },
+          "magType": {
+            "label": "Type",
+            "box": "Box Magazine",
+            "drum": "Drum Magazine",
+            "belt": "Ammo Belt",
+            "clip": "Stripper Clip",
+            "quiver": "Quiver",
+            "tank": "Fuel Tank",
+            "none": "None"
+          }
+        }
       }
     },
     "Effect": {
@@ -325,7 +400,8 @@
         "warning": "Warning",
         "continue": "Continue",
         "save": "Save",
-        "modifyDiceRoll": "Modify the Dice Roll"
+        "modifyDiceRoll": "Modify the Dice Roll",
+        "rollDefense": "Roll Defense"
       },
       "attack": {
         "selectActionType": "Select Attack Action Type",
@@ -337,7 +413,8 @@
         "reactiveShot": "Reactive Shot",
         "notEnoughAmmo": "Not enough ammo for this attack action",
         "modifyAttackRoll": "Modify the Attack Roll",
-        "damageResult": "{damage}/W{severity}"
+        "damageResult": "{damage}/W{severity}",
+        "rollAttack": "Roll Attack"
       },
       "train": {
         "changeLocomotiveWarning": "Changing the locomotive type will update several stats and any changes to them could be lost. Do you want to continue?"
@@ -348,6 +425,28 @@
         "woundType": "Wound Type",
         "damage": "Damage",
         "severity": "Severity"
+      },
+      "reload": {
+        "title": "Reload {weapon}",
+        "confirm": "Reload",
+        "alreadyFull": "Magazine is already full",
+        "selectMag": "Select a loaded magazine",
+        "noMags": "No loaded magazines on hand",
+        "actionCost": "Action required",
+        "magSwapped": "{weapon} reloaded with {rounds} rounds",
+        "roundsNeeded": "Rounds needed",
+        "ammoAvailable": "Rounds available",
+        "willLoad": "Will load",
+        "noAmmo": "No compatible ammo on hand",
+        "noAmmoType": "No ammo type set on this weapon",
+        "partialReload": "Partial reload: {loaded}/{max} rounds loaded",
+        "reloadComplete": "{weapon} reloaded"
+      },
+      "mutation": {
+        "title": "Mutation Rolled",
+        "rollMutations": "Roll Mutations",
+        "addPrompt": "Add this mutation to the character sheet?",
+        "add": "Add to Sheet"
       }
     },
     "apps": {
@@ -390,7 +489,9 @@
         "title": "Actor Tweaks",
         "initiativeMod": "Initiative Modifier",
         "initiativeGroup": "Faction",
-        "initiativeGroupHint": "This will be used to determine the character's group in initiative."
+        "initiativeGroupHint": "This will be used to determine the character's group in initiative.",
+        "corruptionOverride": "Override Corruption",
+        "corruptionOverrideHint": "Use to bypass Corruption floor."
       }
     },
     "chat": {
@@ -448,7 +549,9 @@
       "trainMod": "Train Mod",
       "condition": "Condition",
       "mutation": "Mutation",
-      "ability": "Ability"
+      "ability": "Ability",
+      "magazine": "Magazine",
+      "ammo": "Ammo"
     }
   }
 }

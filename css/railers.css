@@ -233,55 +233,57 @@
 
   /* Styles limited to railers sheets */
 
+.railers.actor .sheet-head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .railers .sheet-head input[type="text"] {
-  font-family: 'Modesto Condensed';
+  height: auto
 }
-.railers .sheet-head {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 auto;
-  flex: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.railers.actor .header-top {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  align-items: center;
-  height: 158px;
-}
-.railers .sheet-head .profile-img {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100px;
-  flex: 0 0 100px;
-  height: 100px;
-  width: 100px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-.railers .sheet-head .header-fields {
-  display: flex;
-  flex-wrap: wrap;
-}
-.railers .sheet-head h1.charname {
-  width: 200px;
-  height: 50px;
-  border-bottom: 0;
-  display: flex;
-}
-.railers .sheet-head h1.charname input {
-  width: 200px;
-  height: 50px;
-  margin: 0;
-}
-.railers .sheet-head .health {
-  display: flex;
+  gap: 12px;
   align-items: flex-start;
+}
+.railers.actor .header-identity {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  flex: 0 0 auto;
+}
+.railers.actor .header-name-vitals {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.railers.actor .name-xp {
+  display: flex;
+  gap: 60px;
+}
+.railers.actor .charname .resource {
+  justify-content: flex-start;
+  line-height: 1;
+}
+.railers.actor .header-vitals {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.railers.actor .header-secondary {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.railers.actor .hp-button {
+  padding-bottom: 5px;
+  align-self: flex-end;
 }
 .railers .tab[data-tab].active {
   display: block;
@@ -289,29 +291,22 @@
 }
 .railers input[type="number"] {
   width: 36px;
+  max-width: 36px;
   border: none;
   min-width: inherit;
+  text-align: center;
 }
 .railers input[type="number"].w50 {
   width: 50px;
+  max-width: 50px;
 }
 .railers input[type="number"].w40 {
   width: 40px;
+  max-width: 40px;
 }
 .railers input[type="number"].therms {
   width: 60px;
-}
-.railers .sheet-head .resource,
-.railers .gear-head .resource {
-  padding: 5px;
-  display: grid;
-  justify-items: center;
-}
-.railers .sheet-head .demon-attributes,
-.railers .sheet-head .npc-attributes,
-.railers .sheet-head .train-attributes {
-  display: flex;
-  flex-direction: row;
+  max-width: 60px;
 }
 .railers .gear-head {
   justify-content: space-evenly;
@@ -319,6 +314,7 @@
 }
 .railers .gear-head .load-group {
   display: flex;
+  gap: 20px;
 }
 .railers .sheet-body,
 .railers .sheet-body .tab,
@@ -333,6 +329,8 @@
 }
 .railers .resource-label {
   font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
 }
 .railers .items-header,
 .railers .weapons-header,
@@ -379,7 +377,6 @@
   padding: 0;
   overflow-y: auto;
   scrollbar-width: thin;
-  color: #ffffff;
 }
 .railers .items-list .item-list,
 .railers .weapons-list .weapon-list,
@@ -529,7 +526,11 @@
 }
 .railers .resource {
   padding-bottom: 5px;
-  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
 }
 .railers .train-resources {
   display: flex;
@@ -546,6 +547,31 @@
 .railers span {
   align-self: center;
   font-size: 16px;
+}
+.railers.item .sheet-head {
+  display: flex;
+}
+.railers.item .item-sheet-body {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+.railers.item .item-sheet-group {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+}
+.railers.item .item-sheet-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.railers.item .section-label {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
 .railers .flower {
   display: flex;
@@ -722,6 +748,10 @@
 }
 .railers label.att-label {
   font-weight: bold;
+  padding: 10px 0 5px 0;
+}
+.railers label.skill-label {
+  padding-bottom: 5px;
 }
 .railers .attribute-container {
   display: grid;
@@ -759,4 +789,178 @@ section.tab.biography.active > prose-mirror {
 
 button.fa-circle.control[data-tool="foreground"] { 
   display: none !important; 
+}
+
+.railers.actor .combat-head,
+.railers.actor .survival-head {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 40px;
+}
+.railers.actor .combat-body,
+.railers.actor .survival-body {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.railers.actor .combat-weapons,
+.railers.actor .survival-mutations {
+  flex: 1;
+  min-width: 0; 
+}
+
+.railers.actor .combat-clothing,
+.railers.actor .survival-clothing {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.railers.actor .equipped-clothing-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.railers.actor .clothing-card:first {
+  padding: 0 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.railers.actor .clothing-card {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.railers.actor .clothing-card .slot-label {
+  font-size: 1.5em;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.railers.actor .clothing-card-header,
+.railers.actor .mutation-card-header,
+.mutation-dialog-result {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.railers.actor .clothing-name,
+.railers.actor .mutation-name {
+  font-weight: bold;
+  flex: 1;
+}
+
+.railers.actor .clothing-card-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 0.85em;
+}
+
+.railers.actor .clothing-stat label {
+  font-size: 0.85em;
+  margin-right: 2px;
+}
+
+.railers.actor .weapon-category-header {
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin: 8px 0 4px;
+}
+
+.railers.actor .weapon-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.railers.actor .weapon-card {
+  padding: 8px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.railers.actor .mutation-card {
+  padding: 8px;
+  width: 368px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.railers.actor .weapon-card-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.railers.actor .weapon-name {
+  flex: 1;
+  font-weight: bold;
+}
+
+.railers.actor .weapon-card-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.85em;
+}
+
+.railers.actor .weapon-stat label {
+  font-size: 0.85em;
+  margin-right: 4px;
+}
+
+.railers.actor .weapon-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: auto;
+}
+
+.railers.actor .weapon-roll-btn,
+.railers.actor .weapon-reload-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.railers.actor .equipped-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 0.85em;
+}
+
+.railers.actor .equipped-stat label {
+  font-size: 0.85em;
+  margin-right: 2px;
+}
+
+.railers.actor section.tab.gear.active select {
+  appearance: none;
+  text-align: center;
+  padding: 0;
+  background-color: transparent;
+  color: var(--color-text-primary);
+}
+
+.railers.actor section.tab.gear.active select option {
+  background-color: var(--background);
 }
