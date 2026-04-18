@@ -1,0 +1,175 @@
+<section
+  class="tab survival {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="survival"
+>
+
+  {{!-- Survival Head --}}
+  <div class="survival-head">
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.corruption"}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" name="system.corruption" value="{{system.corruption}}" min="{{system.corruptionFloor}}"/>      </div>
+    </div>    
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.stage"}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" value="{{system.demonizationStage}}" readonly/>
+      </div>
+      <button type="button" class="mutation-roll-btn" data-action="rollMutations">
+        <i class="fas fa-dna"></i>
+        {{localize "RAILERS.dialogs.mutation.rollMutations"}}
+      </button>
+    </div>
+    <div class="resource flex-group-center">
+      <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.thermalThreshold"}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="number" value="{{system.thermalThreshold}}" readonly/>
+      </div>
+    </div>
+  </div>
+
+  {{!-- Survival Body --}}
+  <div class="survival-body">
+
+    {{!--Mutations and Conditions --}}
+    <div class="survival-mutations">
+
+      <label class="weapon-category-header">{{localize "RAILERS.Item.Mutation.label"}}</label>
+      <div class="mutation-cards">
+        {{#each mutations as |item id|}}
+          <div class="mutation-card" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+            <div class="mutation-card-header">
+              <img src="{{item.img}}" width="32" height="32"/>
+              <span class="mutation-name">{{item.name}}</span>
+              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Mutation'}}" data-action="viewDoc">
+                <i class="fas fa-edit"></i>
+              </a>
+              {{#if @root.editable}}
+              <a class="item-control item-delete" title="{{localize 'DOCUMENT.Delete' type='Mutation'}}" data-action="deleteDoc">
+                <i class="fas fa-trash"></i>
+              </a>
+              {{/if}}
+            </div>
+            {{#if item.system.description}}
+            <div class="mutation-card-description">
+              {{{item.system.description}}}
+            </div>
+            {{/if}}
+          </div>
+        {{else}}
+          <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noMutations"}}</p>
+        {{/each}}
+      </div>
+
+      {{!-- Conditions: placeholder, not fully implemented
+      <label class="weapon-category-header">{{localize "RAILERS.Item.Condition.label"}}</label>
+      <div class="condition-list">
+        {{#each conditions as |item id|}}
+          <div class="condition-entry" data-item-id="{{item._id}}">
+            <span class="condition-name">{{item.name}}</span>
+            <a class="item-control item-delete" data-action="deleteDoc">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+        {{else}}
+          <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noConditions"}}</p>
+        {{/each}}
+      </div>
+      --}}
+    </div>{{!-- end survival-mutations --}}
+
+    {{!--Clothing --}}
+    <div class="survival-clothing">
+      <div class="equipped-clothing-grid">
+
+        <div class="clothing-card headgear" data-item-id="{{equippedClothing.headgear._id}}" data-document-class="Item">
+          <label class="slot-label">{{localize "RAILERS.Item.Clothing.FIELDS.layer.type.headgear"}}</label>
+          {{#if equippedClothing.headgear}}
+            <div class="clothing-card-header">
+              <img src="{{equippedClothing.headgear.img}}" width="32" height="32"/>
+              <span class="clothing-name">{{equippedClothing.headgear.name}}</span>
+              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+                <i class="fas fa-edit"></i>
+              </a>
+            </div>
+            <div class="clothing-card-stats">
+              <span class="clothing-stat">
+                <label>{{localize "RAILERS.Item.Clothing.FIELDS.insulation"}}</label>
+                {{equippedClothing.headgear.system.insulation}}
+              </span>
+            </div>
+          {{else}}
+            <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
+          {{/if}}
+        </div>
+
+        <div class="clothing-card innerwear" data-item-id="{{equippedClothing.innerwear._id}}" data-document-class="Item">
+          <label class="slot-label">{{localize "RAILERS.Item.Clothing.FIELDS.layer.type.innerwear"}}</label>
+          {{#if equippedClothing.innerwear}}
+            <div class="clothing-card-header">
+              <img src="{{equippedClothing.innerwear.img}}" width="32" height="32"/>
+              <span class="clothing-name">{{equippedClothing.innerwear.name}}</span>
+              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+                <i class="fas fa-edit"></i>
+              </a>
+            </div>
+            <div class="clothing-card-stats">
+              <span class="clothing-stat">
+                <label>{{localize "RAILERS.Item.Clothing.FIELDS.insulation"}}</label>
+                {{equippedClothing.innerwear.system.insulation}}
+              </span>
+            </div>
+          {{else}}
+            <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
+          {{/if}}
+        </div>
+
+        <div class="clothing-card armor" data-item-id="{{equippedClothing.armor._id}}" data-document-class="Item">
+          <label class="slot-label">{{localize "RAILERS.Item.Clothing.FIELDS.layer.type.armor"}}</label>
+          {{#if equippedClothing.armor}}
+            <div class="clothing-card-header">
+              <img src="{{equippedClothing.armor.img}}" width="32" height="32"/>
+              <span class="clothing-name">{{equippedClothing.armor.name}}</span>
+              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+                <i class="fas fa-edit"></i>
+              </a>
+            </div>
+            <div class="clothing-card-stats">
+              <span class="clothing-stat">
+                <label>{{localize "RAILERS.Item.Clothing.FIELDS.insulation"}}</label>
+                {{equippedClothing.armor.system.insulation}}
+              </span>
+            </div>
+          {{else}}
+            <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
+          {{/if}}
+        </div>
+
+        <div class="clothing-card outerwear" data-item-id="{{equippedClothing.outerwear._id}}" data-document-class="Item">
+          <label class="slot-label">{{localize "RAILERS.Item.Clothing.FIELDS.layer.type.outerwear"}}</label>
+          {{#if equippedClothing.outerwear}}
+            <div class="clothing-card-header">
+              <img src="{{equippedClothing.outerwear.img}}" width="32" height="32"/>
+              <span class="clothing-name">{{equippedClothing.outerwear.name}}</span>
+              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+                <i class="fas fa-edit"></i>
+              </a>
+            </div>
+            <div class="clothing-card-stats">
+              <span class="clothing-stat">
+                <label>{{localize "RAILERS.Item.Clothing.FIELDS.insulation"}}</label>
+                {{equippedClothing.outerwear.system.insulation}}
+              </span>
+            </div>
+          {{else}}
+            <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
+          {{/if}}
+        </div>
+
+      </div>
+    </div>{{!-- end survival-clothing --}}
+
+  </div>{{!-- end survival-body --}}
+
+</section>
