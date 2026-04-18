@@ -85,11 +85,7 @@ export default class RailersCharacter extends RailersActorBase {
     this.load.stowed.value = Math.ceil(totalStowedLoad);
 
     const baseLoad = 5 + this.attributes.prowess.mod + this.attributes.prowess.skills.exertion.value;
-
-    // Allow load max to be overridden by items or effects
-    if (this.load.onHand.max == null) {
-      this.load.onHand.max = baseLoad;
-    }
+    this.load.onHand.max = baseLoad;
 
     let totalInsulation = 0;
     let totalProtection = 0;
@@ -102,7 +98,7 @@ export default class RailersCharacter extends RailersActorBase {
     this.defensePool = totalProtection + this.attributes.combat.mod;
     this.thermalThreshold = -1 * totalInsulation;
 
-    const derivedStats = ["system.thermalThreshold"];
+    const derivedStats = ["system.thermalThreshold","system.load.onHand.max"];
 
     // Apply active effects that target derived stats
     for (let effect of this.parent.appliedEffects) {
@@ -110,12 +106,12 @@ export default class RailersCharacter extends RailersActorBase {
         if (!derivedStats.includes(change.key)) continue;
         const localKey = change.key.replace("system.", "");
         const current = foundry.utils.getProperty(this, localKey) ?? 0;
-        if (change.mode === CONST.ACTIVE_EFFECT_MODES.ADD)
+        if (change.type === "add")
           foundry.utils.setProperty(this, localKey, current + Number(change.value));
-        else if (change.mode === CONST.ACTIVE_EFFECT_MODES.OVERRIDE)
+        else if (change.type === "override")
           foundry.utils.setProperty(this, localKey, Number(change.value));
-        else if (change.mode === CONST.ACTIVE_EFFECT_MODES.SUBTRACT)
-          foundry.utils.setProperty(this, localKey, current - Number(change.value));
+        else if (change.type === "multiply")
+          foundry.utils.setProperty(this, localKey, current * Number(change.value));
       }
     }
 
