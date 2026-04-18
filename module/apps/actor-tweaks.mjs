@@ -34,12 +34,16 @@ export class ActorTweaks extends foundry.applications.api.HandlebarsApplicationM
     const { system } = this.actor;
     const actorType = this.actor.type;
     const showInitiative = ["character", "demon"].includes(actorType);
+    const showCorruption = ["character", "npc"].includes(actorType);
 
     return {
-      initiativeMod: system.initiativeMod ?? 0,          
-      initiativeGroup: system.initiativeGroup ?? "",   
-      showInitiative
-      // Add more fields later
+      initiativeMod: system.initiativeMod ?? 0,
+      initiativeGroup: system.initiativeGroup ?? "",
+      corruption: system.corruption ?? 0,
+      corruptionFloor: system.corruptionFloor ?? 0,
+      showInitiative,
+      showCorruption,
+      isGM: game.user.isGM
     };
   }
 
@@ -49,11 +53,16 @@ export class ActorTweaks extends foundry.applications.api.HandlebarsApplicationM
     const form = event.currentTarget;
     const formData = new foundry.applications.ux.FormDataExtended(form).object;
 
-    await this.actor.update({
+    const updateData = {
       "system.initiativeMod": Number(formData.initiativeMod) || 0,
       "system.initiativeGroup": String(formData.initiativeGroup).trim() || "Unknown"
-    });
+    };
 
+    if (game.user.isGM && formData.corruptionOverride !== undefined) {
+      updateData["system.corruption"] = Math.max(0, Number(formData.corruptionOverride));
+    }
+
+    await this.actor.update(updateData);
     this.close();
   }
 }
