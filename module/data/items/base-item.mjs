@@ -37,7 +37,7 @@ export default class RailersItemBase extends foundry.abstract.TypeDataModel {
     schema.load = new fields.NumberField({
       required: false,
       nullable: true,
-      integer: true,
+      integer: false,
       initial: 0,
       min: 0
     });
@@ -46,7 +46,7 @@ export default class RailersItemBase extends foundry.abstract.TypeDataModel {
       required: false,
       nullable: true,
       integer: true,
-      initial: 0,
+      initial: 1,
       min: 0
     });
 
