@@ -1,14 +1,15 @@
 {
   "name": "Artillery Shell",
-  "type": "gear",
+  "type": "ammo",
   "_id": "piK2gdGgbTeCC6wt",
   "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Artillery shells are large, heavy, and may explode if dropped. Only a single shell can be carried easily at a time. They are usable only in artillery cannons. If one does fall, make a TN 5 Combat saving throw. On a failure, the shell explodes, killing the unfortunate soul that dropped it, those standing next to him, and destroying much of the immediate area, out to a several foot radius.</p>",
     "quantity": 1,
-    "load": 3,
+    "load": 2,
     "stowage": "other",
-    "formula": ""
+    "ammoType": "shell",
+    "roundsRemaining": 1
   },
   "_key": "!items!piK2gdGgbTeCC6wt"
 }

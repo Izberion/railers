@@ -1,6 +1,6 @@
 {
   "name": "Quiver",
-  "type": "gear",
+  "type": "magazine",
   "_id": "AKIGMiBWqwVuLD3e",
   "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
@@ -8,7 +8,12 @@
     "quantity": 1,
     "load": 1,
     "stowage": "other",
-    "formula": ""
+    "magType": "quiver",
+    "ammoType": "arrow",
+    "rounds": {
+      "value": 0,
+      "max": 20
+    }
   },
   "_key": "!items!AKIGMiBWqwVuLD3e"
 }

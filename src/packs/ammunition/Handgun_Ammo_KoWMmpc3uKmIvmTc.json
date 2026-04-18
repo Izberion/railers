@@ -1,14 +1,15 @@
 {
-  "name": "Handgun Ammo (50)",
-  "type": "gear",
+  "name": "Handgun Ammo",
+  "type": "ammo",
   "_id": "KoWMmpc3uKmIvmTc",
   "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Handgun ammo is usable in any handgun, as well as submachine guns. Handgun ammo comes in boxes of 50.</p>",
     "quantity": 1,
-    "load": 2,
+    "load": 1,
     "stowage": "other",
-    "formula": ""
+    "ammoType": "handgun",
+    "roundsRemaining": 50
   },
   "_key": "!items!KoWMmpc3uKmIvmTc"
 }

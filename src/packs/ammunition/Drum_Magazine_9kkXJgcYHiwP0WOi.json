@@ -1,6 +1,6 @@
 {
   "name": "Drum Magazine",
-  "type": "gear",
+  "type": "magazine",
   "_id": "9kkXJgcYHiwP0WOi",
   "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
@@ -8,7 +8,12 @@
     "quantity": 1,
     "load": 1,
     "stowage": "other",
-    "formula": ""
+    "magType": "drum",
+    "ammoType": "",
+    "rounds": {
+      "value": 0,
+      "max": 0
+    }
   },
   "_key": "!items!9kkXJgcYHiwP0WOi"
 }

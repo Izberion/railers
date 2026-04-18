@@ -1,6 +1,6 @@
 {
   "name": "Box Magazine",
-  "type": "gear",
+  "type": "magazine",
   "_id": "huk9yX92qVWrlIlv",
   "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
@@ -8,7 +8,12 @@
     "quantity": 1,
     "load": 0.5,
     "stowage": "other",
-    "formula": ""
+    "magType": "box",
+    "ammoType": "",
+    "rounds": {
+      "value": 0,
+      "max": 0
+    }
   },
   "_key": "!items!huk9yX92qVWrlIlv"
 }

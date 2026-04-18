@@ -1,14 +1,15 @@
 {
-  "name": "Heavy Ammo (20)",
-  "type": "gear",
+  "name": "Heavy Ammo",
+  "type": "ammo",
   "_id": "Iv0P3hJOTjt30CN3",
   "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
     "description": "<p>Heavy ammo is usable in big guns like machine guns or autocannons. Heavy ammo comes in boxes of 20.</p>",
     "quantity": 1,
-    "load": 2,
+    "load": 1,
     "stowage": "other",
-    "formula": ""
+    "ammoType": "heavy",
+    "roundsRemaining": 20
   },
   "_key": "!items!Iv0P3hJOTjt30CN3"
 }

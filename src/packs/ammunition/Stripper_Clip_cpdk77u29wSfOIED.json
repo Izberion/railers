@@ -1,6 +1,6 @@
 {
   "name": "Stripper Clip",
-  "type": "gear",
+  "type": "magazine",
   "_id": "cpdk77u29wSfOIED",
   "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
@@ -8,7 +8,12 @@
     "quantity": 1,
     "load": 0.25,
     "stowage": "other",
-    "formula": ""
+    "magType": "clip",
+    "ammoType": "",
+    "rounds": {
+      "value": 0,
+      "max": 0
+    }
   },
   "_key": "!items!cpdk77u29wSfOIED"
 }

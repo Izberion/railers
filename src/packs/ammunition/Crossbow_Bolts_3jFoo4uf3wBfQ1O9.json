@@ -1,6 +1,6 @@
 {
-  "name": "Crossbow Bolts (20)",
-  "type": "gear",
+  "name": "Crossbow Bolts",
+  "type": "ammo",
   "_id": "3jFoo4uf3wBfQ1O9",
   "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
@@ -8,7 +8,8 @@
     "quantity": 1,
     "load": 1,
     "stowage": "other",
-    "formula": ""
+    "ammoType": "bolt",
+    "roundsRemaining": 20
   },
   "_key": "!items!3jFoo4uf3wBfQ1O9"
 }

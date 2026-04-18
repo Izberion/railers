@@ -1,6 +1,6 @@
 {
-  "name": "Arrows (20)",
-  "type": "gear",
+  "name": "Arrows",
+  "type": "ammo",
   "_id": "UYregZaXlPyz02Vl",
   "img": "systems/railers/assets/icons/ammo-icon.svg",
   "system": {
@@ -8,7 +8,8 @@
     "quantity": 1,
     "load": 1,
     "stowage": "other",
-    "formula": ""
+    "ammoType": "arrow",
+    "roundsRemaining": 20
   },
   "_key": "!items!UYregZaXlPyz02Vl"
 }
