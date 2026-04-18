@@ -66,6 +66,12 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     attributesCargo: {
       template: 'systems/railers/templates/item/attribute-parts/cargo.hbs'
     },
+    attributesAmmo: {
+      template: 'systems/railers/templates/item/attribute-parts/ammo.hbs'
+    },
+    attributesMagazine: {
+      template: 'systems/railers/templates/item/attribute-parts/magazine.hbs'
+    },
     effects: {
       template: 'systems/railers/templates/item/effects.hbs'
     }
@@ -105,6 +111,12 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
       case 'cargo':
         options.parts.push('attributesCargo', 'effects');
         break;
+      case 'ammo':
+        options.parts.push('attributesAmmo', 'effects');
+        break;
+      case 'magazine':
+        options.parts.push('attributesMagazine', 'effects');
+        break;
     }
   }
 
@@ -132,6 +144,9 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     context.actionTypeOptions = CONFIG.RAILERS.actionTypeOptions;
     context.weaponSkillOptions = CONFIG.RAILERS.weaponSkillOptions;
     context.clothingTypeOptions = CONFIG.RAILERS.clothingTypeOptions;
+    context.weaponMagTypes = CONFIG.RAILERS.weaponMagTypes;
+    context.magTypes = CONFIG.RAILERS.magTypes;
+    context.ammoTypes = CONFIG.RAILERS.ammoTypes;
 
     return context;
   }
@@ -146,6 +161,8 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
       case 'attributesCargo':
       case 'attributesAbility':
       case 'attributesClothing':
+      case 'attributesAmmo':
+      case 'attributesMagazine':
       case 'mods':
         context.tab = context.tabs[partId];
         break;
@@ -200,30 +217,14 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
           tab.label += 'Description';
           break;
         case 'attributesGear':
-          tab.id = 'attributes';
-          tab.label += 'Attributes';
-          break;
         case 'attributesWound':
-          tab.id = 'attributes';
-          tab.label += 'Attributes';
-          break;
         case 'attributesCar':
-          tab.id = 'attributes';
-          tab.label += 'Attributes';
-          break;
         case 'attributesWeapon':
-          tab.id = 'attributes';
-          tab.label += 'Attributes';
-          break;
         case 'attributesClothing':
-          tab.id = 'attributes';
-          tab.label += 'Attributes';
-          break;
         case 'attributesCargo':
-          tab.id = 'attributes';
-          tab.label += 'Attributes';
-          break;
         case 'attributesAbility':
+        case 'attributesAmmo':
+        case 'attributesMagazine':
           tab.id = 'attributes';
           tab.label += 'Attributes';
           break;
@@ -280,7 +281,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
   /**
    * Renders an embedded document's sheet
    *
-   * @this RailersActorSheet
+   * @this RailersItemSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @protected
@@ -293,7 +294,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
   /**
    * Handles item deletion
    *
-   * @this RailersActorSheet
+   * @this RailersItemSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @protected
@@ -306,7 +307,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
   /**
    * Handle creating a new Owned Item or ActiveEffect for the actor using initial data defined in the HTML dataset
    *
-   * @this RailersActorSheet
+   * @this RailersItemSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @private
@@ -340,7 +341,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
   /**
    * Determines effect parent to pass to helper
    *
-   * @this RailersActorSheet
+   * @this RailersItemSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @private
