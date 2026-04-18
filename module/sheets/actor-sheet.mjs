@@ -6,6 +6,8 @@ import { onRollHp } from "../apps/hp-roller.mjs";
 import { defenseDialog } from "../dialogs/defense-dialog.mjs";
 import { ActorTweaks } from "../apps/actor-tweaks.mjs";
 import { locomotiveChange } from "../dialogs/locomotive-change.mjs";
+import { reloadDialog } from "../dialogs/reload-dialog.mjs";
+import { rollMutationsDialog } from "../dialogs/mutation-dialog.mjs";
 
 
 const { api, sheets } = foundry.applications;
@@ -28,7 +30,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     classes: ['railers', 'actor'],
     position: {
       width: 700,
-      height: 700,
+      height: 860,
     },
     actions: {
       viewDoc: this._viewDoc,
@@ -40,7 +42,10 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       roll: this._onRoll,
       weaponReload: this._onWeaponReload,
       editImage: this._onEditImage,
-      openTweaks: this._openTweaks
+      openTweaks: this._openTweaks,
+      toggleEquipClothing: this._toggleEquipClothing,
+      toggleMagLoaded: this._toggleMagLoaded,
+      rollMutations: this._onMutationRoll
     },
     dragDrop: [{ dragSelector: '[data-drag]', dropSelector: null }],
     form: {
@@ -54,66 +59,45 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
 
   /** @override */
   static PARTS = {
-    header: {
-      template: 'systems/railers/templates/actor/header.hbs',
-    },
-    tabs: {
-      template: 'templates/generic/tab-navigation.hbs',
-    },
-    skills: {
-      template: 'systems/railers/templates/actor/skills.hbs',
-    },
-    biography: {
-      template: 'systems/railers/templates/actor/biography.hbs',
-    },
-    gear: {
-      template: 'systems/railers/templates/actor/gear.hbs',
-    },
-    wounds: {
-      template: 'systems/railers/templates/actor/wounds.hbs',
-    },
-    conditions: {
-      template: 'systems/railers/templates/actor/conditions.hbs'
-    },
-    effects: {
-      template: 'systems/railers/templates/actor/effects.hbs',
-    },
-    cars: {
-      template: 'systems/railers/templates/actor/cars.hbs',
-    },
-    notes: {
-      template: 'systems/railers/templates/actor/notes.hbs',
-    },
-    abilities: {
-      template: 'systems/railers/templates/actor/abilities.hbs',
-    },
-    cargo: {
-      template: 'systems/railers/templates/actor/cargo.hbs',
-    }
+    headerCharacter: { template: 'systems/railers/templates/actor/headers/character.hbs' },
+    headerNpc: { template: 'systems/railers/templates/actor/headers/npc.hbs' },
+    headerDemon: { template: 'systems/railers/templates/actor/headers/demon.hbs' },
+    headerTrain: { template: 'systems/railers/templates/actor/headers/train.hbs' },
+    tabs: { template: 'templates/generic/tab-navigation.hbs' },
+    skills: { template: 'systems/railers/templates/actor/skills.hbs', },
+    combat: { template: 'systems/railers/templates/actor/combat.hbs' },
+    biography: { template: 'systems/railers/templates/actor/biography.hbs' },
+    gear: { template: 'systems/railers/templates/actor/gear.hbs' },
+    wounds: { template: 'systems/railers/templates/actor/wounds.hbs' },
+    survival: { template: 'systems/railers/templates/actor/survival.hbs' },
+    effects: { template: 'systems/railers/templates/actor/effects.hbs' },
+    cars: { template: 'systems/railers/templates/actor/cars.hbs' },
+    notes: { template: 'systems/railers/templates/actor/notes.hbs' },
+    abilities: { template: 'systems/railers/templates/actor/abilities.hbs' },
+    cargo: { template: 'systems/railers/templates/actor/cargo.hbs' }
   };
 
     /** @override */
     _configureRenderOptions(options) {
       super._configureRenderOptions(options);
-      // Not all parts always render
-      options.parts = ['header', 'tabs'];
-      // Don't show the other tabs if only limited view
-      if (this.document.limited) return;
-      // Control which parts show based on document subtype
+      options.parts = [];
+
       switch (this.document.type) {
         case 'character':
-          options.parts.push('biography', 'skills', 'gear', 'wounds', 'conditions', 'effects');
+          options.parts.push('headerCharacter', 'tabs', 'biography', 'skills', 'combat', 'survival', 'gear', 'wounds', 'effects');
           break;
         case 'npc':
-          options.parts.push('biography', 'gear', 'wounds', 'conditions', 'effects');
+          options.parts.push('headerNpc', 'tabs', 'biography', 'gear', 'wounds', 'effects');
           break;
         case 'demon':
-          options.parts.push('abilities', 'wounds', 'conditions', 'notes', 'effects');
+          options.parts.push('headerDemon', 'tabs', 'abilities', 'wounds', 'notes', 'effects');
           break;
         case 'train':
-          options.parts.push('cars', 'cargo', 'notes', 'effects');
+          options.parts.push('headerTrain', 'tabs', 'cars', 'cargo', 'notes', 'effects');
           break;
       }
+
+      if (this.document.limited) options.parts = [options.parts[0]];
     }
 
   /* -------------------------------------------- */
@@ -147,13 +131,20 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
   /** @override */
   async _preparePartContext(partId, context) {
     switch (partId) {
+      case 'headerCharacter':
+        context.showHpRollButton = 
+          this.actor.type === 'character' &&
+          (this.actor.system.attributes.fortitude.value ?? 0) > 
+          (this.actor.getFlag('railers', 'lastHpRollFortitude') ?? 0);
+        break;
       case 'wounds':
       case 'gear':
       case 'abilities':
       case 'skills':
+      case 'combat':
       case 'cars':
       case 'cargo':
-      case 'conditions':
+      case 'survival':
         context.tab = context.tabs[partId];
         break;
       case 'biography':
@@ -204,7 +195,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     // Set default tab based on actor type if not already set
     if (!this.tabGroups[tabGroup]) {
       const defaultTabs = {
-        character: 'biography',
+        character: 'skills',
         npc: 'biography',
         demon: 'abilities',
         train: 'cars'
@@ -223,7 +214,10 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
         label: 'RAILERS.Actor.Tabs.',
       };
       switch (partId) {
-        case 'header':
+        case 'headerCharacter':
+        case 'headerNpc':
+        case 'headerDemon':
+        case 'headerTrain':
         case 'tabs':
           return tabs;
         case 'biography':
@@ -234,13 +228,17 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
           tab.id = 'gear';
           tab.label += 'Gear';
           break;
+        case 'combat':
+          tab.id = 'combat';
+          tab.label += 'Combat';
+          break;
         case 'wounds':
           tab.id = 'wounds';
           tab.label += 'Wounds';
           break;
-        case 'conditions':
-          tab.id = 'conditions';
-          tab.label += 'Conditions';
+        case 'survival':
+          tab.id = 'survival';
+          tab.label += 'Survival';
           break;
         case 'effects':
           tab.id = 'effects';
@@ -284,17 +282,46 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     const bySort = (a, b) => (a.sort || 0) - (b.sort || 0);
 
     context.gear = (grouped.gear ?? []).sort(bySort);
-    context.weapons = (grouped.weapon ?? []).sort(bySort);
-    context.clothing = (grouped.clothing ?? []).sort(bySort);
     context.mutations = (grouped.mutation ?? []).sort(bySort);
-    context.conditions = (grouped.condition ?? []).sort(bySort);
+    context.survival = (grouped.survival ?? []).sort(bySort);
     context.abilities = (grouped.ability ?? []).sort(bySort);
     context.cars = (grouped.car ?? []).sort(bySort);
     context.cargo = (grouped.cargo ?? []).sort(bySort);
+    context.ammo = (grouped.ammo ?? []).sort(bySort);
+    context.magazines = (grouped.magazine ?? []).sort(bySort);
     context.wounds = (grouped.wound ?? []).sort((a, b) => 
       (a.system.severity || 0) - (b.system.severity || 0) || 
       (a.system.damage || 0) - (b.system.damage || 0)
     );
+
+    context.onHandAmmo = (grouped.ammo ?? [])
+      .filter(i => i.system.stowage === 'onHand')
+      .sort(bySort);
+    context.onHandMagazines = (grouped.magazine ?? [])
+      .filter(i => i.system.stowage === 'onHand')
+      .sort(bySort);
+    context.meleeWeapons = (grouped.weapon ?? []).filter(w => w.system.range === 'melee').sort(bySort);
+    context.rangedWeapons = (grouped.weapon ?? []).filter(w => w.system.range !== 'melee').sort(bySort);
+
+    const layerOrder = ['headgear', 'innerwear', 'armor', 'outerwear'];
+    context.clothing = (grouped.clothing ?? []).sort((a, b) => {
+      const aIndex = layerOrder.indexOf(a.system.layer);
+      const bIndex = layerOrder.indexOf(b.system.layer);
+      // Unknown layers go to the end
+      const aOrder = aIndex === -1 ? 999 : aIndex;
+      const bOrder = bIndex === -1 ? 999 : bIndex;
+      return aOrder - bOrder;
+    });
+
+    // For combat tab - on hand only
+    context.onHandMeleeWeapons = context.meleeWeapons.filter(w => w.system.stowage === 'onHand');
+    context.onHandRangedWeapons = context.rangedWeapons.filter(w => w.system.stowage === 'onHand');
+    context.equippedClothing = {
+      headgear: (grouped.clothing ?? []).find(c => c.system.layer === 'headgear' && c.system.equipped && c.system.stowage === 'onHand'),
+      innerwear: (grouped.clothing ?? []).find(c => c.system.layer === 'innerwear' && c.system.equipped && c.system.stowage === 'onHand'),
+      armor: (grouped.clothing ?? []).find(c => c.system.layer === 'armor' && c.system.equipped && c.system.stowage === 'onHand'),
+      outerwear: (grouped.clothing ?? []).find(c => c.system.layer === 'outerwear' && c.system.equipped && c.system.stowage === 'onHand'),
+    };
   }
 
   /** @override */
@@ -334,6 +361,15 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       locomotiveSelect.removeEventListener('change', this._onLocomotiveChange);
       locomotiveSelect.addEventListener('change', this._onLocomotiveChange);
     }
+
+    this.element.querySelectorAll('select[data-action="updateStowage"]').forEach(select => {
+      select.addEventListener('change', async (event) => {
+        const itemId = event.currentTarget.closest('[data-item-id]')?.dataset.itemId;
+        const item = this.document.items.get(itemId);
+        if (!item) return;
+        await item.update({ 'system.stowage': event.currentTarget.value });
+      });
+    });
   }
 
   /**************
@@ -341,13 +377,47 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    *   ACTIONS
    *
    **************/
+  
+
+  static async _onMutationRoll(event, target) {
+    await rollMutationsDialog(this.actor);
+  }
+
+  static async _toggleMagLoaded(event, target) {
+    const itemId = target.dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (!item) return;
+    await item.update({ 'system.loaded': !item.system.loaded });
+  }
+
+  static async _onWeaponReload(event, target) {
+    const itemId = target.closest('[data-item-id]')?.dataset.itemId 
+      ?? target.dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (!item) return;
+    await reloadDialog(this.actor, item);
+  }
+  
+  static async _toggleEquipClothing(event, target) {
+    const item = this._getEmbeddedDocument(target);
+    const layer = item.system.layer;
+    
+    // Unequip all other clothing of same layer
+    const updates = this.actor.items
+      .filter(i => i.type === 'clothing' && i.system.layer === layer && i.id !== item.id)
+      .map(i => ({ _id: i.id, 'system.equipped': false }));
+    
+    await this.actor.updateEmbeddedDocuments('Item', updates);
+    await item.update({ 'system.equipped': !item.system.equipped });
+  }
+
 
   _handleLocomotiveChange(event) {
-  this._locomotivePending = event.target.value;
-  locomotiveChange(this.actor, event.target.value).then(() => {
-    this._locomotivePending = null;
-  });
-}
+    this._locomotivePending = event.target.value;
+    locomotiveChange(this.actor, event.target.value).then(() => {
+      this._locomotivePending = null;
+    });
+  }
   
   static async _openTweaks(event, target) {
     new ActorTweaks({ actor: this.actor }).render(true);
@@ -368,12 +438,6 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     } else {
       item.update({ 'system.damage': damage });
     }
-  }
-  
-  static _onWeaponReload(event, target) {
-    const itemId = target.closest('.item').dataset.itemId;
-    const item = this.actor.items.get(itemId);
-    if (item) item.update({ 'system.magazine.value': item.system.magazine.max });
   }
 
   static async _onEditImage(event, target) {
@@ -514,7 +578,7 @@ static async _viewDoc(event, target) {
           await roll.toMessage({
             speaker: ChatMessage.getSpeaker({ actor: actor }),
             flavor: label,
-            rollMode: game.settings.get('core', 'rollMode'),
+            messageMode: game.settings.get('core', 'messageMode'),
           });
           return roll;
         }
@@ -531,7 +595,7 @@ static async _viewDoc(event, target) {
    * @returns {Item | ActiveEffect} The embedded Item or ActiveEffect
    */
   _getEmbeddedDocument(target) {
-    const li = target.closest("li");
+    const li = target.closest('li') ?? target.closest('[data-item-id]');
     if (!li) return null;
 
     // --- Active Effects ---
@@ -552,7 +616,7 @@ static async _viewDoc(event, target) {
     }
 
     // --- Items ---
-    if (li.dataset.documentClass === "Item" && li.dataset.itemId) {
+    if (li.dataset.itemId) {
       return this.actor.items.get(li.dataset.itemId) ?? null;
     }
 
@@ -592,15 +656,16 @@ static async _viewDoc(event, target) {
    * @protected
    */
   _onDragStart(event) {
-    const docRow = event.currentTarget.closest('li');
+    const docRow = event.currentTarget.closest('li') 
+      ?? event.currentTarget.closest('[data-item-id]')
+      ?? event.currentTarget.closest('[data-effect-id]');
+    
     if ('link' in event.target.dataset) return;
+    if (!docRow) return;
 
-    // Chained operation
-    let dragData = this._getEmbeddedDocument(docRow)?.toDragData();
-
+    const dragData = this._getEmbeddedDocument(docRow)?.toDragData();
     if (!dragData) return;
 
-    // Set data transfer
     event.dataTransfer.setData('text/plain', JSON.stringify(dragData));
   }
 
