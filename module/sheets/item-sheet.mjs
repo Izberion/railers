@@ -196,7 +196,22 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     // If you have sub-tabs this is necessary to change
     const tabGroup = 'primary';
     // Default tab for first time it's rendered this session
-    if (!this.tabGroups[tabGroup]) this.tabGroups[tabGroup] = 'description';
+    if (!this.tabGroups[tabGroup]) {
+      const defaultTabs = {
+        gear: 'description',
+        wound: 'attributes',
+        car: 'description',
+        weapon: 'description',
+        clothing: 'description',
+        mutation: 'description',
+        condition: 'description',
+        ability: 'description',
+        cargo: 'description',
+        ammo: 'description',
+        magazine: 'description'
+      }
+      this.tabGroups[tabGroup] = defaultTabs[this.item.type];
+    }
     return parts.reduce((tabs, partId) => {
       const tab = {
         cssClass: '',
