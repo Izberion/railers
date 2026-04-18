@@ -43,8 +43,8 @@ export default class RailersNPC extends RailersActorBase {
         totalStowedLoad += totalItemLoad;
       }
     }
-    this.load.onHand.value = totalOnHandLoad;
-    this.load.stowed.value = totalStowedLoad;
+    this.load.onHand.value = Math.ceil(totalOnHandLoad);
+    this.load.stowed.value = Math.ceil(totalStowedLoad);
 
     let totalInsulation = 0;
     for (let item of this.parent.items) {
@@ -53,6 +53,23 @@ export default class RailersNPC extends RailersActorBase {
       }
     }
     this.thermalThreshold = -1 * totalInsulation;
+
+    const derivedStats = ["system.thermalThreshold"];
+
+    // Apply active effects that target derived stats
+    for (let effect of this.parent.appliedEffects) {
+      for (let change of effect.changes) {
+        if (!derivedStats.includes(change.key)) continue;
+        const localKey = change.key.replace("system.", "");
+        const current = foundry.utils.getProperty(this, localKey) ?? 0;
+        if (change.mode === CONST.ACTIVE_EFFECT_MODES.ADD)
+          foundry.utils.setProperty(this, localKey, current + Number(change.value));
+        else if (change.mode === CONST.ACTIVE_EFFECT_MODES.OVERRIDE)
+          foundry.utils.setProperty(this, localKey, Number(change.value));
+        else if (change.mode === CONST.ACTIVE_EFFECT_MODES.MULTIPLY)
+          foundry.utils.setProperty(this, localKey, current * Number(change.value));
+      }
+    }
 
     this.wounds.max = this.attributes.primary.value + this.attributes.secondary.value;
     
