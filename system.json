@@ -49,6 +49,12 @@
       },
       "condition": {
         "htmlFields": ["description"]
+      },
+      "magazine": {
+        "htmlFields": ["description"]
+      },
+      "ammo": {
+        "htmlFields": ["description"]
       }
     }
   },
