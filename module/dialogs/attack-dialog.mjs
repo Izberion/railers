@@ -2,7 +2,7 @@ import { buildRollFormula } from "../helpers/roll-formula.mjs";
 
 export async function attackDialog(actor, target) {
 
-  const itemId = target.closest(".item")?.dataset.itemId;
+  const itemId = target.closest('[data-item-id]')?.dataset.itemId;
   const item = actor.items.get(itemId);
 
   const characterName = actor.name;
@@ -20,8 +20,9 @@ export async function attackDialog(actor, target) {
   const damage = item.system.damage || 0;
   const severity = item.system.severity || 0;
   const isRanged = item.system.range !== "melee";
+  const isConsumable = item.system.isConsumable ?? false;
 
-  const content = await foundry.applications.handlebars.renderTemplate("systems/railers/templates/dialog/attack-dialog.hbs", { isRanged });
+  const content = await foundry.applications.handlebars.renderTemplate("systems/railers/templates/dialog/attack-dialog.hbs", { isRanged, isConsumable });
 
   await foundry.applications.api.DialogV2.prompt({
     window: {
@@ -44,34 +45,40 @@ export async function attackDialog(actor, target) {
         let poolTotal = attribute + skill;
         let ammoReduction = 0;
 
-        switch (actionType) {
-          case "blindFire":
-            poolTotal -= 3;
-            ammoReduction = 1;
-            break;
-          case "burstFire":
-            ammoReduction = 3;
-            break;
-          case "sustainedFire":
-            ammoReduction = 10;
-            break;
-          case "fieldOfFire":
-            poolTotal -= 2;
-            ammoReduction = 30;
-            break;
-          case "reactiveShot":
-            tn = Math.min(tn + 1, 8);
-            ammoReduction = 1;
-            break;
-          default:
-            ammoReduction = 1;
+        if (!isConsumable) {
+          switch (actionType) {
+            case "blindFire":
+              poolTotal -= 3;
+              ammoReduction = 1;
+              break;
+            case "burstFire":
+              ammoReduction = 3;
+              break;
+            case "sustainedFire":
+              ammoReduction = 10;
+              break;
+            case "fieldOfFire":
+              poolTotal -= 2;
+              ammoReduction = 30;
+              break;
+            case "reactiveShot":
+              tn = Math.min(tn + 1, 8);
+              ammoReduction = 1;
+              break;
+            default:
+              ammoReduction = 1;
+          }
         }
 
         poolTotal += mod;
 
-        // Check ammo
-        if (isRanged && (item.system.magazine?.value ?? Infinity) < ammoReduction) {
+        // Check ammo / quantity
+        if (isRanged && !isConsumable && (item.system.magazine?.value ?? Infinity) < ammoReduction) {
           ui.notifications.error(game.i18n.localize("RAILERS.dialogs.attack.notEnoughAmmo"));
+          return {};
+        }
+        if (isConsumable && (item.system.quantity ?? 0) < 1) {
+          ui.notifications.error(game.i18n.localize("RAILERS.dialogs.attack.notEnoughQuantity"));
           return {};
         }
 
@@ -92,9 +99,20 @@ export async function attackDialog(actor, target) {
         await r.evaluate();
         const rollResultHTML = await r.render();
 
-        // Update ammo
-        if (isRanged) {
-          await item.update({ "system.magazine.value": item.system.magazine.value - ammoReduction });
+        // Update ammo / quantity
+        if (isConsumable) {
+          await item.update({ 'system.quantity': item.system.quantity - 1 });
+        } else if (isRanged) {
+          const newMagValue = item.system.magazine.value - ammoReduction;
+          await item.update({ 'system.magazine.value': newMagValue });
+
+          const loadedMagId = item.system.loadedMagId;
+          if (loadedMagId) {
+            const loadedMag = actor.items.get(loadedMagId);
+            if (loadedMag) {
+              await loadedMag.update({ 'system.ammo.value': newMagValue });
+            }
+          }
         }
 
         // Post to chat
@@ -102,7 +120,7 @@ export async function attackDialog(actor, target) {
           user: game.user.id,
           speaker: { actor: actor, alias: characterName },
           flavor: game.i18n.format("RAILERS.chat.roll.rollAttack", { rollName, tn }),
-          content: `${rollResultHTML}<div class="dice-results">${game.i18n.format("RAILERS.chat.roll.damageResult", { damage, severity })}</div>`
+          content: `${rollResultHTML}<div class="dice-results">${game.i18n.format("RAILERS.dialogs.attack.damageResult", { damage, severity })}</div>`
         });
 
         return {};
