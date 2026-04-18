@@ -32,6 +32,8 @@ export default class RailersClothing extends RailersItemBase {
       initial: 0
     });
 
+    schema.equipped = new fields.BooleanField({ initial: false });
+
     return schema;
   }
 
