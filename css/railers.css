@@ -1,5 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"); */
-/* Global styles */
+
+/* ==================== GLOBAL STYLES ==================== */
+
 .window-app {
   font-family: "Roboto", sans-serif;
 }
@@ -10,6 +12,9 @@
   cursor: pointer;
 }
 
+/* ==================== GRID UTILITIES ==================== */
+
+/* Grid base - 2 columns */
 .grid,
 .grid-2col {
   display: grid;
@@ -20,6 +25,7 @@
   padding: 0;
 }
 
+/* Multi-column grids (3-12 columns) */
 .grid-3col {
   grid-column: span 3/span 3;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -70,6 +76,7 @@
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+/* Grid column start positions */
 .grid-start-2 {
   grid-column-start: 2;
 }
@@ -114,6 +121,7 @@
   grid-column-start: 12;
 }
 
+/* Grid column spans */
 .grid-span-2 {
   grid-column-end: span 2;
 }
@@ -158,6 +166,9 @@
   grid-column-end: span 12;
 }
 
+/* ==================== FLEXBOX UTILITIES ==================== */
+
+/* Flex groups - centering, spacing */
 .flex-group-center,
 .flex-group-left,
 .flex-group-right {
@@ -202,6 +213,7 @@
   flex: 2;
 }
 
+/* Alignment utilities */
 .align-left {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -223,6 +235,8 @@
   text-align: center;
 }
 
+/* ==================== GENERAL UTILITIES ==================== */
+
 .h100 {
   height: 100%;
 }
@@ -231,22 +245,91 @@
   cursor: pointer;
 }
 
-  /* Styles limited to railers sheets */
+/* ==================== ITEM SHEET ==================== */
+
+.railers.item .sheet-head {
+  display: flex;
+}
+
+.railers.item .item-sheet-body {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.railers.item .item-sheet-group {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+}
+
+.railers.item .item-sheet-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.railers.item .section-label {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+/* =====================================================================
+   ACTOR SHEET STYLES
+   ===================================================================== */
+
+/* ==================== ACTOR SHEET - GENERAL ==================== */
+
+.railers .tab[data-tab].active {
+  display: block;
+  overflow-y: auto;
+}
+
+.railers .sheet-body,
+.railers .sheet-body .tab,
+.railers .sheet-body .tab .editor {
+  height: 100%;
+}
+
+.railers .character .sheet-body,
+.railers .npc .sheet-body,
+.railers .train .sheet-body,
+.railers .demon .sheet-body {
+  padding-left: 130px;
+}
+
+/* General actor utilities */
+.railers span {
+  align-self: center;
+  font-size: 16px;
+}
+
+button.fa-circle.control[data-tool="foreground"] { 
+  display: none !important; 
+}
+
+/* ==================== ACTOR SHEET - HEADER ==================== */
 
 .railers.actor .sheet-head {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+
 .railers .sheet-head input[type="text"] {
   height: auto
 }
+
 .railers.actor .header-top {
   display: flex;
   flex-direction: row;
   gap: 12px;
   align-items: flex-start;
 }
+
 .railers.actor .header-identity {
   display: flex;
   flex-direction: row;
@@ -254,19 +337,23 @@
   align-items: flex-start;
   flex: 0 0 auto;
 }
+
 .railers.actor .header-name-vitals {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
+
 .railers.actor .name-xp {
   display: flex;
-  gap: 60px;
+  gap: 50px;
 }
+
 .railers.actor .charname .resource {
   justify-content: flex-start;
   line-height: 1;
 }
+
 .railers.actor .header-vitals {
   display: flex;
   flex-direction: row;
@@ -274,6 +361,7 @@
   align-items: center;
   padding-bottom: 8px;
 }
+
 .railers.actor .header-secondary {
   display: flex;
   flex-direction: row;
@@ -281,14 +369,14 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
 .railers.actor .hp-button {
   padding-bottom: 5px;
   align-self: flex-end;
 }
-.railers .tab[data-tab].active {
-  display: block;
-  overflow-y: auto;
-}
+
+/* ==================== ACTOR SHEET - INPUT FIELDS & FORM CONTROLS ==================== */
+
 .railers input[type="number"] {
   width: 36px;
   max-width: 36px;
@@ -296,471 +384,56 @@
   min-width: inherit;
   text-align: center;
 }
+
 .railers input[type="number"].w50 {
   width: 50px;
   max-width: 50px;
 }
-.railers input[type="number"].w40 {
-  width: 40px;
-  max-width: 40px;
-}
+
 .railers input[type="number"].therms {
   width: 60px;
   max-width: 60px;
 }
-.railers .gear-head {
-  justify-content: space-evenly;
-  display: flex;
-}
-.railers .gear-head .load-group {
-  display: flex;
-  gap: 20px;
-}
-.railers .sheet-body,
-.railers .sheet-body .tab,
-.railers .sheet-body .tab .editor {
-  height: 100%;
-}
-.railers .character .sheet-body,
-.railers .npc .sheet-body,
-.railers .train .sheet-body,
-.railers .demon .sheet-body {
-  padding-left: 130px;
-}
-.railers .resource-label {
-  font-weight: bold;
-  font-size: 1em;
-  text-decoration: none;
-}
-.railers .items-header,
-.railers .weapons-header,
-.railers .clothing-header {
-  height: 28px;
-  margin: 2px 0;
-  padding: 0;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.05);
-  border: 2px groove #eeede0;
-  font-weight: bold;
-}
-.railers .items-header > *,
-.railers .weapons-header > *,
-.railers .clothing-header > * {
-  font-size: 14px;
-  text-align: center;
-}
-.railers .items-header .item-name,
-.railers .weapons-header .weapon-name,
-.railers .clothing-header .clothing-name {
-  font-weight: bold;
-  padding-left: 5px;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.railers .item-load,
-.railers .item-stowage,
-.railers .wound-damage,
-.railers .wound-severity,
-.railers .item-quantity,
-.railers .textcenter {
-  text-align: center;
-}
-.railers .items-list,
-.railers .clothing-list,
-.railers .weapons-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow-y: auto;
-  scrollbar-width: thin;
-}
-.railers .items-list .item-list,
-.railers .weapons-list .weapon-list,
-.railers .clothing-list .clothing-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.railers .items-list .item-name,
-.railers .weapons-list .weapon-name,
-.railers .clothing-list .clothing-name {
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-  margin: 0;
-  overflow: hidden;
-  font-size: 13px;
-  text-align: left;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 
-.railers .demon .items-list .item-name,
-.railers .conditions-list .item-name,
-.railers .mutations-list .item-name {
-  flex: 1;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-}
-
-.railers .items-list .item-name h3, .railers .items-list .item-name h4,
-.railers .clothing-list .clothing-name h3, .railers .clothing-list .clothing-name h4,
-.railers .weapons-list .weapon-name h3, .railers .weapons-list .weapon-name h4 {
-  margin: 0;
-  white-space: nowrap;
-  overflow-x: hidden;
-}
-.railers .items-list .item-controls,
-.railers .wound-controls,
-.railers .clothing-list .clothing-controls,
-.railers .weapons-list .weapon-controls,
-.railers .ability-controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100px;
-  flex: 0 0 100px;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  width: 110px;
-}
-.railers .items-list .item-controls a,
-.railers .wound-controls a,
-.railers .weapons-list .weapon-controls a,
-.railers .clothing-list .clothing-controls a,
-.railers .ability-controls a {
-  font-size: 12px;
-  text-align: center;
-  margin: 0 6px;
-  text-wrap-mode: nowrap;
-}
-.railers .items-list .item,
-.railers .weapons-list .weapon,
-.railers .clothing-list .clothing {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 2px;
-  border-bottom: 1px solid #c9c7b8;
-}
-.railers .items-list .item:last-child,
-.railers .weapons-list .weapon:last-child,
-.railers .clothing-list .clothing:last-child {
-  border-bottom: none;
-}
-.railers .items-list .item .item-name .item-image,
-.railers .weapons-list .weapon .weapon-name .weapon-image,
-.railers .clothing-list .clothing .clothing-name .clothing-image {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 30px;
-  flex: 0 0 30px;
-  height: 30px;
-  background-size: 30px;
-  border: none;
-  margin-right: 5px;
-}
-.railers .items-list .item-prop,
-.railers .weapons-list .weapon-prop,
-.railers .clothing-list .clothing-prop {
-  text-align: center;
-  border-left: 1px solid #c9c7b8;
-  border-right: 1px solid #c9c7b8;
-  font-size: 12px;
-}
-.railers .items-list .items-header,
-.railers .weapons-list .weapons-header,
-.railers .clothing-list .clothing-header {
-  height: 28px;
-  margin: 2px 0;
-  padding: 0;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.05);
-  border: 2px groove #eeede0;
-  font-weight: bold;
-}
-.railers .items-list .items-header > *,
-.railers .weapons-list .weapons-header > *,
-.railers .clothing-list .clothing-header > * {
-  font-size: 12px;
-  text-align: center;
-}
-.railers .items-list .items-header .item-name,
-.railers .weapons-list .weapons-header .weapon-name,
-.railers .clothing-list .clothing-header .clothing-name {
-  padding-left: 5px;
-  text-align: left;
-}
-.railers .items-list .item-description {
-  text-align: left;
-}
-.railers .effects .item .effect-source,
-.railers .effects .item .effect-duration,
-.railers .effects .item .effect-description,
-.railers .effects .item .effect-controls {
-  text-align: center;
-  border-left: 1px solid #c9c7b8;
-  border-right: 1px solid #c9c7b8;
-  font-size: 12px;
-}
-.railers .effects .item .effect-controls {
-  border: none;
-}
-.railers .widthmin {
-  width: min-content;
-}
-.railers .fillspace {
-  width: -webkit-fill-available;
-}
-.railers .resource {
-  padding-bottom: 5px;
-  justify-items: center;
-  align-items: center;
-  gap: 5px;
-  display: flex;
-  flex-direction: column;
-}
-.railers .train-resources {
-  display: flex;
-  flex-direction: row;
-  padding: 0 5px;
-  align-items: flex-start;
-}
-.railers .attributes,
-.railers .skills,
-.railers .stats,
-.railers .derived-stats {
-  text-align: center;
-}
-.railers span {
-  align-self: center;
-  font-size: 16px;
-}
-.railers.item .sheet-head {
-  display: flex;
-}
-.railers.item .item-sheet-body {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: space-evenly;
-}
-.railers.item .item-sheet-group {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  justify-content: center;
-}
-.railers.item .item-sheet-column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.railers.item .section-label {
-  font-weight: bold;
-  text-decoration: underline;
-  font-size: 1.5rem;
-}
-.railers .flower {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  flex-wrap: wrap;
-}
-.railers .hex {
-  display: flex;
-  position: relative;
-  width: 100px;
-  height: 96px;
-  margin: -8px -12px;
-  background-color: #ffffff;
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-}
-.railers .hex.inactive::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(128, 128, 128, 0.5);
-}
-.railers .hex.active::after {
-  content: none;
-}
-.railers .hex.active:hover {
-  text-shadow: 0 0 10px red;
-  cursor: pointer;
-}
-.railers .hex img,
-.railers .d12hex img {
-  object-fit: fill;
-  border: none;
-}
-.railers .d12hex-wrapper {
-  position: relative;
-  padding: 25px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-.railers .d12hex {
-  display: flex;
-  position: relative;
-  width: 100px;
-  height: 96px;
-  background-color: #ffffff;
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-}
-.railers .d12hex .inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: black;
-}
-.railers .d12hex:hover {
-  text-shadow: 0 0 10px red;
-  cursor: pointer;
-}
-.railers .d12hex-wrapper .face {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-}
-.railers .d12hex-wrapper .face.top {
-  transform: translate(0%, -75%);
-}
-.railers .d12hex-wrapper .face.right-top {
-  transform: translate(100%, -25%);
-}
-.railers .d12hex-wrapper .face.right-bottom {
-  transform: translate(100%, 85%);
-}
-.railers .d12hex-wrapper .face.bottom {
-  transform: translate(0%, 145%);
-}
-.railers .d12hex-wrapper .face.left-bottom {
-  transform: translate(-100%, 85%);
-}
-.railers .d12hex-wrapper .face.left-top {
-  transform: translate(-100%, -25%);
-}
-#railers-weather-hud {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: white;
-  z-index: 100;
-  width: 220px;
-  height: 75px;
-}
-.weather-hud {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-.weather-hud .weather {
-  width: 50%;
-  display: grid;
-  justify-items: center;
-  align-content: center;
-}
-.weather-hud .right-column {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-.weather-hud .temperature {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-}
-.weather-hud .season {
-  height: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-}
-.weather-hud img {
-  width: 50px;
-  height: 50px;
-  vertical-align: middle;
-  border: none;
-}
-.dice-results {
-  flex: 0 0 100%;
-  position: relative;
-  margin: 5px 0 0 0;
-  line-height: 24px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--color-border-light-2);
-  border-radius: 3px;
-  box-shadow: 0 0 2px #FFF inset;
-  word-break: break-all;
-}
-.railers .ability-description,
-.railers .condition-description,
-.railers .mutation-description {
-  flex: 2;
-}
 .railers label.checkbox {
   font-size: 14px;
 }
-.railers .toggle {
-  text-align: center;
-  justify-self: flex-start;
-}
+
 .railers label.roll:hover {
   text-shadow: 0 0 10px red;
   cursor: pointer;
 }
+
 .railers label.roll[data-rollable="false"]:hover {
   text-shadow: none;
   cursor: default;
 }
+
+/* ==================== ACTOR SHEET - ATTRIBUTES & SKILLS TAB ==================== */
+
 .railers .skill-tab {
   display: flex;
 }
+
 .railers label.att-label {
   font-weight: bold;
   padding: 10px 0 5px 0;
 }
+
 .railers label.skill-label {
   padding-bottom: 5px;
 }
+
 .railers .attribute-container {
   display: grid;
   grid-template-columns: repeat(8, minmax(80px, 1fr));
 }
+
 .railers .skill-container {
   display: grid;
   grid-template-columns: repeat(8, minmax(80px, 1fr));
 }
+
 .railers .skill,
 .railers .stat {
   padding: 5px 0;
@@ -768,28 +441,26 @@
   flex-direction: column;
   place-items: center;
 }
+
 .railers .attribute {
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   place-items: center;
 }
+
 .railers .att-group {
   padding: 0 5px;
 }
-.railers .load-label {
-  margin-left: 25%;
-}
-.railers .biography {
-  height: 100%;
-}
-section.tab.biography.active > prose-mirror {
-  height: 100%;
+
+.railers .attributes,
+.railers .skills,
+.railers .stats,
+.railers .derived-stats {
+  text-align: center;
 }
 
-button.fa-circle.control[data-tool="foreground"] { 
-  display: none !important; 
-}
+/* ==================== ACTOR SHEET - COMBAT TAB ==================== */
 
 .railers.actor .combat-head,
 .railers.actor .survival-head {
@@ -799,6 +470,7 @@ button.fa-circle.control[data-tool="foreground"] {
   padding: 10px;
   gap: 40px;
 }
+
 .railers.actor .combat-body,
 .railers.actor .survival-body {
   display: flex;
@@ -813,6 +485,66 @@ button.fa-circle.control[data-tool="foreground"] {
   min-width: 0; 
 }
 
+/* Weapon cards */
+.railers.actor .weapon-category-header {
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin: 8px 0 4px;
+}
+
+.railers.actor .weapon-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.railers.actor .weapon-card {
+  padding: 8px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.railers.actor .weapon-card-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.railers.actor .weapon-name {
+  flex: 1;
+  font-weight: bold;
+}
+
+.railers.actor .weapon-card-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.85em;
+}
+
+.railers.actor .weapon-stat label {
+  font-size: 0.85em;
+  margin-right: 4px;
+}
+
+.railers.actor .weapon-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: auto;
+}
+
+.railers.actor .weapon-roll-btn,
+.railers.actor .weapon-reload-btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* Clothing cards (also used in survival) */
 .railers.actor .combat-clothing,
 .railers.actor .survival-clothing {
   flex: 0 0 200px;
@@ -874,72 +606,6 @@ button.fa-circle.control[data-tool="foreground"] {
   margin-right: 2px;
 }
 
-.railers.actor .weapon-category-header {
-  font-size: 1.5em;
-  text-decoration: underline;
-  margin: 8px 0 4px;
-}
-
-.railers.actor .weapon-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-
-.railers.actor .weapon-card {
-  padding: 8px;
-  width: 180px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.railers.actor .mutation-card {
-  padding: 8px;
-  width: 368px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.railers.actor .weapon-card-header {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.railers.actor .weapon-name {
-  flex: 1;
-  font-weight: bold;
-}
-
-.railers.actor .weapon-card-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  font-size: 0.85em;
-}
-
-.railers.actor .weapon-stat label {
-  font-size: 0.85em;
-  margin-right: 4px;
-}
-
-.railers.actor .weapon-card-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-top: auto;
-}
-
-.railers.actor .weapon-roll-btn,
-.railers.actor .weapon-reload-btn {
-  width: 100%;
-  text-align: center;
-}
-
 .railers.actor .equipped-stats {
   display: flex;
   flex-direction: row;
@@ -951,6 +617,32 @@ button.fa-circle.control[data-tool="foreground"] {
 .railers.actor .equipped-stat label {
   font-size: 0.85em;
   margin-right: 2px;
+}
+
+/* Mutation cards */
+.railers.actor .mutation-card {
+  padding: 8px;
+  width: 368px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ==================== ACTOR SHEET - GEAR TAB ==================== */
+
+.railers .gear-head {
+  justify-content: space-evenly;
+  display: flex;
+  padding: 10px
+}
+
+.railers .gear-head .load-group {
+  display: flex;
+  gap: 20px;
+}
+
+.railers .load-label {
+  margin-left: 25%;
 }
 
 .railers.actor section.tab.gear.active select {
@@ -965,6 +657,444 @@ button.fa-circle.control[data-tool="foreground"] {
   background-color: var(--background);
 }
 
+/* ==================== ACTOR SHEET - BIOGRAPHY TAB ==================== */
+
+.railers .biography {
+  height: 100%;
+}
+
+section.tab.biography.active > prose-mirror {
+  height: 100%;
+}
+
+/* ==================== ACTOR SHEET - INVENTORY / LIST SECTIONS ==================== */
+
+.railers .resource-label {
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.railers .resource {
+  padding-bottom: 5px;
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.railers .train-resources {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5px;
+  align-items: flex-start;
+}
+
+/* Headers and cells for lists */
+.railers .items-header,
+.railers .weapons-header,
+.railers .clothing-header {
+  height: 28px;
+  margin: 2px 0;
+  padding: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+  border: 2px groove #eeede0;
+  font-weight: bold;
+}
+
+.railers .items-header > *,
+.railers .weapons-header > *,
+.railers .clothing-header > * {
+  font-size: 14px;
+  text-align: center;
+}
+
+.railers .items-header .item-name,
+.railers .weapons-header .weapon-name,
+.railers .clothing-header .clothing-name {
+  font-weight: bold;
+  padding-left: 5px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.railers .item-load,
+.railers .item-stowage,
+.railers .wound-damage,
+.railers .wound-severity,
+.railers .item-quantity,
+.railers .textcenter {
+  text-align: center;
+}
+
+.railers .items-list,
+.railers .clothing-list,
+.railers .weapons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.railers .items-list .item-list,
+.railers .weapons-list .weapon-list,
+.railers .clothing-list .clothing-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.railers .items-list .item-name,
+.railers .weapons-list .weapon-name,
+.railers .clothing-list .clothing-name {
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  margin: 0;
+  overflow: hidden;
+  font-size: 13px;
+  text-align: left;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.railers .demon .items-list .item-name,
+.railers .conditions-list .item-name,
+.railers .mutations-list .item-name {
+  flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+}
+
+.railers .items-list .item-name h3, .railers .items-list .item-name h4,
+.railers .clothing-list .clothing-name h3, .railers .clothing-list .clothing-name h4,
+.railers .weapons-list .weapon-name h3, .railers .weapons-list .weapon-name h4 {
+  margin: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.railers .items-list .item-controls,
+.railers .wound-controls,
+.railers .clothing-list .clothing-controls,
+.railers .weapons-list .weapon-controls,
+.railers .ability-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 110px;
+}
+
+.railers .items-list .item-controls a,
+.railers .wound-controls a,
+.railers .weapons-list .weapon-controls a,
+.railers .clothing-list .clothing-controls a,
+.railers .ability-controls a {
+  font-size: 12px;
+  text-align: center;
+  margin: 0 6px;
+  text-wrap-mode: nowrap;
+}
+
+.railers .items-list .item,
+.railers .weapons-list .weapon,
+.railers .clothing-list .clothing {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2px;
+  border-bottom: 1px solid #c9c7b8;
+}
+
+.railers .items-list .item:last-child,
+.railers .weapons-list .weapon:last-child,
+.railers .clothing-list .clothing:last-child {
+  border-bottom: none;
+}
+
+.railers .items-list .item .item-name .item-image,
+.railers .weapons-list .weapon .weapon-name .weapon-image,
+.railers .clothing-list .clothing .clothing-name .clothing-image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  height: 30px;
+  background-size: 30px;
+  border: none;
+  margin-right: 5px;
+}
+
+.railers .items-list .item-prop,
+.railers .weapons-list .weapon-prop,
+.railers .clothing-list .clothing-prop {
+  text-align: center;
+  border-left: 1px solid #c9c7b8;
+  border-right: 1px solid #c9c7b8;
+  font-size: 12px;
+}
+
+.railers .items-list .items-header,
+.railers .weapons-list .weapons-header,
+.railers .clothing-list .clothing-header {
+  height: 28px;
+  margin: 2px 0;
+  padding: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+  border: 2px groove #eeede0;
+  font-weight: bold;
+}
+
+.railers .items-list .items-header > *,
+.railers .weapons-list .weapons-header > *,
+.railers .clothing-list .clothing-header > * {
+  font-size: 12px;
+  text-align: center;
+}
+
+.railers .items-list .items-header .item-name,
+.railers .weapons-list .weapons-header .weapon-name,
+.railers .clothing-list .clothing-header .clothing-name {
+  padding-left: 5px;
+  text-align: left;
+}
+
+.railers .items-list .item-description {
+  text-align: left;
+}
+
+/* ==================== ACTOR SHEET - EFFECTS & CONDITIONS ==================== */
+
+.railers .effects .item .effect-source,
+.railers .effects .item .effect-duration,
+.railers .effects .item .effect-description,
+.railers .effects .item .effect-controls {
+  text-align: center;
+  border-left: 1px solid #c9c7b8;
+  border-right: 1px solid #c9c7b8;
+  font-size: 12px;
+}
+
+.railers .effects .item .effect-controls {
+  border: none;
+}
+
+.railers .ability-description,
+.railers .condition-description,
+.railers .mutation-description {
+  flex: 2;
+}
+
+/* =====================================================================
+   END ACTOR SHEET STYLES
+   ===================================================================== */
+
+/* ==================== WEATHER FLOWER ==================== */
+
+.railers .flower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.railers .hex {
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 96px;
+  margin: -8px -12px;
+  background-color: #ffffff;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.railers .hex.inactive::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.railers .hex.active::after {
+  content: none;
+}
+
+.railers .hex.active:hover {
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}
+
+.railers .hex img,
+.railers .d12hex img {
+  object-fit: fill;
+  border: none;
+}
+
+/* D12 Hexagon dice display */
+.railers .d12hex-wrapper {
+  position: relative;
+  padding: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.railers .d12hex {
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 96px;
+  background-color: #ffffff;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.railers .d12hex .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+.railers .d12hex:hover {
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}
+
+/* D12 face positioning */
+.railers .d12hex-wrapper .face {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.railers .d12hex-wrapper .face.top {
+  transform: translate(0%, -75%);
+}
+
+.railers .d12hex-wrapper .face.right-top {
+  transform: translate(100%, -25%);
+}
+
+.railers .d12hex-wrapper .face.right-bottom {
+  transform: translate(100%, 85%);
+}
+
+.railers .d12hex-wrapper .face.bottom {
+  transform: translate(0%, 145%);
+}
+
+.railers .d12hex-wrapper .face.left-bottom {
+  transform: translate(-100%, 85%);
+}
+
+.railers .d12hex-wrapper .face.left-top {
+  transform: translate(-100%, -25%);
+}
+
+/* ==================== WEATHER HUD ==================== */
+
+#railers-weather-hud {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  z-index: 100;
+  width: 220px;
+  height: 75px;
+}
+
+.weather-hud {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.weather-hud .weather {
+  width: 50%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.weather-hud .right-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.weather-hud .temperature {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.weather-hud .season {
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.weather-hud img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  border: none;
+}
+
+/* ==================== DICE RESULTS ==================== */
+
+.dice-results {
+  flex: 0 0 100%;
+  position: relative;
+  margin: 5px 0 0 0;
+  line-height: 24px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border-light-2);
+  border-radius: 3px;
+  box-shadow: 0 0 2px #FFF inset;
+  word-break: break-all;
+}
+
+/* ==================== DIALOGS & MODALS ==================== */
+
+/* Magazine selection dialog */
 .mag-selection {
   display: flex;
   flex-direction: column;
@@ -974,4 +1104,45 @@ button.fa-circle.control[data-tool="foreground"] {
 .mag-option {
   display: flex;
   gap: 8px;
+}
+
+/* Attribute roller dialog */
+.attribute-roller {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attribute-roll-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.attribute-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+span.attr-result {
+  margin-left: 16px;
+}
+
+.bonus-attribute {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+p.hint {
+  margin: 0;
+  font-size: .85em;
+}
+
+.attribute-footer {
+  padding-top: 10px;
+}
+
+button[data-action="apply"] {
+  justify-self: end;
 }
