@@ -1,15 +1,22 @@
-{{! Attributes Tab }}
+{{! Cargo - Attributes Tab }}
 <section
   class='tab attributes {{tab.cssClass}}'
   data-group='primary'
   data-tab='attributes'
 >
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Item.Cargo.FIELDS.purchasePrice"}}</label>
-        <input type="number" name="system.price" value="{{system.price}}" data-dtype="Number"/>
+  <div class="item-sheet-body">
+    <div class="item-sheet-column">
+      <label class="section-label">{{localize "RAILERS.Item.base.header.trade"}}</label>
+      <div class="item-sheet-group">
+        <div class="resource">
+            <label class="resource-label">{{localize "RAILERS.Item.Cargo.FIELDS.purchasePrice"}}</label>
+            <input type="number" name="system.price" value="{{system.price}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+            <label class="resource-label">{{localize "RAILERS.Item.Cargo.FIELDS.weight"}}</label>
+            <input type="number" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
+        </div>
+      </div>
     </div>
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Item.Cargo.FIELDS.weight"}}</label>
-        <input type="number" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
-    </div>
+  </div>
 </section>

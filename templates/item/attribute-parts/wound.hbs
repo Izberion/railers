@@ -1,15 +1,22 @@
-{{! Attributes Tab }}
+{{! Wound - Attributes Tab }}
 <section
   class='tab attributes {{tab.cssClass}}'
   data-group='primary'
   data-tab='attributes'
 >
-    <div class="attribute">
-        <label for="system.damage">{{localize "RAILERS.Item.Wound.FIELDS.damage"}}:</label>
-        <input name="system.damage" type="number" min="0" step="1" value="{{system.damage}}" />
+  <div class="item-sheet-body">
+    <div class="item-sheet-column">
+      <label class="section-label">{{localize "RAILERS.Item.base.header.stats"}}</label>
+      <div class="item-sheet-group">
+        <div class="resource">
+            <label class="resource-label">{{localize "RAILERS.Item.Wound.FIELDS.damage"}}</label>
+            <input type="number" name="system.damage" min="0" step="1" value="{{system.damage}}"/>
+        </div>
+        <div class="resource">
+            <label class="resource-label">{{localize "RAILERS.Item.Wound.FIELDS.severity"}}</label>
+            <input type="number" name="system.severity" min="0" step="1" value="{{system.severity}}"/>
+        </div>
+      </div>
     </div>
-    <div class="attribute">
-        <label for="system.severity">{{localize "RAILERS.Item.Wound.FIELDS.severity"}}:</label>
-        <input name="system.severity" type="number" min="0" step="1" value="{{system.severity}}" />
-    </div>
+  </div>
 </section>

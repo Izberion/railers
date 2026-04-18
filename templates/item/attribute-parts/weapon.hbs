@@ -4,46 +4,108 @@
   data-group='primary'
   data-tab='attributes'
 >
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.damage"}}</label>
-        <input type="number" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
-    </div>
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.severity"}}</label>
-        <input type="number" name="system.severity" value="{{system.severity}}" data-dtype="Number"/>
-    </div>
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.attack"}}</label>
-        <select name="system.attack">
-            {{selectOptions config.actionTypeOptions selected=system.attack localize=true}}
-        </select>
-    </div>
+
+  {{! === COMBAT === }}
+  <div class="item-sheet-body">
+    <div class="item-sheet-column">
+        <label class="section-label">{{localize "RAILERS.Item.base.header.combat"}}</label>
+        <div class="item-sheet-group">
+            <div class="resource">
+                <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.damage"}}</label>
+                <input type="number" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
+            </div>
+            <div class="resource">
+                <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.severity"}}</label>
+                <input type="number" name="system.severity" value="{{system.severity}}" data-dtype="Number"/>
+            </div>
+        </div>
+
         <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.range.label"}}</label>
-        <select name="system.range">
-            {{selectOptions config.rangeOptions selected=system.range localize=true}}
-        </select>
+            <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.attack"}}</label>
+            <select name="system.attack">
+                {{selectOptions config.actionTypeOptions selected=system.attack localize=true}}
+            </select>
+        </div>
+        <div class="resource">
+            <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.reload"}}</label>
+            <select name="system.reload">
+                {{selectOptions config.actionTypeOptions selected=system.reload localize=true}}
+            </select>
+        </div>
+        <div class="resource">
+            <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.range.label"}}</label>
+            <select name="system.range">
+                {{selectOptions config.rangeOptions selected=system.range localize=true}}
+            </select>
+        </div>
+        <div class="resource">
+            <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.skill"}}</label>
+            <select name="system.skill">
+                {{selectOptions config.weaponSkillOptions selected=system.skill localize=true}}
+            </select>
+        </div>
+        <div class="resource">
+            <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.isConsumable"}}</label>
+            <input type="checkbox" name="system.isConsumable" {{#if system.isConsumable}}checked{{/if}}/>
+        </div>
     </div>
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.reload"}}</label>
-        <select name="system.reload">
-            {{selectOptions config.actionTypeOptions selected=system.reload localize=true}}
-        </select>
+
+    <div class="item-sheet-column">
+
+        <div class="item-sheet-column">
+            <label class="section-label">{{localize "RAILERS.Item.base.header.supply"}}</label>
+            {{#if system.isConsumable}}
+            {{! === CONSUMABLE === }}
+            <div class="weapon-consumable">
+                <div class="resource">
+                    <label class="resource-label">{{localize "RAILERS.Item.base.FIELDS.quantity"}}</label>
+                    <input type="number" name="system.quantity" value="{{system.quantity}}" min="0"/>
+                </div>
+            </div>
+
+            {{else}}
+
+            {{! === AMMUNITION === }}
+            <div class="item-sheet-column">
+                <div class="resource">
+                    <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.ammoType"}}</label>
+                    <select name="system.ammoType">
+                        <option value="">{{localize "RAILERS.Item.Ammo.FIELDS.ammoType.none"}}</option>
+                        {{selectOptions config.ammoTypes selected=system.ammoType localize=true}}
+                    </select>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.magType.label"}}</label>
+                    <select name="system.magType">
+                        <option value="">{{localize "RAILERS.Item.Weapon.FIELDS.magType.none"}}</option>
+                        {{selectOptions config.weaponMagTypes selected=system.magType localize=true}}
+                    </select>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.magazine"}}</label>
+                    <input type="number" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
+                </div>
+            </div>
+
+            {{/if}}
+
+        </div>
+
+
+        {{! === CARRY === }}
+        <div class="item-sheet-column">
+            <label class="section-label">{{localize "RAILERS.Item.base.header.carry"}}</label>
+            <div class="resource">
+                <label class="resource-label">{{localize "RAILERS.Item.base.FIELDS.load"}}</label>
+                <input type="number" name="system.load" value="{{system.load}}" data-dtype="Number"/>
+            </div>
+            <div class="resource">
+                <label class="resource-label">{{localize "RAILERS.Item.base.FIELDS.stowage.label"}}</label>
+                <select name="system.stowage">
+                    {{selectOptions config.stowageOptions selected=system.stowage localize=true}}
+                </select>
+            </div>
+        </div>
     </div>
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.magazine"}}</label>
-        <input type="number" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
-    </div>
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Item.Weapon.FIELDS.skill"}}</label>
-        <select name="system.skill">
-            {{selectOptions config.weaponSkillOptions selected=system.skill localize=true}}
-        </select>
-    </div>
-    <div class="resource">
-        <label class="resource-label">{{localize "RAILERS.Item.base.FIELDS.stowage.label"}}</label>
-        <select name="system.stowage">
-        {{selectOptions config.stowageOptions selected=system.stowage localize=true}}
-        </select>
-    </div>
+  </div>
 </section>

@@ -4,25 +4,30 @@
   data-group='primary'
   data-tab='attributes'
 >
+  <div class="item-sheet-body">
 
-  <div class="resource">
-    <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.armor"}}</label>
-    <input type="number" name="system.armor" value="{{system.armor}}" data-dtype="Number"/>
-  </div>
+    {{! === STATS === }}
+    <div class="item-sheet-column">
+      <label class="section-label">{{localize "RAILERS.Item.base.header.stats"}}</label>
+      <div class="item-sheet-group">
+        <div class="resource">
+          <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.armor"}}</label>
+          <input type="number" name="system.armor" value="{{system.armor}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.power"}}</label>
+          <input type="number" name="system.power" value="{{system.power}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.weight"}}</label>
+          <input type="number" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacity"}}</label>
+          <input type="number" name="system.capacity" value="{{system.capacity}}" data-dtype="Number"/>
+        </div>
+      </div>
+    </div>
 
-  <div class="resource">
-    <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.power"}}</label>
-    <input type="number" name="system.power" value="{{system.power}}" data-dtype="Number"/>
   </div>
-
-  <div class="resource">
-    <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.weight"}}</label>
-    <input type="number" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
-  </div>
-
-  <div class="resource">
-    <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacity"}}</label>
-    <input type="number" name="system.capacity" value="{{system.capacity}}" data-dtype="Number"/>
-  </div>
-  
 </section>
