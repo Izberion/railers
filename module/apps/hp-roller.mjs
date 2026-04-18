@@ -73,7 +73,7 @@ export async function onRollHp(event, actor) {
 
   // Unified chat message for characters only
   const speaker = ChatMessage.getSpeaker({ actor });
-  const rollMode = game.settings.get("core", "rollMode");
+  const messageMode = game.settings.get("core", "messageMode");
 
   let flavor = `${game.i18n.localize("RAILERS.chat.roll.rollHPNerve")}`;
   let content = '';
@@ -109,7 +109,7 @@ export async function onRollHp(event, actor) {
   const messageData = {
     speaker: speaker,
     flavor: flavor,
-    rollMode: rollMode,
+    messageMode: messageMode,
     content: content,
     rolls: [hpRoll, nerveRoll]
   };

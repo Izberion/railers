@@ -48,14 +48,14 @@ export class RailersItem extends Item {
 
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
-    const rollMode = game.settings.get('core', 'rollMode');
+    const messageMode = game.settings.get('core', 'messageMode');
     const label = `[${item.type}] ${item.name}`;
 
     // If there's no roll data, send a chat message.
     if (!this.system.formula) {
       ChatMessage.create({
         speaker: speaker,
-        rollMode: rollMode,
+        messageMode: messageMode,
         flavor: label,
         content: item.system.description ?? '',
       });
@@ -71,7 +71,7 @@ export class RailersItem extends Item {
       // const result = await roll.evaluate();
       roll.toMessage({
         speaker: speaker,
-        rollMode: rollMode,
+        messageMode: messageMode,
         flavor: label,
       });
       return roll;
