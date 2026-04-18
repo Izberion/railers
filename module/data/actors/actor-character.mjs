@@ -64,9 +64,16 @@ export default class RailersCharacter extends RailersActorBase {
       else attr.mod = 4;
     }
 
+    const loadedMagIds = new Set(
+      this.parent.items
+        .filter(i => i.type === 'magazine' && i.system.loadedInWeapon)
+        .map(i => i.id)
+    );
+
     let totalOnHandLoad = 0;
     let totalStowedLoad = 0;
     for (let item of this.parent.items) {
+      if (loadedMagIds.has(item.id)) continue;
       let totalItemLoad = item.system.load * item.system.quantity;
       if (item.system.stowage === 'onHand') {
         totalOnHandLoad += totalItemLoad;
@@ -74,8 +81,8 @@ export default class RailersCharacter extends RailersActorBase {
         totalStowedLoad += totalItemLoad;
       }
     }
-    this.load.onHand.value = totalOnHandLoad;
-    this.load.stowed.value = totalStowedLoad;
+    this.load.onHand.value = Math.ceil(totalOnHandLoad);
+    this.load.stowed.value = Math.ceil(totalStowedLoad);
 
     const baseLoad = 5 + this.attributes.prowess.mod + this.attributes.prowess.skills.exertion.value;
 
@@ -95,10 +102,24 @@ export default class RailersCharacter extends RailersActorBase {
     this.defensePool = totalProtection + this.attributes.combat.mod;
     this.thermalThreshold = -1 * totalInsulation;
 
+    const derivedStats = ["system.thermalThreshold"];
+
+    // Apply active effects that target derived stats
+    for (let effect of this.parent.appliedEffects) {
+      for (let change of effect.changes) {
+        if (!derivedStats.includes(change.key)) continue;
+        const localKey = change.key.replace("system.", "");
+        const current = foundry.utils.getProperty(this, localKey) ?? 0;
+        if (change.mode === CONST.ACTIVE_EFFECT_MODES.ADD)
+          foundry.utils.setProperty(this, localKey, current + Number(change.value));
+        else if (change.mode === CONST.ACTIVE_EFFECT_MODES.OVERRIDE)
+          foundry.utils.setProperty(this, localKey, Number(change.value));
+        else if (change.mode === CONST.ACTIVE_EFFECT_MODES.SUBTRACT)
+          foundry.utils.setProperty(this, localKey, current - Number(change.value));
+      }
+    }
+
     this.wounds.max = 6 + this.attributes.fortitude.mod + this.attributes.fortitude.skills.endurance.value;
-
-
-
 
     this.initiativePool = this.attributes.intuition.mod + this.attributes.prowess.skills.athletics.value + this.initiativeMod ?? 0;
     if (!this.initiativeGroup) this.initiativeGroup = "PCs";
