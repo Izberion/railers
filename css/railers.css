@@ -964,3 +964,14 @@ button.fa-circle.control[data-tool="foreground"] {
 .railers.actor section.tab.gear.active select option {
   background-color: var(--background);
 }
+
+.mag-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mag-option {
+  display: flex;
+  gap: 8px;
+}
