@@ -4,7 +4,6 @@
       <label for="initiativeMod">{{localize "RAILERS.apps.actorTweaks.initiativeMod"}}</label>
       <input type="number" name="initiativeMod" value="{{initiativeMod}}" placeholder="0"/>
     </div>
-
     <div>
       <label for="initiativeGroup">{{localize "RAILERS.apps.actorTweaks.initiativeGroup"}}</label>
       <input type="text" name="initiativeGroup" value="{{initiativeGroup}}"/>
@@ -12,9 +11,19 @@
     </div>
   {{/if}}
 
+  {{#if isGM}}
+    {{#if showCorruption}}
+      <hr/>
+      <div>
+        <label>{{localize "RAILERS.apps.actorTweaks.corruptionOverride"}}</label>
+        <input type="number" name="corruptionOverride" value="{{corruption}}" min="0"/>
+        <p class="hint">{{localize "RAILERS.apps.actorTweaks.corruptionOverrideHint"}}</p>
+      </div>
+    {{/if}}
+  {{/if}}
 
-    <footer>
-      <button type="button" data-action="close">{{localize "RAILERS.dialogs.base.cancel"}}</button>
-      <button type="submit" class="submit" data-action="submit">{{localize "RAILERS.dialogs.base.save"}}</button>
-    </footer>
+  <footer>
+    <button type="button" data-action="close">{{localize "RAILERS.dialogs.base.cancel"}}</button>
+    <button type="submit" class="submit" data-action="submit">{{localize "RAILERS.dialogs.base.save"}}</button>
+  </footer>
 </div>
