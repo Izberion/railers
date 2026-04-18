@@ -19,7 +19,8 @@
     "range": "long",
     "skill": "heavyweapons",
     "attribute": "",
-    "formula": ""
+    "magType": "belt",
+    "ammoType": "heavy"
   },
   "_key": "!items!Ai8Nf84JhIqHMbgJ"
 }

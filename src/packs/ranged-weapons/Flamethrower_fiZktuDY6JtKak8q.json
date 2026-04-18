@@ -19,7 +19,8 @@
     "range": "medium",
     "skill": "heavyweapons",
     "attribute": "",
-    "formula": ""
+    "magType": "tank",
+    "ammoType": "burst"
   },
   "_key": "!items!fiZktuDY6JtKak8q"
 }

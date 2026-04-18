@@ -19,7 +19,9 @@
     "range": "medium",
     "skill": "exertion",
     "attribute": "",
-    "formula": ""
+    "magType": null,
+    "ammoType": null,
+    "isConsumable": true
   },
   "_key": "!items!Gz855fF6XFJ1Lq6I"
 }

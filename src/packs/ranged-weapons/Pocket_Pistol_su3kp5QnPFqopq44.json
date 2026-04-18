@@ -19,7 +19,8 @@
     "range": "short",
     "skill": "smallarms",
     "attribute": "",
-    "formula": ""
+    "magType": "external",
+    "ammoType": "handgun"
   },
   "_key": "!items!su3kp5QnPFqopq44"
 }

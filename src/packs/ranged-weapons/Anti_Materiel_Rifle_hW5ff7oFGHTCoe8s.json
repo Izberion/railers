@@ -19,7 +19,8 @@
     "range": "extreme",
     "skill": "heavyweapons",
     "attribute": "",
-    "formula": ""
+    "magType": "external",
+    "ammoType": "heavy"
   },
   "_key": "!items!hW5ff7oFGHTCoe8s"
 }

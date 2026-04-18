@@ -19,7 +19,8 @@
     "range": "long",
     "skill": "smallarms",
     "attribute": "",
-    "formula": ""
+    "magType": "internal",
+    "ammoType": "rifle"
   },
   "_key": "!items!zVjmho8biNb8pRjP"
 }

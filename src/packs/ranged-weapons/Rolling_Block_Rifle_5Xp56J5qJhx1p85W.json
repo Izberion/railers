@@ -19,7 +19,8 @@
     "range": "extreme",
     "skill": "smallarms",
     "attribute": "",
-    "formula": ""
+    "magType": "internal",
+    "ammoType": "rifle"
   },
   "_key": "!items!5Xp56J5qJhx1p85W"
 }

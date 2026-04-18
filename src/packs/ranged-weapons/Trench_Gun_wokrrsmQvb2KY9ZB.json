@@ -19,7 +19,8 @@
     "range": "short",
     "skill": "smallarms",
     "attribute": "",
-    "formula": ""
+    "magType": "internal",
+    "ammoType": "shotgun"
   },
   "_key": "!items!wokrrsmQvb2KY9ZB"
 }

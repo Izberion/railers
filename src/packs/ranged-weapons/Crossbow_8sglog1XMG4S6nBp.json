@@ -14,12 +14,13 @@
     "reload": "major",
     "magazine": {
       "value": 0,
-      "max": 1
+      "max": 10
     },
     "range": "long",
     "skill": "bows",
     "attribute": "",
-    "formula": ""
+    "magType": "internal",
+    "ammoType": "bolt"
   },
   "_key": "!items!8sglog1XMG4S6nBp"
 }

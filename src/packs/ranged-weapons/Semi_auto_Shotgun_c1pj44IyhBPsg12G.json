@@ -19,7 +19,8 @@
     "range": "medium",
     "skill": "smallarms",
     "attribute": "",
-    "formula": ""
+    "magType": "internal",
+    "ammoType": "shotgun"
   },
   "_key": "!items!c1pj44IyhBPsg12G"
 }

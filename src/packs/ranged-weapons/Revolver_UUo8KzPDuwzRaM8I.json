@@ -19,7 +19,8 @@
     "range": "medium",
     "skill": "smallarms",
     "attribute": "",
-    "formula": ""
+    "magType": "internal",
+    "ammoType": "handgun"
   },
   "_key": "!items!UUo8KzPDuwzRaM8I"
 }

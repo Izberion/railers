@@ -19,7 +19,8 @@
     "range": "extreme",
     "skill": "smallarms",
     "attribute": "",
-    "formula": ""
+    "magType": "clip",
+    "ammoType": "rifle"
   },
   "_key": "!items!hVe0Ve7Eun1phuN7"
 }
