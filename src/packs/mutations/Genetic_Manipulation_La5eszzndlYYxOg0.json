@@ -4,7 +4,7 @@
   "_id": "La5eszzndlYYxOg0",
   "img": "systems/railers/assets/icons/mutation-icon.svg",
   "system": {
-    "description": "<p>The corrupted character can take any mutation of his choice.</p>"
+    "description": "<p>The corrupted character can take any mutation of his choice, replacing this mutation.</p>"
   },
   "_key": "!items!La5eszzndlYYxOg0"
 }
