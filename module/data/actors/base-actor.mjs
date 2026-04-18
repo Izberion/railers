@@ -183,6 +183,11 @@ export default class RailersActorBase extends foundry.abstract.TypeDataModel {
       this.wounds.value = totalWounds;
       this.hitpoints.value = maxHitpoints - totalDamage;
     }
+
+    const corruption = this.corruption ?? 0;
+    this.demonizationStage = Math.min(5, Math.floor(corruption / 12));
+    this.corruptionFloor = this.demonizationStage * 12;
+
   }  
 
   getRollData() {
