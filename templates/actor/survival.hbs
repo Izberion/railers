@@ -44,11 +44,11 @@
                 <img src="{{item.img}}" width="32" height="32"/>
               </a>
               <span class="mutation-name">{{item.name}}</span>
-              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Mutation'}}" data-action="viewDoc">
+              <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Mutation'}}" data-action="viewDoc">
                 <i class="fas fa-edit"></i>
               </a>
               {{#if @root.editable}}
-              <a class="item-control item-delete" title="{{localize 'DOCUMENT.Delete' type='Mutation'}}" data-action="deleteDoc">
+              <a class="item-delete" title="{{localize 'DOCUMENT.Delete' type='Mutation'}}" data-action="deleteDoc">
                 <i class="fas fa-trash"></i>
               </a>
               {{/if}}
@@ -70,7 +70,7 @@
         {{#each conditions as |item id|}}
           <div class="condition-entry" data-item-id="{{item._id}}">
             <span class="condition-name">{{item.name}}</span>
-            <a class="item-control item-delete" data-action="deleteDoc">
+            <a class="item-delete" data-action="deleteDoc">
               <i class="fas fa-trash"></i>
             </a>
           </div>
@@ -91,7 +91,7 @@
             <div class="clothing-card-header">
               <img src="{{equippedClothing.headgear.img}}" width="32" height="32"/>
               <span class="clothing-name">{{equippedClothing.headgear.name}}</span>
-              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+              <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
                 <i class="fas fa-edit"></i>
               </a>
             </div>
@@ -112,7 +112,7 @@
             <div class="clothing-card-header">
               <img src="{{equippedClothing.innerwear.img}}" width="32" height="32"/>
               <span class="clothing-name">{{equippedClothing.innerwear.name}}</span>
-              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+              <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
                 <i class="fas fa-edit"></i>
               </a>
             </div>
@@ -133,7 +133,7 @@
             <div class="clothing-card-header">
               <img src="{{equippedClothing.armor.img}}" width="32" height="32"/>
               <span class="clothing-name">{{equippedClothing.armor.name}}</span>
-              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+              <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
                 <i class="fas fa-edit"></i>
               </a>
             </div>
@@ -154,7 +154,7 @@
             <div class="clothing-card-header">
               <img src="{{equippedClothing.outerwear.img}}" width="32" height="32"/>
               <span class="clothing-name">{{equippedClothing.outerwear.name}}</span>
-              <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+              <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
                 <i class="fas fa-edit"></i>
               </a>
             </div>
