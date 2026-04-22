@@ -183,7 +183,12 @@
             "joes": "Joe's",
             "littleMan": "Little Man",
             "marathoner": "Marathoner"
-          }
+          },
+          "additionalLocomotives": "Additional Locomotives",
+          "noCars": "No cars in train"
+        },
+        "actions": {
+          "addLocomotive": "Add Additional Locomotive"
         }
       }
     },
@@ -236,6 +241,7 @@
       },
       "Wound": {
         "label": "Wounds",
+        "none": "No Wounds",
         "FIELDS": {
           "damage": "Damage",
           "severity": "Severity",
@@ -300,6 +306,7 @@
         }
       },
       "Car": {
+        "label": "Cars",
         "FIELDS": {
           "power": "Power",
           "weight": "Weight",
@@ -308,12 +315,15 @@
         }
       },
       "Cargo": {
+        "label": "Cargo",
         "FIELDS": {
           "purchasePrice": "Purchase Price",
           "weight": "Weight"
         }
       },
       "Ability": {
+        "label": "Abilities",
+        "none": "No Abilities",
         "FIELDS": {
           "action": {
             "label": "Action",
@@ -385,7 +395,8 @@
       "Temporary": "Temporary Effects",
       "Passive": "Passive Effects",
       "Inactive": "Inactive Effects",
-      "Duration": "Duration"
+      "Duration": "Duration",
+      "None": "No Effects"
 
     },
     "dialogs": {
@@ -419,7 +430,17 @@
         "rollAttack": "Roll Attack"
       },
       "train": {
-        "changeLocomotiveWarning": "Changing the locomotive type will update several stats and any changes to them could be lost. Do you want to continue?"
+        "changeLocomotiveWarning":"Changing the locomotive type will update several stats and any changes to them could be lost. Do you want to continue?",
+        "name": "Locomotive Name",
+        "namePlaceholder": "New Locomotive",
+        "preset": "Preset",
+        "manual": "Manual",
+        "selectPreset": "Select Locomotive",
+        "noName": "Locomotive has no name.",
+        "noPreset": "No presets found",
+        "add": "Add Locomotive",
+        "added": "Locomotive added to sheet.",
+        "title": "Add a Locomotive"
       },
       "wound": {
         "add": "Add",
