@@ -18,6 +18,14 @@ export default class RailersCargo extends RailersItemBase {
       min: 0,
     });
 
+    schema.weight = new fields.NumberField({
+      required: true,
+      nullable: false,
+      integer: true,
+      initial: 0,
+      min: 0,
+    });
+
     return schema;
   }
 }
