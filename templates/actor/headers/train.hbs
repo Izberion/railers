@@ -42,6 +42,53 @@
         </div>
       </div>
     </div>
+
+    {{#if locomotives}}
+    <div class="header-locomotives">
+      <div class="locomotive-list-header">
+        <label class="section-label">{{localize "RAILERS.Actor.Train.FIELDS.additionalLocomotives"}}</label>
+        <a class="item-create" data-action="addLocomotive" title="{{localize 'RAILERS.Actor.Train.actions.addLocomotive'}}">
+          <i class="fas fa-plus"></i>
+        </a>
+      </div>
+      <ol class="locomotive-list">
+        {{#each locomotives as |item id|}}
+          <li class="locomotive-entry" data-item-id="{{item._id}}">
+            <span class="locomotive-name">{{item.name}}</span>
+            <span class="locomotive-stat" data-tooltip="{{localize 'RAILERS.Actor.Locomotive.FIELDS.power.label'}}">
+              <i class="fas fa-bolt"></i>
+              {{item.system.powerCapacity}}
+            </span>
+            <span class="locomotive-stat" data-tooltip="{{localize 'RAILERS.Actor.Locomotive.FIELDS.weight.label'}}">
+              <i class="fas fa-weight-hanging"></i>
+              {{item.system.weightLimit}}
+            </span>
+            <span class="locomotive-stat" data-tooltip="{{localize 'RAILERS.Actor.Locomotive.FIELDS.fuel.label'}}">
+              <i class="fas fa-gas-pump"></i>
+              {{item.system.fuelCapacity}}
+            </span>
+            <div class="item-controls">
+              <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Locomotive'}}" data-action="viewDoc">
+                <i class="fas fa-edit"></i>
+              </a>
+              {{#if @root.editable}}
+                <a class="item-delete" title="{{localize 'DOCUMENT.Delete' type='Locomotive'}}" data-action="deleteDoc">
+                  <i class="fas fa-trash"></i>
+                </a>
+              {{/if}}
+            </div>
+          </li>
+        {{/each}}
+      </ol>
+    </div>
+    {{else}}
+      <div class="header-locomotives-empty">
+        <a class="item-create" data-action="addLocomotive" title="{{localize 'RAILERS.Actor.Train.actions.addLocomotive'}}">
+          <i class="fas fa-plus"></i>
+          {{localize 'RAILERS.Actor.Train.actions.addLocomotive'}}
+        </a>
+      </div>
+    {{/if}}
   </div>
 
   <div class="header-secondary">
@@ -86,4 +133,5 @@
       </div>
     </div>
   </div>
+
 </header>

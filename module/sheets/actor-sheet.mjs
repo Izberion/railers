@@ -9,6 +9,7 @@ import { locomotiveChange } from "../dialogs/locomotive-change.mjs";
 import { reloadDialog } from "../dialogs/reload-dialog.mjs";
 import { rollMutationsDialog } from "../dialogs/mutation-dialog.mjs";
 import { AttributeRoller } from "../apps/attribute-roller.mjs";
+import { locomotiveAdd } from "../dialogs/locomotive-add.mjs" ;
 
 
 const { api, sheets } = foundry.applications;
@@ -47,7 +48,8 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       toggleEquipClothing: this._toggleEquipClothing,
       toggleMagLoaded: this._toggleMagLoaded,
       rollMutations: this._onMutationRoll,
-      openAttributeRoller: this._onOpenAttributeRoller
+      openAttributeRoller: this._onOpenAttributeRoller,
+      addLocomotive: this._onAddLocomotive
     },
     dragDrop: [{ dragSelector: '[data-drag]', dropSelector: null }],
     form: {
@@ -294,6 +296,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     context.survival = (grouped.survival ?? []).sort(bySort);
     context.abilities = (grouped.ability ?? []).sort(bySort);
     context.cars = (grouped.car ?? []).sort(bySort);
+    context.locomotives = (grouped.locomotive ?? []).sort(bySort);
     context.cargo = (grouped.cargo ?? []).sort(bySort);
     context.ammo = (grouped.ammo ?? []).sort(bySort);
     context.magazines = (grouped.magazine ?? []).sort(bySort);
@@ -385,6 +388,10 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    *   ACTIONS
    *
    **************/
+
+  static async _onAddLocomotive(event, target) {
+    await locomotiveAdd(this.actor);
+  }
   
   static async _onOpenAttributeRoller(event, target) {
     new AttributeRoller({ actor: this.actor }).render(true);
@@ -879,7 +886,7 @@ static async _viewDoc(event, target) {
     }
 
     // Perform the sort
-    const sortUpdates = SortingHelpers.performIntegerSort(item, {
+    const sortUpdates = foundry.utils.performIntegerSort(item, {
       target,
       siblings,
     });

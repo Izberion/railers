@@ -1,0 +1,43 @@
+<div class="add-locomotive-dialog">
+  <div class="mode-toggle">
+    <label>
+      <input type="radio" name="mode" value="preset" checked/>
+      {{localize "RAILERS.dialogs.train.preset"}}
+    </label>
+    <label>
+      <input type="radio" name="mode" value="manual"/>
+      {{localize "RAILERS.dialogs.train.manual"}}
+    </label>
+  </div>
+
+  <div class="mode-preset">
+    <div class="resource">
+      <label class="resource-label">{{localize "RAILERS.dialogs.train.selectPreset"}}</label>
+      <select name="presetKey">
+        {{selectOptions locomotiveOptions localize=true}}
+      </select>
+    </div>
+  </div>
+
+  <div class="mode-manual" style="display:none;">
+    <div class="resource">
+      <label class="resource-label">{{localize "RAILERS.dialogs.train.name"}}</label>
+      <input type="text" name="name" placeholder="{{localize 'RAILERS.dialogs.train.namePlaceholder'}}"/>
+    </div>
+    <div class="resource-group">
+      <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.power.label"}}</label>
+        <input type="number" name="powerCapacity" value="0"/>
+      </div>
+      <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.weight.label"}}</label>
+        <input type="number" name="weightLimit" value="0"/>
+      </div>
+      <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.fuel.value"}}</label>
+        <input type="number" name="fuelCapacity" value="0"/>
+      </div>
+    </div>
+  </div>
+
+</div>
