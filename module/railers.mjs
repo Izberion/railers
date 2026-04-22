@@ -57,6 +57,7 @@ Hooks.once('init', async function() {
     condition: models.RailersCondition,
     mutation: models.RailersMutation,
     car: models.RailersCar,
+    locomotive: models.RailersLocomotive,
     cargo: models.RailersCargo,
     ability: models.RailersAbility,
     ammo: models.RailersAmmo,
@@ -77,7 +78,7 @@ Hooks.once('init', async function() {
   foundry.documents.collections.Items.registerSheet("railers", RailersItemSheet, {
     makeDefault: true,
     label: "RAILERS.SheetLabels.Item",
-    types: ["gear", "wound", "weapon", "clothing", "condition", "mutation", "car", "cargo", "ability", "ammo", "magazine"]
+    types: ["gear", "wound", "weapon", "clothing", "condition", "mutation", "car", "locomotive", "cargo", "ability", "ammo", "magazine"]
   });
 
   CONFIG.Combat.documentClass = RailersCombat;
