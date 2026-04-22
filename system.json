@@ -38,6 +38,9 @@
       "car": {
         "htmlFields": ["description"]
       },
+      "locomotive": {
+        "htmlFields": ["description"]
+      },
       "cargo": {
         "htmlFields": ["description"]
       },

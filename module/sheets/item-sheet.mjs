@@ -54,6 +54,9 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     attributesCar: {
       template: 'systems/railers/templates/item/attribute-parts/car.hbs'
     },
+    attributesLocomotive: {
+      template: 'systems/railers/templates/item/attribute-parts/locomotive.hbs'
+    },    
     attributesWeapon: {
       template: 'systems/railers/templates/item/attribute-parts/weapon.hbs'
     },
@@ -93,6 +96,9 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
       case 'car':
         options.parts.push('attributesCar', 'effects');
         break;
+      case 'locomotive':
+        options.parts.push('attributesLocomotive', 'effects');
+        break;        
       case 'weapon':
         options.parts.push('attributesWeapon', 'effects');
         break;
@@ -157,6 +163,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
       case 'attributesGear':
       case 'attributesWound':
       case 'attributesCar':
+      case 'attributesLocomotive':
       case 'attributesWeapon':
       case 'attributesCargo':
       case 'attributesAbility':
@@ -201,6 +208,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
         gear: 'description',
         wound: 'attributes',
         car: 'description',
+        locomotive: "description",
         weapon: 'description',
         clothing: 'description',
         mutation: 'description',
@@ -234,6 +242,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
         case 'attributesGear':
         case 'attributesWound':
         case 'attributesCar':
+        case 'attributesLocomotive':
         case 'attributesWeapon':
         case 'attributesClothing':
         case 'attributesCargo':

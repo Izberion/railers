@@ -1,0 +1,24 @@
+{{! Attributes Tab }}
+<section
+  class='tab attributes {{tab.cssClass}}'
+  data-group='primary'
+  data-tab='attributes'
+>
+  <div class="item-sheet-body">
+    <div class="item-sheet-column">
+      <label class="section-label">{{localize "RAILERS.Item.base.header.stats"}}</label>
+      <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.power.label"}}</label>
+        <input type="number" name="system.powerCapacity" value="{{system.powerCapacity}}" data-dtype="Number"/>
+      </div>
+      <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.weight.label"}}</label>
+        <input type="number" name="system.weightLimit" value="{{system.weightLimit}}" data-dtype="Number"/>
+      </div>
+      <div class="resource">
+        <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.fuel.value"}}</label>
+        <input type="number" name="system.fuelCapacity" value="{{system.fuelCapacity}}" data-dtype="Number"/>
+      </div>
+    </div>
+  </div>
+</section>

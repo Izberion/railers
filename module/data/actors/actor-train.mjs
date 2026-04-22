@@ -94,24 +94,33 @@ export default class RailersTrain extends RailersActorBase {
       this.speed = speed - speedReduction;
       this.speed = Math.max(this.speed, 2);
     }
-  
+
+    // Apply additional locomotive contributions before calculating totals
+    for (let item of this.parent.items) {
+      if (item.type === "locomotive") {
+        this.power.max += Math.floor(item.system.powerCapacity * 0.5);
+        this.weight.max += Math.floor(item.system.weightLimit * 0.5);
+        this.fuel.max += Math.floor(item.system.fuelCapacity * 0.5);
+      }
+    }
+
     let totalPower = 0;
     let totalWeight = 0;
     let totalCapacity = this.capacity;
-  
+
     const maxPower = this.power.max;
     const maxWeight = this.weight.max;
-  
+
     for (let item of this.parent.items) {
       if (item.type === "car") {
         totalPower += item.system.power || 0;
         totalWeight += item.system.weight || 0;
         totalCapacity += item.system.capacity || 0;
-      } else {
+      } else if (item.type !== "locomotive") {
         totalWeight += item.system.weight || 0;
       }
     }
-  
+
     this.power.value = maxPower - totalPower;
     this.weight.value = maxWeight - totalWeight;
     this.capacity = totalCapacity;
