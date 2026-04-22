@@ -4,27 +4,26 @@
   data-tab='abilities'
 >
   <ol class="items-list">
-    <li class="item flexrow items-header">
+    <li class="items-header">
       <div class="item-name">{{localize "RAILERS.Item.base.FIELDS.name"}}</div>
-      <div class="ability-action">{{localize "RAILERS.Item.Ability.FIELDS.action.label"}}</div>
-      <div class="ability-description">{{localize "RAILERS.Item.base.FIELDS.description"}}</div>
-      <div class="ability-controls">
+      <div class="item-action">{{localize "RAILERS.Item.Ability.FIELDS.action.label"}}</div>
+      <div class="item-description">{{localize "RAILERS.Item.base.FIELDS.description"}}</div>
+      <div class="item-controls">
         {{#if @root.editable}}
           <a
-            class="item-control item-create"
+            class="item-create"
             title="{{localize 'DOCUMENT.Create' type='Ability'}}"
             data-action="createDoc"
             data-document-class="Item"
             data-type="ability"
           >
             <i class="fas fa-plus"></i>
-            {{localize "DOCUMENT.New" type="ability"}}
           </a>
         {{/if}}
-        </div>
+      </div>
     </li>
     {{#each abilities as |item id|}}
-      <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+      <li class="item" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
             <a class="rollable" data-roll-type="ability" data-action="roll">
@@ -33,14 +32,14 @@
           </div>
           <div>{{item.name}}</div>
         </div>
-        <div class="ability-action textcenter">{{localize item.system.localizedAction}}</div>
-        <div class="ability-description">{{{item.system.description}}}</div>
-        <div class="ability-controls">
-          <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Ability'}}" data-action="viewDoc">
+        <div class="item-action textcenter">{{localize item.system.localizedAction}}</div>
+        <div class="item-description">{{{item.system.description}}}</div>
+        <div class="item-controls">
+          <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Ability'}}" data-action="viewDoc">
             <i class="fas fa-edit"></i>
           </a>
           {{#if @root.editable}}
-            <a class="item-control item-delete" title="{{localize 'DOCUMENT.Delete' type='Ability'}}" data-action="deleteDoc">
+            <a class="item-delete" title="{{localize 'DOCUMENT.Delete' type='Ability'}}" data-action="deleteDoc">
               <i class="fas fa-trash"></i>
             </a>
           {{/if}}

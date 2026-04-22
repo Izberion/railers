@@ -4,8 +4,8 @@
   data-tab='cars'
 >
   <ol class="items-list">
-    <li class="item flexrow items-header">
-      <div class="item-name">{{localize "RAILERS.Item.base.FIELDS.name"}}</div>
+    <li class="items-header">
+      <div class="item-name">{{localize "RAILERS.Item.Car.label"}}</div>
       <div class="item-armor">{{localize "RAILERS.Item.Car.FIELDS.armor"}}</div>
       <div class="item-capacity">{{localize "RAILERS.Item.Car.FIELDS.capacity"}}</div>
       <div class="item-power">{{localize "RAILERS.Item.Car.FIELDS.power"}}</div>
@@ -13,38 +13,41 @@
       <div class="item-controls">
         {{#if @root.editable}}
           <a
-            class="item-control item-create"
+            class="item-create"
             title="{{localize 'DOCUMENT.Create' type='Car'}}"
             data-action="createDoc"
             data-document-class="Item"
             data-type="car"
           >
             <i class="fas fa-plus"></i>
-            {{localize "DOCUMENT.New" type="car"}}
           </a>
         {{/if}}
       </div>
     </li>
     {{#each cars as |item id|}}
-      <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+      <li class="item" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+      <div class="item-drag">
+        <i class="fas fa-grip-vertical"></i>
+      </div>
+      <div class="item-name">
         <div class="item-name">
-          <div class="item-image">
-            <a class="rollable" data-roll-type="item" data-action="roll">
-              <img src="{{item.img}}"  width="24" height="24"/>
+          <div class="car-image">
+            <a data-roll-type="item" data-action="roll">
+              <img src="{{item.img}}" width="36" height="36" title="{{item.name}}"/>
             </a>
           </div>
           <div>{{item.name}}</div>
         </div>
-        <div class="item-armor textcenter">{{item.system.armor}}</div>
-        <div class="item-capacity textcenter">{{item.system.capacity}}</div>
-        <div class="item-power textcenter">{{item.system.power}}</div>
-        <div class="item-weight textcenter">{{item.system.weight}}</div>
+        <div class="item-armor">{{item.system.armor}}</div>
+        <div class="item-capacity">{{item.system.capacity}}</div>
+        <div class="item-power">{{item.system.power}}</div>
+        <div class="item-weight">{{item.system.weight}}</div>
         <div class="item-controls">
-          <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Car'}}" data-action="viewDoc">
+          <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Car'}}" data-action="viewDoc">
             <i class="fas fa-edit"></i>
           </a>
           {{#if @root.editable}}
-            <a class="item-control item-delete" title="{{localize 'DOCUMENT.Delete' type='Car'}}" data-action="deleteDoc">
+            <a class="item-delete" title="{{localize 'DOCUMENT.Delete' type='Car'}}" data-action="deleteDoc">
               <i class="fas fa-trash"></i>
             </a>
           {{/if}}

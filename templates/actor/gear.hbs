@@ -36,8 +36,8 @@
   </div>
 
   {{!-- Gear List --}}
-  <ol class="items-list gear-list">
-    <li class="item flexrow items-header">
+  <ol class="items-list">
+    <li class="items-header">
       <div class="item-name">{{localize "RAILERS.Item.Gear.label"}}</div>
       <div class="item-quantity">{{localize "RAILERS.Item.base.FIELDS.quantity"}}</div>
       <div class="item-load">{{localize "RAILERS.Item.base.FIELDS.load"}}</div>
@@ -45,20 +45,19 @@
       <div class="item-controls">
         {{#if @root.editable}}
           <a
-            class="item-control item-create"
+            class="item-create"
             title="{{localize 'DOCUMENT.Create' type='Gear'}}"
             data-action="createDoc"
             data-document-class="Item"
             data-type="gear"
       >
             <i class="fas fa-plus"></i>
-            {{localize "DOCUMENT.New" type="gear"}}
           </a>
         {{/if}}
       </div>
     </li>
     {{#each gear as |item id|}}
-      <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+      <li class="item" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
             <a data-roll-type="item" data-action="roll">
@@ -75,11 +74,11 @@
           </select>
         </div>
         <div class="item-controls">
-          <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Gear'}}" data-action="viewDoc">
+          <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Gear'}}" data-action="viewDoc">
             <i class="fas fa-edit"></i>
           </a>
           {{#if @root.editable}}
-            <a class="item-control item-delete" title="{{localize 'DOCUMENT.Delete' type='Gear'}}" data-action="deleteDoc">
+            <a class="item-delete" title="{{localize 'DOCUMENT.Delete' type='Gear'}}" data-action="deleteDoc">
               <i class="fas fa-trash"></i>
             </a>
           {{/if}}
@@ -89,8 +88,8 @@
   </ol>
 
   {{!-- Melee Weapons List --}}
-  <ol class="items-list weapons-list melee-list">
-    <li class="item flexrow items-header">
+  <ol class="items-list">
+    <li class="items-header">
       <div class="item-name">{{localize "RAILERS.Item.Weapon.labelMelee"}}</div>
       <div class="item-damage">{{localize "RAILERS.Item.Weapon.FIELDS.damage"}}</div>
       <div class="item-attack">{{localize "RAILERS.Item.Weapon.FIELDS.attack"}}</div>
@@ -99,7 +98,7 @@
       <div class="item-controls">
         {{#if @root.editable}}
           <a
-            class="item-control item-create"
+            class="item-create"
             title="{{localize 'DOCUMENT.Create' type='Weapon'}}"
             data-action="createDoc"
             data-document-class="Item"
@@ -107,13 +106,12 @@
             data-system.range="melee"
           >
             <i class="fas fa-plus"></i>
-            {{localize "DOCUMENT.New" type="weapon"}}
           </a>
         {{/if}}
       </div>
     </li>
     {{#each meleeWeapons as |item id|}}
-      <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+      <li class="item" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
             <a data-roll-type="item" data-action="roll">
@@ -131,11 +129,11 @@
           </select>
         </div>
         <div class="item-controls">
-          <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Weapon'}}" data-action="viewDoc">
+          <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Weapon'}}" data-action="viewDoc">
             <i class="fas fa-edit"></i>
           </a>
           {{#if @root.editable}}
-            <a class="item-control item-delete" title="{{localize 'DOCUMENT.Delete' type='Weapon'}}" data-action="deleteDoc">
+            <a class="item-delete" title="{{localize 'DOCUMENT.Delete' type='Weapon'}}" data-action="deleteDoc">
               <i class="fas fa-trash"></i>
             </a>
           {{/if}}
@@ -145,8 +143,8 @@
   </ol>
 
   {{!-- Ranged Weapons List --}}
-  <ol class="items-list weapons-list ranged-list">
-    <li class="item flexrow items-header">
+  <ol class="items-list">
+    <li class="items-header">
       <div class="item-name">{{localize "RAILERS.Item.Weapon.labelRanged"}}</div>
       <div class="item-damage">{{localize "RAILERS.Item.Weapon.FIELDS.damage"}}</div>
       <div class="item-attack">{{localize "RAILERS.Item.Weapon.FIELDS.attack"}}</div>
@@ -158,7 +156,7 @@
       <div class="item-controls">
         {{#if @root.editable}}
           <a
-            class="item-control item-create"
+            class="item-create"
             title="{{localize 'DOCUMENT.Create' type='Weapon'}}"
             data-action="createDoc"
             data-document-class="Item"
@@ -166,13 +164,12 @@
             data-system.range="short"
           >
             <i class="fas fa-plus"></i>
-            {{localize "DOCUMENT.New" type="weapon"}}
           </a>
         {{/if}}
       </div>
     </li>
     {{#each rangedWeapons as |item id|}}
-      <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+      <li class="item" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
             <a data-roll-type="item" data-action="roll">
@@ -200,15 +197,15 @@
         </div>
         <div class="item-controls">
           {{#if item.system.magazine.max}}
-            <a class="item-control weapon-reload" title="{{localize 'RAILERS.Item.base.actions.reload'}}" data-action="weaponReload">
+            <a class="weapon-reload" title="{{localize 'RAILERS.Item.base.actions.reload'}}" data-action="weaponReload">
               <i class="fas fa-sync-alt"></i>
             </a>
           {{/if}}
-          <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Weapon'}}" data-action="viewDoc">
+          <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Weapon'}}" data-action="viewDoc">
             <i class="fas fa-edit"></i>
           </a>
           {{#if @root.editable}}
-            <a class="item-control item-delete" title="{{localize 'DOCUMENT.Delete' type='Weapon'}}" data-action="deleteDoc">
+            <a class="item-delete" title="{{localize 'DOCUMENT.Delete' type='Weapon'}}" data-action="deleteDoc">
               <i class="fas fa-trash"></i>
             </a>
           {{/if}}
@@ -218,8 +215,8 @@
   </ol>
 
   {{!-- Clothing List --}}
-  <ol class="items-list clothing-list">
-    <li class="item flexrow items-header">
+  <ol class="items-list">
+    <li class="items-header">
       <div class="item-name">{{localize "RAILERS.Item.Clothing.label"}}</div>
       <div class="item-layer">{{localize "RAILERS.Item.Clothing.FIELDS.layer.label"}}</div>
       <div class="item-protection">{{localize "RAILERS.Item.Clothing.FIELDS.protection"}}</div>
@@ -230,20 +227,19 @@
       <div class="item-controls">
         {{#if @root.editable}}
           <a
-            class="item-control item-create"
+            class="item-create"
             title="{{localize 'DOCUMENT.Create' type='Clothing'}}"
             data-action="createDoc"
             data-document-class="Item"
             data-type="clothing"
           >
             <i class="fas fa-plus"></i>
-            {{localize "DOCUMENT.New" type="clothing"}}
           </a>
         {{/if}}
       </div>
     </li>
     {{#each clothing as |item id|}}
-      <li class="item flexrow clothing-headgear" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+      <li class="item" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
             <a data-roll-type="item" data-action="roll">
@@ -267,11 +263,11 @@
           </select>
         </div>
         <div class="item-controls">
-          <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
+          <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Clothing'}}" data-action="viewDoc">
             <i class="fas fa-edit"></i>
           </a>
           {{#if @root.editable}}
-            <a class="item-control item-delete" title="{{localize 'DOCUMENT.Delete' type='Clothing'}}" data-action="deleteDoc">
+            <a class="item-delete" title="{{localize 'DOCUMENT.Delete' type='Clothing'}}" data-action="deleteDoc">
               <i class="fas fa-trash"></i>
             </a>
           {{/if}}
@@ -280,8 +276,8 @@
     {{/each}}
   </ol>
   {{!-- Ammo List --}}
-  <ol class="items-list ammo-list">
-    <li class="item flexrow items-header">
+  <ol class="items-list">
+    <li class="items-header">
       <div class="item-name">{{localize "RAILERS.Item.Ammo.label"}}</div>
       <div class="item-ammo-type">{{localize "RAILERS.Item.Ammo.FIELDS.ammoType.label"}}</div>
       <div class="item-rounds">{{localize "RAILERS.Item.Ammo.FIELDS.rounds"}}</div>
@@ -290,20 +286,19 @@
       <div class="item-controls">
         {{#if @root.editable}}
           <a
-            class="item-control item-create"
+            class="item-create"
             title="{{localize 'DOCUMENT.Create' type='Ammo'}}"
             data-action="createDoc"
             data-document-class="Item"
             data-type="ammo"
           >
             <i class="fas fa-plus"></i>
-            {{localize "DOCUMENT.New" type="ammo"}}
           </a>
         {{/if}}
       </div>
     </li>
     {{#each ammo as |item id|}}
-      <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+      <li class="item" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
             <a data-roll-type="item" data-action="roll">
@@ -321,11 +316,11 @@
           </select>
         </div>
         <div class="item-controls">
-          <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Ammo'}}" data-action="viewDoc">
+          <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Ammo'}}" data-action="viewDoc">
             <i class="fas fa-edit"></i>
           </a>
           {{#if @root.editable}}
-            <a class="item-control item-delete" title="{{localize 'DOCUMENT.Delete' type='Ammo'}}" data-action="deleteDoc">
+            <a class="item-delete" title="{{localize 'DOCUMENT.Delete' type='Ammo'}}" data-action="deleteDoc">
               <i class="fas fa-trash"></i>
             </a>
           {{/if}}
@@ -335,8 +330,8 @@
   </ol>
 
   {{!-- Magazine List --}}
-  <ol class="items-list magazine-list">
-    <li class="item flexrow items-header">
+  <ol class="items-list">
+    <li class="items-header">
       <div class="item-name">{{localize "RAILERS.Item.Magazine.label"}}</div>
       <div class="item-ammo-type">{{localize "RAILERS.Item.Magazine.FIELDS.ammoType"}}</div>
       <div class="item-ammo">{{localize "RAILERS.Item.Ammo.FIELDS.rounds"}}</div>
@@ -346,20 +341,19 @@
       <div class="item-controls">
         {{#if @root.editable}}
           <a
-            class="item-control item-create"
+            class="item-create"
             title="{{localize 'DOCUMENT.Create' type='Magazine'}}"
             data-action="createDoc"
             data-document-class="Item"
             data-type="magazine"
           >
             <i class="fas fa-plus"></i>
-            {{localize "DOCUMENT.New" type="magazine"}}
           </a>
         {{/if}}
       </div>
     </li>
     {{#each magazines as |item id|}}
-      <li class="item flexrow" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
+      <li class="item" data-item-id="{{item._id}}" data-drag="true" data-document-class="Item">
         <div class="item-name">
           <div class="item-image">
             <a data-roll-type="item" data-action="roll">
@@ -384,11 +378,11 @@
           </select>
         </div>
         <div class="item-controls">
-          <a class="item-control item-edit" title="{{localize 'DOCUMENT.Update' type='Magazine'}}" data-action="viewDoc">
+          <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Magazine'}}" data-action="viewDoc">
             <i class="fas fa-edit"></i>
           </a>
           {{#if @root.editable}}
-            <a class="item-control item-delete" title="{{localize 'DOCUMENT.Delete' type='Magazine'}}" data-action="deleteDoc">
+            <a class="item-delete" title="{{localize 'DOCUMENT.Delete' type='Magazine'}}" data-action="deleteDoc">
               <i class="fas fa-trash"></i>
             </a>
           {{/if}}
