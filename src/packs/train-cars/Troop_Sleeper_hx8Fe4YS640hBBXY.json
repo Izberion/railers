@@ -6,13 +6,11 @@
   "folder": "jDK3RF52kSilZP2F",
   "system": {
     "description": "<p>Troop sleeper cars contain ten rows of bunks, stacked three high, allowing a total 30 people to sleep per car. There are no curtains so don’t expect much privacy. The bunks are oriented left to right to allow more to fit. The passageway is on the right-hand side of the car against the outer wall.</p>",
-    "type": "",
     "weight": 100,
     "power": 2,
     "capacity": 30,
-    "armor": 2,
-    "damaged": "",
-    "destroyed": ""
+    "capacityType": "trooper",
+    "armor": 2
   },
   "_key": "!items!hx8Fe4YS640hBBXY"
 }

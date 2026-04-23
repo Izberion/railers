@@ -6,13 +6,11 @@
   "folder": "jDK3RF52kSilZP2F",
   "system": {
     "description": "<p>Prisoner cars are split into several small compartments which function as cells. Each cell is large enough to fit a bed and toilet, but that’s about it, meant to hold a single prisoner. The windows are barred and opaqued, allowing light in but not allowing the prisoner to see out. There is also a separate compartment for a guard at the front, which occupies the entire width of the car. It features barred glass windows, allowing the guard to see the length of the car. The guard’s compartment has no door to access the rest of the car, but does have a door at the front end, allowing access to any cars forward. There is no door at the rear of the car, effectively isolating it from the rest of the train. As such it should be positioned near the end of the train. The prisoner’s section can be accessed from a sliding door on the side of the car.</p>",
-    "type": "",
     "weight": 130,
     "power": 2,
     "capacity": 12,
-    "armor": 3,
-    "damaged": "",
-    "destroyed": ""
+    "capacityType": "standardOther",
+    "armor": 3
   },
   "_key": "!items!5XIM5Io0SamrGmAW"
 }

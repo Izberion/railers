@@ -6,13 +6,11 @@
   "folder": "jDK3RF52kSilZP2F",
   "system": {
     "description": "<p>Coach passenger cars feature two by two rows of seating with a center passageway dividing them. They can seat much more than a sleeper, and while they can be used to sleep in, upright is not a terribly comfortable position for long periods of time. If push comes to shove, you can sleep 72 souls in this car.</p>",
-    "type": "",
     "weight": 100,
     "power": 2,
     "capacity": 72,
-    "armor": 2,
-    "damaged": "",
-    "destroyed": ""
+    "capacityType": "standardCoach",
+    "armor": 2
   },
   "_key": "!items!chkkuAABNtlH9lhP"
 }

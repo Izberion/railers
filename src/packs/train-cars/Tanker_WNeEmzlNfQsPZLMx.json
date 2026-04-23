@@ -6,13 +6,11 @@
   "folder": "LHwQp8DRHXGdBKrO",
   "system": {
     "description": "<p>Tanker cars are used to transport liquids. Because it is only for moving freight, it has no lighting, but it can be heated if required. They allow for the transport of up to 100 tons of liquid freight. The freight on these cars will contribute to the train’s total weight. If any liquid that can freeze at the typical temperatures of the Snowlands is being transported, the internal heaters can be activated to keep it from freezing. This consumes 2 power.</p>",
-    "type": "",
     "weight": 80,
     "power": 0,
     "capacity": 0,
-    "armor": 2,
-    "damaged": "",
-    "destroyed": ""
+    "capacityType": "none",
+    "armor": 2
   },
   "_key": "!items!WNeEmzlNfQsPZLMx"
 }

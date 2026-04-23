@@ -6,13 +6,11 @@
   "folder": "jDK3RF52kSilZP2F",
   "system": {
     "description": "<p>Combination cars are any two cars from this list, excluding freight cars, combined into a single car. The statistics will be the average of the two cars. Utility and weapon cars can be combined if desired, but weapon cars cannot be combined with one another.</p>",
-    "type": "",
     "weight": 0,
     "power": 0,
     "capacity": 0,
-    "armor": 0,
-    "damaged": "",
-    "destroyed": ""
+    "capacityType": "none",
+    "armor": 0
   },
   "_key": "!items!wDJBNqBOqa3zAaQQ"
 }

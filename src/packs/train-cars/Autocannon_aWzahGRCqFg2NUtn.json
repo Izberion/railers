@@ -6,16 +6,10 @@
   "img": "systems/railers/assets/icons/car-icon.svg",
   "system": {
     "description": "<p>Autocannon cars are flatbeds that hold a pair of rapid firing, large caliber guns. The guns can rotate in a full circle and elevate from 0° to nearly 90° up through the use of hand wheels. Because the gunner will need both hands to fire, a second person is required to keep their aim on target if firing at a mobile target. Firing the gun with a two-person setup will always be a group action. This will use a Major action from both characters. Using the autocannon on your own requires one Major action to aim, and one Major action to fire. The autocannons fire heavy ammunition, which also comes in a high explosive variant for firing at any potential airborne targets. If fired at a human or demon target, there will be a -4d penalty to the attack roll unless the size of the target is at least Large. The autocannon deals 14/W10 to living targets.</p>",
-    "name": "",
-    "rollFormula": null,
-    "numDice": null,
-    "therms": null,
-    "load": 0,
-    "quantity": 0,
-    "stowage": "other",
     "power": 0,
     "weight": 60,
     "capacity": 0,
+    "capacityType": "none",
     "armor": 3
   },
   "_key": "!items!aWzahGRCqFg2NUtn"

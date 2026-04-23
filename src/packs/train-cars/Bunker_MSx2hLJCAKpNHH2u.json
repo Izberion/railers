@@ -6,16 +6,10 @@
   "img": "systems/railers/assets/icons/car-icon.svg",
   "system": {
     "description": "<p>Bunker cars are heavily armored and can be isolated from the rest of the train and still remain heated and powered. They contain enough storage for 60 rations, as well as their own generator and accompanying cryosene tank, accessible only from the inside. The tank can hold 10 barrels of fuel and can provide enough heat and power for an over a month if need be, burning at 2 barrels a week. Track the car’s ration and fuel supply separately from the train’s main supplies. They have armored doors which can be sealed and barred from within, requiring a cutting torch or massive force to get through. They have 6 gun ports, 2 to either side and 1 built into either door, which can be shuttered and sealed. There are 4 pairs of bunks that can be unfolded from the walls, located near the middle of the car.</p>",
-    "name": "",
-    "rollFormula": null,
-    "numDice": null,
-    "therms": null,
-    "load": 0,
-    "quantity": 0,
-    "stowage": "other",
     "power": 2,
     "weight": 2500,
     "capacity": 8,
+    "capacityType": "standardOther",
     "armor": 5
   },
   "_key": "!items!MSx2hLJCAKpNHH2u"

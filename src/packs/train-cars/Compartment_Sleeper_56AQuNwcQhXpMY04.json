@@ -6,13 +6,11 @@
   "folder": "jDK3RF52kSilZP2F",
   "system": {
     "description": "<p>Compartment sleeper cars have much more in the way of privacy, but are limited on capacity. They can sleep up to 10 with two people per compartment. The beds in each compartment can be converted into seats and vise versa. The passageway is between the compartments and outer wall of the car, typically on the right-hand side.</p>",
-    "type": "",
     "weight": 150,
     "power": 3,
     "capacity": 10,
-    "armor": 2,
-    "damaged": "",
-    "destroyed": ""
+    "capacityType": "standardCoach",
+    "armor": 2
   },
   "_key": "!items!56AQuNwcQhXpMY04"
 }

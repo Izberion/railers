@@ -6,13 +6,11 @@
   "folder": "jDK3RF52kSilZP2F",
   "system": {
     "description": "<p>Diner cars feature a galley and several dining tables. The dining tables seat 2 on the right-hand side and 4 on the left-hand side, with a central passageway dividing the rows. There are 6 rows making 36 total seats. The galley contains a pantry, freezer, and full kitchen. This is where the train’s food supply is stocked, holding up to 150 rations. The passageway moves to the right-hand side of the train to pass the galley. Diner cars without the galley are able to seat 60.</p>",
-    "type": "",
     "weight": 120,
     "power": 3,
     "capacity": 0,
-    "armor": 2,
-    "damaged": "",
-    "destroyed": ""
+    "capacityType": "none",
+    "armor": 2
   },
   "_key": "!items!o9E2VVxi1iXxmmxk"
 }
