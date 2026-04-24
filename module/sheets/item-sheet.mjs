@@ -153,6 +153,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     context.weaponMagTypes = CONFIG.RAILERS.weaponMagTypes;
     context.magTypes = CONFIG.RAILERS.magTypes;
     context.ammoTypes = CONFIG.RAILERS.ammoTypes;
+    context.capacityTypeOptions = CONFIG.RAILERS.capacityTypeOptions
 
     return context;
   }
