@@ -556,7 +556,7 @@
         "corruptionOverrideHint": "Use to bypass Corruption floor."
       },
       "attributeRoller": {
-        "title": "Roll Attributes",
+        "title": "Rolling Attributes",
         "exploded": "Exploded",
         "bonusAttribute": "Select attribute to add 8:",
         "bonusHint": "No attributes exploded, allowing a bonus 8 to an attribute",
