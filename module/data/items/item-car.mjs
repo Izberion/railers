@@ -41,6 +41,15 @@ export default class RailersCar extends RailersItemBase {
       initial: 0,
       min: 0
     });
+
+    schema.capacityType = new fields.StringField({
+      required: true,
+      nullable: false,
+      blank: false,
+      initial: "none",
+      choices: Object.keys(CONFIG.RAILERS.capacityTypeOptions)
+    });
+
     return schema;
   }
 }
