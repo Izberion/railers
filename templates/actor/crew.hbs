@@ -1,0 +1,194 @@
+<section
+  class='tab crew {{tab.cssClass}}'
+  data-group='primary'
+  data-tab='crew'
+>
+  <div class="crew-body">
+
+    {{!-- Left Column: Crew and Passengers --}}
+    <div class="crew-column-left">
+
+      {{!-- Crew --}}
+      <div class="crew-section" data-section="crew">
+        <div class="crew-section-header">
+          <label class="section-label">{{localize "RAILERS.Actor.Train.FIELDS.crew"}} ({{system.crew}})</label>
+        </div>
+        <div class="crew-list">
+          {{#each crewMembers as |member id|}}
+            <div class="crew-entry" data-index="{{id}}">
+              <img src="{{member.actor.img}}" width="32" height="32" title="{{member.actor.name}}"/>
+              <span class="crew-name">{{member.actor.name}}</span>
+              <select class="capacity-select" data-action="updateCrewCapacity" data-index="{{id}}">
+                {{selectOptions @root.config.capacityTypeOptionsActors selected=member.capacityType localize=true}}
+              </select>
+              <a class="crew-remove" data-action="removeCrew" data-index="{{id}}" title="{{localize 'RAILERS.Actor.Train.actions.removeCrew'}}">
+                <i class="fas fa-times"></i>
+              </a>
+            </div>
+          {{else}}
+            <p class="none-equipped">{{localize "RAILERS.Actor.Train.FIELDS.noCrew"}}</p>
+          {{/each}}
+        </div>
+      </div>
+
+      {{!-- Passengers --}}
+      <div class="crew-section" data-section="passengers">
+        <div class="crew-section-header">
+          <label class="section-label">{{localize "RAILERS.Actor.Train.FIELDS.passengers"}} ({{system.totalPassengers}})</label>
+          <a data-action="toggleUntracked" title="{{localize 'RAILERS.Actor.Train.actions.editUntracked'}}">
+            <i class="fas fa-edit"></i>
+          </a>
+        </div>
+        <div class="crew-list">
+          {{#each passengerMembers as |member id|}}
+            <div class="crew-entry" data-index="{{id}}">
+              <img src="{{member.actor.img}}" width="32" height="32" title="{{member.actor.name}}"/>
+              <span class="crew-name">{{member.actor.name}}</span>
+              <select class="capacity-select" data-action="updatePassengerCapacity" data-index="{{id}}">
+                {{selectOptions @root.config.capacityTypeOptionsActors selected=member.capacityType localize=true}}
+              </select>
+              <a class="crew-remove" data-action="removePassenger" data-index="{{id}}" title="{{localize 'RAILERS.Actor.Train.actions.removePassenger'}}">
+                <i class="fas fa-times"></i>
+              </a>
+            </div>
+          {{else}}
+            <p class="none-equipped">{{localize "RAILERS.Actor.Train.FIELDS.noPassengers"}}</p>
+          {{/each}}
+        </div>
+
+        {{!-- Untracked Passengers --}}
+        <div class="untracked-inputs" style="display:none;">
+          <div class="standard-capacity">
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.trooper"}}</label>
+              <input type="number" name="system.passengers.untracked.standardTrooper" value="{{system.passengers.untracked.standardTrooper}}" min="0"/>
+            </div>
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.standardCoach"}}</label>
+              <input type="number" name="system.passengers.untracked.standardCoach" value="{{system.passengers.untracked.standardCoach}}" min="0"/>
+            </div>
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.standardOther"}}</label>
+              <input type="number" name="system.passengers.untracked.standardOther" value="{{system.passengers.untracked.standardOther}}" min="0"/>
+            </div>
+          </div>
+
+          <div class="luxury-capacity">
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.luxuryCoach"}}</label>
+              <input type="number" name="system.passengers.untracked.luxuryCoach" value="{{system.passengers.untracked.luxuryCoach}}" min="0"/>
+            </div>
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.private"}}</label>
+              <input type="number" name="system.passengers.untracked.luxuryPrivate" value="{{system.passengers.untracked.luxuryPrivate}}" min="0"/>
+            </div>
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.luxuryOther"}}</label>
+              <input type="number" name="system.passengers.untracked.luxuryOther" value="{{system.passengers.untracked.luxuryOther}}" min="0"/>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    {{!-- Right Column: Rations and Capacity --}}
+    <div class="crew-column-right">
+
+      {{!-- Rations --}}
+      <div class="crew-section">
+        <label class="section-label">{{localize "RAILERS.Actor.Train.FIELDS.rations.label"}}</label>
+        <div class="resource">
+          <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.rations.primary"}}</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="number" name="system.rations.value" value="{{system.rations.value}}" min="0"/>
+            <span> / </span>
+            <input type="number" name="system.rations.max" value="{{system.rations.max}}" min="0"/>
+          </div>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.rations.bunker"}}</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="number" name="system.rations.bunker.value" value="{{system.rations.bunker.value}}" min="0"/>
+            <span> / </span>
+            <input type="number" name="system.rations.bunker.max" value="{{system.rations.bunker.max}}" min="0"/>
+          </div>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.rations.other"}}</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="number" name="system.rations.other.value" value="{{system.rations.other.value}}" min="0"/>
+            <span> / </span>
+            <input type="number" name="system.rations.other.max" value="{{system.rations.other.max}}" min="0"/>
+          </div>
+        </div>
+        {{!-- <button type="button" data-action="consumeRations">
+          <i class="fas fa-utensils"></i>
+          {{localize "RAILERS.Actor.Train.actions.consumeRations"}}
+        </button> --}}
+      </div>
+
+      {{!-- Capacity --}}
+      <div class="crew-section">
+        <label class="section-label">{{localize "RAILERS.Actor.Train.FIELDS.capacity.label"}}</label>
+        <div class="capacity-section">
+          <div class="standard-capacity">
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.trooper"}}</label>
+              <div class="resource-content flexrow flex-center flex-between">
+                <input type="number" value="{{system.capacity.standard.trooper.used}}" readonly/>
+                <span> / </span>
+                <input type="number" value="{{system.capacity.standard.trooper.total}}" readonly/>
+              </div>
+            </div>
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.standardCoach"}}</label>
+              <div class="resource-content flexrow flex-center flex-between">
+                <input type="number" value="{{system.capacity.standard.coach.used}}" readonly/>
+                <span> / </span>
+                <input type="number" value="{{system.capacity.standard.coach.total}}" readonly/>
+              </div>
+            </div>
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.standardOther"}}</label>
+              <div class="resource-content flexrow flex-center flex-between">
+                <input type="number" value="{{system.capacity.standard.other.used}}" readonly/>
+                <span> / </span>
+                <input type="number" value="{{system.capacity.standard.other.total}}" />
+              </div>
+            </div>
+          </div>  
+
+          <div class="luxury-capacity">
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.luxuryCoach"}}</label>
+              <div class="resource-content flexrow flex-center flex-between">
+                <input type="number" value="{{system.capacity.luxury.coach.used}}" readonly/>
+                <span> / </span>
+                <input type="number" value="{{system.capacity.luxury.coach.total}}" readonly/>
+              </div>
+            </div>
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.private"}}</label>
+              <div class="resource-content flexrow flex-center flex-between">
+                <input type="number" value="{{system.capacity.luxury.private.used}}" readonly/>
+                <span> / </span>
+                <input type="number" value="{{system.capacity.luxury.private.total}}" readonly/>
+              </div>
+            </div>
+            <div class="resource">
+              <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.luxuryOther"}}</label>
+              <div class="resource-content flexrow flex-center flex-between">
+                <input type="number" value="{{system.capacity.luxury.other.used}}" readonly/>
+                <span> / </span>
+                <input type="number" value="{{system.capacity.luxury.other.total}}" />
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
