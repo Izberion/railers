@@ -261,7 +261,7 @@
 .railers.item .item-sheet-group {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 12px;
   justify-content: center;
 }
 
@@ -645,15 +645,8 @@ button.fa-circle.control[data-tool="foreground"] {
 }
 
 .railers.actor section.tab.gear.active select {
-  appearance: none;
   text-align: center;
   padding: 0;
-  background-color: transparent;
-  color: var(--color-text-primary);
-}
-
-.railers.actor section.tab.gear.active select option {
-  background-color: var(--background);
 }
 
 /* ==================== ACTOR SHEET - BIOGRAPHY TAB ==================== */
@@ -668,6 +661,8 @@ section.tab.biography.active > prose-mirror {
 
 
 /* ==================== ACTOR SHEET - TRAIN ==================== */
+
+/* Locomotive List */
 
 .railers .locomotive-list-header {
   display: flex;
@@ -707,6 +702,92 @@ section.tab.biography.active > prose-mirror {
 
 .railers .locomotive-entry .item-controls {
   font-size: .85em;
+}
+
+/* CREW TAB */
+
+.railers .crew-body {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-top: 10px;
+}
+
+.railers .crew-column-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.railers .crew-column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 0 200px;
+}
+
+.railers .crew-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.railers .crew-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.railers .crew-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.railers .crew-entry {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  background: var(--color-cool-5);
+  border: 1px solid var(--color-border-dark);
+  border-radius: 4px;
+}
+
+.railers .crew-entry img {
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.railers .crew-name {
+  flex: 1;
+}
+
+.railers .crew-remove {
+  color: var(--color-text-dark-secondary);
+  cursor: pointer;
+}
+
+.railers .section-label.small {
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.railers .capacity-section {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.railers select.capacity-select {
+  flex: 1;
+}
+
+.railers .untracked-inputs {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 /* ==================== ACTOR SHEET - INVENTORY / LIST SECTIONS ==================== */
@@ -805,7 +886,7 @@ section.tab.biography.active > prose-mirror {
 /* Controls */
 .railers .items-list .item-controls {
   display: flex;
-  flex: 0 0 80px;
+  flex: 0 0 82px;
   justify-content: flex-end;
 }
 
@@ -827,11 +908,11 @@ section.tab.biography.active > prose-mirror {
 
 /* Column widths */
 .railers .item-load        { flex: 0 0 40px;  text-align: center; }
-.railers .item-stowage     { flex: 0 0 65px;  text-align: center; }
+.railers .item-stowage     { flex: 0 0 75px;  text-align: center; }
 .railers .item-quantity    { flex: 0 0 60px;  text-align: center; }
 .railers .item-damage      { flex: 0 0 55px;  text-align: center; }
 .railers .item-severity    { flex: 0 0 55px;  text-align: center; }
-.railers .item-price       { flex: 0 0 80px;  text-align: center; }
+.railers .item-price       { flex: 0 0 90px;  text-align: center; }
 .railers .item-weight      { flex: 0 0 65px;  text-align: center; }
 .railers .item-action      { flex: 0 0 55px;  text-align: center; }
 .railers .item-description { flex: 0 0 200px; text-align: center; }
