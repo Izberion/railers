@@ -221,8 +221,8 @@
       <div class="item-layer">{{localize "RAILERS.Item.Clothing.FIELDS.layer.label"}}</div>
       <div class="item-protection">{{localize "RAILERS.Item.Clothing.FIELDS.protection"}}</div>
       <div class="item-insulation">{{localize "RAILERS.Item.Clothing.FIELDS.insulation"}}</div>
-      <div class="item-load">{{localize "RAILERS.Item.base.FIELDS.load"}}</div>
       <div class="item-equipped">{{localize "RAILERS.Item.Clothing.FIELDS.equipped"}}</div>
+      <div class="item-load">{{localize "RAILERS.Item.base.FIELDS.load"}}</div>
       <div class="item-stowage">{{localize "RAILERS.Item.base.FIELDS.stowage.label"}}</div>
       <div class="item-controls">
         {{#if @root.editable}}
@@ -251,12 +251,12 @@
         <div class="item-layer">{{item.system.localizedLayer}}</div>
         <div class="item-protection">{{item.system.protection}}</div>
         <div class="item-insulation">{{item.system.insulation}}</div>
-        <div class="item-load">{{item.system.load}}</div>
         <div class="item-equipped">
           {{#if (eq item.system.stowage 'onHand')}}
             <input type="checkbox" data-action="toggleEquipClothing" {{#if item.system.equipped}}checked{{/if}}/>
           {{/if}}
         </div>
+        <div class="item-load">{{item.system.load}}</div>
         <div class="item-stowage">
           <select data-action="updateStowage">
             {{selectOptions @root.config.stowageOptions selected=item.system.stowage localize=true}}
