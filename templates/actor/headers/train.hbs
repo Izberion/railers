@@ -9,37 +9,6 @@
             {{selectOptions config.locomotiveOptions selected=system.locomotive localize=true}}
           </select>
         </div>
-        <div class="header-vitals">
-          <div class="resource flex-group-center">
-            <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.crew"}}</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="number" name="system.crew" value="{{system.crew}}"/>
-            </div>
-          </div>
-
-          <div class="resource flex-group-center">
-            <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.passengers"}}</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="number" name="system.passengers" value="{{system.passengers}}"/>
-            </div>
-          </div>
-
-          <div class="resource flex-group-center">
-            <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.capacity"}}</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="number" value="{{system.capacity}}" readonly/>
-            </div>
-          </div>
-
-          <div class="resource flex-group-center">
-            <label class="resource-label">{{localize "RAILERS.Actor.Train.FIELDS.rations.value"}}</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="number" name="system.rations.value" value="{{system.rations.value}}"/>
-              <span> / </span>
-              <input type="number" name="system.rations.max" value="{{system.rations.max}}"/>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
