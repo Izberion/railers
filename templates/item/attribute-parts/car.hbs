@@ -20,11 +20,17 @@
         </div>
         <div class="resource">
           <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.weight"}}</label>
-          <input type="number" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
+          <input class="w50" type="number" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
         </div>
         <div class="resource">
           <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacity"}}</label>
           <input type="number" name="system.capacity" value="{{system.capacity}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "RAILERS.Item.Car.FIELDS.capacityType.label"}}</label>
+          <select name="system.capacityType">
+            {{selectOptions config.capacityTypeOptions selected=system.capacityType localize=true}}
+          </select>
         </div>
       </div>
     </div>
