@@ -49,7 +49,10 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       toggleMagLoaded: this._toggleMagLoaded,
       rollMutations: this._onMutationRoll,
       openAttributeRoller: this._onOpenAttributeRoller,
-      addLocomotive: this._onAddLocomotive
+      addLocomotive: this._onAddLocomotive,
+      removeCrew: this._onRemoveCrew,
+      removePassenger: this._onRemovePassenger,
+      // consumeRations: this._onConsumeRations
     },
     dragDrop: [{ dragSelector: '[data-drag]', dropSelector: null }],
     form: {
@@ -78,7 +81,8 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     cars: { template: 'systems/railers/templates/actor/cars.hbs' },
     notes: { template: 'systems/railers/templates/actor/notes.hbs' },
     abilities: { template: 'systems/railers/templates/actor/abilities.hbs' },
-    cargo: { template: 'systems/railers/templates/actor/cargo.hbs' }
+    cargo: { template: 'systems/railers/templates/actor/cargo.hbs' },
+    crew: { template: 'systems/railers/templates/actor/crew.hbs' }
   };
 
     /** @override */
@@ -97,7 +101,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
           options.parts.push('headerDemon', 'tabs', 'abilities', 'wounds', 'notes', 'effects');
           break;
         case 'train':
-          options.parts.push('headerTrain', 'tabs', 'cars', 'cargo', 'notes', 'effects');
+          options.parts.push('headerTrain', 'tabs', 'crew', 'cars', 'cargo', 'notes', 'effects');
           break;
       }
 
@@ -126,7 +130,22 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
 
     // Offloading context prep to a helper function
     this._prepareItems(context);
+
     context.locomotiveOptions = CONFIG.RAILERS.locomotiveOptions;
+
+    if (this.actor.type === "train") {
+      context.crewMembers = (this.actor.system.crewMembers ?? []).map((member, index) => ({
+        ...member,
+        actor: game.actors.get(member.actorId),
+        index
+      })).filter(m => m.actor !== undefined);
+
+      context.passengerMembers = (this.actor.system.passengers?.members ?? []).map((member, index) => ({
+        ...member,
+        actor: game.actors.get(member.actorId),
+        index
+      })).filter(m => m.actor !== undefined);
+    }
 
     return context;
   }
@@ -152,6 +171,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       case 'abilities':
       case 'skills':
       case 'combat':
+      case 'crew':
       case 'cars':
       case 'cargo':
       case 'survival':
@@ -208,7 +228,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
         character: 'skills',
         npc: 'biography',
         demon: 'abilities',
-        train: 'cars'
+        train: 'crew'
       };
       this.tabGroups[tabGroup] = defaultTabs[this.actor.type];
     }
@@ -253,6 +273,10 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
         case 'effects':
           tab.id = 'effects';
           tab.label += 'Effects';
+          break;
+        case 'crew':
+          tab.id = 'crew';
+          tab.label += "Crew";
           break;
         case 'cars':
           tab.id = 'cars';
@@ -381,6 +405,45 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
         await item.update({ 'system.stowage': event.currentTarget.value });
       });
     });
+
+    // Untracked passenger inputs
+    const untrackedOpen = this.actor.getFlag("railers", "untrackedPassengersOpen") ?? false;
+    const inputs = this.element.querySelector('.untracked-inputs');
+    const icon = this.element.querySelector('[data-action="toggleUntracked"] i');
+    if (inputs) {
+      inputs.style.display = untrackedOpen ? '' : 'none';
+      if (icon) icon.className = untrackedOpen ? 'fas fa-check' : 'fas fa-edit';
+    }
+
+    this.element.querySelector('[data-action="toggleUntracked"]')?.addEventListener('click', async (e) => {
+      const inputs = this.element.querySelector('.untracked-inputs');
+      const icon = e.currentTarget.querySelector('i');
+      const visible = inputs.style.display !== 'none';
+      inputs.style.display = visible ? 'none' : '';
+      icon.className = visible ? 'fas fa-edit' : 'fas fa-check';
+      await this.actor.setFlag("railers", "untrackedPassengersOpen", !visible);
+    });
+
+    // Crew capacity selects
+    this.element.querySelectorAll('select[data-action="updateCrewCapacity"]').forEach(select => {
+      select.addEventListener('change', async (event) => {
+        const index = Number(event.currentTarget.dataset.index);
+        const crewMembers = foundry.utils.deepClone(this.actor.system.crewMembers ?? []);
+        crewMembers[index].capacityType = event.currentTarget.value;
+        await this.actor.update({ "system.crewMembers": crewMembers });
+      });
+    });
+
+    // Passenger capacity selects
+    this.element.querySelectorAll('select[data-action="updatePassengerCapacity"]').forEach(select => {
+      select.addEventListener('change', async (event) => {
+        const index = Number(event.currentTarget.dataset.index);
+        const members = foundry.utils.deepClone(this.actor.system.passengers.members ?? []);
+        members[index].capacityType = event.currentTarget.value;
+        await this.actor.update({ "system.passengers.members": members });
+      });
+    });
+
   }
 
   /**************
@@ -388,6 +451,53 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
    *   ACTIONS
    *
    **************/
+
+  static async _onRemoveCrew(event, target) {
+    const index = Number(target.dataset.index);
+    const crewMembers = foundry.utils.deepClone(this.actor.system.crewMembers ?? []);
+    crewMembers.splice(index, 1);
+    await this.actor.update({ "system.crewMembers": crewMembers });
+  }
+
+  static async _onRemovePassenger(event, target) {
+    const index = Number(target.dataset.index);
+    const members = foundry.utils.deepClone(this.actor.system.passengers.members ?? []);
+    members.splice(index, 1);
+    await this.actor.update({ "system.passengers.members": members });
+  }
+
+  // static async _onConsumeRations(event, target) {
+  //   const system = this.actor.system;
+  //   const total = (system.crew ?? 0) + (system.totalPassengers ?? 0);
+  //   const consumed = total * 2;
+  //   const current = system.rations.value ?? 0;
+
+  //   if (consumed === 0) {
+  //     ui.notifications.info(game.i18n.localize("RAILERS.Actor.Train.actions.noOneToFeed"));
+  //     return;
+  //   }
+
+  //   const confirmed = await foundry.applications.api.DialogV2.confirm({
+  //     window: { title: game.i18n.localize("RAILERS.Actor.Train.actions.consumeRations") },
+  //     content: `<p>${game.i18n.format("RAILERS.Actor.Train.actions.consumeRationsConfirm", { consumed, current })}</p>`,
+  //     yes: { label: game.i18n.localize("RAILERS.dialogs.base.confirm"), icon: "fas fa-check" },
+  //     no: { label: game.i18n.localize("RAILERS.dialogs.base.cancel"), icon: "fas fa-times" }
+  //   });
+
+  //   if (!confirmed) return;
+
+  //   await this.actor.update({
+  //     "system.rations.value": Math.max(0, current - consumed)
+  //   });
+
+  //   if (current < consumed) {
+  //     ui.notifications.warn(game.i18n.format("RAILERS.Actor.Train.actions.rationShortfall", {
+  //       shortfall: consumed - current
+  //     }));
+  //   } else {
+  //     ui.notifications.info(game.i18n.format("RAILERS.Actor.Train.actions.rationsConsumed", { consumed }));
+  //   }
+  // }
 
   static async _onAddLocomotive(event, target) {
     await locomotiveAdd(this.actor);
@@ -804,6 +914,37 @@ static async _viewDoc(event, target) {
    */
   async _onDropActor(event, data) {
     if (!this.actor.isOwner) return false;
+
+    const actor = await fromUuid(data.uuid);
+    if (!actor) return;
+
+    if (!["character", "npc"].includes(actor.type)) {
+      return;
+    }
+    // Determine if drop is on crew or passenger list
+    const target = event.target.closest('.crew-section');
+    if (!target) return;
+
+    const isCrew = target.dataset.section === "crew";
+    const actorId = actor.id;
+
+    if (isCrew) {
+      const crewMembers = foundry.utils.deepClone(this.actor.system.crewMembers ?? []);
+      if (crewMembers.some(m => m.actorId === actorId)) {
+        ui.notifications.warn(game.i18n.localize("RAILERS.Actor.Train.actions.alreadyCrew"));
+        return;
+      }
+      crewMembers.push({ actorId, capacityType: "standardCoach" });
+      await this.actor.update({ "system.crewMembers": crewMembers });
+    } else {
+      const members = foundry.utils.deepClone(this.actor.system.passengers.members ?? []);
+      if (members.some(m => m.actorId === actorId)) {
+        ui.notifications.warn(game.i18n.localize("RAILERS.Actor.Train.actions.alreadyPassenger"));
+        return;
+      }
+      members.push({ actorId, capacityType: "standardCoach" });
+      await this.actor.update({ "system.passengers.members": members });
+    }
   }
 
   /* -------------------------------------------- */
