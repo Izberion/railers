@@ -67,6 +67,7 @@
         "Notes": "Notes",
         "Cars": "Cars",
         "Cargo": "Cargo",
+        "Crew": "Crew",
         "Survival": "Survival",
         "Description": "Description"
       },
@@ -167,10 +168,18 @@
           },
           "crew": "Crew",
           "passengers": "Passengers",
-          "capacity": "Capacity",
+          "capacity": {
+            "label": "Capacity",
+            "standard": "Standard",
+            "luxury": "Luxury",
+            "total": "Total"
+          },
           "rations": {
-            "value": "Rations",
-            "max": "Maximum Rations"
+            "label": "Rations",
+            "primary": "Primary",
+            "bunker": "Bunker",
+            "lounge": "Lounge",
+            "other": "Other"                        
           },
           "locomotives": {
             "ace": "Ace",
@@ -185,10 +194,16 @@
             "marathoner": "Marathoner"
           },
           "additionalLocomotives": "Additional Locomotives",
-          "noCars": "No cars in train"
+          "noCars": "No cars in train",
+          "noCrew": "Drag and drop actors to add to crew list.",
+          "noPassengers": "Drag and drop actors or click edit to add passengers."
         },
         "actions": {
-          "addLocomotive": "Add Additional Locomotive"
+          "addLocomotive": "Add Additional Locomotive",
+          "removeCrew": "Remove actor from crew list",
+          "removePassenger": "Remove actor from passenger list",
+          "editUntracked": "Edit passengers without sheets",
+          "consumeRations": "Consume Rations"
         }
       }
     },
@@ -311,13 +326,23 @@
           "power": "Power",
           "weight": "Weight",
           "armor": "Armor",
-          "capacity": "Capacity"
+          "capacity": "Capacity",
+          "capacityType": {
+            "label": "Capacity Type",
+            "none": "No Capacity",
+            "trooper": "Trooper",
+            "standardCoach": "Standard Coach",
+            "standardOther": "Other Standard",
+            "private": "Private",
+            "luxuryCoach": "Luxury Coach",
+            "luxuryOther": "Other Luxury"
+          }
         }
       },
       "Cargo": {
         "label": "Cargo",
         "FIELDS": {
-          "purchasePrice": "Purchase Price",
+          "price": "Purchase Price",
           "weight": "Weight"
         }
       },
@@ -596,7 +621,8 @@
       "mutation": "Mutation",
       "ability": "Ability",
       "magazine": "Magazine",
-      "ammo": "Ammo"
+      "ammo": "Ammo",
+      "locomotive": "Locomotive"
     }
   }
 }
