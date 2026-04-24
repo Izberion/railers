@@ -6,7 +6,7 @@
   <ol class="items-list">
     <li class="items-header">
       <div class="item-name">{{localize "RAILERS.Item.Cargo.label"}}</div>
-      <div class="item-price">{{localize "RAILERS.Item.Cargo.FIELDS.purchasePrice"}}</div>
+      <div class="item-price">{{localize "RAILERS.Item.Cargo.FIELDS.price"}}</div>
       <div class="item-weight">{{localize "RAILERS.Item.Cargo.FIELDS.weight"}}</div>
       <div class="item-controls">
         {{#if @root.editable}}
@@ -32,7 +32,7 @@
           </div>
           <div>{{item.name}}</div>
         </div>
-        <div class="item-price textcenter">{{item.system.purchasePrice}}</div>
+        <div class="item-price textcenter">{{item.system.price}}</div>
         <div class="item-weight textcenter">{{item.system.weight}}</div>
         <div class="item-controls">
           <a class="item-edit" title="{{localize 'DOCUMENT.Update' type='Cargo'}}" data-action="viewDoc">

@@ -10,7 +10,7 @@ export default class RailersCargo extends RailersItemBase {
     const fields = foundry.data.fields;
     const schema = super.defineSchema();
 
-    schema.purchasePrice = new fields.NumberField({
+    schema.price = new fields.NumberField({
       required: true,
       nullable: false,
       integer: true,
