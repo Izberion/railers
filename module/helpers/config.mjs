@@ -189,6 +189,23 @@ export const RAILERS = {};
     littleMan:  { armor: 1, power: 9,  speed: 3, fuel: 60,  weight: 550,  capacity: 0 },
     marathoner: { armor: 1, power: 16, speed: 4, fuel: 128, weight: 700,  capacity: 0 }
   },
+  RAILERS.capacityTypeOptionsActors = {
+    "trooper":       "RAILERS.Item.Car.FIELDS.capacityType.trooper",
+    "standardCoach": "RAILERS.Item.Car.FIELDS.capacityType.standardCoach",
+    "standardOther": "RAILERS.Item.Car.FIELDS.capacityType.standardOther",
+    "luxuryCoach":   "RAILERS.Item.Car.FIELDS.capacityType.luxuryCoach",
+    "private":       "RAILERS.Item.Car.FIELDS.capacityType.private",
+    "luxuryOther":   "RAILERS.Item.Car.FIELDS.capacityType.luxuryOther"
+  };
+  RAILERS.capacityTypeOptions = {
+    "none":          "RAILERS.Item.Car.FIELDS.capacityType.none",
+    "trooper":       "RAILERS.Item.Car.FIELDS.capacityType.trooper",
+    "standardCoach": "RAILERS.Item.Car.FIELDS.capacityType.standardCoach",
+    "standardOther": "RAILERS.Item.Car.FIELDS.capacityType.standardOther",
+    "luxuryCoach":   "RAILERS.Item.Car.FIELDS.capacityType.luxuryCoach",
+    "private":       "RAILERS.Item.Car.FIELDS.capacityType.private",
+    "luxuryOther":   "RAILERS.Item.Car.FIELDS.capacityType.luxuryOther"
+  };
   RAILERS.seasons= {
     "summer": "RAILERS.apps.weather.summer",
     "winter": "RAILERS.apps.weather.winter"
