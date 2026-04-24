@@ -33,9 +33,16 @@ export default class RailersNPC extends RailersActorBase {
   prepareDerivedData() {
     super.prepareDerivedData(); 
 
+    const loadedMagIds = new Set(
+      this.parent.items
+        .filter(i => i.type === 'magazine' && i.system.loadedInWeapon)
+        .map(i => i.id)
+    );
+
     let totalOnHandLoad = 0;
     let totalStowedLoad = 0;
     for (let item of this.parent.items) {
+      if (loadedMagIds.has(item.id)) continue;
       let totalItemLoad = item.system.load * item.system.quantity;
       if (item.system.stowage === 'onHand') {
         totalOnHandLoad += totalItemLoad;
