@@ -21,7 +21,7 @@
         <div class="resource-content flexrow flex-center flex-between">
           <input type="number" value="{{system.load.onHand.value}}" readonly/>
           <span> / </span>
-          <input type="number" name="system.load.onHand.max" value="{{system.load.onHand.max}}" readonly/>
+          <input type="number" name="system.load.onHand.max" value="{{system.load.onHand.max}}" {{#if (eq actor.type "character")}}readonly{{/if}}/>
         </div>
       </div>
       <div class="resource flex-group-center">
