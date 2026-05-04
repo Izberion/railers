@@ -37,7 +37,8 @@ export default class RailersDemon extends RailersActorBase {
       ...requiredInteger,
       initial: 0,
       min: 0
-    })
+    });
+
     return schema;
   }
 
