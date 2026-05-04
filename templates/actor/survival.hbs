@@ -24,7 +24,7 @@
     <div class="resource flex-group-center">
       <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.thermalThreshold"}}</label>
       <div class="resource-content flexrow flex-center flex-between">
-        <input type="number" value="{{system.thermalThreshold}}" readonly/>
+        <input type="number" value="{{system.thermalThreshold}}" {{#if (eq actor.type "character")}}readonly{{/if}}/>
       </div>
     </div>
   </div>
@@ -64,21 +64,6 @@
         {{/each}}
       </div>
 
-      {{!-- Conditions: placeholder, not fully implemented
-      <label class="weapon-category-header">{{localize "RAILERS.Item.Condition.label"}}</label>
-      <div class="condition-list">
-        {{#each conditions as |item id|}}
-          <div class="condition-entry" data-item-id="{{item._id}}">
-            <span class="condition-name">{{item.name}}</span>
-            <a class="item-delete" data-action="deleteDoc">
-              <i class="fas fa-trash"></i>
-            </a>
-          </div>
-        {{else}}
-          <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noConditions"}}</p>
-        {{/each}}
-      </div>
-      --}}
     </div>{{!-- end survival-mutations --}}
 
     {{!--Clothing --}}

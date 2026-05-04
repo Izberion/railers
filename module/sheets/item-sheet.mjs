@@ -6,9 +6,7 @@ const { api, sheets } = foundry.applications;
  * Extend the basic ItemSheet with some very simple modifications
  * @extends {ItemSheetV2}
  */
-export class RailersItemSheet extends api.HandlebarsApplicationMixin(
-  sheets.ItemSheetV2
-) {
+export class RailersItemSheet extends api.HandlebarsApplicationMixin(sheets.ItemSheetV2) {
   constructor(options = {}) {
     super(options);
     this.#dragDrop = this.#createDragDropHandlers();
@@ -106,9 +104,6 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
         options.parts.push('attributesClothing', 'effects');
         break;
       case 'mutation':
-        options.parts.push('effects');
-        break;
-      case 'condition':
         options.parts.push('effects');
         break;
       case 'ability':
@@ -213,7 +208,6 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
         weapon: 'description',
         clothing: 'description',
         mutation: 'description',
-        condition: 'description',
         ability: 'description',
         cargo: 'description',
         ammo: 'description',
@@ -290,7 +284,7 @@ export class RailersItemSheet extends api.HandlebarsApplicationMixin(
     const { img } =
       this.document.constructor.getDefaultArtwork?.(this.document.toObject()) ??
       {};
-    const fp = new FilePicker({
+    const fp = new foundry.applications.apps.FilePicker.implementation({
       current,
       type: 'image',
       redirectToRoot: img ? [img] : [],

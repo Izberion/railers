@@ -106,9 +106,6 @@ export const RAILERS = {};
       clothing: {
         img: 'systems/railers/assets/icons/coat-icon.svg',
       },
-      condition: {
-        img: 'icons/svg/aura.svg',
-      },
       mutation: {
         img: 'systems/railers/assets/icons/mutation-icon.svg',
       },
