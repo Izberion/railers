@@ -11,13 +11,14 @@
           <div class="attribute">
             <label
               for="attribute-{{a}}"
-              class="roll att-label"
+              class="att-label {{#unless (eq a 'fortitude')}}rollable{{/unless}}"
               data-attribute="{{a}}"
-              data-action="roll"
-              data-roll-type="stat"
+              {{#unless (eq a 'fortitude')}}
+                data-action="roll"
+                data-roll-type="stat"
+              {{/unless}}
               data-attpool="{{attribute.mod}}"
               data-label="{{localize attribute.label}}"
-              data-rollable="{{#if (eq a 'fortitude')}}false{{else}}true{{/if}}"
             >
               {{localize attribute.label}}
             </label>
@@ -50,7 +51,7 @@
               <div class="skill">
                 <label
                   for="skill-{{a}}-{{s}}"
-                  class="roll skill-label"
+                  class="rollable skill-label"
                   data-skill="{{s}}"
                   data-action="roll"
                   data-roll-type="stat"
