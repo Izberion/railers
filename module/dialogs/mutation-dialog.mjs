@@ -42,6 +42,20 @@ export async function rollMutationsDialog(actor) {
     }
   );
 
+  await roll.roll.toMessage({
+    user: game.user.id,
+    speaker: { actor: actor, alias: actor.name },
+    flavor: game.i18n.localize("RAILERS.dialogs.mutation.title"),
+    content: `
+      <div class="mutation-chat">
+        <div class="mutation-chat-header">
+          <strong>${mutation.name}</strong>
+        </div>
+        ${mutation.system.description}
+      </div>
+    `
+  });
+
   const confirmed = await foundry.applications.api.DialogV2.prompt({
     window: { title: game.i18n.localize("RAILERS.dialogs.mutation.title") },
     content,
