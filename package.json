@@ -1,0 +1,12 @@
+{
+  "name": "railers",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "pullJSONtoLDB": "node ./tools/pullJSONtoLDB.mjs",
+    "pushLDBtoJSON": "node ./tools/pushLDBtoJSON.mjs"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.3"
+  }
+}
