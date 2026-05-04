@@ -113,7 +113,9 @@
           }
         },
         "actions": {
-          "rollHP": "Roll HP"
+          "rollHP": "Roll HP",
+          "earnTherms": "Enter Amount of Therms Earned",
+          "spendTherms": "Enter Amount of Therms Spent"
         }
       },
       "Character": {
@@ -367,10 +369,6 @@
         "label": "Mutations",
         "FIELDS": {}
       },
-      "Condition": {
-        "label": "Conditions",
-        "FIELDS": {}
-      },
       "Ammo": {
         "label": "Ammo",
         "FIELDS": {
@@ -437,6 +435,7 @@
         "cancel": "Cancel",
         "warning": "Warning",
         "continue": "Continue",
+        "confirm": "Confirm",
         "save": "Save",
         "modifyDiceRoll": "Modify the Dice Roll",
         "rollDefense": "Roll Defense"
@@ -491,7 +490,7 @@
         "reloadComplete": "{weapon} reloaded"
       },
       "mutation": {
-        "title": "Mutation Rolled",
+        "title": "Mutation Roll",
         "rollMutations": "Roll Mutations",
         "addPrompt": "Add this mutation to the character sheet?",
         "add": "Add to Sheet"
@@ -615,9 +614,6 @@
       "car": "Car",
       "cargo": "Cargo",
       "wound": "Wound",
-      "weaponMod": "Weapon Mod",
-      "trainMod": "Train Mod",
-      "condition": "Condition",
       "mutation": "Mutation",
       "ability": "Ability",
       "magazine": "Magazine",
