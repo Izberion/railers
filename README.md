@@ -1,6 +1,6 @@
 # Railers
 
-This is the official FoundryVTT system for Railers.
+This is the official FoundryVTT system for Railers, a post-apocalyptic TTRPG focused on survival and exporation in a frozen world.
 
 ## Key Features
 
@@ -40,8 +40,3 @@ Compendium content (items, actors, tables, and other game material) is not cover
 ## Support & Contribution
 
 For issues, suggestions, or contributions, please visit the [GitHub repository](https://github.com/izberion/railers).
-
----
-
-**Latest Version:** 1.0.0
-
