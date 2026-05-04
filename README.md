@@ -1,6 +1,6 @@
 # Railers
 
-This is the official FoundryVTT system for Railers. 
+This is the official FoundryVTT system for Railers.
 
 ## Key Features
 
@@ -33,7 +33,9 @@ Railers is currently in development and is available from [itch.io](https://trin
 
 ## License
 
-[License information](LICENSE.txt)
+The system code is licensed under the [MIT License](LICENSE.txt) and may be freely used, modified, and distributed under its terms.
+
+Compendium content (items, actors, tables, and other game material) is not covered by the MIT License and remains the copyright of Trinocular Press.
 
 ## Support & Contribution
 
