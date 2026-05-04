@@ -4,7 +4,7 @@ export class ActorTweaks extends foundry.applications.api.HandlebarsApplicationM
     tag: "form",
     window: {
       title: "RAILERS.apps.actorTweaks.title",
-      icon: "fas fa-cog",
+      icon: "fas fa-wrench",
       resizable: false,
     },
     position: {
@@ -33,7 +33,7 @@ export class ActorTweaks extends foundry.applications.api.HandlebarsApplicationM
   async _prepareContext(options) {
     const { system } = this.actor;
     const actorType = this.actor.type;
-    const showInitiative = ["character", "demon"].includes(actorType);
+    const showInitiative = ["character", "npc", "demon"].includes(actorType);
     const showCorruption = ["character", "npc"].includes(actorType);
 
     return {
