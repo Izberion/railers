@@ -8,18 +8,24 @@ export default class RailersNPC extends RailersActorBase {
     const requiredInteger = { required: true, nullable: false, integer: true };
     const schema = super.defineSchema();
 
-    schema.attributes = new fields.SchemaField(
-      Object.keys(CONFIG.RAILERS.attributes.npc).reduce((obj, attr) => {
-        obj[attr] = new fields.SchemaField({
-          value: new fields.NumberField({
-            ...requiredInteger,
-            initial: 0,
-            min: 0
-          })
-        });
-        return obj;
-      }, {})
-    );
+  schema.attributes = new fields.SchemaField(
+    Object.keys(CONFIG.RAILERS.attributes.npc).reduce((obj, attr) => {
+      const isPrimary = attr === "primary";
+      obj[attr] = new fields.SchemaField({
+        value: new fields.NumberField({
+          ...requiredInteger,
+          initial: 0,
+          min: 0
+        }),
+        first: new fields.StringField({ required: false, nullable: true, initial: null }),
+        second: new fields.StringField({ required: false, nullable: true, initial: null }),
+        ...(isPrimary ? {} : {
+          third: new fields.StringField({ required: false, nullable: true, initial: null })
+        })
+      });
+      return obj;
+    }, {})
+  );
 
     schema.combatPool = new fields.NumberField({
       ...requiredInteger,
@@ -80,7 +86,7 @@ export default class RailersNPC extends RailersActorBase {
 
     this.wounds.max = this.attributes.primary.value + this.attributes.secondary.value;
     
-    this.initiativePool = this.attributes.combatPool + this.initiativeMod ?? 0;
+    this.initiativePool = this.combatPool + (this.initiativeMod ?? 0);
 
   }
 }
