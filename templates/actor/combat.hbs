@@ -5,22 +5,41 @@
 >
   {{!-- Defense Roll --}}
   <div class="combat-head">
-    <div class="resource flex-group-center">
+    {{#if (eq actor.type 'character')}}
+      <div class="resource flex-group-center">
+          <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.initiativePool"}}</label>
+          <div class="resource-content flexrow flex-center flex-between">
+              <input type="number" value="{{system.initiativePool}}" readonly/>
+          </div>
+      </div>
+      <div class="resource flex-group-center">
+        <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.defensePool"}}</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" value="{{system.defensePool}}" readonly/>
+        </div>
+        <button type="button" class="defense-roll rollable" data-roll-type="defense" data-action="roll">
+          <i class="fas fa-shield-alt"></i>
+          {{localize "RAILERS.dialogs.base.rollDefense"}}
+        </button>
+      </div>
+    {{else}}
+      <div class="resource flex-group-center">
         <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.initiativePool"}}</label>
         <div class="resource-content flexrow flex-center flex-between">
-            <input type="number" value="{{system.initiativePool}}" readonly/>
+          <input type="number" value="{{system.initiativePool}}" readonly/>
         </div>
-    </div>
-    <div class="resource flex-group-center">
-      <label class="resource-label">{{localize "RAILERS.Actor.base.FIELDS.defensePool"}}</label>
-      <div class="resource-content flexrow flex-center flex-between">
-        <input type="number" value="{{system.defensePool}}" readonly/>
       </div>
-      <button type="button" class="defense-roll rollable" data-roll-type="defense" data-action="roll">
-        <i class="fas fa-shield-alt"></i>
-        {{localize "RAILERS.dialogs.base.rollDefense"}}
-      </button>
-    </div>
+      <div class="resource flex-group-center">
+        <label class="resource-label">{{localize "RAILERS.Attributes.CombatPool"}}</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.combatPool" value="{{system.combatPool}}"/>
+        </div>
+        <button type="button" class="defense-roll rollable" data-roll-type="stat" data-action="roll" data-npcpool="{{system.combatPool}}">
+          <i class="fas fa-shield-alt"></i>
+          {{localize "RAILERS.dialogs.base.rollDefense"}}
+        </button>
+      </div>
+    {{/if}}
   </div>
 
   {{!-- Main Combat Layout --}}
@@ -133,10 +152,12 @@
                 </a>
                 </div>
                 <div class="clothing-card-stats">
+                {{#if (eq actor.type 'character')}}
                 <span class="clothing-stat">
                     <label>{{localize "RAILERS.Item.Clothing.FIELDS.protection"}}</label>
                     {{equippedClothing.headgear.system.protection}}
                 </span>
+                {{/if}}
                 </div>
             {{else}}
                 <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
@@ -154,10 +175,12 @@
                 </a>
                 </div>
                 <div class="clothing-card-stats">
+                {{#if (eq actor.type 'character')}}
                 <span class="clothing-stat">
                     <label>{{localize "RAILERS.Item.Clothing.FIELDS.protection"}}</label>
                     {{equippedClothing.innerwear.system.protection}}
                 </span>
+                {{/if}}
                 </div>
             {{else}}
                 <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
@@ -175,10 +198,12 @@
                 </a>
                 </div>
                 <div class="clothing-card-stats">
+                {{#if (eq actor.type 'character')}}
                 <span class="clothing-stat">
                     <label>{{localize "RAILERS.Item.Clothing.FIELDS.protection"}}</label>
                     {{equippedClothing.armor.system.protection}}
                 </span>
+                {{/if}}
               </div>
             {{else}}
               <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
@@ -196,10 +221,12 @@
                 </a>
                 </div>
                 <div class="clothing-card-stats">
+                {{#if (eq actor.type 'character')}}
                 <span class="clothing-stat">
                     <label>{{localize "RAILERS.Item.Clothing.FIELDS.protection"}}</label>
                     {{equippedClothing.outerwear.system.protection}}
                 </span>
+                {{/if}}
                 </div>
             {{else}}
                 <p class="none-equipped">{{localize "RAILERS.Actor.Character.FIELDS.noClothing"}}</p>
