@@ -10,6 +10,7 @@ import { reloadDialog } from "../dialogs/reload-dialog.mjs";
 import { rollMutationsDialog } from "../dialogs/mutation-dialog.mjs";
 import { AttributeRoller } from "../apps/attribute-roller.mjs";
 import { locomotiveAdd } from "../dialogs/locomotive-add.mjs" ;
+import { adjustThermsDialog } from "../dialogs/adjust-therms-dialog.mjs";
 
 
 const { api, sheets } = foundry.applications;
@@ -52,6 +53,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
       addLocomotive: this._onAddLocomotive,
       removeCrew: this._onRemoveCrew,
       removePassenger: this._onRemovePassenger,
+      adjustTherms: this._onAdjustTherms,
       // consumeRations: this._onConsumeRations
     },
     dragDrop: [{ dragSelector: '[data-drag]', dropSelector: null }],
@@ -95,7 +97,7 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
           options.parts.push('headerCharacter', 'tabs', 'biography', 'skills', 'combat', 'survival', 'gear', 'wounds', 'effects');
           break;
         case 'npc':
-          options.parts.push('headerNpc', 'tabs', 'biography', 'gear', 'wounds', 'effects');
+          options.parts.push('headerNpc', 'tabs', 'biography', 'combat', 'survival', 'gear', 'wounds', 'effects');
           break;
         case 'demon':
           options.parts.push('headerDemon', 'tabs', 'abilities', 'wounds', 'notes', 'effects');
@@ -568,13 +570,18 @@ export class RailersActorSheet extends api.HandlebarsApplicationMixin(sheets.Act
     }
   }
 
+  static async _onAdjustTherms(event, target) {
+    const mode = target.dataset.mode;
+    await adjustThermsDialog(this.actor, mode);
+  }
+
   static async _onEditImage(event, target) {
     const attr = target.dataset.edit;
     const current = foundry.utils.getProperty(this.document, attr);
     const { img } =
       this.document.constructor.getDefaultArtwork?.(this.document.toObject()) ??
       {};
-    const fp = new FilePicker({
+    const fp = new foundry.applications.apps.FilePicker.implementation({
       current,
       type: 'image',
       redirectToRoot: img ? [img] : [],
