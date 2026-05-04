@@ -42,13 +42,6 @@ export default class RailersCharacter extends RailersActorBase {
       }, {})
     );
 
-    schema.therms = new fields.NumberField({
-      required: false,
-      nullable: true,
-      integer: true,
-      initial: 0
-    });
-
     return schema;
   }
 
@@ -117,7 +110,7 @@ export default class RailersCharacter extends RailersActorBase {
 
     this.wounds.max = 6 + this.attributes.fortitude.mod + this.attributes.fortitude.skills.endurance.value;
 
-    this.initiativePool = this.attributes.intuition.mod + this.attributes.prowess.skills.athletics.value + this.initiativeMod ?? 0;
+    this.initiativePool = this.attributes.intuition.mod + this.attributes.prowess.skills.athletics.value + (this.initiativeMod ?? 0);
     if (!this.initiativeGroup) this.initiativeGroup = "PCs";
   }
 

@@ -110,6 +110,13 @@ export default class RailersActorBase extends foundry.abstract.TypeDataModel {
       min: 0,
     });
 
+    schema.therms = new fields.NumberField({
+      required: false,
+      nullable: true,
+      integer: true,
+      initial: 0
+    });
+
     schema.load = new fields.SchemaField({
       onHand: new fields.SchemaField({
         value: new fields.NumberField({
