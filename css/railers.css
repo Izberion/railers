@@ -315,7 +315,6 @@ button.fa-circle.control[data-tool="foreground"] {
 .railers.actor .sheet-head {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
 .railers .sheet-head input[type="text"] {
@@ -340,7 +339,7 @@ button.fa-circle.control[data-tool="foreground"] {
 .railers.actor .header-name-vitals {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 
 .railers.actor .name-xp {
@@ -358,7 +357,6 @@ button.fa-circle.control[data-tool="foreground"] {
   flex-direction: row;
   gap: 12px;
   align-items: center;
-  padding-bottom: 8px;
 }
 
 .railers.actor .header-secondary {
@@ -693,6 +691,10 @@ section.tab.biography.active > prose-mirror {
   font-size: .85em;
 }
 
+.railers .locomotive-select {
+  margin-bottom: 8px;
+}
+
 /* CREW TAB */
 
 .railers .crew-body {
@@ -787,11 +789,42 @@ section.tab.biography.active > prose-mirror {
 
 /* ==================== ACTOR SHEET - NPC ==================== */
 
-.railers .npc-attribute-selects {
+.railers .npc-pool {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  margin-top: 4px;
+  gap: 4px;
+  align-items: center;
+}
+
+.railers .npc-pool-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.railers .npc-pool-row input[type="number"] {
+  width: 48px;
+  text-align: center;
+}
+
+.railers .npc-attribute-selects {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding-bottom: 5px
+}
+
+.railers .npc-pool:nth-child(1) {
+  flex: 2; 
+}
+
+.railers .npc-pool:nth-child(2) {
+  flex: 3; 
+}
+
+.railers .npc-pool:nth-child(3) {
+  flex: 1;
 }
 
 .railers .optional-attribute {
