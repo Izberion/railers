@@ -958,8 +958,8 @@ section.tab.biography.active > prose-mirror {
 .railers .item-severity    { flex: 0 0 55px;  text-align: center; }
 .railers .item-price       { flex: 0 0 90px;  text-align: center; }
 .railers .item-weight      { flex: 0 0 65px;  text-align: center; }
-.railers .item-action      { flex: 0 0 55px;  text-align: center; }
-.railers .item-description { flex: 0 0 200px; text-align: center; }
+.railers .item-action      { flex: 0 0 120px;  text-align: center; }
+.railers .item-description { flex: 0 0 320px; text-align: center; }
 .railers .item-attack      { flex: 0 0 60px;  text-align: center; }
 .railers .item-range       { flex: 0 0 65px;  text-align: center; }
 .railers .item-reload      { flex: 0 0 55px;  text-align: center; }
