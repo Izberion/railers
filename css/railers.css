@@ -315,6 +315,7 @@ button.fa-circle.control[data-tool="foreground"] {
 .railers.actor .sheet-head {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .railers .sheet-head input[type="text"] {
@@ -365,6 +366,7 @@ button.fa-circle.control[data-tool="foreground"] {
   gap: 12px;
   align-items: flex-start;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .railers.actor .hp-button {
