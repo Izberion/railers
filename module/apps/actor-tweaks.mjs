@@ -35,6 +35,8 @@ export class ActorTweaks extends foundry.applications.api.HandlebarsApplicationM
     const actorType = this.actor.type;
     const showInitiative = ["character", "npc", "demon"].includes(actorType);
     const showCorruption = ["character", "npc"].includes(actorType);
+    const showFearToggle = ["character", "npc"].includes(actorType);
+    const showFear = this.actor.getFlag("railers", "showFear") ?? false;
 
     return {
       initiativeMod: system.initiativeMod ?? 0,
@@ -43,6 +45,8 @@ export class ActorTweaks extends foundry.applications.api.HandlebarsApplicationM
       corruptionFloor: system.corruptionFloor ?? 0,
       showInitiative,
       showCorruption,
+      showFearToggle,
+      showFear,
       isGM: game.user.isGM
     };
   }
@@ -60,6 +64,10 @@ export class ActorTweaks extends foundry.applications.api.HandlebarsApplicationM
 
     if (game.user.isGM && formData.corruptionOverride !== undefined) {
       updateData["system.corruption"] = Math.max(0, Number(formData.corruptionOverride));
+    }
+
+    if (["character", "npc"].includes(this.actor.type)) {
+      await this.actor.setFlag("railers", "showFear", !!formData.showFear);
     }
 
     await this.actor.update(updateData);

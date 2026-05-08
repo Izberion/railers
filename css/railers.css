@@ -457,7 +457,7 @@ button.fa-circle.control[data-tool="foreground"] {
   justify-content: center;
   align-items: flex-start;
   padding: 10px;
-  gap: 40px;
+  justify-content: space-evenly;
 }
 
 .railers.actor .combat-body,

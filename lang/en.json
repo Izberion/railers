@@ -553,7 +553,9 @@
         "initiativeGroup": "Faction",
         "initiativeGroupHint": "This will be used to determine the character's group in initiative.",
         "corruptionOverride": "Override Corruption",
-        "corruptionOverrideHint": "Use to bypass Corruption floor."
+        "corruptionOverrideHint": "Use to bypass Corruption floor.",
+        "showFear": "Show Fear input",
+        "showFearHint": "Check this if the character has the Aura of Fear mutation."
       },
       "attributeRoller": {
         "title": "Rolling Attributes",
