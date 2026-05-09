@@ -46,55 +46,57 @@
   </div>
 
   <div class="header-secondary">
-    <div class="resource flex-group-center">
+
+    <div class="npc-pool">
       <label class="resource-label rollable" data-roll-type="stat" data-action="roll" data-npcpool="{{system.attributes.primary.value}}">
         {{localize "RAILERS.Attributes.Primary"}}
       </label>
-      <div class="resource-content flexrow flex-center flex-between">
+      <div class="npc-pool-row">
         <input type="number" name="system.attributes.primary.value" value="{{system.attributes.primary.value}}"/>
-      </div>
-      <div class="npc-attribute-selects">
-        <select name="system.attributes.primary.first">
-          <option value="">—</option>
-          {{selectOptions config.attributes.character selected=system.attributes.primary.first localize=true}}
-        </select>
-        <select name="system.attributes.primary.second" class="optional-attribute">
-          <option value="">—</option>
-          {{selectOptions config.attributes.character selected=system.attributes.primary.second localize=true}}
-        </select>
+        <div class="npc-attribute-selects">
+          <select name="system.attributes.primary.first">
+            <option value="">—</option>
+            {{selectOptions config.attributes.character selected=system.attributes.primary.first localize=true}}
+          </select>
+          <select name="system.attributes.primary.second" class="optional-attribute">
+            <option value="">—</option>
+            {{selectOptions config.attributes.character selected=system.attributes.primary.second localize=true}}
+          </select>
+        </div>
       </div>
     </div>
 
-    <div class="resource flex-group-center">
+    <div class="npc-pool">
       <label class="resource-label rollable" data-roll-type="stat" data-action="roll" data-npcpool="{{system.attributes.secondary.value}}">
         {{localize "RAILERS.Attributes.Secondary"}}
       </label>
-      <div class="resource-content flexrow flex-center flex-between">
+      <div class="npc-pool-row">
         <input type="number" name="system.attributes.secondary.value" value="{{system.attributes.secondary.value}}"/>
-      </div>
-      <div class="npc-attribute-selects">
-        <select name="system.attributes.secondary.first">
-          <option value="">—</option>
-          {{selectOptions config.attributes.character selected=system.attributes.secondary.first localize=true}}
-        </select>
-        <select name="system.attributes.secondary.second" class="optional-attribute">
-          <option value="">—</option>
-          {{selectOptions config.attributes.character selected=system.attributes.secondary.second localize=true}}
-        </select>
-        <select name="system.attributes.secondary.third" class="optional-attribute">
-          <option value="">—</option>
-          {{selectOptions config.attributes.character selected=system.attributes.secondary.third localize=true}}
-        </select>
+        <div class="npc-attribute-selects">
+          <select name="system.attributes.secondary.first">
+            <option value="">—</option>
+            {{selectOptions config.attributes.character selected=system.attributes.secondary.first localize=true}}
+          </select>
+          <select name="system.attributes.secondary.second" class="optional-attribute">
+            <option value="">—</option>
+            {{selectOptions config.attributes.character selected=system.attributes.secondary.second localize=true}}
+          </select>
+          <select name="system.attributes.secondary.third" class="optional-attribute">
+            <option value="">—</option>
+            {{selectOptions config.attributes.character selected=system.attributes.secondary.third localize=true}}
+          </select>
+        </div>
       </div>
     </div>
 
-    <div class="resource flex-group-center">
+    <div class="npc-pool">
       <label class="resource-label rollable" data-roll-type="stat" data-action="roll" data-npcpool="0">
         {{localize "RAILERS.Attributes.Unskilled"}}
       </label>
-      <div class="resource-content flexrow flex-center flex-between">
+      <div class="npc-pool-row">
         <input type="number" value="0" readonly/>
       </div>
     </div>
+
   </div>
 </header>

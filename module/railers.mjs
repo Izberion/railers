@@ -6,10 +6,11 @@ import { RailersActorSheet } from "./sheets/actor-sheet.mjs";
 import { RailersItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { RAILERS } from "./helpers/config.mjs";
-import { HEX_DATA, WEATHER_DATA } from "./apps/hex.mjs";
+import { HEX_DATA, WEATHER_DATA } from "./helpers/hex-data.mjs";
 //import { ActorTweaks } from "./apps/actor-tweaks.mjs";
 import * as models from "./data/_module.mjs"
 import { RailersCombat } from "./helpers/combat.mjs";
+import "./helpers/hex-hooks.mjs";
 
 
 /* -------------------------------------------- */

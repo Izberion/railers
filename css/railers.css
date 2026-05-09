@@ -315,7 +315,7 @@ button.fa-circle.control[data-tool="foreground"] {
 .railers.actor .sheet-head {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
 
 .railers .sheet-head input[type="text"] {
@@ -340,7 +340,7 @@ button.fa-circle.control[data-tool="foreground"] {
 .railers.actor .header-name-vitals {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 
 .railers.actor .name-xp {
@@ -358,7 +358,6 @@ button.fa-circle.control[data-tool="foreground"] {
   flex-direction: row;
   gap: 12px;
   align-items: center;
-  padding-bottom: 8px;
 }
 
 .railers.actor .header-secondary {
@@ -367,6 +366,7 @@ button.fa-circle.control[data-tool="foreground"] {
   gap: 12px;
   align-items: flex-start;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .railers.actor .hp-button {
@@ -457,7 +457,7 @@ button.fa-circle.control[data-tool="foreground"] {
   justify-content: center;
   align-items: flex-start;
   padding: 10px;
-  gap: 40px;
+  justify-content: space-evenly;
 }
 
 .railers.actor .combat-body,
@@ -693,6 +693,10 @@ section.tab.biography.active > prose-mirror {
   font-size: .85em;
 }
 
+.railers .locomotive-select {
+  margin-bottom: 8px;
+}
+
 /* CREW TAB */
 
 .railers .crew-body {
@@ -787,11 +791,42 @@ section.tab.biography.active > prose-mirror {
 
 /* ==================== ACTOR SHEET - NPC ==================== */
 
-.railers .npc-attribute-selects {
+.railers .npc-pool {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  margin-top: 4px;
+  gap: 4px;
+  align-items: center;
+}
+
+.railers .npc-pool-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.railers .npc-pool-row input[type="number"] {
+  width: 48px;
+  text-align: center;
+}
+
+.railers .npc-attribute-selects {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding-bottom: 5px
+}
+
+.railers .npc-pool:nth-child(1) {
+  flex: 2; 
+}
+
+.railers .npc-pool:nth-child(2) {
+  flex: 3; 
+}
+
+.railers .npc-pool:nth-child(3) {
+  flex: 1;
 }
 
 .railers .optional-attribute {
@@ -921,10 +956,12 @@ section.tab.biography.active > prose-mirror {
 .railers .item-quantity    { flex: 0 0 60px;  text-align: center; }
 .railers .item-damage      { flex: 0 0 55px;  text-align: center; }
 .railers .item-severity    { flex: 0 0 55px;  text-align: center; }
+.railers .wound-damage     { flex: 0 0 100px; text-align: center; }
+.railers .wound-severity   { flex: 0 0 100px; text-align: center; }
 .railers .item-price       { flex: 0 0 90px;  text-align: center; }
 .railers .item-weight      { flex: 0 0 65px;  text-align: center; }
-.railers .item-action      { flex: 0 0 55px;  text-align: center; }
-.railers .item-description { flex: 0 0 200px; text-align: center; }
+.railers .item-action      { flex: 0 0 120px; text-align: center; }
+.railers .item-description { flex: 0 0 320px; text-align: center; }
 .railers .item-attack      { flex: 0 0 60px;  text-align: center; }
 .railers .item-range       { flex: 0 0 65px;  text-align: center; }
 .railers .item-reload      { flex: 0 0 55px;  text-align: center; }
@@ -937,9 +974,9 @@ section.tab.biography.active > prose-mirror {
 .railers .item-rounds      { flex: 0 0 60px;  text-align: center; }
 .railers .item-ammo        { flex: 0 0 60px;  text-align: center; }
 .railers .item-loaded      { flex: 0 0 100px; text-align: center; margin: 0 5px; }
-.railers .item-armor       { flex: 0 0 65px; text-align: center; }
-.railers .item-capacity    { flex: 0 0 65px; text-align: center; }
-.railers .item-power       { flex: 0 0 65px; text-align: center; }
+.railers .item-armor       { flex: 0 0 65px;  text-align: center; }
+.railers .item-capacity    { flex: 0 0 65px;  text-align: center; }
+.railers .item-power       { flex: 0 0 65px;  text-align: center; }
 .railers .effect-duration  { flex: 0 0 80px;  text-align: center; }
 .railers .effect-source    { flex: 0 0 80px;  text-align: center; }
 

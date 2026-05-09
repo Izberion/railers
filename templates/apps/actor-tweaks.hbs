@@ -22,6 +22,15 @@
     {{/if}}
   {{/if}}
 
+  {{#if showFearToggle}}
+    <hr/>
+    <div>
+      <label>{{localize "RAILERS.apps.actorTweaks.showFear"}}</label>
+      <input type="checkbox" name="showFear" {{#if showFear}}checked{{/if}}/>
+      <p class="hint">{{localize "RAILERS.apps.actorTweaks.showFearHint"}}</p>
+    </div>
+  {{/if}}
+
   <footer class="tweaks-footer">
     <button type="button" data-action="close">{{localize "RAILERS.dialogs.base.cancel"}}</button>
     <button type="submit" class="submit" data-action="submit">{{localize "RAILERS.dialogs.base.save"}}</button>
