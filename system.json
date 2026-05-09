@@ -2,7 +2,7 @@
   "id": "railers",
   "title": "Railers",
   "description": "The Railers tabletop roleplaying system for FoundryVTT",
-  "version": "1.0",
+  "version": "1.0.1",
   "compatibility": {
     "minimum": 13,
     "verified": "14.359"
